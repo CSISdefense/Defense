@@ -1,0 +1,2752 @@
+fiscal_year,Query_Run,Customer,Services Category,FundingMechanismClassification,SumOfobligatedAmount,SumOfnumberOfActions
+fiscal_year,Customer,Query_Run,ServicesCategory,FundingMechanismClassification,SumOfobligatedAmount,SumOfnumberOfActions
+1987,Defense,20:49.0,ICT,Firm Fixed Price,-171000,NULL
+1989,Defense,20:49.0,ERS,Cost Plus Fixed Fee,10173000,NULL
+1989,Defense,20:49.0,PAMS,NULL,1912000,NULL
+1989,Defense,20:49.0,Products,NULL,279481000,NULL
+1989,Defense,20:49.0,R&D,Cost Sharing,250000,NULL
+1989,Defense,20:49.0,R&D,Firm Fixed Price,10935000,NULL
+1990,Defense,20:49.0,FRS&C,Fixed Price Incentive,122373000,NULL
+1990,Defense,20:49.0,ICT,Fixed Price with Economic Price Adjustment,5105000,NULL
+1990,Defense,20:49.0,MED,Cost Plus Fixed Fee,10064000,NULL
+1990,Defense,20:49.0,PAMS,Cost Plus Incentive,158528000,NULL
+1990,Defense,20:49.0,Products,Cost Plus Incentive,504792000,NULL
+1990,Defense,20:49.0,R&D,NULL,188215000,NULL
+1990,Defense,20:49.0,R&D,Cost No Fee,1022951000,NULL
+1990,Defense,20:49.0,R&D,Cost Plus Award Fee,1514273000,NULL
+1991,Defense,20:49.0,ERS,Cost Plus Incentive,126606000,NULL
+1991,Defense,20:49.0,FRS&C,Cost Plus Award Fee,1996982504,NULL
+1991,Defense,20:49.0,FRS&C,Cost Sharing,2746000,NULL
+1991,Defense,20:49.0,FRS&C,Labor Hours,5762921,NULL
+1991,Defense,20:49.0,ICT,Fixed Price Incentive,93394000,NULL
+1992,Defense,20:49.0,FRS&C,NULL,262565280,NULL
+1992,Defense,20:49.0,FRS&C,Cost No Fee,674971572,NULL
+1992,Defense,20:49.0,FRS&C,Time and Materials,248521545,NULL
+1992,Defense,20:49.0,Fuel,Fixed Price with Economic Price Adjustment,3451134850,1
+1992,Defense,20:49.0,ICT,Cost Plus Award Fee,321839806,NULL
+1992,Defense,20:49.0,ICT,Cost Sharing,1260457,NULL
+1992,Defense,20:49.0,ICT,Labor Hours,56772180,NULL
+1992,Defense,20:49.0,PAMS,Cost Sharing,578601,NULL
+1992,Defense,20:49.0,PAMS,Fixed Price Redetermination,24680586,NULL
+1992,Defense,20:49.0,Products,Cost Sharing,16065994,NULL
+1992,Defense,20:49.0,Products,Firm Fixed Price,33929098558,18
+1992,Defense,20:49.0,Products,Fixed Price Incentive,8971364484,1
+1992,Defense,20:49.0,Products,Fixed Price Redetermination,48409219,NULL
+1992,Defense,20:49.0,R&D,Cost Plus Fixed Fee,6437077809,NULL
+1993,Defense,20:49.0,ERS,Cost Sharing,10149331,NULL
+1993,Defense,20:49.0,ERS,Firm Fixed Price,3570403198,214
+1993,Defense,20:49.0,ICT,NULL,49121654,NULL
+1993,Defense,20:49.0,ICT,Cost No Fee,104767604,NULL
+1993,Defense,20:49.0,ICT,Time and Materials,265609063,38
+1993,Defense,20:49.0,PAMS,Cost No Fee,91567994,NULL
+1993,Defense,20:49.0,PAMS,Cost Plus Award Fee,1662179545,29
+1993,Defense,20:49.0,PAMS,Fixed Price with Economic Price Adjustment,278228596,NULL
+1993,Defense,20:49.0,PAMS,Labor Hours,254421682,8
+1993,Defense,20:49.0,Products,Cost No Fee,228086097,NULL
+1993,Defense,20:49.0,Products,Cost Plus Award Fee,806831361,NULL
+1993,Defense,20:49.0,Products,Fixed Price with Economic Price Adjustment,1959447638,1
+1993,Defense,20:49.0,Products,Labor Hours,151187369,NULL
+1993,Defense,20:49.0,R&D,Fixed Price Redetermination,7540658,NULL
+1994,Defense,20:49.0,ERS,NULL,305507276,465
+1994,Defense,20:49.0,ERS,Cost No Fee,11060779,27
+1994,Defense,20:49.0,ERS,Cost Plus Award Fee,1032774513,844
+1994,Defense,20:49.0,ERS,Fixed Price with Economic Price Adjustment,412385307,130
+1988,Defense,20:49.0,Products,Cost Plus Fixed Fee,840000,NULL
+1988,Defense,20:49.0,Products,Firm Fixed Price,1886670,NULL
+1988,Defense,20:49.0,R&D,Time and Materials,58000,NULL
+1989,Defense,20:49.0,ERS,Firm Fixed Price,132220000,NULL
+1989,Defense,20:49.0,ICT,Labor Hours,41000,NULL
+1989,Defense,20:49.0,ICT,Time and Materials,1584000,NULL
+1989,Defense,20:49.0,PAMS,Cost No Fee,1415000,NULL
+1989,Defense,20:49.0,PAMS,Labor Hours,2051000,NULL
+1989,Defense,20:49.0,Products,Cost Plus Award Fee,13723000,NULL
+1989,Defense,20:49.0,Products,Fixed Price Redetermination,58000,NULL
+1990,Defense,20:49.0,NULL,NULL,NULL,NULL
+1990,Defense,20:49.0,ERS,NULL,390715000,NULL
+1990,Defense,20:49.0,ERS,Cost Plus Award Fee,271649000,NULL
+1990,Defense,20:49.0,ERS,Firm Fixed Price,4612383114,NULL
+1990,Defense,20:49.0,ERS,Fixed Price Redetermination,8570000,NULL
+1990,Defense,20:49.0,ICT,NULL,51590000,NULL
+1990,Defense,20:49.0,ICT,Time and Materials,200881000,NULL
+1990,Defense,20:49.0,MED,Firm Fixed Price,744413000,NULL
+1990,Defense,20:49.0,PAMS,Fixed Price Incentive,66902000,NULL
+1990,Defense,20:49.0,PAMS,Fixed Price with Economic Price Adjustment,104974000,NULL
+1990,Defense,20:49.0,PAMS,Labor Hours,240243000,NULL
+1990,Defense,20:49.0,PAMS,Time and Materials,1012447125,NULL
+1990,Defense,20:49.0,Products,Cost Plus Award Fee,186987000,NULL
+1990,Defense,20:49.0,R&D,Fixed Price with Economic Price Adjustment,66816000,NULL
+1990,Defense,20:49.0,R&D,Labor Hours,42170000,NULL
+1991,Defense,20:49.0,ERS,Cost Plus Award Fee,364921537,NULL
+1991,Defense,20:49.0,ICT,Cost Plus Fixed Fee,648408751,NULL
+1991,Defense,20:49.0,ICT,Firm Fixed Price,2027180911,NULL
+1991,Defense,20:49.0,MED,NULL,204000,NULL
+1991,Defense,20:49.0,MED,Cost Plus Award Fee,-1442000,NULL
+1991,Defense,20:49.0,MED,Firm Fixed Price,296696920,NULL
+1991,Defense,20:49.0,MED,Fixed Price Redetermination,138184000,NULL
+1991,Defense,20:49.0,PAMS,Fixed Price Incentive,101370000,NULL
+1991,Defense,20:49.0,PAMS,Time and Materials,1211439554,NULL
+1991,Defense,20:49.0,Products,Cost Plus Fixed Fee,2070319258,NULL
+1991,Defense,20:49.0,R&D,Fixed Price Incentive,3643552000,NULL
+1991,Defense,20:49.0,R&D,Time and Materials,247875913,NULL
+1992,Defense,20:49.0,ERS,Cost Plus Fixed Fee,613859455,NULL
+1992,Defense,20:49.0,FRS&C,Fixed Price with Economic Price Adjustment,263287820,NULL
+1992,Defense,20:49.0,ICT,Cost Plus Fixed Fee,640899495,NULL
+1992,Defense,20:49.0,ICT,Fixed Price Redetermination,5433134,NULL
+1992,Defense,20:49.0,MED,Cost Plus Award Fee,9189581,NULL
+1992,Defense,20:49.0,PAMS,NULL,799456801,NULL
+1992,Defense,20:49.0,PAMS,Firm Fixed Price,4786691429,2
+1992,Defense,20:49.0,R&D,Firm Fixed Price,2603503918,1
+1992,Defense,20:49.0,R&D,Fixed Price Incentive,2564347667,NULL
+1993,Defense,20:49.0,ERS,Cost Plus Fixed Fee,687596565,16
+1993,Defense,20:49.0,ERS,Fixed Price Redetermination,19084679,NULL
+1993,Defense,20:49.0,FRS&C,Fixed Price Incentive,44778048,10
+1993,Defense,20:49.0,FRS&C,Fixed Price with Economic Price Adjustment,221339546,NULL
+NULL,Defense,20:49.0,NULL,Firm Fixed Price,259871,1
+1988,Defense,20:49.0,ICT,Firm Fixed Price,91000,NULL
+1989,Defense,20:49.0,ERS,Time and Materials,2221000,NULL
+1989,Defense,20:49.0,PAMS,Firm Fixed Price,35840000,NULL
+1989,Defense,20:49.0,Products,Firm Fixed Price,225102946,NULL
+1989,Defense,20:49.0,R&D,NULL,96000,NULL
+1990,Defense,20:49.0,ERS,Cost Plus Incentive,1107441000,NULL
+1990,Defense,20:49.0,ICT,Firm Fixed Price,1598608000,NULL
+1990,Defense,20:49.0,MED,Time and Materials,309000,NULL
+1990,Defense,20:49.0,PAMS,Cost Plus Award Fee,1003819000,NULL
+1990,Defense,20:49.0,R&D,Cost Sharing,183333000,NULL
+1991,Defense,20:49.0,ERS,NULL,271629082,NULL
+1991,Defense,20:49.0,FRS&C,NULL,434467986,NULL
+1991,Defense,20:49.0,Fuel,Fixed Price with Economic Price Adjustment,5906198000,NULL
+1991,Defense,20:49.0,ICT,Cost Plus Award Fee,352168000,NULL
+1991,Defense,20:49.0,PAMS,Firm Fixed Price,5035800717,1
+1991,Defense,20:49.0,PAMS,Fixed Price Redetermination,34820000,NULL
+1991,Defense,20:49.0,Products,Cost Sharing,22956000,NULL
+1991,Defense,20:49.0,Products,Firm Fixed Price,44023680328,3
+1991,Defense,20:49.0,Products,Fixed Price Incentive,9130988861,NULL
+1991,Defense,20:49.0,R&D,NULL,207479000,NULL
+1991,Defense,20:49.0,R&D,Cost No Fee,960243000,NULL
+1991,Defense,20:49.0,R&D,Labor Hours,49628000,NULL
+1992,Defense,20:49.0,ERS,Cost Plus Incentive,265144096,NULL
+1992,Defense,20:49.0,FRS&C,Cost Sharing,9521987,NULL
+1992,Defense,20:49.0,Fuel,Fixed Price Incentive,39147,NULL
+1992,Defense,20:49.0,ICT,NULL,38471067,NULL
+1992,Defense,20:49.0,MED,NULL,1959490,NULL
+1992,Defense,20:49.0,PAMS,Cost Plus Award Fee,1376373524,1
+1992,Defense,20:49.0,PAMS,Cost Plus Fixed Fee,3846360724,2
+1992,Defense,20:49.0,PAMS,Fixed Price with Economic Price Adjustment,118989186,NULL
+1992,Defense,20:49.0,Products,Cost No Fee,99160255,NULL
+1992,Defense,20:49.0,Products,Cost Plus Award Fee,437018111,NULL
+1992,Defense,20:49.0,Products,Cost Plus Fixed Fee,2524456232,NULL
+1992,Defense,20:49.0,Products,Labor Hours,36921724,NULL
+1992,Defense,20:49.0,R&D,Cost Sharing,166644925,NULL
+1992,Defense,20:49.0,R&D,Time and Materials,338717276,NULL
+1993,Defense,20:49.0,ERS,NULL,211089306,NULL
+1993,Defense,20:49.0,FRS&C,NULL,248463283,NULL
+1993,Defense,20:49.0,FRS&C,Cost No Fee,431177190,NULL
+1993,Defense,20:49.0,Fuel,Fixed Price with Economic Price Adjustment,4347173518,NULL
+1993,Defense,20:49.0,ICT,Cost Plus Award Fee,388704133,1
+1993,Defense,20:49.0,PAMS,Fixed Price Redetermination,58796331,2
+1993,Defense,20:49.0,Products,Cost Sharing,7284976,NULL
+1993,Defense,20:49.0,Products,Fixed Price Incentive,7790642807,39
+1993,Defense,20:49.0,Products,Fixed Price Redetermination,92094017,NULL
+1993,Defense,20:49.0,Products,Time and Materials,266188265,2
+1993,Defense,20:49.0,R&D,Cost No Fee,812676970,2
+1993,Defense,20:49.0,R&D,Labor Hours,154606504,NULL
+1994,Defense,20:49.0,FRS&C,Cost Sharing,2130677,8
+1994,Defense,20:49.0,FRS&C,Firm Fixed Price,13511398355,39203
+1988,Defense,20:49.0,Products,Fixed Price Incentive,152000,NULL
+1989,Defense,20:49.0,ERS,Cost No Fee,499000,NULL
+1989,Defense,20:49.0,ERS,Labor Hours,218000,NULL
+1989,Defense,20:49.0,FRS&C,Time and Materials,30000,NULL
+1989,Defense,20:49.0,PAMS,Cost Plus Award Fee,17352000,NULL
+1989,Defense,20:49.0,PAMS,Cost Plus Fixed Fee,20645000,NULL
+1989,Defense,20:49.0,R&D,Cost Plus Award Fee,5680000,NULL
+1989,Defense,20:49.0,R&D,Cost Plus Fixed Fee,76607000,NULL
+1990,Defense,20:49.0,ERS,Cost Sharing,5796000,NULL
+1990,Defense,20:49.0,ERS,Fixed Price with Economic Price Adjustment,416086000,NULL
+1990,Defense,20:49.0,ERS,Time and Materials,308918000,NULL
+1990,Defense,20:49.0,FRS&C,Fixed Price Redetermination,42712000,NULL
+1990,Defense,20:49.0,ICT,Cost No Fee,10133000,NULL
+1990,Defense,20:49.0,MED,Cost No Fee,8687000,NULL
+1990,Defense,20:49.0,PAMS,Fixed Price Redetermination,23584000,NULL
+1990,Defense,20:49.0,Products,Fixed Price with Economic Price Adjustment,2262690000,NULL
+1990,Defense,20:49.0,Products,Time and Materials,202001000,NULL
+1990,Defense,20:49.0,R&D,Cost Plus Incentive,1248280000,NULL
+1990,Defense,20:49.0,R&D,Fixed Price Redetermination,376251000,NULL
+1991,Defense,20:49.0,ERS,Cost No Fee,52549000,NULL
+1991,Defense,20:49.0,ERS,Labor Hours,14949000,NULL
+1991,Defense,20:49.0,FRS&C,Cost Plus Fixed Fee,472425462,NULL
+1991,Defense,20:49.0,FRS&C,Firm Fixed Price,11685023183,NULL
+1991,Defense,20:49.0,Fuel,Fixed Price Incentive,99000,NULL
+1991,Defense,20:49.0,ICT,Cost Plus Incentive,38504000,NULL
+1991,Defense,20:49.0,ICT,Cost Sharing,2628000,NULL
+1991,Defense,20:49.0,ICT,Fixed Price with Economic Price Adjustment,464262000,NULL
+1991,Defense,20:49.0,MED,Fixed Price with Economic Price Adjustment,809000,NULL
+1991,Defense,20:49.0,PAMS,Cost Plus Fixed Fee,3390749392,NULL
+1991,Defense,20:49.0,Products,Labor Hours,28847000,NULL
+1992,Defense,20:49.0,ERS,Fixed Price with Economic Price Adjustment,471901512,NULL
+1992,Defense,20:49.0,ERS,Time and Materials,684734413,NULL
+1992,Defense,20:49.0,FRS&C,Cost Plus Award Fee,1990959017,NULL
+1992,Defense,20:49.0,FRS&C,Fixed Price Redetermination,118229204,NULL
+1992,Defense,20:49.0,Fuel,NULL,6926750,NULL
+1992,Defense,20:49.0,Fuel,Firm Fixed Price,134869521,NULL
+1992,Defense,20:49.0,ICT,Cost No Fee,63122908,NULL
+1992,Defense,20:49.0,MED,Cost No Fee,14919257,NULL
+1992,Defense,20:49.0,MED,Labor Hours,539250,NULL
+1992,Defense,20:49.0,PAMS,Cost Plus Incentive,233170606,NULL
+1992,Defense,20:49.0,Products,Time and Materials,221839279,NULL
+1992,Defense,20:49.0,R&D,Cost Plus Incentive,2733123940,NULL
+1993,Defense,20:49.0,ERS,Fixed Price Incentive,450079577,18
+1993,Defense,20:49.0,FRS&C,Cost Plus Fixed Fee,1057990471,1
+1993,Defense,20:49.0,FRS&C,Firm Fixed Price,10913110393,1188
+1993,Defense,20:49.0,ICT,Cost Plus Incentive,107887875,1
+1993,Defense,20:49.0,ICT,Fixed Price with Economic Price Adjustment,618806957,NULL
+1993,Defense,20:49.0,MED,Fixed Price with Economic Price Adjustment,570794,NULL
+NULL,Defense,20:49.0,NULL,NULL,NULL,NULL
+1988,Defense,20:49.0,FRS&C,Firm Fixed Price,626000,NULL
+1989,Defense,20:49.0,ERS,Fixed Price with Economic Price Adjustment,347157000,NULL
+1989,Defense,20:49.0,FRS&C,Cost Plus Award Fee,13886000,NULL
+1989,Defense,20:49.0,FRS&C,Cost Plus Fixed Fee,55000,NULL
+1989,Defense,20:49.0,Fuel,Firm Fixed Price,39000,NULL
+1989,Defense,20:49.0,ICT,Firm Fixed Price,9608000,NULL
+1989,Defense,20:49.0,R&D,Cost Plus Incentive,2921000,NULL
+1990,Defense,20:49.0,ERS,Fixed Price Incentive,365315000,NULL
+1990,Defense,20:49.0,FRS&C,NULL,270667000,NULL
+1990,Defense,20:49.0,FRS&C,Time and Materials,71740000,NULL
+1990,Defense,20:49.0,Fuel,NULL,3873075000,NULL
+1990,Defense,20:49.0,Fuel,Fixed Price with Economic Price Adjustment,983040000,NULL
+1990,Defense,20:49.0,ICT,Cost Plus Award Fee,267005000,NULL
+1990,Defense,20:49.0,ICT,Cost Plus Fixed Fee,586383799,1
+1990,Defense,20:49.0,ICT,Labor Hours,50523000,NULL
+1990,Defense,20:49.0,MED,Cost Plus Incentive,498000,NULL
+1990,Defense,20:49.0,MED,Fixed Price with Economic Price Adjustment,1345000,NULL
+1990,Defense,20:49.0,MED,Labor Hours,142000,NULL
+1990,Defense,20:49.0,PAMS,Cost Sharing,1255000,NULL
+1990,Defense,20:49.0,PAMS,Firm Fixed Price,2949215034,NULL
+1990,Defense,20:49.0,Products,Cost Sharing,2606000,NULL
+1990,Defense,20:49.0,Products,Firm Fixed Price,26954970115,NULL
+1990,Defense,20:49.0,Products,Fixed Price Incentive,9125576000,NULL
+1991,Defense,20:49.0,ERS,Cost Sharing,5300000,NULL
+1991,Defense,20:49.0,ERS,Firm Fixed Price,6213181874,NULL
+1991,Defense,20:49.0,FRS&C,Cost Plus Incentive,26205000,NULL
+1991,Defense,20:49.0,ICT,NULL,54380000,NULL
+1991,Defense,20:49.0,ICT,Time and Materials,259546965,NULL
+1991,Defense,20:49.0,MED,Fixed Price Incentive,130758000,NULL
+1991,Defense,20:49.0,MED,Time and Materials,260000,NULL
+1991,Defense,20:49.0,PAMS,NULL,1038332873,NULL
+1991,Defense,20:49.0,PAMS,Cost No Fee,75611463,NULL
+1991,Defense,20:49.0,PAMS,Cost Plus Award Fee,1337134321,NULL
+1991,Defense,20:49.0,PAMS,Fixed Price with Economic Price Adjustment,189021000,NULL
+1991,Defense,20:49.0,PAMS,Labor Hours,237592686,NULL
+1991,Defense,20:49.0,Products,NULL,7156025594,NULL
+1991,Defense,20:49.0,Products,Cost No Fee,-136044725,NULL
+1991,Defense,20:49.0,Products,Cost Plus Award Fee,441419000,NULL
+1991,Defense,20:49.0,R&D,Cost Sharing,199065000,NULL
+1991,Defense,20:49.0,R&D,Firm Fixed Price,3301742869,NULL
+1991,Defense,20:49.0,R&D,Fixed Price Redetermination,7254000,NULL
+1992,Defense,20:49.0,ERS,NULL,307653913,NULL
+1992,Defense,20:49.0,Fuel,Cost Plus Fixed Fee,77810,NULL
+1992,Defense,20:49.0,MED,Firm Fixed Price,439999624,NULL
+1992,Defense,20:49.0,PAMS,Time and Materials,1347829692,NULL
+1992,Defense,20:49.0,R&D,Cost No Fee,920228688,NULL
+1992,Defense,20:49.0,R&D,Cost Plus Award Fee,3936226407,NULL
+1992,Defense,20:49.0,R&D,Fixed Price with Economic Price Adjustment,360290859,NULL
+1992,Defense,20:49.0,R&D,Labor Hours,47173119,NULL
+1993,Defense,20:49.0,FRS&C,Cost Sharing,6119050,NULL
+1988,Defense,20:49.0,PAMS,Cost Plus Fixed Fee,283000,NULL
+1988,Defense,20:49.0,R&D,Cost Plus Fixed Fee,511000,NULL
+1989,Defense,20:49.0,FRS&C,NULL,4261000,NULL
+1989,Defense,20:49.0,FRS&C,Fixed Price Redetermination,544000,NULL
+1989,Defense,20:49.0,Products,Fixed Price Incentive,31843000,NULL
+1989,Defense,20:49.0,Products,Fixed Price with Economic Price Adjustment,1671000,NULL
+1989,Defense,20:49.0,Products,Time and Materials,310000,NULL
+1990,Defense,20:49.0,ERS,Cost No Fee,67061000,NULL
+1990,Defense,20:49.0,ERS,Labor Hours,16345000,NULL
+1990,Defense,20:49.0,FRS&C,Cost Plus Fixed Fee,194797000,NULL
+1990,Defense,20:49.0,FRS&C,Firm Fixed Price,7574178778,NULL
+1990,Defense,20:49.0,ICT,Cost Plus Incentive,86564000,NULL
+1990,Defense,20:49.0,ICT,Cost Sharing,5432000,NULL
+1990,Defense,20:49.0,PAMS,Cost Plus Fixed Fee,3686683676,2
+1990,Defense,20:49.0,Products,Cost No Fee,29582000,NULL
+1990,Defense,20:49.0,Products,Labor Hours,20947000,NULL
+1990,Defense,20:49.0,R&D,Cost Plus Fixed Fee,5708341764,NULL
+1991,Defense,20:49.0,ERS,Fixed Price with Economic Price Adjustment,534554000,NULL
+1991,Defense,20:49.0,ERS,Time and Materials,638076363,NULL
+1991,Defense,20:49.0,FRS&C,Fixed Price Redetermination,46323029,NULL
+1991,Defense,20:49.0,Fuel,NULL,19465000,NULL
+1991,Defense,20:49.0,Fuel,Firm Fixed Price,76128000,NULL
+1991,Defense,20:49.0,ICT,Cost No Fee,36520000,NULL
+1991,Defense,20:49.0,MED,Cost No Fee,17655000,NULL
+1991,Defense,20:49.0,MED,Labor Hours,3938000,NULL
+1991,Defense,20:49.0,PAMS,Cost Plus Incentive,179383000,NULL
+1991,Defense,20:49.0,Products,Fixed Price with Economic Price Adjustment,2700840767,NULL
+1991,Defense,20:49.0,Products,Time and Materials,222091809,NULL
+1991,Defense,20:49.0,R&D,Cost Plus Incentive,1908120000,NULL
+1992,Defense,20:49.0,ERS,Cost No Fee,11017645,NULL
+1992,Defense,20:49.0,ERS,Fixed Price Incentive,882630361,NULL
+1992,Defense,20:49.0,ERS,Labor Hours,29519220,NULL
+1992,Defense,20:49.0,FRS&C,Cost Plus Fixed Fee,752489469,NULL
+1992,Defense,20:49.0,FRS&C,Firm Fixed Price,10987535246,1
+1992,Defense,20:49.0,ICT,Cost Plus Incentive,122145958,NULL
+1992,Defense,20:49.0,ICT,Fixed Price with Economic Price Adjustment,888010115,NULL
+1992,Defense,20:49.0,MED,Fixed Price with Economic Price Adjustment,475849,NULL
+1992,Defense,20:49.0,MED,Time and Materials,582987,NULL
+1993,Defense,20:49.0,ERS,Fixed Price with Economic Price Adjustment,427353580,NULL
+1993,Defense,20:49.0,ERS,Time and Materials,701061433,23
+1993,Defense,20:49.0,FRS&C,Cost Plus Award Fee,1300739316,NULL
+1993,Defense,20:49.0,FRS&C,Cost Plus Incentive,7238510,NULL
+1993,Defense,20:49.0,Fuel,NULL,7427024,NULL
+1993,Defense,20:49.0,Fuel,Firm Fixed Price,147130786,NULL
+1993,Defense,20:49.0,ICT,Fixed Price Incentive,26728747,NULL
+1993,Defense,20:49.0,MED,Cost No Fee,899199,NULL
+1993,Defense,20:49.0,MED,Fixed Price Incentive,145475381,NULL
+1993,Defense,20:49.0,MED,Labor Hours,884800,NULL
+1993,Defense,20:49.0,PAMS,Cost Plus Incentive,273558574,NULL
+1989,Defense,20:49.0,ERS,Fixed Price Incentive,4500000,NULL
+1989,Defense,20:49.0,FRS&C,Firm Fixed Price,344631000,NULL
+1989,Defense,20:49.0,ICT,Cost Plus Fixed Fee,15103000,NULL
+1990,Defense,20:49.0,FRS&C,Cost Plus Award Fee,788744000,NULL
+1990,Defense,20:49.0,FRS&C,Cost Plus Incentive,45268000,NULL
+1990,Defense,20:49.0,FRS&C,Labor Hours,5312000,NULL
+1990,Defense,20:49.0,Fuel,Firm Fixed Price,135550000,NULL
+1990,Defense,20:49.0,Fuel,Fixed Price Redetermination,-325000,NULL
+1990,Defense,20:49.0,ICT,Fixed Price Incentive,11001000,NULL
+1990,Defense,20:49.0,MED,Fixed Price Incentive,127452000,NULL
+1990,Defense,20:49.0,MED,Fixed Price Redetermination,23263000,NULL
+1990,Defense,20:49.0,PAMS,NULL,908404000,NULL
+1990,Defense,20:49.0,PAMS,Cost No Fee,83284000,NULL
+1990,Defense,20:49.0,Products,NULL,22318612000,NULL
+1990,Defense,20:49.0,R&D,Firm Fixed Price,4148458000,NULL
+1991,Defense,20:49.0,ERS,Fixed Price Incentive,502478829,NULL
+1991,Defense,20:49.0,FRS&C,Time and Materials,202315865,NULL
+1991,Defense,20:49.0,Fuel,Cost Plus Fixed Fee,55000,NULL
+1991,Defense,20:49.0,ICT,Labor Hours,48393000,NULL
+1991,Defense,20:49.0,PAMS,Cost Sharing,981000,NULL
+1991,Defense,20:49.0,R&D,Cost Plus Award Fee,2412327000,NULL
+1991,Defense,20:49.0,R&D,Cost Plus Fixed Fee,6238142791,2
+1991,Defense,20:49.0,R&D,Fixed Price with Economic Price Adjustment,555820000,NULL
+1992,Defense,20:49.0,ERS,Cost Sharing,57961911,NULL
+1992,Defense,20:49.0,ERS,Firm Fixed Price,5105323861,1
+1992,Defense,20:49.0,FRS&C,Cost Plus Incentive,6909101,NULL
+1992,Defense,20:49.0,FRS&C,Labor Hours,8110984,NULL
+1992,Defense,20:49.0,ICT,Fixed Price Incentive,47236383,NULL
+1992,Defense,20:49.0,ICT,Time and Materials,244230094,NULL
+1992,Defense,20:49.0,MED,Fixed Price Incentive,94433899,NULL
+1992,Defense,20:49.0,PAMS,Cost No Fee,117188826,NULL
+1992,Defense,20:49.0,PAMS,Labor Hours,239060384,NULL
+1992,Defense,20:49.0,Products,NULL,5195995852,NULL
+1992,Defense,20:49.0,Products,Fixed Price with Economic Price Adjustment,2648038247,NULL
+1992,Defense,20:49.0,R&D,Fixed Price Redetermination,3588540,NULL
+1993,Defense,20:49.0,ERS,Cost No Fee,9069011,NULL
+1993,Defense,20:49.0,ERS,Cost Plus Award Fee,678098015,13
+1993,Defense,20:49.0,ERS,Labor Hours,6389097,NULL
+1993,Defense,20:49.0,FRS&C,Time and Materials,320530959,1
+1993,Defense,20:49.0,Fuel,Cost Plus Fixed Fee,-100955,NULL
+1993,Defense,20:49.0,ICT,Cost Sharing,3295974,NULL
+1993,Defense,20:49.0,ICT,Labor Hours,46768565,20
+1993,Defense,20:49.0,MED,Firm Fixed Price,240228196,6
+1993,Defense,20:49.0,PAMS,Time and Materials,1267891850,37
+1993,Defense,20:49.0,R&D,Cost Plus Award Fee,3761449133,5
+1993,Defense,20:49.0,R&D,Cost Plus Fixed Fee,7107115450,30
+1993,Defense,20:49.0,R&D,Fixed Price with Economic Price Adjustment,462730583,NULL
+1994,Defense,20:49.0,ERS,Cost Sharing,41293466,15
+1994,Defense,20:49.0,ERS,Firm Fixed Price,3998425188,11246
+1994,Defense,20:49.0,ERS,Fixed Price Redetermination,7364981,63
+1988,Defense,20:49.0,ERS,Firm Fixed Price,2935000,NULL
+1988,Defense,20:49.0,MED,Firm Fixed Price,25000,NULL
+1988,Defense,20:49.0,Products,NULL,97000,NULL
+1988,Defense,20:49.0,R&D,Cost No Fee,148000,NULL
+1989,Defense,20:49.0,NULL,NULL,NULL,NULL
+1989,Defense,20:49.0,ERS,NULL,1328000,NULL
+1989,Defense,20:49.0,ERS,Cost Plus Award Fee,2113000,NULL
+1989,Defense,20:49.0,MED,Firm Fixed Price,207000,NULL
+1989,Defense,20:49.0,PAMS,Time and Materials,11487000,NULL
+1989,Defense,20:49.0,Products,Cost Plus Fixed Fee,6142000,NULL
+1989,Defense,20:49.0,R&D,Cost No Fee,369000,NULL
+1989,Defense,20:49.0,R&D,Fixed Price Incentive,208000,NULL
+1989,Defense,20:49.0,R&D,Labor Hours,8000,NULL
+1989,Defense,20:49.0,R&D,Time and Materials,159000,NULL
+1990,Defense,20:49.0,ERS,Cost Plus Fixed Fee,565747000,NULL
+1990,Defense,20:49.0,FRS&C,Cost No Fee,399877000,NULL
+1990,Defense,20:49.0,FRS&C,Cost Sharing,4384000,NULL
+1990,Defense,20:49.0,FRS&C,Fixed Price with Economic Price Adjustment,397934000,NULL
+1990,Defense,20:49.0,ICT,Fixed Price Redetermination,3221000,NULL
+1990,Defense,20:49.0,MED,Cost Plus Award Fee,1349000,NULL
+1990,Defense,20:49.0,Products,Cost Plus Fixed Fee,1707347000,NULL
+1990,Defense,20:49.0,Products,Fixed Price Redetermination,73271000,NULL
+1990,Defense,20:49.0,R&D,Fixed Price Incentive,5072401000,NULL
+1990,Defense,20:49.0,R&D,Time and Materials,310598000,NULL
+1991,Defense,20:49.0,ERS,Cost Plus Fixed Fee,594155379,NULL
+1991,Defense,20:49.0,ERS,Fixed Price Redetermination,17856539,NULL
+1991,Defense,20:49.0,FRS&C,Cost No Fee,626905000,NULL
+1991,Defense,20:49.0,FRS&C,Fixed Price Incentive,118256421,NULL
+1991,Defense,20:49.0,FRS&C,Fixed Price with Economic Price Adjustment,625448066,NULL
+1991,Defense,20:49.0,ICT,Fixed Price Redetermination,5766000,NULL
+1991,Defense,20:49.0,MED,Cost Plus Fixed Fee,9979000,NULL
+1991,Defense,20:49.0,Products,Cost Plus Incentive,1586208014,NULL
+1991,Defense,20:49.0,Products,Fixed Price Redetermination,134118772,NULL
+1992,Defense,20:49.0,ERS,Cost Plus Award Fee,434049532,NULL
+1992,Defense,20:49.0,ERS,Fixed Price Redetermination,30517243,NULL
+1992,Defense,20:49.0,FRS&C,Fixed Price Incentive,201334250,NULL
+1992,Defense,20:49.0,ICT,Firm Fixed Price,2315220327,NULL
+1992,Defense,20:49.0,MED,Cost Plus Fixed Fee,3739094,NULL
+1992,Defense,20:49.0,MED,Fixed Price Redetermination,170049077,NULL
+1992,Defense,20:49.0,PAMS,Fixed Price Incentive,116764582,NULL
+1992,Defense,20:49.0,Products,Cost Plus Incentive,2369314055,NULL
+1992,Defense,20:49.0,R&D,NULL,298583704,NULL
+1993,Defense,20:49.0,ERS,Cost Plus Incentive,101056297,NULL
+1993,Defense,20:49.0,FRS&C,Labor Hours,3677660,NULL
+1993,Defense,20:49.0,ICT,Cost Plus Fixed Fee,574554606,18
+1993,Defense,20:49.0,ICT,Firm Fixed Price,2219809416,23
+1993,Defense,20:49.0,MED,Cost Plus Award Fee,60000,NULL
+1993,Defense,20:49.0,MED,Fixed Price Redetermination,298324027,NULL
+1993,Defense,20:49.0,PAMS,Firm Fixed Price,4890219941,248
+1993,Defense,20:49.0,PAMS,Fixed Price Incentive,104088358,NULL
+1993,Defense,20:49.0,Products,NULL,8490227525,17
+1993,Defense,20:49.0,Products,Firm Fixed Price,31061576726,368
+1993,Defense,20:49.0,R&D,Cost Plus Incentive,2418627578,NULL
+1994,Defense,20:49.0,ERS,Fixed Price Incentive,513003152,469
+1994,Defense,20:49.0,ICT,Fixed Price with Economic Price Adjustment,386161191,2730
+1994,Defense,20:49.0,ICT,Labor Hours,56448315,292
+1994,Defense,20:49.0,MED,Fixed Price with Economic Price Adjustment,2537556,8
+1994,Defense,20:49.0,MED,Time and Materials,5158798,18
+1994,Defense,20:49.0,PAMS,Cost Sharing,1634460,11
+1994,Defense,20:49.0,R&D,Cost Sharing,144908537,276
+1995,Defense,20:49.0,ERS,NULL,465717571,460
+1995,Defense,20:49.0,ERS,Firm Fixed Price,4085186822,10677
+1995,Defense,20:49.0,FRS&C,Cost Plus Award Fee,1874531083,1443
+1995,Defense,20:49.0,FRS&C,Cost Plus Incentive,66215783,46
+1995,Defense,20:49.0,ICT,Fixed Price Incentive,22085583,3
+1995,Defense,20:49.0,ICT,Time and Materials,698103923,2191
+1995,Defense,20:49.0,MED,Fixed Price Incentive,162953263,187
+1995,Defense,20:49.0,PAMS,Cost No Fee,105522182,242
+1995,Defense,20:49.0,PAMS,Labor Hours,219652629,1107
+1995,Defense,20:49.0,Products,NULL,7756029126,4763
+1995,Defense,20:49.0,Products,Firm Fixed Price,25159989513,77671
+1995,Defense,20:49.0,R&D,Cost No Fee,1122005570,1827
+1995,Defense,20:49.0,R&D,Labor Hours,36341099,159
+1996,Defense,20:49.0,FRS&C,Cost Sharing,530148,5
+1996,Defense,20:49.0,Fuel,Cost Plus Fixed Fee,-1300000,1
+1996,Defense,20:49.0,ICT,NULL,31457775,108
+1996,Defense,20:49.0,ICT,Labor Hours,116840168,393
+1996,Defense,20:49.0,MED,NULL,961625,8
+1996,Defense,20:49.0,MED,Firm Fixed Price,1345711549,1741
+1996,Defense,20:49.0,PAMS,Cost Sharing,4554618,19
+1996,Defense,20:49.0,PAMS,Fixed Price with Economic Price Adjustment,130155603,86
+1996,Defense,20:49.0,PAMS,Time and Materials,1893074815,6426
+1996,Defense,20:49.0,Products,Cost Plus Award Fee,1521955486,708
+1996,Defense,20:49.0,R&D,Cost Sharing,107553437,241
+1996,Defense,20:49.0,R&D,Fixed Price with Economic Price Adjustment,172178304,32
+1996,Defense,20:49.0,R&D,Time and Materials,337395154,1591
+1997,Defense,20:49.0,ERS,NULL,119079592,740
+1997,Defense,20:49.0,ERS,Firm Fixed Price,4097625479,10038
+1997,Defense,20:49.0,FRS&C,Cost No Fee,203928183,245
+1997,Defense,20:49.0,ICT,Time and Materials,603346868,1804
+1997,Defense,20:49.0,MED,Fixed Price Incentive,67118344,164
+1997,Defense,20:49.0,PAMS,Cost No Fee,86436756,254
+1997,Defense,20:49.0,PAMS,Labor Hours,250693390,1093
+1997,Defense,20:49.0,Products,Fixed Price Redetermination,101797662,342
+1997,Defense,20:49.0,R&D,Cost No Fee,1000763078,1489
+1997,Defense,20:49.0,R&D,Labor Hours,51712327,161
+1998,Defense,20:49.0,ERS,Cost Plus Award Fee,1399238495,1491
+1998,Defense,20:49.0,FRS&C,Fixed Price with Economic Price Adjustment,365232125,870
+1998,Defense,20:49.0,ICT,NULL,656510335,2968
+1998,Defense,20:49.0,ICT,Fixed Price Redetermination,31673359,122
+1998,Defense,20:49.0,MED,NULL,2900059,37
+1993,Defense,20:49.0,MED,Time and Materials,212784,NULL
+1993,Defense,20:49.0,PAMS,Cost Sharing,4835251,NULL
+1993,Defense,20:49.0,R&D,Cost Sharing,148373930,NULL
+1994,Defense,20:49.0,ERS,Time and Materials,566116436,1977
+1994,Defense,20:49.0,FRS&C,Cost Plus Award Fee,1401513251,1141
+1994,Defense,20:49.0,FRS&C,Cost Plus Incentive,32259845,22
+1994,Defense,20:49.0,Fuel,NULL,89764130,24
+1994,Defense,20:49.0,Fuel,Firm Fixed Price,148817625,298
+1994,Defense,20:49.0,ICT,Fixed Price Incentive,22670273,9
+1994,Defense,20:49.0,MED,Fixed Price Incentive,139254841,136
+1994,Defense,20:49.0,MED,Labor Hours,519257,4
+1994,Defense,20:49.0,PAMS,Cost No Fee,118006470,227
+1994,Defense,20:49.0,PAMS,Cost Plus Incentive,207102958,65
+1994,Defense,20:49.0,Products,NULL,6817520598,4261
+1994,Defense,20:49.0,Products,Firm Fixed Price,24122179755,71187
+1994,Defense,20:49.0,R&D,Cost No Fee,865097277,1664
+1994,Defense,20:49.0,R&D,Cost Plus Incentive,3438923541,577
+1995,Defense,20:49.0,ERS,Fixed Price Incentive,256322610,177
+1995,Defense,20:49.0,FRS&C,Cost Sharing,999598,9
+1995,Defense,20:49.0,ICT,NULL,77857249,158
+1995,Defense,20:49.0,ICT,Labor Hours,66597306,245
+1995,Defense,20:49.0,MED,Time and Materials,4052250,8
+1995,Defense,20:49.0,PAMS,Cost Sharing,1664355,12
+1995,Defense,20:49.0,Products,Cost Plus Award Fee,1016016973,437
+1995,Defense,20:49.0,R&D,Cost Sharing,262907645,313
+1996,Defense,20:49.0,ERS,NULL,417567766,487
+1996,Defense,20:49.0,ERS,Firm Fixed Price,3876386369,10501
+1996,Defense,20:49.0,FRS&C,Cost No Fee,405048103,562
+1996,Defense,20:49.0,FRS&C,Cost Plus Award Fee,1771281089,1699
+1996,Defense,20:49.0,FRS&C,Cost Plus Incentive,16696826,62
+1996,Defense,20:49.0,ICT,Fixed Price Incentive,-724144,2
+1996,Defense,20:49.0,ICT,Time and Materials,635442267,2162
+1996,Defense,20:49.0,MED,Fixed Price Incentive,140889213,209
+1996,Defense,20:49.0,PAMS,Cost No Fee,84009720,256
+1996,Defense,20:49.0,PAMS,Labor Hours,232212691,1132
+1996,Defense,20:49.0,Products,NULL,8320768703,4945
+1996,Defense,20:49.0,Products,Firm Fixed Price,29731928320,89997
+1996,Defense,20:49.0,Products,Fixed Price Redetermination,193457561,260
+1996,Defense,20:49.0,R&D,Cost No Fee,990356590,1759
+1996,Defense,20:49.0,R&D,Labor Hours,42091522,166
+1997,Defense,20:49.0,ERS,Cost Plus Award Fee,1216162029,1046
+1997,Defense,20:49.0,FRS&C,Cost Sharing,908685,1
+1997,Defense,20:49.0,ICT,NULL,271655279,1473
+1997,Defense,20:49.0,ICT,Labor Hours,109505010,460
+1997,Defense,20:49.0,MED,NULL,1747518,34
+1997,Defense,20:49.0,MED,Firm Fixed Price,2566603191,1993
+1997,Defense,20:49.0,PAMS,Fixed Price with Economic Price Adjustment,54840357,136
+1997,Defense,20:49.0,PAMS,Time and Materials,1800247004,6586
+1997,Defense,20:49.0,Products,Cost Plus Award Fee,2234886758,837
+1997,Defense,20:49.0,Products,Cost Plus Fixed Fee,3664162291,1758
+1997,Defense,20:49.0,R&D,Fixed Price with Economic Price Adjustment,134836791,24
+1997,Defense,20:49.0,R&D,Time and Materials,340116628,1473
+1994,Defense,20:49.0,ICT,NULL,57120405,162
+1994,Defense,20:49.0,MED,NULL,632608,6
+1994,Defense,20:49.0,PAMS,Cost Plus Award Fee,2036051652,3114
+1994,Defense,20:49.0,PAMS,Cost Plus Fixed Fee,3743813980,10408
+1994,Defense,20:49.0,PAMS,Fixed Price with Economic Price Adjustment,234991113,61
+1994,Defense,20:49.0,Products,Cost No Fee,290690857,93
+1994,Defense,20:49.0,Products,Cost Plus Award Fee,535468623,331
+1994,Defense,20:49.0,Products,Cost Plus Fixed Fee,1996062795,1702
+1994,Defense,20:49.0,Products,Labor Hours,16013115,61
+1994,Defense,20:49.0,R&D,Time and Materials,345557211,1767
+1995,Defense,20:49.0,ERS,Fixed Price with Economic Price Adjustment,708091916,99
+1995,Defense,20:49.0,FRS&C,Cost No Fee,589151146,549
+1995,Defense,20:49.0,Fuel,Firm Fixed Price,146698133,284
+1995,Defense,20:49.0,PAMS,Fixed Price Incentive,109990942,140
+1995,Defense,20:49.0,Products,Fixed Price Redetermination,62289460,166
+1995,Defense,20:49.0,Products,Time and Materials,207821011,720
+1995,Defense,20:49.0,R&D,Cost Plus Incentive,2897081000,519
+1996,Defense,20:49.0,ERS,Fixed Price Incentive,360088366,143
+1996,Defense,20:49.0,FRS&C,Firm Fixed Price,13494099148,43412
+1996,Defense,20:49.0,ICT,Fixed Price with Economic Price Adjustment,325231773,1674
+1996,Defense,20:49.0,MED,Fixed Price with Economic Price Adjustment,189183313,25
+1996,Defense,20:49.0,Products,Cost Plus Fixed Fee,1611819101,1279
+1996,Defense,20:49.0,R&D,NULL,236956552,197
+1997,Defense,20:49.0,ERS,Cost Plus Incentive,302555111,50
+1997,Defense,20:49.0,ERS,Fixed Price with Economic Price Adjustment,347066752,71
+1997,Defense,20:49.0,FRS&C,Cost Plus Award Fee,1684481252,1821
+1997,Defense,20:49.0,FRS&C,Cost Plus Incentive,12527570,57
+1997,Defense,20:49.0,Fuel,Firm Fixed Price,119933734,409
+1997,Defense,20:49.0,ICT,Firm Fixed Price,2408799782,9619
+1997,Defense,20:49.0,ICT,Fixed Price Incentive,27822310,17
+1997,Defense,20:49.0,PAMS,Fixed Price Incentive,227215112,351
+1997,Defense,20:49.0,Products,NULL,1910603997,15490
+1997,Defense,20:49.0,R&D,Cost Plus Incentive,1400910284,447
+1998,Defense,20:49.0,ERS,Fixed Price Incentive,223639739,155
+1998,Defense,20:49.0,FRS&C,NULL,94585041,384
+1998,Defense,20:49.0,FRS&C,Firm Fixed Price,13269890944,41906
+1998,Defense,20:49.0,ICT,Cost Plus Award Fee,592819145,932
+1998,Defense,20:49.0,ICT,Fixed Price with Economic Price Adjustment,330670814,1479
+1998,Defense,20:49.0,ICT,Labor Hours,125194732,435
+1998,Defense,20:49.0,MED,Fixed Price with Economic Price Adjustment,3145227,5
+1998,Defense,20:49.0,PAMS,Cost Sharing,33537799,34
+1998,Defense,20:49.0,PAMS,Firm Fixed Price,5191340694,22503
+1998,Defense,20:49.0,Products,Cost Sharing,5053663,9
+1998,Defense,20:49.0,Products,Fixed Price Incentive,5312634838,1082
+1998,Defense,20:49.0,R&D,NULL,18486302,80
+1999,Defense,20:49.0,ERS,Cost Plus Incentive,128381046,43
+1999,Defense,20:49.0,ERS,Firm Fixed Price,3935086853,10002
+1999,Defense,20:49.0,FRS&C,Cost Plus Award Fee,1726310390,1875
+1999,Defense,20:49.0,FRS&C,Cost Plus Incentive,39049820,51
+1994,Defense,20:49.0,FRS&C,NULL,175708563,302
+1994,Defense,20:49.0,FRS&C,Time and Materials,191268260,553
+1994,Defense,20:49.0,Fuel,Cost No Fee,62032,1
+1994,Defense,20:49.0,Fuel,Fixed Price with Economic Price Adjustment,4311208494,1062
+1994,Defense,20:49.0,ICT,Cost Plus Award Fee,440369004,437
+1994,Defense,20:49.0,ICT,Cost Plus Fixed Fee,631173223,2161
+1994,Defense,20:49.0,PAMS,NULL,1096532789,894
+1994,Defense,20:49.0,PAMS,Firm Fixed Price,4677356711,19523
+1994,Defense,20:49.0,Products,Cost Sharing,2856138,14
+1994,Defense,20:49.0,Products,Fixed Price Incentive,9398672605,1949
+1994,Defense,20:49.0,R&D,Firm Fixed Price,2246676125,2850
+1995,Defense,20:49.0,ERS,Cost Sharing,429869968,20
+1995,Defense,20:49.0,FRS&C,Fixed Price Incentive,378797440,234
+1995,Defense,20:49.0,MED,Cost Plus Fixed Fee,18773427,51
+1995,Defense,20:49.0,PAMS,NULL,799084922,1045
+1995,Defense,20:49.0,PAMS,Cost Plus Award Fee,2151075267,3321
+1995,Defense,20:49.0,Products,Cost No Fee,70793027,58
+1995,Defense,20:49.0,Products,Cost Plus Incentive,1516343642,240
+1995,Defense,20:49.0,R&D,NULL,287503228,264
+1995,Defense,20:49.0,R&D,Cost Plus Award Fee,5178347438,2034
+1995,Defense,20:49.0,R&D,Firm Fixed Price,2075367143,2824
+1995,Defense,20:49.0,R&D,Fixed Price Redetermination,6131118,31
+1996,Defense,20:49.0,ERS,Cost Plus Incentive,141469949,29
+1996,Defense,20:49.0,FRS&C,Labor Hours,5467002,38
+1996,Defense,20:49.0,PAMS,Cost Plus Fixed Fee,4160233058,12109
+1996,Defense,20:49.0,R&D,Cost Plus Award Fee,7008768830,2198
+1997,Defense,20:49.0,FRS&C,NULL,275958771,945
+1997,Defense,20:49.0,FRS&C,Fixed Price Redetermination,174495039,239
+1997,Defense,20:49.0,FRS&C,Time and Materials,63197972,344
+1997,Defense,20:49.0,Fuel,Fixed Price with Economic Price Adjustment,4064241105,773
+1997,Defense,20:49.0,ICT,Cost Plus Award Fee,715218966,885
+1997,Defense,20:49.0,ICT,Cost Sharing,808600,8
+1997,Defense,20:49.0,PAMS,Cost Plus Fixed Fee,4460197488,12739
+1997,Defense,20:49.0,PAMS,Fixed Price Redetermination,60343732,115
+1997,Defense,20:49.0,Products,Cost Sharing,3396357,10
+1997,Defense,20:49.0,Products,Fixed Price Incentive,3083311920,1390
+1997,Defense,20:49.0,R&D,Cost Plus Fixed Fee,6969989802,13159
+1998,Defense,20:49.0,Fuel,Fixed Price with Economic Price Adjustment,2679986172,692
+1998,Defense,20:49.0,ICT,Cost No Fee,54567685,133
+1998,Defense,20:49.0,ICT,Cost Plus Incentive,-155974,3
+1998,Defense,20:49.0,ICT,Cost Sharing,562531,5
+1998,Defense,20:49.0,PAMS,Cost Plus Award Fee,2575208940,3440
+1998,Defense,20:49.0,PAMS,Fixed Price Redetermination,58832777,133
+1998,Defense,20:49.0,Products,Cost No Fee,2102839765,2204
+1998,Defense,20:49.0,Products,Fixed Price with Economic Price Adjustment,1105124123,2008
+1998,Defense,20:49.0,Products,Labor Hours,66209770,176
+1998,Defense,20:49.0,R&D,Cost Plus Fixed Fee,6940812900,12932
+1998,Defense,20:49.0,R&D,Fixed Price Redetermination,3769735,29
+1999,Defense,20:49.0,ERS,Cost No Fee,74648693,83
+1999,Defense,20:49.0,ERS,Cost Sharing,-133024,1
+1993,Defense,20:49.0,ICT,Fixed Price Redetermination,5197757,NULL
+1993,Defense,20:49.0,MED,Cost Plus Fixed Fee,5604877,NULL
+1993,Defense,20:49.0,PAMS,NULL,895811571,4
+1993,Defense,20:49.0,Products,Cost Plus Incentive,2141014556,10
+1993,Defense,20:49.0,R&D,NULL,509732342,2
+1993,Defense,20:49.0,R&D,Firm Fixed Price,2477542080,5
+1994,Defense,20:49.0,ERS,Cost Plus Incentive,60572441,21
+1994,Defense,20:49.0,FRS&C,Fixed Price Incentive,173549407,178
+1994,Defense,20:49.0,FRS&C,Labor Hours,2950826,23
+1994,Defense,20:49.0,ICT,Firm Fixed Price,2388137609,9571
+1994,Defense,20:49.0,MED,Cost Plus Fixed Fee,8237181,15
+1994,Defense,20:49.0,MED,Fixed Price Redetermination,302207021,24
+1994,Defense,20:49.0,Products,Cost Plus Incentive,2195795025,288
+1994,Defense,20:49.0,R&D,NULL,210474576,232
+1994,Defense,20:49.0,R&D,Cost Plus Award Fee,4201598504,1959
+1995,Defense,20:49.0,ERS,Cost Plus Incentive,95161981,31
+1995,Defense,20:49.0,FRS&C,NULL,162873656,308
+1995,Defense,20:49.0,FRS&C,Labor Hours,4031586,36
+1995,Defense,20:49.0,FRS&C,Time and Materials,112537666,415
+1995,Defense,20:49.0,Fuel,Fixed Price with Economic Price Adjustment,3311956582,1039
+1995,Defense,20:49.0,ICT,Cost Plus Award Fee,452353920,702
+1995,Defense,20:49.0,ICT,Firm Fixed Price,2424034214,9460
+1995,Defense,20:49.0,PAMS,Firm Fixed Price,4284096669,20486
+1995,Defense,20:49.0,PAMS,Fixed Price Redetermination,16931131,100
+1995,Defense,20:49.0,Products,Cost Sharing,1988095,10
+1995,Defense,20:49.0,Products,Fixed Price Incentive,7806560231,1972
+1996,Defense,20:49.0,ERS,Cost Sharing,250000,1
+1996,Defense,20:49.0,FRS&C,NULL,164689313,310
+1996,Defense,20:49.0,FRS&C,Time and Materials,56952565,312
+1996,Defense,20:49.0,Fuel,Fixed Price with Economic Price Adjustment,3705239951,1059
+1996,Defense,20:49.0,ICT,Cost Plus Award Fee,476007812,875
+1996,Defense,20:49.0,ICT,Cost Sharing,1844147,12
+1996,Defense,20:49.0,PAMS,Cost Plus Award Fee,2538518093,3203
+1996,Defense,20:49.0,PAMS,Firm Fixed Price,4048101187,21362
+1996,Defense,20:49.0,PAMS,Fixed Price Redetermination,20159386,133
+1996,Defense,20:49.0,Products,Cost No Fee,83261309,58
+1996,Defense,20:49.0,Products,Cost Sharing,1421981,5
+1996,Defense,20:49.0,Products,Fixed Price Incentive,3868710919,1690
+1996,Defense,20:49.0,Products,Fixed Price with Economic Price Adjustment,952761931,2240
+1996,Defense,20:49.0,Products,Labor Hours,30413255,79
+1996,Defense,20:49.0,R&D,Cost Plus Fixed Fee,6454738676,13855
+1996,Defense,20:49.0,R&D,Fixed Price Redetermination,19810923,24
+1997,Defense,20:49.0,ERS,Cost No Fee,15649239,24
+1997,Defense,20:49.0,ERS,Cost Sharing,770916,3
+1997,Defense,20:49.0,Fuel,Fixed Price Incentive,1560192,1
+1997,Defense,20:49.0,ICT,Cost No Fee,25761477,78
+1997,Defense,20:49.0,PAMS,Cost Plus Award Fee,2521402388,3310
+1997,Defense,20:49.0,Products,Cost No Fee,2572720053,2571
+1997,Defense,20:49.0,Products,Fixed Price with Economic Price Adjustment,1106589562,2233
+1997,Defense,20:49.0,Products,Labor Hours,64230496,156
+1994,Defense,20:49.0,ERS,Labor Hours,9120962,63
+1994,Defense,20:49.0,FRS&C,Cost Plus Fixed Fee,918766591,836
+1994,Defense,20:49.0,MED,Cost Sharing,178712,1
+1994,Defense,20:49.0,MED,Firm Fixed Price,370645801,1316
+1994,Defense,20:49.0,PAMS,Fixed Price Incentive,85705770,119
+1994,Defense,20:49.0,PAMS,Time and Materials,1497571328,5884
+1994,Defense,20:49.0,Products,Time and Materials,216410127,793
+1994,Defense,20:49.0,R&D,Fixed Price with Economic Price Adjustment,304503190,50
+1994,Defense,20:49.0,R&D,Labor Hours,179789450,133
+1995,Defense,20:49.0,ERS,Time and Materials,599313832,2213
+1995,Defense,20:49.0,FRS&C,Fixed Price Redetermination,85955898,245
+1995,Defense,20:49.0,Fuel,NULL,61488910,3
+1995,Defense,20:49.0,ICT,Cost Plus Fixed Fee,693247045,2014
+1995,Defense,20:49.0,MED,NULL,449657,4
+1995,Defense,20:49.0,MED,Cost Plus Award Fee,495884,2
+1995,Defense,20:49.0,MED,Fixed Price with Economic Price Adjustment,1900058,11
+1995,Defense,20:49.0,MED,Labor Hours,776470,11
+1995,Defense,20:49.0,PAMS,Cost Plus Fixed Fee,3916965603,11452
+1995,Defense,20:49.0,Products,Cost Plus Fixed Fee,1173022466,1391
+1995,Defense,20:49.0,R&D,Fixed Price Incentive,1688103222,446
+1995,Defense,20:49.0,R&D,Time and Materials,431264392,1744
+1996,Defense,20:49.0,ERS,Cost Plus Fixed Fee,1035808551,1350
+1996,Defense,20:49.0,FRS&C,Fixed Price with Economic Price Adjustment,307139112,1037
+1996,Defense,20:49.0,ICT,Cost Plus Incentive,80981889,19
+1996,Defense,20:49.0,ICT,Fixed Price Redetermination,17824613,63
+1996,Defense,20:49.0,MED,Time and Materials,59583591,23
+1996,Defense,20:49.0,PAMS,NULL,1019462155,1234
+1996,Defense,20:49.0,R&D,Firm Fixed Price,2343314560,3273
+1997,Defense,20:49.0,ERS,Fixed Price Redetermination,9176390,45
+1997,Defense,20:49.0,FRS&C,Firm Fixed Price,13765827749,41890
+1997,Defense,20:49.0,FRS&C,Fixed Price Incentive,169970719,210
+1997,Defense,20:49.0,ICT,Fixed Price with Economic Price Adjustment,178399865,1429
+1997,Defense,20:49.0,MED,Cost Plus Fixed Fee,10816510,93
+1997,Defense,20:49.0,PAMS,Cost Plus Incentive,95184556,195
+1997,Defense,20:49.0,Products,Cost Plus Incentive,2526168358,293
+1997,Defense,20:49.0,R&D,NULL,27152453,114
+1998,Defense,20:49.0,ERS,Cost Plus Incentive,1338918374,37
+1998,Defense,20:49.0,FRS&C,Cost Plus Award Fee,1637774582,1763
+1998,Defense,20:49.0,FRS&C,Labor Hours,14568509,52
+1998,Defense,20:49.0,Fuel,Firm Fixed Price,417117066,461
+1998,Defense,20:49.0,Fuel,Fixed Price Redetermination,244350,1
+1998,Defense,20:49.0,ICT,Firm Fixed Price,2182773974,8093
+1998,Defense,20:49.0,ICT,Fixed Price Incentive,4073063,5
+1998,Defense,20:49.0,MED,Fixed Price Redetermination,256741814,9
+1998,Defense,20:49.0,R&D,Cost Plus Incentive,1170246424,436
+1999,Defense,20:49.0,ERS,Fixed Price Incentive,201750180,142
+1999,Defense,20:49.0,FRS&C,NULL,110320973,442
+1999,Defense,20:49.0,FRS&C,Time and Materials,109645764,359
+1999,Defense,20:49.0,Fuel,Cost No Fee,938652,1
+1999,Defense,20:49.0,Fuel,Fixed Price with Economic Price Adjustment,2527104862,745
+1993,Defense,20:49.0,FRS&C,Fixed Price Redetermination,78171406,5
+1993,Defense,20:49.0,MED,NULL,1367552,NULL
+1993,Defense,20:49.0,PAMS,Cost Plus Fixed Fee,3911312631,86
+1993,Defense,20:49.0,Products,Cost Plus Fixed Fee,2803493824,9
+1993,Defense,20:49.0,R&D,Fixed Price Incentive,2581974111,NULL
+1993,Defense,20:49.0,R&D,Time and Materials,328749063,NULL
+1994,Defense,20:49.0,ERS,Cost Plus Fixed Fee,966728423,1185
+1994,Defense,20:49.0,FRS&C,Cost No Fee,667797559,547
+1994,Defense,20:49.0,FRS&C,Fixed Price with Economic Price Adjustment,221552580,710
+1994,Defense,20:49.0,ICT,Cost Plus Incentive,79938802,15
+1994,Defense,20:49.0,ICT,Cost Sharing,5333183,15
+1994,Defense,20:49.0,ICT,Fixed Price Redetermination,1316301,54
+1994,Defense,20:49.0,PAMS,Fixed Price Redetermination,7057698,80
+1994,Defense,20:49.0,Products,Fixed Price Redetermination,23544376,108
+1994,Defense,20:49.0,R&D,Cost Plus Fixed Fee,6191239883,12160
+1995,Defense,20:49.0,ERS,Fixed Price Redetermination,2534935,29
+1995,Defense,20:49.0,FRS&C,Firm Fixed Price,12712960963,40269
+1995,Defense,20:49.0,Fuel,Fixed Price Incentive,-2840754,1
+1995,Defense,20:49.0,ICT,Cost No Fee,27836416,25
+1995,Defense,20:49.0,ICT,Fixed Price with Economic Price Adjustment,361706924,2537
+1995,Defense,20:49.0,PAMS,Cost Plus Incentive,199323814,88
+1995,Defense,20:49.0,PAMS,Fixed Price with Economic Price Adjustment,154511313,81
+1995,Defense,20:49.0,Products,Fixed Price with Economic Price Adjustment,1385076720,2485
+1995,Defense,20:49.0,Products,Labor Hours,18374823,55
+1996,Defense,20:49.0,ERS,Cost No Fee,25493033,38
+1996,Defense,20:49.0,ERS,Cost Plus Award Fee,879226942,769
+1996,Defense,20:49.0,ERS,Fixed Price with Economic Price Adjustment,292045505,73
+1996,Defense,20:49.0,ERS,Labor Hours,10871135,65
+1996,Defense,20:49.0,FRS&C,Cost Plus Fixed Fee,1104443695,1103
+1996,Defense,20:49.0,Fuel,Firm Fixed Price,124745031,410
+1996,Defense,20:49.0,ICT,Firm Fixed Price,2965771949,12445
+1996,Defense,20:49.0,MED,Fixed Price Redetermination,441917,6
+1996,Defense,20:49.0,PAMS,Fixed Price Incentive,61939584,146
+1996,Defense,20:49.0,Products,Time and Materials,183351325,649
+1996,Defense,20:49.0,R&D,Cost Plus Incentive,1788518278,511
+1997,Defense,20:49.0,ERS,Fixed Price Incentive,299943571,98
+1997,Defense,20:49.0,ERS,Time and Materials,687649756,1467
+1997,Defense,20:49.0,Fuel,NULL,3007121,23
+1997,Defense,20:49.0,Fuel,Cost No Fee,343144,2
+1997,Defense,20:49.0,ICT,Cost Plus Fixed Fee,677005656,2091
+1997,Defense,20:49.0,MED,Cost No Fee,908658,8
+1997,Defense,20:49.0,MED,Fixed Price with Economic Price Adjustment,380748,4
+1997,Defense,20:49.0,MED,Labor Hours,637757,15
+1997,Defense,20:49.0,PAMS,Cost Sharing,6484007,24
+1997,Defense,20:49.0,PAMS,Firm Fixed Price,4664742759,21171
+1997,Defense,20:49.0,Products,Firm Fixed Price,27585103178,76101
+1997,Defense,20:49.0,R&D,Fixed Price Incentive,49517055,77
+1998,Defense,20:49.0,ERS,Cost Plus Fixed Fee,858228666,1247
+1994,Defense,20:49.0,FRS&C,Fixed Price Redetermination,136964439,223
+1994,Defense,20:49.0,Fuel,Time and Materials,34349,1
+1994,Defense,20:49.0,ICT,Cost No Fee,37902267,82
+1994,Defense,20:49.0,ICT,Time and Materials,654000953,1868
+1994,Defense,20:49.0,MED,Cost No Fee,192000,1
+1994,Defense,20:49.0,MED,Cost Plus Award Fee,27661,1
+1994,Defense,20:49.0,PAMS,Labor Hours,262143157,1098
+1994,Defense,20:49.0,Products,Fixed Price with Economic Price Adjustment,1347740441,2745
+1994,Defense,20:49.0,R&D,Fixed Price Incentive,2376085622,504
+1994,Defense,20:49.0,R&D,Fixed Price Redetermination,225863399,28
+1995,Defense,20:49.0,ERS,Cost No Fee,34549974,48
+1995,Defense,20:49.0,ERS,Cost Plus Award Fee,925580709,876
+1995,Defense,20:49.0,ERS,Cost Plus Fixed Fee,733775878,1167
+1995,Defense,20:49.0,ERS,Labor Hours,10007098,65
+1995,Defense,20:49.0,FRS&C,Cost Plus Fixed Fee,1054717862,959
+1995,Defense,20:49.0,FRS&C,Fixed Price with Economic Price Adjustment,231699221,871
+1995,Defense,20:49.0,ICT,Cost Plus Incentive,56503367,21
+1995,Defense,20:49.0,ICT,Cost Sharing,1007195,10
+1995,Defense,20:49.0,ICT,Fixed Price Redetermination,60384523,68
+1995,Defense,20:49.0,MED,Firm Fixed Price,1522756467,1493
+1995,Defense,20:49.0,MED,Fixed Price Redetermination,17434568,13
+1995,Defense,20:49.0,PAMS,Time and Materials,1867120954,6606
+1995,Defense,20:49.0,R&D,Cost Plus Fixed Fee,6565424382,13264
+1995,Defense,20:49.0,R&D,Fixed Price with Economic Price Adjustment,232095987,28
+1996,Defense,20:49.0,ERS,Fixed Price Redetermination,8668561,46
+1996,Defense,20:49.0,ERS,Time and Materials,589438889,2089
+1996,Defense,20:49.0,FRS&C,Fixed Price Incentive,278550023,310
+1996,Defense,20:49.0,FRS&C,Fixed Price Redetermination,76029877,271
+1996,Defense,20:49.0,Fuel,NULL,66611270,8
+1996,Defense,20:49.0,ICT,Cost No Fee,11692017,64
+1996,Defense,20:49.0,ICT,Cost Plus Fixed Fee,668829235,1994
+1996,Defense,20:49.0,MED,Cost No Fee,79695,2
+1996,Defense,20:49.0,MED,Cost Plus Award Fee,1936453,3
+1996,Defense,20:49.0,MED,Cost Plus Fixed Fee,10761894,17
+1996,Defense,20:49.0,MED,Labor Hours,145712,5
+1996,Defense,20:49.0,PAMS,Cost Plus Incentive,273439924,109
+1996,Defense,20:49.0,Products,Cost Plus Incentive,1798290580,233
+1996,Defense,20:49.0,R&D,Fixed Price Incentive,-111337715,281
+1997,Defense,20:49.0,ERS,Cost Plus Fixed Fee,1026244912,1234
+1997,Defense,20:49.0,ERS,Labor Hours,14365739,46
+1997,Defense,20:49.0,FRS&C,Cost Plus Fixed Fee,887546924,1078
+1997,Defense,20:49.0,FRS&C,Fixed Price with Economic Price Adjustment,242532524,633
+1997,Defense,20:49.0,FRS&C,Labor Hours,1797958,24
+1997,Defense,20:49.0,ICT,Cost Plus Incentive,2761710,2
+1997,Defense,20:49.0,ICT,Fixed Price Redetermination,5310626,42
+1997,Defense,20:49.0,MED,Fixed Price Redetermination,484585,4
+1997,Defense,20:49.0,MED,Time and Materials,4603149,5
+1997,Defense,20:49.0,PAMS,NULL,225611333,987
+1997,Defense,20:49.0,R&D,Cost Sharing,85218693,185
+1998,Defense,20:49.0,FRS&C,Cost Plus Incentive,6903090,35
+1998,Defense,20:49.0,MED,Fixed Price Incentive,70533844,118
+1998,Defense,20:49.0,MED,Time and Materials,221048,3
+1998,Defense,20:49.0,PAMS,NULL,466675457,2055
+1998,Defense,20:49.0,PAMS,Cost No Fee,134709575,240
+1998,Defense,20:49.0,Products,NULL,2044242210,16485
+1998,Defense,20:49.0,R&D,Cost Sharing,93946757,190
+1998,Defense,20:49.0,R&D,Firm Fixed Price,2512841050,3626
+1999,Defense,20:49.0,ERS,NULL,144598917,933
+1999,Defense,20:49.0,FRS&C,Fixed Price Incentive,261096838,150
+1999,Defense,20:49.0,MED,Cost Plus Fixed Fee,61894866,102
+1999,Defense,20:49.0,Products,Cost Plus Incentive,1944213315,356
+1999,Defense,20:49.0,R&D,NULL,9933044,77
+1999,Defense,20:49.0,R&D,Cost No Fee,960998457,1386
+1999,Defense,20:49.0,R&D,Cost Plus Award Fee,6823237499,2103
+1999,Defense,20:49.0,R&D,Labor Hours,89830792,188
+2000,Defense,20:49.0,ERS,Cost Plus Incentive,193133089,38
+2000,Defense,20:49.0,FRS&C,Cost Plus Award Fee,1475151752,1851
+2000,Defense,20:49.0,FRS&C,Cost Sharing,5889356,7
+2000,Defense,20:49.0,FRS&C,Labor Hours,20654618,62
+2000,Defense,20:49.0,ICT,Combination (two or more),630815.84,9
+2000,Defense,20:49.0,ICT,Fixed Price Incentive,18329043,11
+2000,Defense,20:49.0,MED,Not Reported,1122637,13
+2000,Defense,20:49.0,PAMS,Cost Plus Fixed Fee,5192501924,14719
+2000,Defense,20:49.0,PAMS,Other (none of the above),0,1
+2000,Defense,20:49.0,R&D,Not Reported,14452710.78,96
+2000,Defense,20:49.0,R&D,Time and Materials,351315382,1518
+2001,Defense,20:49.0,ERS,Combination (two or more),24950.1,1
+2001,Defense,20:49.0,FRS&C,Cost No Fee,179109312,515
+2001,Defense,20:49.0,FRS&C,Time and Materials,255476020,1111
+2001,Defense,20:49.0,Fuel,Fixed Price with Economic Price Adjustment,4010983261,672
+2001,Defense,20:49.0,ICT,Cost Plus Award Fee,551347185,734
+2001,Defense,20:49.0,ICT,Cost Sharing,1148608,3
+2001,Defense,20:49.0,ICT,Labor Hours,165342060,462
+2001,Defense,20:49.0,PAMS,Fixed Price Redetermination,68735608,128
+2001,Defense,20:49.0,Products,Combination (two or more),120105,1
+2001,Defense,20:49.0,Products,Cost Sharing,3361611,6
+2001,Defense,20:49.0,Products,Firm Fixed Price,39117365313,95072
+2001,Defense,20:49.0,Products,Fixed Price Incentive,3618703349,1062
+2001,Defense,20:49.0,Products,Fixed Price Redetermination,439898143,244
+2001,Defense,20:49.0,R&D,Cost Plus Fixed Fee,6572443858,13481
+2001,Defense,20:49.0,R&D,Fixed Price Award Fee,329197,3
+2002,Defense,20:49.0,NULL,Firm Fixed Price,37504897.46,73
+2002,Defense,20:49.0,ERS,Cost Sharing,222673,2
+2002,Defense,20:49.0,ERS,Firm Fixed Price,5333126642,25460
+2002,Defense,20:49.0,ERS,Fixed Price Redetermination,68512063,37
+2002,Defense,20:49.0,FRS&C,Fixed Price Award Fee,311695662,1589
+2002,Defense,20:49.0,ICT,Cost No Fee,14748113.99,59
+2002,Defense,20:49.0,ICT,Time and Materials,894692366.9,1991
+2002,Defense,20:49.0,MED,Combination (two or more),5823152.34,3
+2002,Defense,20:49.0,PAMS,Cost No Fee,558977544,664
+1997,Defense,20:49.0,Products,Time and Materials,236724712,691
+1997,Defense,20:49.0,R&D,Cost Plus Award Fee,5396701225,2076
+1997,Defense,20:49.0,R&D,Fixed Price Redetermination,6502102,13
+1998,Defense,20:49.0,ERS,Cost No Fee,36231887,77
+1998,Defense,20:49.0,ERS,Fixed Price with Economic Price Adjustment,604111557,103
+1998,Defense,20:49.0,ERS,Labor Hours,6558212,40
+1998,Defense,20:49.0,FRS&C,Cost Plus Fixed Fee,1277698708,1253
+1998,Defense,20:49.0,FRS&C,Fixed Price Redetermination,97153716,258
+1998,Defense,20:49.0,MED,Cost No Fee,383143,11
+1998,Defense,20:49.0,PAMS,Cost Plus Fixed Fee,4653136115,12851
+1998,Defense,20:49.0,Products,Time and Materials,220189562,659
+1998,Defense,20:49.0,R&D,Cost Plus Award Fee,6504890605,2206
+1999,Defense,20:49.0,ERS,Time and Materials,711367222,1466
+1999,Defense,20:49.0,FRS&C,Fixed Price Redetermination,90817984,293
+1999,Defense,20:49.0,Fuel,NULL,2627680,2
+1999,Defense,20:49.0,ICT,Cost Plus Incentive,141727,2
+1999,Defense,20:49.0,ICT,Cost Sharing,50000,1
+1999,Defense,20:49.0,MED,Cost No Fee,204453,3
+1999,Defense,20:49.0,MED,Labor Hours,1200296,9
+1999,Defense,20:49.0,PAMS,Cost Plus Fixed Fee,4643445438,13582
+1999,Defense,20:49.0,R&D,Cost Plus Fixed Fee,6154147668,13666
+2000,Defense,20:49.0,NULL,Fixed Price Incentive,0,NULL
+2000,Defense,20:49.0,ERS,Not Reported,101467041,728
+2000,Defense,20:49.0,FRS&C,Firm Fixed Price,13594266535,64151
+2000,Defense,20:49.0,ICT,Cost No Fee,21222251,41
+2000,Defense,20:49.0,ICT,Cost Plus Incentive,1484256,4
+2000,Defense,20:49.0,ICT,Fixed Price with Economic Price Adjustment,130241304,1479
+2000,Defense,20:49.0,MED,Time and Materials,168981,9
+2000,Defense,20:49.0,PAMS,Cost Plus Incentive,150428240,153
+2000,Defense,20:49.0,Products,Fixed Price with Economic Price Adjustment,1544559725,1986
+2000,Defense,20:49.0,R&D,Fixed Price Award Fee,5416334,4
+2001,Defense,20:49.0,NULL,Combination (two or more),12475,1
+2001,Defense,20:49.0,NULL,Cost No Fee,0,1
+2001,Defense,20:49.0,ERS,Fixed Price with Economic Price Adjustment,975697126,174
+2001,Defense,20:49.0,ERS,Labor Hours,67779717,34
+2001,Defense,20:49.0,ERS,Not Reported,88010024,682
+2001,Defense,20:49.0,FRS&C,Cost Plus Award Fee,1694174904,2169
+2001,Defense,20:49.0,FRS&C,Cost Plus Fixed Fee,1080773521,1322
+2001,Defense,20:49.0,FRS&C,Firm Fixed Price,15093397937,67885
+2001,Defense,20:49.0,Fuel,Firm Fixed Price,101883608,382
+2001,Defense,20:49.0,ICT,Cost No Fee,21589931,70
+2001,Defense,20:49.0,ICT,Fixed Price Incentive,26988913,15
+2001,Defense,20:49.0,ICT,Fixed Price with Economic Price Adjustment,690427134,2654
+2001,Defense,20:49.0,PAMS,Cost Plus Incentive,302305633,188
+2001,Defense,20:49.0,R&D,Cost Plus Incentive,1043278148,309
+2002,Defense,20:49.0,NULL,Cost No Fee,1,2
+2002,Defense,20:49.0,NULL,Time and Materials,4125519.72,11
+2002,Defense,20:49.0,ERS,Fixed Price Incentive,1334055165,211
+2002,Defense,20:49.0,ERS,Fixed Price with Economic Price Adjustment,607910717,522
+1999,Defense,20:49.0,ICT,Cost Plus Award Fee,610133635,778
+1999,Defense,20:49.0,ICT,Labor Hours,131643563,450
+1999,Defense,20:49.0,MED,Fixed Price with Economic Price Adjustment,4157861,33
+1999,Defense,20:49.0,PAMS,Cost Sharing,11717957,36
+1999,Defense,20:49.0,PAMS,Firm Fixed Price,5000737958,22290
+1999,Defense,20:49.0,PAMS,Fixed Price Redetermination,70703960,176
+1999,Defense,20:49.0,Products,Cost Sharing,3070790,10
+1999,Defense,20:49.0,Products,Firm Fixed Price,29964874258,79651
+1999,Defense,20:49.0,Products,Fixed Price Incentive,5113308502,1115
+2000,Defense,20:49.0,NULL,Cost Plus Fixed Fee,3253701,14
+2000,Defense,20:49.0,ERS,Cost Sharing,6053484,6
+2000,Defense,20:49.0,ERS,Firm Fixed Price,4088066879,13616
+2000,Defense,20:49.0,FRS&C,Cost Plus Incentive,57219265,61
+2000,Defense,20:49.0,FRS&C,Fixed Price Award Fee,122157099,152
+2000,Defense,20:49.0,FRS&C,Other (none of the above),2894007,10
+2000,Defense,20:49.0,Fuel,Time and Materials,59515,2
+2000,Defense,20:49.0,ICT,Not Reported,1951904953,6868
+2000,Defense,20:49.0,ICT,Time and Materials,1143669600,1736
+2000,Defense,20:49.0,MED,Fixed Price Incentive,9257277,12
+2000,Defense,20:49.0,PAMS,Cost No Fee,159642506,331
+2000,Defense,20:49.0,PAMS,Cost Plus Award Fee,3896017078,4214
+2000,Defense,20:49.0,PAMS,Fixed Price with Economic Price Adjustment,64384813,64
+2000,Defense,20:49.0,PAMS,Labor Hours,189957962.5,633
+2000,Defense,20:49.0,Products,Cost No Fee,888376483,1308
+2000,Defense,20:49.0,Products,Cost Plus Award Fee,2594769403,1099
+2000,Defense,20:49.0,Products,Labor Hours,116272490,173
+2000,Defense,20:49.0,Products,Order Dependent (IDV only),0,NULL
+2000,Defense,20:49.0,R&D,Cost Sharing,159843852,220
+2000,Defense,20:49.0,R&D,Firm Fixed Price,2121855262,4053
+2000,Defense,20:49.0,R&D,Fixed Price Redetermination,109044679,112
+2001,Defense,20:49.0,ERS,Cost No Fee,107311091,126
+2001,Defense,20:49.0,ERS,Cost Plus Award Fee,1202050588,2055
+2001,Defense,20:49.0,ICT,Fixed Price Award Fee,10262851,22
+2001,Defense,20:49.0,MED,Firm Fixed Price,2934300909,3061
+2001,Defense,20:49.0,PAMS,Time and Materials,1976508870,6368
+2001,Defense,20:49.0,Products,Not Reported,2687353634,21379
+2001,Defense,20:49.0,Products,Time and Materials,250344276.2,673
+2001,Defense,20:49.0,R&D,Cost No Fee,1046830594,1458
+2001,Defense,20:49.0,R&D,Cost Plus Award Fee,8060014830,1603
+2001,Defense,20:49.0,R&D,Fixed Price with Economic Price Adjustment,148084644,30
+2001,Defense,20:49.0,R&D,Labor Hours,41240364,91
+2002,Defense,20:49.0,NULL,Not Reported,2862873.83,49
+2002,Defense,20:49.0,FRS&C,Cost Sharing,66113,3
+2002,Defense,20:49.0,FRS&C,Fixed Price Redetermination,121123394,183
+2002,Defense,20:49.0,Fuel,Not Reported,5402521,14
+2002,Defense,20:49.0,ICT,Combination (two or more),868653,2
+2002,Defense,20:49.0,MED,Cost No Fee,23119808.98,24
+2002,Defense,20:49.0,PAMS,Cost Plus Fixed Fee,5348152022,16882
+2002,Defense,20:49.0,PAMS,Fixed Price Award Fee,106274524.6,105
+1998,Defense,20:49.0,MED,Firm Fixed Price,2640613412,2466
+1998,Defense,20:49.0,PAMS,Fixed Price with Economic Price Adjustment,55068327,112
+1998,Defense,20:49.0,PAMS,Time and Materials,1855695696,6361
+1998,Defense,20:49.0,Products,Cost Plus Award Fee,1923834280,751
+1998,Defense,20:49.0,Products,Cost Plus Fixed Fee,3185255525,1730
+1998,Defense,20:49.0,R&D,Fixed Price with Economic Price Adjustment,230912408,25
+1998,Defense,20:49.0,R&D,Time and Materials,343041858,1236
+1999,Defense,20:49.0,ERS,Fixed Price Redetermination,8854450,54
+1999,Defense,20:49.0,FRS&C,Cost No Fee,124821336,185
+1999,Defense,20:49.0,ICT,Cost Plus Fixed Fee,726652028,2071
+1999,Defense,20:49.0,MED,Cost Plus Award Fee,-72881,1
+1999,Defense,20:49.0,PAMS,Fixed Price Incentive,145277013,239
+1999,Defense,20:49.0,Products,Fixed Price Redetermination,100837089,318
+1999,Defense,20:49.0,R&D,Fixed Price Incentive,89971470,74
+2000,Defense,20:49.0,NULL,Firm Fixed Price,181799.12,26
+2000,Defense,20:49.0,ERS,Cost Plus Award Fee,1500523855,2576
+2000,Defense,20:49.0,ERS,Cost Plus Fixed Fee,749195274,1363
+2000,Defense,20:49.0,FRS&C,Fixed Price with Economic Price Adjustment,345420884,770
+2000,Defense,20:49.0,ICT,Fixed Price Redetermination,13778982,59
+2000,Defense,20:49.0,MED,Firm Fixed Price,2091771991,2337
+2000,Defense,20:49.0,MED,Fixed Price Redetermination,97900,2
+2000,Defense,20:49.0,Products,Cost Plus Fixed Fee,3377320884,2353
+2001,Defense,20:49.0,NULL,Cost Plus Award Fee,17913,2
+2001,Defense,20:49.0,NULL,Cost Plus Fixed Fee,1488528,12
+2001,Defense,20:49.0,NULL,Order Dependent (IDV only),0,NULL
+2001,Defense,20:49.0,ERS,Fixed Price Award Fee,214777883,164
+2001,Defense,20:49.0,ERS,Fixed Price Redetermination,129745050,71
+2001,Defense,20:49.0,FRS&C,Fixed Price Incentive,289512824,855
+2001,Defense,20:49.0,FRS&C,Not Reported,261097239,967
+2001,Defense,20:49.0,ICT,Cost Plus Fixed Fee,523658265,1722
+2001,Defense,20:49.0,ICT,Firm Fixed Price,2695807795,9605
+2001,Defense,20:49.0,MED,Cost Plus Fixed Fee,161623409,160
+2001,Defense,20:49.0,PAMS,Combination (two or more),196578482,13
+2001,Defense,20:49.0,PAMS,Fixed Price Incentive,209480585,234
+2001,Defense,20:49.0,PAMS,Not Reported,1180185354,4715
+2001,Defense,20:49.0,PAMS,Order Dependent (IDV only),0,NULL
+2001,Defense,20:49.0,Products,Cost Plus Incentive,1628808530,388
+2001,Defense,20:49.0,Products,Fixed Price Award Fee,75547937.54,50
+2001,Defense,20:49.0,R&D,Combination (two or more),513745,1
+2001,Defense,20:49.0,R&D,Fixed Price Incentive,313175387,58
+2002,Defense,20:49.0,ERS,Cost Plus Fixed Fee,945023985.1,1785
+2002,Defense,20:49.0,FRS&C,Labor Hours,22928338,42
+2002,Defense,20:49.0,ICT,Cost Plus Award Fee,612397756,795
+2002,Defense,20:49.0,ICT,Fixed Price Redetermination,3108608,18
+2002,Defense,20:49.0,MED,Fixed Price Redetermination,1620000,1
+2002,Defense,20:49.0,PAMS,Firm Fixed Price,7460381170,43980
+2002,Defense,20:49.0,Products,Cost Sharing,-154372,4
+2002,Defense,20:49.0,R&D,Firm Fixed Price,3949103389,5721
+1997,Defense,20:49.0,R&D,Firm Fixed Price,3487392478,3707
+1998,Defense,20:49.0,ERS,Time and Materials,769395279,1597
+1998,Defense,20:49.0,FRS&C,Fixed Price Incentive,138774435,196
+1998,Defense,20:49.0,FRS&C,Time and Materials,125901170,326
+1998,Defense,20:49.0,Fuel,NULL,1158715,11
+1998,Defense,20:49.0,Fuel,Cost No Fee,437344,6
+1998,Defense,20:49.0,ICT,Cost Plus Fixed Fee,699748022,2082
+1998,Defense,20:49.0,MED,Cost Plus Fixed Fee,18970316,74
+1998,Defense,20:49.0,MED,Labor Hours,921099,9
+1998,Defense,20:49.0,PAMS,Cost Plus Incentive,91256984,116
+1998,Defense,20:49.0,Products,Cost Plus Incentive,2511822229,383
+1998,Defense,20:49.0,Products,Firm Fixed Price,26466879666,76775
+1998,Defense,20:49.0,R&D,Cost No Fee,1007851236,1425
+1999,Defense,20:49.0,FRS&C,Cost Sharing,170000,1
+1999,Defense,20:49.0,FRS&C,Labor Hours,8044263,39
+1999,Defense,20:49.0,MED,Time and Materials,410218,7
+1999,Defense,20:49.0,PAMS,NULL,959447021,3958
+1999,Defense,20:49.0,Products,Cost Plus Award Fee,2849958873,1109
+1999,Defense,20:49.0,R&D,Cost Sharing,105631093,184
+1999,Defense,20:49.0,R&D,Firm Fixed Price,2466487027,3833
+1999,Defense,20:49.0,R&D,Fixed Price Redetermination,11391068,64
+2000,Defense,20:49.0,FRS&C,Cost No Fee,121615137,316
+2000,Defense,20:49.0,FRS&C,Time and Materials,131333964,428
+2000,Defense,20:49.0,ICT,Cost Sharing,27219,1
+2000,Defense,20:49.0,ICT,Fixed Price Award Fee,98400,1
+2000,Defense,20:49.0,Products,Firm Fixed Price,35619872072,83134
+2000,Defense,20:49.0,Products,Fixed Price Redetermination,313208609,458
+2000,Defense,20:49.0,R&D,Cost No Fee,941303155,1515
+2000,Defense,20:49.0,R&D,Cost Plus Award Fee,7112999503,1942
+2000,Defense,20:49.0,R&D,Cost Plus Fixed Fee,6058596374,14360
+2000,Defense,20:49.0,R&D,Labor Hours,39986739,101
+2001,Defense,20:49.0,NULL,Firm Fixed Price,1328343.45,57
+2001,Defense,20:49.0,NULL,Fixed Price Award Fee,13342,1
+2001,Defense,20:49.0,ERS,Cost Sharing,575084,3
+2001,Defense,20:49.0,FRS&C,Fixed Price Award Fee,259746914,460
+2001,Defense,20:49.0,FRS&C,Fixed Price Redetermination,114051553,193
+2001,Defense,20:49.0,PAMS,Fixed Price Award Fee,45600988,59
+2001,Defense,20:49.0,PAMS,Fixed Price with Economic Price Adjustment,33244617,46
+2001,Defense,20:49.0,Products,Cost Plus Award Fee,2465289950,1125
+2001,Defense,20:49.0,Products,Cost Plus Fixed Fee,6297784500,1974
+2001,Defense,20:49.0,Products,Fixed Price with Economic Price Adjustment,2345818234,3589
+2001,Defense,20:49.0,Products,Order Dependent (IDV only),0,NULL
+2001,Defense,20:49.0,R&D,Fixed Price Redetermination,68745563,90
+2001,Defense,20:49.0,R&D,Not Reported,12218713.03,79
+2001,Defense,20:49.0,R&D,Time and Materials,432952301.2,1428
+2002,Defense,20:49.0,NULL,Order Dependent (IDV only),0,NULL
+2002,Defense,20:49.0,ERS,Cost No Fee,31502440,121
+2002,Defense,20:49.0,ERS,Labor Hours,2981514,40
+2002,Defense,20:49.0,FRS&C,Cost No Fee,369275930,669
+2002,Defense,20:49.0,FRS&C,Cost Plus Fixed Fee,858633557.4,1118
+1999,Defense,20:49.0,Fuel,Firm Fixed Price,96921513,365
+1999,Defense,20:49.0,ICT,Firm Fixed Price,2047791020,7483
+1999,Defense,20:49.0,ICT,Fixed Price Incentive,23714059,15
+1999,Defense,20:49.0,ICT,Time and Materials,765462849,1867
+1999,Defense,20:49.0,MED,Fixed Price Incentive,2783864,40
+1999,Defense,20:49.0,PAMS,Cost No Fee,99103907,236
+1999,Defense,20:49.0,PAMS,Cost Plus Award Fee,3278282046,3569
+1999,Defense,20:49.0,PAMS,Labor Hours,177271140,819
+1999,Defense,20:49.0,Products,NULL,2660729684,19340
+1999,Defense,20:49.0,Products,Cost No Fee,1229812248,1922
+2000,Defense,20:49.0,NULL,Combination (two or more),48443,2
+2000,Defense,20:49.0,NULL,Time and Materials,254795,4
+2000,Defense,20:49.0,ERS,Order Dependent (IDV only),0,NULL
+2000,Defense,20:49.0,Fuel,Fixed Price with Economic Price Adjustment,3436313188,591
+2000,Defense,20:49.0,ICT,Cost Plus Award Fee,617638843,738
+2000,Defense,20:49.0,ICT,Labor Hours,147995829,484
+2000,Defense,20:49.0,PAMS,Cost Sharing,3313005,7
+2000,Defense,20:49.0,PAMS,Firm Fixed Price,5681387201,26758
+2000,Defense,20:49.0,PAMS,Fixed Price Redetermination,84572940,155
+2000,Defense,20:49.0,PAMS,Time and Materials,2234934101,6996
+2000,Defense,20:49.0,Products,Cost Sharing,20464173,16
+2000,Defense,20:49.0,Products,Fixed Price Incentive,5359681445,1662
+2000,Defense,20:49.0,Products,Not Reported,3645641106,20477
+2000,Defense,20:49.0,R&D,Fixed Price with Economic Price Adjustment,93428767,21
+2001,Defense,20:49.0,ERS,Cost Plus Incentive,154192848,41
+2001,Defense,20:49.0,ERS,Firm Fixed Price,3894000288,13816
+2001,Defense,20:49.0,FRS&C,Other (none of the above),9690387,14
+2001,Defense,20:49.0,Fuel,Not Reported,1330721,11
+2001,Defense,20:49.0,ICT,Combination (two or more),52200,4
+2001,Defense,20:49.0,ICT,Time and Materials,602172074,1439
+2001,Defense,20:49.0,MED,Fixed Price Incentive,2427944,2
+2001,Defense,20:49.0,MED,Not Reported,2054613,24
+2001,Defense,20:49.0,PAMS,Cost No Fee,235009111,337
+2001,Defense,20:49.0,PAMS,Cost Plus Award Fee,3413703964,4153
+2001,Defense,20:49.0,PAMS,Cost Plus Fixed Fee,4366642305,13780
+2001,Defense,20:49.0,PAMS,Labor Hours,260066020.5,776
+2001,Defense,20:49.0,Products,Cost No Fee,1219704850,1128
+2001,Defense,20:49.0,Products,Labor Hours,90833036,97
+2002,Defense,20:49.0,ERS,Combination (two or more),48708.07,3
+2002,Defense,20:49.0,ERS,Cost Plus Award Fee,1457059815,3360
+2002,Defense,20:49.0,ERS,Order Dependent (IDV only),0,NULL
+2002,Defense,20:49.0,FRS&C,Fixed Price with Economic Price Adjustment,168903918,781
+2002,Defense,20:49.0,Fuel,Fixed Price with Economic Price Adjustment,5062036311,796
+2002,Defense,20:49.0,MED,Firm Fixed Price,5150978374,4830
+2002,Defense,20:49.0,PAMS,Fixed Price Redetermination,44365469,141
+2002,Defense,20:49.0,PAMS,Time and Materials,2435681749,7264
+2002,Defense,20:49.0,Products,Combination (two or more),25491254,27
+2002,Defense,20:49.0,Products,Fixed Price Incentive,6030725687,859
+2002,Defense,20:49.0,Products,Not Reported,4334833234,38884
+1998,Defense,20:49.0,ERS,NULL,102925304,770
+1998,Defense,20:49.0,ERS,Firm Fixed Price,3423311902,9451
+1998,Defense,20:49.0,ERS,Fixed Price Redetermination,20201870,42
+1998,Defense,20:49.0,FRS&C,Cost No Fee,144341626,221
+1998,Defense,20:49.0,ICT,Time and Materials,608158345,1896
+1998,Defense,20:49.0,MED,Cost Plus Award Fee,-37000,1
+1998,Defense,20:49.0,PAMS,Fixed Price Incentive,118388619,308
+1998,Defense,20:49.0,PAMS,Labor Hours,233861514,1058
+1998,Defense,20:49.0,Products,Fixed Price Redetermination,55166113,266
+1998,Defense,20:49.0,R&D,Fixed Price Incentive,260800298,47
+1998,Defense,20:49.0,R&D,Labor Hours,75800482,194
+1999,Defense,20:49.0,ERS,Cost Plus Award Fee,1344057618,1820
+1999,Defense,20:49.0,ERS,Cost Plus Fixed Fee,674051670,1016
+1999,Defense,20:49.0,FRS&C,Fixed Price with Economic Price Adjustment,307467236,828
+1999,Defense,20:49.0,ICT,NULL,1265189038,4924
+1999,Defense,20:49.0,ICT,Fixed Price Redetermination,38796992,69
+1999,Defense,20:49.0,MED,NULL,10228132,31
+1999,Defense,20:49.0,MED,Firm Fixed Price,3314020143,2530
+1999,Defense,20:49.0,MED,Fixed Price Redetermination,79280139,7
+1999,Defense,20:49.0,PAMS,Fixed Price with Economic Price Adjustment,69118543,139
+1999,Defense,20:49.0,PAMS,Time and Materials,1981914608,6688
+1999,Defense,20:49.0,Products,Cost Plus Fixed Fee,3704680813,1870
+1999,Defense,20:49.0,R&D,Fixed Price with Economic Price Adjustment,207735538,32
+1999,Defense,20:49.0,R&D,Time and Materials,413882013,1460
+2000,Defense,20:49.0,NULL,Cost Plus Award Fee,13395,3
+2000,Defense,20:49.0,NULL,Order Dependent (IDV only),0,NULL
+2000,Defense,20:49.0,ERS,Fixed Price Award Fee,90201866,82
+2000,Defense,20:49.0,ERS,Fixed Price Redetermination,48726285,50
+2000,Defense,20:49.0,FRS&C,Fixed Price Incentive,248370160,747
+2000,Defense,20:49.0,FRS&C,Not Reported,152484057,585
+2000,Defense,20:49.0,ICT,Cost Plus Fixed Fee,775449734,2088
+2000,Defense,20:49.0,ICT,Firm Fixed Price,2367803565,8202
+2000,Defense,20:49.0,MED,Cost Plus Award Fee,-30000,1
+2000,Defense,20:49.0,MED,Cost Plus Fixed Fee,98936748,128
+2000,Defense,20:49.0,PAMS,Combination (two or more),6256780.97,10
+2000,Defense,20:49.0,PAMS,Fixed Price Incentive,138623954,223
+2000,Defense,20:49.0,PAMS,Not Reported,749386627.7,3174
+2000,Defense,20:49.0,Products,Cost Plus Incentive,2270381265,372
+2000,Defense,20:49.0,Products,Fixed Price Award Fee,41224578,9
+2000,Defense,20:49.0,R&D,Combination (two or more),170000,2
+2000,Defense,20:49.0,R&D,Fixed Price Incentive,140926479,49
+2001,Defense,20:49.0,ERS,Cost Plus Fixed Fee,543470432,1281
+2001,Defense,20:49.0,ERS,Other (none of the above),0,1
+2001,Defense,20:49.0,FRS&C,Fixed Price with Economic Price Adjustment,290628693,813
+2001,Defense,20:49.0,FRS&C,Labor Hours,9563208,40
+2001,Defense,20:49.0,ICT,Fixed Price Redetermination,915948,16
+2001,Defense,20:49.0,MED,Fixed Price Award Fee,1971432,1
+2001,Defense,20:49.0,MED,Fixed Price Redetermination,231000000,1
+1999,Defense,20:49.0,ERS,Fixed Price with Economic Price Adjustment,388501332,85
+1999,Defense,20:49.0,ERS,Labor Hours,7984819,31
+1999,Defense,20:49.0,FRS&C,Cost Plus Fixed Fee,1261227448,1238
+1999,Defense,20:49.0,FRS&C,Firm Fixed Price,13808259500,41350
+1999,Defense,20:49.0,ICT,Cost No Fee,29281691,93
+1999,Defense,20:49.0,ICT,Fixed Price with Economic Price Adjustment,372112423,1420
+1999,Defense,20:49.0,PAMS,Cost Plus Incentive,625589058,209
+1999,Defense,20:49.0,Products,Fixed Price with Economic Price Adjustment,1183401640,1967
+1999,Defense,20:49.0,Products,Labor Hours,43350863,176
+1999,Defense,20:49.0,Products,Time and Materials,376939742,1055
+1999,Defense,20:49.0,R&D,Cost Plus Incentive,1034954202,394
+2000,Defense,20:49.0,NULL,Not Reported,3264341,85
+2000,Defense,20:49.0,ERS,Cost No Fee,132635753,167
+2000,Defense,20:49.0,ERS,Fixed Price Incentive,216299822,122
+2000,Defense,20:49.0,ERS,Fixed Price with Economic Price Adjustment,682508785,137
+2000,Defense,20:49.0,ERS,Labor Hours,24934256,38
+2000,Defense,20:49.0,ERS,Time and Materials,731700005,1857
+2000,Defense,20:49.0,FRS&C,Cost Plus Fixed Fee,1302925229,1192
+2000,Defense,20:49.0,FRS&C,Fixed Price Redetermination,155830281,346
+2000,Defense,20:49.0,Fuel,Firm Fixed Price,103880135,445
+2000,Defense,20:49.0,Fuel,Not Reported,218866,6
+2000,Defense,20:49.0,MED,Fixed Price with Economic Price Adjustment,5252235,57
+2000,Defense,20:49.0,MED,Labor Hours,683154,8
+2000,Defense,20:49.0,PAMS,Fixed Price Award Fee,6706551,16
+2000,Defense,20:49.0,Products,Time and Materials,225271502.7,730
+2000,Defense,20:49.0,R&D,Cost Plus Incentive,1111626755,318
+2001,Defense,20:49.0,NULL,Not Reported,2294152.41,42
+2001,Defense,20:49.0,NULL,Time and Materials,43326.29,2
+2001,Defense,20:49.0,ERS,Fixed Price Incentive,1730468208,138
+2001,Defense,20:49.0,ERS,Time and Materials,713345470,1681
+2001,Defense,20:49.0,FRS&C,Cost Plus Incentive,130167510,73
+2001,Defense,20:49.0,ICT,Cost Plus Incentive,3709965,7
+2001,Defense,20:49.0,ICT,Not Reported,2228616290,6989
+2001,Defense,20:49.0,MED,Cost No Fee,15441022.25,15
+2001,Defense,20:49.0,MED,Fixed Price with Economic Price Adjustment,569962,23
+2001,Defense,20:49.0,MED,Labor Hours,713567,6
+2001,Defense,20:49.0,MED,Time and Materials,5392744,7
+2001,Defense,20:49.0,PAMS,Cost Sharing,2816459,12
+2001,Defense,20:49.0,R&D,Cost Sharing,81401217,154
+2002,Defense,20:49.0,NULL,Combination (two or more),9501977,4
+2002,Defense,20:49.0,ERS,Not Reported,55995530,421
+2002,Defense,20:49.0,FRS&C,Cost Plus Incentive,104706875,138
+2002,Defense,20:49.0,FRS&C,Firm Fixed Price,16101803327,96799
+2002,Defense,20:49.0,FRS&C,Other (none of the above),4705716,11
+2002,Defense,20:49.0,ICT,Fixed Price Level of Effort,43682,1
+2002,Defense,20:49.0,ICT,Fixed Price with Economic Price Adjustment,401660087,3399
+2002,Defense,20:49.0,ICT,Not Reported,2340778729,8383
+2002,Defense,20:49.0,MED,Time and Materials,13392336,15
+2002,Defense,20:49.0,PAMS,Cost Plus Incentive,505420963,347
+2001,Defense,20:49.0,PAMS,Firm Fixed Price,6171583439,28385
+2001,Defense,20:49.0,R&D,Firm Fixed Price,2954994142,4088
+2002,Defense,20:49.0,NULL,Cost Plus Award Fee,2973364,5
+2002,Defense,20:49.0,NULL,Cost Plus Fixed Fee,6311509,21
+2002,Defense,20:49.0,NULL,Other (none of the above),0,1
+2002,Defense,20:49.0,ERS,Cost Plus Incentive,260547384,416
+2002,Defense,20:49.0,ERS,Fixed Price Award Fee,244190791,638
+2002,Defense,20:49.0,FRS&C,Combination (two or more),17693338,9
+2002,Defense,20:49.0,FRS&C,Fixed Price Incentive,652807197,1127
+2002,Defense,20:49.0,FRS&C,Not Reported,312153209.3,1775
+2002,Defense,20:49.0,FRS&C,Time and Materials,256516611,1768
+2002,Defense,20:49.0,Fuel,Cost No Fee,18745000,6
+2002,Defense,20:49.0,ICT,Cost Plus Fixed Fee,655176524,1813
+2002,Defense,20:49.0,ICT,Firm Fixed Price,2796729694,13242
+2002,Defense,20:49.0,MED,Cost Plus Award Fee,71642548,49
+2002,Defense,20:49.0,MED,Cost Plus Fixed Fee,64360662,142
+2002,Defense,20:49.0,PAMS,Combination (two or more),10876129.16,25
+2002,Defense,20:49.0,PAMS,Order Dependent (IDV only),0,NULL
+2002,Defense,20:49.0,Products,Cost Plus Incentive,1315612270,651
+2003,Defense,20:49.0,FRS&C,Labor Hours,4041685,58
+2003,Defense,20:49.0,Fuel,Fixed Price with Economic Price Adjustment,5359451548,695
+2003,Defense,20:49.0,ICT,Cost Plus Award Fee,527887551,770
+2003,Defense,20:49.0,ICT,Order Dependent (IDV only),0,NULL
+2003,Defense,20:49.0,MED,Cost Plus Incentive,133236248,7
+2003,Defense,20:49.0,PAMS,Firm Fixed Price,11335488657,53066
+2003,Defense,20:49.0,Products,Cost Sharing,792524,4
+2003,Defense,20:49.0,Products,Fixed Price Incentive,7171618271,797
+2003,Defense,20:49.0,Products,Fixed Price Level of Effort,526310,4
+2003,Defense,20:49.0,Products,Not Reported,5300453845,54259
+2003,Defense,20:49.0,R&D,Firm Fixed Price,2652039914,6829
+2003,Defense,20:49.0,R&D,Fixed Price Redetermination,52655276,74
+2004,Defense,20:49.0,NULL,Cost Plus Fixed Fee,1516883,6
+2004,Defense,20:49.0,ERS,Cost Plus Incentive,1192335475,1087
+2004,Defense,20:49.0,FRS&C,Combination (two or more),56254492.4,71
+2004,Defense,20:49.0,FRS&C,Order Dependent (IDV only),0,NULL
+2004,Defense,20:49.0,FRS&C,Time and Materials,541845779,893
+2004,Defense,20:49.0,ICT,Fixed Price Award Fee,500078,6
+2004,Defense,20:49.0,PAMS,Cost Plus Award Fee,10475608301,5374
+2004,Defense,20:49.0,PAMS,Cost Plus Fixed Fee,6505688577,16740
+2004,Defense,20:49.0,PAMS,Order Dependent (IDV only),0,NULL
+2004,Defense,20:49.0,Products,Cost No Fee,1363556860,23576
+2004,Defense,20:49.0,Products,Labor Hours,23542435,98
+2004,Defense,20:49.0,R&D,Cost Plus Award Fee,14331172762,1784
+2004,Defense,20:49.0,R&D,Cost Plus Fixed Fee,9752092839,17756
+2004,Defense,20:49.0,R&D,Order Dependent (IDV only),0,NULL
+2005,Defense,20:49.0,ERS,Cost Sharing,314775,4
+2005,Defense,20:49.0,Fuel,Fixed Price with Economic Price Adjustment,9184461414,1237
+2005,Defense,20:49.0,ICT,Cost Plus Award Fee,661972520.5,1068
+2002,Defense,20:49.0,Products,Time and Materials,379720591.5,893
+2002,Defense,20:49.0,R&D,Fixed Price Award Fee,5811718,13
+2002,Defense,20:49.0,R&D,Fixed Price with Economic Price Adjustment,18649365,12
+2003,Defense,20:49.0,NULL,Not Reported,170153.92,45
+2003,Defense,20:49.0,ERS,Fixed Price Redetermination,3576863,6
+2003,Defense,20:49.0,FRS&C,Firm Fixed Price,21384436849,115683
+2003,Defense,20:49.0,Fuel,Not Reported,1465004,18
+2003,Defense,20:49.0,ICT,Cost Plus Fixed Fee,1096856185,4578
+2003,Defense,20:49.0,ICT,Fixed Price with Economic Price Adjustment,492345441,3728
+2003,Defense,20:49.0,ICT,Time and Materials,1730573699,2996
+2003,Defense,20:49.0,MED,Combination (two or more),37532,2
+2003,Defense,20:49.0,MED,Cost Plus Award Fee,58355,1
+2003,Defense,20:49.0,PAMS,Cost Plus Fixed Fee,5489912316,15146
+2003,Defense,20:49.0,PAMS,Other (none of the above),0,3
+2003,Defense,20:49.0,Products,Fixed Price Award Fee,1029414386,110
+2003,Defense,20:49.0,Products,Labor Hours,34972231,110
+2003,Defense,20:49.0,R&D,Fixed Price Incentive,225730916,97
+2004,Defense,20:49.0,ERS,Cost Plus Award Fee,1234964238,3140
+2004,Defense,20:49.0,ERS,Cost Plus Fixed Fee,1341214940,1959
+2004,Defense,20:49.0,ERS,Fixed Price with Economic Price Adjustment,1105102676,195
+2004,Defense,20:49.0,FRS&C,Fixed Price with Economic Price Adjustment,242707878.6,1539
+2004,Defense,20:49.0,Fuel,Firm Fixed Price,196580556.3,1350
+2004,Defense,20:49.0,ICT,Fixed Price Redetermination,458628,5
+2004,Defense,20:49.0,MED,Firm Fixed Price,5514612452,10105
+2004,Defense,20:49.0,MED,Fixed Price Redetermination,103222747,20
+2004,Defense,20:49.0,Products,Combination (two or more),42639391,98
+2004,Defense,20:49.0,Products,Time and Materials,530903220.1,1100
+2004,Defense,20:49.0,R&D,Cost Plus Incentive,1942181281,430
+2004,Defense,20:49.0,R&D,Fixed Price Award Fee,43395322,24
+2005,Defense,20:49.0,NULL,Combination (two or more),5986,1
+2005,Defense,20:49.0,NULL,Not Reported,18325.29,9
+2005,Defense,20:49.0,NULL,Time and Materials,918359,12
+2005,Defense,20:49.0,ERS,Fixed Price Incentive,182284488,484
+2005,Defense,20:49.0,ERS,Fixed Price Redetermination,32890609,3424
+2005,Defense,20:49.0,ERS,Not Reported,128726806.1,3586
+2005,Defense,20:49.0,FRS&C,Firm Fixed Price,23500638899,139446
+2005,Defense,20:49.0,FRS&C,Fixed Price Incentive,450026014,208
+2005,Defense,20:49.0,FRS&C,Not Reported,239287839.4,4137
+2005,Defense,20:49.0,ICT,Cost Plus Fixed Fee,1328370247,7866
+2005,Defense,20:49.0,ICT,Fixed Price with Economic Price Adjustment,825572676,2647
+2005,Defense,20:49.0,MED,Cost Plus Award Fee,12201468,3
+2005,Defense,20:49.0,MED,Cost Plus Fixed Fee,19974316,153
+2005,Defense,20:49.0,MED,Fixed Price Level of Effort,1560,1
+2005,Defense,20:49.0,MED,Fixed Price with Economic Price Adjustment,164104872.5,1062
+2005,Defense,20:49.0,PAMS,Cost Sharing,22422907.23,52
+2005,Defense,20:49.0,Products,Cost Plus Incentive,2555953169,699
+2005,Defense,20:49.0,Products,Fixed Price Award Fee,1284715085,621
+2002,Defense,20:49.0,ERS,Time and Materials,736108576.2,2097
+2002,Defense,20:49.0,FRS&C,Cost Plus Award Fee,2314232483,3073
+2002,Defense,20:49.0,Fuel,Firm Fixed Price,319495923,616
+2002,Defense,20:49.0,Fuel,Fixed Price Redetermination,140568,2
+2002,Defense,20:49.0,ICT,Fixed Price Incentive,266765825,50
+2002,Defense,20:49.0,ICT,Labor Hours,227464495.2,557
+2002,Defense,20:49.0,MED,Fixed Price with Economic Price Adjustment,-549987,15
+2002,Defense,20:49.0,MED,Labor Hours,6577593,13
+2002,Defense,20:49.0,MED,Not Reported,17456635,112
+2002,Defense,20:49.0,PAMS,Cost Sharing,1796922,10
+2002,Defense,20:49.0,Products,Firm Fixed Price,46401748031,135371
+2002,Defense,20:49.0,R&D,Cost Plus Incentive,1263357688,472
+2002,Defense,20:49.0,R&D,Not Reported,1201016,15
+2003,Defense,20:49.0,NULL,Time and Materials,49375188,16
+2003,Defense,20:49.0,ERS,Combination (two or more),401752.85,4
+2003,Defense,20:49.0,ERS,Firm Fixed Price,7144966048,32700
+2003,Defense,20:49.0,ERS,Fixed Price Incentive,232730098,221
+2003,Defense,20:49.0,FRS&C,Cost Plus Incentive,243142551,183
+2003,Defense,20:49.0,FRS&C,Fixed Price Award Fee,489990993,1905
+2003,Defense,20:49.0,FRS&C,Other (none of the above),6521716,12
+2003,Defense,20:49.0,ICT,Labor Hours,166513894,523
+2003,Defense,20:49.0,ICT,Not Reported,1864287021,7846
+2003,Defense,20:49.0,MED,Fixed Price Incentive,6730355,4
+2003,Defense,20:49.0,MED,Fixed Price with Economic Price Adjustment,4615923,42
+2003,Defense,20:49.0,MED,Time and Materials,74794325,24
+2003,Defense,20:49.0,PAMS,Cost No Fee,771167245,830
+2003,Defense,20:49.0,PAMS,Cost Sharing,2426578,14
+2003,Defense,20:49.0,PAMS,Labor Hours,364275040.1,1854
+2003,Defense,20:49.0,Products,Firm Fixed Price,58920513800,196747
+2003,Defense,20:49.0,Products,Order Dependent (IDV only),0,NULL
+2003,Defense,20:49.0,R&D,Cost Sharing,94685995,163
+2004,Defense,20:49.0,ERS,Firm Fixed Price,6717901699,38323
+2004,Defense,20:49.0,ERS,Order Dependent (IDV only),0,NULL
+2004,Defense,20:49.0,FRS&C,Cost Plus Incentive,283560844,223
+2004,Defense,20:49.0,FRS&C,Fixed Price Award Fee,314995777,1802
+2004,Defense,20:49.0,FRS&C,Fixed Price Level of Effort,1697609,2
+2004,Defense,20:49.0,FRS&C,Other (none of the above),7025683,14
+2004,Defense,20:49.0,ICT,Fixed Price Level of Effort,18861331,18
+2004,Defense,20:49.0,ICT,Not Reported,1742534210,8524
+2004,Defense,20:49.0,ICT,Time and Materials,2151630662,3543
+2004,Defense,20:49.0,MED,Combination (two or more),1586554,12
+2004,Defense,20:49.0,MED,Fixed Price Incentive,17380495,14
+2004,Defense,20:49.0,PAMS,Cost No Fee,890696100.7,1473
+2004,Defense,20:49.0,PAMS,Fixed Price with Economic Price Adjustment,59495173.94,116
+2004,Defense,20:49.0,PAMS,Labor Hours,665073304.8,2172
+2004,Defense,20:49.0,PAMS,Time and Materials,3640503195,9687
+2004,Defense,20:49.0,Products,Cost Plus Award Fee,3392319895,1162
+2004,Defense,20:49.0,Products,Order Dependent (IDV only),0,NULL
+2004,Defense,20:49.0,R&D,Cost No Fee,1449339114,2224
+2003,Defense,20:49.0,NULL,Cost Plus Award Fee,2433204,5
+2003,Defense,20:49.0,NULL,Cost Plus Fixed Fee,14945346.8,20
+2003,Defense,20:49.0,ERS,Cost Plus Incentive,868091816,766
+2003,Defense,20:49.0,ERS,Fixed Price Award Fee,248579696,315
+2003,Defense,20:49.0,FRS&C,Combination (two or more),31173092,23
+2003,Defense,20:49.0,FRS&C,Fixed Price Incentive,432935863,1070
+2003,Defense,20:49.0,FRS&C,Not Reported,288804754,2067
+2003,Defense,20:49.0,FRS&C,Order Dependent (IDV only),0,NULL
+2003,Defense,20:49.0,FRS&C,Time and Materials,520214023,1381
+2003,Defense,20:49.0,Fuel,Cost No Fee,16500000,4
+2003,Defense,20:49.0,ICT,Firm Fixed Price,3678298230,18611
+2003,Defense,20:49.0,MED,Cost Plus Fixed Fee,15807814,115
+2003,Defense,20:49.0,PAMS,Combination (two or more),74350837,161
+2003,Defense,20:49.0,PAMS,Cost Plus Award Fee,6161049134,5240
+2003,Defense,20:49.0,PAMS,Order Dependent (IDV only),0,NULL
+2003,Defense,20:49.0,Products,Cost No Fee,581501549.4,218
+2003,Defense,20:49.0,Products,Cost Plus Incentive,1932863806,667
+2003,Defense,20:49.0,R&D,Combination (two or more),59292,1
+2003,Defense,20:49.0,R&D,Cost Plus Award Fee,14953502969,1799
+2004,Defense,20:49.0,NULL,Fixed Price Award Fee,2885.2,1
+2004,Defense,20:49.0,FRS&C,Labor Hours,35512931.16,292
+2004,Defense,20:49.0,Fuel,Fixed Price with Economic Price Adjustment,6296303459,772
+2004,Defense,20:49.0,ICT,Cost Plus Award Fee,663554543.4,640
+2004,Defense,20:49.0,ICT,Order Dependent (IDV only),0,NULL
+2004,Defense,20:49.0,MED,Cost Plus Incentive,682263392.9,85
+2004,Defense,20:49.0,MED,Fixed Price Award Fee,61800,1
+2004,Defense,20:49.0,PAMS,Firm Fixed Price,10764073450,61983
+2004,Defense,20:49.0,PAMS,Fixed Price Redetermination,25961917,83
+2004,Defense,20:49.0,Products,Cost Sharing,10319,8
+2004,Defense,20:49.0,Products,Fixed Price Incentive,8399682777,775
+2004,Defense,20:49.0,Products,Fixed Price Level of Effort,304191,1
+2004,Defense,20:49.0,Products,Not Reported,5702874732,68223
+2004,Defense,20:49.0,R&D,Firm Fixed Price,2990703885,7095
+2004,Defense,20:49.0,R&D,Fixed Price Redetermination,28000175,55
+2005,Defense,20:49.0,ERS,Cost No Fee,450721693,286
+2005,Defense,20:49.0,ERS,Cost Plus Incentive,513230159,716
+2005,Defense,20:49.0,FRS&C,Combination (two or more),99372263.07,94
+2005,Defense,20:49.0,FRS&C,Order Dependent (IDV only),0,NULL
+2005,Defense,20:49.0,FRS&C,Time and Materials,300222385.7,812
+2005,Defense,20:49.0,Fuel,Cost No Fee,20051834,65
+2005,Defense,20:49.0,Fuel,Not Reported,29788007,125
+2005,Defense,20:49.0,ICT,Cost Sharing,1389993,4
+2005,Defense,20:49.0,ICT,Fixed Price Award Fee,8329587,17
+2005,Defense,20:49.0,PAMS,Cost Plus Award Fee,7289215793,6928
+2005,Defense,20:49.0,PAMS,Cost Plus Fixed Fee,6637826216,19160
+2005,Defense,20:49.0,PAMS,Order Dependent (IDV only),0,NULL
+2005,Defense,20:49.0,PAMS,Other (none of the above),54785.71,5
+2005,Defense,20:49.0,Products,Cost No Fee,992165687,261
+2005,Defense,20:49.0,Products,Labor Hours,44515338,114
+2005,Defense,20:49.0,MED,Cost Plus Incentive,5959126874,222
+2005,Defense,20:49.0,PAMS,Fixed Price Award Fee,158517588.3,278
+2005,Defense,20:49.0,PAMS,Fixed Price Redetermination,167734905,1191
+2005,Defense,20:49.0,Products,Combination (two or more),150790861.9,1234
+2005,Defense,20:49.0,Products,Cost Sharing,286200.2,9
+2005,Defense,20:49.0,Products,Fixed Price Incentive,5114387071,1040
+2005,Defense,20:49.0,Products,Fixed Price Level of Effort,35433,1
+2005,Defense,20:49.0,Products,Fixed Price with Economic Price Adjustment,10055462239,74233
+2005,Defense,20:49.0,Products,Not Reported,4352036473,86209
+2005,Defense,20:49.0,Products,Time and Materials,697951147.3,1479
+2005,Defense,20:49.0,R&D,Fixed Price Award Fee,31654812,18
+2005,Defense,20:49.0,R&D,Fixed Price Redetermination,34003180,36
+2006,Defense,20:49.0,ERS,Cost No Fee,520804372,344
+2006,Defense,20:49.0,ERS,Labor Hours,58087861.77,134
+2006,Defense,20:49.0,FRS&C,Cost Plus Fixed Fee,2415819078,1447
+2006,Defense,20:49.0,FRS&C,Order Dependent (IDV only),0,NULL
+2006,Defense,20:49.0,FRS&C,Time and Materials,154184693.2,815
+2006,Defense,20:49.0,Fuel,Not Reported,1695983,65
+2006,Defense,20:49.0,ICT,Cost Plus Incentive,144993519,397
+2006,Defense,20:49.0,ICT,Cost Sharing,368242,5
+2006,Defense,20:49.0,ICT,Fixed Price Award Fee,46102758.03,28
+2006,Defense,20:49.0,MED,Fixed Price Level of Effort,0,1
+2006,Defense,20:49.0,PAMS,Cost Plus Award Fee,10804516638,7330
+2006,Defense,20:49.0,PAMS,Cost Plus Fixed Fee,6860981463,19743
+2006,Defense,20:49.0,PAMS,Other (none of the above),86400,1
+2006,Defense,20:49.0,Products,Cost No Fee,1387244758,513
+2006,Defense,20:49.0,Products,Labor Hours,240259445,3134
+2006,Defense,20:49.0,R&D,Cost Plus Award Fee,17811177501,2118
+2006,Defense,20:49.0,R&D,Cost Plus Fixed Fee,14408758492,24218
+2007,Defense,20:49.0,NULL,Cost No Fee,1879450,1
+2007,Defense,20:49.0,ERS,Cost Sharing,4190,3
+2007,Defense,20:49.0,ERS,Fixed Price Level of Effort,83499,6
+2007,Defense,20:49.0,ERS,Fixed Price with Economic Price Adjustment,731452030.9,156
+2007,Defense,20:49.0,ERS,Time and Materials,1609410239,3970
+2007,Defense,20:49.0,FRS&C,Fixed Price Redetermination,118048702,87
+2007,Defense,20:49.0,ICT,Cost No Fee,153835115.7,700
+2007,Defense,20:49.0,MED,Cost No Fee,100696385.2,73
+2007,Defense,20:49.0,MED,Labor Hours,23231382.76,143
+2007,Defense,20:49.0,PAMS,Cost Plus Incentive,639766512.5,338
+2007,Defense,20:49.0,PAMS,Fixed Price Award Fee,274303142.3,310
+2007,Defense,20:49.0,PAMS,Fixed Price Redetermination,93810178.4,81
+2007,Defense,20:49.0,Products,Combination (two or more),6642740073,14642
+2007,Defense,20:49.0,Products,Fixed Price with Economic Price Adjustment,3929156994,12105
+2007,Defense,20:49.0,Products,Time and Materials,611589773.7,2201
+2007,Defense,20:49.0,R&D,Cost Plus Incentive,2284995497,659
+2007,Defense,20:49.0,R&D,Fixed Price Award Fee,1068089,4
+2007,Defense,20:49.0,R&D,Fixed Price Redetermination,831211.6,10
+2008,Defense,20:49.0,NULL,Not Reported,-8105.15,13
+2002,Defense,20:49.0,PAMS,Other (none of the above),0,1
+2002,Defense,20:49.0,Products,Cost Plus Fixed Fee,3636919584,2117
+2002,Defense,20:49.0,Products,Fixed Price Award Fee,580947396,54
+2002,Defense,20:49.0,Products,Fixed Price Level of Effort,9845582,1
+2002,Defense,20:49.0,Products,Other (none of the above),0,1
+2002,Defense,20:49.0,R&D,Fixed Price Incentive,348306820,73
+2002,Defense,20:49.0,R&D,Time and Materials,601190351,3361
+2003,Defense,20:49.0,ERS,Cost Plus Fixed Fee,1654250801,1768
+2003,Defense,20:49.0,FRS&C,Cost No Fee,392006635,644
+2003,Defense,20:49.0,FRS&C,Fixed Price with Economic Price Adjustment,190201073,803
+2003,Defense,20:49.0,ICT,Cost Plus Incentive,8834767,15
+2003,Defense,20:49.0,ICT,Cost Sharing,1230119,6
+2003,Defense,20:49.0,ICT,Fixed Price Redetermination,1068996,13
+2003,Defense,20:49.0,PAMS,Fixed Price Redetermination,14743075,91
+2003,Defense,20:49.0,PAMS,Not Reported,1633964135,7578
+2003,Defense,20:49.0,Products,Combination (two or more),27547545.58,46
+2003,Defense,20:49.0,Products,Fixed Price Redetermination,25060177.5,503
+2003,Defense,20:49.0,R&D,Cost Plus Fixed Fee,7886207610,16765
+2003,Defense,20:49.0,R&D,Fixed Price Award Fee,21599684,25
+2003,Defense,20:49.0,R&D,Other (none of the above),0,1
+2004,Defense,20:49.0,NULL,Firm Fixed Price,2747663.84,240
+2004,Defense,20:49.0,ERS,Fixed Price Redetermination,11794424,7197
+2004,Defense,20:49.0,ERS,Not Reported,8345903,236
+2004,Defense,20:49.0,FRS&C,Firm Fixed Price,20181757592,123298
+2004,Defense,20:49.0,FRS&C,Fixed Price Incentive,453219334.7,462
+2004,Defense,20:49.0,ICT,Cost No Fee,78979334.69,172
+2004,Defense,20:49.0,ICT,Fixed Price with Economic Price Adjustment,465577285,3222
+2004,Defense,20:49.0,MED,Cost Plus Fixed Fee,27651934,154
+2004,Defense,20:49.0,PAMS,Cost Plus Incentive,535933538,306
+2004,Defense,20:49.0,Products,Cost Plus Incentive,3143595970,753
+2004,Defense,20:49.0,Products,Fixed Price with Economic Price Adjustment,3170465105,12955
+2005,Defense,20:49.0,NULL,Cost No Fee,5886.33,1
+2005,Defense,20:49.0,NULL,Order Dependent (IDV only),0,NULL
+2005,Defense,20:49.0,ERS,Cost Plus Award Fee,1273942050,3977
+2005,Defense,20:49.0,ERS,Fixed Price with Economic Price Adjustment,1245151825,375
+2005,Defense,20:49.0,ERS,Labor Hours,15492447,108
+2005,Defense,20:49.0,FRS&C,Cost Plus Award Fee,2814410007,3445
+2005,Defense,20:49.0,FRS&C,Cost Plus Fixed Fee,2240735984,1263
+2005,Defense,20:49.0,FRS&C,Labor Hours,43178249,291
+2005,Defense,20:49.0,Fuel,Firm Fixed Price,330184795.6,2762
+2005,Defense,20:49.0,ICT,Firm Fixed Price,5493110837,37586
+2005,Defense,20:49.0,ICT,Fixed Price Incentive,456192965,316
+2005,Defense,20:49.0,MED,Fixed Price Redetermination,-3600478.2,19
+2005,Defense,20:49.0,PAMS,Combination (two or more),593791269.4,1156
+2005,Defense,20:49.0,PAMS,Fixed Price Incentive,353822263.1,80
+2005,Defense,20:49.0,R&D,Cost Plus Incentive,1730322579,430
+2006,Defense,20:49.0,NULL,Not Reported,627730.75,14
+2006,Defense,20:49.0,NULL,Time and Materials,70338804,53
+2002,Defense,20:49.0,PAMS,Cost Plus Award Fee,3673197749,5296
+2002,Defense,20:49.0,PAMS,Fixed Price with Economic Price Adjustment,65880181,74
+2002,Defense,20:49.0,PAMS,Labor Hours,465196081.4,1928
+2002,Defense,20:49.0,Products,Cost No Fee,1518827076,137
+2002,Defense,20:49.0,Products,Cost Plus Award Fee,2664323706,1313
+2002,Defense,20:49.0,Products,Fixed Price with Economic Price Adjustment,2254130527,5802
+2002,Defense,20:49.0,Products,Labor Hours,36547771,88
+2002,Defense,20:49.0,R&D,Fixed Price Redetermination,35188318,59
+2003,Defense,20:49.0,NULL,Cost No Fee,1980000,1
+2003,Defense,20:49.0,NULL,Order Dependent (IDV only),0,NULL
+2003,Defense,20:49.0,ERS,Cost No Fee,117040064,208
+2003,Defense,20:49.0,ERS,Cost Plus Award Fee,1430619107,3312
+2003,Defense,20:49.0,ERS,Fixed Price with Economic Price Adjustment,615537575,218
+2003,Defense,20:49.0,ERS,Labor Hours,5717678,44
+2003,Defense,20:49.0,ERS,Order Dependent (IDV only),0,NULL
+2003,Defense,20:49.0,FRS&C,Cost Plus Fixed Fee,1268863140,1201
+2003,Defense,20:49.0,FRS&C,Fixed Price Level of Effort,1578036,1
+2003,Defense,20:49.0,ICT,Fixed Price Award Fee,5349943,7
+2003,Defense,20:49.0,MED,Firm Fixed Price,6814887124,6050
+2003,Defense,20:49.0,MED,Fixed Price Redetermination,36226981,3
+2003,Defense,20:49.0,PAMS,Fixed Price Incentive,510734676,113
+2003,Defense,20:49.0,PAMS,Time and Materials,2921976117,8590
+2003,Defense,20:49.0,Products,Time and Materials,419297137.5,968
+2003,Defense,20:49.0,R&D,Cost Plus Incentive,1771944254,441
+2003,Defense,20:49.0,R&D,Fixed Price with Economic Price Adjustment,718529,3
+2004,Defense,20:49.0,NULL,Not Reported,-2500,2
+2004,Defense,20:49.0,ERS,Time and Materials,1219309362,2562
+2004,Defense,20:49.0,FRS&C,Fixed Price Redetermination,87470981.85,75
+2004,Defense,20:49.0,FRS&C,Not Reported,290263877.8,1735
+2004,Defense,20:49.0,Fuel,Not Reported,31694716,22
+2004,Defense,20:49.0,ICT,Cost Plus Fixed Fee,1306939441,7358
+2004,Defense,20:49.0,MED,Cost No Fee,20382171.44,28
+2004,Defense,20:49.0,MED,Cost Plus Award Fee,-14584,1
+2004,Defense,20:49.0,MED,Fixed Price with Economic Price Adjustment,52455127.84,364
+2004,Defense,20:49.0,MED,Labor Hours,4891353,74
+2004,Defense,20:49.0,MED,Order Dependent (IDV only),0,NULL
+2004,Defense,20:49.0,PAMS,Fixed Price Award Fee,118395881.2,167
+2004,Defense,20:49.0,Products,Cost Plus Fixed Fee,5890806591,2722
+2004,Defense,20:49.0,Products,Fixed Price Award Fee,1165586676,147
+2004,Defense,20:49.0,R&D,Combination (two or more),28524308.76,6
+2004,Defense,20:49.0,R&D,Fixed Price Incentive,121564034,83
+2005,Defense,20:49.0,NULL,Cost Plus Fixed Fee,425220,1
+2005,Defense,20:49.0,ERS,Cost Plus Fixed Fee,1763375008,2070
+2005,Defense,20:49.0,ERS,Fixed Price Award Fee,179918688,222
+2005,Defense,20:49.0,FRS&C,Cost Plus Incentive,293347823,229
+2005,Defense,20:49.0,FRS&C,Fixed Price with Economic Price Adjustment,240430716.1,4853
+2005,Defense,20:49.0,ICT,Cost Plus Incentive,83089295,88
+2005,Defense,20:49.0,ICT,Fixed Price Redetermination,1784128,10
+2002,Defense,20:49.0,Products,Order Dependent (IDV only),0,NULL
+2002,Defense,20:49.0,R&D,Cost No Fee,850266515.5,1954
+2002,Defense,20:49.0,R&D,Cost Sharing,112792877,191
+2003,Defense,20:49.0,NULL,Combination (two or more),37618,7
+2003,Defense,20:49.0,NULL,Labor Hours,4255,1
+2003,Defense,20:49.0,ERS,Not Reported,11532287,209
+2003,Defense,20:49.0,FRS&C,Cost Plus Award Fee,2767529199,3950
+2003,Defense,20:49.0,Fuel,Firm Fixed Price,267066958.1,1079
+2003,Defense,20:49.0,ICT,Combination (two or more),75591073.91,128
+2003,Defense,20:49.0,ICT,Fixed Price Incentive,498752299,157
+2003,Defense,20:49.0,ICT,Fixed Price Level of Effort,1324320,4
+2003,Defense,20:49.0,MED,Not Reported,19665220,213
+2003,Defense,20:49.0,PAMS,Fixed Price Level of Effort,0,1
+2003,Defense,20:49.0,R&D,Cost No Fee,1154733915,2191
+2003,Defense,20:49.0,R&D,Labor Hours,50986734,185
+2003,Defense,20:49.0,R&D,Not Reported,1066784,11
+2004,Defense,20:49.0,NULL,Time and Materials,130193,3
+2004,Defense,20:49.0,ERS,Combination (two or more),1686059.04,17
+2004,Defense,20:49.0,ERS,Fixed Price Incentive,248663328,190
+2004,Defense,20:49.0,FRS&C,Cost Plus Award Fee,3335115524,3240
+2004,Defense,20:49.0,FRS&C,Cost Sharing,643099,15
+2004,Defense,20:49.0,Fuel,Fixed Price Redetermination,426,1
+2004,Defense,20:49.0,ICT,Combination (two or more),185912898.8,282
+2004,Defense,20:49.0,ICT,Fixed Price Incentive,366131342,163
+2004,Defense,20:49.0,ICT,Labor Hours,203599762.8,607
+2004,Defense,20:49.0,MED,Not Reported,31899748,391
+2004,Defense,20:49.0,PAMS,Cost Sharing,15675814.74,36
+2004,Defense,20:49.0,PAMS,Fixed Price Level of Effort,16694896,13
+2004,Defense,20:49.0,Products,Firm Fixed Price,61887778736,264033
+2004,Defense,20:49.0,Products,Fixed Price Redetermination,280665702,563
+2004,Defense,20:49.0,R&D,Not Reported,154751,7
+2004,Defense,20:49.0,R&D,Time and Materials,789206104.3,4145
+2005,Defense,20:49.0,ERS,Combination (two or more),13976443,29
+2005,Defense,20:49.0,ERS,Firm Fixed Price,9123973438,68342
+2005,Defense,20:49.0,FRS&C,Cost No Fee,535722884.2,8154
+2005,Defense,20:49.0,FRS&C,Fixed Price Award Fee,334559758,1573
+2005,Defense,20:49.0,FRS&C,Other (none of the above),8105529,11
+2005,Defense,20:49.0,ICT,Labor Hours,279381507.3,736
+2005,Defense,20:49.0,ICT,Time and Materials,2345096226,4744
+2005,Defense,20:49.0,MED,Combination (two or more),3542720,25
+2005,Defense,20:49.0,MED,Fixed Price Incentive,20514178,14
+2005,Defense,20:49.0,PAMS,Cost No Fee,3735012413,1607
+2005,Defense,20:49.0,PAMS,Fixed Price with Economic Price Adjustment,332956964.4,251
+2005,Defense,20:49.0,PAMS,Labor Hours,433624833.8,2723
+2005,Defense,20:49.0,Products,Cost Plus Award Fee,4201376725,1506
+2005,Defense,20:49.0,Products,Firm Fixed Price,76226203731,850547
+2005,Defense,20:49.0,Products,Fixed Price Redetermination,207822762.1,1147
+2005,Defense,20:49.0,Products,Order Dependent (IDV only),0,NULL
+2005,Defense,20:49.0,R&D,Fixed Price Level of Effort,0,7
+2004,Defense,20:49.0,R&D,Cost Sharing,92327562,171
+2004,Defense,20:49.0,R&D,Labor Hours,42408145,181
+2005,Defense,20:49.0,ERS,Order Dependent (IDV only),0,NULL
+2005,Defense,20:49.0,FRS&C,Cost Sharing,1218959,20
+2005,Defense,20:49.0,FRS&C,Fixed Price Level of Effort,12547737,11
+2005,Defense,20:49.0,Fuel,Fixed Price Redetermination,11856.28,1
+2005,Defense,20:49.0,ICT,Combination (two or more),289404408.9,543
+2005,Defense,20:49.0,MED,Firm Fixed Price,1634630961,12628
+2005,Defense,20:49.0,MED,Not Reported,87812743,828
+2005,Defense,20:49.0,MED,Order Dependent (IDV only),0,NULL
+2005,Defense,20:49.0,PAMS,Fixed Price Level of Effort,38677336,47
+2005,Defense,20:49.0,PAMS,Time and Materials,4791794429,11719
+2005,Defense,20:49.0,Products,Cost Plus Fixed Fee,5255708787,3078
+2005,Defense,20:49.0,R&D,Cost No Fee,1278351163,2352
+2005,Defense,20:49.0,R&D,Fixed Price with Economic Price Adjustment,73221859,44
+2005,Defense,20:49.0,R&D,Labor Hours,55695486.15,370
+2005,Defense,20:49.0,R&D,Not Reported,9992,4
+2005,Defense,20:49.0,R&D,Time and Materials,990949346.6,3113
+2006,Defense,20:49.0,ERS,Combination (two or more),74848266.85,209
+2006,Defense,20:49.0,FRS&C,Cost No Fee,390189182.4,850
+2006,Defense,20:49.0,FRS&C,Cost Sharing,318905,19
+2006,Defense,20:49.0,FRS&C,Fixed Price with Economic Price Adjustment,296518784.3,860
+2006,Defense,20:49.0,ICT,Combination (two or more),499435910.6,1099
+2006,Defense,20:49.0,ICT,Labor Hours,376252427.7,915
+2006,Defense,20:49.0,MED,Order Dependent (IDV only),0,NULL
+2006,Defense,20:49.0,PAMS,Not Reported,967484961,6310
+2006,Defense,20:49.0,Products,Cost Plus Fixed Fee,5355241490,3871
+2006,Defense,20:49.0,Products,Fixed Price Award Fee,707305615.2,920
+2006,Defense,20:49.0,Products,Fixed Price Redetermination,180981969.6,754
+2006,Defense,20:49.0,R&D,Fixed Price Incentive,135234333,72
+2006,Defense,20:49.0,R&D,Time and Materials,899356895.5,3091
+2007,Defense,20:49.0,NULL,Firm Fixed Price,17599883.36,30
+2007,Defense,20:49.0,ERS,Cost Plus Fixed Fee,1823129628,3917
+2007,Defense,20:49.0,ERS,Firm Fixed Price,8227090511,70275
+2007,Defense,20:49.0,ERS,Fixed Price Redetermination,4975740,6
+2007,Defense,20:49.0,ERS,Other (none of the above),0,1
+2007,Defense,20:49.0,FRS&C,Cost No Fee,225006442.3,1215
+2007,Defense,20:49.0,FRS&C,Fixed Price with Economic Price Adjustment,294118060.7,4586
+2007,Defense,20:49.0,ICT,Fixed Price Redetermination,80360,1
+2007,Defense,20:49.0,ICT,Time and Materials,2672735098,6941
+2007,Defense,20:49.0,MED,Combination (two or more),1662959966,521
+2007,Defense,20:49.0,PAMS,Fixed Price with Economic Price Adjustment,327583975,937
+2007,Defense,20:49.0,PAMS,Not Reported,111312591,591
+2007,Defense,20:49.0,Products,Cost Plus Award Fee,6372304816,1730
+2007,Defense,20:49.0,Products,Fixed Price Redetermination,182062570.9,1462
+2008,Defense,20:49.0,NULL,Cost Plus Award Fee,-25003,4
+2008,Defense,20:49.0,NULL,Firm Fixed Price,1704820.76,132
+2008,Defense,20:49.0,NULL,Order Dependent (IDV only),0,NULL
+2002,Defense,20:49.0,FRS&C,Order Dependent (IDV only),0,NULL
+2002,Defense,20:49.0,ICT,Cost Plus Incentive,8223662,16
+2002,Defense,20:49.0,ICT,Fixed Price Award Fee,3436663,8
+2002,Defense,20:49.0,PAMS,Fixed Price Incentive,403970900,135
+2002,Defense,20:49.0,PAMS,Not Reported,1470360191,6684
+2002,Defense,20:49.0,Products,Fixed Price Redetermination,285020641,388
+2002,Defense,20:49.0,R&D,Cost Plus Award Fee,11049104240,2167
+2002,Defense,20:49.0,R&D,Cost Plus Fixed Fee,7657137410,16343
+2002,Defense,20:49.0,R&D,Labor Hours,43177170,140
+2003,Defense,20:49.0,NULL,Firm Fixed Price,6953055.97,105
+2003,Defense,20:49.0,ERS,Cost Sharing,0,NULL
+2003,Defense,20:49.0,ERS,Time and Materials,1046891343,2101
+2003,Defense,20:49.0,FRS&C,Fixed Price Redetermination,116878975.1,146
+2003,Defense,20:49.0,ICT,Cost No Fee,42875861,140
+2003,Defense,20:49.0,MED,Cost No Fee,19878455.19,20
+2003,Defense,20:49.0,MED,Labor Hours,2557569,34
+2003,Defense,20:49.0,PAMS,Cost Plus Incentive,621858861.1,348
+2003,Defense,20:49.0,PAMS,Fixed Price Award Fee,109404351,130
+2003,Defense,20:49.0,PAMS,Fixed Price with Economic Price Adjustment,103923588,94
+2003,Defense,20:49.0,Products,Cost Plus Award Fee,3924525505,1323
+2003,Defense,20:49.0,Products,Cost Plus Fixed Fee,4361673244,2469
+2003,Defense,20:49.0,Products,Fixed Price with Economic Price Adjustment,3469972073,8532
+2003,Defense,20:49.0,Products,Other (none of the above),0,2
+2003,Defense,20:49.0,R&D,Time and Materials,761347788,4286
+2004,Defense,20:49.0,NULL,Order Dependent (IDV only),0,NULL
+2004,Defense,20:49.0,ERS,Cost No Fee,335443193.1,277
+2004,Defense,20:49.0,ERS,Fixed Price Award Fee,289710768.9,314
+2004,Defense,20:49.0,ERS,Labor Hours,9446188,773
+2004,Defense,20:49.0,FRS&C,Cost No Fee,487977642.1,4268
+2004,Defense,20:49.0,FRS&C,Cost Plus Fixed Fee,1804279670,1078
+2004,Defense,20:49.0,ICT,Cost Plus Incentive,27776708,18
+2004,Defense,20:49.0,ICT,Firm Fixed Price,5324061404,29224
+2004,Defense,20:49.0,MED,Time and Materials,16066604.8,48
+2004,Defense,20:49.0,PAMS,Combination (two or more),220032896.9,385
+2004,Defense,20:49.0,PAMS,Fixed Price Incentive,220870094,70
+2004,Defense,20:49.0,PAMS,Not Reported,1549665209,7985
+2005,Defense,20:49.0,NULL,Firm Fixed Price,2532568.58,107
+2005,Defense,20:49.0,ERS,Time and Materials,1390995426,3335
+2005,Defense,20:49.0,FRS&C,Fixed Price Redetermination,68820623.97,188
+2005,Defense,20:49.0,ICT,Cost No Fee,141649348,248
+2005,Defense,20:49.0,ICT,Fixed Price Level of Effort,10675698,19
+2005,Defense,20:49.0,ICT,Order Dependent (IDV only),0,NULL
+2005,Defense,20:49.0,MED,Cost No Fee,34116694.91,23
+2005,Defense,20:49.0,MED,Fixed Price Award Fee,9217905,5
+2005,Defense,20:49.0,MED,Labor Hours,16329888,106
+2005,Defense,20:49.0,PAMS,Cost Plus Incentive,689136505.2,383
+2005,Defense,20:49.0,PAMS,Firm Fixed Price,13292712384,79082
+2006,Defense,20:49.0,NULL,Cost Plus Award Fee,1278866.88,14
+2006,Defense,20:49.0,NULL,Cost Plus Fixed Fee,3192858,38
+2006,Defense,20:49.0,NULL,Firm Fixed Price,21050146.18,421
+2006,Defense,20:49.0,NULL,Order Dependent (IDV only),0,NULL
+2006,Defense,20:49.0,ERS,Cost Plus Award Fee,1504026107,4169
+2006,Defense,20:49.0,ERS,Firm Fixed Price,9050802304,57731
+2006,Defense,20:49.0,ERS,Fixed Price Redetermination,2184818,9
+2006,Defense,20:49.0,ERS,Order Dependent (IDV only),0,NULL
+2006,Defense,20:49.0,FRS&C,Fixed Price Award Fee,612275138.5,1347
+2006,Defense,20:49.0,FRS&C,Fixed Price Level of Effort,5534158,9
+2006,Defense,20:49.0,ICT,Time and Materials,2602145082,5352
+2006,Defense,20:49.0,MED,Combination (two or more),18185784.32,96
+2006,Defense,20:49.0,MED,Firm Fixed Price,1954801250,16414
+2006,Defense,20:49.0,PAMS,Cost No Fee,1315545019,1656
+2006,Defense,20:49.0,PAMS,Fixed Price Incentive,177549916,27
+2006,Defense,20:49.0,PAMS,Fixed Price with Economic Price Adjustment,406025186.2,201
+2006,Defense,20:49.0,PAMS,Labor Hours,490865590.5,2527
+2006,Defense,20:49.0,PAMS,Time and Materials,6391092855,13680
+2006,Defense,20:49.0,Products,Cost Plus Award Fee,6121576230,1483
+2006,Defense,20:49.0,R&D,Cost No Fee,1201442726,2556
+2006,Defense,20:49.0,R&D,Fixed Price with Economic Price Adjustment,1586195,40
+2006,Defense,20:49.0,R&D,Labor Hours,49297543.37,318
+2007,Defense,20:49.0,NULL,Order Dependent (IDV only),0,NULL
+2007,Defense,20:49.0,ERS,Cost Plus Award Fee,1642162173,5353
+2007,Defense,20:49.0,ERS,Order Dependent (IDV only),0,NULL
+2007,Defense,20:49.0,FRS&C,Fixed Price Level of Effort,3770768.6,19
+2007,Defense,20:49.0,Fuel,Fixed Price Award Fee,11639.4,2
+2007,Defense,20:49.0,ICT,Cost Plus Fixed Fee,1878057603,9102
+2007,Defense,20:49.0,MED,Firm Fixed Price,2265001799,17818
+2007,Defense,20:49.0,MED,Fixed Price Redetermination,-1894513.42,35
+2007,Defense,20:49.0,MED,Order Dependent (IDV only),0,NULL
+2007,Defense,20:49.0,PAMS,Fixed Price Incentive,193217205.2,82
+2007,Defense,20:49.0,PAMS,Time and Materials,8210816901,19048
+2007,Defense,20:49.0,Products,Cost Plus Fixed Fee,5553468006,4523
+2007,Defense,20:49.0,Products,Fixed Price Award Fee,78837083.7,439
+2007,Defense,20:49.0,Products,Other (none of the above),37713.2,6
+2007,Defense,20:49.0,R&D,Fixed Price Incentive,135295943.5,104
+2007,Defense,20:49.0,R&D,Fixed Price with Economic Price Adjustment,272650,2
+2007,Defense,20:49.0,R&D,Time and Materials,785459735.3,2505
+2008,Defense,20:49.0,ERS,Cost Plus Fixed Fee,2252265176,3546
+2008,Defense,20:49.0,ERS,Fixed Price Award Fee,31534609.23,86
+2008,Defense,20:49.0,FRS&C,Cost No Fee,438058842.5,900
+2008,Defense,20:49.0,FRS&C,Fixed Price with Economic Price Adjustment,257396960,3819
+2008,Defense,20:49.0,FRS&C,Not Reported,657621560.2,1503
+2008,Defense,20:49.0,ICT,Cost Plus Fixed Fee,2190946532,7966
+2008,Defense,20:49.0,MED,Order Dependent (IDV only),0,NULL
+2008,Defense,20:49.0,PAMS,Not Reported,640258949.8,3666
+2008,Defense,20:49.0,Products,Cost Plus Fixed Fee,6105375658,4430
+2008,Defense,20:49.0,Products,Fixed Price Award Fee,1229948723,180
+2008,Defense,20:49.0,Products,Other (none of the above),0,1
+2006,Defense,20:49.0,NULL,Fixed Price with Economic Price Adjustment,35030,2
+2006,Defense,20:49.0,ERS,Cost Plus Incentive,585423753.1,671
+2006,Defense,20:49.0,ERS,Fixed Price Award Fee,142736601.9,249
+2006,Defense,20:49.0,ICT,Firm Fixed Price,6457772552,44052
+2006,Defense,20:49.0,MED,Time and Materials,62768233.4,100
+2006,Defense,20:49.0,PAMS,Combination (two or more),2175504712,2705
+2006,Defense,20:49.0,PAMS,Fixed Price Level of Effort,34030960.3,128
+2006,Defense,20:49.0,PAMS,Order Dependent (IDV only),0,NULL
+2006,Defense,20:49.0,Products,Order Dependent (IDV only),0,NULL
+2006,Defense,20:49.0,R&D,Cost Sharing,77495898.26,182
+2006,Defense,20:49.0,R&D,Not Reported,699851.59,30
+2007,Defense,20:49.0,Fuel,Fixed Price with Economic Price Adjustment,11927671674,1057
+2007,Defense,20:49.0,ICT,Cost Plus Award Fee,883650729.8,2023
+2007,Defense,20:49.0,ICT,Fixed Price Level of Effort,35403303.29,55
+2007,Defense,20:49.0,ICT,Order Dependent (IDV only),667000,4
+2007,Defense,20:49.0,MED,Cost Plus Incentive,6076095604,463
+2007,Defense,20:49.0,MED,Fixed Price Award Fee,276811276.9,17
+2007,Defense,20:49.0,PAMS,Firm Fixed Price,15327249095,97308
+2007,Defense,20:49.0,Products,Cost Sharing,3780294.14,100
+2007,Defense,20:49.0,Products,Firm Fixed Price,1.11881E+11,919208
+2007,Defense,20:49.0,Products,Fixed Price Incentive,4387380302,4704
+2007,Defense,20:49.0,Products,Not Reported,621404788.4,1325
+2007,Defense,20:49.0,R&D,Cost No Fee,1613136825,4077
+2007,Defense,20:49.0,R&D,Labor Hours,42752213.52,210
+2008,Defense,20:49.0,NULL,Cost Plus Fixed Fee,-152090.08,13
+2008,Defense,20:49.0,ERS,Cost Plus Incentive,1143422143,826
+2008,Defense,20:49.0,FRS&C,Cost Sharing,20726481.89,12
+2008,Defense,20:49.0,FRS&C,Fixed Price Award Fee,171294544.8,533
+2008,Defense,20:49.0,PAMS,Cost Plus Award Fee,9009099243,4821
+2008,Defense,20:49.0,PAMS,Cost Plus Fixed Fee,8292660430,22762
+2008,Defense,20:49.0,PAMS,Fixed Price Level of Effort,112660689.6,434
+2008,Defense,20:49.0,PAMS,Fixed Price with Economic Price Adjustment,153584570.8,2184
+2008,Defense,20:49.0,PAMS,Order Dependent (IDV only),0,NULL
+2008,Defense,20:49.0,PAMS,Other (none of the above),0,2
+2008,Defense,20:49.0,Products,Cost No Fee,2696889370,814
+2008,Defense,20:49.0,Products,Cost Plus Award Fee,4108378537,1647
+2008,Defense,20:49.0,Products,Labor Hours,103576460.1,453
+2008,Defense,20:49.0,Products,Order Dependent (IDV only),0,NULL
+2008,Defense,20:49.0,R&D,Cost Sharing,88610140.66,226
+2008,Defense,20:49.0,R&D,Not Reported,717203762.9,1236
+2008,Defense,20:49.0,R&D,Time and Materials,561116970.4,1804
+2009,Defense,20:49.0,ERS,Fixed Price Level of Effort,24785599.7,11
+2009,Defense,20:49.0,FRS&C,Cost No Fee,440252938.3,709
+2009,Defense,20:49.0,Fuel,Fixed Price Award Fee,40475.72,20
+2009,Defense,20:49.0,Fuel,Fixed Price with Economic Price Adjustment,18281074717,914
+2009,Defense,20:49.0,ICT,Cost Plus Award Fee,513831062,815
+2009,Defense,20:49.0,ICT,Fixed Price Level of Effort,64680898.74,137
+2009,Defense,20:49.0,MED,Cost Plus Incentive,6237110043,389
+2005,Defense,20:49.0,R&D,Combination (two or more),7399274.48,24
+2005,Defense,20:49.0,R&D,Fixed Price Incentive,248768010,103
+2005,Defense,20:49.0,R&D,Order Dependent (IDV only),0,NULL
+2006,Defense,20:49.0,NULL,Cost No Fee,4800769,2
+2006,Defense,20:49.0,NULL,Labor Hours,102267,5
+2006,Defense,20:49.0,ERS,Cost Plus Fixed Fee,1666015779,2587
+2006,Defense,20:49.0,ERS,Fixed Price with Economic Price Adjustment,663613571,225
+2006,Defense,20:49.0,FRS&C,Cost Plus Award Fee,2754522801,3409
+2006,Defense,20:49.0,FRS&C,Cost Plus Incentive,309648495,281
+2006,Defense,20:49.0,FRS&C,Labor Hours,38773070.63,484
+2006,Defense,20:49.0,FRS&C,Other (none of the above),9440946.16,12
+2006,Defense,20:49.0,Fuel,Firm Fixed Price,254670378,3987
+2006,Defense,20:49.0,ICT,Fixed Price Incentive,468293433.6,561
+2006,Defense,20:49.0,ICT,Fixed Price Redetermination,6044360,16
+2006,Defense,20:49.0,ICT,Not Reported,543126139.9,5681
+2006,Defense,20:49.0,MED,Fixed Price Incentive,65546986.36,23
+2006,Defense,20:49.0,MED,Fixed Price Redetermination,92349617,21
+2006,Defense,20:49.0,MED,Not Reported,32029369.28,525
+2006,Defense,20:49.0,R&D,Cost Plus Incentive,1402161739,388
+2006,Defense,20:49.0,R&D,Firm Fixed Price,2599562727,9094
+2007,Defense,20:49.0,NULL,Combination (two or more),0,1
+2007,Defense,20:49.0,NULL,Time and Materials,-37033.47,1
+2007,Defense,20:49.0,ERS,Combination (two or more),885781584.7,2149
+2007,Defense,20:49.0,ERS,Fixed Price Incentive,165409512.6,873
+2007,Defense,20:49.0,ERS,Not Reported,4466610.5,149
+2007,Defense,20:49.0,FRS&C,Combination (two or more),1060792228,2556
+2007,Defense,20:49.0,FRS&C,Fixed Price Incentive,327281768.1,134
+2007,Defense,20:49.0,FRS&C,Not Reported,26279056.32,271
+2007,Defense,20:49.0,FRS&C,Time and Materials,157907066.4,1126
+2007,Defense,20:49.0,Fuel,Order Dependent (IDV only),0,NULL
+2007,Defense,20:49.0,ICT,Labor Hours,340463462.5,1152
+2007,Defense,20:49.0,MED,Cost Plus Fixed Fee,8313102,73
+2007,Defense,20:49.0,MED,Fixed Price with Economic Price Adjustment,35685955.07,309
+2007,Defense,20:49.0,PAMS,Cost Sharing,6535987.87,28
+2007,Defense,20:49.0,Products,Cost Plus Incentive,3026105948,908
+2007,Defense,20:49.0,R&D,Combination (two or more),3551920555,2860
+2007,Defense,20:49.0,R&D,Cost Plus Award Fee,16063004648,2910
+2007,Defense,20:49.0,R&D,Fixed Price Level of Effort,132380640.1,461
+2007,Defense,20:49.0,R&D,Order Dependent (IDV only),0,2
+2008,Defense,20:49.0,ERS,Cost Sharing,142734.72,5
+2008,Defense,20:49.0,ERS,Firm Fixed Price,8828016627,66224
+2008,Defense,20:49.0,FRS&C,Cost Plus Award Fee,2707074788,3128
+2008,Defense,20:49.0,FRS&C,Cost Plus Incentive,308504887.7,171
+2008,Defense,20:49.0,FRS&C,Labor Hours,41194816.66,743
+2008,Defense,20:49.0,FRS&C,Other (none of the above),821244.84,4
+2008,Defense,20:49.0,Fuel,Fixed Price Redetermination,3890.7,1
+2008,Defense,20:49.0,Fuel,Time and Materials,0,NULL
+2008,Defense,20:49.0,ICT,Combination (two or more),2949170275,7040
+2008,Defense,20:49.0,ICT,Fixed Price Incentive,138040522.4,3034
+2008,Defense,20:49.0,ICT,Not Reported,321069552.4,6223
+2008,Defense,20:49.0,ICT,Time and Materials,2231816785,5906
+2008,Defense,20:49.0,MED,Combination (two or more),865631524.5,680
+2008,Defense,20:49.0,MED,Fixed Price Incentive,177389848.6,89
+2008,Defense,20:49.0,MED,Not Reported,-15354959.48,280
+2008,Defense,20:49.0,PAMS,Cost No Fee,1470160711,3094
+2008,Defense,20:49.0,PAMS,Labor Hours,852385136.8,3729
+2008,Defense,20:49.0,Products,Fixed Price Level of Effort,25014167.88,65
+2008,Defense,20:49.0,R&D,Firm Fixed Price,2852729093,10828
+2008,Defense,20:49.0,R&D,Fixed Price Redetermination,-1757292.52,14
+2009,Defense,20:49.0,ERS,Combination (two or more),2658682076,5285
+2009,Defense,20:49.0,ERS,Cost No Fee,693070594.1,873
+2009,Defense,20:49.0,ERS,Order Dependent (IDV only),0,NULL
+2009,Defense,20:49.0,FRS&C,Combination (two or more),3070853478,3758
+2009,Defense,20:49.0,FRS&C,Fixed Price Level of Effort,335830.46,15
+2009,Defense,20:49.0,FRS&C,Order Dependent (IDV only),0,NULL
+2009,Defense,20:49.0,FRS&C,Time and Materials,262994990.3,932
+2009,Defense,20:49.0,Fuel,Cost No Fee,0,1
+2009,Defense,20:49.0,ICT,Cost Sharing,0,2
+2009,Defense,20:49.0,ICT,Fixed Price Award Fee,36031953.8,18
+2009,Defense,20:49.0,ICT,Labor Hours,433442175,1217
+2009,Defense,20:49.0,MED,Cost Sharing,0,1
+2009,Defense,20:49.0,MED,Firm Fixed Price,3803096083,19898
+2009,Defense,20:49.0,PAMS,Time and Materials,8445488908,18869
+2009,Defense,20:49.0,R&D,Cost Plus Award Fee,9627443817,2173
+2009,Defense,20:49.0,R&D,Cost Plus Fixed Fee,16008337747,29345
+2009,Defense,20:49.0,R&D,Fixed Price Level of Effort,50452767.46,411
+2009,Defense,20:49.0,R&D,Fixed Price with Economic Price Adjustment,0,1
+2009,Defense,20:49.0,R&D,Order Dependent (IDV only),0,NULL
+2010,Defense,20:49.0,ERS,Cost Sharing,131773.63,11
+2010,Defense,20:49.0,ERS,Firm Fixed Price,11338488336,74156
+2010,Defense,20:49.0,ERS,Fixed Price Redetermination,1044183.08,3
+2010,Defense,20:49.0,FRS&C,Fixed Price Redetermination,98410286.97,217
+2010,Defense,20:49.0,Fuel,Time and Materials,252862.8,16
+2010,Defense,20:49.0,ICT,Combination (two or more),790715754.6,2354
+2010,Defense,20:49.0,ICT,Cost No Fee,270232981,1688
+2010,Defense,20:49.0,ICT,Time and Materials,1936416908,4614
+2010,Defense,20:49.0,MED,Combination (two or more),21907172.47,132
+2010,Defense,20:49.0,MED,Order Dependent (IDV only),0,NULL
+2010,Defense,20:49.0,PAMS,Cost No Fee,2723401455,6903
+2010,Defense,20:49.0,PAMS,Fixed Price Award Fee,299109966.4,752
+2010,Defense,20:49.0,PAMS,Labor Hours,1175211961,3986
+2010,Defense,20:49.0,Products,Fixed Price Award Fee,66802381.16,761
+2010,Defense,20:49.0,Products,Fixed Price Level of Effort,24830612.79,107
+2010,Defense,20:49.0,Products,Fixed Price with Economic Price Adjustment,3645325176,24302
+2010,Defense,20:49.0,R&D,Fixed Price Incentive,1274110853,193
+2010,Defense,20:49.0,R&D,Fixed Price Redetermination,421879.51,19
+2011,Defense,20:49.0,ERS,Cost No Fee,1572627143,686791
+2011,Defense,20:49.0,ERS,Cost Plus Award Fee,2186619159,5450
+2005,Defense,20:49.0,ICT,Not Reported,1149548480,7173
+2005,Defense,20:49.0,MED,Time and Materials,57607866,119
+2005,Defense,20:49.0,PAMS,Not Reported,1588115325,9393
+2005,Defense,20:49.0,R&D,Cost Sharing,81366268,162
+2005,Defense,20:49.0,R&D,Firm Fixed Price,5216866034,9839
+2006,Defense,20:49.0,NULL,Combination (two or more),11200894,12
+2006,Defense,20:49.0,ERS,Not Reported,77621861.31,2848
+2006,Defense,20:49.0,FRS&C,Combination (two or more),378269667.6,432
+2006,Defense,20:49.0,FRS&C,Firm Fixed Price,28375195583,129498
+2006,Defense,20:49.0,FRS&C,Fixed Price Incentive,330183487.8,123
+2006,Defense,20:49.0,ICT,Fixed Price Level of Effort,17486236.2,21
+2006,Defense,20:49.0,ICT,Fixed Price with Economic Price Adjustment,319599303.6,2453
+2006,Defense,20:49.0,MED,Cost Plus Fixed Fee,29271074,144
+2006,Defense,20:49.0,MED,Fixed Price Award Fee,174200644.3,12
+2006,Defense,20:49.0,PAMS,Cost Plus Incentive,730152627.4,362
+2006,Defense,20:49.0,Products,Cost Plus Incentive,3863651521,899
+2006,Defense,20:49.0,R&D,Order Dependent (IDV only),0,NULL
+2007,Defense,20:49.0,NULL,Labor Hours,0,1
+2007,Defense,20:49.0,ERS,Cost Plus Incentive,1863121417,877
+2007,Defense,20:49.0,FRS&C,Cost Plus Award Fee,2174494516,3062
+2007,Defense,20:49.0,FRS&C,Cost Sharing,3536606,30
+2007,Defense,20:49.0,FRS&C,Labor Hours,68479775.49,583
+2007,Defense,20:49.0,Fuel,Cost Sharing,-7762,2
+2007,Defense,20:49.0,Fuel,Firm Fixed Price,576853636,5096
+2007,Defense,20:49.0,Fuel,Fixed Price Redetermination,6833.75,1
+2007,Defense,20:49.0,ICT,Combination (two or more),2039903762,4941
+2007,Defense,20:49.0,ICT,Firm Fixed Price,6271066438,73288
+2007,Defense,20:49.0,ICT,Fixed Price Incentive,174190270.3,118
+2007,Defense,20:49.0,MED,Not Reported,40801741.69,62
+2007,Defense,20:49.0,PAMS,Combination (two or more),6167084846,11965
+2007,Defense,20:49.0,PAMS,Fixed Price Level of Effort,51228957.06,329
+2007,Defense,20:49.0,Products,Fixed Price Level of Effort,8799236.66,44
+2007,Defense,20:49.0,R&D,Not Reported,2044525.5,62
+2008,Defense,20:49.0,NULL,Time and Materials,-147781.54,7
+2008,Defense,20:49.0,ERS,Combination (two or more),1808083093,3475
+2008,Defense,20:49.0,ERS,Fixed Price Incentive,220501411,1113
+2008,Defense,20:49.0,FRS&C,Order Dependent (IDV only),0,NULL
+2008,Defense,20:49.0,FRS&C,Time and Materials,284903248.4,950
+2008,Defense,20:49.0,Fuel,Fixed Price with Economic Price Adjustment,14189200304,1161
+2008,Defense,20:49.0,Fuel,Order Dependent (IDV only),0,NULL
+2008,Defense,20:49.0,ICT,Cost Plus Award Fee,598729216.2,1703
+2008,Defense,20:49.0,ICT,Labor Hours,405639078.6,1320
+2008,Defense,20:49.0,ICT,Order Dependent (IDV only),0,NULL
+2008,Defense,20:49.0,MED,Cost Plus Incentive,7004135448,469
+2008,Defense,20:49.0,PAMS,Cost Sharing,2097898,16
+2008,Defense,20:49.0,PAMS,Firm Fixed Price,18024608018,98722
+2008,Defense,20:49.0,PAMS,Fixed Price Redetermination,299609845.7,80
+2008,Defense,20:49.0,Products,Cost Sharing,3137884.97,54
+2008,Defense,20:49.0,Products,Firm Fixed Price,1.24618E+11,1002003
+2006,Defense,20:49.0,ERS,Fixed Price Incentive,372821613.9,505
+2006,Defense,20:49.0,ERS,Time and Materials,1753841307,3600
+2006,Defense,20:49.0,FRS&C,Not Reported,177934833.4,1218
+2006,Defense,20:49.0,Fuel,Order Dependent (IDV only),0,NULL
+2006,Defense,20:49.0,ICT,Cost Plus Award Fee,779346232.1,1421
+2006,Defense,20:49.0,ICT,Cost Plus Fixed Fee,1639352971,7582
+2006,Defense,20:49.0,ICT,Order Dependent (IDV only),0,2
+2006,Defense,20:49.0,MED,Cost No Fee,21923959.98,22
+2006,Defense,20:49.0,MED,Cost Plus Award Fee,20758755.09,4
+2006,Defense,20:49.0,MED,Fixed Price with Economic Price Adjustment,177093952.7,948
+2006,Defense,20:49.0,MED,Labor Hours,16488712.32,110
+2006,Defense,20:49.0,PAMS,Cost Sharing,12471595,40
+2006,Defense,20:49.0,PAMS,Firm Fixed Price,14385278201,83860
+2006,Defense,20:49.0,Products,Cost Sharing,20347497.95,47
+2006,Defense,20:49.0,Products,Firm Fixed Price,87923809117,816548
+2006,Defense,20:49.0,R&D,Combination (two or more),354142571.8,360
+2006,Defense,20:49.0,R&D,Fixed Price Level of Effort,26805152.62,82
+2007,Defense,20:49.0,NULL,Cost Plus Fixed Fee,0,3
+2007,Defense,20:49.0,ERS,Fixed Price Award Fee,80442948.42,146
+2007,Defense,20:49.0,FRS&C,Cost Plus Incentive,356146276.9,293
+2007,Defense,20:49.0,FRS&C,Fixed Price Award Fee,499256724.7,710
+2007,Defense,20:49.0,FRS&C,Other (none of the above),3254301.5,10
+2007,Defense,20:49.0,Fuel,Time and Materials,18940,1
+2007,Defense,20:49.0,ICT,Not Reported,13370172.39,422
+2007,Defense,20:49.0,MED,Fixed Price Incentive,174773875,61
+2007,Defense,20:49.0,MED,Time and Materials,48154871.63,105
+2007,Defense,20:49.0,PAMS,Cost No Fee,1391734022,2169
+2007,Defense,20:49.0,PAMS,Cost Plus Award Fee,10625311599,9899
+2007,Defense,20:49.0,PAMS,Labor Hours,641345995,2656
+2007,Defense,20:49.0,PAMS,Order Dependent (IDV only),0,NULL
+2007,Defense,20:49.0,Products,Order Dependent (IDV only),0,NULL
+2007,Defense,20:49.0,R&D,Cost Sharing,64763658.4,214
+2007,Defense,20:49.0,R&D,Firm Fixed Price,2843277447,11087
+2008,Defense,20:49.0,NULL,Combination (two or more),21101.3,17
+2008,Defense,20:49.0,ERS,Not Reported,453447112,2431
+2008,Defense,20:49.0,ERS,Order Dependent (IDV only),0,NULL
+2008,Defense,20:49.0,FRS&C,Combination (two or more),2128100809,3480
+2008,Defense,20:49.0,FRS&C,Fixed Price Level of Effort,-540788.04,13
+2008,Defense,20:49.0,Fuel,Fixed Price Award Fee,1530,1
+2008,Defense,20:49.0,ICT,Fixed Price Level of Effort,44162914.62,95
+2008,Defense,20:49.0,MED,Fixed Price Award Fee,93229494.64,11
+2008,Defense,20:49.0,Products,Not Reported,3425371560,11307
+2008,Defense,20:49.0,R&D,Cost No Fee,1541881761,4226
+2008,Defense,20:49.0,R&D,Cost Plus Award Fee,11062068304,2280
+2008,Defense,20:49.0,R&D,Fixed Price with Economic Price Adjustment,48249.61,4
+2008,Defense,20:49.0,R&D,Labor Hours,35542837.05,198
+2008,Defense,20:49.0,R&D,Order Dependent (IDV only),0,NULL
+2009,Defense,20:49.0,ERS,Cost Plus Incentive,839503817.8,457
+2009,Defense,20:49.0,FRS&C,Cost Sharing,8516794.95,18
+2008,Defense,20:49.0,Products,Fixed Price Incentive,4440219364,4982
+2008,Defense,20:49.0,Products,Fixed Price Redetermination,323032014.3,1075
+2008,Defense,20:49.0,R&D,Cost Plus Fixed Fee,15044639700,27984
+2008,Defense,20:49.0,R&D,Fixed Price Level of Effort,116339711,518
+2009,Defense,20:49.0,ERS,Cost Sharing,343892.98,5
+2009,Defense,20:49.0,ERS,Firm Fixed Price,9403109772,68114
+2009,Defense,20:49.0,FRS&C,Fixed Price Award Fee,269515767.4,628
+2009,Defense,20:49.0,FRS&C,Other (none of the above),1472788.47,7
+2009,Defense,20:49.0,Fuel,Time and Materials,646536,17
+2009,Defense,20:49.0,ICT,Time and Materials,1664354313,4626
+2009,Defense,20:49.0,MED,Combination (two or more),2747659885,565
+2009,Defense,20:49.0,MED,Fixed Price Incentive,200326037.5,77
+2009,Defense,20:49.0,PAMS,Cost No Fee,5322925791,4588
+2009,Defense,20:49.0,PAMS,Cost Plus Award Fee,5013041742,4795
+2009,Defense,20:49.0,PAMS,Fixed Price with Economic Price Adjustment,68650217.28,1870
+2009,Defense,20:49.0,PAMS,Labor Hours,854442788.7,3053
+2009,Defense,20:49.0,PAMS,Order Dependent (IDV only),0,NULL
+2009,Defense,20:49.0,Products,Cost No Fee,630977481.8,799
+2009,Defense,20:49.0,Products,Cost Plus Award Fee,4423512240,1355
+2009,Defense,20:49.0,Products,Fixed Price with Economic Price Adjustment,5587340592,15351
+2009,Defense,20:49.0,Products,Labor Hours,822083207.2,22263
+2009,Defense,20:49.0,Products,Order Dependent (IDV only),0,NULL
+2009,Defense,20:49.0,R&D,Fixed Price Redetermination,26444551.6,28
+2010,Defense,20:49.0,ERS,Cost No Fee,864310322,1058
+2010,Defense,20:49.0,ERS,Cost Plus Award Fee,2369561668,5570
+2010,Defense,20:49.0,ERS,Labor Hours,85092927.12,263
+2010,Defense,20:49.0,ERS,Order Dependent (IDV only),0,1
+2010,Defense,20:49.0,FRS&C,Cost Plus Fixed Fee,1016294815,1516
+2010,Defense,20:49.0,FRS&C,Fixed Price Level of Effort,1423544.16,14
+2010,Defense,20:49.0,Fuel,Cost Plus Fixed Fee,115291,2
+2010,Defense,20:49.0,Fuel,Fixed Price Award Fee,725502,5
+2010,Defense,20:49.0,ICT,Fixed Price Award Fee,105678842.3,56
+2010,Defense,20:49.0,MED,Cost Sharing,73374.48,4
+2010,Defense,20:49.0,MED,Firm Fixed Price,2906001535,20785
+2010,Defense,20:49.0,PAMS,Fixed Price Incentive,91369665.1,76
+2010,Defense,20:49.0,PAMS,Time and Materials,7183642683,17792
+2010,Defense,20:49.0,Products,Not Reported,23197570.52,759
+2010,Defense,20:49.0,Products,Time and Materials,748989896.9,2071
+2010,Defense,20:49.0,R&D,Cost No Fee,2101338588,4199
+2010,Defense,20:49.0,R&D,Cost Plus Award Fee,10256562169,2617
+2010,Defense,20:49.0,R&D,Fixed Price with Economic Price Adjustment,180918.86,19
+2010,Defense,20:49.0,R&D,Labor Hours,52187787.58,309
+2011,Defense,20:49.0,NULL,Cost Plus Incentive,0,1
+2011,Defense,20:49.0,NULL,Not Reported,-14716.37,5
+2011,Defense,20:49.0,ERS,Time and Materials,1254130312,2940
+2011,Defense,20:49.0,FRS&C,Cost Sharing,1037751.91,18
+2011,Defense,20:49.0,FRS&C,Fixed Price Redetermination,84457449.37,205
+2011,Defense,20:49.0,MED,Cost No Fee,237697233.4,115
+2011,Defense,20:49.0,MED,Cost Plus Award Fee,1375411.14,8
+2005,Defense,20:49.0,R&D,Cost Plus Award Fee,15166892599,1898
+2005,Defense,20:49.0,R&D,Cost Plus Fixed Fee,11208011863,21635
+2006,Defense,20:49.0,ERS,Cost Sharing,677658.61,9
+2006,Defense,20:49.0,ERS,Fixed Price Level of Effort,-24074,1
+2006,Defense,20:49.0,FRS&C,Fixed Price Redetermination,25240238.13,131
+2006,Defense,20:49.0,Fuel,Fixed Price with Economic Price Adjustment,12824328723,1085
+2006,Defense,20:49.0,ICT,Cost No Fee,127816249.8,361
+2006,Defense,20:49.0,MED,Cost Plus Incentive,6795095846,275
+2006,Defense,20:49.0,PAMS,Fixed Price Award Fee,181106386.2,293
+2006,Defense,20:49.0,PAMS,Fixed Price Redetermination,162938132,49
+2006,Defense,20:49.0,Products,Combination (two or more),922240646,643
+2006,Defense,20:49.0,Products,Fixed Price Incentive,5524839875,1948
+2006,Defense,20:49.0,Products,Fixed Price Level of Effort,1459722.69,6
+2006,Defense,20:49.0,Products,Fixed Price with Economic Price Adjustment,5222400882,53412
+2006,Defense,20:49.0,Products,Not Reported,2978880299,52983
+2006,Defense,20:49.0,Products,Time and Materials,949306931.9,1754
+2006,Defense,20:49.0,R&D,Fixed Price Award Fee,12606370.47,31
+2006,Defense,20:49.0,R&D,Fixed Price Redetermination,6021158,19
+2007,Defense,20:49.0,NULL,Not Reported,-1973.06,4
+2007,Defense,20:49.0,ERS,Cost No Fee,499133916.9,705
+2007,Defense,20:49.0,ERS,Labor Hours,90026669.68,127
+2007,Defense,20:49.0,FRS&C,Cost Plus Fixed Fee,2345524965,2095
+2007,Defense,20:49.0,FRS&C,Firm Fixed Price,28206992790,142881
+2007,Defense,20:49.0,FRS&C,Order Dependent (IDV only),-6060,1
+2007,Defense,20:49.0,Fuel,Combination (two or more),3238843,38
+2007,Defense,20:49.0,Fuel,Not Reported,-3761,3
+2007,Defense,20:49.0,ICT,Cost Plus Incentive,152256585.4,1018
+2007,Defense,20:49.0,ICT,Cost Sharing,167834,9
+2007,Defense,20:49.0,ICT,Fixed Price Award Fee,12865361.91,25
+2007,Defense,20:49.0,ICT,Fixed Price with Economic Price Adjustment,233602335,6553
+2007,Defense,20:49.0,MED,Cost Sharing,1754504,7
+2007,Defense,20:49.0,MED,Fixed Price Level of Effort,-3128.65,1
+2007,Defense,20:49.0,PAMS,Cost Plus Fixed Fee,6268841761,20015
+2007,Defense,20:49.0,PAMS,Other (none of the above),102000,6
+2007,Defense,20:49.0,Products,Cost No Fee,698206572,533
+2007,Defense,20:49.0,Products,Labor Hours,35868955.8,179
+2007,Defense,20:49.0,R&D,Cost Plus Fixed Fee,14684413733,28687
+2008,Defense,20:49.0,NULL,Cost No Fee,0,2
+2008,Defense,20:49.0,NULL,Labor Hours,-44919.12,1
+2008,Defense,20:49.0,ERS,Fixed Price Level of Effort,4097637.09,10
+2008,Defense,20:49.0,ERS,Fixed Price with Economic Price Adjustment,625471091.6,149
+2008,Defense,20:49.0,ERS,Time and Materials,2014089230,4026
+2008,Defense,20:49.0,FRS&C,Fixed Price Redetermination,81505419.94,119
+2008,Defense,20:49.0,Fuel,Firm Fixed Price,205859615.9,5329
+2008,Defense,20:49.0,ICT,Cost No Fee,323434211.3,1130
+2008,Defense,20:49.0,MED,Cost No Fee,92984561.85,119
+2008,Defense,20:49.0,MED,Labor Hours,24097616.56,174
+2008,Defense,20:49.0,PAMS,Cost Plus Incentive,620938138.2,396
+2008,Defense,20:49.0,PAMS,Fixed Price Award Fee,400813691.8,497
+2008,Defense,20:49.0,Products,Combination (two or more),9155595651,20747
+2008,Defense,20:49.0,Products,Fixed Price with Economic Price Adjustment,7677016895,16386
+2008,Defense,20:49.0,Products,Time and Materials,1337930801,2071
+2008,Defense,20:49.0,R&D,Cost Plus Incentive,1086013808,603
+2008,Defense,20:49.0,R&D,Fixed Price Award Fee,24682805,1
+2009,Defense,20:49.0,NULL,Not Reported,298015.62,12
+2009,Defense,20:49.0,NULL,Time and Materials,-39872.26,2
+2009,Defense,20:49.0,ERS,Fixed Price Incentive,153346572.8,830
+2009,Defense,20:49.0,ERS,Labor Hours,109789637.7,206
+2009,Defense,20:49.0,ERS,Not Reported,130096853.6,1749
+2009,Defense,20:49.0,FRS&C,Cost Plus Fixed Fee,977594466.4,1616
+2009,Defense,20:49.0,FRS&C,Firm Fixed Price,44744132878,159943
+2009,Defense,20:49.0,Fuel,Combination (two or more),197247.01,39
+2009,Defense,20:49.0,Fuel,Order Dependent (IDV only),0,NULL
+2009,Defense,20:49.0,ICT,Cost Plus Incentive,200870343.2,951
+2009,Defense,20:49.0,ICT,Fixed Price with Economic Price Adjustment,103839196.9,1100
+2009,Defense,20:49.0,MED,Fixed Price Level of Effort,-1830,1
+2009,Defense,20:49.0,MED,Fixed Price with Economic Price Adjustment,35428173.6,272
+2009,Defense,20:49.0,MED,Time and Materials,7582305.3,42
+2009,Defense,20:49.0,PAMS,Cost Sharing,4136449.08,22
+2009,Defense,20:49.0,R&D,Cost Sharing,253950042.1,167
+2010,Defense,20:49.0,NULL,Cost No Fee,-222449,1
+2010,Defense,20:49.0,ERS,Fixed Price with Economic Price Adjustment,840411371.9,297
+2010,Defense,20:49.0,ERS,Time and Materials,1668826325,3350
+2010,Defense,20:49.0,FRS&C,Cost Plus Award Fee,2226081409,3505
+2010,Defense,20:49.0,FRS&C,Cost Plus Incentive,588539113.6,192
+2010,Defense,20:49.0,FRS&C,Other (none of the above),2428956.77,31
+2010,Defense,20:49.0,Fuel,Firm Fixed Price,445422106.6,5100
+2010,Defense,20:49.0,ICT,Fixed Price Incentive,110167274.8,875
+2010,Defense,20:49.0,ICT,Fixed Price Level of Effort,96320011.61,232
+2010,Defense,20:49.0,ICT,Not Reported,53478092.24,213
+2010,Defense,20:49.0,MED,Cost No Fee,208467537.1,58
+2010,Defense,20:49.0,MED,Fixed Price Incentive,439577991,142
+2010,Defense,20:49.0,MED,Labor Hours,19578727.42,179
+2010,Defense,20:49.0,MED,Not Reported,2253146.48,43
+2010,Defense,20:49.0,PAMS,Cost Plus Incentive,1141593805,835
+2010,Defense,20:49.0,Products,Firm Fixed Price,1.11416E+11,910794
+2010,Defense,20:49.0,R&D,Cost Plus Incentive,3041529050,1132
+2011,Defense,20:49.0,NULL,Time and Materials,0,1
+2011,Defense,20:49.0,ERS,Combination (two or more),253020360.6,562
+2011,Defense,20:49.0,ERS,Fixed Price Incentive,193609702.5,708
+2011,Defense,20:49.0,ERS,Not Reported,-257620.25,21
+2011,Defense,20:49.0,Fuel,Cost Plus Fixed Fee,-46303.87,1
+2011,Defense,20:49.0,Fuel,Order Dependent (IDV only),0,NULL
+2011,Defense,20:49.0,ICT,Labor Hours,476625142.7,1873
+2011,Defense,20:49.0,MED,Fixed Price with Economic Price Adjustment,59832457.61,441
+2011,Defense,20:49.0,MED,Time and Materials,-1079093.14,61
+2008,Defense,20:49.0,ERS,Cost No Fee,527988878.2,825
+2008,Defense,20:49.0,ERS,Labor Hours,49333449.53,115
+2008,Defense,20:49.0,FRS&C,Cost Plus Fixed Fee,1532058221,2125
+2008,Defense,20:49.0,FRS&C,Firm Fixed Price,36559585942,144884
+2008,Defense,20:49.0,Fuel,Combination (two or more),2673866.6,45
+2008,Defense,20:49.0,Fuel,Not Reported,8163435.88,54
+2008,Defense,20:49.0,ICT,Cost Plus Incentive,129950401.3,702
+2008,Defense,20:49.0,ICT,Cost Sharing,2379352.16,6
+2008,Defense,20:49.0,ICT,Fixed Price Award Fee,48940893.21,25
+2008,Defense,20:49.0,ICT,Fixed Price with Economic Price Adjustment,151422804.1,2234
+2008,Defense,20:49.0,MED,Fixed Price with Economic Price Adjustment,32554780.85,268
+2008,Defense,20:49.0,MED,Time and Materials,14422314.3,65
+2009,Defense,20:49.0,NULL,Cost No Fee,570667,3
+2009,Defense,20:49.0,ERS,Fixed Price with Economic Price Adjustment,459021436.5,182
+2009,Defense,20:49.0,ERS,Time and Materials,1513931963,3119
+2009,Defense,20:49.0,FRS&C,Cost Plus Award Fee,2379481479,2925
+2009,Defense,20:49.0,FRS&C,Cost Plus Incentive,485569044.3,171
+2009,Defense,20:49.0,FRS&C,Fixed Price Redetermination,79330231.18,126
+2009,Defense,20:49.0,Fuel,Firm Fixed Price,438248078.9,5579
+2009,Defense,20:49.0,ICT,Cost No Fee,244442611.3,1824
+2009,Defense,20:49.0,ICT,Fixed Price Incentive,25798542.14,2264
+2009,Defense,20:49.0,ICT,Not Reported,145410710.4,3386
+2009,Defense,20:49.0,MED,Cost No Fee,149327400.4,72
+2009,Defense,20:49.0,MED,Labor Hours,23856548.71,161
+2009,Defense,20:49.0,PAMS,Cost Plus Incentive,880864992.6,457
+2009,Defense,20:49.0,PAMS,Fixed Price Award Fee,449756771.7,585
+2009,Defense,20:49.0,R&D,Cost Plus Incentive,1529751948,817
+2010,Defense,20:49.0,NULL,Not Reported,-5843.9,4
+2010,Defense,20:49.0,NULL,Time and Materials,362526.33,5
+2010,Defense,20:49.0,ERS,Fixed Price Incentive,180294435.1,620
+2010,Defense,20:49.0,ERS,Not Reported,1302382,146
+2010,Defense,20:49.0,FRS&C,Firm Fixed Price,40456482234,165919
+2010,Defense,20:49.0,Fuel,Order Dependent (IDV only),0,NULL
+2010,Defense,20:49.0,ICT,Cost Plus Incentive,429541867.6,1782
+2010,Defense,20:49.0,ICT,Fixed Price with Economic Price Adjustment,303729056.3,2972
+2010,Defense,20:49.0,MED,Fixed Price with Economic Price Adjustment,48762879.9,346
+2010,Defense,20:49.0,MED,Time and Materials,21459522.7,46
+2010,Defense,20:49.0,PAMS,Cost Sharing,2295709.08,26
+2010,Defense,20:49.0,PAMS,Fixed Price Level of Effort,485070564.5,1002
+2010,Defense,20:49.0,R&D,Cost Sharing,161677181.7,203
+2010,Defense,20:49.0,R&D,Fixed Price Level of Effort,165492757.5,683
+2010,Defense,20:49.0,R&D,Not Reported,18670692.83,140
+2011,Defense,20:49.0,FRS&C,Cost Plus Award Fee,2102223188,3075
+2011,Defense,20:49.0,FRS&C,Cost Plus Incentive,481814013.6,131
+2011,Defense,20:49.0,FRS&C,Other (none of the above),872335.69,24
+2011,Defense,20:49.0,Fuel,Firm Fixed Price,619734476.3,3980
+2011,Defense,20:49.0,Fuel,Fixed Price Redetermination,0,NULL
+2011,Defense,20:49.0,ICT,Combination (two or more),784352672.5,1844
+2011,Defense,20:49.0,ICT,Fixed Price Incentive,98031927.19,125
+2008,Defense,20:49.0,ERS,Cost Plus Award Fee,2421910151,4899
+2008,Defense,20:49.0,ERS,Fixed Price Redetermination,223267,2
+2008,Defense,20:49.0,FRS&C,Fixed Price Incentive,102153034,81
+2008,Defense,20:49.0,Fuel,Cost Sharing,-1195.11,1
+2008,Defense,20:49.0,ICT,Firm Fixed Price,5753856057,65814
+2008,Defense,20:49.0,MED,Cost Plus Fixed Fee,3043832.36,49
+2008,Defense,20:49.0,MED,Firm Fixed Price,2524875873,18417
+2008,Defense,20:49.0,MED,Fixed Price Redetermination,60862478.45,11
+2008,Defense,20:49.0,PAMS,Combination (two or more),7817062261,17099
+2008,Defense,20:49.0,PAMS,Fixed Price Incentive,96377508.94,47
+2008,Defense,20:49.0,PAMS,Time and Materials,8927660012,19850
+2008,Defense,20:49.0,Products,Cost Plus Incentive,8292779260,878
+2009,Defense,20:49.0,NULL,Order Dependent (IDV only),0,NULL
+2009,Defense,20:49.0,ERS,Cost Plus Award Fee,2778067398,4497
+2009,Defense,20:49.0,FRS&C,Not Reported,57462080.53,1069
+2009,Defense,20:49.0,Fuel,Cost Sharing,170708.49,1
+2009,Defense,20:49.0,ICT,Cost Plus Fixed Fee,2497669303,9731
+2009,Defense,20:49.0,ICT,Firm Fixed Price,6256695941,63100
+2009,Defense,20:49.0,ICT,Order Dependent (IDV only),0,NULL
+2009,Defense,20:49.0,MED,Cost Plus Award Fee,72000,3
+2009,Defense,20:49.0,MED,Fixed Price Redetermination,160716270.3,43
+2009,Defense,20:49.0,MED,Order Dependent (IDV only),0,NULL
+2009,Defense,20:49.0,PAMS,Combination (two or more),10136265500,20893
+2009,Defense,20:49.0,PAMS,Firm Fixed Price,20006661934,107523
+2009,Defense,20:49.0,PAMS,Fixed Price Incentive,45523750.68,47
+2009,Defense,20:49.0,Products,Fixed Price Award Fee,120843568.5,275
+2009,Defense,20:49.0,R&D,Combination (two or more),6692910256,4848
+2009,Defense,20:49.0,R&D,Fixed Price Incentive,468399039.6,109
+2010,Defense,20:49.0,NULL,Cost Plus Fixed Fee,-205550.91,3
+2010,Defense,20:49.0,ERS,Cost Plus Fixed Fee,2623413544,6226
+2010,Defense,20:49.0,ERS,Fixed Price Award Fee,102820566.3,223
+2010,Defense,20:49.0,FRS&C,Not Reported,25805623.44,175
+2010,Defense,20:49.0,ICT,Cost Plus Award Fee,602690055.7,1221
+2010,Defense,20:49.0,ICT,Cost Plus Fixed Fee,3385773778,10693
+2010,Defense,20:49.0,ICT,Fixed Price Redetermination,287315,4
+2010,Defense,20:49.0,ICT,Order Dependent (IDV only),0,NULL
+2010,Defense,20:49.0,MED,Cost Plus Award Fee,1704006,8
+2010,Defense,20:49.0,PAMS,Firm Fixed Price,22915059637,123513
+2010,Defense,20:49.0,PAMS,Order Dependent (IDV only),-18550,1
+2010,Defense,20:49.0,Products,Cost Sharing,8445812.78,95
+2010,Defense,20:49.0,R&D,Combination (two or more),954622862.9,1331
+2010,Defense,20:49.0,R&D,Firm Fixed Price,5181071740,11946
+2011,Defense,20:49.0,NULL,Cost Plus Fixed Fee,-64424.79,1
+2011,Defense,20:49.0,ERS,Fixed Price Award Fee,109595932.5,157
+2011,Defense,20:49.0,FRS&C,Combination (two or more),654490397.9,1278
+2011,Defense,20:49.0,FRS&C,Fixed Price Incentive,357154851.7,271
+2011,Defense,20:49.0,MED,Cost Plus Fixed Fee,1185062978,369
+2011,Defense,20:49.0,MED,Fixed Price Award Fee,431602933.3,117
+2008,Defense,20:49.0,R&D,Combination (two or more),7410026630,4530
+2008,Defense,20:49.0,R&D,Fixed Price Incentive,149514928.9,101
+2009,Defense,20:49.0,NULL,Cost Plus Fixed Fee,12625.38,7
+2009,Defense,20:49.0,NULL,Firm Fixed Price,673627.15,8
+2009,Defense,20:49.0,ERS,Cost Plus Fixed Fee,3139879487,5455
+2009,Defense,20:49.0,ERS,Fixed Price Award Fee,29302133.26,33
+2009,Defense,20:49.0,ERS,Fixed Price Redetermination,200675,3
+2009,Defense,20:49.0,FRS&C,Fixed Price Incentive,34669210.2,72
+2009,Defense,20:49.0,FRS&C,Fixed Price with Economic Price Adjustment,210566756.2,3131
+2009,Defense,20:49.0,Fuel,Fixed Price Level of Effort,3020660.09,2
+2009,Defense,20:49.0,ICT,Fixed Price Redetermination,9435144.64,4
+2009,Defense,20:49.0,MED,Cost Plus Fixed Fee,27244.77,20
+2009,Defense,20:49.0,MED,Fixed Price Award Fee,311696616.1,14
+2009,Defense,20:49.0,PAMS,Not Reported,308842870.1,2238
+2009,Defense,20:49.0,Products,Cost Plus Incentive,6725759881,1441
+2009,Defense,20:49.0,R&D,Firm Fixed Price,3532099187,11288
+2010,Defense,20:49.0,NULL,Cost Plus Award Fee,-13852.75,1
+2010,Defense,20:49.0,ERS,Cost Plus Incentive,960389367.8,866
+2010,Defense,20:49.0,FRS&C,Combination (two or more),840117003.9,1084
+2010,Defense,20:49.0,FRS&C,Fixed Price Incentive,1536385789,339
+2010,Defense,20:49.0,FRS&C,Labor Hours,21637899.01,190
+2010,Defense,20:49.0,ICT,Firm Fixed Price,7527582622,66314
+2010,Defense,20:49.0,MED,Cost Plus Fixed Fee,60168426.39,105
+2010,Defense,20:49.0,MED,Fixed Price Award Fee,373064029.1,94
+2010,Defense,20:49.0,MED,Fixed Price Redetermination,6534810.72,23
+2010,Defense,20:49.0,PAMS,Combination (two or more),2056639591,4883
+2010,Defense,20:49.0,Products,Cost Plus Incentive,6884946385,2494
+2010,Defense,20:49.0,R&D,Order Dependent (IDV only),0,NULL
+2011,Defense,20:49.0,NULL,Cost Plus Award Fee,3007.41,1
+2011,Defense,20:49.0,ERS,Cost Plus Incentive,1470279321,1104
+2011,Defense,20:49.0,FRS&C,Labor Hours,14220257.79,205
+2011,Defense,20:49.0,FRS&C,Not Reported,9736528.09,24
+2011,Defense,20:49.0,FRS&C,Time and Materials,155861636.5,1030
+2011,Defense,20:49.0,Fuel,Fixed Price with Economic Price Adjustment,13388412100,1165
+2011,Defense,20:49.0,ICT,Cost Plus Award Fee,486243772.6,991
+2011,Defense,20:49.0,ICT,Cost Plus Fixed Fee,3787574815,11445
+2011,Defense,20:49.0,ICT,Firm Fixed Price,8461348137,76783
+2011,Defense,20:49.0,ICT,Order Dependent (IDV only),0,NULL
+2011,Defense,20:49.0,MED,Cost Plus Incentive,8303797092,521
+2011,Defense,20:49.0,MED,Fixed Price Redetermination,871930.43,3
+2011,Defense,20:49.0,PAMS,Combination (two or more),1426837368,3706
+2011,Defense,20:49.0,PAMS,Firm Fixed Price,23539166489,130512
+2011,Defense,20:49.0,Products,Cost Sharing,1406394.88,38
+2011,Defense,20:49.0,Products,Fixed Price Incentive,16403497598,5177
+2011,Defense,20:49.0,Products,Fixed Price Level of Effort,39381116.82,95
+2011,Defense,20:49.0,R&D,Combination (two or more),886001031.7,1191
+2012,Defense,20:49.0,NULL,Cost Plus Fixed Fee,-700548.17,2
+2012,Defense,20:49.0,ERS,Cost Sharing,-457441.66,2
+2009,Defense,20:49.0,PAMS,Fixed Price Redetermination,105656118,52
+2009,Defense,20:49.0,Products,Combination (two or more),15017462473,9582
+2009,Defense,20:49.0,Products,Cost Sharing,1714251.18,39
+2009,Defense,20:49.0,Products,Firm Fixed Price,1.0517E+11,889847
+2009,Defense,20:49.0,Products,Fixed Price Incentive,4963711640,2637
+2009,Defense,20:49.0,Products,Fixed Price Redetermination,396392922.7,327
+2009,Defense,20:49.0,Products,Not Reported,1395019578,7312
+2009,Defense,20:49.0,Products,Time and Materials,981725888.8,1857
+2009,Defense,20:49.0,R&D,Cost No Fee,2918879828,3854
+2009,Defense,20:49.0,R&D,Fixed Price Award Fee,581169,3
+2009,Defense,20:49.0,R&D,Labor Hours,61851165.13,246
+2010,Defense,20:49.0,NULL,Firm Fixed Price,-240005.12,35
+2010,Defense,20:49.0,FRS&C,Cost Sharing,68917323.09,40
+2010,Defense,20:49.0,FRS&C,Fixed Price Award Fee,552848537.6,1021
+2010,Defense,20:49.0,Fuel,Not Reported,-7353.51,5
+2010,Defense,20:49.0,MED,Fixed Price Level of Effort,746946.96,5
+2010,Defense,20:49.0,PAMS,Cost Plus Award Fee,11684219504,6144
+2010,Defense,20:49.0,PAMS,Cost Plus Fixed Fee,12306872519,27365
+2010,Defense,20:49.0,PAMS,Fixed Price with Economic Price Adjustment,85640086.28,1427
+2010,Defense,20:49.0,PAMS,Other (none of the above),59051.68,2
+2010,Defense,20:49.0,Products,Cost No Fee,668446699.4,1143
+2010,Defense,20:49.0,Products,Cost Plus Award Fee,4193689372,1833
+2010,Defense,20:49.0,Products,Cost Plus Fixed Fee,7806317688,5550
+2010,Defense,20:49.0,Products,Labor Hours,623728706.9,20194
+2010,Defense,20:49.0,Products,Order Dependent (IDV only),-14060.7,3
+2010,Defense,20:49.0,Products,Other (none of the above),0,1
+2010,Defense,20:49.0,R&D,Time and Materials,473822659.2,1678
+2011,Defense,20:49.0,ERS,Fixed Price Level of Effort,157009.29,12
+2011,Defense,20:49.0,ERS,Fixed Price with Economic Price Adjustment,2229476749,1610083
+2011,Defense,20:49.0,FRS&C,Cost No Fee,270107768.4,685
+2011,Defense,20:49.0,PAMS,Fixed Price Incentive,124692229.8,103
+2011,Defense,20:49.0,PAMS,Fixed Price Redetermination,57719452.85,47
+2011,Defense,20:49.0,PAMS,Not Reported,-1993579.08,112
+2011,Defense,20:49.0,Products,Combination (two or more),7357755513,1541
+2011,Defense,20:49.0,Products,Fixed Price Redetermination,52923309.25,1150
+2011,Defense,20:49.0,Products,Time and Materials,1102539542,1867
+2011,Defense,20:49.0,R&D,Cost Plus Incentive,3531336032,1231
+2011,Defense,20:49.0,R&D,Fixed Price Award Fee,1132479.61,13
+2012,Defense,20:49.0,NULL,Firm Fixed Price,54755.84,9
+2012,Defense,20:49.0,FRS&C,Firm Fixed Price,33362429153,152078
+2012,Defense,20:49.0,ICT,Fixed Price with Economic Price Adjustment,411467223.8,11332
+2012,Defense,20:49.0,MED,Fixed Price Level of Effort,512554.46,3
+2012,Defense,20:49.0,MED,Fixed Price with Economic Price Adjustment,16316458.77,259
+2012,Defense,20:49.0,PAMS,Cost Plus Fixed Fee,17372566618,29629
+2012,Defense,20:49.0,Products,Cost Plus Fixed Fee,11590403174,6479
+2012,Defense,20:49.0,Products,Other (none of the above),0,1
+2012,Defense,20:49.0,R&D,Time and Materials,197884493.5,1071
+2011,Defense,20:49.0,ERS,Cost Plus Fixed Fee,2867657498,5346
+2011,Defense,20:49.0,ERS,Labor Hours,57872136.24,166
+2011,Defense,20:49.0,ERS,Order Dependent (IDV only),0,NULL
+2011,Defense,20:49.0,FRS&C,Cost Plus Fixed Fee,1342540784,2089
+2011,Defense,20:49.0,FRS&C,Fixed Price Level of Effort,2421563.66,16
+2011,Defense,20:49.0,FRS&C,Fixed Price with Economic Price Adjustment,477159309.6,3224
+2011,Defense,20:49.0,FRS&C,Order Dependent (IDV only),0,NULL
+2011,Defense,20:49.0,ICT,Cost Plus Incentive,472679477.5,1740
+2011,Defense,20:49.0,ICT,Cost Sharing,1603918.39,534
+2011,Defense,20:49.0,ICT,Fixed Price Award Fee,524393989.4,357
+2011,Defense,20:49.0,ICT,Fixed Price Redetermination,510613,5
+2011,Defense,20:49.0,MED,Cost Sharing,-7921.97,3
+2011,Defense,20:49.0,MED,Firm Fixed Price,3112417769,18977
+2011,Defense,20:49.0,PAMS,Time and Materials,4337047561,12735
+2011,Defense,20:49.0,R&D,Cost Plus Fixed Fee,16340815176,34080
+2011,Defense,20:49.0,R&D,Fixed Price with Economic Price Adjustment,126298.8,6
+2011,Defense,20:49.0,R&D,Other (none of the above),0,2
+2012,Defense,20:49.0,ERS,Fixed Price Redetermination,61966601.33,86
+2012,Defense,20:49.0,ERS,Time and Materials,1181286217,2156
+2012,Defense,20:49.0,FRS&C,Fixed Price Incentive,236168272.2,262
+2012,Defense,20:49.0,FRS&C,Fixed Price Redetermination,75399542.47,222
+2012,Defense,20:49.0,FRS&C,Not Reported,814151.8,13
+2012,Defense,20:49.0,ICT,Cost No Fee,428659589.9,1271
+2012,Defense,20:49.0,ICT,Cost Plus Fixed Fee,3935559912,10252
+2012,Defense,20:49.0,MED,Cost No Fee,286392112.5,47
+2012,Defense,20:49.0,MED,Cost Plus Award Fee,1917600.25,20
+2012,Defense,20:49.0,MED,Cost Plus Fixed Fee,4422995911,409
+2012,Defense,20:49.0,MED,Labor Hours,16398716.35,154
+2012,Defense,20:49.0,MED,Order Dependent (IDV only),0,NULL
+2012,Defense,20:49.0,PAMS,Cost Plus Incentive,1237123128,831
+2012,Defense,20:49.0,PAMS,Fixed Price Award Fee,162455495.8,442
+2012,Defense,20:49.0,Products,Cost Plus Incentive,7226853010,2510
+2012,Defense,20:49.0,Products,Fixed Price Award Fee,18708703.27,142
+2012,Defense,20:49.0,Products,Fixed Price with Economic Price Adjustment,2434247407,32758
+2012,Defense,20:49.0,R&D,Combination (two or more),868433584.9,871
+2012,Defense,20:49.0,R&D,Fixed Price Incentive,347085099.8,186
+2013,Defense,20:49.0,ERS,Cost No Fee,834773030.3,330446
+2013,Defense,20:49.0,ERS,Cost Plus Award Fee,1808172615,2955
+2013,Defense,20:49.0,ERS,Cost Plus Fixed Fee,3094888401,3974
+2013,Defense,20:49.0,ERS,Labor Hours,-654217.9205,92
+2013,Defense,20:49.0,FRS&C,Cost Plus Fixed Fee,814349729.9,1353
+2013,Defense,20:49.0,FRS&C,Fixed Price with Economic Price Adjustment,369729050.8,4008
+2013,Defense,20:49.0,ICT,Cost Plus Incentive,252375052,436
+2013,Defense,20:49.0,ICT,Fixed Price Redetermination,126842.57,21
+2013,Defense,20:49.0,MED,Time and Materials,-140149.6438,6
+2013,Defense,20:49.0,R&D,Cost Sharing,246912929.1,223
+2013,Defense,20:49.0,R&D,Firm Fixed Price,3756170893,8914
+2014,Defense,20:49.0,ERS,Fixed Price Redetermination,51136310.73,75
+2014,Defense,20:49.0,ERS,Time and Materials,240757117,1197
+2014,Defense,20:49.0,FRS&C,Combination (two or more),342729056.4,137
+2014,Defense,20:49.0,FRS&C,Fixed Price Incentive,379467934.8,333
+2014,Defense,20:49.0,FRS&C,Not Reported,-516184.061,6
+2014,Defense,20:49.0,ICT,Cost Plus Fixed Fee,3847038542,8544
+2014,Defense,20:49.0,ICT,Fixed Price Level of Effort,64312917.14,196
+2014,Defense,20:49.0,MED,Cost No Fee,35190512.45,45
+2014,Defense,20:49.0,MED,Cost Plus Award Fee,1908551.218,20
+2014,Defense,20:49.0,MED,Cost Plus Fixed Fee,9633641740,421
+2014,Defense,20:49.0,MED,Labor Hours,43465949.78,95
+2014,Defense,20:49.0,PAMS,Cost Plus Incentive,1273956038,1211
+2014,Defense,20:49.0,Products,Cost Plus Incentive,6325000767,2204
+2014,Defense,20:49.0,Products,Firm Fixed Price,66969072204,815755
+2014,Defense,20:49.0,Products,Fixed Price Award Fee,-26983987.84,237
+2014,Defense,20:49.0,R&D,Combination (two or more),89034441.59,440
+2014,Defense,20:49.0,R&D,Order Dependent (IDV only),0,NULL
+2009,Defense,20:49.0,FRS&C,Labor Hours,10132728.35,438
+2009,Defense,20:49.0,Fuel,Fixed Price Redetermination,-456680.77,1
+2009,Defense,20:49.0,Fuel,Not Reported,-2100283.58,27
+2009,Defense,20:49.0,ICT,Combination (two or more),4004232387,7890
+2009,Defense,20:49.0,MED,Not Reported,-1666683.61,320
+2009,Defense,20:49.0,PAMS,Cost Plus Fixed Fee,9392633591,22287
+2009,Defense,20:49.0,PAMS,Fixed Price Level of Effort,383908951.8,591
+2009,Defense,20:49.0,Products,Cost Plus Fixed Fee,6452636685,4562
+2009,Defense,20:49.0,Products,Fixed Price Level of Effort,27004514.9,90
+2009,Defense,20:49.0,Products,Other (none of the above),0,1
+2009,Defense,20:49.0,R&D,Not Reported,1262471073,793
+2009,Defense,20:49.0,R&D,Time and Materials,404708255.8,1462
+2010,Defense,20:49.0,ERS,Combination (two or more),179903250.2,474
+2010,Defense,20:49.0,ERS,Fixed Price Level of Effort,2945587.46,22
+2010,Defense,20:49.0,FRS&C,Cost No Fee,169902257.5,773
+2010,Defense,20:49.0,FRS&C,Fixed Price with Economic Price Adjustment,351567671.8,3164
+2010,Defense,20:49.0,FRS&C,Order Dependent (IDV only),0,NULL
+2010,Defense,20:49.0,FRS&C,Time and Materials,269136279.1,1150
+2010,Defense,20:49.0,Fuel,Fixed Price with Economic Price Adjustment,11912442072,1092
+2010,Defense,20:49.0,ICT,Cost Sharing,461613.36,12
+2010,Defense,20:49.0,ICT,Labor Hours,645935802.4,2111
+2010,Defense,20:49.0,MED,Cost Plus Incentive,8830664068,668
+2010,Defense,20:49.0,PAMS,Fixed Price Redetermination,36502080.7,42
+2010,Defense,20:49.0,PAMS,Not Reported,89287379.05,556
+2010,Defense,20:49.0,Products,Combination (two or more),1454694396,1308
+2010,Defense,20:49.0,Products,Fixed Price Incentive,10089868921,5139
+2010,Defense,20:49.0,Products,Fixed Price Redetermination,210537598.1,1110
+2010,Defense,20:49.0,R&D,Cost Plus Fixed Fee,16537926395,31594
+2010,Defense,20:49.0,R&D,Fixed Price Award Fee,704692.32,18
+2010,Defense,20:49.0,R&D,Other (none of the above),0,3
+2011,Defense,20:49.0,NULL,Firm Fixed Price,-89532.65,27
+2011,Defense,20:49.0,ERS,Cost Sharing,10440.04,7
+2011,Defense,20:49.0,ERS,Firm Fixed Price,12782705651,8873994
+2011,Defense,20:49.0,ERS,Fixed Price Redetermination,50180189.57,80
+2011,Defense,20:49.0,FRS&C,Firm Fixed Price,36368181671,163676
+2011,Defense,20:49.0,FRS&C,Fixed Price Award Fee,421220894.8,729
+2011,Defense,20:49.0,Fuel,Fixed Price Incentive,87750,2
+2011,Defense,20:49.0,Fuel,Time and Materials,34504.37,6
+2011,Defense,20:49.0,ICT,Cost No Fee,289845144.6,1569
+2011,Defense,20:49.0,ICT,Fixed Price with Economic Price Adjustment,634191248.7,13580
+2011,Defense,20:49.0,ICT,Time and Materials,1502400675,3480
+2011,Defense,20:49.0,MED,Combination (two or more),17442671.1,129
+2011,Defense,20:49.0,MED,Fixed Price Level of Effort,861168.57,6
+2011,Defense,20:49.0,PAMS,Cost Plus Incentive,1190153662,900
+2011,Defense,20:49.0,PAMS,Fixed Price with Economic Price Adjustment,63109163.03,1633
+2011,Defense,20:49.0,PAMS,Labor Hours,774200995,3395
+2011,Defense,20:49.0,Products,Cost No Fee,2260737105,1018
+2011,Defense,20:49.0,Products,Cost Plus Award Fee,2704290380,1757
+2012,Defense,20:49.0,FRS&C,Order Dependent (IDV only),0,NULL
+2012,Defense,20:49.0,FRS&C,Time and Materials,94158263.66,812
+2012,Defense,20:49.0,Fuel,Fixed Price with Economic Price Adjustment,21059467215,1609
+2012,Defense,20:49.0,Fuel,Time and Materials,34007.03,3
+2012,Defense,20:49.0,ICT,Cost Plus Award Fee,261132127.7,677
+2012,Defense,20:49.0,ICT,Order Dependent (IDV only),0,NULL
+2012,Defense,20:49.0,MED,Cost Plus Incentive,5037580906,295
+2012,Defense,20:49.0,PAMS,Cost Plus Award Fee,6582499288,4245
+2012,Defense,20:49.0,PAMS,Firm Fixed Price,23661551211,118722
+2012,Defense,20:49.0,PAMS,Fixed Price Redetermination,16031513.01,47
+2012,Defense,20:49.0,PAMS,Order Dependent (IDV only),0,NULL
+2012,Defense,20:49.0,Products,Cost No Fee,1332336618,1072
+2012,Defense,20:49.0,Products,Cost Sharing,781025.55,22
+2012,Defense,20:49.0,Products,Fixed Price Incentive,16805799789,5444
+2012,Defense,20:49.0,Products,Labor Hours,436744044.6,20875
+2012,Defense,20:49.0,R&D,Cost Plus Fixed Fee,15620726294,32098
+2012,Defense,20:49.0,R&D,Firm Fixed Price,6933328444,11528
+2012,Defense,20:49.0,R&D,Fixed Price Redetermination,31105.24,4
+2012,Defense,20:49.0,R&D,Other (none of the above),0,1
+2013,Defense,20:49.0,ERS,Cost Sharing,8296.3203,1
+2013,Defense,20:49.0,FRS&C,Combination (two or more),620382321.2,785
+2013,Defense,20:49.0,Fuel,Fixed Price Incentive,180472.9795,36
+2013,Defense,20:49.0,Fuel,Time and Materials,40550,4
+2013,Defense,20:49.0,ICT,Fixed Price Award Fee,31557621.73,25
+2013,Defense,20:49.0,MED,Fixed Price Award Fee,72866333.56,53
+2013,Defense,20:49.0,PAMS,Cost Plus Award Fee,6198183899,3232
+2013,Defense,20:49.0,PAMS,Order Dependent (IDV only),0,NULL
+2013,Defense,20:49.0,Products,Cost No Fee,844444185,885
+2013,Defense,20:49.0,Products,Fixed Price with Economic Price Adjustment,2103748749,31687
+2013,Defense,20:49.0,Products,Labor Hours,15257200.88,848
+2013,Defense,20:49.0,Products,Not Reported,-164798.11,42
+2013,Defense,20:49.0,R&D,Cost Plus Award Fee,5158109183,1761
+2013,Defense,20:49.0,R&D,Order Dependent (IDV only),0,NULL
+2014,Defense,20:49.0,ERS,Cost No Fee,472281105,343806
+2014,Defense,20:49.0,ERS,Labor Hours,-533807.6645,62
+2014,Defense,20:49.0,FRS&C,Fixed Price Redetermination,108040255.5,218
+2014,Defense,20:49.0,ICT,Fixed Price Award Fee,15364685.63,30
+2014,Defense,20:49.0,PAMS,Cost Plus Fixed Fee,13795208532,29918
+2014,Defense,20:49.0,PAMS,Fixed Price Award Fee,14298618.34,91
+2014,Defense,20:49.0,Products,Fixed Price Level of Effort,14963022.81,52
+2014,Defense,20:49.0,Products,Not Reported,-396016.2799,15
+2014,Defense,20:49.0,Products,Time and Materials,111001172.2,740
+2014,Defense,20:49.0,R&D,Cost Plus Award Fee,2949202447,1396
+2011,Defense,20:49.0,ICT,Fixed Price Level of Effort,89845094.37,278
+2011,Defense,20:49.0,ICT,Not Reported,-5326965.67,91
+2011,Defense,20:49.0,MED,Fixed Price Incentive,528807712.6,175
+2011,Defense,20:49.0,MED,Not Reported,-49694.6,2
+2011,Defense,20:49.0,PAMS,Cost No Fee,1736272207,6894
+2011,Defense,20:49.0,Products,Firm Fixed Price,1.03167E+11,926254
+2011,Defense,20:49.0,R&D,Cost No Fee,2234076815,3905
+2011,Defense,20:49.0,R&D,Labor Hours,28862367.78,272
+2012,Defense,20:49.0,NULL,Time and Materials,-2829.1,1
+2012,Defense,20:49.0,ERS,Combination (two or more),166712351.1,300
+2012,Defense,20:49.0,ERS,Fixed Price Incentive,206755350,849
+2012,Defense,20:49.0,ERS,Not Reported,-11623.12,2
+2012,Defense,20:49.0,ERS,Order Dependent (IDV only),0,NULL
+2012,Defense,20:49.0,FRS&C,Cost Sharing,1338960,37
+2012,Defense,20:49.0,FRS&C,Fixed Price Award Fee,279343563.7,335
+2012,Defense,20:49.0,Fuel,Order Dependent (IDV only),0,NULL
+2012,Defense,20:49.0,ICT,Labor Hours,293312889.2,1129
+2012,Defense,20:49.0,MED,Time and Materials,147237.6,18
+2012,Defense,20:49.0,PAMS,Cost Sharing,593594.15,16
+2012,Defense,20:49.0,PAMS,Fixed Price Level of Effort,844080559.4,887
+2012,Defense,20:49.0,PAMS,Fixed Price with Economic Price Adjustment,19246799.2,1478
+2012,Defense,20:49.0,Products,Cost Plus Award Fee,1600799571,1479
+2012,Defense,20:49.0,Products,Order Dependent (IDV only),0,0
+2012,Defense,20:49.0,R&D,Cost Sharing,106558915.9,163
+2012,Defense,20:49.0,R&D,Fixed Price Level of Effort,151078770.5,401
+2012,Defense,20:49.0,R&D,Fixed Price with Economic Price Adjustment,155339.45,4
+2013,Defense,20:49.0,ERS,Firm Fixed Price,11467072160,7649456
+2013,Defense,20:49.0,FRS&C,Cost No Fee,162842776.6,538
+2013,Defense,20:49.0,FRS&C,Cost Plus Incentive,526790131.8,176
+2013,Defense,20:49.0,FRS&C,Other (none of the above),920838.77,39
+2013,Defense,20:49.0,Fuel,Fixed Price Award Fee,17670,1
+2013,Defense,20:49.0,ICT,Combination (two or more),364223396.8,745
+2013,Defense,20:49.0,ICT,Fixed Price Level of Effort,87694382.6,236
+2013,Defense,20:49.0,ICT,Time and Materials,491555620.8,1512
+2013,Defense,20:49.0,MED,Combination (two or more),3328414.48,45
+2013,Defense,20:49.0,MED,Fixed Price Incentive,993109982.9,139
+2013,Defense,20:49.0,PAMS,Cost No Fee,1288917660,5170
+2013,Defense,20:49.0,PAMS,Labor Hours,936501054.6,1714
+2013,Defense,20:49.0,Products,Firm Fixed Price,75487013617,795361
+2013,Defense,20:49.0,Products,Fixed Price Redetermination,67672077.56,433
+2013,Defense,20:49.0,R&D,Cost No Fee,1813068655,3739
+2013,Defense,20:49.0,R&D,Labor Hours,27572002.92,175
+2014,Defense,20:49.0,NULL,Firm Fixed Price,72.5,1
+2014,Defense,20:49.0,ERS,Combination (two or more),77957452.56,84
+2014,Defense,20:49.0,ERS,Cost Plus Award Fee,1993534740,2432
+2014,Defense,20:49.0,ERS,Order Dependent (IDV only),0,NULL
+2014,Defense,20:49.0,FRS&C,Cost Sharing,135000,8
+2014,Defense,20:49.0,FRS&C,Fixed Price Award Fee,86113157.56,181
+2014,Defense,20:49.0,FRS&C,Fixed Price Level of Effort,120841.3907,3
+2011,Defense,20:49.0,PAMS,Cost Plus Award Fee,10644795346,5958
+2011,Defense,20:49.0,PAMS,Order Dependent (IDV only),0,NULL
+2011,Defense,20:49.0,Products,Cost Plus Incentive,10308427813,2368
+2011,Defense,20:49.0,Products,Not Reported,-1284252.96,129
+2011,Defense,20:49.0,R&D,Cost Plus Award Fee,7046997586,2522
+2011,Defense,20:49.0,R&D,Firm Fixed Price,7427418379,12646
+2011,Defense,20:49.0,R&D,Order Dependent (IDV only),0,NULL
+2012,Defense,20:49.0,ERS,Cost Plus Incentive,1918756634,1243
+2012,Defense,20:49.0,FRS&C,Combination (two or more),618823387.2,911
+2012,Defense,20:49.0,FRS&C,Labor Hours,29278426.01,220
+2012,Defense,20:49.0,MED,Fixed Price Award Fee,297969207.8,85
+2012,Defense,20:49.0,PAMS,Other (none of the above),0,2
+2012,Defense,20:49.0,Products,Fixed Price Level of Effort,43279869.81,102
+2012,Defense,20:49.0,Products,Not Reported,-507191.17,53
+2012,Defense,20:49.0,R&D,Cost Plus Award Fee,5538362469,2035
+2012,Defense,20:49.0,R&D,Order Dependent (IDV only),0,NULL
+2013,Defense,20:49.0,ERS,Cost Plus Incentive,2131236789,1427
+2013,Defense,20:49.0,ERS,Fixed Price Level of Effort,8567946.003,12
+2013,Defense,20:49.0,FRS&C,Labor Hours,13718494.81,198
+2013,Defense,20:49.0,FRS&C,Order Dependent (IDV only),0,NULL
+2013,Defense,20:49.0,FRS&C,Time and Materials,57099778.07,526
+2013,Defense,20:49.0,Fuel,Fixed Price with Economic Price Adjustment,13655861765,2194
+2013,Defense,20:49.0,Fuel,Labor Hours,35000,1
+2013,Defense,20:49.0,ICT,Cost Plus Award Fee,210885707,501
+2013,Defense,20:49.0,MED,Cost Plus Incentive,1808514279,85
+2013,Defense,20:49.0,PAMS,Cost Plus Fixed Fee,15271904803,30769
+2013,Defense,20:49.0,PAMS,Fixed Price Redetermination,-1096982.008,92
+2013,Defense,20:49.0,PAMS,Other (none of the above),0,2
+2013,Defense,20:49.0,Products,Combination (two or more),3638734109,1148
+2013,Defense,20:49.0,Products,Cost Sharing,814545.4479,19
+2013,Defense,20:49.0,Products,Fixed Price Incentive,29423177411,4975
+2013,Defense,20:49.0,Products,Fixed Price Level of Effort,21954931.68,61
+2013,Defense,20:49.0,R&D,Cost Plus Fixed Fee,13216225979,30359
+2014,Defense,20:49.0,ERS,Cost Sharing,16762.09,2
+2014,Defense,20:49.0,ERS,Fixed Price Level of Effort,4965039.376,26
+2014,Defense,20:49.0,FRS&C,Order Dependent (IDV only),0,NULL
+2014,Defense,20:49.0,FRS&C,Time and Materials,68868123.51,390
+2014,Defense,20:49.0,Fuel,Fixed Price Incentive,1034490.268,192
+2014,Defense,20:49.0,Fuel,Fixed Price with Economic Price Adjustment,8264417989,14524
+2014,Defense,20:49.0,Fuel,Labor Hours,24286.5,2
+2014,Defense,20:49.0,Fuel,Time and Materials,-1544.4301,1
+2014,Defense,20:49.0,ICT,Cost No Fee,112115685.1,822
+2014,Defense,20:49.0,MED,Cost Plus Incentive,-1592273.895,30
+2014,Defense,20:49.0,MED,Fixed Price Level of Effort,568243.4062,4
+2014,Defense,20:49.0,PAMS,Cost Plus Award Fee,3357520258,2501
+2014,Defense,20:49.0,PAMS,Fixed Price Redetermination,1238119.709,52
+2014,Defense,20:49.0,Products,Combination (two or more),246997330.7,384
+2014,Defense,20:49.0,Products,Cost No Fee,2049218403,739
+2011,Defense,20:49.0,PAMS,Cost Sharing,1203977.79,15
+2011,Defense,20:49.0,PAMS,Fixed Price Level of Effort,426148608.7,951
+2011,Defense,20:49.0,Products,Order Dependent (IDV only),0,NULL
+2011,Defense,20:49.0,R&D,Cost Sharing,161766953,192
+2011,Defense,20:49.0,R&D,Fixed Price Level of Effort,124330120.8,399
+2012,Defense,20:49.0,ERS,Firm Fixed Price,13994308797,8908723
+2012,Defense,20:49.0,FRS&C,Cost Plus Award Fee,1510917845,2255
+2012,Defense,20:49.0,FRS&C,Cost Plus Incentive,370217443.2,126
+2012,Defense,20:49.0,FRS&C,Other (none of the above),937942.67,33
+2012,Defense,20:49.0,Fuel,Fixed Price Redetermination,0,NULL
+2012,Defense,20:49.0,ICT,Combination (two or more),601278548.6,1104
+2012,Defense,20:49.0,ICT,Fixed Price Incentive,152816489,441
+2012,Defense,20:49.0,ICT,Fixed Price Level of Effort,101736093.8,261
+2012,Defense,20:49.0,ICT,Not Reported,-1094351.11,26
+2012,Defense,20:49.0,ICT,Time and Materials,823504729.6,2181
+2012,Defense,20:49.0,MED,Combination (two or more),3891694.57,91
+2012,Defense,20:49.0,MED,Fixed Price Incentive,677469214.9,151
+2012,Defense,20:49.0,PAMS,Cost No Fee,1489219518,5799
+2012,Defense,20:49.0,PAMS,Labor Hours,1097627273,2484
+2012,Defense,20:49.0,Products,Firm Fixed Price,99187224191,829687
+2012,Defense,20:49.0,R&D,Cost No Fee,2169426385,3747
+2012,Defense,20:49.0,R&D,Labor Hours,25224341.21,192
+2013,Defense,20:49.0,NULL,Time and Materials,-120511.23,8
+2013,Defense,20:49.0,ERS,Combination (two or more),147151359.2,232
+2013,Defense,20:49.0,ERS,Order Dependent (IDV only),0,NULL
+2013,Defense,20:49.0,FRS&C,Cost Sharing,4905038.834,21
+2013,Defense,20:49.0,FRS&C,Fixed Price Award Fee,186082682.5,267
+2013,Defense,20:49.0,FRS&C,Fixed Price Level of Effort,308509.213,8
+2013,Defense,20:49.0,Fuel,Cost Plus Fixed Fee,67410,3
+2013,Defense,20:49.0,ICT,Labor Hours,188751270.7,618
+2013,Defense,20:49.0,MED,Firm Fixed Price,2976596720,17965
+2013,Defense,20:49.0,PAMS,Cost Sharing,56169,3
+2013,Defense,20:49.0,PAMS,Fixed Price Level of Effort,1155426971,1102
+2013,Defense,20:49.0,PAMS,Fixed Price with Economic Price Adjustment,31027936.62,1365
+2013,Defense,20:49.0,PAMS,Time and Materials,1071038923,5900
+2013,Defense,20:49.0,Products,Cost Plus Award Fee,1002139815,977
+2013,Defense,20:49.0,Products,Cost Plus Fixed Fee,10613035743,6879
+2013,Defense,20:49.0,Products,Order Dependent (IDV only),0,0
+2013,Defense,20:49.0,R&D,Fixed Price Level of Effort,152250768.9,425
+2013,Defense,20:49.0,R&D,Fixed Price with Economic Price Adjustment,1998.05,2
+2013,Defense,20:49.0,R&D,Time and Materials,99756484.28,782
+2014,Defense,20:49.0,ERS,Firm Fixed Price,13148854388,9835957
+2014,Defense,20:49.0,FRS&C,Cost No Fee,93487840.91,523
+2014,Defense,20:49.0,Fuel,Fixed Price Award Fee,0,NULL
+2014,Defense,20:49.0,ICT,Combination (two or more),24950980.47,308
+2014,Defense,20:49.0,ICT,Time and Materials,308300339.8,981
+2014,Defense,20:49.0,MED,Combination (two or more),-1251933.437,5
+2014,Defense,20:49.0,MED,Order Dependent (IDV only),0,0
+2013,Defense,20:49.0,ERS,Fixed Price Award Fee,125004442.8,148
+2013,Defense,20:49.0,ERS,Fixed Price with Economic Price Adjustment,2052837453,1420982
+2013,Defense,20:49.0,FRS&C,Cost Plus Award Fee,1756643692,1733
+2013,Defense,20:49.0,Fuel,Firm Fixed Price,597939271.9,4014
+2013,Defense,20:49.0,ICT,Firm Fixed Price,8710332065,82535
+2013,Defense,20:49.0,ICT,Fixed Price Incentive,109405085.6,571
+2013,Defense,20:49.0,ICT,Not Reported,-3053008.56,27
+2013,Defense,20:49.0,PAMS,Combination (two or more),447912866.8,1840
+2013,Defense,20:49.0,PAMS,Fixed Price Incentive,85356743.45,92
+2013,Defense,20:49.0,PAMS,Not Reported,-1163304.78,43
+2013,Defense,20:49.0,Products,Time and Materials,171941017.1,876
+2013,Defense,20:49.0,R&D,Cost Plus Incentive,3104482090,1123
+2013,Defense,20:49.0,R&D,Fixed Price Award Fee,-166429.8496,6
+2014,Defense,20:49.0,ERS,Fixed Price Incentive,225882617.7,965
+2014,Defense,20:49.0,FRS&C,Firm Fixed Price,29661808305,129085
+2014,Defense,20:49.0,Fuel,Order Dependent (IDV only),0,NULL
+2014,Defense,20:49.0,ICT,Cost Plus Award Fee,157243044.7,403
+2014,Defense,20:49.0,ICT,Fixed Price with Economic Price Adjustment,65317897.9,19253
+2014,Defense,20:49.0,ICT,Order Dependent (IDV only),0,NULL
+2014,Defense,20:49.0,MED,Fixed Price Award Fee,77016658.78,72
+2014,Defense,20:49.0,MED,Fixed Price with Economic Price Adjustment,2468352.334,79
+2014,Defense,20:49.0,PAMS,Cost Sharing,251970.5701,6
+2014,Defense,20:49.0,PAMS,Firm Fixed Price,21698061504,94993
+2014,Defense,20:49.0,Products,Cost Sharing,6194388,13
+2014,Defense,20:49.0,R&D,Fixed Price Level of Effort,112506897.6,335
+2014,Defense,20:49.0,Products,Fixed Price Incentive,21757542636,2426
+2014,Defense,20:49.0,Products,Fixed Price with Economic Price Adjustment,1036254353,22144
+2014,Defense,20:49.0,Products,Labor Hours,8731551.578,97
+2014,Defense,20:49.0,R&D,Cost Plus Fixed Fee,13380774849,32955
+2014,Defense,20:49.0,R&D,Fixed Price Award Fee,-20.89,1
+2014,Defense,20:49.0,R&D,Fixed Price Redetermination,-53629.1895,2
+2014,Defense,20:49.0,FRS&C,Fixed Price with Economic Price Adjustment,466446337,3843
+2014,Defense,20:49.0,Fuel,Cost Plus Fixed Fee,273836,9
+2014,Defense,20:49.0,ICT,Labor Hours,186355369.8,475
+2014,Defense,20:49.0,MED,Firm Fixed Price,3298017562,16690
+2014,Defense,20:49.0,PAMS,Fixed Price Level of Effort,841693024.9,999
+2014,Defense,20:49.0,PAMS,Fixed Price with Economic Price Adjustment,11964532.73,1285
+2014,Defense,20:49.0,PAMS,Time and Materials,829855500.3,4643
+2014,Defense,20:49.0,Products,Cost Plus Award Fee,930584382.3,829
+2014,Defense,20:49.0,Products,Cost Plus Fixed Fee,15833125084,7226
+2014,Defense,20:49.0,Products,Order Dependent (IDV only),0,0
+2014,Defense,20:49.0,Products,Other (none of the above),0,2
+2014,Defense,20:49.0,R&D,Fixed Price with Economic Price Adjustment,0,NULL
+2014,Defense,20:49.0,R&D,Time and Materials,-1061625.693,533
+2014,Defense,20:49.0,PAMS,Cost No Fee,801315417,4610
+2014,Defense,20:49.0,PAMS,Fixed Price Incentive,42584433.01,95
+2014,Defense,20:49.0,PAMS,Labor Hours,294741533.1,1218
+2014,Defense,20:49.0,PAMS,Not Reported,-6074078.559,39
+2014,Defense,20:49.0,Products,Fixed Price Redetermination,21826449.39,143
+2014,Defense,20:49.0,R&D,Cost No Fee,2353443266,3253
+2014,Defense,20:49.0,R&D,Fixed Price Incentive,2203984272,182
+2014,Defense,20:49.0,R&D,Labor Hours,7490805.866,89
+2011,Defense,20:49.0,Products,Fixed Price with Economic Price Adjustment,2952499792,27113
+2011,Defense,20:49.0,Products,Labor Hours,514209191.6,18520
+2011,Defense,20:49.0,R&D,Fixed Price Redetermination,-1675082.09,14
+2012,Defense,20:49.0,NULL,Cost Plus Award Fee,0,NULL
+2012,Defense,20:49.0,ERS,Cost No Fee,1274578053,428707
+2012,Defense,20:49.0,ERS,Cost Plus Award Fee,2085120640,3129
+2012,Defense,20:49.0,ERS,Fixed Price with Economic Price Adjustment,3105629161,1550920
+2012,Defense,20:49.0,ERS,Labor Hours,23490797.27,95
+2012,Defense,20:49.0,FRS&C,Cost Plus Fixed Fee,1096723797,1634
+2012,Defense,20:49.0,FRS&C,Fixed Price Level of Effort,694724.6,5
+2012,Defense,20:49.0,Fuel,Firm Fixed Price,707663597,4070
+2012,Defense,20:49.0,Fuel,Fixed Price Award Fee,25506.97,5
+2012,Defense,20:49.0,ICT,Firm Fixed Price,8632444223,95080
+2012,Defense,20:49.0,ICT,Fixed Price Award Fee,91022111.87,76
+2012,Defense,20:49.0,MED,Cost Sharing,5402.77,2
+2012,Defense,20:49.0,MED,Firm Fixed Price,2947821748,18637
+2012,Defense,20:49.0,PAMS,Combination (two or more),857781774.7,2481
+2012,Defense,20:49.0,PAMS,Fixed Price Incentive,115808012.2,92
+2012,Defense,20:49.0,PAMS,Time and Materials,2463127605,8659
+2012,Defense,20:49.0,Products,Time and Materials,726113148.1,1291
+2012,Defense,20:49.0,R&D,Cost Plus Incentive,3146300802,1103
+2013,Defense,20:49.0,NULL,Not Reported,-30689.65,2
+2013,Defense,20:49.0,ERS,Fixed Price Incentive,209408425.6,893
+2013,Defense,20:49.0,ERS,Time and Materials,489383287.6,1591
+2013,Defense,20:49.0,FRS&C,Fixed Price Redetermination,69112537.24,197
+2013,Defense,20:49.0,FRS&C,Not Reported,9484190.94,8
+2013,Defense,20:49.0,Fuel,Order Dependent (IDV only),0,NULL
+2013,Defense,20:49.0,ICT,Cost Plus Fixed Fee,4124441543,9153
+2013,Defense,20:49.0,ICT,Order Dependent (IDV only),0,NULL
+2013,Defense,20:49.0,MED,Cost No Fee,63209176.94,87
+2013,Defense,20:49.0,MED,Cost Plus Award Fee,1094689.271,23
+2013,Defense,20:49.0,MED,Fixed Price with Economic Price Adjustment,-5648052.796,159
+2013,Defense,20:49.0,MED,Labor Hours,33316045.9,152
+2013,Defense,20:49.0,MED,Order Dependent (IDV only),0,NULL
+2013,Defense,20:49.0,PAMS,Firm Fixed Price,22196346426,109983
+2013,Defense,20:49.0,PAMS,Fixed Price Award Fee,37953333.16,265
+2013,Defense,20:49.0,Products,Fixed Price Award Fee,19911766.58,104
+2013,Defense,20:49.0,R&D,Combination (two or more),248952457.6,678
+2013,Defense,20:49.0,R&D,Fixed Price Incentive,341432183.5,209
+2014,Defense,20:49.0,ERS,Cost Plus Fixed Fee,3839212124,4293
+2014,Defense,20:49.0,ERS,Fixed Price Award Fee,124312762.4,157
+2014,Defense,20:49.0,FRS&C,Cost Plus Incentive,462650848.4,190
+2014,Defense,20:49.0,FRS&C,Other (none of the above),316255.613,24
+2014,Defense,20:49.0,ICT,Cost Plus Incentive,221392675.4,338
+2014,Defense,20:49.0,ICT,Fixed Price Redetermination,86086.52,30
+2014,Defense,20:49.0,ICT,Not Reported,-1160857.69,16
+2014,Defense,20:49.0,MED,Fixed Price Incentive,1092876534,181
+2014,Defense,20:49.0,MED,Time and Materials,-5485.6799,5
+2014,Defense,20:49.0,PAMS,Order Dependent (IDV only),0,NULL
+2014,Defense,20:49.0,R&D,Cost Sharing,175921410.1,175
+2014,Defense,20:49.0,R&D,Firm Fixed Price,2677730332,8317
+2011,Defense,20:49.0,MED,Labor Hours,37960121.15,142
+2011,Defense,20:49.0,MED,Order Dependent (IDV only),0,NULL
+2011,Defense,20:49.0,PAMS,Cost Plus Fixed Fee,16001686723,31360
+2011,Defense,20:49.0,PAMS,Fixed Price Award Fee,202153795.2,577
+2011,Defense,20:49.0,PAMS,Other (none of the above),0,3
+2011,Defense,20:49.0,Products,Cost Plus Fixed Fee,8744615123,6039
+2011,Defense,20:49.0,Products,Fixed Price Award Fee,44323113.46,775
+2011,Defense,20:49.0,Products,Other (none of the above),0,1
+2011,Defense,20:49.0,R&D,Fixed Price Incentive,447941524.3,207
+2011,Defense,20:49.0,R&D,Time and Materials,265075456.6,1485
+2012,Defense,20:49.0,ERS,Cost Plus Fixed Fee,3088658218,4105
+2012,Defense,20:49.0,ERS,Fixed Price Award Fee,130796737.2,155
+2012,Defense,20:49.0,ERS,Fixed Price Level of Effort,463260.64,5
+2012,Defense,20:49.0,FRS&C,Cost No Fee,365270220.8,602
+2012,Defense,20:49.0,FRS&C,Fixed Price with Economic Price Adjustment,329740756.5,2359
+2012,Defense,20:49.0,ICT,Cost Plus Incentive,180458197.3,1031
+2012,Defense,20:49.0,ICT,Fixed Price Redetermination,643390.79,10
+2012,Defense,20:49.0,PAMS,Not Reported,-1159433.68,49
+2012,Defense,20:49.0,Products,Combination (two or more),4938274883,1250
+2012,Defense,20:49.0,Products,Fixed Price Redetermination,104349300.6,995
+2012,Defense,20:49.0,R&D,Fixed Price Award Fee,100000,4
+2013,Defense,20:49.0,NULL,Firm Fixed Price,-100766.16,24
+2013,Defense,20:49.0,ERS,Fixed Price Redetermination,57755789.2,85
+2013,Defense,20:49.0,ERS,Not Reported,-3747.85,2
+2013,Defense,20:49.0,FRS&C,Firm Fixed Price,27146211863,133876
+2013,Defense,20:49.0,FRS&C,Fixed Price Incentive,148316024.2,287
+2013,Defense,20:49.0,ICT,Cost No Fee,220518324.6,1140
+2013,Defense,20:49.0,ICT,Fixed Price with Economic Price Adjustment,102813750.4,23303
+2013,Defense,20:49.0,MED,Cost Plus Fixed Fee,7448214145,380
+2013,Defense,20:49.0,MED,Fixed Price Level of Effort,486896.4844,2
+2013,Defense,20:49.0,PAMS,Cost Plus Incentive,920979159.3,780
+2013,Defense,20:49.0,Products,Cost Plus Incentive,8430334306,2962
+2014,Defense,20:49.0,ERS,Cost Plus Incentive,2007748954,1412
+2014,Defense,20:49.0,ERS,Fixed Price with Economic Price Adjustment,1692544958,1312657
+2014,Defense,20:49.0,FRS&C,Cost Plus Award Fee,1375035048,1803
+2014,Defense,20:49.0,FRS&C,Cost Plus Fixed Fee,1083754053,1205
+2014,Defense,20:49.0,FRS&C,Labor Hours,17238451.94,168
+2014,Defense,20:49.0,Fuel,Firm Fixed Price,3879278726,9709
+2014,Defense,20:49.0,ICT,Firm Fixed Price,9137807587,79301
+2014,Defense,20:49.0,ICT,Fixed Price Incentive,139370743.7,516
+2014,Defense,20:49.0,MED,Fixed Price Redetermination,12081,1
+2014,Defense,20:49.0,PAMS,Combination (two or more),58525581.95,768
+2014,Defense,20:49.0,R&D,Cost Plus Incentive,2500233433,1180

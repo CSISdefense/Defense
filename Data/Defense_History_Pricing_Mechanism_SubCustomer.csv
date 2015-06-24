@@ -1,0 +1,2151 @@
+fiscal_year,Query_Run,Customer,SubCustomer,FundingMechanismClassification,SumOfobligatedAmount,SumOfnumberOfActions
+NULL,00:36.7,Defense,Army,NULL,NULL,NULL
+1989,00:36.7,Defense,Army,Cost No Fee,499000,NULL
+1989,00:36.7,Defense,Army,Time and Materials,30000,NULL
+1989,00:36.7,Defense,Navy,Cost Plus Fixed Fee,45352000,NULL
+1990,00:36.7,Defense,Air Force,Cost No Fee,1023553000,NULL
+1990,00:36.7,Defense,Air Force,Cost Plus Award Fee,1830430000,NULL
+1990,00:36.7,Defense,Air Force,Labor Hours,209473000,NULL
+1990,00:36.7,Defense,Army,Cost Plus Incentive,711327000,NULL
+1990,00:36.7,Defense,Army,Cost Sharing,41008000,NULL
+1990,00:36.7,Defense,Army,Fixed Price Redetermination,43264000,NULL
+1990,00:36.7,Defense,DLA,Fixed Price Redetermination,786000,NULL
+1990,00:36.7,Defense,Navy,NULL,7326509000,NULL
+1990,00:36.7,Defense,Other DoD,Cost Sharing,17042000,NULL
+1991,00:36.7,Defense,Air Force,Cost Sharing,108677000,NULL
+1991,00:36.7,Defense,Air Force,Fixed Price Incentive,6750461000,NULL
+1991,00:36.7,Defense,Air Force,Time and Materials,1339671000,NULL
+1991,00:36.7,Defense,Army,Cost No Fee,254718000,NULL
+1991,00:36.7,Defense,Army,Cost Plus Fixed Fee,2696958000,NULL
+1991,00:36.7,Defense,Navy,Cost Sharing,56410000,NULL
+1991,00:36.7,Defense,Other DoD,Cost No Fee,105182000,NULL
+1991,00:36.7,Defense,Other DoD,Labor Hours,29928000,NULL
+1992,00:36.7,Defense,Air Force,Cost No Fee,1161606078,NULL
+1992,00:36.7,Defense,Air Force,Cost Plus Award Fee,3945738849,NULL
+1992,00:36.7,Defense,Air Force,Cost Plus Fixed Fee,3251736955,NULL
+1992,00:36.7,Defense,Air Force,Labor Hours,281409878,NULL
+1992,00:36.7,Defense,Army,Cost Plus Incentive,2401011170,NULL
+1992,00:36.7,Defense,Army,Fixed Price Redetermination,145545798,NULL
+1992,00:36.7,Defense,DLA,Fixed Price Redetermination,2218235,NULL
+1992,00:36.7,Defense,Navy,NULL,1770351954,NULL
+1992,00:36.7,Defense,Other DoD,Cost Sharing,54853112,NULL
+1992,00:36.7,Defense,Other DoD,Fixed Price Redetermination,173418407,NULL
+1992,00:36.7,Defense,Other DoD,Time and Materials,17564982,NULL
+1993,00:36.7,Defense,Air Force,Time and Materials,1437421407,NULL
+1993,00:36.7,Defense,Army,Cost Plus Fixed Fee,3600773033,NULL
+1993,00:36.7,Defense,DLA,Fixed Price with Economic Price Adjustment,4566048371,NULL
+1993,00:36.7,Defense,Navy,Cost Sharing,17457918,NULL
+1993,00:36.7,Defense,Other DoD,Cost No Fee,164117112,NULL
+1993,00:36.7,Defense,Other DoD,Cost Plus Fixed Fee,1474463490,NULL
+1993,00:36.7,Defense,Other DoD,Labor Hours,30068239,NULL
+1994,00:36.7,Defense,Air Force,Cost Plus Fixed Fee,3214559567,5118
+1994,00:36.7,Defense,Air Force,Fixed Price Redetermination,272384099,208
+1994,00:36.7,Defense,Army,NULL,1189858047,1081
+1994,00:36.7,Defense,DLA,NULL,119925996,277
+1994,00:36.7,Defense,MDA,Cost Plus Award Fee,88514439,70
+1994,00:36.7,Defense,MilitaryHealth,Firm Fixed Price,461597251,104
+1994,00:36.7,Defense,Navy,NULL,1791349607,1943
+1994,00:36.7,Defense,Navy,Cost No Fee,366337415,449
+1994,00:36.7,Defense,Navy,Labor Hours,69141730,506
+1988,00:36.7,Defense,Navy,Cost Plus Fixed Fee,1434000,NULL
+1988,00:36.7,Defense,Other DoD,NULL,44000,NULL
+1989,00:36.7,Defense,Other DoD,Cost Plus Incentive,2921000,NULL
+1990,00:36.7,Defense,Air Force,Cost Sharing,114159000,NULL
+1990,00:36.7,Defense,Air Force,Firm Fixed Price,15645468000,NULL
+1990,00:36.7,Defense,Air Force,Fixed Price Incentive,7609805000,NULL
+1990,00:36.7,Defense,Army,Cost Plus Fixed Fee,1633200000,NULL
+1990,00:36.7,Defense,Navy,Cost Plus Incentive,1667513000,NULL
+1991,00:36.7,Defense,Air Force,Cost No Fee,1098535000,NULL
+1991,00:36.7,Defense,Air Force,Cost Plus Award Fee,2451895000,NULL
+1991,00:36.7,Defense,Air Force,Fixed Price with Economic Price Adjustment,1206923000,NULL
+1991,00:36.7,Defense,Air Force,Labor Hours,208921000,NULL
+1991,00:36.7,Defense,Army,Cost Plus Incentive,1696350000,NULL
+1991,00:36.7,Defense,Army,Fixed Price Redetermination,84458000,NULL
+1991,00:36.7,Defense,DLA,Fixed Price Redetermination,79493000,NULL
+1991,00:36.7,Defense,Navy,Fixed Price Incentive,6604056111,NULL
+1991,00:36.7,Defense,Other DoD,Cost Sharing,38189000,NULL
+1991,00:36.7,Defense,Other DoD,Fixed Price Redetermination,146585000,NULL
+1992,00:36.7,Defense,Air Force,NULL,2956587712,NULL
+1992,00:36.7,Defense,Air Force,Time and Materials,1425952573,NULL
+1992,00:36.7,Defense,Army,Fixed Price with Economic Price Adjustment,1536763471,NULL
+1992,00:36.7,Defense,Navy,Cost Sharing,68232780,NULL
+1992,00:36.7,Defense,Navy,Firm Fixed Price,21722960820,23
+1992,00:36.7,Defense,Other DoD,NULL,10606632,NULL
+1992,00:36.7,Defense,Other DoD,Cost No Fee,140552128,NULL
+1992,00:36.7,Defense,Other DoD,Fixed Price with Economic Price Adjustment,884099031,NULL
+1992,00:36.7,Defense,Other DoD,Labor Hours,28318233,NULL
+1993,00:36.7,Defense,Air Force,Cost Plus Fixed Fee,3515848546,NULL
+1993,00:36.7,Defense,Army,Firm Fixed Price,15357126768,NULL
+1993,00:36.7,Defense,Army,Fixed Price Incentive,245933073,NULL
+1993,00:36.7,Defense,DLA,Cost Sharing,6134723,NULL
+1993,00:36.7,Defense,DLA,Firm Fixed Price,3208754302,NULL
+1993,00:36.7,Defense,DLA,Fixed Price Incentive,57475,NULL
+1993,00:36.7,Defense,Navy,NULL,1768733319,23
+1993,00:36.7,Defense,Navy,Cost No Fee,153464297,2
+1993,00:36.7,Defense,Navy,Cost Plus Award Fee,1714821148,48
+1993,00:36.7,Defense,Navy,Labor Hours,94398455,28
+1993,00:36.7,Defense,Other DoD,Firm Fixed Price,2637612845,NULL
+1993,00:36.7,Defense,Other DoD,Time and Materials,62761483,NULL
+1994,00:36.7,Defense,Army,Cost Plus Award Fee,1621665736,1588
+1994,00:36.7,Defense,Army,Labor Hours,30610045,126
+1994,00:36.7,Defense,DLA,Cost No Fee,7563137,39
+1994,00:36.7,Defense,DLA,Fixed Price with Economic Price Adjustment,4523430847,1740
+1994,00:36.7,Defense,DLA,Labor Hours,160958,3
+1994,00:36.7,Defense,Navy,Time and Materials,980133156,5481
+1994,00:36.7,Defense,Other DoD,Cost Plus Fixed Fee,633309056,873
+1995,00:36.7,Defense,Air Force,Cost Plus Incentive,806494146,211
+NULL,00:36.7,Defense,Air Force,NULL,NULL,NULL
+NULL,00:36.7,Defense,Navy,NULL,NULL,NULL
+1989,00:36.7,Defense,Army,Firm Fixed Price,115903000,NULL
+1989,00:36.7,Defense,Navy,Cost No Fee,1454000,NULL
+1989,00:36.7,Defense,Navy,Labor Hours,2310000,NULL
+1989,00:36.7,Defense,Other DoD,Firm Fixed Price,8906000,NULL
+1990,00:36.7,Defense,Air Force,Cost Plus Fixed Fee,4020239000,NULL
+1990,00:36.7,Defense,Army,Cost Plus Award Fee,759101000,NULL
+1990,00:36.7,Defense,Army,Firm Fixed Price,10394876000,NULL
+1990,00:36.7,Defense,Navy,Cost No Fee,281422000,NULL
+1990,00:36.7,Defense,Navy,Fixed Price with Economic Price Adjustment,932951000,NULL
+1990,00:36.7,Defense,Navy,Labor Hours,125780000,NULL
+1990,00:36.7,Defense,Navy,Time and Materials,737812125,NULL
+1990,00:36.7,Defense,Other DoD,Cost Plus Fixed Fee,1171619000,NULL
+1990,00:36.7,Defense,Other DoD,Firm Fixed Price,1390634000,NULL
+1991,00:36.7,Defense,Air Force,Cost Plus Incentive,1051228000,NULL
+1991,00:36.7,Defense,Army,Cost Plus Award Fee,2632789000,NULL
+1991,00:36.7,Defense,Army,Cost Sharing,27804000,NULL
+1991,00:36.7,Defense,Navy,Time and Materials,812066469,NULL
+1991,00:36.7,Defense,Other DoD,Cost Plus Award Fee,512831000,NULL
+1991,00:36.7,Defense,Other DoD,Cost Plus Fixed Fee,1269135000,NULL
+1992,00:36.7,Defense,Air Force,Cost Plus Incentive,2007447128,NULL
+1992,00:36.7,Defense,Army,Cost No Fee,377493307,NULL
+1992,00:36.7,Defense,DLA,Cost Plus Fixed Fee,32959839,NULL
+1992,00:36.7,Defense,Other DoD,Cost Plus Incentive,21783853,NULL
+1993,00:36.7,Defense,Air Force,Cost Sharing,61326944,NULL
+1993,00:36.7,Defense,Air Force,Fixed Price Incentive,6937927361,NULL
+1993,00:36.7,Defense,Navy,Fixed Price with Economic Price Adjustment,832199281,1
+1993,00:36.7,Defense,Other DoD,Cost Plus Incentive,12993055,NULL
+1994,00:36.7,Defense,Air Force,Cost No Fee,1247426579,1199
+1994,00:36.7,Defense,Air Force,Cost Sharing,52117872,176
+1994,00:36.7,Defense,Air Force,Fixed Price Incentive,8455812423,1320
+1994,00:36.7,Defense,Air Force,Labor Hours,412730627,971
+1994,00:36.7,Defense,Army,Cost Plus Incentive,1517118004,417
+1994,00:36.7,Defense,Army,Cost Sharing,62473121,71
+1994,00:36.7,Defense,Navy,Fixed Price Incentive,3791297076,1898
+1994,00:36.7,Defense,Other DoD,Cost Plus Award Fee,205345806,220
+1994,00:36.7,Defense,Other DoD,Cost Sharing,47493334,19
+1995,00:36.7,Defense,Air Force,NULL,5864075641,2883
+1995,00:36.7,Defense,Air Force,Cost No Fee,1122222328,1131
+1995,00:36.7,Defense,Air Force,Fixed Price with Economic Price Adjustment,569714605,1187
+1995,00:36.7,Defense,Air Force,Labor Hours,258631101,1020
+1995,00:36.7,Defense,Air Force,Time and Materials,1482736997,3638
+1995,00:36.7,Defense,Army,Cost No Fee,559696185,1046
+1995,00:36.7,Defense,Army,Cost Plus Incentive,1850829047,543
+1995,00:36.7,Defense,Army,Fixed Price with Economic Price Adjustment,991143943,1003
+1995,00:36.7,Defense,Navy,Firm Fixed Price,15849167629,42557
+NULL,00:36.7,Defense,Air Force,Firm Fixed Price,259871,1
+1988,00:36.7,Defense,Navy,Fixed Price Incentive,152000,NULL
+1989,00:36.7,Defense,Army,NULL,176844000,NULL
+1989,00:36.7,Defense,Navy,Fixed Price with Economic Price Adjustment,348828000,NULL
+1990,00:36.7,Defense,DLA,Cost Sharing,5209000,NULL
+1990,00:36.7,Defense,DLA,Firm Fixed Price,2136624000,NULL
+1990,00:36.7,Defense,Navy,Fixed Price Incentive,6975491000,NULL
+1990,00:36.7,Defense,Other DoD,Cost Plus Award Fee,328081000,NULL
+1990,00:36.7,Defense,Other DoD,Cost Plus Incentive,138403000,NULL
+1991,00:36.7,Defense,Air Force,NULL,3563210000,NULL
+1991,00:36.7,Defense,Army,Fixed Price with Economic Price Adjustment,2489120000,NULL
+1991,00:36.7,Defense,Navy,Cost Plus Incentive,1088873014,NULL
+1991,00:36.7,Defense,Navy,Firm Fixed Price,22989898802,4
+1991,00:36.7,Defense,Other DoD,NULL,23636000,NULL
+1992,00:36.7,Defense,Air Force,Fixed Price with Economic Price Adjustment,1146037115,NULL
+1992,00:36.7,Defense,Army,Firm Fixed Price,18001022342,NULL
+1992,00:36.7,Defense,Army,Fixed Price Incentive,250630237,NULL
+1992,00:36.7,Defense,DLA,Cost Sharing,2729452,NULL
+1992,00:36.7,Defense,DLA,Firm Fixed Price,3194540166,NULL
+1993,00:36.7,Defense,Air Force,NULL,4384777342,NULL
+1993,00:36.7,Defense,Army,Cost Plus Award Fee,2069596310,NULL
+1993,00:36.7,Defense,Army,Fixed Price with Economic Price Adjustment,1546979264,NULL
+1993,00:36.7,Defense,Army,Labor Hours,25685503,NULL
+1993,00:36.7,Defense,DLA,Cost No Fee,9279670,NULL
+1993,00:36.7,Defense,DLA,Cost Plus Fixed Fee,31945711,NULL
+1993,00:36.7,Defense,DLA,Labor Hours,431752,NULL
+1993,00:36.7,Defense,Navy,Firm Fixed Price,19168178249,2052
+1993,00:36.7,Defense,Navy,Fixed Price Redetermination,98321580,7
+1993,00:36.7,Defense,Other DoD,Fixed Price with Economic Price Adjustment,617584552,NULL
+1994,00:36.7,Defense,Air Force,Cost Plus Incentive,1683968691,287
+1994,00:36.7,Defense,Air Force,Fixed Price with Economic Price Adjustment,1156188608,1228
+1994,00:36.7,Defense,Army,Firm Fixed Price,12388834930,42000
+1994,00:36.7,Defense,Army,Fixed Price Incentive,318184911,28
+1994,00:36.7,Defense,Army,Time and Materials,403732416,1889
+1994,00:36.7,Defense,DLA,Cost Sharing,1255836,2
+1994,00:36.7,Defense,DLA,Time and Materials,2702843,10
+1994,00:36.7,Defense,MDA,Cost Sharing,690000,1
+1994,00:36.7,Defense,MilitaryHealth,Fixed Price Incentive,124341486,109
+1994,00:36.7,Defense,MilitaryHealth,Fixed Price Redetermination,281093268,10
+1994,00:36.7,Defense,Navy,Cost Plus Award Fee,2667584305,3662
+1994,00:36.7,Defense,Navy,Cost Plus Fixed Fee,7794221957,17118
+1994,00:36.7,Defense,Navy,Fixed Price with Economic Price Adjustment,944767760,627
+1994,00:36.7,Defense,Other DoD,Firm Fixed Price,2323113447,8014
+1994,00:36.7,Defense,Other DoD,Fixed Price Incentive,19305774,9
+1995,00:36.7,Defense,Army,Cost Plus Award Fee,2492828210,2296
+1995,00:36.7,Defense,Army,Labor Hours,32231898,155
+1989,00:36.7,Defense,Navy,NULL,110234000,NULL
+1989,00:36.7,Defense,Navy,Firm Fixed Price,633773946,NULL
+1989,00:36.7,Defense,Navy,Fixed Price Redetermination,172000,NULL
+1989,00:36.7,Defense,Other DoD,Time and Materials,115000,NULL
+1990,00:36.7,Defense,Air Force,Fixed Price with Economic Price Adjustment,393741000,NULL
+1990,00:36.7,Defense,Air Force,Time and Materials,930567000,NULL
+1990,00:36.7,Defense,Army,Fixed Price Incentive,179053000,NULL
+1990,00:36.7,Defense,Army,Time and Materials,410431000,NULL
+1990,00:36.7,Defense,DLA,Fixed Price with Economic Price Adjustment,1040001000,NULL
+1990,00:36.7,Defense,DLA,Time and Materials,10317000,NULL
+1990,00:36.7,Defense,Navy,Cost Plus Award Fee,1116214000,NULL
+1990,00:36.7,Defense,Navy,Cost Plus Fixed Fee,5605186239,3
+1990,00:36.7,Defense,Other DoD,Cost No Fee,63314000,NULL
+1990,00:36.7,Defense,Other DoD,Fixed Price Incentive,126671000,NULL
+1990,00:36.7,Defense,Other DoD,Labor Hours,17474000,NULL
+1991,00:36.7,Defense,Air Force,Fixed Price Redetermination,32766000,NULL
+1991,00:36.7,Defense,Army,NULL,3310093000,NULL
+1991,00:36.7,Defense,Army,Labor Hours,20150000,NULL
+1991,00:36.7,Defense,DLA,NULL,100613000,NULL
+1991,00:36.7,Defense,DLA,Cost No Fee,4544000,NULL
+1991,00:36.7,Defense,DLA,Labor Hours,6142000,NULL
+1991,00:36.7,Defense,Navy,Fixed Price Redetermination,41020340,NULL
+1991,00:36.7,Defense,Other DoD,Fixed Price with Economic Price Adjustment,460113000,NULL
+1991,00:36.7,Defense,Other DoD,Time and Materials,19929000,NULL
+1992,00:36.7,Defense,Air Force,Firm Fixed Price,14861959862,NULL
+1992,00:36.7,Defense,Army,Time and Materials,689335086,NULL
+1992,00:36.7,Defense,DLA,Fixed Price with Economic Price Adjustment,3583846609,NULL
+1992,00:36.7,Defense,DLA,Time and Materials,13377423,NULL
+1992,00:36.7,Defense,Navy,Cost Plus Award Fee,1444091724,1
+1992,00:36.7,Defense,Navy,Cost Plus Fixed Fee,6941258416,2
+1992,00:36.7,Defense,Other DoD,Fixed Price Incentive,105158752,NULL
+1993,00:36.7,Defense,Air Force,Fixed Price Redetermination,47818767,NULL
+1993,00:36.7,Defense,Army,NULL,4167765424,NULL
+1993,00:36.7,Defense,Army,Fixed Price Redetermination,124495789,NULL
+1993,00:36.7,Defense,DLA,NULL,85473252,NULL
+1993,00:36.7,Defense,DLA,Fixed Price Redetermination,1031157,NULL
+1993,00:36.7,Defense,Navy,Cost Plus Incentive,1360507580,11
+1993,00:36.7,Defense,Other DoD,NULL,6490920,NULL
+1994,00:36.7,Defense,Air Force,Firm Fixed Price,15323352564,41271
+1994,00:36.7,Defense,Army,Cost Plus Fixed Fee,2582244046,4874
+1994,00:36.7,Defense,DLA,Firm Fixed Price,1994438001,17200
+1994,00:36.7,Defense,MDA,Cost Plus Fixed Fee,198128830,280
+1994,00:36.7,Defense,MDA,Firm Fixed Price,51992609,32
+1994,00:36.7,Defense,MilitaryHealth,Cost Plus Award Fee,9624824,27
+1995,00:36.7,Defense,Air Force,Cost Plus Award Fee,6034318825,2292
+1995,00:36.7,Defense,Air Force,Cost Plus Fixed Fee,1963552260,4282
+1995,00:36.7,Defense,Army,Fixed Price Redetermination,97321386,214
+NULL,00:36.7,Defense,NULL,NULL,NULL,NULL
+1989,00:36.7,Defense,Navy,Fixed Price Incentive,36551000,NULL
+1989,00:36.7,Defense,Navy,Time and Materials,15646000,NULL
+1989,00:36.7,Defense,Other DoD,Cost Plus Award Fee,5187000,NULL
+1989,00:36.7,Defense,Other DoD,Cost Sharing,250000,NULL
+1990,00:36.7,Defense,Army,Cost No Fee,243832000,NULL
+1990,00:36.7,Defense,Army,Fixed Price with Economic Price Adjustment,1870776000,NULL
+1990,00:36.7,Defense,Other DoD,NULL,31644000,NULL
+1991,00:36.7,Defense,Air Force,Cost Plus Fixed Fee,3615577000,NULL
+1991,00:36.7,Defense,Army,Firm Fixed Price,20848257000,NULL
+1991,00:36.7,Defense,DLA,Cost Sharing,2596000,NULL
+1991,00:36.7,Defense,DLA,Firm Fixed Price,5383649000,NULL
+1991,00:36.7,Defense,DLA,Fixed Price Incentive,72000,NULL
+1991,00:36.7,Defense,Navy,NULL,2184431535,NULL
+1992,00:36.7,Defense,Air Force,Fixed Price Incentive,7465552186,NULL
+1992,00:36.7,Defense,Army,Cost Plus Fixed Fee,3167083273,NULL
+1992,00:36.7,Defense,DLA,Cost No Fee,8136700,NULL
+1992,00:36.7,Defense,DLA,Cost Plus Award Fee,6445000,NULL
+1992,00:36.7,Defense,Navy,Cost Plus Incentive,1299565605,NULL
+1992,00:36.7,Defense,Other DoD,Cost Plus Fixed Fee,1425921605,NULL
+1993,00:36.7,Defense,Air Force,Cost Plus Award Fee,4330902401,NULL
+1993,00:36.7,Defense,Air Force,Fixed Price with Economic Price Adjustment,752839744,NULL
+1993,00:36.7,Defense,Air Force,Labor Hours,467351728,NULL
+1993,00:36.7,Defense,Other DoD,Fixed Price Redetermination,287541582,NULL
+1994,00:36.7,Defense,Air Force,NULL,5153941861,2817
+1994,00:36.7,Defense,Air Force,Time and Materials,1527179836,4397
+1994,00:36.7,Defense,DLA,Cost Plus Fixed Fee,33558620,204
+1994,00:36.7,Defense,Navy,Cost Sharing,34305010,71
+1994,00:36.7,Defense,Navy,Firm Fixed Price,18920308367,46573
+1994,00:36.7,Defense,Navy,Fixed Price Redetermination,38323448,191
+1994,00:36.7,Defense,Other DoD,Cost No Fee,61731649,81
+1994,00:36.7,Defense,Other DoD,Fixed Price with Economic Price Adjustment,474253850,3264
+1994,00:36.7,Defense,Other DoD,Labor Hours,14341722,68
+1995,00:36.7,Defense,Army,Fixed Price Incentive,208127491,58
+1995,00:36.7,Defense,MilitaryHealth,Firm Fixed Price,1192385687,139
+1995,00:36.7,Defense,MilitaryHealth,Fixed Price Incentive,112729596,137
+1995,00:36.7,Defense,Navy,Cost No Fee,204244563,450
+1995,00:36.7,Defense,Navy,Cost Plus Award Fee,2846889193,3937
+1995,00:36.7,Defense,Navy,Fixed Price with Economic Price Adjustment,925138846,370
+1995,00:36.7,Defense,Navy,Labor Hours,56551753,473
+1995,00:36.7,Defense,Other DoD,Firm Fixed Price,1018830134,4334
+1995,00:36.7,Defense,Other DoD,Time and Materials,471132910,807
+1996,00:36.7,Defense,Army,Cost Plus Award Fee,2645491536,2351
+1996,00:36.7,Defense,Army,Cost Sharing,30813298,71
+1996,00:36.7,Defense,Army,Labor Hours,60438698,248
+1996,00:36.7,Defense,DLA,Fixed Price with Economic Price Adjustment,3908268921,2079
+1996,00:36.7,Defense,DLA,Labor Hours,225818,4
+1987,00:36.7,Defense,Army,Firm Fixed Price,-171000,NULL
+1988,00:36.7,Defense,Army,Firm Fixed Price,-1000,NULL
+1988,00:36.7,Defense,Navy,Cost No Fee,148000,NULL
+1988,00:36.7,Defense,Other DoD,Cost Plus Fixed Fee,200000,NULL
+1989,00:36.7,Defense,Army,Cost Plus Award Fee,13964000,NULL
+1989,00:36.7,Defense,Army,Cost Plus Fixed Fee,15342000,NULL
+1989,00:36.7,Defense,Other DoD,Cost Plus Fixed Fee,68031000,NULL
+1989,00:36.7,Defense,Other DoD,Fixed Price Redetermination,430000,NULL
+1990,00:36.7,Defense,Air Force,Cost Plus Incentive,634128000,NULL
+1990,00:36.7,Defense,DLA,Cost Plus Fixed Fee,29120000,NULL
+1990,00:36.7,Defense,Navy,Cost Sharing,25388000,NULL
+1990,00:36.7,Defense,Other DoD,Fixed Price Redetermination,27883000,NULL
+1991,00:36.7,Defense,DLA,Cost Plus Fixed Fee,26209000,NULL
+1991,00:36.7,Defense,Navy,Cost No Fee,170459738,NULL
+1991,00:36.7,Defense,Navy,Fixed Price with Economic Price Adjustment,746412833,NULL
+1991,00:36.7,Defense,Navy,Labor Hours,123969607,NULL
+1991,00:36.7,Defense,Other DoD,Cost Plus Incentive,28575000,NULL
+1991,00:36.7,Defense,Other DoD,Firm Fixed Price,1240410000,NULL
+1992,00:36.7,Defense,Air Force,Cost Sharing,71496169,NULL
+1992,00:36.7,Defense,Army,Cost Plus Award Fee,2349485570,NULL
+1992,00:36.7,Defense,Army,Cost Sharing,54722362,NULL
+1992,00:36.7,Defense,Navy,Cost No Fee,212820938,NULL
+1992,00:36.7,Defense,Navy,Fixed Price Incentive,5056809598,1
+1992,00:36.7,Defense,Navy,Fixed Price with Economic Price Adjustment,1051382212,1
+1992,00:36.7,Defense,Navy,Labor Hours,84027312,NULL
+1992,00:36.7,Defense,Navy,Time and Materials,940225222,NULL
+1992,00:36.7,Defense,Other DoD,Cost Plus Award Fee,759894835,NULL
+1992,00:36.7,Defense,Other DoD,Firm Fixed Price,2521759294,NULL
+1993,00:36.7,Defense,Air Force,Cost No Fee,787859402,NULL
+1993,00:36.7,Defense,Air Force,Cost Plus Incentive,1580027200,NULL
+1993,00:36.7,Defense,Army,Cost No Fee,563523584,NULL
+1993,00:36.7,Defense,Army,Cost Plus Incentive,2095855555,NULL
+1993,00:36.7,Defense,Army,Cost Sharing,54695177,NULL
+1993,00:36.7,Defense,Navy,Fixed Price Incentive,3821777494,67
+1993,00:36.7,Defense,Navy,Time and Materials,828344952,101
+1993,00:36.7,Defense,Other DoD,Cost Plus Award Fee,482741644,NULL
+1993,00:36.7,Defense,Other DoD,Cost Sharing,40443750,NULL
+1994,00:36.7,Defense,Army,Cost No Fee,303328479,859
+1994,00:36.7,Defense,Army,Fixed Price with Economic Price Adjustment,122438807,637
+1994,00:36.7,Defense,MDA,Cost No Fee,4421982,15
+1994,00:36.7,Defense,Other DoD,Cost Plus Incentive,79994008,45
+1995,00:36.7,Defense,Air Force,Cost Sharing,66717455,179
+1995,00:36.7,Defense,Air Force,Fixed Price Incentive,4129778544,1349
+1995,00:36.7,Defense,DLA,Cost Sharing,7164018,4
+1995,00:36.7,Defense,DLA,Fixed Price Incentive,-2328892,14
+1995,00:36.7,Defense,MDA,Cost No Fee,3909373,15
+1995,00:36.7,Defense,Navy,NULL,1850318372,2108
+NULL,00:36.7,Defense,Other DoD,NULL,NULL,NULL
+1988,00:36.7,Defense,Navy,NULL,53000,NULL
+1988,00:36.7,Defense,Navy,Firm Fixed Price,5564670,NULL
+1988,00:36.7,Defense,Other DoD,Time and Materials,58000,NULL
+1989,00:36.7,Defense,Navy,Cost Plus Award Fee,33603000,NULL
+1989,00:36.7,Defense,Other DoD,Cost No Fee,330000,NULL
+1989,00:36.7,Defense,Other DoD,Labor Hours,8000,NULL
+1990,00:36.7,Defense,Air Force,NULL,8182836000,NULL
+1990,00:36.7,Defense,Air Force,Fixed Price Redetermination,437917000,NULL
+1990,00:36.7,Defense,Army,NULL,6517794000,NULL
+1990,00:36.7,Defense,Army,Labor Hours,8371000,NULL
+1990,00:36.7,Defense,DLA,NULL,5942495000,NULL
+1990,00:36.7,Defense,DLA,Cost No Fee,9454000,NULL
+1990,00:36.7,Defense,DLA,Labor Hours,14584000,NULL
+1990,00:36.7,Defense,Navy,Firm Fixed Price,19150174041,NULL
+1990,00:36.7,Defense,Navy,Fixed Price Redetermination,40697000,NULL
+1990,00:36.7,Defense,Other DoD,Fixed Price with Economic Price Adjustment,521000,NULL
+1990,00:36.7,Defense,Other DoD,Time and Materials,17767000,NULL
+1991,00:36.7,Defense,Air Force,Firm Fixed Price,22197220000,NULL
+1991,00:36.7,Defense,Army,Fixed Price Incentive,228975000,NULL
+1991,00:36.7,Defense,Army,Time and Materials,604170000,NULL
+1991,00:36.7,Defense,DLA,Fixed Price with Economic Price Adjustment,6074384000,NULL
+1991,00:36.7,Defense,DLA,Time and Materials,5770000,NULL
+1991,00:36.7,Defense,Navy,Cost Plus Award Fee,1305995362,NULL
+1991,00:36.7,Defense,Navy,Cost Plus Fixed Fee,5816356033,2
+1991,00:36.7,Defense,Other DoD,Fixed Price Incentive,137333000,NULL
+1992,00:36.7,Defense,Air Force,Fixed Price Redetermination,27198531,NULL
+1992,00:36.7,Defense,Army,NULL,2118118281,NULL
+1992,00:36.7,Defense,Army,Labor Hours,22598101,NULL
+1992,00:36.7,Defense,DLA,NULL,55948278,NULL
+1992,00:36.7,Defense,DLA,Labor Hours,1743337,NULL
+1992,00:36.7,Defense,Navy,Fixed Price Redetermination,52526032,NULL
+1993,00:36.7,Defense,Air Force,Firm Fixed Price,15148348572,NULL
+1993,00:36.7,Defense,Army,Time and Materials,805348984,NULL
+1993,00:36.7,Defense,DLA,Time and Materials,16366591,NULL
+1993,00:36.7,Defense,Navy,Cost Plus Fixed Fee,7524536689,160
+1993,00:36.7,Defense,Other DoD,Fixed Price Incentive,138071626,NULL
+1994,00:36.7,Defense,Air Force,Cost Plus Award Fee,5055068098,2260
+1994,00:36.7,Defense,Army,Fixed Price Redetermination,87813366,121
+1994,00:36.7,Defense,DLA,Fixed Price Redetermination,1392706,18
+1994,00:36.7,Defense,Navy,Cost Plus Incentive,2733511909,239
+1994,00:36.7,Defense,Other DoD,NULL,498185434,228
+1995,00:36.7,Defense,Air Force,Firm Fixed Price,14726079945,41247
+1995,00:36.7,Defense,Army,Cost Plus Fixed Fee,3874880793,6437
+1995,00:36.7,Defense,Army,Firm Fixed Price,16719187086,55112
+1995,00:36.7,Defense,DLA,Firm Fixed Price,2889977012,19749
+1995,00:36.7,Defense,MDA,Cost Plus Fixed Fee,211061611,239
+1995,00:36.7,Defense,MDA,Firm Fixed Price,15462431,26
+1995,00:36.7,Defense,Navy,Fixed Price Incentive,5973665798,1602
+1995,00:36.7,Defense,Other DoD,Cost No Fee,51751023,48
+1995,00:36.7,Defense,Other DoD,Cost Sharing,130783104,18
+1995,00:36.7,Defense,Other DoD,Labor Hours,8291400,28
+1996,00:36.7,Defense,Air Force,NULL,6630211421,2845
+1996,00:36.7,Defense,Air Force,Time and Materials,1423366548,3841
+1996,00:36.7,Defense,Army,Cost No Fee,461284014,1017
+1996,00:36.7,Defense,Army,Fixed Price Incentive,79275055,113
+1996,00:36.7,Defense,Army,Fixed Price with Economic Price Adjustment,443019874,1025
+1996,00:36.7,Defense,DLA,Cost Sharing,2230845,6
+1996,00:36.7,Defense,DLA,Fixed Price Incentive,1740871,19
+1996,00:36.7,Defense,Navy,NULL,1398341149,2141
+1996,00:36.7,Defense,Navy,Firm Fixed Price,15543490260,43456
+1996,00:36.7,Defense,Other DoD,Cost No Fee,39244808,47
+1996,00:36.7,Defense,Other DoD,Fixed Price with Economic Price Adjustment,318377405,1600
+1996,00:36.7,Defense,Other DoD,Labor Hours,7669776,43
+1997,00:36.7,Defense,Army,Fixed Price Incentive,74301478,116
+1997,00:36.7,Defense,Army,Labor Hours,41900914,283
+1997,00:36.7,Defense,DLA,Cost No Fee,7251816,47
+1997,00:36.7,Defense,DLA,Cost Sharing,548675,4
+1997,00:36.7,Defense,DLA,Fixed Price Incentive,7631965,14
+1997,00:36.7,Defense,DLA,Labor Hours,262854,4
+1997,00:36.7,Defense,MilitaryHealth,Cost Plus Fixed Fee,232964,2
+1997,00:36.7,Defense,MilitaryHealth,Firm Fixed Price,1807763764,199
+1997,00:36.7,Defense,Navy,NULL,983022686,4416
+1997,00:36.7,Defense,Navy,Cost Plus Award Fee,4141327471,4644
+1997,00:36.7,Defense,Other DoD,Time and Materials,379187904,734
+1998,00:36.7,Defense,Air Force,Fixed Price Redetermination,45231878,207
+1998,00:36.7,Defense,Air Force,Fixed Price with Economic Price Adjustment,812848992,907
+1998,00:36.7,Defense,Army,Labor Hours,53598908,289
+1998,00:36.7,Defense,Army,Time and Materials,1395471243,4596
+1998,00:36.7,Defense,DLA,NULL,245648341,1191
+1998,00:36.7,Defense,DLA,Cost No Fee,8379092,30
+1998,00:36.7,Defense,DLA,Fixed Price with Economic Price Adjustment,3204609188,1996
+1998,00:36.7,Defense,DLA,Labor Hours,1274435,4
+1998,00:36.7,Defense,DLA,Time and Materials,27406343,110
+1998,00:36.7,Defense,MilitaryHealth,Fixed Price Redetermination,256741814,9
+1998,00:36.7,Defense,Navy,Cost Plus Fixed Fee,9248513773,17892
+1999,00:36.7,Defense,Air Force,NULL,1037251324,7622
+1999,00:36.7,Defense,Air Force,Fixed Price Redetermination,72949290,211
+1999,00:36.7,Defense,Army,NULL,1319995851,8930
+1999,00:36.7,Defense,Army,Time and Materials,1441468957,4797
+1999,00:36.7,Defense,DLA,NULL,449071401,1455
+1999,00:36.7,Defense,DLA,Time and Materials,19790198,72
+1999,00:36.7,Defense,MDA,NULL,4243760,12
+1999,00:36.7,Defense,MilitaryHealth,Fixed Price Redetermination,79280139,7
+1999,00:36.7,Defense,Navy,Cost Plus Fixed Fee,9332579122,19090
+1999,00:36.7,Defense,Navy,Fixed Price Redetermination,92865346,419
+1994,00:36.7,Defense,Other DoD,Fixed Price Redetermination,23311328,32
+1994,00:36.7,Defense,Other DoD,Time and Materials,562369211,1084
+1995,00:36.7,Defense,Army,Cost Sharing,67910824,104
+1995,00:36.7,Defense,DLA,Fixed Price with Economic Price Adjustment,3527136874,2106
+1995,00:36.7,Defense,MilitaryHealth,Cost Plus Award Fee,11522306,26
+1995,00:36.7,Defense,Navy,Time and Materials,1051284809,5463
+1995,00:36.7,Defense,Other DoD,Cost Plus Fixed Fee,824639224,1069
+1996,00:36.7,Defense,Air Force,Cost Sharing,49585019,121
+1996,00:36.7,Defense,Air Force,Fixed Price Redetermination,192515862,167
+1996,00:36.7,Defense,Army,NULL,2075368559,1625
+1996,00:36.7,Defense,DLA,NULL,147530631,621
+1996,00:36.7,Defense,MilitaryHealth,Firm Fixed Price,1082691689,164
+1996,00:36.7,Defense,Navy,Cost No Fee,184971822,446
+1996,00:36.7,Defense,Navy,Labor Hours,70938807,395
+1996,00:36.7,Defense,Other DoD,Time and Materials,383252238,821
+1997,00:36.7,Defense,Air Force,Cost No Fee,3294411814,3242
+1997,00:36.7,Defense,Army,Cost Plus Incentive,1398138769,431
+1997,00:36.7,Defense,Army,Cost Sharing,32062415,50
+1997,00:36.7,Defense,DLA,Cost Plus Incentive,960512,6
+1997,00:36.7,Defense,DLA,Fixed Price with Economic Price Adjustment,4263986411,2168
+1997,00:36.7,Defense,MDA,Cost Plus Fixed Fee,326836336,285
+1997,00:36.7,Defense,MDA,Time and Materials,-502194,1
+1997,00:36.7,Defense,MilitaryHealth,Cost Plus Award Fee,619777,9
+1997,00:36.7,Defense,Navy,Time and Materials,759503047,3859
+1997,00:36.7,Defense,Other DoD,Cost Sharing,6258115,11
+1998,00:36.7,Defense,Air Force,Cost Sharing,51881039,101
+1998,00:36.7,Defense,Air Force,Fixed Price Incentive,1150279331,522
+1998,00:36.7,Defense,Army,NULL,877714754,7135
+1998,00:36.7,Defense,Army,Cost No Fee,390982280,884
+1998,00:36.7,Defense,MilitaryHealth,NULL,1083766,10
+1998,00:36.7,Defense,Navy,Cost Plus Incentive,3257443739,335
+1998,00:36.7,Defense,Other DoD,NULL,278047906,1800
+1999,00:36.7,Defense,Air Force,Cost No Fee,1760618294,2425
+1999,00:36.7,Defense,Air Force,Labor Hours,275761040,967
+1999,00:36.7,Defense,Army,Cost Plus Incentive,1063279276,422
+1999,00:36.7,Defense,Army,Firm Fixed Price,21369112150,55460
+1999,00:36.7,Defense,DLA,Firm Fixed Price,4092551973,36179
+1999,00:36.7,Defense,MDA,Cost Plus Fixed Fee,155101911,261
+1999,00:36.7,Defense,Navy,NULL,1934623810,9393
+1999,00:36.7,Defense,Other DoD,Cost Sharing,9707539,13
+2000,00:36.7,Defense,NULL,Firm Fixed Price,0,NULL
+2000,00:36.7,Defense,Air Force,Combination (two or more),6245785,9
+2000,00:36.7,Defense,Air Force,Fixed Price Incentive,627903853,408
+2000,00:36.7,Defense,Air Force,Not Reported,1400163888,7809
+2000,00:36.7,Defense,Air Force,Time and Materials,1832953589,4078
+2000,00:36.7,Defense,Army,Cost No Fee,766740299,1087
+2000,00:36.7,Defense,MDA,Fixed Price Redetermination,12977500,2
+2000,00:36.7,Defense,MDA,Not Reported,6332286,22
+1995,00:36.7,Defense,Air Force,Fixed Price Redetermination,52427522,161
+1995,00:36.7,Defense,Army,NULL,1699316094,1537
+1995,00:36.7,Defense,Army,Time and Materials,899968969,3935
+1995,00:36.7,Defense,DLA,NULL,146670409,395
+1995,00:36.7,Defense,DLA,Time and Materials,15090343,54
+1995,00:36.7,Defense,MDA,Cost Plus Award Fee,20460858,27
+1995,00:36.7,Defense,MDA,Cost Sharing,700000,1
+1995,00:36.7,Defense,Navy,Cost Plus Fixed Fee,7246355172,18120
+1995,00:36.7,Defense,Other DoD,Fixed Price Redetermination,5749862,48
+1996,00:36.7,Defense,DLA,Cost Plus Fixed Fee,68404194,310
+1996,00:36.7,Defense,MDA,Cost No Fee,4719163,11
+1996,00:36.7,Defense,Navy,Fixed Price Redetermination,57273541,256
+1996,00:36.7,Defense,Other DoD,Cost Plus Incentive,14090738,14
+1997,00:36.7,Defense,Air Force,Cost Sharing,36399674,98
+1997,00:36.7,Defense,Air Force,Firm Fixed Price,17133504314,32808
+1997,00:36.7,Defense,Air Force,Fixed Price Incentive,954060998,641
+1997,00:36.7,Defense,MilitaryHealth,Fixed Price Incentive,51392422,113
+1997,00:36.7,Defense,Navy,Cost Plus Incentive,2310875785,360
+1997,00:36.7,Defense,Navy,Fixed Price with Economic Price Adjustment,379183318,213
+1998,00:36.7,Defense,Air Force,Cost No Fee,2907024344,2863
+1998,00:36.7,Defense,Air Force,Cost Plus Award Fee,7434609518,2450
+1998,00:36.7,Defense,Air Force,Labor Hours,397728874,1343
+1998,00:36.7,Defense,Army,Cost Plus Incentive,1362382319,454
+1998,00:36.7,Defense,Army,Cost Sharing,50583392,68
+1998,00:36.7,Defense,Army,Fixed Price Redetermination,138592553,329
+1998,00:36.7,Defense,DLA,Fixed Price Redetermination,7948460,68
+1998,00:36.7,Defense,MDA,Cost Plus Fixed Fee,251960597,273
+1998,00:36.7,Defense,MilitaryHealth,Cost Plus Award Fee,22153567,9
+1998,00:36.7,Defense,Navy,Fixed Price Incentive,4862630549,1242
+1998,00:36.7,Defense,Navy,Time and Materials,763597143,3444
+1998,00:36.7,Defense,Other DoD,Cost Plus Award Fee,374378120,238
+1998,00:36.7,Defense,Other DoD,Cost Sharing,11745352,10
+1999,00:36.7,Defense,Air Force,Time and Materials,1616027713,3516
+1999,00:36.7,Defense,Army,Cost No Fee,574749455,857
+1999,00:36.7,Defense,Army,Fixed Price with Economic Price Adjustment,393216748,697
+1999,00:36.7,Defense,MilitaryHealth,NULL,3918444,21
+1999,00:36.7,Defense,Navy,Cost Sharing,19320264,52
+1999,00:36.7,Defense,Navy,Firm Fixed Price,13064585743,38420
+1999,00:36.7,Defense,Other DoD,NULL,413969899,2274
+1999,00:36.7,Defense,Other DoD,Cost No Fee,44414981,119
+2000,00:36.7,Defense,Air Force,Cost Plus Fixed Fee,2872556695,6392
+2000,00:36.7,Defense,Air Force,Fixed Price Award Fee,114364677,102
+2000,00:36.7,Defense,Air Force,Other (none of the above),0,1
+2000,00:36.7,Defense,Army,Firm Fixed Price,22379073033,62050
+2000,00:36.7,Defense,Army,Fixed Price Incentive,326281633,59
+2000,00:36.7,Defense,DLA,Cost Sharing,592005,3
+2000,00:36.7,Defense,DLA,Firm Fixed Price,4572031989,40597
+1995,00:36.7,Defense,DLA,Cost No Fee,8034843,59
+1995,00:36.7,Defense,DLA,Cost Plus Fixed Fee,35437603,151
+1995,00:36.7,Defense,DLA,Labor Hours,74859,2
+1995,00:36.7,Defense,Navy,Fixed Price Redetermination,87489481,191
+1995,00:36.7,Defense,Other DoD,Cost Plus Award Fee,192381882,237
+1995,00:36.7,Defense,Other DoD,Cost Plus Incentive,58013558,14
+1995,00:36.7,Defense,Other DoD,Fixed Price with Economic Price Adjustment,373904453,2485
+1996,00:36.7,Defense,Air Force,Cost Plus Incentive,772048946,192
+1996,00:36.7,Defense,Air Force,Firm Fixed Price,17625058570,41955
+1996,00:36.7,Defense,Army,Time and Materials,978475941,4274
+1996,00:36.7,Defense,DLA,Time and Materials,20157988,86
+1996,00:36.7,Defense,MDA,Cost Sharing,1000000,1
+1996,00:36.7,Defense,MilitaryHealth,Fixed Price Incentive,117128323,152
+1996,00:36.7,Defense,Navy,Cost Plus Award Fee,3775559989,4214
+1996,00:36.7,Defense,Navy,Cost Plus Fixed Fee,7993915324,18319
+1996,00:36.7,Defense,Navy,Fixed Price with Economic Price Adjustment,465633704,304
+1996,00:36.7,Defense,Other DoD,Firm Fixed Price,1514613896,7598
+1997,00:36.7,Defense,Army,Fixed Price Redetermination,230161883,411
+1997,00:36.7,Defense,DLA,Cost Plus Fixed Fee,65654721,297
+1997,00:36.7,Defense,DLA,Fixed Price Redetermination,8005547,53
+1997,00:36.7,Defense,MDA,NULL,1612744,11
+1997,00:36.7,Defense,MDA,Cost No Fee,5360000,9
+1997,00:36.7,Defense,Navy,Fixed Price Incentive,2839072360,1424
+1997,00:36.7,Defense,Navy,Fixed Price Redetermination,40797531,152
+1997,00:36.7,Defense,Other DoD,Cost Plus Award Fee,279761725,242
+1997,00:36.7,Defense,Other DoD,Cost Plus Incentive,38219198,17
+1998,00:36.7,Defense,Air Force,Firm Fixed Price,15353686518,31712
+1998,00:36.7,Defense,Army,Cost Plus Fixed Fee,4274461081,6817
+1998,00:36.7,Defense,Army,Fixed Price with Economic Price Adjustment,386877179,667
+1998,00:36.7,Defense,MDA,Cost Sharing,315720,2
+1998,00:36.7,Defense,MDA,Firm Fixed Price,10546556,11
+1999,00:36.7,Defense,Air Force,Cost Plus Award Fee,7841030331,2491
+1999,00:36.7,Defense,Air Force,Cost Plus Fixed Fee,2928276084,5784
+1999,00:36.7,Defense,Air Force,Fixed Price with Economic Price Adjustment,750811793,623
+1999,00:36.7,Defense,Army,Fixed Price Redetermination,142198113,261
+1999,00:36.7,Defense,DLA,Cost Sharing,2005860,6
+1999,00:36.7,Defense,DLA,Fixed Price Redetermination,11874707,77
+1999,00:36.7,Defense,MDA,Cost No Fee,19533224,14
+1999,00:36.7,Defense,Navy,Fixed Price Incentive,4931497309,1210
+2000,00:36.7,Defense,Army,Cost Plus Fixed Fee,4612475161,6820
+2000,00:36.7,Defense,Army,Fixed Price with Economic Price Adjustment,310068433,417
+2000,00:36.7,Defense,DLA,Cost No Fee,7966673,18
+2000,00:36.7,Defense,MDA,Firm Fixed Price,4542739,15
+2000,00:36.7,Defense,MilitaryHealth,Cost Plus Fixed Fee,773374,1
+2000,00:36.7,Defense,Navy,Cost Sharing,37509303,67
+2000,00:36.7,Defense,Navy,Firm Fixed Price,14900623559,58580
+1995,00:36.7,Defense,DLA,Fixed Price Redetermination,8673382,38
+1995,00:36.7,Defense,Navy,Cost Plus Incentive,2115292836,177
+1995,00:36.7,Defense,Other DoD,NULL,50623803,82
+1996,00:36.7,Defense,Army,Cost Plus Fixed Fee,3893149723,6735
+1996,00:36.7,Defense,Army,Firm Fixed Price,19102847827,63613
+1996,00:36.7,Defense,DLA,Firm Fixed Price,3058631771,26335
+1996,00:36.7,Defense,MDA,Cost Plus Fixed Fee,279925803,294
+1996,00:36.7,Defense,MDA,Firm Fixed Price,2724100,20
+1996,00:36.7,Defense,Navy,Cost Sharing,24450880,71
+1996,00:36.7,Defense,Other DoD,Cost Plus Fixed Fee,791804005,1277
+1997,00:36.7,Defense,Air Force,Cost Plus Award Fee,6890396451,2737
+1997,00:36.7,Defense,Air Force,Cost Plus Fixed Fee,2670393791,5104
+1997,00:36.7,Defense,Army,Cost Plus Award Fee,2433441059,2324
+1997,00:36.7,Defense,DLA,Cost Plus Award Fee,4364099,1
+1997,00:36.7,Defense,MDA,Cost Plus Award Fee,18942036,18
+1997,00:36.7,Defense,Navy,Cost No Fee,167369465,384
+1997,00:36.7,Defense,Navy,Labor Hours,87933768,407
+1997,00:36.7,Defense,Other DoD,Fixed Price Redetermination,6469977,15
+1998,00:36.7,Defense,Air Force,Cost Plus Incentive,491746504,211
+1998,00:36.7,Defense,Army,Firm Fixed Price,19526319217,57117
+1998,00:36.7,Defense,MilitaryHealth,Fixed Price Incentive,53820964,82
+1998,00:36.7,Defense,Navy,Cost Sharing,13577352,51
+1998,00:36.7,Defense,Navy,Fixed Price with Economic Price Adjustment,658492134,310
+1998,00:36.7,Defense,Other DoD,Cost Plus Fixed Fee,872651909,1368
+1998,00:36.7,Defense,Other DoD,Firm Fixed Price,1607590251,5297
+1999,00:36.7,Defense,Army,Cost Plus Award Fee,3364264200,2553
+1999,00:36.7,Defense,DLA,Cost Plus Fixed Fee,120708575,474
+1999,00:36.7,Defense,MDA,Cost Plus Award Fee,740095777,246
+1999,00:36.7,Defense,Navy,Cost No Fee,118457237,478
+1999,00:36.7,Defense,Navy,Labor Hours,103255851,428
+1999,00:36.7,Defense,Other DoD,Cost Plus Award Fee,551642984,262
+1999,00:36.7,Defense,Other DoD,Cost Plus Incentive,2519113,4
+1999,00:36.7,Defense,Other DoD,Fixed Price Redetermination,1514087,6
+2000,00:36.7,Defense,Air Force,Cost Plus Incentive,574318515,190
+2000,00:36.7,Defense,Army,Cost Sharing,79368861,55
+2000,00:36.7,Defense,Army,Fixed Price Award Fee,29593523,18
+2000,00:36.7,Defense,MDA,Cost Sharing,610970,3
+2000,00:36.7,Defense,MilitaryHealth,Fixed Price Incentive,-248256,2
+2000,00:36.7,Defense,MilitaryHealth,Not Reported,2193032,4
+2000,00:36.7,Defense,Navy,Fixed Price with Economic Price Adjustment,791765534,567
+2000,00:36.7,Defense,Navy,Time and Materials,737153631.7,3260
+2000,00:36.7,Defense,Other DoD,Firm Fixed Price,1809993931,6933
+2001,00:36.7,Defense,Air Force,Cost Sharing,23130439,72
+2001,00:36.7,Defense,Air Force,Fixed Price Incentive,874077966,405
+2001,00:36.7,Defense,Air Force,Not Reported,1717043501,8114
+2001,00:36.7,Defense,Army,Cost No Fee,825919770.3,1203
+2001,00:36.7,Defense,Army,Other (none of the above),9690387,14
+1996,00:36.7,Defense,MilitaryHealth,Cost Plus Award Fee,6826906,11
+1996,00:36.7,Defense,Navy,Fixed Price Incentive,3511772780,1474
+1996,00:36.7,Defense,Navy,Time and Materials,949985891,4230
+1996,00:36.7,Defense,Other DoD,Cost Plus Award Fee,222554780,261
+1997,00:36.7,Defense,Air Force,Cost Plus Incentive,591913325,230
+1997,00:36.7,Defense,Air Force,Fixed Price Redetermination,72675198,169
+1997,00:36.7,Defense,Army,NULL,793650942,7295
+1997,00:36.7,Defense,Army,Cost No Fee,390271708,891
+1997,00:36.7,Defense,Army,Time and Materials,1185648716,4480
+1997,00:36.7,Defense,DLA,NULL,186034383,902
+1997,00:36.7,Defense,DLA,Time and Materials,39140003,90
+1997,00:36.7,Defense,MilitaryHealth,NULL,659354,4
+1997,00:36.7,Defense,Navy,Cost Plus Fixed Fee,9432267454,18174
+1997,00:36.7,Defense,Other DoD,NULL,166209812,1216
+1998,00:36.7,Defense,DLA,Firm Fixed Price,3708968036,33531
+1998,00:36.7,Defense,MDA,Cost No Fee,7574000,13
+1998,00:36.7,Defense,Other DoD,Cost Plus Incentive,7418565,10
+1999,00:36.7,Defense,Air Force,Cost Sharing,54623492,93
+1999,00:36.7,Defense,Air Force,Firm Fixed Price,17903087917,31492
+1999,00:36.7,Defense,Air Force,Fixed Price Incentive,648633702,480
+1999,00:36.7,Defense,Army,Cost Plus Fixed Fee,3822097108,6629
+1999,00:36.7,Defense,MDA,Firm Fixed Price,6684070,9
+1999,00:36.7,Defense,Navy,Cost Plus Incentive,2349541293,447
+2000,00:36.7,Defense,Air Force,Cost No Fee,1305926462,1894
+2000,00:36.7,Defense,Air Force,Cost Plus Award Fee,7393526343,2257
+2000,00:36.7,Defense,Air Force,Fixed Price with Economic Price Adjustment,766949346,634
+2000,00:36.7,Defense,Air Force,Labor Hours,291547216,678
+2000,00:36.7,Defense,Army,Cost Plus Incentive,1022727660,367
+2000,00:36.7,Defense,Army,Fixed Price Redetermination,363984843,302
+2000,00:36.7,Defense,Army,Not Reported,1598838367,10634
+2000,00:36.7,Defense,DLA,Fixed Price Redetermination,25417724,244
+2000,00:36.7,Defense,DLA,Not Reported,405121343,1506
+2000,00:36.7,Defense,MDA,Cost Plus Award Fee,1157152471,174
+2000,00:36.7,Defense,MDA,Cost Plus Fixed Fee,187062448,192
+2000,00:36.7,Defense,Other DoD,Cost Sharing,32727351,24
+2000,00:36.7,Defense,Other DoD,Fixed Price Redetermination,81000,2
+2001,00:36.7,Defense,Air Force,Time and Materials,1455015993,3683
+2001,00:36.7,Defense,Army,Fixed Price with Economic Price Adjustment,730788155,461
+2001,00:36.7,Defense,MDA,Not Reported,9701377,59
+2001,00:36.7,Defense,MilitaryHealth,Fixed Price with Economic Price Adjustment,31559,1
+2001,00:36.7,Defense,Navy,Cost Sharing,24552114,49
+2001,00:36.7,Defense,Navy,Firm Fixed Price,15366740976,60667
+2001,00:36.7,Defense,Other DoD,Cost No Fee,45379729,114
+2001,00:36.7,Defense,Other DoD,Fixed Price with Economic Price Adjustment,554535792,2599
+2001,00:36.7,Defense,Other DoD,Labor Hours,76569044.51,39
+2002,00:36.7,Defense,NULL,Fixed Price with Economic Price Adjustment,0,NULL
+1996,00:36.7,Defense,Air Force,Cost No Fee,897458492,1111
+1996,00:36.7,Defense,Air Force,Fixed Price Incentive,888199217,1023
+1996,00:36.7,Defense,Air Force,Fixed Price with Economic Price Adjustment,750452000,1201
+1996,00:36.7,Defense,Air Force,Labor Hours,298768386,1188
+1996,00:36.7,Defense,Army,Cost Plus Incentive,1815659211,514
+1996,00:36.7,Defense,DLA,Cost No Fee,12262168,107
+1996,00:36.7,Defense,DLA,Cost Plus Incentive,1641160,6
+1996,00:36.7,Defense,Other DoD,Cost Sharing,8074289,13
+1997,00:36.7,Defense,Air Force,NULL,703626143,5962
+1997,00:36.7,Defense,Air Force,Fixed Price with Economic Price Adjustment,869277486,740
+1997,00:36.7,Defense,Air Force,Labor Hours,353488269,1220
+1997,00:36.7,Defense,Air Force,Time and Materials,1372908613,3206
+1997,00:36.7,Defense,Army,Fixed Price with Economic Price Adjustment,439538878,777
+1997,00:36.7,Defense,Navy,Firm Fixed Price,15151979990,37393
+1997,00:36.7,Defense,Other DoD,Cost No Fee,41845785,98
+1997,00:36.7,Defense,Other DoD,Fixed Price with Economic Price Adjustment,176901611,1405
+1997,00:36.7,Defense,Other DoD,Labor Hours,9356872,41
+1998,00:36.7,Defense,Air Force,NULL,729012479,6176
+1998,00:36.7,Defense,Air Force,Time and Materials,1378147827,3203
+1998,00:36.7,Defense,Army,Fixed Price Incentive,62015860,63
+1998,00:36.7,Defense,DLA,Cost Sharing,4997895,6
+1998,00:36.7,Defense,DLA,Fixed Price Incentive,68132,1
+1998,00:36.7,Defense,MDA,NULL,2222678,10
+1998,00:36.7,Defense,MilitaryHealth,Firm Fixed Price,2249907821,317
+1998,00:36.7,Defense,Navy,NULL,1253753499,6468
+1998,00:36.7,Defense,Navy,Cost Plus Award Fee,3952817322,5130
+1998,00:36.7,Defense,Navy,Firm Fixed Price,13647750309,37296
+1998,00:36.7,Defense,Navy,Fixed Price Redetermination,66698276,236
+1998,00:36.7,Defense,Other DoD,Cost No Fee,39938013,115
+1998,00:36.7,Defense,Other DoD,Fixed Price Incentive,30000,1
+1998,00:36.7,Defense,Other DoD,Fixed Price with Economic Price Adjustment,311423260,1414
+1998,00:36.7,Defense,Other DoD,Labor Hours,10923069,33
+1998,00:36.7,Defense,Other DoD,Time and Materials,357980402,725
+1999,00:36.7,Defense,Army,Fixed Price Incentive,182881335,32
+1999,00:36.7,Defense,Army,Labor Hours,64617880,287
+1999,00:36.7,Defense,DLA,Cost No Fee,2036246,16
+1999,00:36.7,Defense,DLA,Fixed Price with Economic Price Adjustment,3048248101,2164
+1999,00:36.7,Defense,MilitaryHealth,Cost Plus Award Fee,-1062652,8
+1999,00:36.7,Defense,MilitaryHealth,Cost Plus Fixed Fee,1606273,2
+1999,00:36.7,Defense,MilitaryHealth,Firm Fixed Price,2609502448,342
+1999,00:36.7,Defense,Navy,Cost Plus Award Fee,4135936540,5695
+1999,00:36.7,Defense,Other DoD,Fixed Price Incentive,78945704,19
+1999,00:36.7,Defense,Other DoD,Time and Materials,415948665,979
+2000,00:36.7,Defense,Air Force,Fixed Price Redetermination,79204925,185
+2000,00:36.7,Defense,Army,Labor Hours,99817811,356
+2000,00:36.7,Defense,Army,Time and Materials,1620975998,4992
+1995,00:36.7,Defense,Navy,Cost Sharing,425161455,68
+1996,00:36.7,Defense,Air Force,Cost Plus Award Fee,7535290322,2606
+1996,00:36.7,Defense,Air Force,Cost Plus Fixed Fee,2018135161,4773
+1996,00:36.7,Defense,Army,Fixed Price Redetermination,76377477,300
+1996,00:36.7,Defense,DLA,Cost Plus Award Fee,35148,1
+1996,00:36.7,Defense,DLA,Fixed Price Redetermination,4122214,39
+1996,00:36.7,Defense,MDA,Cost Plus Award Fee,11936024,11
+1996,00:36.7,Defense,MilitaryHealth,Fixed Price with Economic Price Adjustment,188183588,17
+1996,00:36.7,Defense,Navy,Cost Plus Incentive,1495957391,237
+1996,00:36.7,Defense,Other DoD,NULL,7023399,65
+1996,00:36.7,Defense,Other DoD,Fixed Price Redetermination,6103744,41
+1997,00:36.7,Defense,Army,Cost Plus Fixed Fee,4414360109,7015
+1997,00:36.7,Defense,Army,Firm Fixed Price,19752453079,56747
+1997,00:36.7,Defense,DLA,Firm Fixed Price,3374825484,31746
+1997,00:36.7,Defense,MDA,Firm Fixed Price,36679342,18
+1997,00:36.7,Defense,Navy,Cost Sharing,22318379,68
+1997,00:36.7,Defense,Other DoD,Cost Plus Fixed Fee,786218208,1275
+1997,00:36.7,Defense,Other DoD,Firm Fixed Price,1438822377,6017
+1998,00:36.7,Defense,Air Force,Cost Plus Fixed Fee,2901491694,5454
+1998,00:36.7,Defense,Army,Cost Plus Award Fee,2569690486,2505
+1998,00:36.7,Defense,DLA,Cost Plus Award Fee,618096,2
+1998,00:36.7,Defense,DLA,Cost Plus Fixed Fee,84771198,365
+1998,00:36.7,Defense,MDA,Cost Plus Award Fee,279461938,250
+1998,00:36.7,Defense,Navy,Cost No Fee,127464532,412
+1998,00:36.7,Defense,Navy,Labor Hours,59589032,295
+1998,00:36.7,Defense,Other DoD,Fixed Price Redetermination,8570753,11
+1999,00:36.7,Defense,Air Force,Cost Plus Incentive,356989486,182
+1999,00:36.7,Defense,Army,Cost Sharing,34645661,68
+1999,00:36.7,Defense,MDA,Cost Sharing,204000,1
+1999,00:36.7,Defense,MilitaryHealth,Fixed Price Incentive,-4056124,34
+1999,00:36.7,Defense,Navy,Fixed Price with Economic Price Adjustment,522125102,462
+1999,00:36.7,Defense,Navy,Time and Materials,866386883,3538
+1999,00:36.7,Defense,Other DoD,Cost Plus Fixed Fee,865730858,1305
+1999,00:36.7,Defense,Other DoD,Firm Fixed Price,1588653971,5602
+2000,00:36.7,Defense,Air Force,Cost Sharing,44782599,105
+2000,00:36.7,Defense,Army,Cost Plus Award Fee,3540711190,2230
+2000,00:36.7,Defense,Army,Other (none of the above),2894007,10
+2000,00:36.7,Defense,DLA,Cost Plus Fixed Fee,189595874,673
+2000,00:36.7,Defense,MDA,Cost No Fee,5987295,9
+2000,00:36.7,Defense,Navy,Cost No Fee,128709856,545
+2000,00:36.7,Defense,Navy,Fixed Price Incentive,5098542255,2320
+2000,00:36.7,Defense,Navy,Labor Hours,114419012,423
+2000,00:36.7,Defense,Navy,Not Reported,2625339673,9647
+2000,00:36.7,Defense,Other DoD,Cost Plus Award Fee,574512216,663
+2000,00:36.7,Defense,Other DoD,Cost Plus Incentive,369377,3
+2001,00:36.7,Defense,Air Force,Cost Plus Incentive,594096733,253
+2001,00:36.7,Defense,Army,Cost Plus Incentive,1088166660,393
+2000,00:36.7,Defense,Other DoD,Cost Plus Fixed Fee,742277867,1305
+2000,00:36.7,Defense,Other DoD,Fixed Price with Economic Price Adjustment,79683313,1395
+2001,00:36.7,Defense,Air Force,Cost Plus Award Fee,7440082420,2267
+2001,00:36.7,Defense,Air Force,Cost Plus Fixed Fee,2667963569,6084
+2001,00:36.7,Defense,Air Force,Fixed Price with Economic Price Adjustment,1431247636,551
+2001,00:36.7,Defense,Army,Fixed Price Incentive,133436784,79
+2001,00:36.7,Defense,Army,Fixed Price Redetermination,278580749,209
+2001,00:36.7,Defense,Army,Not Reported,2061748346,13146
+2001,00:36.7,Defense,DLA,Cost Sharing,4351797,12
+2001,00:36.7,Defense,DLA,Fixed Price Incentive,26868,1
+2001,00:36.7,Defense,DLA,Not Reported,497979849,1715
+2001,00:36.7,Defense,MDA,Cost Plus Award Fee,1467198265,173
+2001,00:36.7,Defense,MilitaryHealth,Fixed Price Redetermination,231000000,1
+2001,00:36.7,Defense,Navy,Cost No Fee,195241309,515
+2001,00:36.7,Defense,Navy,Cost Plus Award Fee,3945981812,6803
+2001,00:36.7,Defense,Navy,Order Dependent (IDV only),0,NULL
+2001,00:36.7,Defense,Other DoD,Fixed Price Redetermination,2099798,5
+2002,00:36.7,Defense,Army,Labor Hours,336778666,1588
+2002,00:36.7,Defense,DLA,Cost No Fee,7504642,16
+2002,00:36.7,Defense,DLA,Labor Hours,2476185.5,26
+2002,00:36.7,Defense,Navy,Cost Sharing,57266045,68
+2002,00:36.7,Defense,Navy,Firm Fixed Price,18295032107,96326
+2002,00:36.7,Defense,Navy,Fixed Price Redetermination,94559711,278
+2002,00:36.7,Defense,Other DoD,Cost Plus Fixed Fee,956102856,1252
+2002,00:36.7,Defense,Other DoD,Fixed Price with Economic Price Adjustment,308697451,3343
+2003,00:36.7,Defense,Army,Combination (two or more),62650531.09,121
+2003,00:36.7,Defense,Army,Fixed Price Incentive,509925583,177
+2003,00:36.7,Defense,Army,Not Reported,3066262065,40674
+2003,00:36.7,Defense,Army,Time and Materials,2753696121,9069
+2003,00:36.7,Defense,DLA,Combination (two or more),730348,3
+2003,00:36.7,Defense,DLA,Fixed Price Incentive,161303375,42
+2003,00:36.7,Defense,DLA,Not Reported,614323649,1623
+2003,00:36.7,Defense,DLA,Time and Materials,29561839,134
+2003,00:36.7,Defense,MDA,Cost Plus Award Fee,2191891819,321
+2003,00:36.7,Defense,MilitaryHealth,Fixed Price Redetermination,36226981,3
+2003,00:36.7,Defense,Navy,Cost No Fee,592783800,698
+2003,00:36.7,Defense,Navy,Cost Plus Award Fee,9087581754,8943
+2003,00:36.7,Defense,Navy,Cost Plus Fixed Fee,10644514373,23575
+2003,00:36.7,Defense,Navy,Labor Hours,145935284.3,516
+2003,00:36.7,Defense,Navy,Order Dependent (IDV only),0,NULL
+2003,00:36.7,Defense,Navy,Other (none of the above),0,4
+2003,00:36.7,Defense,Other DoD,Fixed Price Incentive,523911121,189
+2003,00:36.7,Defense,Other DoD,Fixed Price Redetermination,5461396,17
+2003,00:36.7,Defense,Other DoD,Not Reported,839244964.4,3633
+2004,00:36.7,Defense,Army,Cost Sharing,41142447,90
+2004,00:36.7,Defense,Army,Fixed Price Award Fee,96385052,243
+2001,00:36.7,Defense,Army,Cost Sharing,22769935,31
+2001,00:36.7,Defense,Army,Fixed Price Award Fee,32819622.54,88
+2001,00:36.7,Defense,MDA,Cost Sharing,300000,2
+2001,00:36.7,Defense,MilitaryHealth,Not Reported,1498157,7
+2001,00:36.7,Defense,Navy,Fixed Price with Economic Price Adjustment,670299481,619
+2001,00:36.7,Defense,Navy,Time and Materials,754208395.2,3584
+2002,00:36.7,Defense,Air Force,Cost Sharing,22125634,82
+2002,00:36.7,Defense,Air Force,Fixed Price Incentive,976277464,446
+2002,00:36.7,Defense,Air Force,Not Reported,2019095347,10786
+2002,00:36.7,Defense,Army,Cost No Fee,847069273,1711
+2002,00:36.7,Defense,MDA,Cost No Fee,4319255,12
+2002,00:36.7,Defense,Navy,Combination (two or more),19712031.34,6
+2002,00:36.7,Defense,Navy,Fixed Price Incentive,6826852128,1789
+2002,00:36.7,Defense,Navy,Not Reported,2668604473,11522
+2002,00:36.7,Defense,Other DoD,Cost Plus Award Fee,1056243892,855
+2002,00:36.7,Defense,Other DoD,Cost Plus Incentive,79706137,4
+2003,00:36.7,Defense,Air Force,Cost No Fee,1115571298,1356
+2003,00:36.7,Defense,Air Force,Labor Hours,188649192,533
+2003,00:36.7,Defense,Army,Cost Plus Incentive,1422472017,568
+2003,00:36.7,Defense,Army,Fixed Price Award Fee,177063424,194
+2003,00:36.7,Defense,Army,Fixed Price with Economic Price Adjustment,623822783,817
+2003,00:36.7,Defense,DLA,Cost Plus Incentive,3155,2
+2003,00:36.7,Defense,Navy,Firm Fixed Price,22370759594,109525
+2003,00:36.7,Defense,Other DoD,Cost Sharing,2602893,7
+2003,00:36.7,Defense,Other DoD,Fixed Price Award Fee,10097300,17
+2004,00:36.7,Defense,Air Force,Combination (two or more),199907006.2,363
+2004,00:36.7,Defense,Air Force,Fixed Price Incentive,1085075647,381
+2004,00:36.7,Defense,Air Force,Fixed Price Level of Effort,13587673,17
+2004,00:36.7,Defense,Air Force,Fixed Price with Economic Price Adjustment,962555992,315
+2004,00:36.7,Defense,Air Force,Not Reported,1987486283,12082
+2004,00:36.7,Defense,Air Force,Time and Materials,2871639648,5066
+2004,00:36.7,Defense,Army,Cost No Fee,1525588023,5753
+2004,00:36.7,Defense,Army,Fixed Price Incentive,300629841,94
+2004,00:36.7,Defense,Army,Fixed Price Level of Effort,18115353,14
+2004,00:36.7,Defense,Army,Not Reported,3217275931,51196
+2004,00:36.7,Defense,DLA,Cost Sharing,4528859,8
+2004,00:36.7,Defense,DLA,Fixed Price Incentive,120226699,39
+2004,00:36.7,Defense,DLA,Fixed Price Level of Effort,0,NULL
+2004,00:36.7,Defense,DLA,Not Reported,794446175,1784
+2004,00:36.7,Defense,MDA,Not Reported,19353530.19,65
+2004,00:36.7,Defense,MilitaryHealth,Fixed Price Redetermination,104373943,22
+2004,00:36.7,Defense,Navy,Combination (two or more),22960466.95,40
+2004,00:36.7,Defense,Navy,Order Dependent (IDV only),0,NULL
+2004,00:36.7,Defense,Other DoD,Cost No Fee,141521611.8,167
+2004,00:36.7,Defense,Other DoD,Labor Hours,61605377.36,177
+2005,00:36.7,Defense,Air Force,Cost No Fee,1161884911,2028
+1999,00:36.7,Defense,Other DoD,Fixed Price with Economic Price Adjustment,345197691,1303
+1999,00:36.7,Defense,Other DoD,Labor Hours,15690965,30
+2000,00:36.7,Defense,Air Force,Firm Fixed Price,20635732199,34394
+2000,00:36.7,Defense,Army,Combination (two or more),59438.97,4
+2000,00:36.7,Defense,MilitaryHealth,Firm Fixed Price,1367087988,153
+2000,00:36.7,Defense,Navy,Cost Plus Award Fee,4531181609,7100
+2000,00:36.7,Defense,Navy,Fixed Price Redetermination,243593684,447
+2000,00:36.7,Defense,Other DoD,Combination (two or more),800815.84,10
+2000,00:36.7,Defense,Other DoD,Fixed Price Incentive,79008695,37
+2000,00:36.7,Defense,Other DoD,Time and Materials,601321064,894
+2001,00:36.7,Defense,Air Force,Firm Fixed Price,21766901158,32516
+2001,00:36.7,Defense,Air Force,Order Dependent (IDV only),0,NULL
+2001,00:36.7,Defense,Army,Combination (two or more),619596.1,9
+2001,00:36.7,Defense,DLA,Fixed Price Redetermination,7361210,68
+2001,00:36.7,Defense,DLA,Fixed Price with Economic Price Adjustment,5108551048,3770
+2001,00:36.7,Defense,Navy,Cost Plus Incentive,1580199241,360
+2001,00:36.7,Defense,Other DoD,Combination (two or more),7000,1
+2001,00:36.7,Defense,Other DoD,Fixed Price Incentive,156933429,22
+2002,00:36.7,Defense,NULL,Firm Fixed Price,0,NULL
+2002,00:36.7,Defense,Air Force,Cost Plus Award Fee,7282922666,2713
+2002,00:36.7,Defense,Air Force,Fixed Price Redetermination,163811920,48
+2002,00:36.7,Defense,Air Force,Order Dependent (IDV only),0,NULL
+2002,00:36.7,Defense,Army,Fixed Price Redetermination,268560009,322
+2002,00:36.7,Defense,Army,Time and Materials,1983180708,8192
+2002,00:36.7,Defense,DLA,Fixed Price Redetermination,25937788,175
+2002,00:36.7,Defense,MDA,Cost Plus Fixed Fee,212560473,169
+2002,00:36.7,Defense,MDA,Fixed Price Redetermination,3714603,1
+2002,00:36.7,Defense,MilitaryHealth,Cost Plus Award Fee,-111642,1
+2002,00:36.7,Defense,Navy,Fixed Price Award Fee,305316890,1875
+2002,00:36.7,Defense,Other DoD,Order Dependent (IDV only),0,NULL
+2003,00:36.7,Defense,NULL,Firm Fixed Price,0,NULL
+2003,00:36.7,Defense,Air Force,Cost Plus Fixed Fee,4311844359,7735
+2003,00:36.7,Defense,Army,Firm Fixed Price,41134022664,184177
+2003,00:36.7,Defense,DLA,Firm Fixed Price,9288932603,79614
+2003,00:36.7,Defense,MDA,Fixed Price Redetermination,1655176,1
+2003,00:36.7,Defense,MilitaryHealth,Fixed Price Award Fee,-1192692,5
+2003,00:36.7,Defense,Navy,Fixed Price Award Fee,511472926,1813
+2003,00:36.7,Defense,Other DoD,Order Dependent (IDV only),0,NULL
+2004,00:36.7,Defense,Air Force,Cost Plus Fixed Fee,6577906588,8427
+2004,00:36.7,Defense,Air Force,Fixed Price Award Fee,1053183323,366
+2004,00:36.7,Defense,Army,Cost Plus Fixed Fee,6673145016,8992
+2004,00:36.7,Defense,Army,Firm Fixed Price,44215011315,256650
+2004,00:36.7,Defense,Army,Order Dependent (IDV only),0,NULL
+2004,00:36.7,Defense,DLA,Firm Fixed Price,10308167402,94403
+2001,00:36.7,Defense,DLA,Cost Plus Fixed Fee,170540226,646
+2001,00:36.7,Defense,MDA,Cost No Fee,1117694,5
+2001,00:36.7,Defense,Navy,Fixed Price Incentive,5026282163,1857
+2001,00:36.7,Defense,Navy,Labor Hours,147979111,369
+2001,00:36.7,Defense,Navy,Not Reported,1607187801,9356
+2001,00:36.7,Defense,Other DoD,Cost Plus Award Fee,587967792,627
+2002,00:36.7,Defense,Air Force,Cost No Fee,2101649912,872
+2002,00:36.7,Defense,Air Force,Labor Hours,227320166.2,571
+2002,00:36.7,Defense,Army,Cost Plus Incentive,1414700429,514
+2002,00:36.7,Defense,Army,Cost Sharing,32911926,43
+2002,00:36.7,Defense,Army,Fixed Price Award Fee,91830677,133
+2002,00:36.7,Defense,Army,Fixed Price with Economic Price Adjustment,491765361,625
+2002,00:36.7,Defense,DLA,Cost Plus Incentive,165352,5
+2002,00:36.7,Defense,Navy,Time and Materials,826344893.5,3851
+2002,00:36.7,Defense,Other DoD,Cost Sharing,-203996,4
+2002,00:36.7,Defense,Other DoD,Fixed Price Award Fee,4535239.64,13
+2003,00:36.7,Defense,Air Force,Combination (two or more),111233463.7,177
+2003,00:36.7,Defense,Air Force,Cost Sharing,20252775,62
+2003,00:36.7,Defense,Air Force,Fixed Price Incentive,1314312088,462
+2003,00:36.7,Defense,Air Force,Fixed Price Level of Effort,1392140,7
+2003,00:36.7,Defense,Air Force,Fixed Price with Economic Price Adjustment,514137199,374
+2003,00:36.7,Defense,Air Force,Not Reported,2234809259,13295
+2003,00:36.7,Defense,Army,Cost No Fee,1239574469,2020
+2003,00:36.7,Defense,DLA,Cost Sharing,4525517,4
+2003,00:36.7,Defense,MDA,Cost No Fee,5443086,5
+2003,00:36.7,Defense,MDA,Not Reported,40418410,110
+2003,00:36.7,Defense,Navy,Combination (two or more),9005546,18
+2003,00:36.7,Defense,Navy,Fixed Price Incentive,6563049956,1585
+2003,00:36.7,Defense,Navy,Not Reported,2325506673,12890
+2003,00:36.7,Defense,Other DoD,Cost No Fee,135585951.4,157
+2003,00:36.7,Defense,Other DoD,Cost Plus Incentive,10714814,7
+2004,00:36.7,Defense,Air Force,Cost No Fee,2153734310,25400
+2004,00:36.7,Defense,Air Force,Labor Hours,195825383.6,627
+2004,00:36.7,Defense,Army,Cost Plus Incentive,1595415805,535
+2004,00:36.7,Defense,Army,Fixed Price with Economic Price Adjustment,1286485071,2854
+2004,00:36.7,Defense,DLA,Cost No Fee,32942626,12
+2004,00:36.7,Defense,DLA,Cost Plus Incentive,20425734,5
+2004,00:36.7,Defense,MilitaryHealth,Cost Plus Fixed Fee,-194818,11
+2004,00:36.7,Defense,MilitaryHealth,Order Dependent (IDV only),0,NULL
+2004,00:36.7,Defense,Navy,Firm Fixed Price,23226628120,126108
+2004,00:36.7,Defense,Other DoD,Cost Sharing,3328788.74,6
+2004,00:36.7,Defense,Other DoD,Fixed Price Award Fee,4846682.11,27
+2004,00:36.7,Defense,Other DoD,Fixed Price Level of Effort,5800000,1
+2005,00:36.7,Defense,Air Force,Combination (two or more),323371331.5,709
+2005,00:36.7,Defense,Air Force,Fixed Price with Economic Price Adjustment,4636478208,547
+2005,00:36.7,Defense,Air Force,Time and Materials,2870670116,6147
+2000,00:36.7,Defense,DLA,Fixed Price Incentive,0,NULL
+2000,00:36.7,Defense,Navy,Order Dependent (IDV only),0,NULL
+2000,00:36.7,Defense,Other DoD,Fixed Price Award Fee,284782,4
+2001,00:36.7,Defense,Air Force,Combination (two or more),196675361,11
+2001,00:36.7,Defense,Army,Cost Plus Award Fee,3945369044,1971
+2001,00:36.7,Defense,Army,Cost Plus Fixed Fee,3714078421,6722
+2001,00:36.7,Defense,Army,Labor Hours,143617188,528
+2001,00:36.7,Defense,Army,Order Dependent (IDV only),0,NULL
+2001,00:36.7,Defense,DLA,Cost No Fee,1795731,13
+2001,00:36.7,Defense,DLA,Labor Hours,1363938,17
+2001,00:36.7,Defense,MDA,Firm Fixed Price,7648615,26
+2001,00:36.7,Defense,MilitaryHealth,Cost Plus Fixed Fee,1357076,2
+2001,00:36.7,Defense,Other DoD,Cost Plus Fixed Fee,554032907,1031
+2002,00:36.7,Defense,Air Force,Cost Plus Incentive,785288246,628
+2002,00:36.7,Defense,Air Force,Fixed Price with Economic Price Adjustment,924160536,477
+2002,00:36.7,Defense,Army,Not Reported,2389030367,27922
+2002,00:36.7,Defense,DLA,Not Reported,606643618,2125
+2002,00:36.7,Defense,DLA,Time and Materials,34049573,129
+2002,00:36.7,Defense,MDA,Cost Plus Award Fee,2199176492,311
+2002,00:36.7,Defense,MilitaryHealth,Fixed Price Redetermination,1620000,1
+2002,00:36.7,Defense,MilitaryHealth,Not Reported,2235567,15
+2002,00:36.7,Defense,Navy,Cost Plus Fixed Fee,10484441957,22936
+2002,00:36.7,Defense,Navy,Fixed Price Level of Effort,9889264,2
+2002,00:36.7,Defense,Navy,Other (none of the above),0,3
+2002,00:36.7,Defense,Other DoD,Fixed Price Redetermination,875030,4
+2002,00:36.7,Defense,Other DoD,Not Reported,824288245.5,3867
+2003,00:36.7,Defense,Air Force,Time and Materials,2559932587,5135
+2003,00:36.7,Defense,Army,Fixed Price Level of Effort,2036526,2
+2003,00:36.7,Defense,Army,Other (none of the above),6521716,14
+2003,00:36.7,Defense,DLA,Cost Plus Fixed Fee,204232335,528
+2003,00:36.7,Defense,MDA,Time and Materials,3475802,14
+2003,00:36.7,Defense,MilitaryHealth,Fixed Price Level of Effort,0,1
+2003,00:36.7,Defense,Navy,Cost Sharing,32777439,47
+2003,00:36.7,Defense,Navy,Fixed Price Redetermination,65218560,223
+2003,00:36.7,Defense,Other DoD,Fixed Price with Economic Price Adjustment,424726593,3697
+2003,00:36.7,Defense,Other DoD,Labor Hours,23171630.8,73
+2004,00:36.7,Defense,Air Force,Cost Sharing,22955079,64
+2004,00:36.7,Defense,Air Force,Firm Fixed Price,27502390509,43778
+2004,00:36.7,Defense,Army,Combination (two or more),189983682.6,304
+2004,00:36.7,Defense,DLA,Combination (two or more),2272413,5
+2004,00:36.7,Defense,MilitaryHealth,Firm Fixed Price,4346831181,620
+2004,00:36.7,Defense,MilitaryHealth,Fixed Price Incentive,17358785,11
+2004,00:36.7,Defense,Navy,Cost No Fee,581565664.1,668
+2004,00:36.7,Defense,Navy,Cost Plus Award Fee,8571451077,8157
+2004,00:36.7,Defense,Navy,Fixed Price with Economic Price Adjustment,612811350.9,528
+2000,00:36.7,Defense,Navy,Cost Plus Incentive,2186857318,386
+2000,00:36.7,Defense,Other DoD,Cost No Fee,49464700,125
+2000,00:36.7,Defense,Other DoD,Labor Hours,34517303.77,39
+2001,00:36.7,Defense,Air Force,Cost No Fee,1755541678,1800
+2001,00:36.7,Defense,Air Force,Fixed Price Award Fee,228877403,274
+2001,00:36.7,Defense,Air Force,Labor Hours,266008691,553
+2001,00:36.7,Defense,Army,Firm Fixed Price,26000176068,68725
+2001,00:36.7,Defense,DLA,Firm Fixed Price,5600894793,52453
+2001,00:36.7,Defense,MDA,Cost Plus Fixed Fee,174832459,165
+2001,00:36.7,Defense,MilitaryHealth,Firm Fixed Price,2114171753,325
+2001,00:36.7,Defense,Other DoD,Cost Sharing,14198694,12
+2001,00:36.7,Defense,Other DoD,Firm Fixed Price,2108128411,7639
+2001,00:36.7,Defense,Other DoD,Fixed Price Award Fee,6698633,21
+2001,00:36.7,Defense,Other DoD,Time and Materials,469532050.3,782
+2002,00:36.7,Defense,Air Force,Combination (two or more),49675501,50
+2002,00:36.7,Defense,Air Force,Time and Materials,1837386480,4016
+2002,00:36.7,Defense,Army,Cost Plus Award Fee,5286984453,2677
+2002,00:36.7,Defense,Army,Order Dependent (IDV only),0,NULL
+2002,00:36.7,Defense,Army,Other (none of the above),4705716,10
+2002,00:36.7,Defense,DLA,Cost Plus Award Fee,681822,2
+2002,00:36.7,Defense,DLA,Cost Plus Fixed Fee,234454601,812
+2002,00:36.7,Defense,DLA,Fixed Price with Economic Price Adjustment,6381948548,5962
+2002,00:36.7,Defense,DLA,Order Dependent (IDV only),0,NULL
+2002,00:36.7,Defense,MDA,Not Reported,31146321.65,100
+2002,00:36.7,Defense,MDA,Time and Materials,2499761.2,18
+2002,00:36.7,Defense,Other DoD,Cost No Fee,105501940,153
+2002,00:36.7,Defense,Other DoD,Labor Hours,19042977.88,52
+2003,00:36.7,Defense,Air Force,Cost Plus Incentive,1782661759,706
+2003,00:36.7,Defense,Air Force,Fixed Price Award Fee,1206898095,463
+2003,00:36.7,Defense,Air Force,Fixed Price Redetermination,6742346,22
+2003,00:36.7,Defense,MDA,Cost Sharing,84975,1
+2003,00:36.7,Defense,MilitaryHealth,Firm Fixed Price,5707662700,586
+2003,00:36.7,Defense,MilitaryHealth,Fixed Price Incentive,6730355,4
+2003,00:36.7,Defense,MilitaryHealth,Not Reported,844183,21
+2003,00:36.7,Defense,Navy,Fixed Price with Economic Price Adjustment,1337568593,615
+2003,00:36.7,Defense,Other DoD,Firm Fixed Price,3291903937,10757
+2003,00:36.7,Defense,Other DoD,Time and Materials,1155885752,1300
+2004,00:36.7,Defense,Army,Cost Plus Award Fee,12568061131,3172
+2004,00:36.7,Defense,Army,Other (none of the above),6755884,12
+2004,00:36.7,Defense,DLA,Cost Plus Fixed Fee,6247900,19
+2004,00:36.7,Defense,DLA,Fixed Price with Economic Price Adjustment,8191586461,12273
+2004,00:36.7,Defense,DLA,Other (none of the above),269799,2
+2004,00:36.7,Defense,MDA,Combination (two or more),69291176,63
+2004,00:36.7,Defense,MDA,Cost No Fee,191022182,18
+2004,00:36.7,Defense,MDA,Time and Materials,6633869.57,12
+2002,00:36.7,Defense,Air Force,Cost Plus Fixed Fee,3091637377,6920
+2002,00:36.7,Defense,Air Force,Fixed Price Award Fee,849962285,383
+2002,00:36.7,Defense,Air Force,Other (none of the above),0,1
+2002,00:36.7,Defense,Army,Combination (two or more),271569.07,11
+2002,00:36.7,Defense,Army,Firm Fixed Price,28253165641,116153
+2002,00:36.7,Defense,Army,Fixed Price Incentive,495275946,125
+2002,00:36.7,Defense,DLA,Cost Sharing,2624604,13
+2002,00:36.7,Defense,DLA,Firm Fixed Price,7290502824,65846
+2002,00:36.7,Defense,DLA,Fixed Price Incentive,31806,1
+2002,00:36.7,Defense,MilitaryHealth,Firm Fixed Price,4180231370,357
+2002,00:36.7,Defense,Navy,Cost No Fee,319417407.5,872
+2002,00:36.7,Defense,Navy,Cost Plus Award Fee,6019033978,9499
+2002,00:36.7,Defense,Navy,Fixed Price with Economic Price Adjustment,472049223,994
+2002,00:36.7,Defense,Navy,Labor Hours,219254967,571
+2002,00:36.7,Defense,Navy,Order Dependent (IDV only),0,NULL
+2002,00:36.7,Defense,Other DoD,Firm Fixed Price,2425445187,10058
+2002,00:36.7,Defense,Other DoD,Fixed Price Incentive,738194250,94
+2002,00:36.7,Defense,Other DoD,Time and Materials,637966685.4,1194
+2003,00:36.7,Defense,Army,Cost Plus Award Fee,7527684338,3270
+2003,00:36.7,Defense,Army,Cost Sharing,38891617,66
+2003,00:36.7,Defense,Army,Labor Hours,261977310,1655
+2003,00:36.7,Defense,Army,Order Dependent (IDV only),0,NULL
+2003,00:36.7,Defense,DLA,Cost No Fee,8725120,20
+2003,00:36.7,Defense,DLA,Fixed Price with Economic Price Adjustment,7336510582,8612
+2003,00:36.7,Defense,DLA,Labor Hours,9335669,32
+2003,00:36.7,Defense,MDA,Combination (two or more),8050613,15
+2003,00:36.7,Defense,Navy,Time and Materials,1021917521,4710
+2003,00:36.7,Defense,Other DoD,Cost Plus Award Fee,1056629187,924
+2003,00:36.7,Defense,Other DoD,Cost Plus Fixed Fee,1194895861,1471
+2004,00:36.7,Defense,Air Force,Cost Plus Incentive,1896096216,656
+2004,00:36.7,Defense,Air Force,Fixed Price Redetermination,90344282,51
+2004,00:36.7,Defense,Army,Time and Materials,3479767312,9526
+2004,00:36.7,Defense,DLA,Time and Materials,61729727,171
+2004,00:36.7,Defense,MilitaryHealth,Not Reported,980398,18
+2004,00:36.7,Defense,Navy,Cost Plus Fixed Fee,11611578988,27632
+2004,00:36.7,Defense,Navy,Fixed Price Award Fee,775656595,1813
+2004,00:36.7,Defense,Navy,Fixed Price Level of Effort,55001,2
+2004,00:36.7,Defense,Other DoD,Not Reported,728271847.5,3905
+2005,00:36.7,Defense,Air Force,Fixed Price Level of Effort,32820367,31
+2005,00:36.7,Defense,Army,Fixed Price Award Fee,266484953.7,225
+2005,00:36.7,Defense,Army,Other (none of the above),8105529,11
+2005,00:36.7,Defense,DLA,Cost Plus Fixed Fee,15743066,50
+2005,00:36.7,Defense,DLA,Fixed Price Award Fee,6127082,313
+2005,00:36.7,Defense,MDA,Cost No Fee,178949958,18
+2005,00:36.7,Defense,MDA,Labor Hours,1097619,3
+2005,00:36.7,Defense,MDA,Time and Materials,16448229,22
+2000,00:36.7,Defense,DLA,Fixed Price with Economic Price Adjustment,4353643075,2092
+2000,00:36.7,Defense,DLA,Labor Hours,183705.7,3
+2000,00:36.7,Defense,DLA,Time and Materials,26303563,56
+2000,00:36.7,Defense,Navy,Cost Plus Fixed Fee,8953438450,20834
+2000,00:36.7,Defense,Navy,Fixed Price Award Fee,121561846,140
+2000,00:36.7,Defense,Other DoD,Not Reported,581953749.8,2410
+2001,00:36.7,Defense,NULL,Firm Fixed Price,0,NULL
+2001,00:36.7,Defense,Air Force,Fixed Price Redetermination,237639849,70
+2001,00:36.7,Defense,Army,Time and Materials,1524224452,4568
+2001,00:36.7,Defense,DLA,Time and Materials,33094192,91
+2001,00:36.7,Defense,MDA,Fixed Price Redetermination,12900000,1
+2001,00:36.7,Defense,MDA,Time and Materials,160000,1
+2001,00:36.7,Defense,Navy,Cost Plus Fixed Fee,12265080160,19082
+2001,00:36.7,Defense,Navy,Fixed Price Award Fee,339854886,377
+2001,00:36.7,Defense,Navy,Fixed Price Redetermination,283510259,389
+2001,00:36.7,Defense,Navy,Other (none of the above),0,1
+2001,00:36.7,Defense,Other DoD,Not Reported,568001709.8,2491
+2002,00:36.7,Defense,Air Force,Firm Fixed Price,27073907017,37243
+2002,00:36.7,Defense,Army,Cost Plus Fixed Fee,4192517989,8132
+2002,00:36.7,Defense,MDA,Firm Fixed Price,32587301,109
+2002,00:36.7,Defense,MilitaryHealth,Fixed Price Award Fee,711663,3
+2002,00:36.7,Defense,Navy,Cost Plus Incentive,1178008678,889
+2002,00:36.7,Defense,Other DoD,Combination (two or more),644110.16,6
+2003,00:36.7,Defense,Air Force,Cost Plus Award Fee,9903817926,2942
+2003,00:36.7,Defense,Air Force,Firm Fixed Price,30296497326,45962
+2003,00:36.7,Defense,Air Force,Order Dependent (IDV only),0,NULL
+2003,00:36.7,Defense,Army,Cost Plus Fixed Fee,5127426146,8573
+2003,00:36.7,Defense,Army,Fixed Price Redetermination,114097406.5,379
+2003,00:36.7,Defense,DLA,Fixed Price Redetermination,20808478.08,191
+2003,00:36.7,Defense,MDA,Cost Plus Fixed Fee,305603382,180
+2003,00:36.7,Defense,MDA,Firm Fixed Price,114871812.9,249
+2003,00:36.7,Defense,MilitaryHealth,Cost Plus Incentive,133236248,7
+2003,00:36.7,Defense,Navy,Cost Plus Incentive,2230884310,1137
+2003,00:36.7,Defense,Other DoD,Combination (two or more),17528241.6,38
+2004,00:36.7,Defense,NULL,Firm Fixed Price,401586,NULL
+2004,00:36.7,Defense,Air Force,Cost Plus Award Fee,8443896012,2679
+2004,00:36.7,Defense,Air Force,Order Dependent (IDV only),0,NULL
+2004,00:36.7,Defense,Army,Fixed Price Redetermination,221562360,7511
+2004,00:36.7,Defense,DLA,Fixed Price Redetermination,47484819.85,227
+2004,00:36.7,Defense,MDA,Cost Plus Award Fee,2661249787,316
+2004,00:36.7,Defense,MDA,Cost Plus Fixed Fee,297465904.2,233
+2004,00:36.7,Defense,MilitaryHealth,Cost Plus Incentive,653493285.9,65
+2004,00:36.7,Defense,Navy,Cost Sharing,36701621,62
+2004,00:36.7,Defense,Other DoD,Fixed Price Redetermination,1541358,7
+2004,00:36.7,Defense,Other DoD,Order Dependent (IDV only),0,NULL
+2004,00:36.7,Defense,Army,Labor Hours,533857884.8,1734
+2004,00:36.7,Defense,DLA,Fixed Price Award Fee,2996144,12
+2004,00:36.7,Defense,DLA,Labor Hours,25352803.78,66
+2004,00:36.7,Defense,Navy,Fixed Price Redetermination,72268238,181
+2004,00:36.7,Defense,Navy,Time and Materials,1029732856,5532
+2004,00:36.7,Defense,Other DoD,Cost Plus Fixed Fee,1464041298,2459
+2004,00:36.7,Defense,Other DoD,Fixed Price with Economic Price Adjustment,338667831,3193
+2005,00:36.7,Defense,Air Force,Cost Sharing,33604573,79
+2005,00:36.7,Defense,Air Force,Firm Fixed Price,25903993941,131337
+2005,00:36.7,Defense,Air Force,Fixed Price Incentive,920758905,725
+2005,00:36.7,Defense,Air Force,Not Reported,1733076610,22262
+2005,00:36.7,Defense,Army,Combination (two or more),496812837.3,1970
+2005,00:36.7,Defense,Army,Cost No Fee,4788179867,10110
+2005,00:36.7,Defense,Army,Time and Materials,4734832888,9630
+2005,00:36.7,Defense,DLA,Combination (two or more),6069650.05,10
+2005,00:36.7,Defense,DLA,Time and Materials,76113163.96,252
+2005,00:36.7,Defense,Navy,Cost Plus Fixed Fee,12128706036,33639
+2005,00:36.7,Defense,Navy,Labor Hours,144486789.2,1325
+2005,00:36.7,Defense,Other DoD,Combination (two or more),146217490,215
+2005,00:36.7,Defense,Other DoD,Fixed Price Incentive,467105455.9,300
+2005,00:36.7,Defense,Other DoD,Not Reported,736306313.5,6338
+2006,00:36.7,Defense,Air Force,Cost No Fee,1141567727,2498
+2006,00:36.7,Defense,Air Force,Cost Plus Award Fee,9717691185,3309
+2006,00:36.7,Defense,Air Force,Order Dependent (IDV only),0,NULL
+2006,00:36.7,Defense,Army,Cost Plus Incentive,1458107368,564
+2006,00:36.7,Defense,Army,Cost Sharing,29525298.95,138
+2006,00:36.7,Defense,Army,Fixed Price Award Fee,356514993.1,897
+2006,00:36.7,Defense,Army,Fixed Price Redetermination,277188561.1,255
+2006,00:36.7,Defense,DLA,Cost Plus Incentive,22892355,5
+2006,00:36.7,Defense,DLA,Fixed Price Award Fee,8799040,748
+2006,00:36.7,Defense,DLA,Fixed Price Redetermination,47794145,602
+2006,00:36.7,Defense,MilitaryHealth,Fixed Price Award Fee,176268178.3,2
+2006,00:36.7,Defense,Navy,Time and Materials,1494094730,7126
+2006,00:36.7,Defense,Other DoD,Cost Sharing,21905873,17
+2006,00:36.7,Defense,Other DoD,Fixed Price Award Fee,81119420.18,52
+2007,00:36.7,Defense,Air Force,Combination (two or more),2243623334,5598
+2007,00:36.7,Defense,Air Force,Cost Sharing,23369428.4,98
+2007,00:36.7,Defense,Air Force,Firm Fixed Price,36876983097,156372
+2007,00:36.7,Defense,Air Force,Fixed Price Incentive,1889261624,1004
+2007,00:36.7,Defense,Air Force,Not Reported,61765042.43,248
+2007,00:36.7,Defense,Army,Cost No Fee,2453419982,4158
+2007,00:36.7,Defense,Army,Cost Plus Fixed Fee,10107981998,15644
+2007,00:36.7,Defense,MDA,Firm Fixed Price,70211820.22,342
+2007,00:36.7,Defense,Other DoD,Combination (two or more),1724373235,3909
+2007,00:36.7,Defense,Other DoD,Cost No Fee,137780564.8,362
+2007,00:36.7,Defense,Other DoD,Order Dependent (IDV only),667000,NULL
+2004,00:36.7,Defense,Navy,Labor Hours,167832670.2,1593
+2004,00:36.7,Defense,Other DoD,Firm Fixed Price,3842880809,13860
+2004,00:36.7,Defense,Other DoD,Fixed Price Incentive,382021602.8,207
+2004,00:36.7,Defense,Other DoD,Time and Materials,1440091707,1674
+2005,00:36.7,Defense,Air Force,Order Dependent (IDV only),0,NULL
+2005,00:36.7,Defense,Army,Cost Plus Incentive,1539496591,513
+2005,00:36.7,Defense,Army,Cost Sharing,30452666,80
+2005,00:36.7,Defense,Army,Labor Hours,327253164.9,1867
+2005,00:36.7,Defense,DLA,Cost Plus Incentive,24124999,9
+2005,00:36.7,Defense,DLA,Fixed Price Redetermination,47424091.5,684
+2005,00:36.7,Defense,DLA,Fixed Price with Economic Price Adjustment,12878202306,72939
+2005,00:36.7,Defense,MDA,Combination (two or more),117706104,113
+2005,00:36.7,Defense,MilitaryHealth,Cost Plus Award Fee,20071,2
+2005,00:36.7,Defense,Navy,Fixed Price Incentive,4813246496,1068
+2005,00:36.7,Defense,Navy,Time and Materials,1185427412,6669
+2005,00:36.7,Defense,Other DoD,Cost Plus Award Fee,1375248080,1404
+2006,00:36.7,Defense,Air Force,Fixed Price Redetermination,778208,31
+2006,00:36.7,Defense,Air Force,Not Reported,1144651062,17500
+2006,00:36.7,Defense,Army,Cost No Fee,2480949182,2757
+2006,00:36.7,Defense,Army,Fixed Price with Economic Price Adjustment,1147441914,2274
+2006,00:36.7,Defense,Army,Time and Materials,5560286514,10895
+2006,00:36.7,Defense,MDA,Fixed Price Redetermination,-491207,1
+2006,00:36.7,Defense,Navy,Cost Plus Fixed Fee,11705465593,34583
+2006,00:36.7,Defense,Navy,Fixed Price Award Fee,395398764.8,795
+2006,00:36.7,Defense,Other DoD,Order Dependent (IDV only),0,NULL
+2007,00:36.7,Defense,Air Force,Cost Plus Fixed Fee,9392290048,16345
+2007,00:36.7,Defense,Air Force,Fixed Price Level of Effort,111430945.9,150
+2007,00:36.7,Defense,Air Force,Other (none of the above),0,1
+2007,00:36.7,Defense,Army,Firm Fixed Price,79484521208,417812
+2007,00:36.7,Defense,Army,Fixed Price Award Fee,236674942.3,535
+2007,00:36.7,Defense,DLA,Cost Sharing,2052314.02,32
+2007,00:36.7,Defense,DLA,Firm Fixed Price,17151441258,458986
+2007,00:36.7,Defense,MDA,Cost No Fee,21375551,37
+2007,00:36.7,Defense,MDA,Labor Hours,0,NULL
+2007,00:36.7,Defense,MilitaryHealth,Fixed Price Award Fee,276366067.3,11
+2007,00:36.7,Defense,Navy,Not Reported,690803936.5,1439
+2007,00:36.7,Defense,Other DoD,Cost Plus Incentive,119732477,243
+2007,00:36.7,Defense,Other DoD,Fixed Price Award Fee,127114595.1,38
+2008,00:36.7,Defense,Air Force,Combination (two or more),2946687340,7528
+2008,00:36.7,Defense,Air Force,Cost Sharing,58969280.12,116
+2008,00:36.7,Defense,Air Force,Fixed Price Incentive,1129364881,1038
+2008,00:36.7,Defense,Army,Cost Plus Fixed Fee,11373245757,13981
+2008,00:36.7,Defense,Army,Order Dependent (IDV only),0,NULL
+2008,00:36.7,Defense,DLA,Order Dependent (IDV only),0,NULL
+2008,00:36.7,Defense,MDA,Firm Fixed Price,78409712.54,304
+2008,00:36.7,Defense,Navy,Cost Plus Incentive,8125263878,1946
+2004,00:36.7,Defense,Navy,Fixed Price Incentive,7922198830,1025
+2004,00:36.7,Defense,Navy,Not Reported,2609616483,18075
+2004,00:36.7,Defense,Other DoD,Cost Plus Award Fee,1188062673,1017
+2004,00:36.7,Defense,Other DoD,Cost Plus Incentive,75393970,9
+2005,00:36.7,Defense,Air Force,Cost Plus Incentive,1209586647,666
+2005,00:36.7,Defense,Air Force,Fixed Price Redetermination,26429680,95
+2005,00:36.7,Defense,MilitaryHealth,Fixed Price Incentive,20514178,14
+2005,00:36.7,Defense,MilitaryHealth,Not Reported,963120,27
+2005,00:36.7,Defense,Navy,Fixed Price Award Fee,429056521,1616
+2005,00:36.7,Defense,Navy,Fixed Price with Economic Price Adjustment,2374394765,1535
+2006,00:36.7,Defense,Air Force,Fixed Price Level of Effort,35566296.2,40
+2006,00:36.7,Defense,MDA,Cost No Fee,202832955,52
+2006,00:36.7,Defense,MDA,Cost Plus Fixed Fee,376465825.4,421
+2006,00:36.7,Defense,MDA,Labor Hours,888483,4
+2006,00:36.7,Defense,Navy,Fixed Price Incentive,4819606180,808
+2006,00:36.7,Defense,Navy,Not Reported,1421883407,23754
+2006,00:36.7,Defense,Other DoD,Cost Plus Award Fee,1457075802,1748
+2006,00:36.7,Defense,Other DoD,Cost Plus Incentive,28446933,10
+2007,00:36.7,Defense,Army,Fixed Price with Economic Price Adjustment,870678511.1,5196
+2007,00:36.7,Defense,DLA,Order Dependent (IDV only),0,NULL
+2007,00:36.7,Defense,MilitaryHealth,Combination (two or more),1604454585,74
+2007,00:36.7,Defense,MilitaryHealth,Order Dependent (IDV only),0,NULL
+2007,00:36.7,Defense,Navy,Cost Plus Incentive,4784418228,2486
+2007,00:36.7,Defense,Navy,Firm Fixed Price,37681099067,262772
+2007,00:36.7,Defense,Navy,Fixed Price Award Fee,321996957.7,332
+2007,00:36.7,Defense,Other DoD,Fixed Price Level of Effort,2859605,19
+2008,00:36.7,Defense,Air Force,Fixed Price Level of Effort,119850444.9,215
+2008,00:36.7,Defense,Air Force,Fixed Price with Economic Price Adjustment,4033426500,1116
+2008,00:36.7,Defense,Army,Firm Fixed Price,1.03463E+11,432895
+2008,00:36.7,Defense,Army,Fixed Price Incentive,105765134.6,33
+2008,00:36.7,Defense,Army,Not Reported,79919965.32,3418
+2008,00:36.7,Defense,DLA,Cost Sharing,1416790.1,17
+2008,00:36.7,Defense,DLA,Firm Fixed Price,19369668563,526783
+2008,00:36.7,Defense,DLA,Fixed Price Incentive,178704304.5,4343
+2008,00:36.7,Defense,DLA,Not Reported,3109060.83,127
+2008,00:36.7,Defense,MDA,Cost Plus Fixed Fee,199360182.9,464
+2008,00:36.7,Defense,MDA,Labor Hours,5993377,34
+2008,00:36.7,Defense,MilitaryHealth,Fixed Price Redetermination,60862478.45,11
+2008,00:36.7,Defense,Navy,Combination (two or more),11810056700,8707
+2008,00:36.7,Defense,Navy,Fixed Price Incentive,3701692163,1052
+2008,00:36.7,Defense,Navy,Order Dependent (IDV only),0,NULL
+2009,00:36.7,Defense,Army,Cost Plus Award Fee,4258677969,3205
+2009,00:36.7,Defense,Army,Fixed Price with Economic Price Adjustment,1786848890,4085
+2009,00:36.7,Defense,Army,Order Dependent (IDV only),0,NULL
+2009,00:36.7,Defense,DLA,Cost No Fee,15983287.09,52
+2004,00:36.7,Defense,DLA,Order Dependent (IDV only),0,NULL
+2004,00:36.7,Defense,MDA,Firm Fixed Price,137906516.7,232
+2004,00:36.7,Defense,MilitaryHealth,Fixed Price Award Fee,-418608,1
+2004,00:36.7,Defense,Navy,Cost Plus Incentive,3566822198,1632
+2004,00:36.7,Defense,Other DoD,Combination (two or more),52221856.08,96
+2005,00:36.7,Defense,Air Force,Cost Plus Award Fee,7651133447,3455
+2005,00:36.7,Defense,Army,Cost Plus Award Fee,7122095759,3413
+2005,00:36.7,Defense,Army,Cost Plus Fixed Fee,7332124381,9703
+2005,00:36.7,Defense,Army,Fixed Price Redetermination,401384516.8,4899
+2005,00:36.7,Defense,Army,Order Dependent (IDV only),0,NULL
+2005,00:36.7,Defense,DLA,Order Dependent (IDV only),0,NULL
+2005,00:36.7,Defense,MDA,Cost Plus Award Fee,3090301929,371
+2005,00:36.7,Defense,MDA,Cost Plus Fixed Fee,329467552.7,230
+2005,00:36.7,Defense,MDA,Firm Fixed Price,97350247.43,254
+2005,00:36.7,Defense,MilitaryHealth,Cost Plus Incentive,5935949409,180
+2005,00:36.7,Defense,Navy,Cost Plus Incentive,3083584546,1389
+2005,00:36.7,Defense,Navy,Fixed Price Level of Effort,3235863,15
+2005,00:36.7,Defense,Other DoD,Cost Plus Fixed Fee,1167819231,1518
+2005,00:36.7,Defense,Other DoD,Fixed Price Redetermination,2203118.08,16
+2005,00:36.7,Defense,Other DoD,Other (none of the above),54785.71,5
+2006,00:36.7,Defense,Air Force,Cost Plus Incentive,1402616225,701
+2006,00:36.7,Defense,Army,Other (none of the above),8926245,7
+2006,00:36.7,Defense,DLA,Cost Plus Fixed Fee,13110400,26
+2006,00:36.7,Defense,DLA,Other (none of the above),378000,3
+2006,00:36.7,Defense,MDA,Cost Plus Award Fee,2614761066,384
+2006,00:36.7,Defense,MilitaryHealth,Cost Plus Incentive,6777331246,239
+2006,00:36.7,Defense,MilitaryHealth,Not Reported,982633.76,44
+2006,00:36.7,Defense,Navy,Cost Sharing,23381309.26,72
+2006,00:36.7,Defense,Navy,Fixed Price Level of Effort,5728469,30
+2006,00:36.7,Defense,Other DoD,Fixed Price Redetermination,3721506,5
+2007,00:36.7,Defense,Air Force,Fixed Price Award Fee,246741892.4,408
+2007,00:36.7,Defense,Army,Other (none of the above),2617301.5,12
+2007,00:36.7,Defense,DLA,Cost Plus Fixed Fee,8573399,29
+2007,00:36.7,Defense,DLA,Fixed Price Award Fee,14701811.38,329
+2007,00:36.7,Defense,DLA,Other (none of the above),720000,2
+2007,00:36.7,Defense,MDA,Cost Plus Incentive,90400000,4
+2007,00:36.7,Defense,MilitaryHealth,Fixed Price Incentive,174805084.2,58
+2007,00:36.7,Defense,Navy,Cost No Fee,303490924.7,788
+2007,00:36.7,Defense,Navy,Cost Sharing,23761060.91,101
+2007,00:36.7,Defense,Navy,Fixed Price with Economic Price Adjustment,2276099459,1097
+2007,00:36.7,Defense,Navy,Labor Hours,184223275.4,1767
+2007,00:36.7,Defense,Other DoD,Firm Fixed Price,3419323349,40347
+2008,00:36.7,Defense,Air Force,Fixed Price Award Fee,1404707366,407
+2008,00:36.7,Defense,Army,Cost Plus Award Fee,9422696655,3337
+2008,00:36.7,Defense,Army,Cost Sharing,23950439.14,133
+2008,00:36.7,Defense,MDA,Cost Plus Incentive,230965200,14
+2008,00:36.7,Defense,MDA,Fixed Price Award Fee,24682805,1
+2008,00:36.7,Defense,MDA,Fixed Price Level of Effort,0,NULL
+2008,00:36.7,Defense,MilitaryHealth,Combination (two or more),729361141,100
+2008,00:36.7,Defense,MilitaryHealth,Fixed Price Incentive,177458698.6,90
+2008,00:36.7,Defense,Navy,Cost No Fee,162942718.6,713
+2008,00:36.7,Defense,Navy,Fixed Price with Economic Price Adjustment,2657839989,2263
+2008,00:36.7,Defense,Navy,Labor Hours,90245366.64,1775
+2008,00:36.7,Defense,Navy,Time and Materials,1076191542,8580
+2008,00:36.7,Defense,Other DoD,Cost Plus Award Fee,565137552.5,2017
+2008,00:36.7,Defense,Other DoD,Cost Plus Fixed Fee,1332665066,1813
+2008,00:36.7,Defense,Other DoD,Firm Fixed Price,7730228159,47962
+2009,00:36.7,Defense,Air Force,Cost Plus Incentive,2531701625,1044
+2009,00:36.7,Defense,Air Force,Not Reported,67609755.44,2505
+2009,00:36.7,Defense,Army,Cost No Fee,6436584984,4395
+2009,00:36.7,Defense,Army,Cost Sharing,146726838.7,81
+2009,00:36.7,Defense,DLA,Cost Plus Incentive,2436973.34,4
+2009,00:36.7,Defense,MDA,Fixed Price Level of Effort,4500911.85,16
+2009,00:36.7,Defense,MilitaryHealth,Labor Hours,28304,1
+2009,00:36.7,Defense,MilitaryHealth,Not Reported,303279,1
+2009,00:36.7,Defense,MilitaryHealth,Time and Materials,2529359.5,2
+2009,00:36.7,Defense,Navy,Fixed Price Incentive,4168938703,767
+2009,00:36.7,Defense,Navy,Time and Materials,893925089.9,8179
+2009,00:36.7,Defense,Other DoD,Cost Plus Award Fee,229314418.6,978
+2010,00:36.7,Defense,Air Force,Cost Plus Incentive,2735552732,1445
+2010,00:36.7,Defense,Air Force,Fixed Price Level of Effort,115961721.9,428
+2010,00:36.7,Defense,Air Force,Not Reported,8685703.61,133
+2010,00:36.7,Defense,Army,Cost No Fee,3147029923,3950
+2010,00:36.7,Defense,Army,Fixed Price Award Fee,175205691.5,1050
+2010,00:36.7,Defense,DLA,Fixed Price Award Fee,3822,3
+2010,00:36.7,Defense,MDA,Cost No Fee,41435096.63,152
+2010,00:36.7,Defense,MDA,Cost Sharing,9628,1
+2010,00:36.7,Defense,MDA,Labor Hours,53564231.79,302
+2010,00:36.7,Defense,MilitaryHealth,Fixed Price Level of Effort,-146476.51,1
+2010,00:36.7,Defense,MilitaryHealth,Order Dependent (IDV only),0,NULL
+2010,00:36.7,Defense,MilitaryHealth,Time and Materials,2425491.12,3
+2010,00:36.7,Defense,Navy,Not Reported,49754353.94,450
+2010,00:36.7,Defense,Other DoD,Cost Plus Incentive,71536189.79,493
+2010,00:36.7,Defense,Other DoD,Fixed Price Award Fee,229589908.6,272
+2011,00:36.7,Defense,Air Force,Combination (two or more),584862868.6,1673
+2011,00:36.7,Defense,Air Force,Cost Sharing,118938587.9,72
+2011,00:36.7,Defense,Air Force,Fixed Price Incentive,2918527917,1323
+2011,00:36.7,Defense,Air Force,Fixed Price Level of Effort,102440026.8,367
+2011,00:36.7,Defense,Army,Fixed Price Award Fee,59910109.72,767
+2011,00:36.7,Defense,DLA,Cost Sharing,1109684,7
+2011,00:36.7,Defense,MDA,Cost No Fee,36440733.74,143
+2005,00:36.7,Defense,Army,Fixed Price Incentive,444596893,84
+2005,00:36.7,Defense,Army,Fixed Price Level of Effort,19753392,34
+2005,00:36.7,Defense,Army,Not Reported,2628671325,42820
+2005,00:36.7,Defense,DLA,Cost Sharing,627826,6
+2005,00:36.7,Defense,DLA,Fixed Price Incentive,159773061,54
+2005,00:36.7,Defense,DLA,Fixed Price Level of Effort,35433,1
+2005,00:36.7,Defense,DLA,Not Reported,542352952,4711
+2005,00:36.7,Defense,MDA,Not Reported,10424621,49
+2005,00:36.7,Defense,MilitaryHealth,Fixed Price Redetermination,-2752442.2,19
+2005,00:36.7,Defense,Navy,Combination (two or more),68105814.03,89
+2005,00:36.7,Defense,Navy,Cost Plus Award Fee,12181211876,10180
+2005,00:36.7,Defense,Navy,Order Dependent (IDV only),0,NULL
+2005,00:36.7,Defense,Other DoD,Cost No Fee,158987925.9,212
+2005,00:36.7,Defense,Other DoD,Labor Hours,73658254.85,223
+2006,00:36.7,Defense,Air Force,Labor Hours,457269831.3,1271
+2006,00:36.7,Defense,Army,Labor Hours,369953651.2,1502
+2006,00:36.7,Defense,DLA,Cost No Fee,1456818,38
+2006,00:36.7,Defense,DLA,Labor Hours,209708736.3,3096
+2006,00:36.7,Defense,MilitaryHealth,Firm Fixed Price,920127740.7,250
+2006,00:36.7,Defense,Navy,Firm Fixed Price,30640958018,206469
+2006,00:36.7,Defense,Navy,Fixed Price Redetermination,52837831.57,81
+2006,00:36.7,Defense,Other DoD,Fixed Price Level of Effort,2447627.94,10
+2006,00:36.7,Defense,Other DoD,Fixed Price with Economic Price Adjustment,305235495,2285
+2006,00:36.7,Defense,Other DoD,Time and Materials,1960297399,2899
+2007,00:36.7,Defense,Air Force,Time and Materials,3590028672,9955
+2007,00:36.7,Defense,Army,Combination (two or more),7343793961,12019
+2007,00:36.7,Defense,Army,Fixed Price Incentive,85214962.38,88
+2007,00:36.7,Defense,Army,Fixed Price Level of Effort,96044523.38,603
+2007,00:36.7,Defense,Army,Not Reported,33231244.28,790
+2007,00:36.7,Defense,Army,Time and Materials,7437877019,13575
+2007,00:36.7,Defense,DLA,Combination (two or more),598007875,11777
+2007,00:36.7,Defense,DLA,Fixed Price Incentive,143420961,3666
+2007,00:36.7,Defense,DLA,Fixed Price Level of Effort,499895,1
+2007,00:36.7,Defense,DLA,Fixed Price with Economic Price Adjustment,12386302296,11788
+2007,00:36.7,Defense,DLA,Not Reported,1069770.93,47
+2007,00:36.7,Defense,DLA,Time and Materials,75897424.89,220
+2007,00:36.7,Defense,MDA,Combination (two or more),1394321511,736
+2007,00:36.7,Defense,MDA,Not Reported,3135847.46,27
+2007,00:36.7,Defense,MDA,Order Dependent (IDV only),0,NULL
+2007,00:36.7,Defense,MDA,Time and Materials,4051777,10
+2007,00:36.7,Defense,MilitaryHealth,Fixed Price Redetermination,-1894513.42,35
+2007,00:36.7,Defense,Navy,Cost Plus Award Fee,16325987704,14789
+2007,00:36.7,Defense,Navy,Cost Plus Fixed Fee,11613067452,34131
+2007,00:36.7,Defense,Navy,Order Dependent (IDV only),0,NULL
+2007,00:36.7,Defense,Navy,Other (none of the above),56713.2,8
+2007,00:36.7,Defense,Other DoD,Fixed Price Incentive,277185650.9,9
+2005,00:36.7,Defense,Air Force,Cost Plus Fixed Fee,7480567374,10086
+2005,00:36.7,Defense,Air Force,Fixed Price Award Fee,1287293479,533
+2005,00:36.7,Defense,Army,Firm Fixed Price,63888045229,295121
+2005,00:36.7,Defense,DLA,Firm Fixed Price,14128441470,526579
+2005,00:36.7,Defense,MilitaryHealth,Fixed Price Award Fee,3654790,1
+2005,00:36.7,Defense,Navy,Cost No Fee,885420232,585
+2005,00:36.7,Defense,Navy,Cost Sharing,38488828,64
+2005,00:36.7,Defense,Other DoD,Firm Fixed Price,4094173776,22546
+2005,00:36.7,Defense,Other DoD,Order Dependent (IDV only),0,NULL
+2006,00:36.7,Defense,Air Force,Cost Plus Fixed Fee,9003580615,11970
+2006,00:36.7,Defense,Air Force,Fixed Price Award Fee,858233118.3,386
+2006,00:36.7,Defense,Army,Cost Plus Award Fee,10042451786,3819
+2006,00:36.7,Defense,Army,Cost Plus Fixed Fee,10080766606,11046
+2006,00:36.7,Defense,Army,Firm Fixed Price,66078060729,331889
+2006,00:36.7,Defense,Army,Order Dependent (IDV only),0,2
+2006,00:36.7,Defense,DLA,Firm Fixed Price,16913103611,468417
+2006,00:36.7,Defense,DLA,Order Dependent (IDV only),0,NULL
+2006,00:36.7,Defense,MDA,Cost Plus Incentive,2000000,2
+2006,00:36.7,Defense,MDA,Firm Fixed Price,79342528.99,296
+2006,00:36.7,Defense,MilitaryHealth,Fixed Price Incentive,65549211.36,22
+2006,00:36.7,Defense,Navy,Cost No Fee,1014932843,722
+2006,00:36.7,Defense,Navy,Fixed Price with Economic Price Adjustment,2445421624,568
+2006,00:36.7,Defense,Navy,Labor Hours,136039434.6,1456
+2006,00:36.7,Defense,Other DoD,Cost Plus Fixed Fee,1199244165,1584
+2006,00:36.7,Defense,Other DoD,Firm Fixed Price,4629519228,26842
+2007,00:36.7,Defense,Air Force,Cost Plus Incentive,1665333838,805
+2007,00:36.7,Defense,Army,Cost Plus Award Fee,7600788395,3396
+2007,00:36.7,Defense,Army,Order Dependent (IDV only),-6060,7
+2007,00:36.7,Defense,MDA,Cost Plus Award Fee,3039460751,493
+2007,00:36.7,Defense,MDA,Cost Sharing,2125113,1
+2007,00:36.7,Defense,MilitaryHealth,Cost Plus Incentive,6054618373,427
+2007,00:36.7,Defense,MilitaryHealth,Not Reported,29242107.24,4
+2007,00:36.7,Defense,Navy,Fixed Price Level of Effort,20628381.76,141
+2007,00:36.7,Defense,Navy,Time and Materials,1452933481,8968
+2007,00:36.7,Defense,Other DoD,Cost Plus Fixed Fee,1136088575,1759
+2007,00:36.7,Defense,Other DoD,Fixed Price Redetermination,8612121,4
+2008,00:36.7,Defense,Air Force,Cost Plus Incentive,1798303225,914
+2008,00:36.7,Defense,Army,Fixed Price Award Fee,49404102.9,263
+2008,00:36.7,Defense,Army,Other (none of the above),246072.98,2
+2008,00:36.7,Defense,DLA,Cost Plus Fixed Fee,9190688,28
+2008,00:36.7,Defense,DLA,Fixed Price Award Fee,2010874.3,8
+2008,00:36.7,Defense,DLA,Other (none of the above),95000,2
+2008,00:36.7,Defense,MDA,Cost No Fee,6767585,67
+2008,00:36.7,Defense,MDA,Cost Plus Award Fee,1642946532,714
+2008,00:36.7,Defense,MilitaryHealth,Fixed Price Level of Effort,446492.42,6
+2008,00:36.7,Defense,MilitaryHealth,Not Reported,-8701332.59,1
+2008,00:36.7,Defense,Navy,Fixed Price Level of Effort,25009063.12,217
+2008,00:36.7,Defense,Navy,Not Reported,5640568508,17863
+2008,00:36.7,Defense,Other DoD,Cost Plus Incentive,65732288.97,175
+2009,00:36.7,Defense,Air Force,Cost Sharing,108127385.5,97
+2009,00:36.7,Defense,Air Force,Fixed Price Incentive,1261202855,984
+2009,00:36.7,Defense,Army,Fixed Price Award Fee,151457487.2,210
+2009,00:36.7,Defense,Army,Other (none of the above),0,1
+2009,00:36.7,Defense,DLA,Cost Plus Fixed Fee,27315779.41,64
+2009,00:36.7,Defense,DLA,Fixed Price Award Fee,395255.46,35
+2009,00:36.7,Defense,MDA,Cost No Fee,20235706.04,83
+2009,00:36.7,Defense,MDA,Fixed Price Award Fee,-105000,2
+2009,00:36.7,Defense,MDA,Labor Hours,79241419.58,218
+2009,00:36.7,Defense,MilitaryHealth,Combination (two or more),2641613532,85
+2009,00:36.7,Defense,MilitaryHealth,Fixed Price Incentive,200326037.5,77
+2009,00:36.7,Defense,MilitaryHealth,Fixed Price Level of Effort,139920.8,5
+2009,00:36.7,Defense,Navy,Fixed Price with Economic Price Adjustment,536048536.4,1842
+2009,00:36.7,Defense,Navy,Labor Hours,58247684.17,926
+2009,00:36.7,Defense,Navy,Not Reported,3282328455,8954
+2009,00:36.7,Defense,Other DoD,Cost Plus Incentive,36479285.72,291
+2009,00:36.7,Defense,Other DoD,Firm Fixed Price,8554487528,52620
+2010,00:36.7,Defense,Air Force,Cost No Fee,2483056953,6027
+2010,00:36.7,Defense,Air Force,Cost Sharing,103057623.9,88
+2010,00:36.7,Defense,Air Force,Fixed Price Incentive,1928088117,1176
+2010,00:36.7,Defense,Army,Cost Plus Incentive,2051360015,712
+2010,00:36.7,Defense,Army,Cost Sharing,119529465.6,176
+2010,00:36.7,Defense,DLA,Cost Plus Incentive,130793.44,1
+2010,00:36.7,Defense,MDA,Fixed Price Award Fee,119500,5
+2010,00:36.7,Defense,MDA,Fixed Price Level of Effort,939219.96,8
+2010,00:36.7,Defense,MilitaryHealth,Combination (two or more),0,2
+2010,00:36.7,Defense,Navy,Fixed Price Incentive,9568140520,1152
+2010,00:36.7,Defense,Navy,Fixed Price with Economic Price Adjustment,571465803.6,1675
+2010,00:36.7,Defense,Navy,Time and Materials,869259663,7770
+2010,00:36.7,Defense,Other DoD,Cost Plus Award Fee,227453613.6,1400
+2010,00:36.7,Defense,Other DoD,Cost Sharing,6368640.57,20
+2011,00:36.7,Defense,Air Force,Cost No Fee,2801183786,5864
+2011,00:36.7,Defense,Air Force,Fixed Price with Economic Price Adjustment,1538287695,1221
+2011,00:36.7,Defense,Air Force,Labor Hours,544522940.6,2509
+2011,00:36.7,Defense,Air Force,Not Reported,-2566905.57,39
+2011,00:36.7,Defense,Army,Cost No Fee,2976147705,3271
+2011,00:36.7,Defense,Army,Cost Plus Incentive,1784888049,613
+2011,00:36.7,Defense,Army,Cost Sharing,28325905.03,117
+2011,00:36.7,Defense,Army,Fixed Price with Economic Price Adjustment,1819238150,4221
+2011,00:36.7,Defense,DLA,Cost Plus Incentive,16503845.4,4
+2011,00:36.7,Defense,MDA,Fixed Price Level of Effort,525849.82,4
+2011,00:36.7,Defense,MilitaryHealth,Order Dependent (IDV only),0,NULL
+2008,00:36.7,Defense,Air Force,Cost No Fee,1801899155,5365
+2008,00:36.7,Defense,Air Force,Cost Plus Award Fee,8423663455,3194
+2008,00:36.7,Defense,Air Force,Cost Plus Fixed Fee,10597750853,17183
+2008,00:36.7,Defense,Air Force,Labor Hours,840267909.4,2680
+2008,00:36.7,Defense,Air Force,Order Dependent (IDV only),0,NULL
+2008,00:36.7,Defense,Army,Cost Plus Incentive,1354928855,547
+2008,00:36.7,Defense,Army,Fixed Price Redetermination,556158078.4,223
+2008,00:36.7,Defense,DLA,Cost Plus Incentive,8616114,3
+2008,00:36.7,Defense,DLA,Fixed Price Redetermination,112267112.3,1035
+2008,00:36.7,Defense,MilitaryHealth,Cost Plus Incentive,7001934525,446
+2008,00:36.7,Defense,MilitaryHealth,Fixed Price Award Fee,93406806.64,8
+2008,00:36.7,Defense,Other DoD,Cost Sharing,1626949.14,6
+2008,00:36.7,Defense,Other DoD,Fixed Price Award Fee,186269617.6,192
+2008,00:36.7,Defense,Other DoD,Fixed Price Redetermination,13505507.58,7
+2009,00:36.7,Defense,Air Force,Combination (two or more),4516267841,8079
+2009,00:36.7,Defense,Air Force,Time and Materials,2748664150,6874
+2009,00:36.7,Defense,Army,Cost Plus Fixed Fee,12142137517,11876
+2009,00:36.7,Defense,Army,Fixed Price Level of Effort,370267568.3,520
+2009,00:36.7,Defense,DLA,Fixed Price Level of Effort,3321371.21,5
+2009,00:36.7,Defense,MDA,Firm Fixed Price,273203193.2,617
+2009,00:36.7,Defense,MDA,Not Reported,8435598.38,5
+2009,00:36.7,Defense,Navy,Cost Sharing,4020346.32,42
+2009,00:36.7,Defense,Other DoD,Cost No Fee,260826025.2,540
+2009,00:36.7,Defense,Other DoD,Cost Plus Fixed Fee,2097678422,4529
+2009,00:36.7,Defense,Other DoD,Labor Hours,60271343.32,300
+2009,00:36.7,Defense,Other DoD,Order Dependent (IDV only),0,NULL
+2010,00:36.7,Defense,Air Force,Cost Plus Fixed Fee,9886108204,17874
+2010,00:36.7,Defense,Air Force,Labor Hours,901507373.1,2955
+2010,00:36.7,Defense,Air Force,Other (none of the above),59051.68,1
+2010,00:36.7,Defense,MDA,Cost Plus Award Fee,3060798194,994
+2010,00:36.7,Defense,MDA,Cost Plus Incentive,1103415955,167
+2010,00:36.7,Defense,MilitaryHealth,Cost Plus Incentive,8817755039,562
+2010,00:36.7,Defense,MilitaryHealth,Firm Fixed Price,1224941947,386
+2010,00:36.7,Defense,Navy,Cost No Fee,1046986668,4941
+2010,00:36.7,Defense,Navy,Labor Hours,68246285.28,661
+2010,00:36.7,Defense,Other DoD,Fixed Price Redetermination,598527.77,16
+2010,00:36.7,Defense,Other DoD,Time and Materials,778994926.8,3486
+2011,00:36.7,Defense,Air Force,Time and Materials,1623042483,5073
+2011,00:36.7,Defense,Army,Fixed Price Level of Effort,421326652.7,627
+2011,00:36.7,Defense,DLA,Fixed Price Award Fee,4777652.14,16
+2011,00:36.7,Defense,DLA,Fixed Price Level of Effort,2247695.46,10
+2011,00:36.7,Defense,DLA,Fixed Price with Economic Price Adjustment,14456231544,26512
+2011,00:36.7,Defense,MDA,Combination (two or more),-153229.91,3
+2011,00:36.7,Defense,MDA,Fixed Price Incentive,38937636.3,12
+2011,00:36.7,Defense,MDA,Order Dependent (IDV only),0,NULL
+2005,00:36.7,Defense,Air Force,Labor Hours,314222933.8,945
+2005,00:36.7,Defense,Army,Fixed Price with Economic Price Adjustment,1521294488,7112
+2005,00:36.7,Defense,DLA,Cost No Fee,14374709,44
+2005,00:36.7,Defense,DLA,Labor Hours,27498987.47,85
+2005,00:36.7,Defense,MilitaryHealth,Firm Fixed Price,445145683,383
+2005,00:36.7,Defense,Navy,Firm Fixed Price,26263703303,224119
+2005,00:36.7,Defense,Other DoD,Cost Sharing,3825209.43,22
+2005,00:36.7,Defense,Other DoD,Fixed Price Award Fee,14296597.39,46
+2005,00:36.7,Defense,Other DoD,Fixed Price Level of Effort,6092709,5
+2005,00:36.7,Defense,Other DoD,Fixed Price with Economic Price Adjustment,710992799,2569
+2005,00:36.7,Defense,Other DoD,Time and Materials,1692043377,2613
+2006,00:36.7,Defense,Air Force,Combination (two or more),1265410587,1224
+2006,00:36.7,Defense,Air Force,Fixed Price with Economic Price Adjustment,1299478290,894
+2006,00:36.7,Defense,Air Force,Time and Materials,3766748295,7238
+2006,00:36.7,Defense,Army,Combination (two or more),1816716640,2906
+2006,00:36.7,Defense,Army,Fixed Price Incentive,470977818.8,68
+2006,00:36.7,Defense,Army,Fixed Price Level of Effort,41549762.67,168
+2006,00:36.7,Defense,Army,Not Reported,1273146967,16187
+2006,00:36.7,Defense,DLA,Combination (two or more),3361431,11
+2006,00:36.7,Defense,DLA,Cost Sharing,3316993.61,14
+2006,00:36.7,Defense,DLA,Fixed Price Incentive,215750561,1222
+2006,00:36.7,Defense,DLA,Fixed Price with Economic Price Adjustment,14713624306,53205
+2006,00:36.7,Defense,DLA,Not Reported,409271221.3,7562
+2006,00:36.7,Defense,DLA,Time and Materials,98338369.6,279
+2006,00:36.7,Defense,MDA,Combination (two or more),209822855.6,285
+2006,00:36.7,Defense,MDA,Not Reported,3735141.46,38
+2006,00:36.7,Defense,MDA,Time and Materials,3269494,8
+2006,00:36.7,Defense,MilitaryHealth,Fixed Price Redetermination,93931248,24
+2006,00:36.7,Defense,Navy,Combination (two or more),681014281.7,508
+2006,00:36.7,Defense,Navy,Cost Plus Award Fee,15965223292,10688
+2006,00:36.7,Defense,Navy,Order Dependent (IDV only),0,NULL
+2006,00:36.7,Defense,Navy,Other (none of the above),223101.16,3
+2006,00:36.7,Defense,Other DoD,Cost No Fee,128027510.7,237
+2006,00:36.7,Defense,Other DoD,Labor Hours,96266782.02,298
+2006,00:36.7,Defense,Other DoD,Not Reported,526430596.3,4589
+2007,00:36.7,Defense,Air Force,Fixed Price Redetermination,707910,5
+2007,00:36.7,Defense,Army,Labor Hours,471560412.5,1088
+2007,00:36.7,Defense,DLA,Cost No Fee,429000,39
+2007,00:36.7,Defense,DLA,Labor Hours,4678482.76,44
+2007,00:36.7,Defense,MilitaryHealth,Firm Fixed Price,932184858.9,360
+2007,00:36.7,Defense,Navy,Fixed Price Redetermination,-4404165.87,22
+2007,00:36.7,Defense,Other DoD,Fixed Price with Economic Price Adjustment,166055184.6,6362
+2007,00:36.7,Defense,Other DoD,Time and Materials,1535267217,3170
+2008,00:36.7,Defense,Air Force,Firm Fixed Price,26561501911,146303
+2008,00:36.7,Defense,Army,Combination (two or more),10305146324,18179
+2005,00:36.7,Defense,Navy,Fixed Price Redetermination,34778622,303
+2005,00:36.7,Defense,Navy,Not Reported,1923549049,35257
+2005,00:36.7,Defense,Other DoD,Cost Plus Incentive,31464213,10
+2006,00:36.7,Defense,Air Force,Cost Sharing,33550322,61
+2006,00:36.7,Defense,Air Force,Firm Fixed Price,31761830403,127442
+2006,00:36.7,Defense,Air Force,Fixed Price Incentive,1149939092,678
+2006,00:36.7,Defense,MilitaryHealth,Combination (two or more),0,3
+2006,00:36.7,Defense,Navy,Cost Plus Incentive,4139733373,1752
+2006,00:36.7,Defense,Other DoD,Combination (two or more),457502657.4,619
+2006,00:36.7,Defense,Other DoD,Fixed Price Incentive,352646783,461
+2007,00:36.7,Defense,Air Force,Cost No Fee,1767132706,4089
+2007,00:36.7,Defense,Air Force,Cost Plus Award Fee,10075948151,3809
+2007,00:36.7,Defense,Air Force,Fixed Price with Economic Price Adjustment,1780408224,1262
+2007,00:36.7,Defense,Air Force,Labor Hours,504760800.1,1836
+2007,00:36.7,Defense,Air Force,Order Dependent (IDV only),0,NULL
+2007,00:36.7,Defense,Army,Cost Plus Incentive,1670207636,586
+2007,00:36.7,Defense,Army,Cost Sharing,29227396.08,161
+2007,00:36.7,Defense,Army,Fixed Price Redetermination,213749643.8,319
+2007,00:36.7,Defense,DLA,Cost Plus Incentive,13777289,5
+2007,00:36.7,Defense,DLA,Fixed Price Redetermination,181150087.7,1298
+2007,00:36.7,Defense,MDA,Cost Plus Fixed Fee,303747325.3,507
+2007,00:36.7,Defense,MDA,Fixed Price Level of Effort,199925,1
+2007,00:36.7,Defense,Navy,Combination (two or more),7105847357,5560
+2007,00:36.7,Defense,Navy,Fixed Price Incentive,2987660594,1251
+2007,00:36.7,Defense,Other DoD,Cost Plus Award Fee,718743480.1,2490
+2008,00:36.7,Defense,Air Force,Not Reported,366116846.4,4156
+2008,00:36.7,Defense,Air Force,Time and Materials,3541480697,8836
+2008,00:36.7,Defense,Army,Cost No Fee,4803961626,4496
+2008,00:36.7,Defense,Army,Fixed Price with Economic Price Adjustment,1048241415,4636
+2008,00:36.7,Defense,DLA,Fixed Price Level of Effort,429867.88,2
+2008,00:36.7,Defense,MDA,Not Reported,83909414.59,33
+2008,00:36.7,Defense,MilitaryHealth,Order Dependent (IDV only),0,NULL
+2008,00:36.7,Defense,Navy,Cost Sharing,31129838.79,48
+2008,00:36.7,Defense,Navy,Firm Fixed Price,41051030987,257775
+2008,00:36.7,Defense,Other DoD,Cost No Fee,314412812.6,459
+2008,00:36.7,Defense,Other DoD,Labor Hours,56242900.82,326
+2008,00:36.7,Defense,Other DoD,Order Dependent (IDV only),0,NULL
+2009,00:36.7,Defense,Air Force,Cost Plus Fixed Fee,10138019812,16678
+2009,00:36.7,Defense,Air Force,Fixed Price Award Fee,404389776.5,532
+2009,00:36.7,Defense,Air Force,Fixed Price Level of Effort,89863820.05,251
+2009,00:36.7,Defense,Army,Firm Fixed Price,97144447312,419167
+2009,00:36.7,Defense,Army,Fixed Price Incentive,207720793.1,44
+2009,00:36.7,Defense,DLA,Cost Sharing,2026218,20
+2009,00:36.7,Defense,DLA,Firm Fixed Price,17992314624,449002
+2009,00:36.7,Defense,DLA,Fixed Price Incentive,54911884.37,1880
+2009,00:36.7,Defense,MDA,Cost Plus Incentive,365533379,68
+2009,00:36.7,Defense,MilitaryHealth,Firm Fixed Price,2267665364,300
+2009,00:36.7,Defense,MilitaryHealth,Fixed Price Award Fee,311457616.1,13
+2009,00:36.7,Defense,Navy,Cost No Fee,504259496.8,2058
+2009,00:36.7,Defense,Navy,Cost Plus Award Fee,8715021662,8864
+2009,00:36.7,Defense,Navy,Order Dependent (IDV only),0,NULL
+2009,00:36.7,Defense,Other DoD,Fixed Price Award Fee,156952262.4,182
+2009,00:36.7,Defense,Other DoD,Time and Materials,791034687.6,2566
+2010,00:36.7,Defense,Air Force,Combination (two or more),390584136.1,1734
+2010,00:36.7,Defense,Army,Cost Plus Award Fee,10550062473,3896
+2010,00:36.7,Defense,Army,Cost Plus Fixed Fee,12566908555,14581
+2010,00:36.7,Defense,Army,Labor Hours,641215020.7,1914
+2010,00:36.7,Defense,Army,Order Dependent (IDV only),0,1
+2010,00:36.7,Defense,DLA,Cost No Fee,1046076.07,52
+2010,00:36.7,Defense,DLA,Cost Plus Award Fee,340341,1
+2010,00:36.7,Defense,DLA,Fixed Price with Economic Price Adjustment,12866454227,23384
+2010,00:36.7,Defense,DLA,Labor Hours,569979576.1,20183
+2010,00:36.7,Defense,DLA,Order Dependent (IDV only),0,NULL
+2010,00:36.7,Defense,MDA,Combination (two or more),58986.44,3
+2010,00:36.7,Defense,MDA,Firm Fixed Price,340260740.6,993
+2010,00:36.7,Defense,MilitaryHealth,Cost Plus Fixed Fee,55069563,86
+2010,00:36.7,Defense,Other DoD,Cost Plus Fixed Fee,2944697895,7200
+2010,00:36.7,Defense,Other DoD,Fixed Price Level of Effort,108227704.3,289
+2011,00:36.7,Defense,Air Force,Cost Plus Incentive,3705118904,1333
+2011,00:36.7,Defense,Air Force,Fixed Price Redetermination,6954886.14,21
+2011,00:36.7,Defense,Army,Not Reported,7438109.63,198
+2011,00:36.7,Defense,Army,Time and Materials,5784894895,9496
+2011,00:36.7,Defense,DLA,Not Reported,-20341.74,1
+2011,00:36.7,Defense,DLA,Time and Materials,19791883.05,123
+2011,00:36.7,Defense,MDA,Cost Plus Award Fee,2350607293,971
+2011,00:36.7,Defense,MilitaryHealth,Cost Plus Incentive,8283309517,406
+2011,00:36.7,Defense,MilitaryHealth,Fixed Price Redetermination,519160.26,9
+2011,00:36.7,Defense,Navy,Cost Plus Fixed Fee,19603220305,46544
+2011,00:36.7,Defense,Navy,Fixed Price Level of Effort,69080522.15,403
+2011,00:36.7,Defense,Navy,Other (none of the above),872335.69,26
+2011,00:36.7,Defense,Other DoD,Fixed Price Redetermination,-2439520.73,15
+2011,00:36.7,Defense,Other DoD,Not Reported,-3579329.86,93
+2012,00:36.7,Defense,Army,Fixed Price Award Fee,72333228.16,164
+2012,00:36.7,Defense,Army,Fixed Price Level of Effort,861127426.9,666
+2012,00:36.7,Defense,Army,Other (none of the above),-52836.86,2
+2012,00:36.7,Defense,DLA,Cost Plus Fixed Fee,90434268.76,103
+2012,00:36.7,Defense,DLA,Fixed Price Award Fee,50589.86,18
+2012,00:36.7,Defense,DLA,Other (none of the above),0,2
+2012,00:36.7,Defense,MDA,Order Dependent (IDV only),0,NULL
+2012,00:36.7,Defense,MDA,Time and Materials,47786287.05,153
+2008,00:36.7,Defense,Other DoD,Combination (two or more),2205683859,5127
+2008,00:36.7,Defense,Other DoD,Fixed Price Level of Effort,19659574.51,53
+2009,00:36.7,Defense,Air Force,Cost No Fee,3162557813,5595
+2009,00:36.7,Defense,Air Force,Cost Plus Award Fee,8756981103,2585
+2009,00:36.7,Defense,Air Force,Fixed Price with Economic Price Adjustment,3529176947,1136
+2009,00:36.7,Defense,Air Force,Labor Hours,976460921.8,2507
+2009,00:36.7,Defense,Army,Cost Plus Incentive,1720075361,613
+2009,00:36.7,Defense,Army,Fixed Price Redetermination,550326351.2,238
+2009,00:36.7,Defense,Army,Not Reported,-83117905.85,4054
+2009,00:36.7,Defense,DLA,Fixed Price Redetermination,65548893.7,271
+2009,00:36.7,Defense,DLA,Not Reported,5031714.85,572
+2009,00:36.7,Defense,MDA,Cost Plus Award Fee,2775454585,931
+2009,00:36.7,Defense,MDA,Cost Plus Fixed Fee,505689766.7,656
+2009,00:36.7,Defense,MilitaryHealth,Cost Plus Incentive,6234247756,351
+2009,00:36.7,Defense,MilitaryHealth,Fixed Price Redetermination,160716270.3,43
+2009,00:36.7,Defense,Navy,Combination (two or more),19905840325,12551
+2009,00:36.7,Defense,Navy,Fixed Price Level of Effort,41869622.81,376
+2009,00:36.7,Defense,Other DoD,Cost Sharing,7931350.29,15
+2009,00:36.7,Defense,Other DoD,Fixed Price Redetermination,33537.41,8
+2010,00:36.7,Defense,Air Force,Time and Materials,2236505754,6508
+2010,00:36.7,Defense,Army,Fixed Price Level of Effort,485812487.3,895
+2010,00:36.7,Defense,Army,Fixed Price with Economic Price Adjustment,1792475470,4359
+2010,00:36.7,Defense,Army,Other (none of the above),880500,2
+2010,00:36.7,Defense,DLA,Cost Plus Fixed Fee,48073760.65,112
+2010,00:36.7,Defense,DLA,Fixed Price Level of Effort,505052,2
+2010,00:36.7,Defense,MDA,Not Reported,0,NULL
+2010,00:36.7,Defense,MDA,Time and Materials,85559135.61,193
+2010,00:36.7,Defense,Navy,Cost Sharing,11972445.05,95
+2010,00:36.7,Defense,Navy,Firm Fixed Price,37908675076,252258
+2010,00:36.7,Defense,Navy,Fixed Price Redetermination,11187672.11,25
+2010,00:36.7,Defense,Other DoD,Cost No Fee,286322675,701
+2010,00:36.7,Defense,Other DoD,Fixed Price with Economic Price Adjustment,244892103.8,2974
+2010,00:36.7,Defense,Other DoD,Labor Hours,388861324.7,1217
+2011,00:36.7,Defense,Air Force,Cost Plus Fixed Fee,10377153428,18542
+2011,00:36.7,Defense,Air Force,Fixed Price Award Fee,201601757.2,617
+2011,00:36.7,Defense,Army,Combination (two or more),2269453967,3937
+2011,00:36.7,Defense,Army,Fixed Price Incentive,705604865.3,132
+2011,00:36.7,Defense,DLA,Combination (two or more),26653907.69,24
+2011,00:36.7,Defense,DLA,Fixed Price Incentive,85326371.57,4059
+2011,00:36.7,Defense,MDA,Cost Plus Incentive,1702437373,218
+2011,00:36.7,Defense,MDA,Fixed Price Award Fee,80809.65,7
+2011,00:36.7,Defense,MilitaryHealth,Firm Fixed Price,1374006691,719
+2011,00:36.7,Defense,MilitaryHealth,Fixed Price Incentive,528807712.6,175
+2011,00:36.7,Defense,Navy,Cost No Fee,1823958588,5050
+2011,00:36.7,Defense,Navy,Cost Plus Award Fee,7718936802,10419
+2007,00:36.7,Defense,Other DoD,Labor Hours,76945483.88,316
+2007,00:36.7,Defense,Other DoD,Not Reported,425802.83,334
+2008,00:36.7,Defense,Air Force,Fixed Price Redetermination,-1675,3
+2008,00:36.7,Defense,Army,Labor Hours,477800196.7,1473
+2008,00:36.7,Defense,DLA,Cost No Fee,1414438.34,10
+2008,00:36.7,Defense,DLA,Labor Hours,41174725.65,445
+2008,00:36.7,Defense,MilitaryHealth,Firm Fixed Price,1116297051,331
+2008,00:36.7,Defense,Navy,Fixed Price Award Fee,239964719.6,455
+2008,00:36.7,Defense,Navy,Fixed Price Redetermination,20688121.79,23
+2008,00:36.7,Defense,Other DoD,Fixed Price with Economic Price Adjustment,125379905.3,2137
+2008,00:36.7,Defense,Other DoD,Time and Materials,1176633309,2770
+2009,00:36.7,Defense,Air Force,Firm Fixed Price,29478689077,151685
+2009,00:36.7,Defense,Army,Combination (two or more),12682088881,20554
+2009,00:36.7,Defense,Army,Time and Materials,8708535626,12995
+2009,00:36.7,Defense,DLA,Combination (two or more),153913570.3,4070
+2009,00:36.7,Defense,DLA,Fixed Price with Economic Price Adjustment,18807591014,14679
+2009,00:36.7,Defense,DLA,Time and Materials,94040631.78,196
+2009,00:36.7,Defense,MDA,Combination (two or more),1597494227,593
+2009,00:36.7,Defense,MDA,Order Dependent (IDV only),0,NULL
+2009,00:36.7,Defense,MDA,Time and Materials,42663743.03,114
+2009,00:36.7,Defense,Navy,Cost Plus Fixed Fee,13557949852,39220
+2009,00:36.7,Defense,Navy,Other (none of the above),1472788.47,7
+2009,00:36.7,Defense,Other DoD,Combination (two or more),2831044926,6928
+2009,00:36.7,Defense,Other DoD,Fixed Price Incentive,-1325479.65,2284
+2009,00:36.7,Defense,Other DoD,Not Reported,15243317.03,815
+2010,00:36.7,Defense,Air Force,Cost Plus Award Fee,7012310342,3156
+2010,00:36.7,Defense,Air Force,Fixed Price Redetermination,2595613.49,8
+2010,00:36.7,Defense,Air Force,Order Dependent (IDV only),-14060.7,3
+2010,00:36.7,Defense,Army,Fixed Price Redetermination,240796600,249
+2010,00:36.7,Defense,DLA,Fixed Price Redetermination,92024929.98,1097
+2010,00:36.7,Defense,MilitaryHealth,Fixed Price Award Fee,369792898.4,76
+2010,00:36.7,Defense,Navy,Cost Plus Incentive,7097452933,4589
+2010,00:36.7,Defense,Navy,Fixed Price Award Fee,374370854.5,701
+2011,00:36.7,Defense,Air Force,Firm Fixed Price,35954742641,160668
+2011,00:36.7,Defense,Army,Cost Plus Fixed Fee,14729891289,15237
+2011,00:36.7,Defense,Army,Firm Fixed Price,83933422198,401002
+2011,00:36.7,Defense,DLA,Firm Fixed Price,20866432561,523598
+2011,00:36.7,Defense,MDA,Cost Plus Fixed Fee,917996951.8,1399
+2011,00:36.7,Defense,MDA,Firm Fixed Price,218692720.2,1020
+2011,00:36.7,Defense,Other DoD,Combination (two or more),681304036.9,1675
+2011,00:36.7,Defense,Other DoD,Order Dependent (IDV only),0,NULL
+2012,00:36.7,Defense,Air Force,Cost Plus Award Fee,3548235426,2166
+2012,00:36.7,Defense,Air Force,Cost Plus Fixed Fee,10641002845,16422
+2012,00:36.7,Defense,Air Force,Order Dependent (IDV only),0,NULL
+2012,00:36.7,Defense,Army,Fixed Price Redetermination,84367272.58,218
+2008,00:36.7,Defense,Army,Fixed Price Level of Effort,136338889.3,642
+2008,00:36.7,Defense,Army,Time and Materials,9462460369,14265
+2008,00:36.7,Defense,DLA,Combination (two or more),665647952.6,16316
+2008,00:36.7,Defense,DLA,Fixed Price with Economic Price Adjustment,15221807847,16053
+2008,00:36.7,Defense,DLA,Time and Materials,102628274.2,198
+2008,00:36.7,Defense,MDA,Combination (two or more),3473781895,1156
+2008,00:36.7,Defense,MDA,Order Dependent (IDV only),0,NULL
+2008,00:36.7,Defense,MDA,Time and Materials,12397389,30
+2008,00:36.7,Defense,MilitaryHealth,Cost Plus Award Fee,-178893.59,3
+2008,00:36.7,Defense,Navy,Cost Plus Award Fee,9852969935,9217
+2008,00:36.7,Defense,Navy,Cost Plus Fixed Fee,11908624913,35406
+2008,00:36.7,Defense,Navy,Other (none of the above),480171.86,3
+2008,00:36.7,Defense,Other DoD,Fixed Price Incentive,31211436.16,2891
+2008,00:36.7,Defense,Other DoD,Not Reported,42850405.44,1115
+2009,00:36.7,Defense,Air Force,Fixed Price Redetermination,191000,2
+2009,00:36.7,Defense,Air Force,Order Dependent (IDV only),0,NULL
+2009,00:36.7,Defense,Army,Labor Hours,382067788.7,1475
+2009,00:36.7,Defense,MDA,Fixed Price Redetermination,390799.6,1
+2009,00:36.7,Defense,Navy,Fixed Price Award Fee,193221057.9,602
+2009,00:36.7,Defense,Navy,Fixed Price Redetermination,512380.37,21
+2010,00:36.7,Defense,Air Force,Firm Fixed Price,35029470194,153850
+2010,00:36.7,Defense,Army,Combination (two or more),3457924806,5034
+2010,00:36.7,Defense,Army,Time and Materials,8290389831,12542
+2010,00:36.7,Defense,MDA,Cost Plus Fixed Fee,670791086.7,750
+2010,00:36.7,Defense,MDA,Order Dependent (IDV only),0,NULL
+2010,00:36.7,Defense,Navy,Cost Plus Fixed Fee,17565027842,42451
+2010,00:36.7,Defense,Navy,Other (none of the above),1548456.77,34
+2010,00:36.7,Defense,Other DoD,Combination (two or more),322215997.1,1676
+2010,00:36.7,Defense,Other DoD,Fixed Price Incentive,29947169.06,900
+2010,00:36.7,Defense,Other DoD,Not Reported,25443683.66,242
+2010,00:36.7,Defense,Other DoD,Order Dependent (IDV only),0,NULL
+2011,00:36.7,Defense,Air Force,Cost Plus Award Fee,5016557305,2822
+2011,00:36.7,Defense,Air Force,Order Dependent (IDV only),0,NULL
+2011,00:36.7,Defense,Army,Fixed Price Redetermination,106549671.1,246
+2011,00:36.7,Defense,DLA,Fixed Price Redetermination,79475764.1,1103
+2011,00:36.7,Defense,MilitaryHealth,Fixed Price Award Fee,425607428.8,96
+2011,00:36.7,Defense,Navy,Cost Plus Incentive,10132656201,4812
+2011,00:36.7,Defense,Navy,Fixed Price Award Fee,914171166.1,914
+2012,00:36.7,Defense,Army,Cost Plus Fixed Fee,15249856931,15918
+2012,00:36.7,Defense,Army,Firm Fixed Price,72385817306,359699
+2012,00:36.7,Defense,DLA,Firm Fixed Price,20284570473,479587
+2012,00:36.7,Defense,MDA,Cost Plus Fixed Fee,1342617496,1983
+2012,00:36.7,Defense,MDA,Firm Fixed Price,735555217.6,591
+2012,00:36.7,Defense,MilitaryHealth,Cost No Fee,2290366.09,56
+2012,00:36.7,Defense,Navy,Cost Sharing,4998939.93,31
+2009,00:36.7,Defense,DLA,Labor Hours,759280789.2,22157
+2009,00:36.7,Defense,DLA,Order Dependent (IDV only),0,NULL
+2009,00:36.7,Defense,MilitaryHealth,Order Dependent (IDV only),0,NULL
+2009,00:36.7,Defense,Navy,Cost Plus Incentive,6008955688,2312
+2009,00:36.7,Defense,Navy,Firm Fixed Price,37643670774,251909
+2009,00:36.7,Defense,Other DoD,Fixed Price Level of Effort,44224178.14,85
+2009,00:36.7,Defense,Other DoD,Fixed Price with Economic Price Adjustment,86255701.73,1079
+2010,00:36.7,Defense,Air Force,Fixed Price Award Fee,352671842.2,823
+2010,00:36.7,Defense,Air Force,Fixed Price with Economic Price Adjustment,1712771628,1227
+2010,00:36.7,Defense,Army,Firm Fixed Price,95336268153,427000
+2010,00:36.7,Defense,Army,Fixed Price Incentive,1664805751,160
+2010,00:36.7,Defense,Army,Not Reported,130097947.9,1206
+2010,00:36.7,Defense,DLA,Combination (two or more),31357796.2,25
+2010,00:36.7,Defense,DLA,Cost Sharing,1064985,11
+2010,00:36.7,Defense,DLA,Firm Fixed Price,21203202830,479719
+2010,00:36.7,Defense,DLA,Fixed Price Incentive,91213580.82,3855
+2010,00:36.7,Defense,DLA,Not Reported,0,10
+2010,00:36.7,Defense,DLA,Time and Materials,39774860.69,220
+2010,00:36.7,Defense,MilitaryHealth,Fixed Price Incentive,439579791,141
+2010,00:36.7,Defense,MilitaryHealth,Fixed Price Redetermination,6534810.72,23
+2010,00:36.7,Defense,Navy,Combination (two or more),2096458309,3092
+2010,00:36.7,Defense,Navy,Cost Plus Award Fee,10483529368,11452
+2010,00:36.7,Defense,Navy,Fixed Price Level of Effort,65530316.01,442
+2010,00:36.7,Defense,Navy,Order Dependent (IDV only),-18550,1
+2010,00:36.7,Defense,Other DoD,Firm Fixed Price,11142934165,64356
+2011,00:36.7,Defense,Army,Cost Plus Award Fee,9931029389,3609
+2011,00:36.7,Defense,Army,Labor Hours,501322390.5,1729
+2011,00:36.7,Defense,Army,Order Dependent (IDV only),0,NULL
+2011,00:36.7,Defense,Army,Other (none of the above),0,1
+2011,00:36.7,Defense,DLA,Cost No Fee,7523398.33,38
+2011,00:36.7,Defense,DLA,Cost Plus Award Fee,1251851,6
+2011,00:36.7,Defense,DLA,Cost Plus Fixed Fee,96895341.54,115
+2011,00:36.7,Defense,DLA,Labor Hours,479503490.9,18477
+2011,00:36.7,Defense,DLA,Order Dependent (IDV only),0,NULL
+2011,00:36.7,Defense,DLA,Other (none of the above),0,3
+2011,00:36.7,Defense,MilitaryHealth,Cost Plus Fixed Fee,1165255062,335
+2011,00:36.7,Defense,Navy,Firm Fixed Price,41032147713,247218
+2011,00:36.7,Defense,Navy,Fixed Price Redetermination,53927901.51,110
+2011,00:36.7,Defense,Other DoD,Fixed Price with Economic Price Adjustment,1820224729,1623325
+2012,00:36.7,Defense,Air Force,Cost Plus Incentive,4151475541,1154
+2012,00:36.7,Defense,Air Force,Firm Fixed Price,43039684809,137951
+2012,00:36.7,Defense,Air Force,Fixed Price Award Fee,128741939,306
+2012,00:36.7,Defense,Army,Combination (two or more),1965840775,2751
+2012,00:36.7,Defense,Army,Fixed Price Incentive,1207621103,188
+2012,00:36.7,Defense,Army,Time and Materials,3691367567,6939
+2012,00:36.7,Defense,Navy,Fixed Price Redetermination,81766554.98,131
+2012,00:36.7,Defense,Other DoD,Cost Plus Incentive,138391986.9,443
+2012,00:36.7,Defense,Other DoD,Fixed Price with Economic Price Adjustment,2933945374,1561960
+2013,00:36.7,Defense,Air Force,Cost Sharing,201920248,109
+2013,00:36.7,Defense,Air Force,Firm Fixed Price,30580739518,121132
+2013,00:36.7,Defense,Air Force,Fixed Price Incentive,4486178210,1204
+2013,00:36.7,Defense,Army,Combination (two or more),1192636715,1811
+2013,00:36.7,Defense,DLA,Combination (two or more),-12717543.53,9
+2013,00:36.7,Defense,MDA,Fixed Price Award Fee,0,NULL
+2013,00:36.7,Defense,MilitaryHealth,Combination (two or more),0,2
+2013,00:36.7,Defense,MilitaryHealth,Fixed Price Incentive,993109982.9,139
+2013,00:36.7,Defense,Navy,Cost Plus Award Fee,6012208070,5800
+2013,00:36.7,Defense,Navy,Fixed Price with Economic Price Adjustment,377215909.4,1434
+2013,00:36.7,Defense,Navy,Labor Hours,27455055.78,208
+2013,00:36.7,Defense,Other DoD,Combination (two or more),248218357.6,1022
+2013,00:36.7,Defense,Other DoD,Firm Fixed Price,10290089911,7669152
+2013,00:36.7,Defense,Other DoD,Fixed Price Incentive,-1882542.416,34
+2014,00:36.7,Defense,Air Force,Cost No Fee,3673920881,4303
+2014,00:36.7,Defense,Air Force,Cost Plus Award Fee,2564527272,1538
+2014,00:36.7,Defense,Air Force,Order Dependent (IDV only),0,NULL
+2014,00:36.7,Defense,Army,Cost Plus Incentive,2439687435,935
+2014,00:36.7,Defense,Army,Cost Sharing,29836920.28,73
+2014,00:36.7,Defense,Army,Fixed Price Redetermination,80201753.09,157
+2014,00:36.7,Defense,DLA,Cost Plus Incentive,21247568.09,6
+2014,00:36.7,Defense,DLA,Fixed Price Redetermination,33497513.97,191
+2014,00:36.7,Defense,MDA,Cost Plus Fixed Fee,2406674150,2304
+2014,00:36.7,Defense,MDA,Fixed Price Level of Effort,389523.7233,10
+2014,00:36.7,Defense,MilitaryHealth,Labor Hours,2429957,2
+2014,00:36.7,Defense,Navy,Fixed Price Incentive,16341158840,2483
+2014,00:36.7,Defense,Navy,Time and Materials,149694746.6,1520
+2014,00:36.7,Defense,Other DoD,Cost Plus Award Fee,-28308137.3,469
+2014,00:36.7,Defense,Other DoD,Cost Sharing,4642069.18,13
+2012,00:36.7,Defense,Army,Order Dependent (IDV only),0,NULL
+2012,00:36.7,Defense,DLA,Fixed Price Redetermination,84698814.24,967
+2012,00:36.7,Defense,DLA,Order Dependent (IDV only),0,NULL
+2012,00:36.7,Defense,MilitaryHealth,Cost Plus Incentive,5034330169,247
+2012,00:36.7,Defense,MilitaryHealth,Fixed Price Award Fee,291452310.9,71
+2012,00:36.7,Defense,Navy,Cost Plus Incentive,5327553977,4487
+2012,00:36.7,Defense,Other DoD,Fixed Price Redetermination,-161110.86,7
+2013,00:36.7,Defense,Air Force,Fixed Price Award Fee,147646570.7,148
+2013,00:36.7,Defense,Army,Cost Plus Fixed Fee,14297025132,16234
+2013,00:36.7,Defense,Army,Firm Fixed Price,56671634324,291583
+2013,00:36.7,Defense,DLA,Firm Fixed Price,18864025374,501734
+2013,00:36.7,Defense,MDA,Cost Plus Fixed Fee,1808882963,2111
+2013,00:36.7,Defense,MDA,Firm Fixed Price,595428462.9,558
+2013,00:36.7,Defense,MilitaryHealth,Cost No Fee,19663524.02,44
+2013,00:36.7,Defense,Navy,Cost Sharing,14395098.72,41
+2013,00:36.7,Defense,Navy,Fixed Price Level of Effort,80499467.27,425
+2013,00:36.7,Defense,Other DoD,Cost Plus Fixed Fee,3336720907,9781
+2013,00:36.7,Defense,Other DoD,Order Dependent (IDV only),0,NULL
+2014,00:36.7,Defense,Air Force,Cost Plus Fixed Fee,10399543317,15392
+2014,00:36.7,Defense,Air Force,Other (none of the above),0,2
+2014,00:36.7,Defense,Army,Cost Plus Award Fee,2808966865,1799
+2014,00:36.7,Defense,Army,Order Dependent (IDV only),0,NULL
+2014,00:36.7,Defense,DLA,Cost Plus Fixed Fee,28961986.42,80
+2014,00:36.7,Defense,DLA,Order Dependent (IDV only),0,NULL
+2014,00:36.7,Defense,MDA,Cost Plus Award Fee,1128708567,735
+2014,00:36.7,Defense,MDA,Cost Plus Incentive,1707282627,404
+2014,00:36.7,Defense,MilitaryHealth,Cost Plus Incentive,-1000284.469,13
+2014,00:36.7,Defense,Navy,Cost No Fee,848757524.2,3300
+2014,00:36.7,Defense,Navy,Labor Hours,36325203.74,207
+2014,00:36.7,Defense,Other DoD,Fixed Price Redetermination,-196005.7447,35
+2011,00:36.7,Defense,MilitaryHealth,Time and Materials,2366480.48,3
+2011,00:36.7,Defense,Navy,Combination (two or more),7817778464,2939
+2011,00:36.7,Defense,Navy,Fixed Price Incentive,13893572455,1009
+2011,00:36.7,Defense,Other DoD,Cost No Fee,956109206.8,686611
+2011,00:36.7,Defense,Other DoD,Cost Plus Award Fee,154165210.6,1935
+2011,00:36.7,Defense,Other DoD,Cost Sharing,11088314.51,553
+2012,00:36.7,Defense,Air Force,Fixed Price Level of Effort,74325000.6,308
+2012,00:36.7,Defense,Air Force,Not Reported,-153172.97,16
+2012,00:36.7,Defense,Air Force,Time and Materials,1139385691,3551
+2012,00:36.7,Defense,Army,Cost No Fee,2756948052,2866
+2012,00:36.7,Defense,Army,Fixed Price with Economic Price Adjustment,1354671780,2804
+2012,00:36.7,Defense,DLA,Cost Sharing,509606.87,10
+2012,00:36.7,Defense,DLA,Fixed Price Incentive,116265372.3,4236
+2012,00:36.7,Defense,DLA,Fixed Price Level of Effort,4113512.41,4
+2012,00:36.7,Defense,MDA,Cost No Fee,39705288.19,150
+2012,00:36.7,Defense,MDA,Labor Hours,-635506.42,47
+2012,00:36.7,Defense,MilitaryHealth,Order Dependent (IDV only),0,NULL
+2012,00:36.7,Defense,MilitaryHealth,Time and Materials,28926091.29,21
+2012,00:36.7,Defense,Navy,Firm Fixed Price,39551471253,231211
+2012,00:36.7,Defense,Navy,Not Reported,142903.05,10
+2012,00:36.7,Defense,Navy,Order Dependent (IDV only),0,0
+2012,00:36.7,Defense,Other DoD,Cost No Fee,721298041.2,428513
+2012,00:36.7,Defense,Other DoD,Fixed Price Award Fee,116760850.8,277
+2012,00:36.7,Defense,Other DoD,Labor Hours,123794503.2,898
+2013,00:36.7,Defense,Air Force,Combination (two or more),365742642.8,1049
+2013,00:36.7,Defense,Air Force,Fixed Price Level of Effort,127751914.9,465
+2013,00:36.7,Defense,Army,Fixed Price Incentive,571278650.7,147
+2013,00:36.7,Defense,DLA,Cost No Fee,2655654.119,20
+2013,00:36.7,Defense,DLA,Cost Sharing,1470774.31,11
+2013,00:36.7,Defense,DLA,Fixed Price Incentive,89500540.16,3554
+2013,00:36.7,Defense,DLA,Labor Hours,3590762.697,773
+2013,00:36.7,Defense,MDA,Fixed Price Incentive,185711939.4,78
+2013,00:36.7,Defense,MilitaryHealth,Cost Plus Fixed Fee,7492143947,384
+2013,00:36.7,Defense,MilitaryHealth,Firm Fixed Price,1680626591,1231
+2013,00:36.7,Defense,Navy,Order Dependent (IDV only),0,0
+2013,00:36.7,Defense,Other DoD,Fixed Price Award Fee,15114581,203
+2013,00:36.7,Defense,Other DoD,Fixed Price Level of Effort,108339451.6,204
+2013,00:36.7,Defense,Other DoD,Time and Materials,57918203.32,1904
+2014,00:36.7,Defense,Air Force,Combination (two or more),151342793.5,183
+2014,00:36.7,Defense,Air Force,Fixed Price with Economic Price Adjustment,478783118.7,672
+2014,00:36.7,Defense,Air Force,Labor Hours,77612505.24,641
+2014,00:36.7,Defense,Army,Labor Hours,293685300.9,888
+2014,00:36.7,Defense,Army,Not Reported,-7862384.04,61
+2014,00:36.7,Defense,DLA,Cost No Fee,2063634.953,9
+2014,00:36.7,Defense,DLA,Fixed Price with Economic Price Adjustment,8765726288,35923
+2011,00:36.7,Defense,Navy,Fixed Price with Economic Price Adjustment,170825001.8,1966
+2011,00:36.7,Defense,Navy,Labor Hours,102716979.1,439
+2011,00:36.7,Defense,Navy,Order Dependent (IDV only),0,NULL
+2011,00:36.7,Defense,Other DoD,Firm Fixed Price,12098279063,8872624
+2011,00:36.7,Defense,Other DoD,Fixed Price Incentive,-16953660.72,58
+2011,00:36.7,Defense,Other DoD,Time and Materials,554776864.3,3164
+2012,00:36.7,Defense,Army,Cost Plus Award Fee,5979663294,2769
+2012,00:36.7,Defense,Army,Cost Sharing,27006254.97,120
+2012,00:36.7,Defense,Army,Labor Hours,905266553.1,1612
+2012,00:36.7,Defense,DLA,Cost No Fee,2860221,31
+2012,00:36.7,Defense,DLA,Cost Plus Award Fee,137735.55,1
+2012,00:36.7,Defense,DLA,Fixed Price with Economic Price Adjustment,22105747525,33471
+2012,00:36.7,Defense,DLA,Labor Hours,415798776.1,20787
+2012,00:36.7,Defense,MDA,Fixed Price Level of Effort,99792.29,2
+2012,00:36.7,Defense,MilitaryHealth,Cost Plus Award Fee,624143.39,1
+2012,00:36.7,Defense,MilitaryHealth,Cost Plus Fixed Fee,4404487341,425
+2012,00:36.7,Defense,MilitaryHealth,Labor Hours,3540906.58,6
+2012,00:36.7,Defense,Navy,Time and Materials,247536400.4,2725
+2012,00:36.7,Defense,Other DoD,Cost Plus Award Fee,97552161.97,624
+2012,00:36.7,Defense,Other DoD,Cost Plus Fixed Fee,3486656278,8064
+2013,00:36.7,Defense,Air Force,Cost Plus Incentive,3510238656,1017
+2013,00:36.7,Defense,Air Force,Fixed Price Redetermination,4566288.907,84
+2013,00:36.7,Defense,Air Force,Not Reported,-31377.14,32
+2013,00:36.7,Defense,Army,Cost No Fee,1277824677,2913
+2013,00:36.7,Defense,Army,Time and Materials,1641318001,4927
+2013,00:36.7,Defense,DLA,Time and Materials,20431430,113
+2013,00:36.7,Defense,MilitaryHealth,Time and Materials,30489496.9,15
+2013,00:36.7,Defense,Navy,Cost Plus Fixed Fee,17726824251,38404
+2013,00:36.7,Defense,Navy,Fixed Price Award Fee,193775161,270
+2013,00:36.7,Defense,Navy,Other (none of the above),920838.77,39
+2013,00:36.7,Defense,Other DoD,Not Reported,-415165.4,19
+2014,00:36.7,Defense,Air Force,Fixed Price Level of Effort,210148328.6,615
+2014,00:36.7,Defense,Army,Fixed Price Award Fee,6929487.909,280
+2014,00:36.7,Defense,Army,Other (none of the above),0,1
+2014,00:36.7,Defense,DLA,Fixed Price Award Fee,5662.24,4
+2014,00:36.7,Defense,MDA,Cost No Fee,20470926.63,115
+2014,00:36.7,Defense,MDA,Labor Hours,2113289.338,29
+2014,00:36.7,Defense,MDA,Order Dependent (IDV only),0,NULL
+2014,00:36.7,Defense,MilitaryHealth,Fixed Price Award Fee,77285960.81,68
+2014,00:36.7,Defense,Navy,Not Reported,-42416.54,3
+2014,00:36.7,Defense,Other DoD,Cost Plus Incentive,178129104.1,384
+2014,00:36.7,Defense,Other DoD,Fixed Price Award Fee,-27057866.62,87
+2011,00:36.7,Defense,MDA,Time and Materials,95211695.23,199
+2011,00:36.7,Defense,Navy,Cost Sharing,7559022.66,58
+2011,00:36.7,Defense,Navy,Time and Materials,535926294.3,5547
+2011,00:36.7,Defense,Other DoD,Cost Plus Fixed Fee,3379429991,8558
+2011,00:36.7,Defense,Other DoD,Labor Hours,254515709.1,1232
+2012,00:36.7,Defense,Air Force,Fixed Price Redetermination,7749922.48,41
+2012,00:36.7,Defense,MDA,Cost Plus Award Fee,1949500424,966
+2012,00:36.7,Defense,MDA,Cost Plus Incentive,2493277891,258
+2012,00:36.7,Defense,MilitaryHealth,Firm Fixed Price,1418715218,2207
+2012,00:36.7,Defense,Navy,Cost No Fee,1110179712,3649
+2012,00:36.7,Defense,Navy,Fixed Price Award Fee,371082408,408
+2012,00:36.7,Defense,Navy,Labor Hours,65518109.55,261
+2012,00:36.7,Defense,Other DoD,Time and Materials,318525728.2,2710
+2013,00:36.7,Defense,Army,Cost Sharing,33001770.68,91
+2013,00:36.7,Defense,Army,Fixed Price Award Fee,36951277.48,185
+2013,00:36.7,Defense,DLA,Cost Plus Incentive,20324448.66,4
+2013,00:36.7,Defense,DLA,Fixed Price Award Fee,5118479.56,8
+2013,00:36.7,Defense,DLA,Fixed Price with Economic Price Adjustment,14716567841,33128
+2013,00:36.7,Defense,MDA,Combination (two or more),-90392.1402,4
+2013,00:36.7,Defense,MDA,Fixed Price Level of Effort,299933,4
+2013,00:36.7,Defense,MDA,Order Dependent (IDV only),0,NULL
+2013,00:36.7,Defense,MDA,Time and Materials,21768641.51,114
+2013,00:36.7,Defense,MilitaryHealth,Cost Plus Award Fee,640092.9375,1
+2013,00:36.7,Defense,Navy,Time and Materials,238632358.4,1848
+2014,00:36.7,Defense,Air Force,Cost Sharing,144492460,88
+2014,00:36.7,Defense,Air Force,Fixed Price Incentive,6051690069,1203
+2014,00:36.7,Defense,Air Force,Fixed Price Redetermination,6532295.091,55
+2014,00:36.7,Defense,Air Force,Not Reported,-43193.56,3
+2014,00:36.7,Defense,Army,Cost No Fee,827242723.3,2001
+2014,00:36.7,Defense,Navy,Cost Plus Incentive,5637827844,3794
+2014,00:36.7,Defense,Navy,Fixed Price Award Fee,176692105.4,210
+2014,00:36.7,Defense,DLA,Labor Hours,6627341.943,17
+2014,00:36.7,Defense,DLA,Not Reported,-6763.35,2
+2014,00:36.7,Defense,MDA,Combination (two or more),348367.5938,3
+2014,00:36.7,Defense,MDA,Fixed Price Incentive,251287892.6,97
+2014,00:36.7,Defense,MilitaryHealth,Cost Plus Fixed Fee,9669701570,441
+2014,00:36.7,Defense,Navy,Combination (two or more),356557560.1,585
+2014,00:36.7,Defense,Other DoD,Fixed Price Level of Effort,103672764.8,215
+2012,00:36.7,Defense,Other DoD,Combination (two or more),495398368.1,1164
+2012,00:36.7,Defense,Other DoD,Order Dependent (IDV only),0,NULL
+2013,00:36.7,Defense,Air Force,Cost Plus Award Fee,2418717481,1801
+2013,00:36.7,Defense,Air Force,Cost Plus Fixed Fee,9863556847,15847
+2013,00:36.7,Defense,Army,Fixed Price Redetermination,109517317.5,200
+2013,00:36.7,Defense,Army,Order Dependent (IDV only),0,NULL
+2013,00:36.7,Defense,DLA,Cost Plus Award Fee,0,3
+2013,00:36.7,Defense,DLA,Fixed Price Redetermination,20874258.09,399
+2013,00:36.7,Defense,DLA,Order Dependent (IDV only),0,NULL
+2013,00:36.7,Defense,MDA,Cost Plus Award Fee,1380654798,934
+2013,00:36.7,Defense,MDA,Cost Plus Incentive,3623591295,306
+2013,00:36.7,Defense,MilitaryHealth,Cost Plus Incentive,1809023255,71
+2013,00:36.7,Defense,MilitaryHealth,Fixed Price Award Fee,74621350.68,55
+2013,00:36.7,Defense,MilitaryHealth,Fixed Price with Economic Price Adjustment,58470,1
+2013,00:36.7,Defense,Navy,Cost No Fee,915750907.2,3517
+2013,00:36.7,Defense,Navy,Cost Plus Incentive,5605765966,4467
+2013,00:36.7,Defense,Other DoD,Fixed Price Redetermination,-145012.75,26
+2014,00:36.7,Defense,Air Force,Fixed Price Award Fee,56266545.17,119
+2014,00:36.7,Defense,Army,Cost Plus Fixed Fee,11678413067,16465
+2014,00:36.7,Defense,Army,Firm Fixed Price,53039928217,258111
+2014,00:36.7,Defense,DLA,Firm Fixed Price,22932606901,545528
+2014,00:36.7,Defense,MDA,Firm Fixed Price,513102700.5,540
+2014,00:36.7,Defense,MilitaryHealth,Cost No Fee,21549899.38,8
+2014,00:36.7,Defense,Navy,Cost Sharing,3306294,26
+2014,00:36.7,Defense,Navy,Fixed Price Level of Effort,41708109.29,202
+2014,00:36.7,Defense,Other DoD,Cost Plus Fixed Fee,3528853358,10174
+2014,00:36.7,Defense,Other DoD,Firm Fixed Price,10331281140,9853991
+2012,00:36.7,Defense,DLA,Time and Materials,12725107.75,93
+2012,00:36.7,Defense,MDA,Fixed Price Award Fee,0,NULL
+2012,00:36.7,Defense,MilitaryHealth,Fixed Price Incentive,677469214.9,151
+2012,00:36.7,Defense,Navy,Cost Plus Award Fee,6005036355,7313
+2012,00:36.7,Defense,Navy,Cost Plus Fixed Fee,21911878214,41693
+2012,00:36.7,Defense,Navy,Fixed Price Level of Effort,74939570.49,444
+2012,00:36.7,Defense,Navy,Fixed Price with Economic Price Adjustment,383998228,1665
+2012,00:36.7,Defense,Navy,Other (none of the above),990779.53,33
+2012,00:36.7,Defense,Other DoD,Firm Fixed Price,12011011841,8927288
+2012,00:36.7,Defense,Other DoD,Fixed Price Incentive,-28736921.55,36
+2012,00:36.7,Defense,Other DoD,Not Reported,-1789063.65,46
+2013,00:36.7,Defense,Air Force,Order Dependent (IDV only),0,NULL
+2013,00:36.7,Defense,Army,Cost Plus Award Fee,6156278174,2035
+2013,00:36.7,Defense,Army,Labor Hours,874030945.5,1194
+2013,00:36.7,Defense,DLA,Cost Plus Fixed Fee,57973703.56,109
+2013,00:36.7,Defense,DLA,Other (none of the above),0,2
+2013,00:36.7,Defense,MDA,Cost No Fee,25696969.73,117
+2013,00:36.7,Defense,MDA,Labor Hours,3616658.983,16
+2013,00:36.7,Defense,MilitaryHealth,Labor Hours,74880,5
+2013,00:36.7,Defense,Navy,Fixed Price Incentive,24986489548,2046
+2013,00:36.7,Defense,Navy,Fixed Price Redetermination,58757412.85,119
+2013,00:36.7,Defense,Navy,Not Reported,2504215.53,13
+2013,00:36.7,Defense,Other DoD,Cost Plus Award Fee,166730985.6,608
+2013,00:36.7,Defense,Other DoD,Cost Plus Incentive,169575637.7,412
+2014,00:36.7,Defense,Air Force,Cost Plus Incentive,2806216148,1029
+2014,00:36.7,Defense,Air Force,Firm Fixed Price,28928844478,114768
+2014,00:36.7,Defense,Army,Combination (two or more),363703748.6,808
+2014,00:36.7,Defense,Army,Time and Materials,1082177430,3821
+2014,00:36.7,Defense,DLA,Time and Materials,10375192.24,91
+2014,00:36.7,Defense,MDA,Fixed Price Award Fee,-20.89,1
+2014,00:36.7,Defense,MilitaryHealth,Combination (two or more),0,1
+2014,00:36.7,Defense,MilitaryHealth,Fixed Price Incentive,1092876534,181
+2014,00:36.7,Defense,MilitaryHealth,Order Dependent (IDV only),0,NULL
+2014,00:36.7,Defense,MilitaryHealth,Time and Materials,33234641.69,19
+2014,00:36.7,Defense,Navy,Cost Plus Fixed Fee,23700881312,39715
+2014,00:36.7,Defense,Navy,Fixed Price with Economic Price Adjustment,48016119.78,1426
+2014,00:36.7,Defense,Navy,Other (none of the above),316255.613,23
+2014,00:36.7,Defense,Other DoD,Combination (two or more),-33009559.61,546
+2014,00:36.7,Defense,Other DoD,Fixed Price Incentive,214143278.9,35
+2014,00:36.7,Defense,Other DoD,Not Reported,-192379.1,7
+2014,00:36.7,Defense,Other DoD,Order Dependent (IDV only),0,NULL
+2011,00:36.7,Defense,MDA,Labor Hours,21368702.11,187
+2011,00:36.7,Defense,Navy,Not Reported,-461833.3,53
+2011,00:36.7,Defense,Other DoD,Cost Plus Incentive,133573522.1,610
+2011,00:36.7,Defense,Other DoD,Fixed Price Award Fee,128274214.7,308
+2011,00:36.7,Defense,Other DoD,Fixed Price Level of Effort,87523935.32,346
+2012,00:36.7,Defense,Air Force,Combination (two or more),434146225.6,1187
+2012,00:36.7,Defense,Air Force,Cost No Fee,2712600816,5980
+2012,00:36.7,Defense,Air Force,Cost Sharing,73884860.54,57
+2012,00:36.7,Defense,Air Force,Fixed Price Incentive,2812264445,1231
+2012,00:36.7,Defense,Air Force,Fixed Price with Economic Price Adjustment,597907454,819
+2012,00:36.7,Defense,Air Force,Labor Hours,408793145.4,1538
+2012,00:36.7,Defense,Army,Cost Plus Incentive,1950407635,542
+2012,00:36.7,Defense,Army,Not Reported,-159113.71,71
+2012,00:36.7,Defense,DLA,Cost Plus Incentive,21852921.28,8
+2012,00:36.7,Defense,MDA,Fixed Price Incentive,161511086.4,53
+2012,00:36.7,Defense,MilitaryHealth,Combination (two or more),2633285,1
+2012,00:36.7,Defense,Navy,Combination (two or more),5157177570,1905
+2012,00:36.7,Defense,Navy,Fixed Price Incentive,13595507928,1530
+2012,00:36.7,Defense,Other DoD,Cost Sharing,2420794.36,24
+2012,00:36.7,Defense,Other DoD,Fixed Price Level of Effort,127240530.5,240
+2013,00:36.7,Defense,Air Force,Cost No Fee,2426523295,5104
+2013,00:36.7,Defense,Air Force,Fixed Price with Economic Price Adjustment,484649024.2,742
+2013,00:36.7,Defense,Air Force,Labor Hours,176462172.2,1073
+2013,00:36.7,Defense,Air Force,Time and Materials,369996868.5,2284
+2013,00:36.7,Defense,Army,Cost Plus Incentive,2436192548,712
+2013,00:36.7,Defense,Army,Fixed Price Level of Effort,1106645950,747
+2013,00:36.7,Defense,Army,Fixed Price with Economic Price Adjustment,916105078.4,4218
+2013,00:36.7,Defense,Army,Not Reported,3285826.16,53
+2013,00:36.7,Defense,DLA,Fixed Price Level of Effort,3153689.06,1
+2013,00:36.7,Defense,DLA,Not Reported,-66300.72,5
+2013,00:36.7,Defense,MDA,Not Reported,-208556.44,2
+2013,00:36.7,Defense,MilitaryHealth,Order Dependent (IDV only),0,NULL
+2013,00:36.7,Defense,Navy,Combination (two or more),3676895146,1576
+2013,00:36.7,Defense,Navy,Firm Fixed Price,33655038069,216738
+2013,00:36.7,Defense,Other DoD,Cost No Fee,559658781.9,330290
+2013,00:36.7,Defense,Other DoD,Cost Sharing,1909087.028,15
+2013,00:36.7,Defense,Other DoD,Fixed Price with Economic Price Adjustment,1815776327,1444177
+2013,00:36.7,Defense,Other DoD,Labor Hours,129266376.7,529
+2014,00:36.7,Defense,Air Force,Time and Materials,246605944.1,1543
+2014,00:36.7,Defense,Army,Fixed Price Incentive,1765053036,146
+2014,00:36.7,Defense,Army,Fixed Price Level of Effort,680052811.6,572
+2014,00:36.7,Defense,Army,Fixed Price with Economic Price Adjustment,779793562,3916
+2014,00:36.7,Defense,DLA,Cost Sharing,241787.2813,4
+2014,00:36.7,Defense,DLA,Fixed Price Incentive,126534011.8,745
+2014,00:36.7,Defense,DLA,Fixed Price Level of Effort,3158448.67,1
+2014,00:36.7,Defense,MDA,Time and Materials,20469483.91,91
+2014,00:36.7,Defense,MilitaryHealth,Firm Fixed Price,2175286239,867
+2014,00:36.7,Defense,Navy,Cost Plus Award Fee,4291133904,4843
+2014,00:36.7,Defense,Navy,Firm Fixed Price,32549581005,216003
+2014,00:36.7,Defense,Navy,Fixed Price Redetermination,62250117.31,83
+2014,00:36.7,Defense,Navy,Order Dependent (IDV only),0,0
+2014,00:36.7,Defense,Other DoD,Cost No Fee,523046641,344062
+2014,00:36.7,Defense,Other DoD,Fixed Price with Economic Price Adjustment,1467095331,1331848
+2014,00:36.7,Defense,Other DoD,Labor Hours,138720542.8,422
+2014,00:36.7,Defense,Other DoD,Time and Materials,15156158.33,1405
