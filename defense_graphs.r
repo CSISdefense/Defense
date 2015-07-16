@@ -41,5 +41,8 @@ setwd("K:\\Development\\Defense")
 # debug(create_procedural_graphs)
 
 create_procedural_graphs("Federal","Overall",2008)
+debug(create_procedural_graphs)
+debug(VariableNumericalFormat)
 create_procedural_graphs("Defense Components","SubCustomer.component",2000)
+create_procedural_graphs("Defense Components","Overall",2000)
 

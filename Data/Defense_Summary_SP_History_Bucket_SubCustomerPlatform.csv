@@ -1,0 +1,1659 @@
+fiscal_year,Customer,SubCustomer,PlatformPortfolio,SumOfnumberOfActions,SumOfobligatedAmount
+NULL,Defense,Army,NULL,NULL,NULL
+1987,Defense,Army,Electronics and Communications,NULL,-171000
+1988,Defense,Navy,Weapons and Ammunition,NULL,1732000
+1989,Defense,Army,Aircraft and Drones,NULL,89000
+1989,Defense,Navy,Other R&D and Knowledge Based,NULL,37910000
+1989,Defense,Other DoD,Missile and Space Systems,NULL,-32000
+1990,Defense,Air Force,Missile and Space Systems,NULL,7471474000
+1990,Defense,Army,Missile and Space Systems,NULL,1869255000
+1990,Defense,DLA,Missile and Space Systems,NULL,1201000
+1990,Defense,Navy,NULL,NULL,NULL
+1990,Defense,Navy,Land Vehicles,NULL,259799000
+1990,Defense,Navy,Other Services,NULL,2760677300
+1990,Defense,Navy,Weapons and Ammunition,NULL,3298247714
+1990,Defense,Other DoD,Other Products,NULL,93753000
+1991,Defense,Air Force,Other Products,NULL,2567498000
+1991,Defense,Air Force,Weapons and Ammunition,NULL,644519000
+1991,Defense,Navy,Other R&D and Knowledge Based,3,3870357934
+1991,Defense,Other DoD,Aircraft and Drones,NULL,1698000
+1991,Defense,Other DoD,Missile and Space Systems,NULL,13465000
+1992,Defense,Army,Missile and Space Systems,NULL,3109020054
+1992,Defense,Army,Weapons and Ammunition,NULL,2813478302
+1992,Defense,DLA,Missile and Space Systems,NULL,348613
+1992,Defense,Navy,Land Vehicles,1,296097273
+1992,Defense,Navy,Other Services,2,2940228573
+1992,Defense,Other DoD,Other Products,NULL,853501731
+1993,Defense,Air Force,Facilities and Construction,NULL,4302101409
+1993,Defense,Air Force,Weapons and Ammunition,NULL,1053349826
+1993,Defense,Army,Other Products,NULL,506103072
+1993,Defense,DLA,Other Products,NULL,6755274066
+1993,Defense,Navy,Facilities and Construction,1619,5119032099
+1993,Defense,Navy,Ships & Submarines,151,7403404324
+1994,Defense,Air Force,Other R&D and Knowledge Based,10424,5459478384
+1994,Defense,Army,Weapons and Ammunition,754,885216004
+1994,Defense,MilitaryHealth,Other Services,154,511658746
+1994,Defense,Other DoD,Other Products,3766,869600482
+1994,Defense,Other DoD,Weapons and Ammunition,149,150792549
+1995,Defense,Air Force,Facilities and Construction,19003,5072318139
+1995,Defense,Air Force,Land Vehicles,520,205626087
+1995,Defense,Air Force,Other Services,2917,2061763873
+1995,Defense,Air Force,Weapons and Ammunition,1302,865431913
+1995,Defense,Army,Other Products,2962,509293882
+1995,Defense,DLA,Facilities and Construction,3313,485428637
+1995,Defense,DLA,Other Products,12598,5394156969
+1995,Defense,DLA,Weapons and Ammunition,114,14331657
+1995,Defense,MDA,Other R&D and Knowledge Based,301,251001833
+1995,Defense,Navy,Aircraft and Drones,3972,6458349848
+1995,Defense,Navy,Electronics and Communications,16227,4408835622
+1995,Defense,Navy,Facilities and Construction,20099,6467329549
+1995,Defense,Navy,Ships & Submarines,7142,7775863825
+1995,Defense,Other DoD,Other R&D and Knowledge Based,1664,986321347
+1996,Defense,Air Force,Other R&D and Knowledge Based,9680,4787846067
+1996,Defense,DLA,Other R&D and Knowledge Based,487,85623373
+1996,Defense,Other DoD,Land Vehicles,13,2836769
+1996,Defense,Other DoD,Weapons and Ammunition,13,20430594
+1997,Defense,Air Force,Land Vehicles,549,191895847
+1997,Defense,Air Force,Other Services,3011,2151771133
+1997,Defense,Air Force,Unmanned,8,8225795
+1997,Defense,Army,Facilities and Construction,36485,10320733948
+1997,Defense,Army,Land Vehicles,2182,2644979969
+1997,Defense,DLA,Facilities and Construction,3341,469761993
+1988,Defense,Navy,Electronics and Communications,NULL,1712000
+1988,Defense,Other DoD,Other R&D and Knowledge Based,NULL,258000
+1989,Defense,Army,Facilities and Construction,NULL,62719000
+1989,Defense,Army,Other R&D and Knowledge Based,NULL,700000
+1989,Defense,Navy,Aircraft and Drones,NULL,86248000
+1989,Defense,Navy,Electronics and Communications,NULL,115449946
+1990,Defense,Air Force,Electronics and Communications,NULL,5729387000
+1990,Defense,Air Force,Other Services,NULL,1340586000
+1990,Defense,Air Force,Ships & Submarines,NULL,6649000
+1990,Defense,Air Force,Unmanned,NULL,73867000
+1990,Defense,Army,Facilities and Construction,NULL,5219084000
+1990,Defense,Army,Land Vehicles,NULL,3332883000
+1990,Defense,Army,Other R&D and Knowledge Based,NULL,1773375000
+1990,Defense,DLA,NULL,NULL,NULL
+1990,Defense,DLA,Facilities and Construction,NULL,501958000
+1990,Defense,DLA,Land Vehicles,NULL,96449000
+1990,Defense,DLA,Other R&D and Knowledge Based,NULL,45584000
+1990,Defense,Navy,Aircraft and Drones,NULL,8318339432
+1990,Defense,Navy,Missile and Space Systems,NULL,4419842000
+1990,Defense,Navy,Unmanned,NULL,29287000
+1990,Defense,Other DoD,Facilities and Construction,NULL,64615000
+1991,Defense,Air Force,Ships & Submarines,NULL,6151000
+1991,Defense,Army,Land Vehicles,NULL,5601200000
+1991,Defense,DLA,Land Vehicles,NULL,132094000
+1992,Defense,Army,Other Services,NULL,1183327562
+1992,Defense,Army,Unmanned,NULL,723882
+1992,Defense,DLA,Other Services,NULL,35817959
+1992,Defense,Other DoD,Other Services,NULL,325880806
+1992,Defense,Other DoD,Ships & Submarines,NULL,217204
+1993,Defense,Air Force,Electronics and Communications,NULL,6028097003
+1993,Defense,Army,Other Services,NULL,1281514230
+1993,Defense,Army,Ships & Submarines,NULL,85437681
+1993,Defense,Army,Unmanned,NULL,2709876
+1993,Defense,DLA,Electronics and Communications,NULL,332398850
+1993,Defense,DLA,Other Services,NULL,11755887
+1993,Defense,DLA,Ships & Submarines,NULL,14411201
+1993,Defense,Navy,Missile and Space Systems,19,3394875658
+1993,Defense,Navy,Other Products,61,594719627
+1993,Defense,Other DoD,Facilities and Construction,NULL,151678418
+1993,Defense,Other DoD,Other Services,NULL,461594116
+1994,Defense,Air Force,Aircraft and Drones,6450,16767329626
+1994,Defense,Army,Ships & Submarines,268,68750925
+1994,Defense,DLA,Ships & Submarines,161,20602397
+1994,Defense,Navy,Other Products,3350,642507610
+1994,Defense,Other DoD,Electronics and Communications,6523,2109906701
+1995,Defense,Air Force,Aircraft and Drones,6475,13060673216
+1995,Defense,Air Force,Missile and Space Systems,1709,3490459183
+1995,Defense,MilitaryHealth,Other R&D and Knowledge Based,34,-44198856
+1995,Defense,Navy,Weapons and Ammunition,1693,1377959100
+1995,Defense,Other DoD,Electronics and Communications,6339,1744854535
+1996,Defense,Army,Electronics and Communications,17514,5277383660
+1996,Defense,DLA,Electronics and Communications,4306,408522140
+1996,Defense,Navy,Weapons and Ammunition,1739,1413330564
+1996,Defense,Other DoD,Missile and Space Systems,13,31565030
+1997,Defense,Army,Aircraft and Drones,1112,1467832674
+1997,Defense,Army,Electronics and Communications,16624,5187402586
+1997,Defense,DLA,Aircraft and Drones,4674,441047160
+1997,Defense,Navy,Land Vehicles,646,164436998
+1998,Defense,Air Force,Missile and Space Systems,1316,3605461345
+1998,Defense,Air Force,Other Products,3960,2455575442
+NULL,Defense,Air Force,NULL,1,259871
+1988,Defense,Army,Electronics and Communications,NULL,34000
+1989,Defense,Navy,NULL,NULL,NULL
+1989,Defense,Navy,Land Vehicles,NULL,1751000
+1989,Defense,Navy,Weapons and Ammunition,NULL,33508000
+1990,Defense,Air Force,Other Products,NULL,2336468000
+1990,Defense,Army,Aircraft and Drones,NULL,4185460000
+1990,Defense,DLA,Aircraft and Drones,NULL,68005000
+1990,Defense,Navy,Other R&D and Knowledge Based,2,3356027162
+1990,Defense,Other DoD,Aircraft and Drones,NULL,67000
+1990,Defense,Other DoD,Missile and Space Systems,NULL,7544000
+1991,Defense,Army,Missile and Space Systems,NULL,3685775000
+1991,Defense,Army,Weapons and Ammunition,NULL,3134083000
+1991,Defense,DLA,Missile and Space Systems,NULL,1259000
+1991,Defense,Navy,Land Vehicles,NULL,393155796
+1991,Defense,Navy,Other Services,NULL,2970926079
+1991,Defense,Other DoD,Other Products,NULL,98704000
+1992,Defense,Air Force,Other Products,NULL,2704760681
+1992,Defense,Air Force,Weapons and Ammunition,NULL,777687971
+1992,Defense,Army,Other Products,NULL,628753489
+1992,Defense,DLA,Other Products,NULL,5717094775
+1992,Defense,Navy,Facilities and Construction,3,5468077987
+1992,Defense,Navy,Other R&D and Knowledge Based,3,3877120392
+1992,Defense,Navy,Ships & Submarines,1,6423602702
+1992,Defense,Other DoD,Aircraft and Drones,NULL,6330538
+1993,Defense,Army,Missile and Space Systems,NULL,3353884798
+1993,Defense,Army,Weapons and Ammunition,NULL,2169771840
+1993,Defense,Navy,Other Services,106,2040065569
+1993,Defense,Other DoD,Other Products,NULL,792926411
+1993,Defense,Other DoD,Weapons and Ammunition,NULL,47939988
+1994,Defense,Air Force,Facilities and Construction,19421,5288977704
+1994,Defense,Air Force,Land Vehicles,1010,1158180282
+1994,Defense,Air Force,Weapons and Ammunition,1390,1071451907
+1994,Defense,Army,Other Products,2240,439408804
+1994,Defense,DLA,Other Products,11529,5746926260
+1994,Defense,DLA,Weapons and Ammunition,78,6598719
+1994,Defense,MDA,Other R&D and Knowledge Based,398,343747860
+1994,Defense,Navy,Electronics and Communications,16306,5389931975
+1994,Defense,Navy,Facilities and Construction,22707,8128676373
+1994,Defense,Navy,Ships & Submarines,6864,5051098317
+1995,Defense,Air Force,Other R&D and Knowledge Based,9233,4598671894
+1995,Defense,MilitaryHealth,Other Services,237,1344041248
+1995,Defense,Other DoD,Land Vehicles,17,9510486
+1995,Defense,Other DoD,Weapons and Ammunition,2,113226
+1996,Defense,Air Force,Facilities and Construction,19294,5009700510
+1996,Defense,Air Force,Land Vehicles,510,163272463
+1996,Defense,Air Force,Other Services,3197,2232102712
+1996,Defense,Air Force,Unmanned,3,105209
+1996,Defense,Army,Facilities and Construction,36155,10060825032
+1996,Defense,DLA,Facilities and Construction,3403,417577800
+1996,Defense,DLA,Land Vehicles,1479,147637134
+1996,Defense,DLA,Weapons and Ammunition,191,15627345
+1996,Defense,MilitaryHealth,Electronics and Communications,7,412601
+1996,Defense,Navy,Aircraft and Drones,4044,5883211730
+1996,Defense,Navy,Electronics and Communications,16471,4413995763
+1996,Defense,Navy,Unmanned,3,1706603
+1996,Defense,Other DoD,Other R&D and Knowledge Based,1916,794023378
+1997,Defense,Air Force,Other R&D and Knowledge Based,9373,4512334510
+1997,Defense,Air Force,Ships & Submarines,38,5985573
+1997,Defense,Army,Other R&D and Knowledge Based,13138,4328958326
+NULL,Defense,Navy,NULL,NULL,NULL
+1989,Defense,Army,Ships & Submarines,NULL,11018000
+1989,Defense,Navy,Missile and Space Systems,NULL,54508000
+1990,Defense,Army,Unmanned,NULL,3661000
+1990,Defense,Army,Weapons and Ammunition,NULL,930840000
+1990,Defense,Other DoD,Electronics and Communications,NULL,653075000
+1990,Defense,Other DoD,Other Services,NULL,643549000
+1990,Defense,Other DoD,Weapons and Ammunition,NULL,1075000
+1991,Defense,Air Force,Facilities and Construction,NULL,5086669000
+1991,Defense,Army,Aircraft and Drones,NULL,3272802000
+1991,Defense,Army,Ships & Submarines,NULL,52801000
+1991,Defense,DLA,Aircraft and Drones,NULL,66587000
+1991,Defense,Navy,Electronics and Communications,NULL,6404981122
+1991,Defense,Navy,Unmanned,NULL,18976503
+1992,Defense,Air Force,Missile and Space Systems,NULL,4240863302
+1992,Defense,DLA,Other R&D and Knowledge Based,NULL,41890010
+1992,Defense,Other DoD,Weapons and Ammunition,NULL,852010
+1993,Defense,Army,Aircraft and Drones,NULL,2979357872
+1993,Defense,Army,Land Vehicles,NULL,3720696711
+1993,Defense,DLA,Aircraft and Drones,NULL,50295908
+1993,Defense,DLA,Land Vehicles,NULL,105854971
+1993,Defense,Navy,Electronics and Communications,245,5072671902
+1993,Defense,Navy,Other R&D and Knowledge Based,144,4111850314
+1993,Defense,Navy,Unmanned,NULL,180486812
+1993,Defense,Other DoD,Aircraft and Drones,NULL,5277240
+1993,Defense,Other DoD,Missile and Space Systems,NULL,49284401
+1994,Defense,Air Force,Electronics and Communications,14296,5620152826
+1994,Defense,Air Force,Missile and Space Systems,1796,3764822465
+1994,Defense,Army,Other R&D and Knowledge Based,8060,2644404415
+1994,Defense,DLA,Other R&D and Knowledge Based,269,49566876
+1994,Defense,MilitaryHealth,Facilities and Construction,20,8214786
+1994,Defense,MilitaryHealth,Other R&D and Knowledge Based,64,354684912
+1994,Defense,Navy,Land Vehicles,1262,1279064037
+1994,Defense,Navy,Missile and Space Systems,1035,3468538002
+1994,Defense,Navy,Other Services,6177,2907419789
+1995,Defense,Army,Land Vehicles,1858,2193960902
+1995,Defense,Army,Other Services,3423,1123706450
+1995,Defense,Army,Unmanned,9,42377147
+1995,Defense,DLA,Land Vehicles,1091,113410063
+1995,Defense,DLA,Other Services,44,5058783
+1995,Defense,Navy,Other R&D and Knowledge Based,15068,4518991127
+1995,Defense,Navy,Unmanned,7,-1808810
+1995,Defense,Other DoD,Aircraft and Drones,29,27422117
+1995,Defense,Other DoD,Missile and Space Systems,7,1810881
+1996,Defense,Air Force,Electronics and Communications,14079,4557103540
+1996,Defense,Army,Other R&D and Knowledge Based,13317,4213044005
+1996,Defense,Army,Ships & Submarines,311,93947964
+1996,Defense,DLA,Ships & Submarines,177,21393170
+1996,Defense,MilitaryHealth,Facilities and Construction,6,4607760
+1996,Defense,Navy,Land Vehicles,797,140126666
+1996,Defense,Navy,Missile and Space Systems,945,2844222629
+1996,Defense,Navy,Other Services,5570,2888722480
+1997,Defense,Army,Other Products,3431,539648183
+1997,Defense,Army,Other Services,4342,1486825512
+1997,Defense,Army,Unmanned,2,288582
+1997,Defense,DLA,Other Products,18572,6156599618
+1997,Defense,DLA,Other Services,55,25758767
+1997,Defense,Navy,Facilities and Construction,19861,6365843896
+1997,Defense,Navy,Ships & Submarines,5505,6099779775
+1997,Defense,Other DoD,Aircraft and Drones,94,48667053
+1997,Defense,Other DoD,Electronics and Communications,7236,1900938572
+NULL,Defense,Other DoD,NULL,NULL,NULL
+1988,Defense,Navy,Other Services,NULL,1378000
+1989,Defense,Army,Electronics and Communications,NULL,4052000
+1989,Defense,Army,Other Services,NULL,1014000
+1989,Defense,Navy,Ships & Submarines,NULL,131363000
+1989,Defense,Other DoD,Other Products,NULL,500000
+1989,Defense,Other DoD,Other Services,NULL,762000
+1990,Defense,Air Force,Facilities and Construction,NULL,3877335000
+1990,Defense,Air Force,Other R&D and Knowledge Based,NULL,4546920000
+1990,Defense,Air Force,Weapons and Ammunition,NULL,864801000
+1990,Defense,Army,Ships & Submarines,NULL,74215000
+1990,Defense,DLA,Ships & Submarines,NULL,15087000
+1990,Defense,Navy,Other Products,NULL,751077000
+1991,Defense,Air Force,Aircraft and Drones,NULL,15043386000
+1991,Defense,Air Force,Land Vehicles,NULL,139139000
+1991,Defense,Air Force,Missile and Space Systems,NULL,6779425000
+1991,Defense,Army,Other Products,NULL,1101170000
+1991,Defense,DLA,Other Products,NULL,10190485000
+1991,Defense,Navy,Facilities and Construction,NULL,6253219282
+1991,Defense,Other DoD,Electronics and Communications,NULL,1286782000
+1991,Defense,Other DoD,Other R&D and Knowledge Based,NULL,2234756000
+1991,Defense,Other DoD,Weapons and Ammunition,NULL,1533000
+1992,Defense,Navy,Electronics and Communications,5,6298084307
+1992,Defense,Navy,Weapons and Ammunition,1,2228034573
+1992,Defense,Other DoD,Land Vehicles,NULL,4743271
+1992,Defense,Other DoD,Missile and Space Systems,NULL,18052194
+1993,Defense,Air Force,Other Services,NULL,1813425293
+1993,Defense,Air Force,Unmanned,NULL,596578
+1993,Defense,Army,Electronics and Communications,NULL,3989216512
+1993,Defense,Army,Facilities and Construction,NULL,9512112386
+1993,Defense,Army,Other R&D and Knowledge Based,NULL,3056973486
+1993,Defense,DLA,Facilities and Construction,NULL,605134350
+1993,Defense,DLA,Other R&D and Knowledge Based,NULL,42188235
+1993,Defense,DLA,Weapons and Ammunition,NULL,7120191
+1993,Defense,Navy,Aircraft and Drones,82,7201937634
+1993,Defense,Navy,Land Vehicles,26,160055579
+1994,Defense,Air Force,Ships & Submarines,48,6709617
+1994,Defense,Army,Aircraft and Drones,1312,1907192614
+1994,Defense,Army,Land Vehicles,456,119729192
+1994,Defense,Army,Missile and Space Systems,1538,2756839692
+1994,Defense,DLA,Aircraft and Drones,958,89628343
+1994,Defense,DLA,Land Vehicles,853,103077319
+1994,Defense,DLA,Missile and Space Systems,37,5448145
+1994,Defense,Navy,Unmanned,23,123376097
+1994,Defense,Other DoD,Aircraft and Drones,217,15290819
+1995,Defense,Air Force,Other Products,4391,2915095518
+1995,Defense,MDA,Electronics and Communications,7,592440
+1995,Defense,Navy,Other Services,6413,3506537910
+1995,Defense,Other DoD,Ships & Submarines,12,23383865
+1996,Defense,Army,Other Services,4181,1636203402
+1996,Defense,Army,Unmanned,3,2437862
+1996,Defense,DLA,Other Services,40,4036792
+1996,Defense,MilitaryHealth,Other Services,310,1386279949
+1996,Defense,Navy,Other R&D and Knowledge Based,15509,4515232028
+1996,Defense,Navy,Ships & Submarines,5565,5815591313
+1996,Defense,Other DoD,Other Products,241,81044746
+1996,Defense,Other DoD,Other Services,263,159634189
+1997,Defense,Air Force,Electronics and Communications,13480,4904174171
+1997,Defense,Air Force,Facilities and Construction,16681,4478514380
+1997,Defense,Air Force,Weapons and Ammunition,1336,780915613
+1988,Defense,Navy,Facilities and Construction,NULL,572670
+1988,Defense,Navy,Other R&D and Knowledge Based,NULL,197000
+1988,Defense,Navy,Ships & Submarines,NULL,88000
+1989,Defense,Army,NULL,NULL,NULL
+1989,Defense,Navy,Other Products,NULL,7566000
+1989,Defense,Navy,Other Services,NULL,407216000
+1989,Defense,Other DoD,Facilities and Construction,NULL,4572000
+1990,Defense,Air Force,NULL,NULL,NULL
+1990,Defense,Air Force,Aircraft and Drones,NULL,14602995000
+1990,Defense,Air Force,Land Vehicles,NULL,181834000
+1990,Defense,Army,Electronics and Communications,NULL,3936279000
+1990,Defense,Army,Other Products,NULL,717429000
+1990,Defense,DLA,Electronics and Communications,NULL,414306000
+1990,Defense,DLA,Other Products,NULL,7941542000
+1990,Defense,DLA,Weapons and Ammunition,NULL,2784000
+1990,Defense,Navy,Facilities and Construction,NULL,4898857305
+1990,Defense,Navy,Ships & Submarines,NULL,8635988493
+1991,Defense,Air Force,Other R&D and Knowledge Based,NULL,4294728000
+1991,Defense,Navy,Other Products,1,847746216
+1991,Defense,Navy,Weapons and Ammunition,NULL,2909467377
+1991,Defense,Other DoD,Land Vehicles,NULL,6670000
+1992,Defense,Air Force,Land Vehicles,NULL,207040088
+1992,Defense,Air Force,Other Services,NULL,1635289151
+1992,Defense,Air Force,Unmanned,NULL,69371656
+1992,Defense,Army,Electronics and Communications,NULL,3851364241
+1992,Defense,Army,Facilities and Construction,NULL,10106944428
+1992,Defense,DLA,Electronics and Communications,NULL,348128728
+1992,Defense,DLA,Facilities and Construction,NULL,575948199
+1992,Defense,DLA,Weapons and Ammunition,NULL,3483978
+1992,Defense,Navy,Aircraft and Drones,10,7630107981
+1992,Defense,Other DoD,Other R&D and Knowledge Based,NULL,2895305375
+1993,Defense,Air Force,Other R&D and Knowledge Based,NULL,4474935466
+1993,Defense,Air Force,Ships & Submarines,NULL,7061515
+1993,Defense,DLA,Missile and Space Systems,NULL,1089345
+1993,Defense,Navy,Weapons and Ammunition,47,2103641444
+1993,Defense,Other DoD,Land Vehicles,NULL,626394
+1994,Defense,Air Force,Other Products,2982,1701687587
+1994,Defense,Air Force,Other Services,3432,2715320956
+1994,Defense,Air Force,Unmanned,3,619471
+1994,Defense,Army,Facilities and Construction,26186,8478113592
+1994,Defense,DLA,Facilities and Construction,3210,442252029
+1994,Defense,MilitaryHealth,Electronics and Communications,12,2098385
+1994,Defense,Navy,Aircraft and Drones,4037,6669522313
+1994,Defense,Other DoD,Facilities and Construction,1463,418378653
+1994,Defense,Other DoD,Other R&D and Knowledge Based,1286,806520117
+1994,Defense,Other DoD,Ships & Submarines,11,1332465
+1995,Defense,Air Force,Ships & Submarines,42,7204644
+1995,Defense,Army,Missile and Space Systems,1358,2499867493
+1995,Defense,Army,Weapons and Ammunition,1187,1827371200
+1995,Defense,DLA,Missile and Space Systems,24,1984282
+1995,Defense,Other DoD,Other Products,205,41184467
+1996,Defense,Air Force,Other Products,5107,3542853339
+1996,Defense,Air Force,Weapons and Ammunition,1316,1055737773
+1996,Defense,MDA,Electronics and Communications,2,348205
+1996,Defense,MDA,Other R&D and Knowledge Based,335,299956885
+1996,Defense,Other DoD,Facilities and Construction,830,154666348
+1996,Defense,Other DoD,Ships & Submarines,32,33541476
+1997,Defense,Air Force,Aircraft and Drones,6084,11781670465
+1997,Defense,Army,Missile and Space Systems,1751,3163059117
+1997,Defense,Army,Weapons and Ammunition,1458,1961857739
+NULL,Defense,NULL,NULL,NULL,NULL
+1988,Defense,Navy,Land Vehicles,NULL,-263000
+1988,Defense,Navy,Missile and Space Systems,NULL,1708000
+1988,Defense,Navy,Other Products,NULL,-221000
+1988,Defense,Other DoD,Facilities and Construction,NULL,44000
+1989,Defense,Army,Other Products,NULL,90000
+1989,Defense,Army,Weapons and Ammunition,NULL,176174000
+1989,Defense,Navy,Facilities and Construction,NULL,352404000
+1989,Defense,Other DoD,Electronics and Communications,NULL,17436000
+1990,Defense,Army,NULL,NULL,NULL
+1990,Defense,Navy,Electronics and Communications,1,7256994999
+1991,Defense,Air Force,Other Services,NULL,2838175000
+1991,Defense,Army,Electronics and Communications,NULL,3580873000
+1991,Defense,DLA,Electronics and Communications,NULL,448105000
+1991,Defense,DLA,Facilities and Construction,NULL,711889000
+1991,Defense,DLA,Weapons and Ammunition,NULL,6347000
+1991,Defense,Navy,Aircraft and Drones,2,6618543040
+1991,Defense,Navy,Ships & Submarines,NULL,7011570416
+1991,Defense,Other DoD,Other Services,NULL,276005000
+1992,Defense,Air Force,Facilities and Construction,NULL,4724161781
+1992,Defense,Air Force,Other R&D and Knowledge Based,NULL,4729968744
+1992,Defense,Air Force,Ships & Submarines,NULL,3923479
+1992,Defense,Army,Aircraft and Drones,NULL,3148641581
+1992,Defense,DLA,Aircraft and Drones,NULL,51278826
+1992,Defense,DLA,Land Vehicles,NULL,105290898
+1992,Defense,Navy,Unmanned,NULL,84513575
+1993,Defense,Air Force,Land Vehicles,NULL,118525628
+1993,Defense,Air Force,Missile and Space Systems,NULL,4654020018
+1993,Defense,Air Force,Other Products,NULL,2555310340
+1993,Defense,Other DoD,Other R&D and Knowledge Based,NULL,2689823385
+1994,Defense,Army,Other Services,2942,872756848
+1994,Defense,DLA,Other Services,32,2318144
+1994,Defense,Navy,Other R&D and Knowledge Based,15075,4496079635
+1994,Defense,Navy,Weapons and Ammunition,1922,1975067592
+1994,Defense,Other DoD,Land Vehicles,403,490699928
+1994,Defense,Other DoD,Missile and Space Systems,8,858806
+1995,Defense,Air Force,Electronics and Communications,13983,4800736552
+1995,Defense,Air Force,Unmanned,5,-1231650
+1995,Defense,Army,Facilities and Construction,33021,10195379076
+1995,Defense,Army,Other R&D and Knowledge Based,11803,3984238928
+1995,Defense,DLA,Other R&D and Knowledge Based,283,58587947
+1995,Defense,DLA,Ships & Submarines,171,22788809
+1995,Defense,MilitaryHealth,Electronics and Communications,22,7818658
+1995,Defense,MilitaryHealth,Facilities and Construction,9,8976539
+1995,Defense,Navy,Land Vehicles,681,166674882
+1995,Defense,Navy,Missile and Space Systems,977,3389282433
+1995,Defense,Other DoD,Facilities and Construction,762,220428950
+1996,Defense,Air Force,Aircraft and Drones,6312,14715175447
+1996,Defense,Air Force,Ships & Submarines,44,5305541
+1996,Defense,Army,Land Vehicles,2352,2679269309
+1996,Defense,Army,Missile and Space Systems,1531,2725254085
+1996,Defense,Army,Other Products,3596,540613822
+1996,Defense,Army,Weapons and Ammunition,1446,2238676614
+1996,Defense,DLA,Missile and Space Systems,41,4982656
+1996,Defense,DLA,Other Products,16362,5841497928
+1996,Defense,Navy,Facilities and Construction,21559,6992577136
+1996,Defense,Other DoD,Aircraft and Drones,116,48093305
+1996,Defense,Other DoD,Electronics and Communications,8343,1986973243
+1997,Defense,MDA,Other R&D and Knowledge Based,330,387225520
+1997,Defense,Navy,Other Services,5667,3214545181
+1988,Defense,Army,Facilities and Construction,NULL,-35000
+1988,Defense,Navy,Aircraft and Drones,NULL,448000
+1989,Defense,Army,Land Vehicles,NULL,66726000
+1989,Defense,Other DoD,Other R&D and Knowledge Based,NULL,62940000
+1990,Defense,Army,Other Services,NULL,770552000
+1990,Defense,DLA,Other Services,NULL,101674000
+1990,Defense,Other DoD,NULL,NULL,NULL
+1990,Defense,Other DoD,Land Vehicles,NULL,2470000
+1990,Defense,Other DoD,Other R&D and Knowledge Based,NULL,1864905000
+1991,Defense,Air Force,Electronics and Communications,NULL,6166948000
+1991,Defense,Air Force,Unmanned,NULL,58446000
+1991,Defense,Army,Facilities and Construction,NULL,10131056000
+1991,Defense,Army,Other R&D and Knowledge Based,NULL,3123784000
+1991,Defense,Army,Other Services,NULL,1209068000
+1991,Defense,Army,Unmanned,NULL,1230000
+1991,Defense,DLA,Other R&D and Knowledge Based,NULL,36650000
+1991,Defense,DLA,Other Services,NULL,75418000
+1991,Defense,DLA,Ships & Submarines,NULL,14638000
+1991,Defense,Navy,Missile and Space Systems,NULL,4641006079
+1991,Defense,Other DoD,Facilities and Construction,NULL,92233000
+1992,Defense,Air Force,Aircraft and Drones,NULL,14446145476
+1992,Defense,Air Force,Electronics and Communications,NULL,5063510707
+1992,Defense,Army,Land Vehicles,NULL,3307519114
+1992,Defense,Army,Other R&D and Knowledge Based,NULL,2837056446
+1992,Defense,Army,Ships & Submarines,NULL,126979899
+1992,Defense,DLA,Ships & Submarines,NULL,22663053
+1992,Defense,Navy,Missile and Space Systems,NULL,4581472129
+1992,Defense,Navy,Other Products,2,816913121
+1992,Defense,Other DoD,Electronics and Communications,NULL,1890626005
+1992,Defense,Other DoD,Facilities and Construction,NULL,148421730
+1993,Defense,Air Force,Aircraft and Drones,NULL,14445026338
+1993,Defense,Other DoD,Electronics and Communications,NULL,1741775411
+1993,Defense,Other DoD,Ships & Submarines,NULL,13964534
+1994,Defense,Army,Electronics and Communications,9932,2433014103
+1994,Defense,Army,Unmanned,3,22875719
+1994,Defense,DLA,Electronics and Communications,2366,218010712
+1994,Defense,Other DoD,Other Services,111,79374099
+1995,Defense,Army,Aircraft and Drones,1410,2268123511
+1995,Defense,Army,Electronics and Communications,15136,4773284718
+1995,Defense,Army,Ships & Submarines,273,75838619
+1995,Defense,DLA,Aircraft and Drones,1606,166210137
+1995,Defense,DLA,Electronics and Communications,3328,373973167
+1995,Defense,Navy,Other Products,3237,563544421
+1995,Defense,Other DoD,Other Services,133,131071479
+1996,Defense,Air Force,Missile and Space Systems,1481,3011887343
+1996,Defense,Army,Aircraft and Drones,1480,2194545458
+1996,Defense,DLA,Aircraft and Drones,3127,278353391
+1996,Defense,MilitaryHealth,Other R&D and Knowledge Based,21,3530196
+1996,Defense,Navy,Other Products,3341,563574626
+1997,Defense,Air Force,Missile and Space Systems,1275,3128987001
+1997,Defense,Air Force,Other Products,4322,2998581588
+1997,Defense,MilitaryHealth,Other R&D and Knowledge Based,25,-1361020
+1997,Defense,Navy,Other R&D and Knowledge Based,16191,5273878017
+1997,Defense,Navy,Weapons and Ammunition,1382,1622027398
+1997,Defense,Other DoD,Missile and Space Systems,9,1920880
+1998,Defense,MilitaryHealth,Facilities and Construction,1,-66702
+1998,Defense,Navy,Land Vehicles,674,167640217
+1998,Defense,Navy,Other R&D and Knowledge Based,16620,5087073472
+1998,Defense,Navy,Weapons and Ammunition,1627,1558849198
+1998,Defense,Other DoD,Missile and Space Systems,7,1077929
+1997,Defense,Other DoD,Other Services,280,107191737
+1998,Defense,Air Force,Electronics and Communications,12594,4551900929
+1998,Defense,Air Force,Other R&D and Knowledge Based,9354,4781260894
+1998,Defense,Army,Ships & Submarines,265,103003359
+1998,Defense,DLA,Ships & Submarines,167,13895829
+1999,Defense,Air Force,Land Vehicles,585,164583581
+1999,Defense,Air Force,Missile and Space Systems,1340,3604875896
+1999,Defense,Air Force,Other Services,3549,2111424238
+1999,Defense,Army,Other Products,3510,714939932
+1999,Defense,Army,Unmanned,27,35890120
+1999,Defense,DLA,Facilities and Construction,2925,625738876
+1999,Defense,DLA,Other Products,22436,5219747391
+1999,Defense,DLA,Weapons and Ammunition,311,23479523
+1999,Defense,MilitaryHealth,Other R&D and Knowledge Based,33,6554553
+1999,Defense,Navy,Aircraft and Drones,3794,6806676235
+1999,Defense,Navy,Facilities and Construction,19959,6471510008
+1999,Defense,Navy,Ships & Submarines,6773,6213134556
+1999,Defense,Other DoD,Electronics and Communications,7090,2311681048
+1999,Defense,Other DoD,Other R&D and Knowledge Based,2313,1033722469
+1999,Defense,Other DoD,Other Services,280,221520514
+2000,Defense,Air Force,Other R&D and Knowledge Based,9217,4913694138
+2000,Defense,Army,NULL,114,4767532.12
+2000,Defense,Army,Aircraft and Drones,1957,2933923958
+2000,Defense,DLA,Aircraft and Drones,6944,874887466
+2000,Defense,Other DoD,NULL,11,2213101
+2000,Defense,Other DoD,Land Vehicles,34,8376272
+2000,Defense,Other DoD,Missile and Space Systems,7,10622388
+2001,Defense,Air Force,NULL,1,0
+2001,Defense,Air Force,Land Vehicles,473,109317854.5
+2001,Defense,Air Force,Missile and Space Systems,1435,4334564347
+2001,Defense,Air Force,Other Services,3642,1949654727
+2001,Defense,Air Force,Unmanned,20,20500087
+2001,Defense,Army,Facilities and Construction,48216,12495593109
+2001,Defense,DLA,Facilities and Construction,5164,758080184.1
+2001,Defense,DLA,Weapons and Ammunition,490,36511899
+2001,Defense,MDA,Electronics and Communications,35,6970087
+2001,Defense,MilitaryHealth,Electronics and Communications,3,391012
+2001,Defense,MilitaryHealth,Other R&D and Knowledge Based,4,1163245
+2001,Defense,Navy,Aircraft and Drones,3600,6598050835
+2001,Defense,Navy,Land Vehicles,905,369261716
+2001,Defense,Other DoD,Other R&D and Knowledge Based,2173,1025906684
+2002,Defense,Air Force,Ships & Submarines,50,5911725
+2002,Defense,Army,Aircraft and Drones,2303,4351744666
+2002,Defense,DLA,Aircraft and Drones,10428,1239669613
+2002,Defense,Navy,Other R&D and Knowledge Based,28346,6986985190
+2002,Defense,Other DoD,NULL,23,3257853.25
+2002,Defense,Other DoD,Aircraft and Drones,148,85056645
+2002,Defense,Other DoD,Land Vehicles,46,12728350
+2002,Defense,Other DoD,Missile and Space Systems,3,42018240
+2003,Defense,NULL,Other Products,NULL,0
+2003,Defense,Air Force,Unmanned,41,67377306
+2003,Defense,Army,Facilities and Construction,106212,18936510470
+2003,Defense,DLA,Facilities and Construction,8264,1256890074
+2003,Defense,MDA,Electronics and Communications,69,24877924
+2003,Defense,MDA,Other Products,2,9254
+2003,Defense,MDA,Other Services,1,194646
+2003,Defense,MilitaryHealth,Electronics and Communications,10,267806
+2003,Defense,Navy,NULL,66,2995459.43
+2003,Defense,Navy,Aircraft and Drones,5407,12510634619
+2003,Defense,Navy,Land Vehicles,4431,451976918
+1998,Defense,Army,Aircraft and Drones,1360,2116371061
+1998,Defense,Army,Missile and Space Systems,1920,2715446103
+1998,Defense,DLA,Aircraft and Drones,5742,571061091
+1998,Defense,DLA,Missile and Space Systems,55,4660820
+1998,Defense,MilitaryHealth,Other R&D and Knowledge Based,26,22836724
+1998,Defense,Navy,Other Services,5253,2537416112
+1998,Defense,Other DoD,Aircraft and Drones,126,63928629
+1999,Defense,Air Force,Other Products,3516,1648967470
+1999,Defense,Navy,Other R&D and Knowledge Based,19792,5707849010
+1999,Defense,Navy,Other Services,5264,2488745856
+1999,Defense,Other DoD,Missile and Space Systems,19,4042897
+1999,Defense,Other DoD,Other Products,668,328960135
+2000,Defense,Air Force,Weapons and Ammunition,1503,1937529221
+2000,Defense,MilitaryHealth,Other Services,155,1366839732
+2000,Defense,Navy,NULL,7,25841
+2000,Defense,Navy,Land Vehicles,762,291045764
+2000,Defense,Navy,Other R&D and Knowledge Based,20933,6322800072
+2000,Defense,Navy,Ships & Submarines,11394,7059602606
+2000,Defense,Other DoD,Other Products,686,197668212.1
+2001,Defense,Air Force,Facilities and Construction,20253,4357569585
+2001,Defense,Air Force,Weapons and Ammunition,1436,1943101561
+2001,Defense,Army,Missile and Space Systems,2029,2838633846
+2001,Defense,Army,Other Products,3790,677297596
+2001,Defense,Army,Weapons and Ammunition,1722,2634217562
+2001,Defense,DLA,Missile and Space Systems,99,9359590
+2001,Defense,DLA,Other Products,31489,8038395089
+2001,Defense,Navy,NULL,12,396812.83
+2001,Defense,Navy,Facilities and Construction,38806,7167960511
+2001,Defense,Other DoD,Aircraft and Drones,101,56286273
+2001,Defense,Other DoD,Weapons and Ammunition,30,22479528
+2002,Defense,NULL,Facilities and Construction,NULL,0
+2002,Defense,Air Force,Land Vehicles,672,200924403.8
+2002,Defense,Army,NULL,90,7230472.62
+2002,Defense,Army,Other Products,9401,931372405.3
+2002,Defense,Army,Weapons and Ammunition,2510,3316884325
+2002,Defense,DLA,Other Products,39062,10507379581
+2002,Defense,MDA,Other R&D and Knowledge Based,431,2356924459
+2002,Defense,Navy,Electronics and Communications,21804,6397669308
+2002,Defense,Navy,Facilities and Construction,60937,6734816600
+2002,Defense,Other DoD,Weapons and Ammunition,46,84221452
+2003,Defense,Air Force,Other Services,5728,5718660075
+2003,Defense,Army,NULL,102,67555055.16
+2003,Defense,DLA,Weapons and Ammunition,902,75644663
+2003,Defense,MDA,Land Vehicles,2,15725
+2003,Defense,MDA,Other R&D and Knowledge Based,516,2418208278
+2003,Defense,MilitaryHealth,Other Services,588,5882504451
+2003,Defense,Navy,Electronics and Communications,30911,7221306912
+2003,Defense,Navy,Ships & Submarines,13668,10004832015
+2003,Defense,Other DoD,Land Vehicles,72,17129387.17
+2004,Defense,Air Force,Facilities and Construction,24973,6886254199
+2004,Defense,Air Force,Other R&D and Knowledge Based,12656,7351823616
+2004,Defense,Air Force,Other Services,5580,3600860197
+2004,Defense,Army,Facilities and Construction,144614,21016270874
+2004,Defense,DLA,Facilities and Construction,11479,1927347136
+2004,Defense,DLA,Weapons and Ammunition,1035,102811045
+2004,Defense,MDA,Facilities and Construction,266,161147130.8
+2004,Defense,MDA,Land Vehicles,5,25345
+2004,Defense,MilitaryHealth,Electronics and Communications,24,760095
+2004,Defense,Navy,Aircraft and Drones,5236,13398736611
+2004,Defense,Navy,Unmanned,17,15357206
+2005,Defense,Air Force,Land Vehicles,2571,322842939.3
+1997,Defense,Other DoD,Ships & Submarines,51,43144590
+1998,Defense,Army,Electronics and Communications,15730,4612811618
+1998,Defense,Army,Unmanned,2,342175
+1998,Defense,DLA,Electronics and Communications,5905,584985391
+1998,Defense,DLA,Weapons and Ammunition,285,17204082
+1998,Defense,MilitaryHealth,Other Services,382,2559715040
+1998,Defense,Navy,Ships & Submarines,5304,7147306888
+1998,Defense,Other DoD,Other Products,411,172996268
+1998,Defense,Other DoD,Other Services,299,204674594
+1999,Defense,Air Force,Facilities and Construction,16482,4343947338
+1999,Defense,Air Force,Other R&D and Knowledge Based,9619,4860603346
+1999,Defense,Air Force,Weapons and Ammunition,1442,1156721265
+1999,Defense,Army,Aircraft and Drones,1607,2525607471
+1999,Defense,Army,Ships & Submarines,330,100682837
+1999,Defense,DLA,Aircraft and Drones,5896,697331538
+1999,Defense,Navy,Other Products,3348,619068906
+2000,Defense,Air Force,NULL,2,10000
+2000,Defense,Air Force,Land Vehicles,604,197613225
+2000,Defense,Air Force,Missile and Space Systems,1394,3342563686
+2000,Defense,Army,Other Products,3287,695883122
+2000,Defense,MilitaryHealth,Other R&D and Knowledge Based,3,2027192
+2000,Defense,Other DoD,Other R&D and Knowledge Based,2350,1052857522
+2000,Defense,Other DoD,Weapons and Ammunition,28,7283870
+2001,Defense,Army,NULL,88,4175208.32
+2001,Defense,Navy,Electronics and Communications,17764,5214196150
+2001,Defense,Navy,Other R&D and Knowledge Based,20918,5611689866
+2001,Defense,Navy,Weapons and Ammunition,1584,1487973461
+2001,Defense,Other DoD,NULL,17,626059
+2001,Defense,Other DoD,Land Vehicles,22,3164139
+2002,Defense,Air Force,Other Services,4600,2610778132
+2002,Defense,Air Force,Unmanned,21,18763799
+2002,Defense,Army,Facilities and Construction,75620,14140830971
+2002,Defense,Army,Other R&D and Knowledge Based,28334,7205050310
+2002,Defense,DLA,Facilities and Construction,6960,918936369.4
+2002,Defense,DLA,Other R&D and Knowledge Based,1360,371083655.5
+2002,Defense,DLA,Weapons and Ammunition,703,57012937
+2002,Defense,MDA,Other Products,1,2940
+2002,Defense,MDA,Other Services,1,143615.2
+2002,Defense,MilitaryHealth,Electronics and Communications,8,52070
+2002,Defense,Navy,NULL,46,52766816.14
+2002,Defense,Navy,Aircraft and Drones,5150,8416499058
+2002,Defense,Navy,Land Vehicles,5163,748744652
+2002,Defense,Navy,Missile and Space Systems,884,2498234195
+2002,Defense,Other DoD,Facilities and Construction,2236,1202858720
+2003,Defense,Air Force,Ships & Submarines,71,7538827
+2003,Defense,Army,Aircraft and Drones,5724,5884030673
+2003,Defense,Army,Land Vehicles,7898,7741652375
+2003,Defense,Army,Missile and Space Systems,3454,3433672259
+2003,Defense,Army,Weapons and Ammunition,4013,4002090239
+2003,Defense,DLA,NULL,NULL,0
+2003,Defense,DLA,Land Vehicles,5215,425851294
+2003,Defense,DLA,Missile and Space Systems,158,22332529
+2003,Defense,Navy,Unmanned,16,49331576
+2003,Defense,Other DoD,Aircraft and Drones,169,151590353.3
+2004,Defense,NULL,Electronics and Communications,NULL,401586
+2004,Defense,Air Force,Other Products,25846,1456064815
+2004,Defense,MDA,Electronics and Communications,56,27214051.62
+2004,Defense,Navy,Other Services,13425,3342713215
+2004,Defense,Other DoD,Ships & Submarines,55,23330569.95
+2005,Defense,Army,Other Services,30283,9846403987
+2005,Defense,Army,Unmanned,105,437645711
+1997,Defense,Army,Ships & Submarines,295,84343314
+1997,Defense,DLA,Ships & Submarines,201,17312357
+1997,Defense,MilitaryHealth,Facilities and Construction,5,1556694
+1997,Defense,Navy,Missile and Space Systems,812,2470170718
+1997,Defense,Navy,Other Products,3081,638432464
+1997,Defense,Other DoD,Facilities and Construction,982,291068563
+1998,Defense,Air Force,Aircraft and Drones,6171,10627654093
+1998,Defense,Air Force,Land Vehicles,514,189792534
+1998,Defense,Army,Other Products,3308,594992033
+1998,Defense,Army,Weapons and Ammunition,1318,2044333708
+1998,Defense,DLA,Other Products,19668,5415583641
+1998,Defense,Navy,Facilities and Construction,19567,6083713706
+1998,Defense,Other DoD,Electronics and Communications,6901,2187628833
+1998,Defense,Other DoD,Weapons and Ammunition,21,6000866
+1999,Defense,MDA,Other R&D and Knowledge Based,533,921790848
+1999,Defense,Navy,Electronics and Communications,17668,4665148202
+1999,Defense,Navy,Weapons and Ammunition,1572,1927199457
+1999,Defense,Other DoD,Land Vehicles,14,1560521
+2000,Defense,Air Force,Other Services,3617,1782014169
+2000,Defense,Air Force,Unmanned,26,29846441
+2000,Defense,Army,Electronics and Communications,15555,5436233445
+2000,Defense,Army,Facilities and Construction,42641,11091149487
+2000,Defense,DLA,Electronics and Communications,6272,809921703
+2000,Defense,DLA,Facilities and Construction,3229,522532245.9
+2000,Defense,DLA,Weapons and Ammunition,331,32956810
+2000,Defense,MilitaryHealth,Electronics and Communications,2,939214
+2000,Defense,Navy,Aircraft and Drones,3943,7658800428
+2000,Defense,Other DoD,Other Services,701,250221552
+2001,Defense,Air Force,Other R&D and Knowledge Based,9152,5321504569
+2001,Defense,Air Force,Ships & Submarines,47,6983031
+2001,Defense,Army,Aircraft and Drones,1903,3930149702
+2001,Defense,Army,Land Vehicles,2375,4063720388
+2001,Defense,DLA,NULL,NULL,0
+2001,Defense,DLA,Aircraft and Drones,8629,1029420878
+2001,Defense,DLA,Land Vehicles,3006,267989465
+2001,Defense,MDA,Facilities and Construction,101,108534775
+2001,Defense,Navy,Unmanned,1,23600000
+2002,Defense,Air Force,NULL,7,25000
+2002,Defense,Air Force,Missile and Space Systems,1889,4675873329
+2002,Defense,Air Force,Other Products,1793,1898452916
+2002,Defense,MDA,Electronics and Communications,63,20518331
+2002,Defense,MilitaryHealth,Other R&D and Knowledge Based,17,4063051
+2002,Defense,Navy,Other Services,9895,2942252894
+2002,Defense,Other DoD,Other R&D and Knowledge Based,3092,1655304523
+2002,Defense,Other DoD,Ships & Submarines,61,35222132
+2003,Defense,Army,Other Services,14179,4886309960
+2003,Defense,DLA,Other Services,80,50749144.58
+2003,Defense,MilitaryHealth,NULL,1,0
+2003,Defense,Navy,Other R&D and Knowledge Based,25602,7048740979
+2003,Defense,Other DoD,NULL,18,4339649
+2003,Defense,Other DoD,Missile and Space Systems,10,15993623
+2003,Defense,Other DoD,Other Products,1486,455297537
+2004,Defense,Air Force,Electronics and Communications,18324,7282736990
+2004,Defense,Air Force,Unmanned,37,54774485.84
+2004,Defense,Air Force,Weapons and Ammunition,2138,3081871171
+2004,Defense,Army,Other R&D and Knowledge Based,41083,11173096169
+2004,Defense,Army,Ships & Submarines,887,123332348
+2004,Defense,DLA,Other R&D and Knowledge Based,627,257963399.2
+2004,Defense,DLA,Ships & Submarines,737,83393517
+2004,Defense,MDA,Other Services,8,1924662
+1999,Defense,Army,Missile and Space Systems,1882,2609830152
+1999,Defense,Army,Weapons and Ammunition,1334,2265193703
+1999,Defense,DLA,Missile and Space Systems,51,4186151
+1999,Defense,Navy,Land Vehicles,639,234611378
+1999,Defense,Other DoD,Aircraft and Drones,129,60767538
+2000,Defense,Air Force,Other Products,2760,1247216578
+2000,Defense,Army,Missile and Space Systems,2010,2908337412
+2000,Defense,Army,Weapons and Ammunition,1601,2386971143
+2000,Defense,DLA,Missile and Space Systems,64,6334630
+2000,Defense,DLA,Other Products,24645,6801556650
+2000,Defense,MDA,Other R&D and Knowledge Based,400,1368733580
+2000,Defense,Navy,Facilities and Construction,36970,6400620484
+2000,Defense,Navy,Other Services,5798,2489729242
+2000,Defense,Other DoD,Aircraft and Drones,101,67539748
+2001,Defense,MDA,Other R&D and Knowledge Based,293,1558090446
+2001,Defense,MilitaryHealth,Other Services,329,2346504288
+2001,Defense,Navy,Other Services,6120,2600808144
+2001,Defense,Navy,Ships & Submarines,10358,10520713592
+2001,Defense,Other DoD,Other Products,681,189523672
+2002,Defense,NULL,Other Products,NULL,0
+2002,Defense,Air Force,Facilities and Construction,21688,4958257265
+2002,Defense,Air Force,Other R&D and Knowledge Based,10909,6315564724
+2002,Defense,Air Force,Weapons and Ammunition,1648,3122996405
+2002,Defense,MilitaryHealth,Other Services,352,4180571837
+2002,Defense,Navy,Ships & Submarines,12164,10178594614
+2002,Defense,Other DoD,Other Products,1129,256884317
+2003,Defense,Air Force,NULL,13,1008658.1
+2003,Defense,Air Force,Facilities and Construction,27632,6774655473
+2003,Defense,Air Force,Land Vehicles,955,251904793
+2003,Defense,Air Force,Other R&D and Knowledge Based,11996,7199927657
+2003,Defense,Air Force,Weapons and Ammunition,2080,3236841845
+2003,Defense,Army,Other Products,28095,1797368713
+2003,Defense,DLA,Other Products,49582,12846001958
+2003,Defense,MDA,Facilities and Construction,282,136679529
+2003,Defense,Navy,Facilities and Construction,64716,8761057631
+2003,Defense,Other DoD,Other R&D and Knowledge Based,3377,2005416539
+2003,Defense,Other DoD,Weapons and Ammunition,89,85819295
+2004,Defense,Air Force,NULL,1,-7400
+2004,Defense,Air Force,Land Vehicles,883,314612676.9
+2004,Defense,Army,NULL,12,2394869
+2004,Defense,Army,Other Products,50243,2096678002
+2004,Defense,MDA,Other R&D and Knowledge Based,410,2847387552
+2004,Defense,Navy,Electronics and Communications,46682,8880194739
+2004,Defense,Other DoD,NULL,237,1969306.04
+2004,Defense,Other DoD,Land Vehicles,112,33627676.38
+2004,Defense,Other DoD,Other R&D and Knowledge Based,5291,2454801179
+2004,Defense,Other DoD,Weapons and Ammunition,77,113464185
+2005,Defense,Air Force,Other Services,10864,4740407199
+2005,Defense,Air Force,Unmanned,36,58744253.84
+2005,Defense,Army,NULL,45,2925495
+2005,Defense,Army,Facilities and Construction,149043,23085546878
+2005,Defense,Army,Other R&D and Knowledge Based,44069,14220356989
+2005,Defense,DLA,Facilities and Construction,65644,2283124876
+2005,Defense,DLA,Other R&D and Knowledge Based,1531,229324483.9
+2005,Defense,DLA,Weapons and Ammunition,3966,81054792
+2005,Defense,MilitaryHealth,Electronics and Communications,25,698698
+2005,Defense,Navy,Aircraft and Drones,10624,15204915678
+2005,Defense,Navy,Electronics and Communications,76341,8956837930
+2005,Defense,Other DoD,NULL,82,563383.2
+2005,Defense,Other DoD,Land Vehicles,257,26103370.16
+2006,Defense,Air Force,Other Services,11378,4888868080
+1997,Defense,DLA,Land Vehicles,2204,201511126
+1997,Defense,DLA,Weapons and Ammunition,218,15594672
+1997,Defense,MDA,Electronics and Communications,12,1702744
+1997,Defense,MilitaryHealth,Electronics and Communications,12,726898
+1997,Defense,Navy,Aircraft and Drones,3132,6295750921
+1997,Defense,Navy,Electronics and Communications,15213,4170167714
+1997,Defense,Navy,Unmanned,4,618172
+1997,Defense,Other DoD,Other R&D and Knowledge Based,2097,845363175
+1998,Defense,Air Force,Ships & Submarines,42,8441941
+1998,Defense,Army,Other R&D and Knowledge Based,13904,4960207124
+1998,Defense,DLA,Other R&D and Knowledge Based,581,127273593
+1998,Defense,Navy,Missile and Space Systems,790,2538262993
+1998,Defense,Other DoD,Land Vehicles,17,1089382
+1999,Defense,Air Force,Unmanned,21,33895205
+1999,Defense,Army,Facilities and Construction,36293,11040924731
+1999,Defense,Army,Land Vehicles,2124,2597537000
+1999,Defense,Army,Other Services,4527,2290654774
+1999,Defense,DLA,Land Vehicles,2303,217965383
+1999,Defense,DLA,Other Services,79,16867189
+1999,Defense,MDA,Electronics and Communications,10,4071894
+1999,Defense,MilitaryHealth,Electronics and Communications,15,-692591
+1999,Defense,Navy,Unmanned,1,79907
+1999,Defense,Other DoD,Facilities and Construction,1346,350453235
+1999,Defense,Other DoD,Ships & Submarines,34,18243075
+2000,Defense,Air Force,Aircraft and Drones,6057,14809064869
+2000,Defense,Air Force,Electronics and Communications,12607,5171242397
+2000,Defense,Air Force,Ships & Submarines,45,9046362
+2000,Defense,Army,Other R&D and Knowledge Based,15331,5381650878
+2000,Defense,Army,Ships & Submarines,275,60211874
+2000,Defense,DLA,Other R&D and Knowledge Based,949,249599745.7
+2000,Defense,DLA,Ships & Submarines,228,23874531
+2000,Defense,Navy,Missile and Space Systems,732,2040367506
+2001,Defense,NULL,Electronics and Communications,NULL,0
+2001,Defense,Army,Other Services,4910,2616737884
+2001,Defense,Army,Unmanned,48,85532541
+2001,Defense,DLA,Other Services,57,7740460
+2001,Defense,MDA,Other Services,3,263102
+2001,Defense,Navy,Other Products,3310,720110582.6
+2001,Defense,Other DoD,Electronics and Communications,10263,2953154165
+2001,Defense,Other DoD,Facilities and Construction,1514,612852696.3
+2001,Defense,Other DoD,Other Services,556,257391073
+2001,Defense,Other DoD,Ships & Submarines,26,22700701
+2002,Defense,Air Force,Aircraft and Drones,6689,17851875359
+2002,Defense,Air Force,Electronics and Communications,15270,5745797495
+2002,Defense,Army,Electronics and Communications,32114,5746232890
+2002,Defense,Army,Ships & Submarines,689,119451505
+2002,Defense,DLA,Electronics and Communications,12163,1101425246
+2002,Defense,DLA,Ships & Submarines,485,41479225
+2002,Defense,MDA,Missile and Space Systems,1,148268
+2003,Defense,Air Force,Missile and Space Systems,2117,4880737870
+2003,Defense,Army,Unmanned,76,219659951
+2003,Defense,MilitaryHealth,Other R&D and Knowledge Based,28,735518
+2003,Defense,Navy,Other Products,6807,1277392762
+2003,Defense,Navy,Weapons and Ammunition,2564,2648763707
+2003,Defense,Other DoD,Electronics and Communications,13642,4319890733
+2003,Defense,Other DoD,Other Services,1048,478534185.6
+2004,Defense,Army,Aircraft and Drones,5625,7319118806
+2004,Defense,Army,Electronics and Communications,59032,9832319857
+2004,Defense,DLA,Aircraft and Drones,11788,918478605
+2004,Defense,DLA,Electronics and Communications,15917,1670269378
+1997,Defense,DLA,Other R&D and Knowledge Based,447,81685557
+1997,Defense,Other DoD,Land Vehicles,21,1416003
+1998,Defense,Air Force,Other Services,3253,2090640548
+1998,Defense,Air Force,Unmanned,9,16479533
+1998,Defense,Army,Facilities and Construction,36587,10750144406
+1998,Defense,Army,Land Vehicles,1862,1947768962
+1998,Defense,Army,Other Services,4668,1243268723
+1998,Defense,DLA,Facilities and Construction,2657,358502592
+1998,Defense,DLA,Land Vehicles,2179,171948244
+1998,Defense,DLA,Other Services,65,29573933
+1998,Defense,MDA,Electronics and Communications,12,2668646
+1998,Defense,MDA,Facilities and Construction,31,12007965
+1998,Defense,MilitaryHealth,Electronics and Communications,17,1069849
+1998,Defense,Navy,Aircraft and Drones,3711,7992481767
+1998,Defense,Navy,Unmanned,2,250570
+1998,Defense,Other DoD,Facilities and Construction,994,232859427
+1998,Defense,Other DoD,Other R&D and Knowledge Based,2196,944365863
+1998,Defense,Other DoD,Ships & Submarines,50,66075809
+1999,Defense,Air Force,Electronics and Communications,12872,4569675557
+1999,Defense,Air Force,Ships & Submarines,38,2858379
+1999,Defense,Army,Other R&D and Knowledge Based,14148,4604229423
+1999,Defense,DLA,Other R&D and Knowledge Based,698,157093527
+1999,Defense,DLA,Ships & Submarines,173,13105386
+1999,Defense,Navy,Missile and Space Systems,822,2337150985
+2000,Defense,NULL,Electronics and Communications,NULL,0
+2000,Defense,Army,Land Vehicles,2314,3393087945
+2000,Defense,Army,Other Services,4280,2385009366
+2000,Defense,Army,Unmanned,36,76384096
+2000,Defense,DLA,NULL,NULL,0
+2000,Defense,DLA,Land Vehicles,2473,240445062
+2000,Defense,DLA,Other Services,57,18747108
+2000,Defense,MDA,Electronics and Communications,16,5882208
+2000,Defense,Other DoD,Electronics and Communications,8274,2408523238
+2000,Defense,Other DoD,Facilities and Construction,1625,568474345.4
+2000,Defense,Other DoD,Ships & Submarines,27,13215917
+2001,Defense,Air Force,Aircraft and Drones,5394,15717207141
+2001,Defense,Air Force,Electronics and Communications,12431,5282344802
+2001,Defense,Army,Ships & Submarines,344,88208028
+2001,Defense,DLA,Electronics and Communications,8341,911939973.7
+2001,Defense,DLA,Ships & Submarines,350,26697486
+2001,Defense,Navy,Missile and Space Systems,650,1892356037
+2002,Defense,NULL,Electronics and Communications,NULL,0
+2002,Defense,Army,Unmanned,49,106935325
+2002,Defense,Navy,Other Products,4459,789453742.4
+2002,Defense,Other DoD,Electronics and Communications,13451,3509961797
+2002,Defense,Other DoD,Other Services,664,269525976.9
+2003,Defense,Air Force,Aircraft and Drones,7365,19663086938
+2003,Defense,Army,Electronics and Communications,47005,8036341454
+2003,Defense,Army,Ships & Submarines,745,172148279
+2003,Defense,DLA,Aircraft and Drones,10443,1182291715
+2003,Defense,DLA,Electronics and Communications,14362,1339405534
+2003,Defense,DLA,Ships & Submarines,533,40991893
+2003,Defense,MDA,Missile and Space Systems,24,91509720
+2004,Defense,Air Force,Missile and Space Systems,2273,5738832870
+2004,Defense,MilitaryHealth,Other R&D and Knowledge Based,19,1089731
+2004,Defense,Navy,Other Products,16661,1621863376
+2004,Defense,Navy,Weapons and Ammunition,2407,2152379643
+2004,Defense,Other DoD,Other Services,1210,551926324.2
+2005,Defense,Army,Aircraft and Drones,6406,5592625925
+2005,Defense,Army,Electronics and Communications,56249,11960074309
+1997,Defense,DLA,Electronics and Communications,5586,546257081
+1997,Defense,DLA,Missile and Space Systems,34,3138139
+1997,Defense,MilitaryHealth,Other Services,285,1859745709
+1997,Defense,Other DoD,Other Products,292,73705597
+1997,Defense,Other DoD,Weapons and Ammunition,9,15835414
+1998,Defense,Air Force,Facilities and Construction,16605,4377819936
+1998,Defense,Air Force,Weapons and Ammunition,1331,948661803
+1998,Defense,MDA,Other R&D and Knowledge Based,516,537404878
+1998,Defense,MilitaryHealth,Ships & Submarines,1,153021
+1998,Defense,Navy,Electronics and Communications,15877,4147128471
+1998,Defense,Navy,Other Products,3686,652204266
+1999,Defense,Air Force,Aircraft and Drones,6422,12748508191
+1999,Defense,Army,Electronics and Communications,15211,4987036591
+1999,Defense,DLA,Electronics and Communications,5571,770772097
+1999,Defense,MilitaryHealth,Other Services,366,2683326566
+1999,Defense,Other DoD,Weapons and Ammunition,23,2985025
+2000,Defense,Air Force,Facilities and Construction,21304,4506335006
+2000,Defense,MDA,Facilities and Construction,1,49921
+2000,Defense,Navy,Electronics and Communications,18980,5927164486
+2000,Defense,Navy,Other Products,3067,705146941
+2000,Defense,Navy,Weapons and Ammunition,1730,1575392361
+2001,Defense,Air Force,Other Products,2369,1611554693
+2001,Defense,Army,Electronics and Communications,15967,5710692914
+2001,Defense,Army,Other R&D and Knowledge Based,16755,5367046399
+2001,Defense,DLA,Other R&D and Knowledge Based,1161,339824627
+2002,Defense,Army,Land Vehicles,4341,3785471569
+2002,Defense,Army,Missile and Space Systems,3148,3701179656
+2002,Defense,Army,Other Services,9559,2676364635
+2002,Defense,DLA,Land Vehicles,3760,312589464
+2002,Defense,DLA,Missile and Space Systems,125,10506028
+2002,Defense,DLA,Other Services,66,26939245
+2002,Defense,MDA,Facilities and Construction,223,108266594
+2002,Defense,Navy,Unmanned,6,5734493
+2002,Defense,Navy,Weapons and Ammunition,2627,2044032190
+2003,Defense,Air Force,Electronics and Communications,18684,7040343174
+2003,Defense,Air Force,Other Products,2549,726669196.2
+2003,Defense,Army,Other R&D and Knowledge Based,34273,8890785289
+2003,Defense,DLA,Other R&D and Knowledge Based,1266,438833865.6
+2003,Defense,Navy,Missile and Space Systems,1309,3175318149
+2004,Defense,Army,Land Vehicles,10720,6306979728
+2004,Defense,Army,Missile and Space Systems,2894,3626524773
+2004,Defense,Army,Other Services,28969,10087677848
+2004,Defense,Army,Unmanned,83,221253134
+2004,Defense,Army,Weapons and Ammunition,4518,4163535698
+2004,Defense,DLA,Land Vehicles,6732,666392423.2
+2004,Defense,DLA,Missile and Space Systems,173,11978193
+2004,Defense,DLA,Other Services,104,58704883
+2004,Defense,MilitaryHealth,Other Services,701,5120436793
+2004,Defense,Other DoD,Electronics and Communications,13810,4508576471
+2004,Defense,Other DoD,Other Products,2070,820601007.6
+2005,Defense,Air Force,Electronics and Communications,31607,8040866161
+2005,Defense,Air Force,Facilities and Construction,62324,7394197661
+2005,Defense,Air Force,Other Products,35361,819047488.2
+2005,Defense,Air Force,Weapons and Ammunition,2733,2904410697
+2005,Defense,Army,Ships & Submarines,1017,123119520
+2005,Defense,DLA,Ships & Submarines,4268,152355606
+2005,Defense,MDA,Other R&D and Knowledge Based,408,2937285589
+2005,Defense,Navy,Missile and Space Systems,1487,4570052034
+2006,Defense,Army,Other Services,29915,9799738963
+2006,Defense,Army,Unmanned,85,458518853
+2003,Defense,Navy,Other Services,10802,3786625602
+2003,Defense,Other DoD,Facilities and Construction,2313,1134680407
+2003,Defense,Other DoD,Ships & Submarines,63,23667933
+2004,Defense,Air Force,Aircraft and Drones,7496,19283165547
+2004,Defense,Air Force,Ships & Submarines,65,5594782
+2004,Defense,DLA,Other Products,60434,13921338983
+2004,Defense,Navy,Facilities and Construction,59772,7210834348
+2004,Defense,Navy,Other R&D and Knowledge Based,28338,7071361965
+2004,Defense,Navy,Ships & Submarines,14477,11248813122
+2004,Defense,Other DoD,Aircraft and Drones,195,216549390.4
+2004,Defense,Other DoD,Missile and Space Systems,31,67323259
+2005,Defense,MDA,Other Services,11,1975971
+2005,Defense,MilitaryHealth,Facilities and Construction,13,349130
+2005,Defense,Navy,NULL,3,415117
+2005,Defense,Navy,Other Products,46764,2199571776
+2005,Defense,Navy,Other Services,31586,3740530728
+2005,Defense,Other DoD,Facilities and Construction,6336,759266289.3
+2005,Defense,Other DoD,Ships & Submarines,139,27467025
+2006,Defense,Air Force,Aircraft and Drones,12180,21688400991
+2006,Defense,Air Force,Land Vehicles,2253,252621740.5
+2006,Defense,Army,Electronics and Communications,60448,12729350494
+2006,Defense,Army,Other Products,81774,8149297600
+2006,Defense,DLA,Electronics and Communications,55079,1718534826
+2006,Defense,DLA,Other Products,318387,24568032579
+2006,Defense,MDA,Missile and Space Systems,610,841930156
+2006,Defense,Navy,Facilities and Construction,72812,8746068362
+2006,Defense,Navy,Ships & Submarines,19323,13128947724
+2007,Defense,Air Force,Other R&D and Knowledge Based,29782,10548796001
+2007,Defense,Army,NULL,29,19375859.56
+2007,Defense,Navy,Other Products,42534,2210241057
+2007,Defense,Navy,Weapons and Ammunition,4143,3461002729
+2008,Defense,Air Force,NULL,NULL,0
+2008,Defense,Air Force,Aircraft and Drones,15585,19615377120
+2008,Defense,Air Force,Land Vehicles,2450,174747115
+2008,Defense,Air Force,Other Services,10471,3917464006
+2008,Defense,Army,Electronics and Communications,73791,17980430284
+2008,Defense,Army,Facilities and Construction,169597,36689013770
+2008,Defense,Army,Other Products,122205,11576573072
+2008,Defense,DLA,Electronics and Communications,61109,1777275941
+2008,Defense,DLA,Facilities and Construction,70078,2733463869
+2008,Defense,DLA,Weapons and Ammunition,3718,211455179.9
+2008,Defense,MDA,Missile and Space Systems,1752,3350410878
+2008,Defense,MilitaryHealth,Electronics and Communications,41,2351855.54
+2008,Defense,Navy,Aircraft and Drones,13112,22384662328
+2008,Defense,Other DoD,Other R&D and Knowledge Based,8159,2794559729
+2009,Defense,Air Force,Other R&D and Knowledge Based,34037,13720900650
+2009,Defense,Air Force,Ships & Submarines,141,10865774.05
+2009,Defense,Army,NULL,24,1180254.54
+2009,Defense,Navy,Weapons and Ammunition,4825,4151250250
+2009,Defense,Other DoD,NULL,4,-12077.81
+2009,Defense,Other DoD,Land Vehicles,294,3901246
+2010,Defense,Air Force,NULL,2,0
+2010,Defense,Air Force,Other Products,10573,607373517.6
+2010,Defense,Air Force,Other Services,11414,4763853426
+2010,Defense,Air Force,Unmanned,43,174639098.2
+2010,Defense,Army,Facilities and Construction,205122,39816534961
+2010,Defense,DLA,Facilities and Construction,69177,2783865175
+2010,Defense,DLA,Weapons and Ammunition,3547,179171254.5
+2010,Defense,MDA,Electronics and Communications,79,11906027.68
+2010,Defense,MDA,Other Services,12,1518066.45
+2010,Defense,MilitaryHealth,Electronics and Communications,49,2372737.14
+2005,Defense,Air Force,Other R&D and Knowledge Based,20117,8672225123
+2005,Defense,Air Force,Ships & Submarines,131,5461635
+2005,Defense,Army,Land Vehicles,13668,10736582484
+2005,Defense,DLA,Land Vehicles,30043,627893268
+2005,Defense,MDA,Electronics and Communications,39,23169047
+2005,Defense,MDA,Facilities and Construction,298,184592578.7
+2005,Defense,Navy,Unmanned,34,34196652
+2005,Defense,Other DoD,Other R&D and Knowledge Based,5582,2902459057
+2006,Defense,Air Force,NULL,NULL,0
+2006,Defense,DLA,Other Services,463,79892346.32
+2006,Defense,MDA,Electronics and Communications,52,28701267
+2006,Defense,Other DoD,NULL,44,4374098.04
+2006,Defense,Other DoD,Land Vehicles,238,16577572.6
+2006,Defense,Other DoD,Other R&D and Knowledge Based,6297,3319257454
+2006,Defense,Other DoD,Ships & Submarines,174,26382384.58
+2007,Defense,Air Force,Electronics and Communications,37361,9241157357
+2007,Defense,Air Force,Unmanned,39,69433608.88
+2007,Defense,Army,Facilities and Construction,158776,27199121683
+2007,Defense,Army,Other R&D and Knowledge Based,61880,21828644025
+2007,Defense,Army,Other Services,33451,8897494370
+2007,Defense,DLA,Facilities and Construction,67478,2977122865
+2007,Defense,DLA,Other R&D and Knowledge Based,2281,229172062.3
+2007,Defense,DLA,Other Services,473,96284463.27
+2007,Defense,MDA,Other Services,7,892273
+2007,Defense,MilitaryHealth,Electronics and Communications,62,851262.81
+2007,Defense,Navy,Aircraft and Drones,12071,18843871804
+2007,Defense,Navy,Missile and Space Systems,1741,4750354560
+2007,Defense,Other DoD,NULL,3,0
+2007,Defense,Other DoD,Facilities and Construction,4069,515636063.5
+2007,Defense,Other DoD,Land Vehicles,221,33443801.01
+2008,Defense,Air Force,Electronics and Communications,35666,9381221965
+2008,Defense,Air Force,Ships & Submarines,136,8108654.75
+2008,Defense,Air Force,Unmanned,64,65533512.02
+2008,Defense,Army,Land Vehicles,14539,23850438104
+2008,Defense,Army,Other R&D and Knowledge Based,66493,24331631632
+2008,Defense,Army,Ships & Submarines,1529,205168093.7
+2008,Defense,DLA,NULL,NULL,0
+2008,Defense,DLA,Land Vehicles,40611,1150427738
+2008,Defense,DLA,Other R&D and Knowledge Based,2160,332982313
+2008,Defense,DLA,Ships & Submarines,4031,219866974.5
+2008,Defense,MDA,Other Services,14,304336.86
+2008,Defense,Navy,Missile and Space Systems,1698,4117083349
+2008,Defense,Other DoD,Electronics and Communications,41715,5099740186
+2008,Defense,Other DoD,Facilities and Construction,4407,534209862.3
+2009,Defense,Air Force,Aircraft and Drones,12048,17489513893
+2009,Defense,MDA,Electronics and Communications,72,3435208.03
+2009,Defense,Other DoD,Electronics and Communications,41179,5730012170
+2009,Defense,Other DoD,Ships & Submarines,1197,142765957.2
+2010,Defense,Army,Electronics and Communications,70554,16395372995
+2010,Defense,Army,Other Services,40739,14092826343
+2010,Defense,Army,Unmanned,271,1152307534
+2010,Defense,DLA,Electronics and Communications,58617,2209355854
+2010,Defense,DLA,Unmanned,1,-96000
+2010,Defense,MDA,Missile and Space Systems,2000,4181315466
+2010,Defense,Other DoD,Other Services,10631,5026611962
+2010,Defense,Other DoD,Ships & Submarines,1653,156673059
+2010,Defense,Other DoD,Unmanned,29,51239220.19
+2011,Defense,Army,Electronics and Communications,65705,13670600379
+2011,Defense,Army,Ships & Submarines,1419,194672531.2
+2011,Defense,Army,Unmanned,264,1496240114
+2011,Defense,DLA,Aircraft and Drones,54949,3865798409
+2005,Defense,DLA,Aircraft and Drones,41434,1249136417
+2005,Defense,DLA,Electronics and Communications,70626,1858317412
+2005,Defense,MDA,Missile and Space Systems,293,694635798
+2005,Defense,Navy,Other R&D and Knowledge Based,41431,8454331480
+2005,Defense,Other DoD,Missile and Space Systems,38,20766291
+2006,Defense,Air Force,Missile and Space Systems,2645,7073669837
+2006,Defense,Army,Missile and Space Systems,2855,4113190962
+2006,Defense,DLA,Missile and Space Systems,549,9923599
+2006,Defense,MDA,Other Products,4,121470
+2006,Defense,MDA,Weapons and Ammunition,1,521163
+2006,Defense,MilitaryHealth,Facilities and Construction,36,575262.2
+2006,Defense,MilitaryHealth,Other R&D and Knowledge Based,17,6476288
+2006,Defense,Navy,NULL,280,6847111.09
+2006,Defense,Navy,Land Vehicles,6551,1124415751
+2006,Defense,Navy,Weapons and Ammunition,3496,2779551575
+2007,Defense,Air Force,Other Products,21444,805749479.1
+2007,Defense,Army,Aircraft and Drones,7678,5611030075
+2007,Defense,Navy,Other R&D and Knowledge Based,44371,11097510185
+2007,Defense,Other DoD,Aircraft and Drones,1032,428265236.8
+2007,Defense,Other DoD,Missile and Space Systems,27,18836814.04
+2008,Defense,Army,Missile and Space Systems,4270,6550037948
+2008,Defense,Army,Weapons and Ammunition,8361,9006928824
+2008,Defense,DLA,Missile and Space Systems,414,12185297
+2008,Defense,MDA,Weapons and Ammunition,3,-60417
+2008,Defense,MilitaryHealth,Facilities and Construction,26,320005.99
+2008,Defense,Navy,NULL,8,-2375.52
+2008,Defense,Navy,Land Vehicles,7542,9762107408
+2008,Defense,Navy,Other Services,25600,3830619702
+2008,Defense,Other DoD,Other Products,1255,114865207.9
+2009,Defense,Air Force,Facilities and Construction,74943,8610280100
+2009,Defense,Air Force,Other Products,25500,780753191.1
+2009,Defense,Air Force,Weapons and Ammunition,4025,3345239308
+2009,Defense,Army,Other Products,77181,5473845429
+2009,Defense,DLA,Other Products,283104,28776513354
+2009,Defense,MDA,Other R&D and Knowledge Based,1111,1721782739
+2009,Defense,Navy,Facilities and Construction,82417,12315062703
+2009,Defense,Navy,Other R&D and Knowledge Based,47881,13362333712
+2009,Defense,Navy,Ships & Submarines,24436,16652700170
+2009,Defense,Other DoD,Aircraft and Drones,3008,767319965.9
+2010,Defense,Air Force,Other R&D and Knowledge Based,35352,12064162304
+2010,Defense,Army,NULL,18,-47863.44
+2010,Defense,Army,Missile and Space Systems,3811,6514390583
+2010,Defense,Army,Weapons and Ammunition,7355,7829612412
+2010,Defense,MDA,Land Vehicles,4,64454.58
+2010,Defense,MDA,Weapons and Ammunition,14,33150057
+2010,Defense,MilitaryHealth,Other Services,1176,10903187186
+2010,Defense,Navy,Other Services,27518,4064702350
+2010,Defense,Other DoD,Other Products,1570,22044446.39
+2010,Defense,Other DoD,Weapons and Ammunition,620,15073439.46
+2011,Defense,Air Force,Facilities and Construction,92934,7001401255
+2011,Defense,Air Force,Land Vehicles,1489,95840569.14
+2011,Defense,Air Force,Weapons and Ammunition,4693,3375273893
+2011,Defense,Army,Other Products,51769,4424439316
+2011,Defense,DLA,Other Products,331794,24465736837
+2011,Defense,DLA,Weapons and Ammunition,3893,195539585.5
+2011,Defense,MDA,Other R&D and Knowledge Based,1485,1000424845
+2011,Defense,Navy,Electronics and Communications,86205,14080758177
+2011,Defense,Navy,Facilities and Construction,79293,12119379369
+2011,Defense,Navy,Ships & Submarines,25501,22715804538
+2012,Defense,Air Force,Other R&D and Knowledge Based,30457,12383758121
+2004,Defense,MDA,Aircraft and Drones,1,8316267
+2004,Defense,MDA,Missile and Space Systems,193,336907957
+2005,Defense,Air Force,Missile and Space Systems,2375,5593658364
+2005,Defense,MDA,Other Products,5,31354
+2005,Defense,MilitaryHealth,Other R&D and Knowledge Based,16,3054324
+2005,Defense,Navy,Land Vehicles,6693,1118546442
+2005,Defense,Navy,Weapons and Ammunition,3330,2375610794
+2006,Defense,Air Force,Other Products,33190,840828363.6
+2006,Defense,Army,Aircraft and Drones,5930,5420639638
+2006,Defense,DLA,Aircraft and Drones,42964,1551179904
+2006,Defense,Navy,Other R&D and Knowledge Based,38853,9695250265
+2006,Defense,Other DoD,Aircraft and Drones,462,263519214.6
+2006,Defense,Other DoD,Missile and Space Systems,35,18015204.87
+2007,Defense,Army,Missile and Space Systems,4441,4364969882
+2007,Defense,Army,Weapons and Ammunition,8349,7296424170
+2007,Defense,DLA,Missile and Space Systems,327,9586490
+2007,Defense,MDA,Other Products,9,325097
+2007,Defense,MilitaryHealth,Facilities and Construction,64,1008438.22
+2007,Defense,Navy,NULL,9,64467.27
+2007,Defense,Navy,Land Vehicles,7714,4631793908
+2007,Defense,Navy,Other Services,23765,4129516554
+2007,Defense,Other DoD,Other Products,1071,60225639
+2008,Defense,Air Force,Other Products,21099,673707570.9
+2008,Defense,Air Force,Weapons and Ammunition,3449,2522999618
+2008,Defense,DLA,Other Products,323925,26991997925
+2008,Defense,Navy,Facilities and Construction,82539,11846386677
+2008,Defense,Navy,Other R&D and Knowledge Based,45401,11440377698
+2008,Defense,Navy,Ships & Submarines,22526,14952954126
+2008,Defense,Other DoD,Aircraft and Drones,1272,429244497.6
+2008,Defense,Other DoD,Missile and Space Systems,36,15517648.84
+2009,Defense,Army,Missile and Space Systems,3628,6970882797
+2009,Defense,Army,Weapons and Ammunition,8351,8159603283
+2009,Defense,DLA,Missile and Space Systems,407,53286375.62
+2009,Defense,MDA,Land Vehicles,4,365524
+2009,Defense,MDA,Weapons and Ammunition,11,-217846.73
+2009,Defense,MilitaryHealth,Facilities and Construction,27,336646.6
+2009,Defense,MilitaryHealth,Other Services,799,11810040466
+2009,Defense,Navy,NULL,2,48177.34
+2009,Defense,Navy,Land Vehicles,6226,3733388318
+2009,Defense,Navy,Other Services,26623,4122238199
+2009,Defense,Other DoD,Other Products,1373,43171961.49
+2010,Defense,Air Force,Facilities and Construction,86935,7652042036
+2010,Defense,Air Force,Land Vehicles,1603,92493390.75
+2010,Defense,Air Force,Weapons and Ammunition,4573,3584913550
+2010,Defense,Army,Other Products,66345,4713276462
+2010,Defense,DLA,Other Products,297232,23312657164
+2010,Defense,MDA,Other R&D and Knowledge Based,1261,1092010580
+2010,Defense,Navy,Electronics and Communications,82372,13957708815
+2010,Defense,Navy,Facilities and Construction,80851,12340299509
+2010,Defense,Navy,Ships & Submarines,26956,12304216427
+2011,Defense,Air Force,Other R&D and Knowledge Based,34628,11801347591
+2011,Defense,Army,NULL,28,-60234.57
+2011,Defense,MDA,Land Vehicles,9,465278.06
+2011,Defense,MilitaryHealth,Other Services,1301,11757136585
+2011,Defense,Other DoD,Weapons and Ammunition,557,24761040.47
+2012,Defense,Air Force,Facilities and Construction,76739,6381677626
+2012,Defense,Air Force,Land Vehicles,1519,98018991.15
+2012,Defense,Air Force,Other Services,12476,6495099579
+2012,Defense,Army,Other Products,43024,3066280642
+2012,Defense,DLA,Facilities and Construction,71004,2533431836
+2012,Defense,DLA,Other Products,321382,31745336186
+2004,Defense,MilitaryHealth,Facilities and Construction,4,137548
+2004,Defense,Navy,NULL,2,38350
+2004,Defense,Navy,Land Vehicles,4710,923300471.8
+2004,Defense,Navy,Missile and Space Systems,1321,4942287112
+2004,Defense,Other DoD,Facilities and Construction,3717,938128044.2
+2005,Defense,Air Force,Aircraft and Drones,11526,17034031002
+2005,Defense,Army,Missile and Space Systems,2794,3293983983
+2005,Defense,Army,Other Products,78328,8779261124
+2005,Defense,Army,Weapons and Ammunition,5585,7471058076
+2005,Defense,DLA,NULL,1,2350
+2005,Defense,DLA,Missile and Space Systems,590,13876054
+2005,Defense,DLA,Other Products,387285,21332204852
+2005,Defense,Navy,Facilities and Construction,80104,7882588663
+2005,Defense,Other DoD,Aircraft and Drones,368,209576745.4
+2005,Defense,Other DoD,Electronics and Communications,19260,5311199409
+2005,Defense,Other DoD,Weapons and Ammunition,148,64278721.64
+2006,Defense,Army,NULL,237,101406156.7
+2006,Defense,MDA,Other R&D and Knowledge Based,584,2425530794
+2006,Defense,Navy,Electronics and Communications,77620,11247710422
+2006,Defense,Navy,Other Services,20860,4370831930
+2007,Defense,Air Force,Other Services,13459,5450231548
+2007,Defense,Army,Electronics and Communications,75220,14504955568
+2007,Defense,Army,Unmanned,136,562395016.9
+2007,Defense,DLA,Electronics and Communications,55926,1439153670
+2007,Defense,DLA,Weapons and Ammunition,3779,124278302
+2007,Defense,MDA,Land Vehicles,9,80454
+2007,Defense,MDA,Missile and Space Systems,1201,2178904579
+2007,Defense,MilitaryHealth,Other Services,822,9060032678
+2007,Defense,Navy,Ships & Submarines,23717,13152747926
+2007,Defense,Other DoD,Other Services,3393,605750113
+2007,Defense,Other DoD,Unmanned,4,2374156
+2008,Defense,Air Force,Facilities and Construction,73515,7772426573
+2008,Defense,Air Force,Other R&D and Knowledge Based,33277,11246462182
+2008,Defense,Army,Aircraft and Drones,6695,9892486956
+2008,Defense,DLA,Aircraft and Drones,58500,2217394007
+2008,Defense,MDA,Facilities and Construction,155,56218434.89
+2008,Defense,Navy,Other Products,44408,1546496986
+2008,Defense,Navy,Unmanned,70,40242572.24
+2009,Defense,Air Force,NULL,1,-4570.18
+2009,Defense,Air Force,Land Vehicles,2057,118091205.4
+2009,Defense,Air Force,Missile and Space Systems,3396,9355126460
+2009,Defense,MilitaryHealth,Other R&D and Knowledge Based,20,7086949.93
+2009,Defense,Other DoD,Other R&D and Knowledge Based,9535,3265525862
+2009,Defense,Other DoD,Weapons and Ammunition,365,52482062.98
+2010,Defense,DLA,Other Services,457,91483601.29
+2010,Defense,Navy,Other R&D and Knowledge Based,49065,13581596862
+2010,Defense,Navy,Weapons and Ammunition,4964,3089189239
+2010,Defense,Other DoD,NULL,12,-258864.67
+2010,Defense,Other DoD,Land Vehicles,375,-236560309.8
+2010,Defense,Other DoD,Missile and Space Systems,433,-39355881.52
+2011,Defense,Air Force,Electronics and Communications,30436,9035014002
+2011,Defense,Air Force,Other Services,12031,4884216140
+2011,Defense,Air Force,Unmanned,73,233430434.3
+2011,Defense,Army,Facilities and Construction,192650,33696791532
+2011,Defense,Army,Other R&D and Knowledge Based,58711,22603659777
+2011,Defense,DLA,Facilities and Construction,79383,2954704484
+2011,Defense,DLA,Other R&D and Knowledge Based,1534,267861881.7
+2011,Defense,MDA,Other Products,4,106311.49
+2011,Defense,MDA,Other Services,16,542978.69
+2011,Defense,MilitaryHealth,Electronics and Communications,216,6246374.69
+2011,Defense,MilitaryHealth,Facilities and Construction,80,735866.39
+2005,Defense,DLA,Other Services,349,99618685.15
+2005,Defense,MDA,Land Vehicles,6,55922
+2005,Defense,MilitaryHealth,Other Products,3,1503094
+2005,Defense,MilitaryHealth,Other Services,569,6397889563
+2005,Defense,Navy,Ships & Submarines,19456,11019798858
+2005,Defense,Other DoD,Other Products,3862,707259005
+2005,Defense,Other DoD,Other Services,1970,651550038.6
+2006,Defense,Air Force,Electronics and Communications,29735,7638874727
+2006,Defense,Air Force,Facilities and Construction,58858,8018593925
+2006,Defense,Air Force,Other R&D and Knowledge Based,22246,9997946254
+2006,Defense,Air Force,Weapons and Ammunition,2577,2559279149
+2006,Defense,Army,Ships & Submarines,961,148878290.9
+2006,Defense,DLA,Ships & Submarines,5035,221831815
+2006,Defense,Navy,Missile and Space Systems,1457,4890922810
+2006,Defense,Navy,Other Products,37597,2014648526
+2007,Defense,Air Force,NULL,NULL,0
+2007,Defense,Air Force,Aircraft and Drones,15126,24901878789
+2007,Defense,Air Force,Land Vehicles,2613,313083782.8
+2007,Defense,Air Force,Missile and Space Systems,3509,6811208359
+2007,Defense,Army,Other Products,108509,9019966425
+2007,Defense,DLA,Other Products,288819,23648398741
+2007,Defense,MDA,Aircraft and Drones,3,399999
+2007,Defense,MilitaryHealth,Other R&D and Knowledge Based,21,7884183.3
+2007,Defense,Navy,Facilities and Construction,79518,9827420019
+2007,Defense,Other DoD,Electronics and Communications,41740,5326498210
+2007,Defense,Other DoD,Weapons and Ammunition,212,83619802.14
+2008,Defense,Army,NULL,159,588569.71
+2008,Defense,MDA,Other R&D and Knowledge Based,816,2349176068
+2008,Defense,Navy,Electronics and Communications,98106,13593123778
+2008,Defense,Navy,Weapons and Ammunition,5033,2880646368
+2008,Defense,Other DoD,NULL,22,761828.98
+2008,Defense,Other DoD,Land Vehicles,219,30716732.84
+2009,Defense,Air Force,Other Services,10877,4775083477
+2009,Defense,Air Force,Unmanned,36,32200396.62
+2009,Defense,Army,Electronics and Communications,73708,16427565659
+2009,Defense,Army,Facilities and Construction,195979,43903330496
+2009,Defense,DLA,Electronics and Communications,49469,1702457765
+2009,Defense,DLA,Facilities and Construction,67342,2379545271
+2009,Defense,DLA,Other R&D and Knowledge Based,2208,380735273
+2009,Defense,DLA,Weapons and Ammunition,3141,108878538.5
+2009,Defense,MDA,Missile and Space Systems,1960,3909891706
+2009,Defense,MDA,Other Products,5,109425.56
+2009,Defense,MilitaryHealth,Electronics and Communications,31,1260098.41
+2009,Defense,Navy,Aircraft and Drones,11725,22551572747
+2009,Defense,Other DoD,Unmanned,18,12225798.93
+2010,Defense,Air Force,Ships & Submarines,115,5410432.22
+2010,Defense,Army,Aircraft and Drones,6151,8391835788
+2010,Defense,Army,Land Vehicles,13303,17054073132
+2010,Defense,DLA,NULL,4,-17073.24
+2010,Defense,DLA,Aircraft and Drones,58735,3894204360
+2010,Defense,DLA,Land Vehicles,33789,1353577078
+2010,Defense,DLA,Missile and Space Systems,579,37847701.78
+2010,Defense,MDA,Facilities and Construction,192,36957454.42
+2010,Defense,Navy,Unmanned,70,86737333.69
+2010,Defense,Other DoD,Aircraft and Drones,4098,753098488.6
+2011,Defense,Air Force,Other Products,10855,746387542.3
+2011,Defense,MDA,Electronics and Communications,53,7475162.89
+2011,Defense,MDA,Weapons and Ammunition,82,169795330.7
+2011,Defense,MilitaryHealth,Other R&D and Knowledge Based,137,15687727.3
+2011,Defense,Navy,Other Services,26057,4422845645
+2011,Defense,Other DoD,Other R&D and Knowledge Based,12455,3622683791
+2012,Defense,Army,NULL,12,-648621.43
+2012,Defense,MDA,Land Vehicles,7,146449.23
+2012,Defense,MilitaryHealth,Other Services,1022,11713493705
+2012,Defense,Other DoD,Land Vehicles,373,2557794.57
+2012,Defense,Other DoD,Weapons and Ammunition,690,17759397.05
+2013,Defense,Air Force,Land Vehicles,1233,90765547.55
+2013,Defense,Air Force,Other Services,12463,5257884274
+2013,Defense,Air Force,Unmanned,101,244634533
+2013,Defense,Army,Facilities and Construction,144733,23664524856
+2013,Defense,DLA,Facilities and Construction,67743,2544573081
+2013,Defense,DLA,Land Vehicles,24949,743492310
+2013,Defense,DLA,Weapons and Ammunition,4941,256423052.4
+2013,Defense,MDA,Facilities and Construction,111,27703108.58
+2013,Defense,MDA,Ships & Submarines,10,12285988.75
+2013,Defense,MilitaryHealth,Electronics and Communications,311,72619693.36
+2013,Defense,Navy,Aircraft and Drones,10540,31601580501
+2013,Defense,Navy,Electronics and Communications,71537,11876690825
+2013,Defense,Navy,Unmanned,99,201382991.4
+2013,Defense,Other DoD,Other R&D and Knowledge Based,12901,3397611643
+2014,Defense,Air Force,Other R&D and Knowledge Based,25937,11681743307
+2014,Defense,Air Force,Ships & Submarines,234,7635124.586
+2014,Defense,Army,Other R&D and Knowledge Based,38327,14153864093
+2014,Defense,DLA,Other R&D and Knowledge Based,1321,456391152.4
+2014,Defense,Other DoD,Land Vehicles,420,40839294.23
+2011,Defense,Navy,NULL,5,-14505.73
+2011,Defense,Navy,Aircraft and Drones,10907,24013955290
+2011,Defense,Navy,Land Vehicles,5679,3611459677
+2011,Defense,Navy,Missile and Space Systems,1601,3597916421
+2011,Defense,Other DoD,Facilities and Construction,6207,439459382.1
+2012,Defense,Air Force,Ships & Submarines,172,64741412.42
+2012,Defense,Army,Land Vehicles,10167,6916421191
+2012,Defense,Army,Missile and Space Systems,3243,5696676892
+2012,Defense,Army,Weapons and Ammunition,5968,5347618650
+2012,Defense,DLA,Land Vehicles,25708,1059036825
+2012,Defense,DLA,Missile and Space Systems,521,28188373.35
+2012,Defense,Other DoD,Aircraft and Drones,4562,871910183.8
+2013,Defense,Air Force,Other Products,5382,445230759
+2013,Defense,MDA,Electronics and Communications,118,64244420.26
+2013,Defense,MDA,Other R&D and Knowledge Based,1455,1439894694
+2013,Defense,MDA,Weapons and Ammunition,71,352775242.9
+2013,Defense,Navy,Other Services,21286,3794576381
+2013,Defense,Other DoD,Ships & Submarines,938,93039720.19
+2014,Defense,Army,Electronics and Communications,42022,9669935320
+2014,Defense,Army,Other Services,21211,5354156753
+2014,Defense,Army,Unmanned,283,691895959.3
+2014,Defense,DLA,Electronics and Communications,64176,2373448815
+2014,Defense,DLA,Unmanned,2,37484784
+2014,Defense,MDA,Land Vehicles,10,62052.84
+2014,Defense,MDA,Missile and Space Systems,2451,3948324149
+2014,Defense,MilitaryHealth,Other Products,17,3098476.797
+2014,Defense,MilitaryHealth,Other Services,952,12581060239
+2014,Defense,Navy,Ships & Submarines,21669,19762595977
+2014,Defense,Other DoD,Other Products,2149,48988227.97
+2014,Defense,Other DoD,Other Services,11437606,4507524668
+2014,Defense,Other DoD,Unmanned,6,-64438618.03
+2011,Defense,DLA,Electronics and Communications,61227,2463207380
+2011,Defense,DLA,Ships & Submarines,11446,747662341
+2011,Defense,MDA,Missile and Space Systems,2290,4167327066
+2011,Defense,Navy,Other Products,35682,1831550672
+2011,Defense,Other DoD,Other Services,11109022,7736087022
+2011,Defense,Other DoD,Unmanned,27,85354670.27
+2012,Defense,Air Force,Aircraft and Drones,10390,21790013231
+2012,Defense,Air Force,Missile and Space Systems,3066,9571841633
+2012,Defense,Army,Aircraft and Drones,6202,10912642018
+2012,Defense,DLA,Aircraft and Drones,55494,3665085434
+2012,Defense,MilitaryHealth,Other R&D and Knowledge Based,572,66036107.09
+2012,Defense,MilitaryHealth,Weapons and Ammunition,1,720.95
+2012,Defense,Navy,Other Products,32685,1465469478
+2012,Defense,Other DoD,Electronics and Communications,82750,7336201175
+2013,Defense,Air Force,Missile and Space Systems,2784,5725527421
+2013,Defense,MilitaryHealth,Land Vehicles,1,34500
+2013,Defense,MilitaryHealth,Other R&D and Knowledge Based,494,246599536.7
+2013,Defense,Navy,Weapons and Ammunition,3973,2486505530
+2013,Defense,Other DoD,Missile and Space Systems,470,-12464180.2
+2014,Defense,Navy,Land Vehicles,8756,516802531.3
+2014,Defense,Navy,Other R&D and Knowledge Based,43348,10652704781
+2014,Defense,Navy,Weapons and Ammunition,4068,2958053023
+2014,Defense,Other DoD,Missile and Space Systems,360,8219656.97
+2011,Defense,Other DoD,Ships & Submarines,1790,155474671.5
+2012,Defense,Army,Other Services,41879,10945762815
+2012,Defense,Army,Unmanned,306,1788464507
+2012,Defense,DLA,Other Services,601,72932431.31
+2012,Defense,DLA,Unmanned,4,345232.53
+2012,Defense,MilitaryHealth,Other Products,86,1302586.57
+2012,Defense,Navy,Other R&D and Knowledge Based,44949,12784878630
+2012,Defense,Other DoD,Missile and Space Systems,372,-37795331.79
+2012,Defense,Other DoD,Other Products,1257,25682045.74
+2013,Defense,Air Force,Electronics and Communications,22869,7399044604
+2013,Defense,Air Force,Facilities and Construction,64365,5225537008
+2013,Defense,Air Force,Weapons and Ammunition,3742,2640998592
+2013,Defense,Army,Other R&D and Knowledge Based,43968,17153503345
+2013,Defense,Army,Ships & Submarines,1491,171347024
+2013,Defense,DLA,Ships & Submarines,7600,884740181
+2013,Defense,MDA,Other Services,12,3111305.461
+2013,Defense,MilitaryHealth,Facilities and Construction,273,7876362.126
+2013,Defense,Navy,Land Vehicles,6324,469557974.8
+2013,Defense,Navy,Missile and Space Systems,1334,4133994954
+2013,Defense,Navy,Other Products,30875,1400535205
+2013,Defense,Other DoD,Facilities and Construction,12050,407527825.2
+2014,Defense,Air Force,Aircraft and Drones,9063,15318284179
+2014,Defense,Army,Missile and Space Systems,2924,3377014055
+2014,Defense,Army,Other Products,35990,2331750369
+2014,Defense,Army,Weapons and Ammunition,4768,3520292449
+2014,Defense,DLA,Other Products,341295,21101410889
+2014,Defense,Navy,Facilities and Construction,66148,9750382161
+2014,Defense,Other DoD,Electronics and Communications,74024,6995282629
+2014,Defense,Other DoD,Weapons and Ammunition,667,4034289.833
+2010,Defense,Navy,Aircraft and Drones,11331,19284609800
+2010,Defense,Other DoD,Other R&D and Knowledge Based,11813,3667801075
+2011,Defense,Air Force,Ships & Submarines,128,74046282.64
+2011,Defense,Army,Missile and Space Systems,3159,6128106095
+2011,Defense,Army,Weapons and Ammunition,7030,6654665600
+2011,Defense,DLA,Missile and Space Systems,552,18171353.5
+2011,Defense,MilitaryHealth,Other Products,9,65498.44
+2011,Defense,Navy,Weapons and Ammunition,5073,3264010298
+2011,Defense,Other DoD,NULL,3,-90926.1
+2011,Defense,Other DoD,Land Vehicles,376,-246229274.9
+2011,Defense,Other DoD,Other Products,1493,22437062.64
+2012,Defense,Air Force,Other Products,6025,590716940.4
+2012,Defense,Air Force,Unmanned,80,309662772.3
+2012,Defense,Air Force,Weapons and Ammunition,4155,3141488561
+2012,Defense,Army,Facilities and Construction,177089,30309537077
+2012,Defense,MDA,Electronics and Communications,72,44555612.76
+2012,Defense,MDA,Other Services,1,38748.81
+2012,Defense,Other DoD,Facilities and Construction,7682,387473805.3
+2012,Defense,Other DoD,Ships & Submarines,1710,174597434.9
+2013,Defense,Air Force,Aircraft and Drones,9683,16834584165
+2013,Defense,Army,Missile and Space Systems,3120,3896061967
+2013,Defense,Army,Weapons and Ammunition,5202,3974143231
+2013,Defense,DLA,Missile and Space Systems,676,15977637.7
+2013,Defense,MDA,Land Vehicles,18,553396.1147
+2013,Defense,MilitaryHealth,Other Products,38,2572134.906
+2013,Defense,MilitaryHealth,Other Services,831,11770749364
+2013,Defense,Other DoD,Other Products,1221,17353652.05
+2014,Defense,Air Force,Facilities and Construction,47143,6207183205
+2014,Defense,Air Force,Weapons and Ammunition,3021,1810066043
+2014,Defense,MDA,Other R&D and Knowledge Based,1556,1933870589
+2014,Defense,Navy,Other Products,27515,1236502161
+2014,Defense,Other DoD,Facilities and Construction,9859,297634953.1
+2014,Defense,Other DoD,Ships & Submarines,645,100177266.1
+2012,Defense,DLA,Weapons and Ammunition,4505,254618315.6
+2012,Defense,MDA,Facilities and Construction,142,27788883.28
+2012,Defense,MDA,Other R&D and Knowledge Based,1474,1555703322
+2012,Defense,MilitaryHealth,Electronics and Communications,1022,73755997.56
+2012,Defense,MilitaryHealth,Ships & Submarines,NULL,0
+2012,Defense,Navy,Aircraft and Drones,10978,25219147852
+2012,Defense,Navy,Electronics and Communications,76472,12462835638
+2012,Defense,Navy,Facilities and Construction,74607,10932964610
+2012,Defense,Navy,Ships & Submarines,23146,18474482681
+2012,Defense,Navy,Unmanned,120,105716612.1
+2012,Defense,Other DoD,Other R&D and Knowledge Based,11307,3603790770
+2013,Defense,Air Force,Other R&D and Knowledge Based,29248,11295236149
+2013,Defense,Air Force,Ships & Submarines,221,5215307.237
+2013,Defense,Army,NULL,29,-251967.04
+2013,Defense,DLA,Other R&D and Knowledge Based,1269,368590628.3
+2013,Defense,Other DoD,NULL,5,0
+2013,Defense,Other DoD,Land Vehicles,367,16620118.63
+2013,Defense,Other DoD,Weapons and Ammunition,767,-12730442.7
+2014,Defense,Air Force,Land Vehicles,1804,118273340.4
+2014,Defense,Air Force,Other Services,12502,6817353055
+2014,Defense,Air Force,Unmanned,119,275794158.6
+2014,Defense,Army,Facilities and Construction,131728,24369323426
+2014,Defense,Army,Land Vehicles,6667,3821526131
+2014,Defense,DLA,Facilities and Construction,75425,2872508582
+2014,Defense,DLA,Land Vehicles,27722,858362068.3
+2014,Defense,DLA,Other Services,624,84180702.57
+2014,Defense,DLA,Weapons and Ammunition,5292,232389029.5
+2014,Defense,MDA,Electronics and Communications,125,53443052.46
+2014,Defense,MDA,Facilities and Construction,111,21957797.52
+2014,Defense,MDA,Other Services,19,3038970.215
+2014,Defense,MDA,Ships & Submarines,12,2497940.063
+2014,Defense,MilitaryHealth,Electronics and Communications,291,126460733.6
+2014,Defense,Navy,Aircraft and Drones,9349,20713728598
+2014,Defense,Navy,Electronics and Communications,69836,10777863532
+2014,Defense,Navy,Unmanned,119,229517324.7
+2014,Defense,Other DoD,Other R&D and Knowledge Based,13044,3897530537
+2006,Defense,Army,Weapons and Ammunition,5320,6006587130
+2006,Defense,MDA,Land Vehicles,5,109553
+2006,Defense,MilitaryHealth,Other Services,468,8026029219
+2006,Defense,Other DoD,Electronics and Communications,21661,5402249457
+2006,Defense,Other DoD,Other Products,4009,598263052.9
+2006,Defense,Other DoD,Other Services,2359,585301966.8
+2006,Defense,Other DoD,Weapons and Ammunition,195,156305588.5
+2007,Defense,Air Force,Facilities and Construction,75401,8119599066
+2007,Defense,Air Force,Weapons and Ammunition,3088,3962313337
+2007,Defense,Army,Ships & Submarines,1317,187768457.6
+2007,Defense,DLA,Aircraft and Drones,34224,1093463371
+2007,Defense,DLA,Ships & Submarines,4889,271076622
+2007,Defense,MDA,Other R&D and Knowledge Based,667,2661682634
+2007,Defense,Navy,Electronics and Communications,96010,13577297236
+2008,Defense,Air Force,Missile and Space Systems,3342,8245939871
+2008,Defense,MDA,Land Vehicles,6,180860
+2008,Defense,MilitaryHealth,Other R&D and Knowledge Based,25,6245907.56
+2008,Defense,MilitaryHealth,Other Services,904,9161969197
+2008,Defense,Other DoD,Other Services,9017,4645124878
+2008,Defense,Other DoD,Unmanned,1,6002654
+2008,Defense,Other DoD,Weapons and Ammunition,213,63138664.12
+2009,Defense,Army,Aircraft and Drones,6672,8195315566
+2009,Defense,Army,Land Vehicles,14031,19314596120
+2009,Defense,DLA,Aircraft and Drones,48689,2964996924
+2009,Defense,DLA,Land Vehicles,34197,1206113911
+2009,Defense,MDA,Facilities and Construction,131,37630926.21
+2009,Defense,MilitaryHealth,NULL,1,303279
+2009,Defense,Navy,Electronics and Communications,90964,13542795017
+2009,Defense,Navy,Unmanned,77,236272577.2
+2009,Defense,Other DoD,Missile and Space Systems,197,6849228.46
+2010,Defense,Air Force,Missile and Space Systems,3629,8395613205
+2010,Defense,Army,Other R&D and Knowledge Based,62526,24426544124
+2010,Defense,DLA,Other R&D and Knowledge Based,2171,309784213.2
+2010,Defense,MDA,Other Products,6,29668.5
+2010,Defense,MilitaryHealth,Facilities and Construction,20,491329.43
+2010,Defense,MilitaryHealth,Other R&D and Knowledge Based,35,9901810.45
+2010,Defense,Navy,NULL,13,-1374
+2010,Defense,Navy,Land Vehicles,6402,3946799785
+2011,Defense,Army,Aircraft and Drones,6432,9363830610
+2011,Defense,Army,Land Vehicles,12396,12437957291
+2011,Defense,Army,Other Services,45640,14388540335
+2011,Defense,DLA,Land Vehicles,28991,1074573269
+2011,Defense,DLA,Other Services,327,90449107.12
+2011,Defense,MDA,Facilities and Construction,223,35981335.46
+2011,Defense,Navy,Other R&D and Knowledge Based,51381,14018168309
+2011,Defense,Navy,Unmanned,123,201054028.6
+2011,Defense,Other DoD,Aircraft and Drones,4615,951465128.8
+2011,Defense,Other DoD,Missile and Space Systems,482,113054559.8
+2012,Defense,Air Force,Electronics and Communications,27648,8943026082
+2012,Defense,Army,Other R&D and Knowledge Based,52527,20254683497
+2012,Defense,Army,Ships & Submarines,1531,293001606.8
+2012,Defense,DLA,Other R&D and Knowledge Based,1373,281029779.2
+2012,Defense,DLA,Ships & Submarines,6497,998320298.4
+2012,Defense,MDA,Weapons and Ammunition,73,352616535.6
+2012,Defense,MilitaryHealth,Facilities and Construction,482,9859305.05
+2012,Defense,Navy,Land Vehicles,4890,2028444177
+2012,Defense,Navy,Missile and Space Systems,1725,3877484828
+2012,Defense,Navy,Other Services,23925,4049718368
+2013,Defense,Army,Land Vehicles,8048,4866355859
+2013,Defense,Army,Other Products,36133,2504587619
+2006,Defense,Air Force,Ships & Submarines,149,15629743
+2006,Defense,Air Force,Unmanned,32,64198447
+2006,Defense,Army,Facilities and Construction,134087,25946694868
+2006,Defense,Army,Land Vehicles,12678,10376178053
+2006,Defense,Army,Other R&D and Knowledge Based,51084,18242083030
+2006,Defense,DLA,Facilities and Construction,77308,3647112352
+2006,Defense,DLA,Land Vehicles,29135,541917809.2
+2006,Defense,DLA,Other R&D and Knowledge Based,1546,214039950.2
+2006,Defense,DLA,Weapons and Ammunition,4762,108440807
+2006,Defense,MDA,Facilities and Construction,227,194924190.5
+2006,Defense,MDA,Other Services,8,788549
+2006,Defense,MilitaryHealth,Electronics and Communications,63,1109488.55
+2006,Defense,Navy,Aircraft and Drones,10533,16919601191
+2006,Defense,Navy,Unmanned,33,17146584.1
+2006,Defense,Other DoD,Facilities and Construction,6182,859641783.6
+2007,Defense,Air Force,Ships & Submarines,163,6334386.24
+2007,Defense,Army,Land Vehicles,16203,18645437545
+2007,Defense,DLA,Land Vehicles,30067,694185278.4
+2007,Defense,MDA,Electronics and Communications,103,32163477.35
+2007,Defense,MDA,Facilities and Construction,159,54581106.95
+2007,Defense,Navy,Unmanned,59,85849980.72
+2007,Defense,Other DoD,Other R&D and Knowledge Based,7104,2307922926
+2007,Defense,Other DoD,Ships & Submarines,486,68601580.95
+2008,Defense,Army,Other Services,30686,11573425105
+2008,Defense,Army,Unmanned,198,1006068807
+2008,Defense,DLA,Other Services,824,71132367.86
+2008,Defense,MDA,Electronics and Communications,71,2983932.58
+2008,Defense,Other DoD,Ships & Submarines,734,133357453.7
+2009,Defense,Air Force,Electronics and Communications,33493,9531854000
+2009,Defense,Army,Other R&D and Knowledge Based,65636,25572074293
+2009,Defense,Army,Other Services,36437,11664092347
+2009,Defense,Army,Ships & Submarines,1709,251785627.4
+2009,Defense,Army,Unmanned,157,670573589.4
+2009,Defense,DLA,Other Services,694,79064645.48
+2009,Defense,DLA,Ships & Submarines,3755,332423948.5
+2009,Defense,DLA,Unmanned,1,96000
+2009,Defense,MDA,Other Services,10,-259351.96
+2009,Defense,Navy,Missile and Space Systems,1643,2992564764
+2009,Defense,Navy,Other Products,41811,1856055827
+2009,Defense,Other DoD,Facilities and Construction,5728,665366696.8
+2009,Defense,Other DoD,Other Services,10322,4480842631
+2010,Defense,Air Force,Aircraft and Drones,11786,18400700023
+2010,Defense,Air Force,Electronics and Communications,31411,9157771947
+2010,Defense,Army,Ships & Submarines,1532,264036220.5
+2010,Defense,DLA,Ships & Submarines,4366,773339302.8
+2010,Defense,Navy,Missile and Space Systems,1647,3404515838
+2010,Defense,Navy,Other Products,40600,1729213430
+2010,Defense,Other DoD,Electronics and Communications,46621,6801252738
+2010,Defense,Other DoD,Facilities and Construction,7387,590465152.2
+2011,Defense,Air Force,Aircraft and Drones,11261,18970528590
+2011,Defense,Air Force,Missile and Space Systems,3616,9273882021
+2011,Defense,MDA,Aircraft and Drones,1,28226.12
+2011,Defense,Other DoD,Electronics and Communications,64080,7331835158
+2012,Defense,Army,Electronics and Communications,55381,12961642952
+2012,Defense,DLA,Electronics and Communications,52229,2501440213
+2012,Defense,MDA,Missile and Space Systems,2427,4788557691
+2012,Defense,MDA,Other Products,7,10735
+2012,Defense,MilitaryHealth,Land Vehicles,1,20625
+2012,Defense,Navy,Weapons and Ammunition,3999,2488636029
+2012,Defense,Other DoD,Other Services,10821571,8158972084
+2012,Defense,Other DoD,Unmanned,20,1160003.91
+2013,Defense,Army,Other Services,33428,9965040985
+2013,Defense,Army,Unmanned,288,950345945.4
+2013,Defense,DLA,Other Products,319152,23555172948
+2013,Defense,DLA,Other Services,624,67955729.7
+2013,Defense,Navy,Facilities and Construction,65497,9012215283
+2013,Defense,Navy,Other R&D and Knowledge Based,42015,9811421647
+2013,Defense,Navy,Ships & Submarines,23465,18784666184
+2013,Defense,Other DoD,Aircraft and Drones,5047,635417226.8
+2013,Defense,Other DoD,Electronics and Communications,81583,6428661197
+2013,Defense,Other DoD,Other Services,9343023,5926644492
+2014,Defense,Air Force,Electronics and Communications,31815,7790366785
+2014,Defense,Army,NULL,1,72.5
+2014,Defense,Army,Ships & Submarines,1338,185048952.2
+2014,Defense,DLA,Ships & Submarines,8119,842304323.1
+2014,Defense,MDA,Weapons and Ammunition,45,87652955.96
+2014,Defense,MilitaryHealth,Facilities and Construction,42,2966667.977
+2014,Defense,Navy,Missile and Space Systems,1372,3778721899
+2014,Defense,Navy,Other Services,22243,3867292535
+2013,Defense,Army,Aircraft and Drones,5295,9931767003
+2013,Defense,Army,Electronics and Communications,45315,10246300521
+2013,Defense,DLA,Aircraft and Drones,51661,2933765156
+2013,Defense,DLA,Electronics and Communications,61258,2422212386
+2013,Defense,MDA,Missile and Space Systems,2441,5744652274
+2013,Defense,MDA,Other Products,8,132283.9867
+2013,Defense,Other DoD,Unmanned,4,-805365.33
+2014,Defense,Air Force,Missile and Space Systems,2515,5260790276
+2014,Defense,Air Force,Other Products,8001,508993487.1
+2014,Defense,Army,Aircraft and Drones,4775,8393002394
+2014,Defense,DLA,Aircraft and Drones,57916,3055796292
+2014,Defense,DLA,Missile and Space Systems,709,16762936.45
+2014,Defense,MilitaryHealth,Other R&D and Knowledge Based,298,357778400.5
+2014,Defense,Other DoD,Aircraft and Drones,4913,580183535.2

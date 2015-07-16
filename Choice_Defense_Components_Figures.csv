@@ -1,10 +1,10 @@
 figure number,figure title,legend name,form,order,section.variable,x.variable,y.variable,y.series,facet.primary,facet.secondary,x.axis.title,y.axis.title,data file,file type,subset.variable,subset.criteria,Layout Name,wide.section.variable,lookup.series.variable,subset.agency.variable,use.all.agencies
-,Bucket by Customer,Simple Area,Stacked_Bar,1,SubCustomer.component,Fiscal.Year,Obligation.2014,ServicesCategory.sum,,,Constant 2014 $ Billions,Percent of Dollars Obligated,Summary_SP_FundingMechanismHistoryBucketSubCustomer.csv,SQL output,,,,,,Customer,FALSE
-,Bucket by Customer,Detailed Area,Stacked_Bar,1,SubCustomer.component,Fiscal.Year,Obligation.2014,ProductOrServiceArea,,,Constant 2014 $ Billions,Percent of Dollars Obligated,Summary_SP_FundingMechanismHistoryBucketSubCustomer.csv,SQL output,,,,,,Customer,FALSE
-,Bucket by Customer,Simple Area,Lattice_Bar,1,SubCustomer.component,Fiscal.Year,Obligation.2014,ServicesCategory.sum,ServicesCategory.sum,,Constant 2014 $ Billions,Percent of Dollars Obligated,Summary_SP_FundingMechanismHistoryBucketSubCustomer.csv,SQL output,,,,,,Customer,FALSE
-,Bucket by Customer,Detailed Area,Lattice_Bar,1,SubCustomer.component,Fiscal.Year,Obligation.2014,ProductOrServiceArea,ProductOrServiceArea,,Constant 2014 $ Billions,Percent of Dollars Obligated,Summary_SP_FundingMechanismHistoryBucketSubCustomer.csv,SQL output,,,,,,Customer,FALSE
-,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,
+,Bucket by Customer,Simple Area,Stacked_Bar,1,,Fiscal.Year,Obligation.2014,ServicesCategory.sum,,,Constant 2014 $ Billions,Percent of Dollars Obligated,Summary_SP_FundingMechanismHistoryBucketSubCustomer.csv,SQL output,,,,,,Customer,FALSE
+,Bucket by Customer,Detailed Area,Stacked_Bar,1,,Fiscal.Year,Obligation.2014,ProductOrServiceArea,,,Constant 2014 $ Billions,Percent of Dollars Obligated,Summary_SP_FundingMechanismHistoryBucketSubCustomer.csv,SQL output,,,,,,Customer,FALSE
+,Bucket by Customer,Simple Area,Lattice_Bar,1,,Fiscal.Year,Obligation.2014,ServicesCategory.sum,ServicesCategory.sum,,Constant 2014 $ Billions,Percent of Dollars Obligated,Summary_SP_FundingMechanismHistoryBucketSubCustomer.csv,SQL output,,,,,,Customer,FALSE
+,Bucket by Customer,Detailed Area,Lattice_Bar,1,,Fiscal.Year,Obligation.2014,ProductOrServiceArea,ProductOrServiceArea,,Constant 2014 $ Billions,Percent of Dollars Obligated,Summary_SP_FundingMechanismHistoryBucketSubCustomer.csv,SQL output,,,,,,Customer,FALSE
+,Platform Portfolio by Customer,Detailed Area,Lattice_Bar,1,SubCustomer.component,Fiscal.Year,Obligation.2014,PlatformPortfolio.AnD,PlatformPortfolio.AnD,,Constant 2014 $ Billions,Percent of Dollars Obligated,Summary_SP_History_Bucket_SubCustomerPlatform.csv,SQL output,,,,,,Customer,FALSE
+,Platform Portfolio,Detailed Area,Lattice_Bar,1,Overall,Fiscal.Year,Obligation.2014,PlatformPortfolio.AnD,PlatformPortfolio.AnD,,Constant 2014 $ Billions,Percent of Dollars Obligated,Summary_SP_History_Bucket_SubCustomerPlatform.csv,SQL output,,,,,,Customer,FALSE
 ,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,
