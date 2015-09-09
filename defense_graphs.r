@@ -21,28 +21,23 @@ options(warn=1)
 #*************************************Lookup Files*****************************************************
 Path<-"K:\\2007-01 PROFESSIONAL SERVICES\\R scripts and data\\"
 # Path<-"~\\FPDS\\R scripts and data\\"
-# Path<-"C:\\Users\\Greg Sanders\\SkyDrive\\Documents\\R Scripts and Data SkyDrive\\"
+#Path<-"C:\\Users\\Rhys McCormick\\Documents\\Development\\Data\\"
 
 axis.text.size<-8
 strip.text.size<-10
 legend.text.size<-12
 
 # table.text.size<-5.75
-title.text.size<-10
-geom.text.size<-3
+#title.text.size<-10
+#geom.text.size<-3
 
-source(paste(Path,"helper.r",sep=""))
 source(paste(Path,"lookups.r",sep=""))
 source(paste(Path,"helper.r",sep=""))
 source(paste(Path,"create_procedural_graphs.r",sep=""))
 
-setwd("K:\\Development\\Defense")
+setwd("K:\\Development\\Components")
 
-# debug(create_procedural_graphs)
-
-create_procedural_graphs("Federal","Overall",2008)
 debug(create_procedural_graphs)
-debug(VariableNumericalFormat)
 create_procedural_graphs("Defense Components","SubCustomer.component",2000)
-create_procedural_graphs("Defense Components","Overall",2000)
+#create_procedural_graphs("Defense Components","Overall",2000)
 
