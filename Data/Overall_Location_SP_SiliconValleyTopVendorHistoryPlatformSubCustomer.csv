@@ -711,17 +711,14 @@ Fiscal_Year,Customer,SubCustomer,PlatformPortfolio,IsSiliconValley,AnnualPlatfor
 1999,Defense,Air Force,Electronics and Communications,1,2100,CISCO SYSTEMS^,CISCO SYSTEMS,0,25932,1,0
 1999,Defense,Army,Other Products,1,1353,VARIAN ASSOCIATES^,VARIAN ASSOCIATES,0,-34023,2,0
 1999,Defense,Army,Other R&D and Knowledge Based,1,2342,APPLIED MATERIALS^,APPLIED MATERIALS,0,-42553,1,0
-2000,Defense,Air Force,Land Vehicles,1,2,LSI,LSI,0,81148936,172,0
 2000,Defense,Navy,Electronics and Communications,1,26,ORACLE^,ORACLE,0,44685337,113,0
 2000,Defense,Other DoD,Electronics and Communications,1,15,ORACLE^,ORACLE,0,38756960,67,0
 2000,Defense,Army,Electronics and Communications,1,24,ORACLE^,ORACLE,0,36928877,79,0
-2000,Defense,Air Force,Aircraft and Drones,1,33,LSI,LSI,0,22779074,31,0
 2000,Defense,Air Force,Facilities and Construction,1,55,AGILENT TECHNOLOGIES^,AGILENT TECHNOLOGIES,0,13131380,44,0
 2000,Defense,Navy,Other R&D and Knowledge Based,1,74,ORACLE^,ORACLE,0,11599994,6,0
 2000,Defense,Navy,Facilities and Construction,1,111,AGILENT TECHNOLOGIES^,AGILENT TECHNOLOGIES,0,9748774,97,0
 2000,Defense,Navy,Electronics and Communications,1,99,HEWLETT PACKARD^,HEWLETT PACKARD,0,9177807,67,0
 2000,Defense,DLA,Electronics and Communications,1,13,ORACLE^,ORACLE,0,8812523,39,0
-2000,Defense,Air Force,Other Services,1,17,LSI,LSI,0,8605364,4,0
 2000,Defense,Navy,Electronics and Communications,1,112,VARIAN MEDICAL SYSTEMS^,VARIAN MEDICAL SYSTEMS,0,8340073,4,0
 2000,Defense,Air Force,Electronics and Communications,1,81,AGILENT TECHNOLOGIES^,AGILENT TECHNOLOGIES,0,7879606,28,0
 2000,Defense,Navy,Electronics and Communications,1,134,AGILENT TECHNOLOGIES^,AGILENT TECHNOLOGIES,0,6975181,65,0
@@ -1110,8 +1107,8 @@ Fiscal_Year,Customer,SubCustomer,PlatformPortfolio,IsSiliconValley,AnnualPlatfor
 2001,Other Agencies,Commerce,Electronics and Communications,1,410,AGILENT TECHNOLOGIES^,AGILENT TECHNOLOGIES,0,40000,1,0
 2001,Other Agencies,Interior,Facilities and Construction,1,2051,HEWLETT PACKARD^,HEWLETT PACKARD,0,32000,1,0
 2001,Other Agencies,Treasury,Other Products,1,140,AGILENT TECHNOLOGIES^,AGILENT TECHNOLOGIES,0,32000,1,0
-2001,Other Agencies,VA,Facilities and Construction,1,1986,VARIAN ASSOCIATES^,VARIAN ASSOCIATES,0,25000,1,0
 2001,Other Agencies,Agriculture,Facilities and Construction,1,2578,ORACLE^,ORACLE,0,25000,1,0
+2001,Other Agencies,VA,Facilities and Construction,1,1986,VARIAN ASSOCIATES^,VARIAN ASSOCIATES,0,25000,1,0
 2001,Other Agencies,Interior,Electronics and Communications,1,726,AGILENT TECHNOLOGIES^,AGILENT TECHNOLOGIES,0,25000,4,0
 2001,Other Agencies,Interior,Other Services,1,282,HEWLETT PACKARD^,HEWLETT PACKARD,0,20568.29,1,0
 2001,Other Agencies,NUCLEAR REGULATORY COMMISSION,Electronics and Communications,1,59,HEWLETT PACKARD^,HEWLETT PACKARD,0,17000,3,0
@@ -1331,8 +1328,8 @@ Fiscal_Year,Customer,SubCustomer,PlatformPortfolio,IsSiliconValley,AnnualPlatfor
 2002,Other Agencies,Commerce,Electronics and Communications,1,280,NETWORK APPLIANCE^,NETWORK APPLIANCE,0,104000,3,0
 2002,Other Agencies,VA,Other Services,1,1293,HEWLETT PACKARD^,HEWLETT PACKARD,0,99000,1,0
 2002,Other Agencies,Commerce,Electronics and Communications,1,305,AGILENT TECHNOLOGIES^,AGILENT TECHNOLOGIES,0,92000,2,0
-2002,Other Agencies,EQUAL EMPLOYMENT OPPORTUNITY COMMISSION,Electronics and Communications,1,6,HEWLETT PACKARD^,HEWLETT PACKARD,0,81000,2,0
 2002,Other Agencies,Exec Office,Electronics and Communications,1,45,ORACLE^,ORACLE,0,81000,1,0
+2002,Other Agencies,EQUAL EMPLOYMENT OPPORTUNITY COMMISSION,Electronics and Communications,1,6,HEWLETT PACKARD^,HEWLETT PACKARD,0,81000,2,0
 2002,Other Agencies,NATIONAL LABOR RELATIONS BOARD,Electronics and Communications,1,13,HEWLETT PACKARD^,HEWLETT PACKARD,0,72000,1,0
 2002,Other Agencies,Labor,Other R&D and Knowledge Based,1,206,CISCO SYSTEMS^,CISCO SYSTEMS,0,72000,1,0
 2002,Other Agencies,EQUAL EMPLOYMENT OPPORTUNITY COMMISSION,Electronics and Communications,1,7,ORACLE^,ORACLE,0,71000,1,0
@@ -1642,10 +1639,10 @@ Fiscal_Year,Customer,SubCustomer,PlatformPortfolio,IsSiliconValley,AnnualPlatfor
 2003,Other Agencies,EPA,Electronics and Communications,1,46,ORACLE^,ORACLE,0,10528,1,0
 2003,Other Agencies,SECURITIES AND EXCHANGE COMMISSION,Electronics and Communications,1,19,Hewlett-Packard,HEWLETT PACKARD,0,288,1,0
 2003,Other Agencies,VA,Electronics and Communications,1,733,VARIAN MEDICAL SYSTEMS^,VARIAN MEDICAL SYSTEMS,0,147,1,0
+2003,Other Agencies,EPA,Electronics and Communications,1,56,SALESFORCE COM^,SALESFORCE COM,0,0,1,0
 2003,Other Agencies,EPA,Facilities and Construction,1,210,AGILENT TECHNOLOGIES^,AGILENT TECHNOLOGIES,0,0,2,0
 2003,Other Agencies,EPA,Facilities and Construction,1,210,Hewlett-Packard,HEWLETT PACKARD,0,0,1,0
 2003,Other Agencies,VA,Other Products,1,1132,GILEAD SCIENCES^,GILEAD SCIENCES,0,0,NULL,0
-2003,Other Agencies,EPA,Electronics and Communications,1,56,SALESFORCE COM^,SALESFORCE COM,0,0,1,0
 2003,Other Agencies,Interior,NULL,1,150,Hewlett-Packard,HEWLETT PACKARD,0,0,2,0
 2003,Other Agencies,Commerce,NULL,1,10,Hewlett-Packard,HEWLETT PACKARD,0,0,2,0
 2003,Other Agencies,Interior,Other R&D and Knowledge Based,1,1748,STANFORD UNIVERSITY^,STANFORD UNIVERSITY,0,-30,1,0
@@ -1805,8 +1802,8 @@ Fiscal_Year,Customer,SubCustomer,PlatformPortfolio,IsSiliconValley,AnnualPlatfor
 2004,GSA,GSA,Electronics and Communications,1,2097,JUNIPER NETWORKS^,JUNIPER NETWORKS,0,2520,1,0
 2004,GSA,GSA,Electronics and Communications,1,2097,VMWARE^,VMWARE,0,2520,1,0
 2004,GSA,GSA,Electronics and Communications,1,2210,AGILENT TECHNOLOGIES^,AGILENT TECHNOLOGIES,0,0,NULL,0
-2004,GSA,GSA,Facilities and Construction,1,12867,ORACLE^,ORACLE,0,0,NULL,0
 2004,GSA,GSA,NULL,1,469,STANFORD UNIVERSITY^,STANFORD UNIVERSITY,0,0,2,0
+2004,GSA,GSA,Facilities and Construction,1,12867,ORACLE^,ORACLE,0,0,NULL,0
 2004,HHS,HHS,Electronics and Communications,1,25,Hewlett-Packard,HEWLETT PACKARD,0,11429495.27,132,0
 2004,HHS,HHS,Electronics and Communications,1,31,ORACLE^,ORACLE,0,8941386.91,83,0
 2004,HHS,HHS,Facilities and Construction,1,31,AGILENT TECHNOLOGIES^,AGILENT TECHNOLOGIES,0,7259860.57,115,0
@@ -2028,10 +2025,10 @@ Fiscal_Year,Customer,SubCustomer,PlatformPortfolio,IsSiliconValley,AnnualPlatfor
 2004,Other Agencies,Commerce,Facilities and Construction,1,2584,CISCO SYSTEMS^,CISCO SYSTEMS,0,0,1,0
 2004,Other Agencies,Commerce,Facilities and Construction,1,2584,JUNIPER NETWORKS^,JUNIPER NETWORKS,0,0,2,0
 2004,Other Agencies,COURT SERVICES AND OFFENDER SUPERVISION AGENCY,Facilities and Construction,1,26,VARIAN ASSOCIATES^,VARIAN ASSOCIATES,0,0,2,0
-2004,Other Agencies,NATIONAL ENDOWMENT FOR THE HUMANITIES,NULL,1,6,ORACLE^,ORACLE,0,0,2,0
 2004,Other Agencies,EPA,Electronics and Communications,1,59,Hewlett-Packard,HEWLETT PACKARD,0,0,4,0
 2004,Other Agencies,EPA,Electronics and Communications,1,59,ORACLE^,ORACLE,0,0,3,0
 2004,Other Agencies,Interior,NULL,1,979,APPLE COMPUTER^,APPLE COMPUTER,0,0,1,0
+2004,Other Agencies,NATIONAL ENDOWMENT FOR THE HUMANITIES,NULL,1,6,ORACLE^,ORACLE,0,0,2,0
 2004,State and IAP,State,Electronics and Communications,1,53,NETWORK APPLIANCE^,NETWORK APPLIANCE,0,1688638.5,12,0
 2004,State and IAP,PEACE CORPS,Electronics and Communications,1,2,ORACLE^,ORACLE,0,1564923,7,0
 2004,State and IAP,State,Electronics and Communications,1,71,Hewlett-Packard,HEWLETT PACKARD,0,1197258.58,34,0
@@ -2546,8 +2543,8 @@ Fiscal_Year,Customer,SubCustomer,PlatformPortfolio,IsSiliconValley,AnnualPlatfor
 2005,Other Agencies,Education,Electronics and Communications,1,207,SYNNEX^,SYNNEX,0,322.82,1,0
 2005,Other Agencies,Treasury,Electronics and Communications,1,1071,Symantec^,Symantec,0,208.15,1,0
 2005,Other Agencies,NATIONAL SCIENCE FOUNDATION,Electronics and Communications,1,159,ORACLE^,ORACLE,0,0,1,0
-2005,Other Agencies,Justice,Facilities and Construction,1,3428,YAHOO!^,YAHOO!,0,0,1,0
 2005,Other Agencies,EPA,Facilities and Construction,1,1110,VARIAN MEDICAL SYSTEMS^,VARIAN MEDICAL SYSTEMS,0,0,2,0
+2005,Other Agencies,Justice,Facilities and Construction,1,3428,YAHOO!^,YAHOO!,0,0,1,0
 2005,Other Agencies,Interior,Electronics and Communications,1,3155,VMWARE^,VMWARE,0,0,2,0
 2005,Other Agencies,Justice,Electronics and Communications,1,1648,YAHOO!^,YAHOO!,0,0,2,0
 2005,Other Agencies,Interior,Other Services,1,1324,YAHOO!^,YAHOO!,0,0,1,0
@@ -2784,9 +2781,9 @@ Fiscal_Year,Customer,SubCustomer,PlatformPortfolio,IsSiliconValley,AnnualPlatfor
 2006,DHS,COAST GUARD,Electronics and Communications,1,784,CISCO SYSTEMS^,CISCO SYSTEMS,0,480,1,0
 2006,DHS,COAST GUARD,NULL,1,2775,AGILENT TECHNOLOGIES^,AGILENT TECHNOLOGIES,0,364,2,0
 2006,DHS,COAST GUARD,Facilities and Construction,1,1790,CISCO SYSTEMS^,CISCO SYSTEMS,0,0,2,0
-2006,DHS,CBP,Facilities and Construction,1,613,VARIAN MEDICAL SYSTEMS^,VARIAN MEDICAL SYSTEMS,0,0,NULL,0
 2006,DHS,Other DHS,Electronics and Communications,1,514,Symantec^,Symantec,0,0,1,0
 2006,DHS,TSA,Electronics and Communications,1,171,ORACLE^,ORACLE,0,0,1,0
+2006,DHS,CBP,Facilities and Construction,1,613,VARIAN MEDICAL SYSTEMS^,VARIAN MEDICAL SYSTEMS,0,0,NULL,0
 2006,DHS,CBP,Weapons and Ammunition,1,32,VARIAN MEDICAL SYSTEMS^,VARIAN MEDICAL SYSTEMS,0,0,1,0
 2006,DHS,FEMA,Weapons and Ammunition,1,5,Hewlett-Packard,HEWLETT PACKARD,0,0,2,0
 2006,Energy,Energy,Facilities and Construction,1,17,STANFORD UNIVERSITY^,STANFORD UNIVERSITY,0,329693042.3,20,0
@@ -3347,8 +3344,8 @@ Fiscal_Year,Customer,SubCustomer,PlatformPortfolio,IsSiliconValley,AnnualPlatfor
 2007,Defense,Army,Other R&D and Knowledge Based,1,6847,AGILENT TECHNOLOGIES^,AGILENT TECHNOLOGIES,0,990,2,0
 2007,Defense,Army,Other R&D and Knowledge Based,1,6871,INTEL^,INTEL,0,720,1,0
 2007,Defense,Navy,Other Services,1,2683,Hewlett-Packard,HEWLETT PACKARD,0,514,2,0
-2007,Defense,Other DoD,Other R&D and Knowledge Based,1,876,STANFORD UNIVERSITY^,STANFORD UNIVERSITY,0,0,3,0
 2007,Defense,Army,Other Services,1,5114,Hewlett-Packard,HEWLETT PACKARD,0,0,1,0
+2007,Defense,Other DoD,Other R&D and Knowledge Based,1,876,STANFORD UNIVERSITY^,STANFORD UNIVERSITY,0,0,3,0
 2007,Defense,Navy,Electronics and Communications,1,7891,CISCO SYSTEMS^,CISCO SYSTEMS,0,0,4,0
 2007,Defense,Air Force,Electronics and Communications,1,4479,CISCO SYSTEMS^,CISCO SYSTEMS,0,0,2,0
 2007,Defense,Army,Aircraft and Drones,1,1262,NETWORK APPLIANCE^,NETWORK APPLIANCE,0,0,1,0
@@ -5776,9 +5773,9 @@ Fiscal_Year,Customer,SubCustomer,PlatformPortfolio,IsSiliconValley,AnnualPlatfor
 2010,Other Agencies,Justice,Other Products,1,1854,YAHOO!^,YAHOO!,0,0,2,0
 2010,Other Agencies,Interior,Other R&D and Knowledge Based,1,4443,APPLE COMPUTER^,APPLE COMPUTER,0,0,3,0
 2010,Other Agencies,EPA,Other R&D and Knowledge Based,1,1394,Oracle Corporation,ORACLE,0,0,1,0
+2010,Other Agencies,Education,Other Services,1,48,CISCO SYSTEMS^,CISCO SYSTEMS,0,0,2,0
 2010,Other Agencies,Treasury,Other Services,1,378,Oracle Corporation,ORACLE,0,0,1,0
 2010,Other Agencies,NATIONAL TRANSPORTATION SAFETY BOARD,Other Services,1,6,VARIAN MEDICAL SYSTEMS^,VARIAN MEDICAL SYSTEMS,0,0,NULL,0
-2010,Other Agencies,Education,Other Services,1,48,CISCO SYSTEMS^,CISCO SYSTEMS,0,0,2,0
 2010,Other Agencies,Education,Electronics and Communications,1,196,Oracle Corporation,ORACLE,0,0,1,0
 2010,Other Agencies,BROADCASTING BOARD OF GOVERNORS,Electronics and Communications,1,97,SYNNEX^,SYNNEX,0,0,1,0
 2010,Other Agencies,Commerce,Electronics and Communications,1,1655,GOOGLE^,GOOGLE,0,0,1,0
@@ -6010,8 +6007,8 @@ Fiscal_Year,Customer,SubCustomer,PlatformPortfolio,IsSiliconValley,AnnualPlatfor
 2011,DHS,TSA,Facilities and Construction,1,185,Hewlett-Packard,HEWLETT PACKARD,0,3234,1,0
 2011,DHS,FEMA,Other R&D and Knowledge Based,1,727,Hewlett-Packard,HEWLETT PACKARD,0,0,1,0
 2011,DHS,OPO,Electronics and Communications,1,237,Oracle Corporation,ORACLE,0,0,1,0
-2011,DHS,Other DHS,Electronics and Communications,1,530,Symantec^,Symantec,0,0,1,0
 2011,DHS,FEMA,Electronics and Communications,1,321,CISCO SYSTEMS^,CISCO SYSTEMS,0,0,1,0
+2011,DHS,Other DHS,Electronics and Communications,1,530,Symantec^,Symantec,0,0,1,0
 2011,DHS,Other DHS,Other R&D and Knowledge Based,1,535,Oracle Corporation,ORACLE,0,0,2,0
 2011,DHS,Other DHS,Other R&D and Knowledge Based,1,601,AGILENT TECHNOLOGIES^,AGILENT TECHNOLOGIES,0,-472.1,2,0
 2011,DHS,CBP,Electronics and Communications,1,548,Oracle Corporation,ORACLE,0,-3570.52,2,0
@@ -6530,11 +6527,11 @@ Fiscal_Year,Customer,SubCustomer,PlatformPortfolio,IsSiliconValley,AnnualPlatfor
 2012,Defense,Army,Other Services,1,3886,VMWARE^,VMWARE,0,3170.92,1,0
 2012,Defense,Army,Other Services,1,4038,Oracle Corporation,ORACLE,0,1734.82,1,0
 2012,Defense,Army,Other Services,1,4137,VARIAN MEDICAL SYSTEMS^!,VARIAN MEDICAL SYSTEMS,0,0,1,1
-2012,Defense,Navy,Ships & Submarines,1,2858,Hewlett-Packard,HEWLETT PACKARD,0,0,2,0
 2012,Defense,Navy,Other Services,1,2776,Hewlett-Packard,HEWLETT PACKARD,0,0,1,0
-2012,Defense,Other DoD,Facilities and Construction,1,1119,AGILENT TECHNOLOGIES^,AGILENT TECHNOLOGIES,0,0,1,0
+2012,Defense,Navy,Ships & Submarines,1,2858,Hewlett-Packard,HEWLETT PACKARD,0,0,2,0
 2012,Defense,Army,Other R&D and Knowledge Based,1,5343,VARIAN MEDICAL SYSTEMS^!,VARIAN MEDICAL SYSTEMS,0,0,2,1
 2012,Defense,MilitaryHealth,Other R&D and Knowledge Based,1,109,Hewlett-Packard,HEWLETT PACKARD,0,0,1,0
+2012,Defense,Other DoD,Facilities and Construction,1,1119,AGILENT TECHNOLOGIES^,AGILENT TECHNOLOGIES,0,0,1,0
 2012,Defense,Navy,Facilities and Construction,1,9209,JUNIPER NETWORKS^,JUNIPER NETWORKS,0,0,1,0
 2012,Defense,Navy,Facilities and Construction,1,9209,SUNPOWER^,SUNPOWER,0,0,NULL,0
 2012,Defense,Air Force,Electronics and Communications,1,3660,STANFORD UNIVERSITY^,STANFORD UNIVERSITY,0,0,2,0
@@ -6573,8 +6570,8 @@ Fiscal_Year,Customer,SubCustomer,PlatformPortfolio,IsSiliconValley,AnnualPlatfor
 2012,DHS,FEMA,Facilities and Construction,1,593,Hewlett-Packard,HEWLETT PACKARD,0,2398.08,5,0
 2012,DHS,Other DHS,Facilities and Construction,1,527,SYNNEX^,SYNNEX,0,1847.76,2,0
 2012,DHS,TSA,Facilities and Construction,1,195,Hewlett-Packard,HEWLETT PACKARD,0,0,1,0
-2012,DHS,CBP,Facilities and Construction,1,939,VARIAN MEDICAL SYSTEMS^!,VARIAN MEDICAL SYSTEMS,0,0,1,1
 2012,DHS,COAST GUARD,Other R&D and Knowledge Based,1,768,Hewlett-Packard,HEWLETT PACKARD,0,0,1,0
+2012,DHS,CBP,Facilities and Construction,1,939,VARIAN MEDICAL SYSTEMS^!,VARIAN MEDICAL SYSTEMS,0,0,1,1
 2012,DHS,Other DHS,Other R&D and Knowledge Based,1,453,Hewlett-Packard,HEWLETT PACKARD,0,0,2,0
 2012,DHS,FEMA,Other Services,1,97,Hewlett-Packard,HEWLETT PACKARD,0,0,1,0
 2012,DHS,OPO,Electronics and Communications,1,244,INTUIT^,INTUIT,0,0,2,0
@@ -6892,9 +6889,9 @@ Fiscal_Year,Customer,SubCustomer,PlatformPortfolio,IsSiliconValley,AnnualPlatfor
 2012,Other Agencies,Commerce,Electronics and Communications,1,1429,GOOGLE^,GOOGLE,0,0,1,0
 2012,Other Agencies,Commerce,Electronics and Communications,1,1429,NETWORK APPLIANCE^,NETWORK APPLIANCE,0,0,1,0
 2012,Other Agencies,Justice,Facilities and Construction,1,4218,SYNNEX^,SYNNEX,0,0,1,0
+2012,Other Agencies,Transportation,Facilities and Construction,1,1356,VARIAN MEDICAL SYSTEMS^!,VARIAN MEDICAL SYSTEMS,0,0,1,1
 2012,Other Agencies,VA,Other Products,1,5702,BRISTOL MYERS SQUIBB & GILEAD SCIENCES^*,BRISTOL MYERS SQUIBB & GILEAD SCIENCES,1,0,NULL,0
 2012,Other Agencies,VA,Other Products,1,5702,GILEAD SCIENCES^,GILEAD SCIENCES,0,0,NULL,0
-2012,Other Agencies,Transportation,Facilities and Construction,1,1356,VARIAN MEDICAL SYSTEMS^!,VARIAN MEDICAL SYSTEMS,0,0,1,1
 2012,Other Agencies,Comptroller,Other R&D and Knowledge Based,1,96,Hewlett-Packard,HEWLETT PACKARD,0,0,NULL,0
 2012,Other Agencies,Interior,Other R&D and Knowledge Based,1,3456,Oracle Corporation,ORACLE,0,0,1,0
 2012,Other Agencies,OFFICE OF PERSONNEL MANAGEMENT,Other Products,1,33,Hewlett-Packard,HEWLETT PACKARD,0,0,1,0
@@ -7387,20 +7384,20 @@ Fiscal_Year,Customer,SubCustomer,PlatformPortfolio,IsSiliconValley,AnnualPlatfor
 2013,Other Agencies,Justice,Other R&D and Knowledge Based,1,2334,GOOGLE^,GOOGLE,0,200,1,0
 2013,Other Agencies,EQUAL EMPLOYMENT OPPORTUNITY COMMISSION,Electronics and Communications,1,52,YAHOO!^,YAHOO!,0,40,1,0
 2013,Other Agencies,Justice,Facilities and Construction,1,4107,GOOGLE^,GOOGLE,0,25,1,0
+2013,Other Agencies,Treasury,Electronics and Communications,1,1166,APPLE COMPUTER^,APPLE COMPUTER,0,0,1,0
 2013,Other Agencies,Commerce,Facilities and Construction,1,2005,Oracle Corporation,ORACLE,0,0,1,0
 2013,Other Agencies,EPA,Other Products,1,93,AGILENT TECHNOLOGIES^,AGILENT TECHNOLOGIES,0,0,NULL,0
 2013,Other Agencies,Interior,Other Products,1,996,STANFORD UNIVERSITY^,STANFORD UNIVERSITY,0,0,1,0
 2013,Other Agencies,VA,Other Products,1,6124,BRISTOL MYERS SQUIBB & GILEAD SCIENCES^*,BRISTOL MYERS SQUIBB & GILEAD SCIENCES,1,0,NULL,0
 2013,Other Agencies,VA,Other Products,1,6124,GILEAD SCIENCES^,GILEAD SCIENCES,0,0,NULL,0
-2013,Other Agencies,CORPORATION FOR NATIONAL AND COMMUNITY SERVICE,Electronics and Communications,1,27,Oracle Corporation,ORACLE,0,0,1,0
-2013,Other Agencies,CORPORATION FOR NATIONAL AND COMMUNITY SERVICE,Electronics and Communications,1,27,VMWARE^,VMWARE,0,0,1,0
-2013,Other Agencies,Treasury,Electronics and Communications,1,1166,APPLE COMPUTER^,APPLE COMPUTER,0,0,1,0
 2013,Other Agencies,Transportation,Electronics and Communications,1,690,APPLE COMPUTER^,APPLE COMPUTER,0,0,2,0
 2013,Other Agencies,Transportation,Electronics and Communications,1,690,CISCO SYSTEMS^,CISCO SYSTEMS,0,0,1,0
 2013,Other Agencies,Transportation,Electronics and Communications,1,690,JUNIPER NETWORKS^,JUNIPER NETWORKS,0,0,2,0
 2013,Other Agencies,SECURITIES AND EXCHANGE COMMISSION,Electronics and Communications,1,184,APPLE COMPUTER^,APPLE COMPUTER,0,0,5,0
 2013,Other Agencies,SECURITIES AND EXCHANGE COMMISSION,Electronics and Communications,1,184,Oracle Corporation,ORACLE,0,0,3,0
 2013,Other Agencies,SMALL BUSINESS ADMINISTRATION,Electronics and Communications,1,170,Oracle Corporation,ORACLE,0,0,1,0
+2013,Other Agencies,CORPORATION FOR NATIONAL AND COMMUNITY SERVICE,Electronics and Communications,1,27,Oracle Corporation,ORACLE,0,0,1,0
+2013,Other Agencies,CORPORATION FOR NATIONAL AND COMMUNITY SERVICE,Electronics and Communications,1,27,VMWARE^,VMWARE,0,0,1,0
 2013,Other Agencies,Comptroller,Other R&D and Knowledge Based,1,85,Hewlett-Packard,HEWLETT PACKARD,0,0,NULL,0
 2013,Other Agencies,CONSUMER PRODUCT SAFETY COMMISSION,Other R&D and Knowledge Based,1,219,Hewlett-Packard,HEWLETT PACKARD,0,0,NULL,0
 2013,Other Agencies,Commerce,Other R&D and Knowledge Based,1,1295,GOOGLE^,GOOGLE,0,0,1,0

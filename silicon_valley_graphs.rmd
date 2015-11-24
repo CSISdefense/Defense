@@ -46,35 +46,128 @@ SiliconTopVendor<-ddply(SiliconTopVendor,
                         .(ParentID),
                         transform,
                         ParentConsolidated=ifelse(sum(ifelse(Customer=="Defense",
-                                                             Action.Obligation,
-                                                             0),na.rm=TRUE)>100000000,
+                                                             Obligation.2014,
+                                                             0),na.rm=TRUE)>=0.25,
                                                   as.character(ParentID),"Other Major Silicon Valley Vendors")
 )
 
+SiliconTopVendor$ParentConsolidated<-as.character(SiliconTopVendor$ParentConsolidated)
+
+SiliconTopVendor$ParentConsolidated[SiliconTopVendor$ParentID %in%
+                                        c('VARIAN SEMICONDUCTOR EQUIPMENT','VARIAN ASSOCIATES','VARIAN MEDICAL SYSTEMS')]<-
+    "Varian Associates & Successors"
+
+ParentOrderDF<-ddply(SiliconTopVendor,
+      .(ParentConsolidated),
+      summarise,
+      Obligation.2014=sum(ifelse(Customer=="Defense",
+                                   Obligation.2014,
+                                   0),na.rm=TRUE)
+)
+ParentOrderDF<-ParentOrderDF[order(-ParentOrderDF$Obligation.2014),]
+
+ParentOrderList<-ParentOrderDF$ParentConsolidated
+ParentOrderList<-c(unlist(as.character(ParentOrderList[ParentOrderList!="Other Major Silicon Valley Vendors"])),
+                   "Other Major Silicon Valley Vendors")
+
+SiliconTopVendor$ParentConsolidated<-factor(SiliconTopVendor$ParentConsolidated,ParentOrderList)
+
+```
 
 
-#When
-ggplot(data = subset(SiliconTopVendor,Customer=="Defense" & year(Fiscal.Year)<=2014),# subset(ContractSurvival,StartFiscalYear>=2007 & StartFiscalYear<=2013),
+
+```{r PlatformPortfolio}
+SiliconTopVendor<-
+    ddply(SiliconTopVendor,
+                        .(PlatformPortfolio),
+                        transform,
+                        PlatformPortfolioSC=ifelse(sum(ifelse(Customer=="Defense",
+                                                             Obligation.2014,
+                                                             0),na.rm=TRUE)>=0.25,
+                                                  as.character(PlatformPortfolio),"Remaining Platform Categories")
+)
+
+
+ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$PlatformPortfolioSC),],
+                     Customer=="Defense" & year(Fiscal.Year)<=2014),# subset(ContractSurvival,StartFiscalYear>=2007 & StartFiscalYear<=2013),
        aes(x=Fiscal.Year,
-           y=Action.Obligation
-#            ,
-#            fill=ParentID
+           y=Obligation.2014,
+           fill=PlatformPortfolioSC
            )
        )+ 
     geom_bar(stat="identity") + 
-    facet_wrap( ~ ParentConsolidated)
+    facet_wrap( ~ ParentConsolidated)+
 #                 scales="free_y", #The scales actually do stay fixed
 #                 , space="free_y"#But only because the space is free)+
     scale_x_date("Fiscal Year",
                  labels=date_format("'%y"),
-                 breaks="10 years"
+                 # breaks="2 years",
+                 minor_breaks="1 year",
+                 breaks=c(as.Date("1990-01-01"),
+                          as.Date("1992-01-01"),
+                          as.Date("1994-01-01"),
+                          as.Date("1996-01-01"),
+                          as.Date("1998-01-01"),
+                          as.Date("2000-01-01"),
+                          as.Date("2002-01-01"),
+                          as.Date("2004-01-01"),
+                          as.Date("2006-01-01"),
+                          as.Date("2008-01-01"),
+                          as.Date("2010-01-01"),
+                          as.Date("2012-01-01"),
+                          as.Date("2014-01-01"))
+                 # breaks=date_breaks("year")
                  # minor_breaks = "1 year"
                  # breaks=date_breaks("year"),
                  # breaks=c(as.Date("1990-01-01"),as.Date("2014-12-31"))
                  )+
     theme(axis.text.x=element_text(angle = 90))+
-    scale_y_continuous("Obligations (2014 Dollars)",labels=comma)
+    scale_y_continuous("Obligations (2014 Dollars Billions)",labels=comma)
 
+
+
+
+```
+
+
+```{r SubCustomer}
+
+
+ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$SubCustomer.sum),],
+                     Customer=="Defense" & year(Fiscal.Year)<=2014),# subset(ContractSurvival,StartFiscalYear>=2007 & StartFiscalYear<=2013),
+       aes(x=Fiscal.Year,
+           y=Obligation.2014,
+           fill=SubCustomer.sum
+           )
+       )+ 
+    geom_bar(stat="identity") + 
+    facet_wrap( ~ ParentConsolidated)+
+#                 scales="free_y", #The scales actually do stay fixed
+#                 , space="free_y"#But only because the space is free)+
+    scale_x_date("Fiscal Year",
+                 labels=date_format("'%y"),
+                 # breaks="2 years",
+                 minor_breaks="1 year",
+                 breaks=c(as.Date("1990-01-01"),
+                          as.Date("1992-01-01"),
+                          as.Date("1994-01-01"),
+                          as.Date("1996-01-01"),
+                          as.Date("1998-01-01"),
+                          as.Date("2000-01-01"),
+                          as.Date("2002-01-01"),
+                          as.Date("2004-01-01"),
+                          as.Date("2006-01-01"),
+                          as.Date("2008-01-01"),
+                          as.Date("2010-01-01"),
+                          as.Date("2012-01-01"),
+                          as.Date("2014-01-01"))
+                 # breaks=date_breaks("year")
+                 # minor_breaks = "1 year"
+                 # breaks=date_breaks("year"),
+                 # breaks=c(as.Date("1990-01-01"),as.Date("2014-12-31"))
+                 )+
+    theme(axis.text.x=element_text(angle = 90))+
+    scale_y_continuous("Obligations (2014 Dollars Billions)",labels=comma)
 
 
 
