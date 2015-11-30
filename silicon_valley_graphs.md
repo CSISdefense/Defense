@@ -11,6 +11,7 @@ Tuesday, January 13, 2015
 ## Loading required package: grid
 ## Loading required package: lattice
 ## Loading required package: survival
+## Loading required package: splines
 ## Loading required package: Formula
 ## 
 ## Attaching package: 'Hmisc'
@@ -31,15 +32,9 @@ Tuesday, January 13, 2015
 ## 
 ##     here
 ## 
+## Loading required package: knitr
 ## Loading required package: scales
 ## Loading required package: pander
-## Loading required package: xtable
-## 
-## Attaching package: 'xtable'
-## 
-## The following objects are masked from 'package:Hmisc':
-## 
-##     label, label<-
 ```
 
 
@@ -105,11 +100,31 @@ OverallSummary<-
                         .(),
                         summarise,
                         TotalObligation=sum(Obligation.2014,na.rm=TRUE),
-          Avg.1999.1999=sum(ifelse(year(Fiscal.Year)>=1990 & year(Fiscal.Year)<=1999, Obligation.2014,0),na.rm=TRUE)/10,
+          Avg.1990.1999=sum(ifelse(year(Fiscal.Year)>=1990 & year(Fiscal.Year)<=1999, Obligation.2014,0),na.rm=TRUE)/10,
           Avg.2000.2009=sum(ifelse(year(Fiscal.Year)>=2000 & year(Fiscal.Year)<=2009, Obligation.2014,0),na.rm=TRUE)/10,
           Avg.2010.2012=sum(ifelse(year(Fiscal.Year)>=2010 & year(Fiscal.Year)<=2012, Obligation.2014,0),na.rm=TRUE)/3,
           Avg.2013.2014=sum(ifelse(year(Fiscal.Year)>=2013 & year(Fiscal.Year)<=2014, Obligation.2014,0),na.rm=TRUE)/2
 )
+
+
+OverallSummary$BCAavgChange<-OverallSummary$Avg.2013.2014/OverallSummary$Avg.2010.2012-1
+OverallSummary$DrawdownAvgChange<-OverallSummary$Avg.2010.2012/OverallSummary$Avg.2000.2009-1
+OverallSummary$CenturyAvgChange<-OverallSummary$Avg.2000.2009/OverallSummary$Avg.1990.1999-1
+
+panderOptions("table.split.table", Inf) 
+panderOptions("table.style", "rmarkdown")
+pander(OverallSummary)
+```
+
+
+
+|  .id  |  TotalObligation  |  Avg.1990.1999  |  Avg.2000.2009  |  Avg.2010.2012  |  Avg.2013.2014  |  BCAavgChange  |  DrawdownAvgChange  |  CenturyAvgChange  |
+|:-----:|:-----------------:|:---------------:|:---------------:|:---------------:|:---------------:|:--------------:|:-------------------:|:------------------:|
+|  NA   |       18.04       |     0.3084      |     0.5925      |      1.721      |      1.936      |     0.1244     |        1.905        |       0.9213       |
+
+```r
+# , digits=2
+      # ,caption="Overall")
 ```
 
 
@@ -130,14 +145,40 @@ PlatformSummary<-
                         .(PlatformPortfolio),
                         summarise,
                         TotalObligation=sum(Obligation.2014,na.rm=TRUE),
-          Avg.1999.1999=sum(ifelse(year(Fiscal.Year)>=1990 & year(Fiscal.Year)<=1999, Obligation.2014,0),na.rm=TRUE)/10,
+          Avg.1990.1999=sum(ifelse(year(Fiscal.Year)>=1990 & year(Fiscal.Year)<=1999, Obligation.2014,0),na.rm=TRUE)/10,
           Avg.2000.2009=sum(ifelse(year(Fiscal.Year)>=2000 & year(Fiscal.Year)<=2009, Obligation.2014,0),na.rm=TRUE)/10,
           Avg.2010.2012=sum(ifelse(year(Fiscal.Year)>=2010 & year(Fiscal.Year)<=2012, Obligation.2014,0),na.rm=TRUE)/3,
           Avg.2013.2014=sum(ifelse(year(Fiscal.Year)>=2013 & year(Fiscal.Year)<=2014, Obligation.2014,0),na.rm=TRUE)/2
 )
 
+PlatformSummary$BCAavgChange<-PlatformSummary$Avg.2013.2014/PlatformSummary$Avg.2010.2012-1
+PlatformSummary$DrawdownAvgChange<-PlatformSummary$Avg.2010.2012/PlatformSummary$Avg.2000.2009-1
+PlatformSummary$CenturyAvgChange<-PlatformSummary$Avg.2000.2009/PlatformSummary$Avg.1990.1999-1
 
 
+kable(PlatformSummary, digits=2
+      ,caption="Platform")
+```
+
+
+
+Table: Platform
+
+PlatformPortfolio                 TotalObligation   Avg.1990.1999   Avg.2000.2009   Avg.2010.2012   Avg.2013.2014   BCAavgChange   DrawdownAvgChange   CenturyAvgChange
+-------------------------------  ----------------  --------------  --------------  --------------  --------------  -------------  ------------------  -----------------
+Aircraft and Drones                          0.08            0.00            0.00            0.00            0.00           0.36               -0.73              -0.35
+Electronics and Communications              15.55            0.20            0.50            1.60            1.86           0.16                2.20               1.50
+Facilities and Construction                  0.86            0.04            0.03            0.02            0.02          -0.05               -0.20              -0.32
+Land Vehicles                                0.00            0.00            0.00            0.00            0.00          -0.51               -0.82              -0.70
+Missile and Space Systems                    0.26            0.01            0.01            0.01            0.00          -0.84                0.31              -0.11
+Other Products                               0.21            0.01            0.01            0.00            0.01           1.41               -0.66              -0.36
+Other R&D and Knowledge Based                0.93            0.03            0.04            0.07            0.04          -0.43                0.95               0.24
+Other Services                               0.06            0.00            0.00            0.00            0.00          -0.09               -0.63               1.19
+Ships & Submarines                           0.05            0.00            0.00            0.01            0.01           0.16                4.08              -0.33
+Weapons and Ammunition                       0.04            0.00            0.00            0.00            0.00          -0.02               -0.77              -0.92
+Unlabeled                                    0.00            0.00            0.00            0.00            0.00            NaN               -1.00                Inf
+
+```r
 ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$PlatformPortfolioSC),],
                      Customer=="Defense" & year(Fiscal.Year)<=2014),# subset(ContractSurvival,StartFiscalYear>=2007 & StartFiscalYear<=2013),
        aes(x=Fiscal.Year,
@@ -176,42 +217,39 @@ ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$PlatformPortfolioSC
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Removed 8 rows containing missing values
-## (position_stack).
+## Warning: Removed 8 rows containing missing values (position_stack).
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+## Warning: Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Removed 1 rows containing missing values
-## (position_stack).
+## Warning: Removed 1 rows containing missing values (position_stack).
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+## Warning: Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+## Warning: Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Removed 2 rows containing missing values
-## (position_stack).
+## Warning: Removed 2 rows containing missing values (position_stack).
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+## Warning: Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+## Warning: Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+## Warning: Stacking not well defined when ymin != 0
 ```
 
 ![](silicon_valley_graphs_files/figure-html/PlatformPortfolio-1.png) 
@@ -229,20 +267,24 @@ SubCustomerSummary<-
           Avg.2010.2012=sum(ifelse(year(Fiscal.Year)>=2010 & year(Fiscal.Year)<=2012, Obligation.2014,0),na.rm=TRUE)/3,
           Avg.2013.2014=sum(ifelse(year(Fiscal.Year)>=2013 & year(Fiscal.Year)<=2014, Obligation.2014,0),na.rm=TRUE)/2
 )
-SubCustomerSummary$BCAavgChange<-SubCustomerSummary$Avg.2013.2014/SubCustomerSummary$Avg.2010.2012
-SubCustomerSummary$DrawdownAvgChange<-SubCustomerSummary$Avg.2010.2012/SubCustomerSummary$Avg.2000.2009
-SubCustomerSummary$CenturyAvgChange<-SubCustomerSummary$Avg.2000.2009/SubCustomerSummary$Avg.1990.1999
-require(data.table)
+SubCustomerSummary$BCAavgChange<-SubCustomerSummary$Avg.2013.2014/SubCustomerSummary$Avg.2010.2012-1
+SubCustomerSummary$DrawdownAvgChange<-SubCustomerSummary$Avg.2010.2012/SubCustomerSummary$Avg.2000.2009-1
+SubCustomerSummary$CenturyAvgChange<-SubCustomerSummary$Avg.2000.2009/SubCustomerSummary$Avg.1990.1999-1
+
+kable(SubCustomerSummary, digits=2
+      ,caption="Defense Component")
 ```
 
-```
-## Loading required package: data.table
-```
 
-```
-## Warning in library(package, lib.loc = lib.loc, character.only = TRUE,
-## logical.return = TRUE, : there is no package called 'data.table'
-```
+
+Table: Defense Component
+
+SubCustomer.sum    TotalObligation   Avg.1990.1999   Avg.2000.2009   Avg.2010.2012   Avg.2013.2014   BCAavgChange   DrawdownAvgChange   CenturyAvgChange
+----------------  ----------------  --------------  --------------  --------------  --------------  -------------  ------------------  -----------------
+Air Force                     2.04            0.07            0.08            0.12            0.09          -0.26                0.43               0.25
+Army                          2.76            0.06            0.14            0.19            0.11          -0.39                0.36               1.27
+Navy                         10.13            0.13            0.25            1.12            1.48           0.32                3.48               0.93
+Other DoD                     3.11            0.05            0.12            0.29            0.25          -0.13                1.41               1.35
 
 ```r
 ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$SubCustomer.sum),],
@@ -283,98 +325,61 @@ ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$SubCustomer.sum),],
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Removed 8 rows containing missing values
-## (position_stack).
+## Warning: Removed 8 rows containing missing values (position_stack).
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+## Warning: Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Removed 1 rows containing missing values
-## (position_stack).
+## Warning: Removed 1 rows containing missing values (position_stack).
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+## Warning: Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+## Warning: Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Removed 2 rows containing missing values
-## (position_stack).
+## Warning: Removed 2 rows containing missing values (position_stack).
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+## Warning: Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+## Warning: Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+## Warning: Stacking not well defined when ymin != 0
 ```
 
 ![](silicon_valley_graphs_files/figure-html/SubCustomer-1.png) 
 
 
 ```r
-n <- 100
-x <- rnorm(n)
-y <- 2*x + rnorm(n)
-out <- lm(y ~ x)
-library(knitr)
-kable(summary(out)$coef, digits=2)
+# n <- 100
+# x <- rnorm(n)
+# y <- 2*x + rnorm(n)
+# out <- lm(y ~ x)
+# library(pander)
+# panderOptions("digits", 2)
+# pander(out)
 ```
-
-               Estimate   Std. Error   t value   Pr(>|t|)
-------------  ---------  -----------  --------  ---------
-(Intercept)       -0.05         0.11     -0.46       0.65
-x                  1.91         0.10     18.66       0.00
 
 
 ```r
-n <- 100
-x <- rnorm(n)
-y <- 2*x + rnorm(n)
-out <- lm(y ~ x)
-library(pander)
-panderOptions("digits", 2)
-pander(out)
+# n <- 100
+# x <- rnorm(n)
+# y <- 2*x + rnorm(n)
+# out <- lm(y ~ x)
+# library(xtable)
+# tab <- xtable(summary(out)$coef, digits=c(0, 2, 2, 1, 2))
+# print(tab, type="html")
 ```
-
-
---------------------------------------------------------------
-     &nbsp;        Estimate   Std. Error   t value   Pr(>|t|) 
------------------ ---------- ------------ --------- ----------
-      **x**           2          0.12        17      8.8e-32  
-
- **(Intercept)**    -0.061       0.1        -0.59      0.56   
---------------------------------------------------------------
-
-Table: Fitting linear model: y ~ x
-
-
-```r
-n <- 100
-x <- rnorm(n)
-y <- 2*x + rnorm(n)
-out <- lm(y ~ x)
-library(xtable)
-tab <- xtable(summary(out)$coef, digits=c(0, 2, 2, 1, 2))
-print(tab, type="html")
-```
-
-<!-- html table generated in R 3.1.3 by xtable 1.8-0 package -->
-<!-- Wed Nov 25 13:29:13 2015 -->
-<table border=1>
-<tr> <th>  </th> <th> Estimate </th> <th> Std. Error </th> <th> t value </th> <th> Pr(&gt;|t|) </th>  </tr>
-  <tr> <td align="right"> (Intercept) </td> <td align="right"> -0.02 </td> <td align="right"> 0.11 </td> <td align="right"> -0.2 </td> <td align="right"> 0.84 </td> </tr>
-  <tr> <td align="right"> x </td> <td align="right"> 2.11 </td> <td align="right"> 0.11 </td> <td align="right"> 19.0 </td> <td align="right"> 0.00 </td> </tr>
-   </table>
