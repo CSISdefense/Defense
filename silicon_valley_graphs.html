@@ -99,7 +99,8 @@ true
 ##     here
 ## 
 ## Loading required package: knitr
-## Loading required package: scales</code></pre>
+## Loading required package: scales
+## Loading required package: reshape2</code></pre>
 <pre class="r"><code>SiliconTopVendor  &lt;- read.csv(
     paste(&quot;data\\Overall_Location_SP_SiliconValleyTopVendorHistoryPlatformSubCustomer.csv&quot;, sep = &quot;&quot;),
     header = TRUE, sep = &quot;,&quot;, dec = &quot;.&quot;, strip.white = TRUE, 
@@ -147,40 +148,8 @@ ParentOrderList&lt;-c(unlist(as.character(ParentOrderList[ParentOrderList!=&quot
 SiliconTopVendor$ParentConsolidated&lt;-factor(SiliconTopVendor$ParentConsolidated,ParentOrderList)
 
 
-OverallSummary&lt;-
-    ddply(SiliconTopVendor,
-          .(),
-          summarise,
-          Total=sum(Obligation.2014,na.rm=TRUE),
-          Avg.1990.1999=sum(ifelse(year(Fiscal.Year)&gt;=1990 &amp; year(Fiscal.Year)&lt;=1999, Obligation.2014,0),na.rm=TRUE)/10,
-          Avg.2000.2009=sum(ifelse(year(Fiscal.Year)&gt;=2000 &amp; year(Fiscal.Year)&lt;=2009, Obligation.2014,0),na.rm=TRUE)/10,
-          Avg.2010.2012=sum(ifelse(year(Fiscal.Year)&gt;=2010 &amp; year(Fiscal.Year)&lt;=2012, Obligation.2014,0),na.rm=TRUE)/3,
-          Avg.2013.2014=sum(ifelse(year(Fiscal.Year)&gt;=2013 &amp; year(Fiscal.Year)&lt;=2014, Obligation.2014,0),na.rm=TRUE)/2
-    )
 
-
-SummaryKable&lt;-function(df,caption=&quot;&quot;){
-    df$CenturyAvgChange&lt;-sprintf(&quot;%1.1f%%&quot;, 100*(df$Avg.2000.2009/df$Avg.1990.1999-1))
-    df$DrawdownAvgChange&lt;-sprintf(&quot;%1.1f%%&quot;,100*(df$Avg.2010.2012/df$Avg.2000.2009-1))
-    df$BCAavgChange&lt;-sprintf(&quot;%1.1f%%&quot;,100*(df$Avg.2013.2014/df$Avg.2010.2012-1))
-    colnames(df)[colnames(df)==&quot;TotalObligation&quot;]&lt;-&quot;Total&quot;
-    colnames(df)[colnames(df)==&quot;Avg.1990.1999&quot;]&lt;-&quot;Avg. '90-'99&quot;
-    colnames(df)[colnames(df)==&quot;Avg.2000.2009&quot;]&lt;-&quot;Avg. '00-'09&quot;
-    colnames(df)[colnames(df)==&quot;Avg.2010.2012&quot;]&lt;-&quot;Avg. '10-'12&quot;
-    colnames(df)[colnames(df)==&quot;Avg.2013.2014&quot;]&lt;-&quot;Avg. '13-'14&quot;
-    colnames(df)[colnames(df)==&quot;CenturyAvgChange&quot;]&lt;-&quot;Century % Change&quot;
-    colnames(df)[colnames(df)==&quot;DrawdownAvgChange&quot;]&lt;-&quot;Drawdown % Change&quot;
-    colnames(df)[colnames(df)==&quot;BCAavgChange&quot;]&lt;-&quot;BCA % Change&quot;
-    
-    df&lt;-df[,colnames(df)!='.id']
-    if(nrow(df)&gt;1){
-        df$Percent&lt;-sprintf(&quot;%1.1f%%&quot;,100*(df$Total/sum(df$Total)))
-    }
-    df[order(df$Total),]
-    kable(df,digits=2,caption=caption)
-}
-
-SummaryKable(OverallSummary,&quot;Summary&quot;)</code></pre>
+SummaryKable(SiliconTopVendor,NULL,&quot;Summary&quot;)</code></pre>
 <table>
 <caption>Summary</caption>
 <thead>
@@ -208,6 +177,503 @@ SummaryKable(OverallSummary,&quot;Summary&quot;)</code></pre>
 </tr>
 </tbody>
 </table>
+<pre class="r"><code>SummaryKable(SiliconTopVendor,&quot;ParentID&quot;,&quot;Vendor&quot;)</code></pre>
+<table>
+<caption>Vendor</caption>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="left">ParentID</th>
+<th align="right">Total</th>
+<th align="right">Avg. ’90-’99</th>
+<th align="right">Avg. ’00-’09</th>
+<th align="right">Avg. ’10-’12</th>
+<th align="right">Avg. ’13-’14</th>
+<th align="left">Century % Change</th>
+<th align="left">Drawdown % Change</th>
+<th align="left">BCA % Change</th>
+<th align="left">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">9</td>
+<td align="left">HEWLETT PACKARD</td>
+<td align="right">13.04</td>
+<td align="right">0.17</td>
+<td align="right">0.34</td>
+<td align="right">1.49</td>
+<td align="right">1.75</td>
+<td align="left">96.6%</td>
+<td align="left">342.8%</td>
+<td align="left">17.5%</td>
+<td align="left">72.3%</td>
+</tr>
+<tr class="even">
+<td align="left">17</td>
+<td align="left">ORACLE</td>
+<td align="right">2.47</td>
+<td align="right">0.05</td>
+<td align="right">0.14</td>
+<td align="right">0.14</td>
+<td align="right">0.08</td>
+<td align="left">217.8%</td>
+<td align="left">1.0%</td>
+<td align="left">-45.6%</td>
+<td align="left">13.7%</td>
+</tr>
+<tr class="odd">
+<td align="left">2</td>
+<td align="left">AGILENT TECHNOLOGIES</td>
+<td align="right">0.90</td>
+<td align="right">0.00</td>
+<td align="right">0.07</td>
+<td align="right">0.05</td>
+<td align="right">0.03</td>
+<td align="left">Inf%</td>
+<td align="left">-24.1%</td>
+<td align="left">-40.9%</td>
+<td align="left">5.0%</td>
+</tr>
+<tr class="even">
+<td align="left">25</td>
+<td align="left">VARIAN ASSOCIATES</td>
+<td align="right">0.58</td>
+<td align="right">0.06</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="left">-96.6%</td>
+<td align="left">-79.7%</td>
+<td align="left">-100.0%</td>
+<td align="left">3.2%</td>
+</tr>
+<tr class="odd">
+<td align="left">21</td>
+<td align="left">STANFORD UNIVERSITY</td>
+<td align="right">0.39</td>
+<td align="right">0.02</td>
+<td align="right">0.01</td>
+<td align="right">0.02</td>
+<td align="right">0.01</td>
+<td align="left">-12.8%</td>
+<td align="left">7.2%</td>
+<td align="left">-17.3%</td>
+<td align="left">2.2%</td>
+</tr>
+<tr class="even">
+<td align="left">26</td>
+<td align="left">VARIAN MEDICAL SYSTEMS</td>
+<td align="right">0.13</td>
+<td align="right">0.00</td>
+<td align="right">0.01</td>
+<td align="right">0.00</td>
+<td align="right">0.01</td>
+<td align="left">Inf%</td>
+<td align="left">-53.4%</td>
+<td align="left">82.8%</td>
+<td align="left">0.7%</td>
+</tr>
+<tr class="odd">
+<td align="left">6</td>
+<td align="left">CISCO SYSTEMS</td>
+<td align="right">0.13</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.05</td>
+<td align="left">-74.6%</td>
+<td align="left">174.4%</td>
+<td align="left">3426.1%</td>
+<td align="left">0.7%</td>
+</tr>
+<tr class="even">
+<td align="left">10</td>
+<td align="left">INTEL</td>
+<td align="right">0.11</td>
+<td align="right">0.01</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="left">-99.2%</td>
+<td align="left">13.4%</td>
+<td align="left">-57.3%</td>
+<td align="left">0.6%</td>
+</tr>
+<tr class="odd">
+<td align="left">16</td>
+<td align="left">NETWORK APPLIANCE</td>
+<td align="right">0.09</td>
+<td align="right">0.00</td>
+<td align="right">0.01</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="left">353.0%</td>
+<td align="left">-98.5%</td>
+<td align="left">198.6%</td>
+<td align="left">0.5%</td>
+</tr>
+<tr class="even">
+<td align="left">24</td>
+<td align="left">SYNNEX</td>
+<td align="right">0.06</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.01</td>
+<td align="right">0.00</td>
+<td align="left">Inf%</td>
+<td align="left">213.8%</td>
+<td align="left">-42.7%</td>
+<td align="left">0.3%</td>
+</tr>
+<tr class="odd">
+<td align="left">23</td>
+<td align="left">Symantec</td>
+<td align="right">0.05</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="left">1064.1%</td>
+<td align="left">0.8%</td>
+<td align="left">-98.7%</td>
+<td align="left">0.3%</td>
+</tr>
+<tr class="even">
+<td align="left">5</td>
+<td align="left">APPLIED MATERIALS</td>
+<td align="right">0.03</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="left">-72.1%</td>
+<td align="left">-59.3%</td>
+<td align="left">-100.0%</td>
+<td align="left">0.2%</td>
+</tr>
+<tr class="odd">
+<td align="left">28</td>
+<td align="left">VMWARE</td>
+<td align="right">0.02</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="left">Inf%</td>
+<td align="left">-60.6%</td>
+<td align="left">64.4%</td>
+<td align="left">0.1%</td>
+</tr>
+<tr class="even">
+<td align="left">4</td>
+<td align="left">APPLE COMPUTER</td>
+<td align="right">0.02</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="left">594.9%</td>
+<td align="left">-36.7%</td>
+<td align="left">-66.5%</td>
+<td align="left">0.1%</td>
+</tr>
+<tr class="odd">
+<td align="left">15</td>
+<td align="left">LSI</td>
+<td align="right">0.01</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="left">-99.9%</td>
+<td align="left">519.0%</td>
+<td align="left">-100.0%</td>
+<td align="left">0.0%</td>
+</tr>
+<tr class="even">
+<td align="left">13</td>
+<td align="left">KLA TENCOR</td>
+<td align="right">0.01</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="left">186.6%</td>
+<td align="left">-81.6%</td>
+<td align="left">-1.7%</td>
+<td align="left">0.0%</td>
+</tr>
+<tr class="odd">
+<td align="left">7</td>
+<td align="left">GILEAD SCIENCES</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="left">-98.6%</td>
+<td align="left">208.9%</td>
+<td align="left">-100.0%</td>
+<td align="left">0.0%</td>
+</tr>
+<tr class="even">
+<td align="left">22</td>
+<td align="left">SUNPOWER</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="left">127.7%</td>
+<td align="left">-99.3%</td>
+<td align="left">365.7%</td>
+<td align="left">0.0%</td>
+</tr>
+<tr class="odd">
+<td align="left">1</td>
+<td align="left">ADOBE</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="left">2060.8%</td>
+<td align="left">-99.3%</td>
+<td align="left">-100.0%</td>
+<td align="left">0.0%</td>
+</tr>
+<tr class="even">
+<td align="left">11</td>
+<td align="left">INTUIT</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="left">Inf%</td>
+<td align="left">2110.5%</td>
+<td align="left">2.3%</td>
+<td align="left">0.0%</td>
+</tr>
+<tr class="odd">
+<td align="left">19</td>
+<td align="left">SANDISK</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="left">-100.0%</td>
+<td align="left">NaN%</td>
+<td align="left">NaN%</td>
+<td align="left">0.0%</td>
+</tr>
+<tr class="even">
+<td align="left">29</td>
+<td align="left">YAHOO!</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="left">Inf%</td>
+<td align="left">-100.0%</td>
+<td align="left">NaN%</td>
+<td align="left">0.0%</td>
+</tr>
+<tr class="odd">
+<td align="left">27</td>
+<td align="left">VARIAN SEMICONDUCTOR EQUIPMENT</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="left">Inf%</td>
+<td align="left">-100.0%</td>
+<td align="left">NaN%</td>
+<td align="left">0.0%</td>
+</tr>
+<tr class="even">
+<td align="left">8</td>
+<td align="left">GOOGLE</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="left">Inf%</td>
+<td align="left">-84.7%</td>
+<td align="left">-64.3%</td>
+<td align="left">0.0%</td>
+</tr>
+<tr class="odd">
+<td align="left">18</td>
+<td align="left">SALESFORCE COM</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="left">Inf%</td>
+<td align="left">946.3%</td>
+<td align="left">45.7%</td>
+<td align="left">0.0%</td>
+</tr>
+<tr class="even">
+<td align="left">20</td>
+<td align="left">SANMINA</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="left">Inf%</td>
+<td align="left">-100.0%</td>
+<td align="left">NaN%</td>
+<td align="left">0.0%</td>
+</tr>
+<tr class="odd">
+<td align="left">14</td>
+<td align="left">LAM RESEARCH</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="left">-100.0%</td>
+<td align="left">NaN%</td>
+<td align="left">NaN%</td>
+<td align="left">0.0%</td>
+</tr>
+<tr class="even">
+<td align="left">3</td>
+<td align="left">AMD</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="left">Inf%</td>
+<td align="left">-100.0%</td>
+<td align="left">NaN%</td>
+<td align="left">0.0%</td>
+</tr>
+<tr class="odd">
+<td align="left">12</td>
+<td align="left">JUNIPER NETWORKS</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="left">NaN%</td>
+<td align="left">NaN%</td>
+<td align="left">NaN%</td>
+<td align="left">0.0%</td>
+</tr>
+</tbody>
+</table>
+<pre class="r"><code>SummaryKable(SiliconTopVendor,&quot;ParentConsolidated&quot;,&quot;Vendor&quot;)</code></pre>
+<table>
+<caption>Vendor</caption>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="left">ParentConsolidated</th>
+<th align="right">Total</th>
+<th align="right">Avg. ’90-’99</th>
+<th align="right">Avg. ’00-’09</th>
+<th align="right">Avg. ’10-’12</th>
+<th align="right">Avg. ’13-’14</th>
+<th align="left">Century % Change</th>
+<th align="left">Drawdown % Change</th>
+<th align="left">BCA % Change</th>
+<th align="left">Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">1</td>
+<td align="left">HEWLETT PACKARD</td>
+<td align="right">13.04</td>
+<td align="right">0.17</td>
+<td align="right">0.34</td>
+<td align="right">1.49</td>
+<td align="right">1.75</td>
+<td align="left">96.6%</td>
+<td align="left">342.8%</td>
+<td align="left">17.5%</td>
+<td align="left">72.3%</td>
+</tr>
+<tr class="even">
+<td align="left">2</td>
+<td align="left">ORACLE</td>
+<td align="right">2.47</td>
+<td align="right">0.05</td>
+<td align="right">0.14</td>
+<td align="right">0.14</td>
+<td align="right">0.08</td>
+<td align="left">217.8%</td>
+<td align="left">1.0%</td>
+<td align="left">-45.6%</td>
+<td align="left">13.7%</td>
+</tr>
+<tr class="odd">
+<td align="left">3</td>
+<td align="left">AGILENT TECHNOLOGIES</td>
+<td align="right">0.90</td>
+<td align="right">0.00</td>
+<td align="right">0.07</td>
+<td align="right">0.05</td>
+<td align="right">0.03</td>
+<td align="left">Inf%</td>
+<td align="left">-24.1%</td>
+<td align="left">-40.9%</td>
+<td align="left">5.0%</td>
+</tr>
+<tr class="even">
+<td align="left">4</td>
+<td align="left">Varian Associates &amp; Successors</td>
+<td align="right">0.71</td>
+<td align="right">0.06</td>
+<td align="right">0.01</td>
+<td align="right">0.00</td>
+<td align="right">0.01</td>
+<td align="left">-78.9%</td>
+<td align="left">-57.9%</td>
+<td align="left">68.8%</td>
+<td align="left">3.9%</td>
+</tr>
+<tr class="odd">
+<td align="left">6</td>
+<td align="left">Other Major Silicon Valley Vendors</td>
+<td align="right">0.53</td>
+<td align="right">0.02</td>
+<td align="right">0.02</td>
+<td align="right">0.01</td>
+<td align="right">0.06</td>
+<td align="left">-5.6%</td>
+<td align="left">-17.7%</td>
+<td align="left">272.0%</td>
+<td align="left">2.9%</td>
+</tr>
+<tr class="even">
+<td align="left">5</td>
+<td align="left">STANFORD UNIVERSITY</td>
+<td align="right">0.39</td>
+<td align="right">0.02</td>
+<td align="right">0.01</td>
+<td align="right">0.02</td>
+<td align="right">0.01</td>
+<td align="left">-12.8%</td>
+<td align="left">7.2%</td>
+<td align="left">-17.3%</td>
+<td align="left">2.2%</td>
+</tr>
+</tbody>
+</table>
 <pre class="r"><code>SiliconTopVendor&lt;-
     ddply(SiliconTopVendor,
           .(PlatformPortfolio),
@@ -217,23 +683,12 @@ SummaryKable(OverallSummary,&quot;Summary&quot;)</code></pre>
     )
 
 
-PlatformSummary&lt;-
-    ddply(SiliconTopVendor,
-          .(PlatformPortfolio),
-          summarise,
-          TotalObligation=sum(Obligation.2014,na.rm=TRUE),
-          Avg.1990.1999=sum(ifelse(year(Fiscal.Year)&gt;=1990 &amp; year(Fiscal.Year)&lt;=1999, Obligation.2014,0),na.rm=TRUE)/10,
-          Avg.2000.2009=sum(ifelse(year(Fiscal.Year)&gt;=2000 &amp; year(Fiscal.Year)&lt;=2009, Obligation.2014,0),na.rm=TRUE)/10,
-          Avg.2010.2012=sum(ifelse(year(Fiscal.Year)&gt;=2010 &amp; year(Fiscal.Year)&lt;=2012, Obligation.2014,0),na.rm=TRUE)/3,
-          Avg.2013.2014=sum(ifelse(year(Fiscal.Year)&gt;=2013 &amp; year(Fiscal.Year)&lt;=2014, Obligation.2014,0),na.rm=TRUE)/2
-    )
-
-
-SummaryKable(PlatformSummary,caption=&quot;Platform&quot;)</code></pre>
+SummaryKable(SiliconTopVendor,&quot;PlatformPortfolio&quot;,&quot;Platform&quot;)</code></pre>
 <table>
 <caption>Platform</caption>
 <thead>
 <tr class="header">
+<th align="left"></th>
 <th align="left">PlatformPortfolio</th>
 <th align="right">Total</th>
 <th align="right">Avg. ’90-’99</th>
@@ -248,18 +703,7 @@ SummaryKable(PlatformSummary,caption=&quot;Platform&quot;)</code></pre>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">Aircraft and Drones</td>
-<td align="right">0.08</td>
-<td align="right">0.00</td>
-<td align="right">0.00</td>
-<td align="right">0.00</td>
-<td align="right">0.00</td>
-<td align="left">-34.9%</td>
-<td align="left">-72.8%</td>
-<td align="left">36.3%</td>
-<td align="left">0.4%</td>
-</tr>
-<tr class="even">
+<td align="left">2</td>
 <td align="left">Electronics and Communications</td>
 <td align="right">15.55</td>
 <td align="right">0.20</td>
@@ -271,7 +715,21 @@ SummaryKable(PlatformSummary,caption=&quot;Platform&quot;)</code></pre>
 <td align="left">15.7%</td>
 <td align="left">86.2%</td>
 </tr>
+<tr class="even">
+<td align="left">7</td>
+<td align="left">Other R&amp;D and Knowledge Based</td>
+<td align="right">0.93</td>
+<td align="right">0.03</td>
+<td align="right">0.04</td>
+<td align="right">0.07</td>
+<td align="right">0.04</td>
+<td align="left">24.5%</td>
+<td align="left">94.9%</td>
+<td align="left">-42.7%</td>
+<td align="left">5.1%</td>
+</tr>
 <tr class="odd">
+<td align="left">3</td>
 <td align="left">Facilities and Construction</td>
 <td align="right">0.86</td>
 <td align="right">0.04</td>
@@ -284,6 +742,85 @@ SummaryKable(PlatformSummary,caption=&quot;Platform&quot;)</code></pre>
 <td align="left">4.8%</td>
 </tr>
 <tr class="even">
+<td align="left">5</td>
+<td align="left">Missile and Space Systems</td>
+<td align="right">0.26</td>
+<td align="right">0.01</td>
+<td align="right">0.01</td>
+<td align="right">0.01</td>
+<td align="right">0.00</td>
+<td align="left">-11.0%</td>
+<td align="left">31.4%</td>
+<td align="left">-84.1%</td>
+<td align="left">1.5%</td>
+</tr>
+<tr class="odd">
+<td align="left">6</td>
+<td align="left">Other Products</td>
+<td align="right">0.21</td>
+<td align="right">0.01</td>
+<td align="right">0.01</td>
+<td align="right">0.00</td>
+<td align="right">0.01</td>
+<td align="left">-36.3%</td>
+<td align="left">-66.1%</td>
+<td align="left">140.7%</td>
+<td align="left">1.2%</td>
+</tr>
+<tr class="even">
+<td align="left">1</td>
+<td align="left">Aircraft and Drones</td>
+<td align="right">0.08</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="left">-34.9%</td>
+<td align="left">-72.8%</td>
+<td align="left">36.3%</td>
+<td align="left">0.4%</td>
+</tr>
+<tr class="odd">
+<td align="left">8</td>
+<td align="left">Other Services</td>
+<td align="right">0.06</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="left">119.0%</td>
+<td align="left">-63.1%</td>
+<td align="left">-9.0%</td>
+<td align="left">0.3%</td>
+</tr>
+<tr class="even">
+<td align="left">9</td>
+<td align="left">Ships &amp; Submarines</td>
+<td align="right">0.05</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.01</td>
+<td align="right">0.01</td>
+<td align="left">-33.1%</td>
+<td align="left">407.8%</td>
+<td align="left">15.9%</td>
+<td align="left">0.3%</td>
+</tr>
+<tr class="odd">
+<td align="left">10</td>
+<td align="left">Weapons and Ammunition</td>
+<td align="right">0.04</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="left">-92.4%</td>
+<td align="left">-77.1%</td>
+<td align="left">-2.3%</td>
+<td align="left">0.2%</td>
+</tr>
+<tr class="even">
+<td align="left">4</td>
 <td align="left">Land Vehicles</td>
 <td align="right">0.00</td>
 <td align="right">0.00</td>
@@ -296,78 +833,7 @@ SummaryKable(PlatformSummary,caption=&quot;Platform&quot;)</code></pre>
 <td align="left">0.0%</td>
 </tr>
 <tr class="odd">
-<td align="left">Missile and Space Systems</td>
-<td align="right">0.26</td>
-<td align="right">0.01</td>
-<td align="right">0.01</td>
-<td align="right">0.01</td>
-<td align="right">0.00</td>
-<td align="left">-11.0%</td>
-<td align="left">31.4%</td>
-<td align="left">-84.1%</td>
-<td align="left">1.5%</td>
-</tr>
-<tr class="even">
-<td align="left">Other Products</td>
-<td align="right">0.21</td>
-<td align="right">0.01</td>
-<td align="right">0.01</td>
-<td align="right">0.00</td>
-<td align="right">0.01</td>
-<td align="left">-36.3%</td>
-<td align="left">-66.1%</td>
-<td align="left">140.7%</td>
-<td align="left">1.2%</td>
-</tr>
-<tr class="odd">
-<td align="left">Other R&amp;D and Knowledge Based</td>
-<td align="right">0.93</td>
-<td align="right">0.03</td>
-<td align="right">0.04</td>
-<td align="right">0.07</td>
-<td align="right">0.04</td>
-<td align="left">24.5%</td>
-<td align="left">94.9%</td>
-<td align="left">-42.7%</td>
-<td align="left">5.1%</td>
-</tr>
-<tr class="even">
-<td align="left">Other Services</td>
-<td align="right">0.06</td>
-<td align="right">0.00</td>
-<td align="right">0.00</td>
-<td align="right">0.00</td>
-<td align="right">0.00</td>
-<td align="left">119.0%</td>
-<td align="left">-63.1%</td>
-<td align="left">-9.0%</td>
-<td align="left">0.3%</td>
-</tr>
-<tr class="odd">
-<td align="left">Ships &amp; Submarines</td>
-<td align="right">0.05</td>
-<td align="right">0.00</td>
-<td align="right">0.00</td>
-<td align="right">0.01</td>
-<td align="right">0.01</td>
-<td align="left">-33.1%</td>
-<td align="left">407.8%</td>
-<td align="left">15.9%</td>
-<td align="left">0.3%</td>
-</tr>
-<tr class="even">
-<td align="left">Weapons and Ammunition</td>
-<td align="right">0.04</td>
-<td align="right">0.00</td>
-<td align="right">0.00</td>
-<td align="right">0.00</td>
-<td align="right">0.00</td>
-<td align="left">-92.4%</td>
-<td align="left">-77.1%</td>
-<td align="left">-2.3%</td>
-<td align="left">0.2%</td>
-</tr>
-<tr class="odd">
+<td align="left">11</td>
 <td align="left">Unlabeled</td>
 <td align="right">0.00</td>
 <td align="right">0.00</td>
@@ -436,12 +902,77 @@ SummaryKable(PlatformSummary,caption=&quot;Platform&quot;)</code></pre>
           Avg.2010.2012=sum(ifelse(year(Fiscal.Year)&gt;=2010 &amp; year(Fiscal.Year)&lt;=2012, Obligation.2014,0),na.rm=TRUE)/3,
           Avg.2013.2014=sum(ifelse(year(Fiscal.Year)&gt;=2013 &amp; year(Fiscal.Year)&lt;=2014, Obligation.2014,0),na.rm=TRUE)/2
     )
-
-SummaryKable(SubCustomerSummary,&quot;Defense Component&quot;)</code></pre>
+debug(SummaryKable)
+SummaryKable(SiliconTopVendor,&quot;SubCustomer.sum&quot;,&quot;Defense Component&quot;)</code></pre>
+<pre><code>## debugging in: SummaryKable(SiliconTopVendor, &quot;SubCustomer.sum&quot;, &quot;Defense Component&quot;)
+## debug: {
+##     df &lt;- ddply(df, as.quoted(column), summarise, Total = sum(Obligation.2014, 
+##         na.rm = TRUE), Avg.1990.1999 = sum(ifelse(year(Fiscal.Year) &gt;= 
+##         1990 &amp; year(Fiscal.Year) &lt;= 1999, Obligation.2014, 0), 
+##         na.rm = TRUE)/10, Avg.2000.2009 = sum(ifelse(year(Fiscal.Year) &gt;= 
+##         2000 &amp; year(Fiscal.Year) &lt;= 2009, Obligation.2014, 0), 
+##         na.rm = TRUE)/10, Avg.2010.2012 = sum(ifelse(year(Fiscal.Year) &gt;= 
+##         2010 &amp; year(Fiscal.Year) &lt;= 2012, Obligation.2014, 0), 
+##         na.rm = TRUE)/3, Avg.2013.2014 = sum(ifelse(year(Fiscal.Year) &gt;= 
+##         2013 &amp; year(Fiscal.Year) &lt;= 2014, Obligation.2014, 0), 
+##         na.rm = TRUE)/2)
+##     df$CenturyAvgChange &lt;- sprintf(&quot;%1.1f%%&quot;, 100 * (df$Avg.2000.2009/df$Avg.1990.1999 - 
+##         1))
+##     df$DrawdownAvgChange &lt;- sprintf(&quot;%1.1f%%&quot;, 100 * (df$Avg.2010.2012/df$Avg.2000.2009 - 
+##         1))
+##     df$BCAavgChange &lt;- sprintf(&quot;%1.1f%%&quot;, 100 * (df$Avg.2013.2014/df$Avg.2010.2012 - 
+##         1))
+##     colnames(df)[colnames(df) == &quot;TotalObligation&quot;] &lt;- &quot;Total&quot;
+##     colnames(df)[colnames(df) == &quot;Avg.1990.1999&quot;] &lt;- &quot;Avg. '90-'99&quot;
+##     colnames(df)[colnames(df) == &quot;Avg.2000.2009&quot;] &lt;- &quot;Avg. '00-'09&quot;
+##     colnames(df)[colnames(df) == &quot;Avg.2010.2012&quot;] &lt;- &quot;Avg. '10-'12&quot;
+##     colnames(df)[colnames(df) == &quot;Avg.2013.2014&quot;] &lt;- &quot;Avg. '13-'14&quot;
+##     colnames(df)[colnames(df) == &quot;CenturyAvgChange&quot;] &lt;- &quot;Century % Change&quot;
+##     colnames(df)[colnames(df) == &quot;DrawdownAvgChange&quot;] &lt;- &quot;Drawdown % Change&quot;
+##     colnames(df)[colnames(df) == &quot;BCAavgChange&quot;] &lt;- &quot;BCA % Change&quot;
+##     df &lt;- df[, colnames(df) != &quot;.id&quot;]
+##     if (nrow(df) &gt; 1) {
+##         df$Percent &lt;- sprintf(&quot;%1.1f%%&quot;, 100 * (df$Total/sum(df$Total)))
+##     }
+##     df &lt;- df[order(-df$Total), ]
+##     kable(df, digits = 2, caption = caption)
+## }
+## debug: df &lt;- ddply(df, as.quoted(column), summarise, Total = sum(Obligation.2014, 
+##     na.rm = TRUE), Avg.1990.1999 = sum(ifelse(year(Fiscal.Year) &gt;= 
+##     1990 &amp; year(Fiscal.Year) &lt;= 1999, Obligation.2014, 0), na.rm = TRUE)/10, 
+##     Avg.2000.2009 = sum(ifelse(year(Fiscal.Year) &gt;= 2000 &amp; year(Fiscal.Year) &lt;= 
+##         2009, Obligation.2014, 0), na.rm = TRUE)/10, Avg.2010.2012 = sum(ifelse(year(Fiscal.Year) &gt;= 
+##         2010 &amp; year(Fiscal.Year) &lt;= 2012, Obligation.2014, 0), 
+##         na.rm = TRUE)/3, Avg.2013.2014 = sum(ifelse(year(Fiscal.Year) &gt;= 
+##         2013 &amp; year(Fiscal.Year) &lt;= 2014, Obligation.2014, 0), 
+##         na.rm = TRUE)/2)
+## debug: df$CenturyAvgChange &lt;- sprintf(&quot;%1.1f%%&quot;, 100 * (df$Avg.2000.2009/df$Avg.1990.1999 - 
+##     1))
+## debug: df$DrawdownAvgChange &lt;- sprintf(&quot;%1.1f%%&quot;, 100 * (df$Avg.2010.2012/df$Avg.2000.2009 - 
+##     1))
+## debug: df$BCAavgChange &lt;- sprintf(&quot;%1.1f%%&quot;, 100 * (df$Avg.2013.2014/df$Avg.2010.2012 - 
+##     1))
+## debug: colnames(df)[colnames(df) == &quot;TotalObligation&quot;] &lt;- &quot;Total&quot;
+## debug: colnames(df)[colnames(df) == &quot;Avg.1990.1999&quot;] &lt;- &quot;Avg. '90-'99&quot;
+## debug: colnames(df)[colnames(df) == &quot;Avg.2000.2009&quot;] &lt;- &quot;Avg. '00-'09&quot;
+## debug: colnames(df)[colnames(df) == &quot;Avg.2010.2012&quot;] &lt;- &quot;Avg. '10-'12&quot;
+## debug: colnames(df)[colnames(df) == &quot;Avg.2013.2014&quot;] &lt;- &quot;Avg. '13-'14&quot;
+## debug: colnames(df)[colnames(df) == &quot;CenturyAvgChange&quot;] &lt;- &quot;Century % Change&quot;
+## debug: colnames(df)[colnames(df) == &quot;DrawdownAvgChange&quot;] &lt;- &quot;Drawdown % Change&quot;
+## debug: colnames(df)[colnames(df) == &quot;BCAavgChange&quot;] &lt;- &quot;BCA % Change&quot;
+## debug: df &lt;- df[, colnames(df) != &quot;.id&quot;]
+## debug: if (nrow(df) &gt; 1) {
+##     df$Percent &lt;- sprintf(&quot;%1.1f%%&quot;, 100 * (df$Total/sum(df$Total)))
+## }
+## debug: df$Percent &lt;- sprintf(&quot;%1.1f%%&quot;, 100 * (df$Total/sum(df$Total)))
+## debug: df &lt;- df[order(-df$Total), ]
+## debug: kable(df, digits = 2, caption = caption)
+## exiting from: SummaryKable(SiliconTopVendor, &quot;SubCustomer.sum&quot;, &quot;Defense Component&quot;)</code></pre>
 <table>
 <caption>Defense Component</caption>
 <thead>
 <tr class="header">
+<th align="left"></th>
 <th align="left">SubCustomer.sum</th>
 <th align="right">Total</th>
 <th align="right">Avg. ’90-’99</th>
@@ -456,30 +987,7 @@ SummaryKable(SubCustomerSummary,&quot;Defense Component&quot;)</code></pre>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">Air Force</td>
-<td align="right">2.04</td>
-<td align="right">0.07</td>
-<td align="right">0.08</td>
-<td align="right">0.12</td>
-<td align="right">0.09</td>
-<td align="left">24.9%</td>
-<td align="left">43.3%</td>
-<td align="left">-26.4%</td>
-<td align="left">11.3%</td>
-</tr>
-<tr class="even">
-<td align="left">Army</td>
-<td align="right">2.76</td>
-<td align="right">0.06</td>
-<td align="right">0.14</td>
-<td align="right">0.19</td>
-<td align="right">0.11</td>
-<td align="left">127.0%</td>
-<td align="left">36.1%</td>
-<td align="left">-39.1%</td>
-<td align="left">15.3%</td>
-</tr>
-<tr class="odd">
+<td align="left">3</td>
 <td align="left">Navy</td>
 <td align="right">10.13</td>
 <td align="right">0.13</td>
@@ -492,6 +1000,7 @@ SummaryKable(SubCustomerSummary,&quot;Defense Component&quot;)</code></pre>
 <td align="left">56.1%</td>
 </tr>
 <tr class="even">
+<td align="left">4</td>
 <td align="left">Other DoD</td>
 <td align="right">3.11</td>
 <td align="right">0.05</td>
@@ -502,6 +1011,32 @@ SummaryKable(SubCustomerSummary,&quot;Defense Component&quot;)</code></pre>
 <td align="left">141.2%</td>
 <td align="left">-13.4%</td>
 <td align="left">17.2%</td>
+</tr>
+<tr class="odd">
+<td align="left">2</td>
+<td align="left">Army</td>
+<td align="right">2.76</td>
+<td align="right">0.06</td>
+<td align="right">0.14</td>
+<td align="right">0.19</td>
+<td align="right">0.11</td>
+<td align="left">127.0%</td>
+<td align="left">36.1%</td>
+<td align="left">-39.1%</td>
+<td align="left">15.3%</td>
+</tr>
+<tr class="even">
+<td align="left">1</td>
+<td align="left">Air Force</td>
+<td align="right">2.04</td>
+<td align="right">0.07</td>
+<td align="right">0.08</td>
+<td align="right">0.12</td>
+<td align="right">0.09</td>
+<td align="left">24.9%</td>
+<td align="left">43.3%</td>
+<td align="left">-26.4%</td>
+<td align="left">11.3%</td>
 </tr>
 </tbody>
 </table>
