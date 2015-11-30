@@ -28,7 +28,7 @@ strip.text.size<-10
 legend.text.size<-12
 
 # table.text.size<-5.75
-#title.text.size<-10
+title.text.size<-10
 #geom.text.size<-3
 
 source(paste(Path,"lookups.r",sep=""))
