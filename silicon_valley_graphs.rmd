@@ -3,9 +3,9 @@ title: 'DoD Fixed-Price Study: Contract Duration Classification'
 author: "Greg Sanders"
 date: "Tuesday, January 13, 2015"
 output:
-  html_document:
-    keep_md: yes
-    toc: yes
+html_document:
+keep_md: yes
+toc: yes
 ---
 
 ```{r hiddensetup, echo = FALSE}
@@ -14,14 +14,13 @@ require(stringr)
 require(plyr)
 require(Hmisc)
 require(lubridate)
+require(knitr)
 require(scales)
-require(pander)
-require(xtable)
 options(error=recover)
-setwd("K:\\Development\\Defense")
-# setwd("C:\\Users\\Greg Sanders\\Documents\\Development\\Fixed-price")
-Path<-"K:\\2007-01 PROFESSIONAL SERVICES\\R scripts and data\\"
-# Path<-"C:\\Users\\Greg Sanders\\SkyDrive\\Documents\\R Scripts and Data SkyDrive\\"
+# setwd("K:\\Development\\Defense")
+# setwd("C:\\Users\\Greg Sanders\\Documents\\Development\\Defense")
+# Path<-"K:\\2007-01 PROFESSIONAL SERVICES\\R scripts and data\\"
+Path<-"C:\\Users\\Greg Sanders\\SkyDrive\\Documents\\R Scripts and Data SkyDrive\\"
 source(paste(Path,"lookups.r",sep=""))
 
 ```
@@ -32,7 +31,7 @@ SiliconTopVendor  <- read.csv(
     header = TRUE, sep = ",", dec = ".", strip.white = TRUE, 
     na.strings = c("NULL","NA",""),
     stringsAsFactors = TRUE
-    )
+)
 
 #These will probably be moved into apply_lookups at some point
 SiliconTopVendor<-apply_lookups(Path,SiliconTopVendor)
@@ -58,9 +57,9 @@ SiliconTopVendor$ParentConsolidated[SiliconTopVendor$ParentID %in%
     "Varian Associates & Successors"
 
 ParentOrderDF<-ddply(SiliconTopVendor,
-      .(ParentConsolidated),
-      summarise,
-      Obligation.2014=sum(Obligation.2014,na.rm=TRUE)
+                     .(ParentConsolidated),
+                     summarise,
+                     Obligation.2014=sum(Obligation.2014,na.rm=TRUE)
 )
 ParentOrderDF<-ParentOrderDF[order(-ParentOrderDF$Obligation.2014),]
 
@@ -73,14 +72,38 @@ SiliconTopVendor$ParentConsolidated<-factor(SiliconTopVendor$ParentConsolidated,
 
 OverallSummary<-
     ddply(SiliconTopVendor,
-                        .(),
-                        summarise,
-                        TotalObligation=sum(Obligation.2014,na.rm=TRUE),
-          Avg.1999.1999=sum(ifelse(year(Fiscal.Year)>=1990 & year(Fiscal.Year)<=1999, Obligation.2014,0),na.rm=TRUE)/10,
+          .(),
+          summarise,
+          Total=sum(Obligation.2014,na.rm=TRUE),
+          Avg.1990.1999=sum(ifelse(year(Fiscal.Year)>=1990 & year(Fiscal.Year)<=1999, Obligation.2014,0),na.rm=TRUE)/10,
           Avg.2000.2009=sum(ifelse(year(Fiscal.Year)>=2000 & year(Fiscal.Year)<=2009, Obligation.2014,0),na.rm=TRUE)/10,
           Avg.2010.2012=sum(ifelse(year(Fiscal.Year)>=2010 & year(Fiscal.Year)<=2012, Obligation.2014,0),na.rm=TRUE)/3,
           Avg.2013.2014=sum(ifelse(year(Fiscal.Year)>=2013 & year(Fiscal.Year)<=2014, Obligation.2014,0),na.rm=TRUE)/2
-)
+    )
+
+
+SummaryKable<-function(df,caption=""){
+    df$CenturyAvgChange<-sprintf("%1.1f%%", 100*(df$Avg.2000.2009/df$Avg.1990.1999-1))
+    df$DrawdownAvgChange<-sprintf("%1.1f%%",100*(df$Avg.2010.2012/df$Avg.2000.2009-1))
+    df$BCAavgChange<-sprintf("%1.1f%%",100*(df$Avg.2013.2014/df$Avg.2010.2012-1))
+    colnames(df)[colnames(df)=="TotalObligation"]<-"Total"
+    colnames(df)[colnames(df)=="Avg.1990.1999"]<-"Avg. '90-'99"
+    colnames(df)[colnames(df)=="Avg.2000.2009"]<-"Avg. '00-'09"
+    colnames(df)[colnames(df)=="Avg.2010.2012"]<-"Avg. '10-'12"
+    colnames(df)[colnames(df)=="Avg.2013.2014"]<-"Avg. '13-'14"
+    colnames(df)[colnames(df)=="CenturyAvgChange"]<-"Century % Change"
+    colnames(df)[colnames(df)=="DrawdownAvgChange"]<-"Drawdown % Change"
+    colnames(df)[colnames(df)=="BCAavgChange"]<-"BCA % Change"
+    
+    df<-df[,colnames(df)!='.id']
+    if(nrow(df)>1){
+        df$Percent<-sprintf("%1.1f%%",100*(df$Total/sum(df$Total)))
+    }
+    df<-df[order(df$Total),]
+    kable(df,digits=2,caption=caption)
+}
+
+SummaryKable(OverallSummary,"Summary")
 
 
 ```
@@ -90,23 +113,27 @@ OverallSummary<-
 ```{r PlatformPortfolio}
 SiliconTopVendor<-
     ddply(SiliconTopVendor,
-                        .(PlatformPortfolio),
-                        transform,
-                        PlatformPortfolioSC=ifelse(sum(Obligation.2014,na.rm=TRUE)>=0.25,
-                                                  as.character(PlatformPortfolio),"Remaining Platform Categories")
-)
+          .(PlatformPortfolio),
+          transform,
+          PlatformPortfolioSC=ifelse(sum(Obligation.2014,na.rm=TRUE)>=0.25,
+                                     as.character(PlatformPortfolio),"Remaining Platform Categories")
+    )
 
 
 PlatformSummary<-
     ddply(SiliconTopVendor,
-                        .(PlatformPortfolio),
-                        summarise,
-                        TotalObligation=sum(Obligation.2014,na.rm=TRUE),
-          Avg.1999.1999=sum(ifelse(year(Fiscal.Year)>=1990 & year(Fiscal.Year)<=1999, Obligation.2014,0),na.rm=TRUE)/10,
+          .(PlatformPortfolio),
+          summarise,
+          TotalObligation=sum(Obligation.2014,na.rm=TRUE),
+          Avg.1990.1999=sum(ifelse(year(Fiscal.Year)>=1990 & year(Fiscal.Year)<=1999, Obligation.2014,0),na.rm=TRUE)/10,
           Avg.2000.2009=sum(ifelse(year(Fiscal.Year)>=2000 & year(Fiscal.Year)<=2009, Obligation.2014,0),na.rm=TRUE)/10,
           Avg.2010.2012=sum(ifelse(year(Fiscal.Year)>=2010 & year(Fiscal.Year)<=2012, Obligation.2014,0),na.rm=TRUE)/3,
           Avg.2013.2014=sum(ifelse(year(Fiscal.Year)>=2013 & year(Fiscal.Year)<=2014, Obligation.2014,0),na.rm=TRUE)/2
-)
+    )
+
+
+SummaryKable(PlatformSummary,caption="Platform")
+
 
 
 
@@ -115,12 +142,12 @@ ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$PlatformPortfolioSC
        aes(x=Fiscal.Year,
            y=Obligation.2014,
            fill=PlatformPortfolioSC
-           )
-       )+ 
+       )
+)+ 
     geom_bar(stat="identity") + 
     facet_wrap( ~ ParentConsolidated)+
-#                 scales="free_y", #The scales actually do stay fixed
-#                 , space="free_y"#But only because the space is free)+
+    #                 scales="free_y", #The scales actually do stay fixed
+    #                 , space="free_y"#But only because the space is free)+
     scale_x_date("Fiscal Year",
                  labels=date_format("'%y"),
                  # breaks="2 years",
@@ -142,7 +169,7 @@ ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$PlatformPortfolioSC
                  # minor_breaks = "1 year"
                  # breaks=date_breaks("year"),
                  # breaks=c(as.Date("1990-01-01"),as.Date("2014-12-31"))
-                 )+
+    )+
     theme(axis.text.x=element_text(angle = 90))+
     scale_y_continuous("Obligations (2014 Dollars Billions)",labels=comma)
 
@@ -157,30 +184,29 @@ ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$PlatformPortfolioSC
 
 SubCustomerSummary<-
     ddply(SiliconTopVendor,
-                        .(SubCustomer.sum),
-                        summarise,
-                        TotalObligation=sum(Obligation.2014,na.rm=TRUE),
+          .(SubCustomer.sum),
+          summarise,
+          TotalObligation=sum(Obligation.2014,na.rm=TRUE),
           Avg.1990.1999=sum(ifelse(year(Fiscal.Year)>=1990 & year(Fiscal.Year)<=1999, Obligation.2014,0),na.rm=TRUE)/10,
           Avg.2000.2009=sum(ifelse(year(Fiscal.Year)>=2000 & year(Fiscal.Year)<=2009, Obligation.2014,0),na.rm=TRUE)/10,
           Avg.2010.2012=sum(ifelse(year(Fiscal.Year)>=2010 & year(Fiscal.Year)<=2012, Obligation.2014,0),na.rm=TRUE)/3,
           Avg.2013.2014=sum(ifelse(year(Fiscal.Year)>=2013 & year(Fiscal.Year)<=2014, Obligation.2014,0),na.rm=TRUE)/2
-)
-SubCustomerSummary$BCAavgChange<-SubCustomerSummary$Avg.2013.2014/SubCustomerSummary$Avg.2010.2012
-SubCustomerSummary$DrawdownAvgChange<-SubCustomerSummary$Avg.2010.2012/SubCustomerSummary$Avg.2000.2009
-SubCustomerSummary$CenturyAvgChange<-SubCustomerSummary$Avg.2000.2009/SubCustomerSummary$Avg.1990.1999
-require(data.table)
+    )
+
+SummaryKable(SubCustomerSummary,"Defense Component")
+
 
 ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$SubCustomer.sum),],
                      Customer=="Defense" & year(Fiscal.Year)<=2014),# subset(ContractSurvival,StartFiscalYear>=2007 & StartFiscalYear<=2013),
        aes(x=Fiscal.Year,
            y=Obligation.2014,
            fill=SubCustomer.sum
-           )
-       )+ 
+       )
+)+ 
     geom_bar(stat="identity") + 
     facet_wrap( ~ ParentConsolidated)+
-#                 scales="free_y", #The scales actually do stay fixed
-#                 , space="free_y"#But only because the space is free)+
+    #                 scales="free_y", #The scales actually do stay fixed
+    #                 , space="free_y"#But only because the space is free)+
     scale_x_date("Fiscal Year",
                  labels=date_format("'%y"),
                  # breaks="2 years",
@@ -202,7 +228,7 @@ ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$SubCustomer.sum),],
                  # minor_breaks = "1 year"
                  # breaks=date_breaks("year"),
                  # breaks=c(as.Date("1990-01-01"),as.Date("2014-12-31"))
-                 )+
+    )+
     theme(axis.text.x=element_text(angle = 90))+
     scale_y_continuous("Obligations (2014 Dollars Billions)",labels=comma)
 
@@ -211,31 +237,22 @@ ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$SubCustomer.sum),],
 
 ```
 
-```{r kable}
-n <- 100
-x <- rnorm(n)
-y <- 2*x + rnorm(n)
-out <- lm(y ~ x)
-library(knitr)
-kable(summary(out)$coef, digits=2)
-```
-
 ```{r pander}
-n <- 100
-x <- rnorm(n)
-y <- 2*x + rnorm(n)
-out <- lm(y ~ x)
-library(pander)
-panderOptions("digits", 2)
-pander(out)
+# n <- 100
+# x <- rnorm(n)
+# y <- 2*x + rnorm(n)
+# out <- lm(y ~ x)
+# library(pander)
+# panderOptions("digits", 2)
+# pander(out)
 ```
 
 ```{r xtable, results="asis"}
-n <- 100
-x <- rnorm(n)
-y <- 2*x + rnorm(n)
-out <- lm(y ~ x)
-library(xtable)
-tab <- xtable(summary(out)$coef, digits=c(0, 2, 2, 1, 2))
-print(tab, type="html")
+# n <- 100
+# x <- rnorm(n)
+# y <- 2*x + rnorm(n)
+# out <- lm(y ~ x)
+# library(xtable)
+# tab <- xtable(summary(out)$coef, digits=c(0, 2, 2, 1, 2))
+# print(tab, type="html")
 ```
