@@ -11,7 +11,6 @@ Tuesday, January 13, 2015
 ## Loading required package: grid
 ## Loading required package: lattice
 ## Loading required package: survival
-## Loading required package: splines
 ## Loading required package: Formula
 ## 
 ## Attaching package: 'Hmisc'
@@ -34,7 +33,7 @@ Tuesday, January 13, 2015
 ## 
 ## Loading required package: knitr
 ## Loading required package: scales
-## Loading required package: pander
+## Loading required package: reshape2
 ```
 
 
@@ -44,7 +43,7 @@ SiliconTopVendor  <- read.csv(
     header = TRUE, sep = ",", dec = ".", strip.white = TRUE, 
     na.strings = c("NULL","NA",""),
     stringsAsFactors = TRUE
-    )
+)
 
 #These will probably be moved into apply_lookups at some point
 SiliconTopVendor<-apply_lookups(Path,SiliconTopVendor)
@@ -82,9 +81,9 @@ SiliconTopVendor$ParentConsolidated[SiliconTopVendor$ParentID %in%
     "Varian Associates & Successors"
 
 ParentOrderDF<-ddply(SiliconTopVendor,
-      .(ParentConsolidated),
-      summarise,
-      Obligation.2014=sum(Obligation.2014,na.rm=TRUE)
+                     .(ParentConsolidated),
+                     summarise,
+                     Obligation.2014=sum(Obligation.2014,na.rm=TRUE)
 )
 ParentOrderDF<-ParentOrderDF[order(-ParentOrderDF$Obligation.2014),]
 
@@ -95,37 +94,74 @@ ParentOrderList<-c(unlist(as.character(ParentOrderList[ParentOrderList!="Other M
 SiliconTopVendor$ParentConsolidated<-factor(SiliconTopVendor$ParentConsolidated,ParentOrderList)
 
 
-OverallSummary<-
-    ddply(SiliconTopVendor,
-                        .(),
-                        summarise,
-                        TotalObligation=sum(Obligation.2014,na.rm=TRUE),
-          Avg.1990.1999=sum(ifelse(year(Fiscal.Year)>=1990 & year(Fiscal.Year)<=1999, Obligation.2014,0),na.rm=TRUE)/10,
-          Avg.2000.2009=sum(ifelse(year(Fiscal.Year)>=2000 & year(Fiscal.Year)<=2009, Obligation.2014,0),na.rm=TRUE)/10,
-          Avg.2010.2012=sum(ifelse(year(Fiscal.Year)>=2010 & year(Fiscal.Year)<=2012, Obligation.2014,0),na.rm=TRUE)/3,
-          Avg.2013.2014=sum(ifelse(year(Fiscal.Year)>=2013 & year(Fiscal.Year)<=2014, Obligation.2014,0),na.rm=TRUE)/2
-)
 
-
-OverallSummary$BCAavgChange<-OverallSummary$Avg.2013.2014/OverallSummary$Avg.2010.2012-1
-OverallSummary$DrawdownAvgChange<-OverallSummary$Avg.2010.2012/OverallSummary$Avg.2000.2009-1
-OverallSummary$CenturyAvgChange<-OverallSummary$Avg.2000.2009/OverallSummary$Avg.1990.1999-1
-
-panderOptions("table.split.table", Inf) 
-panderOptions("table.style", "rmarkdown")
-pander(OverallSummary)
+SummaryKable(SiliconTopVendor,NULL,"Summary")
 ```
 
 
 
-|  .id  |  TotalObligation  |  Avg.1990.1999  |  Avg.2000.2009  |  Avg.2010.2012  |  Avg.2013.2014  |  BCAavgChange  |  DrawdownAvgChange  |  CenturyAvgChange  |
-|:-----:|:-----------------:|:---------------:|:---------------:|:---------------:|:---------------:|:--------------:|:-------------------:|:------------------:|
-|  NA   |       18.04       |     0.3084      |     0.5925      |      1.721      |      1.936      |     0.1244     |        1.905        |       0.9213       |
+Table: Summary
+
+ Total   Avg. '90-'99   Avg. '00-'09   Avg. '10-'12   Avg. '13-'14  Century % Change   Drawdown % Change   BCA % Change 
+------  -------------  -------------  -------------  -------------  -----------------  ------------------  -------------
+ 18.04           0.31           0.59           1.72           1.94  92.1%              190.5%              12.4%        
 
 ```r
-# , digits=2
-      # ,caption="Overall")
+SummaryKable(SiliconTopVendor,"ParentID","Vendor")
 ```
+
+
+
+Table: Vendor
+
+     ParentID                          Total   Avg. '90-'99   Avg. '00-'09   Avg. '10-'12   Avg. '13-'14  Century % Change   Drawdown % Change   BCA % Change   Percent 
+---  -------------------------------  ------  -------------  -------------  -------------  -------------  -----------------  ------------------  -------------  --------
+9    HEWLETT PACKARD                   13.04           0.17           0.34           1.49           1.75  96.6%              342.8%              17.5%          72.3%   
+17   ORACLE                             2.47           0.05           0.14           0.14           0.08  217.8%             1.0%                -45.6%         13.7%   
+2    AGILENT TECHNOLOGIES               0.90           0.00           0.07           0.05           0.03  Inf%               -24.1%              -40.9%         5.0%    
+25   VARIAN ASSOCIATES                  0.58           0.06           0.00           0.00           0.00  -96.6%             -79.7%              -100.0%        3.2%    
+21   STANFORD UNIVERSITY                0.39           0.02           0.01           0.02           0.01  -12.8%             7.2%                -17.3%         2.2%    
+26   VARIAN MEDICAL SYSTEMS             0.13           0.00           0.01           0.00           0.01  Inf%               -53.4%              82.8%          0.7%    
+6    CISCO SYSTEMS                      0.13           0.00           0.00           0.00           0.05  -74.6%             174.4%              3426.1%        0.7%    
+10   INTEL                              0.11           0.01           0.00           0.00           0.00  -99.2%             13.4%               -57.3%         0.6%    
+16   NETWORK APPLIANCE                  0.09           0.00           0.01           0.00           0.00  353.0%             -98.5%              198.6%         0.5%    
+24   SYNNEX                             0.06           0.00           0.00           0.01           0.00  Inf%               213.8%              -42.7%         0.3%    
+23   Symantec                           0.05           0.00           0.00           0.00           0.00  1064.1%            0.8%                -98.7%         0.3%    
+5    APPLIED MATERIALS                  0.03           0.00           0.00           0.00           0.00  -72.1%             -59.3%              -100.0%        0.2%    
+28   VMWARE                             0.02           0.00           0.00           0.00           0.00  Inf%               -60.6%              64.4%          0.1%    
+4    APPLE COMPUTER                     0.02           0.00           0.00           0.00           0.00  594.9%             -36.7%              -66.5%         0.1%    
+15   LSI                                0.01           0.00           0.00           0.00           0.00  -99.9%             519.0%              -100.0%        0.0%    
+13   KLA TENCOR                         0.01           0.00           0.00           0.00           0.00  186.6%             -81.6%              -1.7%          0.0%    
+7    GILEAD SCIENCES                    0.00           0.00           0.00           0.00           0.00  -98.6%             208.9%              -100.0%        0.0%    
+22   SUNPOWER                           0.00           0.00           0.00           0.00           0.00  127.7%             -99.3%              365.7%         0.0%    
+1    ADOBE                              0.00           0.00           0.00           0.00           0.00  2060.8%            -99.3%              -100.0%        0.0%    
+11   INTUIT                             0.00           0.00           0.00           0.00           0.00  Inf%               2110.5%             2.3%           0.0%    
+19   SANDISK                            0.00           0.00           0.00           0.00           0.00  -100.0%            NaN%                NaN%           0.0%    
+29   YAHOO!                             0.00           0.00           0.00           0.00           0.00  Inf%               -100.0%             NaN%           0.0%    
+27   VARIAN SEMICONDUCTOR EQUIPMENT     0.00           0.00           0.00           0.00           0.00  Inf%               -100.0%             NaN%           0.0%    
+8    GOOGLE                             0.00           0.00           0.00           0.00           0.00  Inf%               -84.7%              -64.3%         0.0%    
+18   SALESFORCE COM                     0.00           0.00           0.00           0.00           0.00  Inf%               946.3%              45.7%          0.0%    
+20   SANMINA                            0.00           0.00           0.00           0.00           0.00  Inf%               -100.0%             NaN%           0.0%    
+14   LAM RESEARCH                       0.00           0.00           0.00           0.00           0.00  -100.0%            NaN%                NaN%           0.0%    
+3    AMD                                0.00           0.00           0.00           0.00           0.00  Inf%               -100.0%             NaN%           0.0%    
+12   JUNIPER NETWORKS                   0.00           0.00           0.00           0.00           0.00  NaN%               NaN%                NaN%           0.0%    
+
+```r
+SummaryKable(SiliconTopVendor,"ParentConsolidated","Vendor")
+```
+
+
+
+Table: Vendor
+
+     ParentConsolidated                    Total   Avg. '90-'99   Avg. '00-'09   Avg. '10-'12   Avg. '13-'14  Century % Change   Drawdown % Change   BCA % Change   Percent 
+---  -----------------------------------  ------  -------------  -------------  -------------  -------------  -----------------  ------------------  -------------  --------
+1    HEWLETT PACKARD                       13.04           0.17           0.34           1.49           1.75  96.6%              342.8%              17.5%          72.3%   
+2    ORACLE                                 2.47           0.05           0.14           0.14           0.08  217.8%             1.0%                -45.6%         13.7%   
+3    AGILENT TECHNOLOGIES                   0.90           0.00           0.07           0.05           0.03  Inf%               -24.1%              -40.9%         5.0%    
+4    Varian Associates & Successors         0.71           0.06           0.01           0.00           0.01  -78.9%             -57.9%              68.8%          3.9%    
+6    Other Major Silicon Valley Vendors     0.53           0.02           0.02           0.01           0.06  -5.6%              -17.7%              272.0%         2.9%    
+5    STANFORD UNIVERSITY                    0.39           0.02           0.01           0.02           0.01  -12.8%             7.2%                -17.3%         2.2%    
 
 
 
@@ -133,50 +169,33 @@ pander(OverallSummary)
 ```r
 SiliconTopVendor<-
     ddply(SiliconTopVendor,
-                        .(PlatformPortfolio),
-                        transform,
-                        PlatformPortfolioSC=ifelse(sum(Obligation.2014,na.rm=TRUE)>=0.25,
-                                                  as.character(PlatformPortfolio),"Remaining Platform Categories")
-)
+          .(PlatformPortfolio),
+          transform,
+          PlatformPortfolioSC=ifelse(sum(Obligation.2014,na.rm=TRUE)>=0.25,
+                                     as.character(PlatformPortfolio),"Remaining Platform Categories")
+    )
 
 
-PlatformSummary<-
-    ddply(SiliconTopVendor,
-                        .(PlatformPortfolio),
-                        summarise,
-                        TotalObligation=sum(Obligation.2014,na.rm=TRUE),
-          Avg.1990.1999=sum(ifelse(year(Fiscal.Year)>=1990 & year(Fiscal.Year)<=1999, Obligation.2014,0),na.rm=TRUE)/10,
-          Avg.2000.2009=sum(ifelse(year(Fiscal.Year)>=2000 & year(Fiscal.Year)<=2009, Obligation.2014,0),na.rm=TRUE)/10,
-          Avg.2010.2012=sum(ifelse(year(Fiscal.Year)>=2010 & year(Fiscal.Year)<=2012, Obligation.2014,0),na.rm=TRUE)/3,
-          Avg.2013.2014=sum(ifelse(year(Fiscal.Year)>=2013 & year(Fiscal.Year)<=2014, Obligation.2014,0),na.rm=TRUE)/2
-)
-
-PlatformSummary$BCAavgChange<-PlatformSummary$Avg.2013.2014/PlatformSummary$Avg.2010.2012-1
-PlatformSummary$DrawdownAvgChange<-PlatformSummary$Avg.2010.2012/PlatformSummary$Avg.2000.2009-1
-PlatformSummary$CenturyAvgChange<-PlatformSummary$Avg.2000.2009/PlatformSummary$Avg.1990.1999-1
-
-
-kable(PlatformSummary, digits=2
-      ,caption="Platform")
+SummaryKable(SiliconTopVendor,"PlatformPortfolio","Platform")
 ```
 
 
 
 Table: Platform
 
-PlatformPortfolio                 TotalObligation   Avg.1990.1999   Avg.2000.2009   Avg.2010.2012   Avg.2013.2014   BCAavgChange   DrawdownAvgChange   CenturyAvgChange
--------------------------------  ----------------  --------------  --------------  --------------  --------------  -------------  ------------------  -----------------
-Aircraft and Drones                          0.08            0.00            0.00            0.00            0.00           0.36               -0.73              -0.35
-Electronics and Communications              15.55            0.20            0.50            1.60            1.86           0.16                2.20               1.50
-Facilities and Construction                  0.86            0.04            0.03            0.02            0.02          -0.05               -0.20              -0.32
-Land Vehicles                                0.00            0.00            0.00            0.00            0.00          -0.51               -0.82              -0.70
-Missile and Space Systems                    0.26            0.01            0.01            0.01            0.00          -0.84                0.31              -0.11
-Other Products                               0.21            0.01            0.01            0.00            0.01           1.41               -0.66              -0.36
-Other R&D and Knowledge Based                0.93            0.03            0.04            0.07            0.04          -0.43                0.95               0.24
-Other Services                               0.06            0.00            0.00            0.00            0.00          -0.09               -0.63               1.19
-Ships & Submarines                           0.05            0.00            0.00            0.01            0.01           0.16                4.08              -0.33
-Weapons and Ammunition                       0.04            0.00            0.00            0.00            0.00          -0.02               -0.77              -0.92
-Unlabeled                                    0.00            0.00            0.00            0.00            0.00            NaN               -1.00                Inf
+     PlatformPortfolio                 Total   Avg. '90-'99   Avg. '00-'09   Avg. '10-'12   Avg. '13-'14  Century % Change   Drawdown % Change   BCA % Change   Percent 
+---  -------------------------------  ------  -------------  -------------  -------------  -------------  -----------------  ------------------  -------------  --------
+2    Electronics and Communications    15.55           0.20           0.50           1.60           1.86  149.7%             220.2%              15.7%          86.2%   
+7    Other R&D and Knowledge Based      0.93           0.03           0.04           0.07           0.04  24.5%              94.9%               -42.7%         5.1%    
+3    Facilities and Construction        0.86           0.04           0.03           0.02           0.02  -32.0%             -20.5%              -4.6%          4.8%    
+5    Missile and Space Systems          0.26           0.01           0.01           0.01           0.00  -11.0%             31.4%               -84.1%         1.5%    
+6    Other Products                     0.21           0.01           0.01           0.00           0.01  -36.3%             -66.1%              140.7%         1.2%    
+1    Aircraft and Drones                0.08           0.00           0.00           0.00           0.00  -34.9%             -72.8%              36.3%          0.4%    
+8    Other Services                     0.06           0.00           0.00           0.00           0.00  119.0%             -63.1%              -9.0%          0.3%    
+9    Ships & Submarines                 0.05           0.00           0.00           0.01           0.01  -33.1%             407.8%              15.9%          0.3%    
+10   Weapons and Ammunition             0.04           0.00           0.00           0.00           0.00  -92.4%             -77.1%              -2.3%          0.2%    
+4    Land Vehicles                      0.00           0.00           0.00           0.00           0.00  -69.9%             -82.2%              -50.8%         0.0%    
+11   Unlabeled                          0.00           0.00           0.00           0.00           0.00  Inf%               -100.0%             NaN%           0.0%    
 
 ```r
 ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$PlatformPortfolioSC),],
@@ -184,12 +203,12 @@ ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$PlatformPortfolioSC
        aes(x=Fiscal.Year,
            y=Obligation.2014,
            fill=PlatformPortfolioSC
-           )
-       )+ 
+       )
+)+ 
     geom_bar(stat="identity") + 
     facet_wrap( ~ ParentConsolidated)+
-#                 scales="free_y", #The scales actually do stay fixed
-#                 , space="free_y"#But only because the space is free)+
+    #                 scales="free_y", #The scales actually do stay fixed
+    #                 , space="free_y"#But only because the space is free)+
     scale_x_date("Fiscal Year",
                  labels=date_format("'%y"),
                  # breaks="2 years",
@@ -211,45 +230,48 @@ ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$PlatformPortfolioSC
                  # minor_breaks = "1 year"
                  # breaks=date_breaks("year"),
                  # breaks=c(as.Date("1990-01-01"),as.Date("2014-12-31"))
-                 )+
+    )+
     theme(axis.text.x=element_text(angle = 90))+
     scale_y_continuous("Obligations (2014 Dollars Billions)",labels=comma)
 ```
 
 ```
-## Warning: Removed 8 rows containing missing values (position_stack).
+## Warning in loop_apply(n, do.ply): Removed 8 rows containing missing values
+## (position_stack).
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning: Removed 1 rows containing missing values (position_stack).
+## Warning in loop_apply(n, do.ply): Removed 1 rows containing missing values
+## (position_stack).
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning: Removed 2 rows containing missing values (position_stack).
+## Warning in loop_apply(n, do.ply): Removed 2 rows containing missing values
+## (position_stack).
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ![](silicon_valley_graphs_files/figure-html/PlatformPortfolio-1.png) 
@@ -257,34 +279,19 @@ ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$PlatformPortfolioSC
 
 
 ```r
-SubCustomerSummary<-
-    ddply(SiliconTopVendor,
-                        .(SubCustomer.sum),
-                        summarise,
-                        TotalObligation=sum(Obligation.2014,na.rm=TRUE),
-          Avg.1990.1999=sum(ifelse(year(Fiscal.Year)>=1990 & year(Fiscal.Year)<=1999, Obligation.2014,0),na.rm=TRUE)/10,
-          Avg.2000.2009=sum(ifelse(year(Fiscal.Year)>=2000 & year(Fiscal.Year)<=2009, Obligation.2014,0),na.rm=TRUE)/10,
-          Avg.2010.2012=sum(ifelse(year(Fiscal.Year)>=2010 & year(Fiscal.Year)<=2012, Obligation.2014,0),na.rm=TRUE)/3,
-          Avg.2013.2014=sum(ifelse(year(Fiscal.Year)>=2013 & year(Fiscal.Year)<=2014, Obligation.2014,0),na.rm=TRUE)/2
-)
-SubCustomerSummary$BCAavgChange<-SubCustomerSummary$Avg.2013.2014/SubCustomerSummary$Avg.2010.2012-1
-SubCustomerSummary$DrawdownAvgChange<-SubCustomerSummary$Avg.2010.2012/SubCustomerSummary$Avg.2000.2009-1
-SubCustomerSummary$CenturyAvgChange<-SubCustomerSummary$Avg.2000.2009/SubCustomerSummary$Avg.1990.1999-1
-
-kable(SubCustomerSummary, digits=2
-      ,caption="Defense Component")
+SummaryKable(SiliconTopVendor,"SubCustomer.sum","Defense Component")
 ```
 
 
 
 Table: Defense Component
 
-SubCustomer.sum    TotalObligation   Avg.1990.1999   Avg.2000.2009   Avg.2010.2012   Avg.2013.2014   BCAavgChange   DrawdownAvgChange   CenturyAvgChange
-----------------  ----------------  --------------  --------------  --------------  --------------  -------------  ------------------  -----------------
-Air Force                     2.04            0.07            0.08            0.12            0.09          -0.26                0.43               0.25
-Army                          2.76            0.06            0.14            0.19            0.11          -0.39                0.36               1.27
-Navy                         10.13            0.13            0.25            1.12            1.48           0.32                3.48               0.93
-Other DoD                     3.11            0.05            0.12            0.29            0.25          -0.13                1.41               1.35
+     SubCustomer.sum    Total   Avg. '90-'99   Avg. '00-'09   Avg. '10-'12   Avg. '13-'14  Century % Change   Drawdown % Change   BCA % Change   Percent 
+---  ----------------  ------  -------------  -------------  -------------  -------------  -----------------  ------------------  -------------  --------
+3    Navy               10.13           0.13           0.25           1.12           1.48  93.4%              348.2%              31.9%          56.1%   
+4    Other DoD           3.11           0.05           0.12           0.29           0.25  135.4%             141.2%              -13.4%         17.2%   
+2    Army                2.76           0.06           0.14           0.19           0.11  127.0%             36.1%               -39.1%         15.3%   
+1    Air Force           2.04           0.07           0.08           0.12           0.09  24.9%              43.3%               -26.4%         11.3%   
 
 ```r
 ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$SubCustomer.sum),],
@@ -292,12 +299,12 @@ ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$SubCustomer.sum),],
        aes(x=Fiscal.Year,
            y=Obligation.2014,
            fill=SubCustomer.sum
-           )
-       )+ 
+       )
+)+ 
     geom_bar(stat="identity") + 
     facet_wrap( ~ ParentConsolidated)+
-#                 scales="free_y", #The scales actually do stay fixed
-#                 , space="free_y"#But only because the space is free)+
+    #                 scales="free_y", #The scales actually do stay fixed
+    #                 , space="free_y"#But only because the space is free)+
     scale_x_date("Fiscal Year",
                  labels=date_format("'%y"),
                  # breaks="2 years",
@@ -319,67 +326,93 @@ ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$SubCustomer.sum),],
                  # minor_breaks = "1 year"
                  # breaks=date_breaks("year"),
                  # breaks=c(as.Date("1990-01-01"),as.Date("2014-12-31"))
-                 )+
+    )+
     theme(axis.text.x=element_text(angle = 90))+
     scale_y_continuous("Obligations (2014 Dollars Billions)",labels=comma)
 ```
 
 ```
-## Warning: Removed 8 rows containing missing values (position_stack).
+## Warning in loop_apply(n, do.ply): Removed 8 rows containing missing values
+## (position_stack).
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning: Removed 1 rows containing missing values (position_stack).
+## Warning in loop_apply(n, do.ply): Removed 1 rows containing missing values
+## (position_stack).
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning: Removed 2 rows containing missing values (position_stack).
+## Warning in loop_apply(n, do.ply): Removed 2 rows containing missing values
+## (position_stack).
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ![](silicon_valley_graphs_files/figure-html/SubCustomer-1.png) 
 
 
-```r
-# n <- 100
-# x <- rnorm(n)
-# y <- 2*x + rnorm(n)
-# out <- lm(y ~ x)
-# library(pander)
-# panderOptions("digits", 2)
-# pander(out)
-```
 
 
 ```r
-# n <- 100
-# x <- rnorm(n)
-# y <- 2*x + rnorm(n)
-# out <- lm(y ~ x)
-# library(xtable)
-# tab <- xtable(summary(out)$coef, digits=c(0, 2, 2, 1, 2))
-# print(tab, type="html")
+DefenseContract  <- read.csv(
+    paste("data\\Defense_Location_SP_SiliconValleyCompetitionVendorSizeHistoryBucketPlatformSubCustomer.csv", sep = ""),
+    header = TRUE, sep = ",", dec = ".", strip.white = TRUE, 
+    na.strings = c("NULL","NA",""),
+    stringsAsFactors = TRUE
+)
+
+#These will probably be moved into apply_lookups at some point
+DefenseContract<-apply_lookups(Path,DefenseContract)
 ```
+
+```
+## Joining by: Customer, SubCustomer
+## Joining by: ProductOrServiceArea
+## Joining by: PlatformPortfolio
+## Joining by: Vendor.Size
+## Joining by: CompetitionClassification, ClassifyNumberOfOffers
+## Joining by: Fiscal.Year
+```
+
+```
+## Warning in apply_lookups(Path, DefenseContract): NaNs produced
+```
+
+```r
+SiliconContract<-subset(DefenseContract,Customer=="Defense" & IsSiliconValley==1)
+
+SummaryKable(DefenseContract,"IsSiliconValley","Summary")
+```
+
+
+
+Table: Summary
+
+      IsSiliconValley     Total   Avg. '90-'99   Avg. '00-'09   Avg. '10-'12   Avg. '13-'14  Century % Change   Drawdown % Change   BCA % Change   Percent 
+---  ----------------  --------  -------------  -------------  -------------  -------------  -----------------  ------------------  -------------  --------
+2                  NA   6544.62         184.03         298.11         377.49         295.38  62.0%              26.6%               -21.8%         99.7%   
+1                   1     18.04           0.31           0.59           1.72           1.94  92.1%              190.5%              12.4%          0.3%    
+
+
