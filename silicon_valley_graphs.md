@@ -232,7 +232,8 @@ ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$PlatformPortfolioSC
                  # breaks=c(as.Date("1990-01-01"),as.Date("2014-12-31"))
     )+
     theme(axis.text.x=element_text(angle = 90))+
-    scale_y_continuous("Obligations (2014 Dollars Billions)",labels=comma)
+    scale_y_continuous("Obligations (2014 Dollars Billions)",labels=comma)+
+    theme(legend.position="bottom")
 ```
 
 ```
@@ -328,7 +329,8 @@ ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$SubCustomer.sum),],
                  # breaks=c(as.Date("1990-01-01"),as.Date("2014-12-31"))
     )+
     theme(axis.text.x=element_text(angle = 90))+
-    scale_y_continuous("Obligations (2014 Dollars Billions)",labels=comma)
+    scale_y_continuous("Obligations (2014 Dollars Billions)",labels=comma)+
+    theme(legend.position="bottom")
 ```
 
 ```
@@ -414,5 +416,4 @@ Table: Summary
 ---  ----------------  --------  -------------  -------------  -------------  -------------  -----------------  ------------------  -------------  --------
 2                  NA   6544.62         184.03         298.11         377.49         295.38  62.0%              26.6%               -21.8%         99.7%   
 1                   1     18.04           0.31           0.59           1.72           1.94  92.1%              190.5%              12.4%          0.3%    
-
 

@@ -17,9 +17,9 @@ require(knitr)
 require(scales)
 options(error=recover)
 # setwd("K:\\Development\\Defense")
-setwd("C:\\Users\\Greg Sanders\\Documents\\Development\\Defense")
-# Path<-"K:\\2007-01 PROFESSIONAL SERVICES\\R scripts and data\\"
-Path<-"C:\\Users\\Greg Sanders\\SkyDrive\\Documents\\R Scripts and Data SkyDrive\\"
+# setwd("C:\\Users\\Greg Sanders\\Documents\\Development\\Defense")
+Path<-"K:\\2007-01 PROFESSIONAL SERVICES\\R scripts and data\\"
+# Path<-"C:\\Users\\Greg Sanders\\SkyDrive\\Documents\\R Scripts and Data SkyDrive\\"
 source(paste(Path,"lookups.r",sep=""))
 source(paste(Path,"helper.r",sep=""))
 
@@ -154,7 +154,8 @@ ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$PlatformPortfolioSC
                  # breaks=c(as.Date("1990-01-01"),as.Date("2014-12-31"))
     )+
     theme(axis.text.x=element_text(angle = 90))+
-    scale_y_continuous("Obligations (2014 Dollars Billions)",labels=comma)
+    scale_y_continuous("Obligations (2014 Dollars Billions)",labels=comma)+
+    theme(legend.position="bottom")
 
 
 
@@ -200,7 +201,8 @@ ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$SubCustomer.sum),],
                  # breaks=c(as.Date("1990-01-01"),as.Date("2014-12-31"))
     )+
     theme(axis.text.x=element_text(angle = 90))+
-    scale_y_continuous("Obligations (2014 Dollars Billions)",labels=comma)
+    scale_y_continuous("Obligations (2014 Dollars Billions)",labels=comma)+
+    theme(legend.position="bottom")
 
 ```
 
@@ -225,127 +227,3 @@ SummaryKable(DefenseContract,"IsSiliconValley","Summary")
 
 ```
 
-
-
-
-```{r ProductServiceArea}
-
-
-
-ggplot(data = subset(SiliconContract[order(SiliconContract$SubCustomer.sum),],
-                     Customer=="Defense" & year(Fiscal.Year)<=2014),# subset(ContractSurvival,StartFiscalYear>=2007 & StartFiscalYear<=2013),
-       aes(x=Fiscal.Year,
-           y=Obligation.2014,
-           fill=SubCustomer.sum
-       )
-)+ 
-    geom_bar(stat="identity") + 
-    facet_wrap( ~ ServicesCategory.sum)+
-    #                 scales="free_y", #The scales actually do stay fixed
-    #                 , space="free_y"#But only because the space is free)+
-    scale_x_date("Fiscal Year",
-                 labels=date_format("'%y"),
-                 # breaks="2 years",
-                 minor_breaks="1 year",
-                 breaks=c(as.Date("1990-01-01"),
-                          as.Date("1992-01-01"),
-                          as.Date("1994-01-01"),
-                          as.Date("1996-01-01"),
-                          as.Date("1998-01-01"),
-                          as.Date("2000-01-01"),
-                          as.Date("2002-01-01"),
-                          as.Date("2004-01-01"),
-                          as.Date("2006-01-01"),
-                          as.Date("2008-01-01"),
-                          as.Date("2010-01-01"),
-                          as.Date("2012-01-01"),
-                          as.Date("2014-01-01"))
-                 # breaks=date_breaks("year")
-                 # minor_breaks = "1 year"
-                 # breaks=date_breaks("year"),
-                 # breaks=c(as.Date("1990-01-01"),as.Date("2014-12-31"))
-    )+
-    theme(axis.text.x=element_text(angle = 90))+
-    scale_y_continuous("Obligations (2014 Dollars Billions)",labels=comma)
-
-
-
-
-LatticePercentLinePlot("Area"
-                       ,"Product/Service/R&D"
-                       ,"Fiscal Year"
-                       ,"Obligations (2014 Dollars Billions)"
-                       ,Coloration
-                       ,1
-                       ,1
-                       ,SiliconContract
-                       ,1
-                       ,"Fiscal.Year"
-                       ,"Obligation.2014"
-                       ,"ServicesCategory.sum"
-                       ,VAR.facet.primary="SubCustomer.sum"
-                       # ,VAR.facet.secondary=NA
-)
-
-SummaryKable(SiliconContract,"ServicesCategory.sum","Vendor")
-
-
-
-ggplot(data = subset(SiliconContract[order(SiliconContract$SubCustomer.sum),],
-                     Customer=="Defense" & year(Fiscal.Year)<=2014),# subset(ContractSurvival,StartFiscalYear>=2007 & StartFiscalYear<=2013),
-       aes(x=Fiscal.Year,
-           y=Obligation.2014,
-           fill=SubCustomer.sum
-       )
-)+ 
-    geom_bar(stat="identity") + 
-    facet_wrap( ~ ProductOrServiceArea)+
-    #                 scales="free_y", #The scales actually do stay fixed
-    #                 , space="free_y"#But only because the space is free)+
-    scale_x_date("Fiscal Year",
-                 labels=date_format("'%y"),
-                 # breaks="2 years",
-                 minor_breaks="1 year",
-                 breaks=c(as.Date("1990-01-01"),
-                          as.Date("1992-01-01"),
-                          as.Date("1994-01-01"),
-                          as.Date("1996-01-01"),
-                          as.Date("1998-01-01"),
-                          as.Date("2000-01-01"),
-                          as.Date("2002-01-01"),
-                          as.Date("2004-01-01"),
-                          as.Date("2006-01-01"),
-                          as.Date("2008-01-01"),
-                          as.Date("2010-01-01"),
-                          as.Date("2012-01-01"),
-                          as.Date("2014-01-01"))
-                 # breaks=date_breaks("year")
-                 # minor_breaks = "1 year"
-                 # breaks=date_breaks("year"),
-                 # breaks=c(as.Date("1990-01-01"),as.Date("2014-12-31"))
-    )+
-    theme(axis.text.x=element_text(angle = 90))+
-    scale_y_continuous("Obligations (2014 Dollars Billions)",labels=comma)
-
-
-
-
-LatticePercentLinePlot("Product Or Service Area"
-                       ,"Product Or Service Area"
-                       ,"Fiscal Year"
-                       ,"Obligations (2014 Dollars Billions)"
-                       ,Coloration
-                       ,1
-                       ,1
-                       ,SiliconContract
-                       ,1
-                       ,"Fiscal.Year"
-                       ,"Obligation.2014"
-                       ,"ProductOrServiceArea"
-                       # ,VAR.facet.primary=NA
-                       # ,VAR.facet.secondary=NA
-)
-
-SummaryKable(SiliconContract,"ProductOrServiceArea","Vendor")
-
-```
