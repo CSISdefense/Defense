@@ -2,10 +2,12 @@
 title: 'DoD Fixed-Price Study: Contract Duration Classification'
 author: "Greg Sanders"
 date: "Tuesday, January 13, 2015"
-output:
-html_document:
-keep_md: yes
-toc: yes
+output: 
+  html_document: 
+    fig_caption: yes
+    keep_md: yes
+    number_sections: yes
+    toc: yes
 ---
 
 ```{r hiddensetup, echo = FALSE}
@@ -140,20 +142,7 @@ ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$PlatformPortfolioSC
 
 ```{r SubCustomer}
 
-
-SubCustomerSummary<-
-    ddply(SiliconTopVendor,
-          .(SubCustomer.sum),
-          summarise,
-          TotalObligation=sum(Obligation.2014,na.rm=TRUE),
-          Avg.1990.1999=sum(ifelse(year(Fiscal.Year)>=1990 & year(Fiscal.Year)<=1999, Obligation.2014,0),na.rm=TRUE)/10,
-          Avg.2000.2009=sum(ifelse(year(Fiscal.Year)>=2000 & year(Fiscal.Year)<=2009, Obligation.2014,0),na.rm=TRUE)/10,
-          Avg.2010.2012=sum(ifelse(year(Fiscal.Year)>=2010 & year(Fiscal.Year)<=2012, Obligation.2014,0),na.rm=TRUE)/3,
-          Avg.2013.2014=sum(ifelse(year(Fiscal.Year)>=2013 & year(Fiscal.Year)<=2014, Obligation.2014,0),na.rm=TRUE)/2
-    )
-debug(SummaryKable)
 SummaryKable(SiliconTopVendor,"SubCustomer.sum","Defense Component")
-
 
 ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$SubCustomer.sum),],
                      Customer=="Defense" & year(Fiscal.Year)<=2014),# subset(ContractSurvival,StartFiscalYear>=2007 & StartFiscalYear<=2013),
@@ -319,7 +308,7 @@ ggplot(data = subset(SiliconContract[order(SiliconContract$SubCustomer.sum),],
 
 
 
-debug(LatticePercentLinePlot)
+
 LatticePercentLinePlot("Area"
                                  ,"Product/Service/R&D"
                                  ,"Fiscal Year"
@@ -332,7 +321,7 @@ LatticePercentLinePlot("Area"
                                  ,"Fiscal.Year"
                                  ,"Obligation.2014"
                                  ,"ServicesCategory.sum"
-                                 ,VAR.facet.secondary="SubCustomer.sum"
+                                 ,VAR.facet.primary="SubCustomer.sum"
                                  # ,VAR.facet.secondary=NA
 )
 
@@ -444,42 +433,42 @@ ggplot(data = subset(SiliconContract[order(SiliconContract$SubCustomer.sum),],
 SummaryKable(SiliconContract,"Competition.detail","Vendor")
 
 
-
-ggplot(data = subset(SiliconContract[order(SiliconContract$SubCustomer.sum),],
-                     Customer=="Defense" & year(Fiscal.Year)<=2014),# subset(ContractSurvival,StartFiscalYear>=2007 & StartFiscalYear<=2013),
-       aes(x=Fiscal.Year,
-           y=Obligation.2014,
-           fill=SubCustomer.sum
-       )
-)+ 
-    geom_bar(stat="identity") + 
-    facet_wrap( ~ Competition.sum)+
-    #                 scales="free_y", #The scales actually do stay fixed
-    #                 , space="free_y"#But only because the space is free)+
-    scale_x_date("Fiscal Year",
-                 labels=date_format("'%y"),
-                 # breaks="2 years",
-                 minor_breaks="1 year",
-                 breaks=c(as.Date("1990-01-01"),
-                          as.Date("1992-01-01"),
-                          as.Date("1994-01-01"),
-                          as.Date("1996-01-01"),
-                          as.Date("1998-01-01"),
-                          as.Date("2000-01-01"),
-                          as.Date("2002-01-01"),
-                          as.Date("2004-01-01"),
-                          as.Date("2006-01-01"),
-                          as.Date("2008-01-01"),
-                          as.Date("2010-01-01"),
-                          as.Date("2012-01-01"),
-                          as.Date("2014-01-01"))
-                 # breaks=date_breaks("year")
-                 # minor_breaks = "1 year"
-                 # breaks=date_breaks("year"),
-                 # breaks=c(as.Date("1990-01-01"),as.Date("2014-12-31"))
-    )+
-    theme(axis.text.x=element_text(angle = 90))+
-    scale_y_continuous("Obligations (2014 Dollars Billions)",labels=comma)
+# 
+# ggplot(data = subset(SiliconContract[order(SiliconContract$SubCustomer.sum),],
+#                      Customer=="Defense" & year(Fiscal.Year)<=2014),# subset(ContractSurvival,StartFiscalYear>=2007 & StartFiscalYear<=2013),
+#        aes(x=Fiscal.Year,
+#            y=Obligation.2014,
+#            fill=SubCustomer.sum
+#        )
+# )+ 
+#     geom_bar(stat="identity") + 
+#     facet_wrap( ~ Competition.sum)+
+#     #                 scales="free_y", #The scales actually do stay fixed
+#     #                 , space="free_y"#But only because the space is free)+
+#     scale_x_date("Fiscal Year",
+#                  labels=date_format("'%y"),
+#                  # breaks="2 years",
+#                  minor_breaks="1 year",
+#                  breaks=c(as.Date("1990-01-01"),
+#                           as.Date("1992-01-01"),
+#                           as.Date("1994-01-01"),
+#                           as.Date("1996-01-01"),
+#                           as.Date("1998-01-01"),
+#                           as.Date("2000-01-01"),
+#                           as.Date("2002-01-01"),
+#                           as.Date("2004-01-01"),
+#                           as.Date("2006-01-01"),
+#                           as.Date("2008-01-01"),
+#                           as.Date("2010-01-01"),
+#                           as.Date("2012-01-01"),
+#                           as.Date("2014-01-01"))
+#                  # breaks=date_breaks("year")
+#                  # minor_breaks = "1 year"
+#                  # breaks=date_breaks("year"),
+#                  # breaks=c(as.Date("1990-01-01"),as.Date("2014-12-31"))
+#     )+
+#     theme(axis.text.x=element_text(angle = 90))+
+#     scale_y_continuous("Obligations (2014 Dollars Billions)",labels=comma)
 
 SummaryKable(SiliconContract,"Competition.sum","Vendor")
 
