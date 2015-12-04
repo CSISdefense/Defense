@@ -18,8 +18,8 @@ require(scales)
 options(error=recover)
 # setwd("K:\\Development\\Defense")
 # setwd("C:\\Users\\Greg Sanders\\Documents\\Development\\Defense")
-Path<-"K:\\2007-01 PROFESSIONAL SERVICES\\R scripts and data\\"
-# Path<-"C:\\Users\\Greg Sanders\\SkyDrive\\Documents\\R Scripts and Data SkyDrive\\"
+# Path<-"K:\\2007-01 PROFESSIONAL SERVICES\\R scripts and data\\"
+Path<-"C:\\Users\\Greg Sanders\\SkyDrive\\Documents\\R Scripts and Data SkyDrive\\"
 source(paste(Path,"lookups.r",sep=""))
 source(paste(Path,"helper.r",sep=""))
 
@@ -95,7 +95,6 @@ ParentOrderList<-c(unlist(as.character(ParentOrderList[ParentOrderList!="Other M
 SiliconTopVendor$ParentConsolidated<-factor(SiliconTopVendor$ParentConsolidated,ParentOrderList)
 
 
-
 SummaryKable(SiliconTopVendor,NULL,"Summary")
 
 SummaryKable(SiliconTopVendor,"ParentID","Vendor")
@@ -104,7 +103,82 @@ SummaryKable(SiliconTopVendor,"ParentConsolidated","Vendor")
 
 ```
 
+```{r VendorPeaks}
+SiliconTopVendor<-ddply(SiliconTopVendor,
+                    .(ParentID,Fiscal.Year),
+                    transform,
+                    Annual.Obligation.2014=sum(Obligation.2014,na.rm=TRUE)
+    )
 
+SiliconTopVendor<-ddply(SiliconTopVendor,
+                        .(ParentID),
+                        transform,
+                        ParentPeak=ifelse(max(Annual.Obligation.2014,na.rm=TRUE)>=0.01,
+                                                  as.character(ParentID),"Other Major Silicon Valley Vendors")
+)
+
+
+ParentOrderDF<-ddply(SiliconTopVendor,
+                     .(ParentPeak),
+                     summarise,
+                     Max.Obligation.2014=max(Annual.Obligation.2014,na.rm=TRUE)
+)
+ParentOrderDF<-ParentOrderDF[order(-ParentOrderDF$Max.Obligation.2014),]
+
+ParentOrderList<-ParentOrderDF$ParentPeak
+
+SiliconTopVendor$ParentPeak<-ordered(SiliconTopVendor$ParentPeak,ParentOrderList)
+
+
+# SiliconTopVendorAnnual$Obligation.2014<-SiliconTopVendorAnnual$Obligation.2014*1000000000
+
+ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$SubCustomer.sum),],
+                     ParentID!="HEWLETT PACKARD"),
+       aes(x=Fiscal.Year,
+           y=Obligation.2014,
+           fill=SubCustomer.sum
+       )
+)+ 
+    geom_bar(stat="identity") + 
+    facet_grid(  ParentPeak ~.,
+                    scales="free_y", #The scales actually do stay fixed
+                     space="free_y")+#But only because the space is free)
+    scale_x_date("Fiscal Year",
+                 labels=date_format("'%y"),
+                 # breaks="2 years",
+                 minor_breaks="1 year",
+                 breaks=c(as.Date("1990-01-01"),
+                          as.Date("1992-01-01"),
+                          as.Date("1994-01-01"),
+                          as.Date("1996-01-01"),
+                          as.Date("1998-01-01"),
+                          as.Date("2000-01-01"),
+                          as.Date("2002-01-01"),
+                          as.Date("2004-01-01"),
+                          as.Date("2006-01-01"),
+                          as.Date("2008-01-01"),
+                          as.Date("2010-01-01"),
+                          as.Date("2012-01-01"),
+                          as.Date("2014-01-01"))
+                 # breaks=date_breaks("year")
+                 # minor_breaks = "1 year"
+                 # breaks=date_breaks("year"),
+                 # breaks=c(as.Date("1990-01-01"),as.Date("2014-12-31"))
+    )+
+    theme(axis.text.x=element_text(angle = 90))+
+    scale_y_continuous("Obligations (2014 Billions Dollars)",labels=comma)+
+    theme(legend.position="bottom")+theme(strip.text.y=element_text(size=axis.text.size,family="times",face="bold",angle=0))+
+    geom_hline(y=0.03, color="blue")+geom_hline(y=0.05, color="red")
+#      geom_rect(ymin = 0.02, ymax = 0.05, 
+#               xmin = -Inf, xmax = Inf, 
+#               fill = 'blue',
+#               aes(alpha=0.25)
+
+
+
+SummaryKable(SiliconTopVendor,"ParentPeak","Vendor",3)
+
+``` 
 
 ```{r PlatformPortfolio}
 SiliconTopVendor<-
