@@ -11,7 +11,6 @@ Tuesday, January 13, 2015
 ## Loading required package: grid
 ## Loading required package: lattice
 ## Loading required package: survival
-## Loading required package: splines
 ## Loading required package: Formula
 ## 
 ## Attaching package: 'Hmisc'
@@ -95,6 +94,11 @@ ParentOrderList<-c(unlist(as.character(ParentOrderList[ParentOrderList!="Other M
 SiliconTopVendor$ParentConsolidated<-factor(SiliconTopVendor$ParentConsolidated,ParentOrderList)
 
 
+SiliconTopVendor$HPandOther<-"Other Silicon Valley Major Vendors"
+SiliconTopVendor$HPandOther[SiliconTopVendor$ParentID =="HEWLETT PACKARD"]<-"HEWLETT PACKARD"
+SiliconTopVendor$HPandOther<-ordered(SiliconTopVendor$HPandOther,
+                                     c("Other Silicon Valley Major Vendors","HEWLETT PACKARD"))
+
 SummaryKable(SiliconTopVendor,NULL,"Summary")
 ```
 
@@ -163,6 +167,19 @@ Table: Vendor
 6    Other Major Silicon Valley Vendors     0.525   0.101      2014          0.019          0.016          0.024          0.015          0.055  -39.2%              272.0%         2.9%    
 5    STANFORD UNIVERSITY                    0.394   0.043      2005          0.017          0.016          0.010          0.016          0.013  61.5%               -17.3%         2.2%    
 
+```r
+SummaryKable(SiliconTopVendor,"HPandOther","HP and Other")
+```
+
+
+
+Table: HP and Other
+
+     HPandOther                             Total     Max   MaxYear   Avg. '90-'99   Avg. '00-'07   Avg. '08-'09   Avg. '10-'12   Avg. '13-'14  Drawdown % Change   BCA % Change   Percent 
+---  -----------------------------------  -------  ------  --------  -------------  -------------  -------------  -------------  -------------  ------------------  -------------  --------
+2    HEWLETT PACKARD                       13.041   2.059      2011          0.171          0.161          1.037          1.489          1.750  43.7%               17.5%          72.3%   
+1    Other Silicon Valley Major Vendors     5.003   0.311      2000          0.137          0.266          0.217          0.232          0.186  7.0%                -19.9%         27.7%   
+
 
 ```r
 SiliconTopVendor<-ddply(SiliconTopVendor,
@@ -193,7 +210,7 @@ SiliconTopVendor$ParentPeak<-ordered(SiliconTopVendor$ParentPeak,ParentOrderList
 
 # SiliconTopVendorAnnual$Obligation.2014<-SiliconTopVendorAnnual$Obligation.2014*1000000000
 
-ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$SubCustomer.sum),],
+ggplot(data = subset(arrange(SiliconTopVendor,SubCustomer.sum),
                      ParentID!="HEWLETT PACKARD"),
        aes(x=Fiscal.Year,
            y=Obligation.2014,
@@ -233,59 +250,61 @@ ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$SubCustomer.sum),],
 ```
 
 ```
-## Warning: Removed 1 rows containing missing values (position_stack).
+## Warning in loop_apply(n, do.ply): Removed 1 rows containing missing values
+## (position_stack).
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning: Removed 2 rows containing missing values (position_stack).
+## Warning in loop_apply(n, do.ply): Removed 2 rows containing missing values
+## (position_stack).
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
@@ -364,8 +383,7 @@ Table: Platform
 11   Unlabeled                          0.000   0.000      2003          0.000          0.000          0.000          0.000          0.000  NaN%                NaN%           0.0%    
 
 ```r
-ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$PlatformPortfolioSC),],
-                     Customer=="Defense" & year(Fiscal.Year)<=2014),# subset(ContractSurvival,StartFiscalYear>=2007 & StartFiscalYear<=2013),
+ggplot(data = arrange(SiliconTopVendor,PlatformPortfolioSC),
        aes(x=Fiscal.Year,
            y=Obligation.2014,
            fill=PlatformPortfolioSC
@@ -403,39 +421,42 @@ ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$PlatformPortfolioSC
 ```
 
 ```
-## Warning: Removed 8 rows containing missing values (position_stack).
+## Warning in loop_apply(n, do.ply): Removed 8 rows containing missing values
+## (position_stack).
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning: Removed 1 rows containing missing values (position_stack).
+## Warning in loop_apply(n, do.ply): Removed 1 rows containing missing values
+## (position_stack).
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning: Removed 2 rows containing missing values (position_stack).
+## Warning in loop_apply(n, do.ply): Removed 2 rows containing missing values
+## (position_stack).
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ![](silicon_valley_graphs_files/figure-html/PlatformPortfolio-1.png) 
@@ -497,42 +518,110 @@ ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$SubCustomer.sum),],
 ```
 
 ```
-## Warning: Removed 8 rows containing missing values (position_stack).
+## Warning in loop_apply(n, do.ply): Removed 8 rows containing missing values
+## (position_stack).
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning: Removed 1 rows containing missing values (position_stack).
+## Warning in loop_apply(n, do.ply): Removed 1 rows containing missing values
+## (position_stack).
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning: Removed 2 rows containing missing values (position_stack).
+## Warning in loop_apply(n, do.ply): Removed 2 rows containing missing values
+## (position_stack).
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ![](silicon_valley_graphs_files/figure-html/SubCustomer-1.png) 
+
+```r
+ggplot(data = arrange(SiliconTopVendor,HPandOther),
+       aes(x=Fiscal.Year,
+           y=Obligation.2014,
+           fill=HPandOther
+       )
+)+ 
+    geom_bar(stat="identity") + 
+    facet_wrap( ~ SubCustomer.sum)+
+    scale_x_date("Fiscal Year",
+                 labels=date_format("'%y"),
+                 # breaks="2 years",
+                 minor_breaks="1 year",
+                 breaks=c(as.Date("1990-01-01"),
+                          as.Date("1992-01-01"),
+                          as.Date("1994-01-01"),
+                          as.Date("1996-01-01"),
+                          as.Date("1998-01-01"),
+                          as.Date("2000-01-01"),
+                          as.Date("2002-01-01"),
+                          as.Date("2004-01-01"),
+                          as.Date("2006-01-01"),
+                          as.Date("2008-01-01"),
+                          as.Date("2010-01-01"),
+                          as.Date("2012-01-01"),
+                          as.Date("2014-01-01"))
+    )+
+    theme(axis.text.x=element_text(angle = 90))+
+    scale_y_continuous("Obligations (2014 Dollars Billions)",labels=comma)+
+    theme(legend.position="bottom")
+```
+
+```
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+```
+
+```
+## Warning in loop_apply(n, do.ply): Removed 2 rows containing missing values
+## (position_stack).
+```
+
+```
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+```
+
+```
+## Warning in loop_apply(n, do.ply): Removed 8 rows containing missing values
+## (position_stack).
+```
+
+```
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+```
+
+```
+## Warning in loop_apply(n, do.ply): Removed 1 rows containing missing values
+## (position_stack).
+```
+
+```
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+```
+
+![](silicon_valley_graphs_files/figure-html/SubCustomer-2.png) 
 
 
 
