@@ -18,8 +18,8 @@ require(scales)
 options(error=recover)
 # setwd("K:\\Development\\Defense")
 # setwd("C:\\Users\\Greg Sanders\\Documents\\Development\\Defense")
-# Path<-"K:\\2007-01 PROFESSIONAL SERVICES\\R scripts and data\\"
-Path<-"C:\\Users\\Greg Sanders\\SkyDrive\\Documents\\R Scripts and Data SkyDrive\\"
+Path<-"K:\\2007-01 PROFESSIONAL SERVICES\\R scripts and data\\"
+# Path<-"C:\\Users\\Greg Sanders\\SkyDrive\\Documents\\R Scripts and Data SkyDrive\\"
 source(paste(Path,"lookups.r",sep=""))
 source(paste(Path,"helper.r",sep=""))
 
@@ -95,10 +95,16 @@ ParentOrderList<-c(unlist(as.character(ParentOrderList[ParentOrderList!="Other M
 SiliconTopVendor$ParentConsolidated<-factor(SiliconTopVendor$ParentConsolidated,ParentOrderList)
 
 
+SiliconTopVendor$HPandOther<-"Other Silicon Valley Major Vendors"
+SiliconTopVendor$HPandOther[SiliconTopVendor$ParentID =="HEWLETT PACKARD"]<-"HEWLETT PACKARD"
+SiliconTopVendor$HPandOther<-ordered(SiliconTopVendor$HPandOther,
+                                     c("Other Silicon Valley Major Vendors","HEWLETT PACKARD"))
+
 SummaryKable(SiliconTopVendor,NULL,"Summary")
 
 SummaryKable(SiliconTopVendor,"ParentID","Vendor")
 SummaryKable(SiliconTopVendor,"ParentConsolidated","Vendor")
+SummaryKable(SiliconTopVendor,"HPandOther","HP and Other")
 
 
 ```
@@ -132,7 +138,7 @@ SiliconTopVendor$ParentPeak<-ordered(SiliconTopVendor$ParentPeak,ParentOrderList
 
 # SiliconTopVendorAnnual$Obligation.2014<-SiliconTopVendorAnnual$Obligation.2014*1000000000
 
-ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$SubCustomer.sum),],
+ggplot(data = subset(arrange(SiliconTopVendor,SubCustomer.sum),
                      ParentID!="HEWLETT PACKARD"),
        aes(x=Fiscal.Year,
            y=Obligation.2014,
@@ -194,8 +200,7 @@ SummaryKable(SiliconTopVendor,"PlatformPortfolio","Platform")
 
 
 
-ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$PlatformPortfolioSC),],
-                     Customer=="Defense" & year(Fiscal.Year)<=2014),# subset(ContractSurvival,StartFiscalYear>=2007 & StartFiscalYear<=2013),
+ggplot(data = arrange(SiliconTopVendor,PlatformPortfolioSC),
        aes(x=Fiscal.Year,
            y=Obligation.2014,
            fill=PlatformPortfolioSC
@@ -273,6 +278,38 @@ ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$SubCustomer.sum),],
                  # minor_breaks = "1 year"
                  # breaks=date_breaks("year"),
                  # breaks=c(as.Date("1990-01-01"),as.Date("2014-12-31"))
+    )+
+    theme(axis.text.x=element_text(angle = 90))+
+    scale_y_continuous("Obligations (2014 Dollars Billions)",labels=comma)+
+    theme(legend.position="bottom")
+
+
+
+ggplot(data = arrange(SiliconTopVendor,HPandOther),
+       aes(x=Fiscal.Year,
+           y=Obligation.2014,
+           fill=HPandOther
+       )
+)+ 
+    geom_bar(stat="identity") + 
+    facet_wrap( ~ SubCustomer.sum)+
+    scale_x_date("Fiscal Year",
+                 labels=date_format("'%y"),
+                 # breaks="2 years",
+                 minor_breaks="1 year",
+                 breaks=c(as.Date("1990-01-01"),
+                          as.Date("1992-01-01"),
+                          as.Date("1994-01-01"),
+                          as.Date("1996-01-01"),
+                          as.Date("1998-01-01"),
+                          as.Date("2000-01-01"),
+                          as.Date("2002-01-01"),
+                          as.Date("2004-01-01"),
+                          as.Date("2006-01-01"),
+                          as.Date("2008-01-01"),
+                          as.Date("2010-01-01"),
+                          as.Date("2012-01-01"),
+                          as.Date("2014-01-01"))
     )+
     theme(axis.text.x=element_text(angle = 90))+
     scale_y_continuous("Obligations (2014 Dollars Billions)",labels=comma)+
