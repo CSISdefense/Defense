@@ -11,6 +11,7 @@ Tuesday, January 13, 2015
 ## Loading required package: grid
 ## Loading required package: lattice
 ## Loading required package: survival
+## Loading required package: splines
 ## Loading required package: Formula
 ## 
 ## Attaching package: 'Hmisc'
@@ -2215,6 +2216,7 @@ ggplot(data = subset(arrange(SiliconTopVendor,SubCustomer.sum),
 ```
 
 ```
+<<<<<<< HEAD
 ## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
@@ -2225,63 +2227,70 @@ ggplot(data = subset(arrange(SiliconTopVendor,SubCustomer.sum),
 ```
 ## Warning in loop_apply(n, do.ply): Removed 1 rows containing missing values
 ## (position_stack).
+=======
+## Warning: Removed 1 rows containing missing values (position_stack).
+>>>>>>> ac4f4b93050f92ebe89fdf0ed9c20896074183eb
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+## Warning: Stacking not well defined when ymin != 0
 ```
 
 ```
+<<<<<<< HEAD
 ## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
 ## Warning in loop_apply(n, do.ply): Removed 2 rows containing missing values
 ## (position_stack).
+=======
+## Warning: Removed 2 rows containing missing values (position_stack).
+>>>>>>> ac4f4b93050f92ebe89fdf0ed9c20896074183eb
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+## Warning: Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+## Warning: Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+## Warning: Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+## Warning: Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+## Warning: Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+## Warning: Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+## Warning: Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+## Warning: Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+## Warning: Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+## Warning: Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+## Warning: Stacking not well defined when ymin != 0
 ```
 
 ```
@@ -2549,54 +2558,66 @@ ggplot(data = arrange(SiliconTopVendor,PlatformPortfolioSC),
 ```
 
 ```
+<<<<<<< HEAD
 ## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
 ## Warning in loop_apply(n, do.ply): Removed 8 rows containing missing values
 ## (position_stack).
+=======
+## Warning: Removed 8 rows containing missing values (position_stack).
+>>>>>>> ac4f4b93050f92ebe89fdf0ed9c20896074183eb
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+## Warning: Stacking not well defined when ymin != 0
 ```
 
 ```
+<<<<<<< HEAD
 ## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
 ## Warning in loop_apply(n, do.ply): Removed 1 rows containing missing values
 ## (position_stack).
+=======
+## Warning: Removed 1 rows containing missing values (position_stack).
+>>>>>>> ac4f4b93050f92ebe89fdf0ed9c20896074183eb
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+## Warning: Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+## Warning: Stacking not well defined when ymin != 0
 ```
 
 ```
+<<<<<<< HEAD
 ## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
 ## Warning in loop_apply(n, do.ply): Removed 2 rows containing missing values
 ## (position_stack).
+=======
+## Warning: Removed 2 rows containing missing values (position_stack).
+>>>>>>> ac4f4b93050f92ebe89fdf0ed9c20896074183eb
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+## Warning: Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+## Warning: Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+## Warning: Stacking not well defined when ymin != 0
 ```
 
 ```
@@ -2678,54 +2699,66 @@ ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$SubCustomer.sum),],
 ```
 
 ```
+<<<<<<< HEAD
 ## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
 ## Warning in loop_apply(n, do.ply): Removed 8 rows containing missing values
 ## (position_stack).
+=======
+## Warning: Removed 8 rows containing missing values (position_stack).
+>>>>>>> ac4f4b93050f92ebe89fdf0ed9c20896074183eb
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+## Warning: Stacking not well defined when ymin != 0
 ```
 
 ```
+<<<<<<< HEAD
 ## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
 ## Warning in loop_apply(n, do.ply): Removed 1 rows containing missing values
 ## (position_stack).
+=======
+## Warning: Removed 1 rows containing missing values (position_stack).
+>>>>>>> ac4f4b93050f92ebe89fdf0ed9c20896074183eb
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+## Warning: Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+## Warning: Stacking not well defined when ymin != 0
 ```
 
 ```
+<<<<<<< HEAD
 ## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
 ## Warning in loop_apply(n, do.ply): Removed 2 rows containing missing values
 ## (position_stack).
+=======
+## Warning: Removed 2 rows containing missing values (position_stack).
+>>>>>>> ac4f4b93050f92ebe89fdf0ed9c20896074183eb
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+## Warning: Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+## Warning: Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+## Warning: Stacking not well defined when ymin != 0
 ```
 
 ```
@@ -2783,34 +2816,31 @@ ggplot(data = arrange(SiliconTopVendor,HPandOther),
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+## Warning: Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Removed 2 rows containing missing values
-## (position_stack).
+## Warning: Removed 2 rows containing missing values (position_stack).
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+## Warning: Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Removed 8 rows containing missing values
-## (position_stack).
+## Warning: Removed 8 rows containing missing values (position_stack).
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+## Warning: Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Removed 1 rows containing missing values
-## (position_stack).
+## Warning: Removed 1 rows containing missing values (position_stack).
 ```
 
 ```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+## Warning: Stacking not well defined when ymin != 0
 ```
 
 ![](silicon_valley_graphs_files/figure-html/SubCustomer-2.png) 
