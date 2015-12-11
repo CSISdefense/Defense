@@ -73,7 +73,8 @@ SiliconTopVendor<-ddply(SiliconTopVendor,
                         .(ParentID),
                         transform,
                         ParentConsolidated=ifelse(sum(Obligation.2014,na.rm=TRUE)>=0.25,
-                                                  as.character(ParentID),"Other Major Silicon Valley Vendors")
+                                                  as.character(ParentID),"Other Major Silicon Valley Vendors"),
+                        SumOfObligation.2014=sum(Obligation.2014,na.rm=TRUE)
 )
 
 SiliconTopVendor$ParentConsolidated<-as.character(SiliconTopVendor$ParentConsolidated)
@@ -113,13 +114,14 @@ Table: Summary
  92.855   8.866      2013          0.308          4.608          7.861          7.244          7.727  -7.9%               6.7%         
 
 ```r
-SummaryKable(SiliconTopVendor,"ParentID","Vendor")
+SummaryKable(subset(SiliconTopVendor,SumOfObligation.2014>0.05),"ParentID","Vendor")
 ```
 
 
 
 Table: Vendor
 
+<<<<<<< HEAD
        ParentID                                                   Total      Max   MaxYear   Avg. '90-'99   Avg. '00-'07   Avg. '08-'09   Avg. '10-'12   Avg. '13-'14  Drawdown % Change   BCA % Change   Percent 
 -----  -------------------------------------------------------  -------  -------  --------  -------------  -------------  -------------  -------------  -------------  ------------------  -------------  --------
 1929   LOCKHEED MARTIN                                           61.562    6.265      2013          0.000          3.602          4.650          4.466          5.022  -4.0%               12.4%          66.3%   
@@ -2107,6 +2109,44 @@ Table: Vendor
 1928   LITTON [NORTHROP GRUMMAN]                                  0.000    0.000      2000          0.000          0.000          0.000          0.000          0.000  NaN%                NaN%           -0.0%   
 1764   948142187                                                  0.000    0.000      2003          0.000          0.000          0.000          0.000          0.000  NaN%                NaN%           -0.0%   
 991    55637011                                                  -0.003   -0.003      2000          0.000          0.000          0.000          0.000          0.000  NaN%                NaN%           -0.0%   
+=======
+     ParentID                           Total     Max   MaxYear   Avg. '90-'99   Avg. '00-'07   Avg. '08-'09   Avg. '10-'12   Avg. '13-'14  Drawdown % Change   BCA % Change   Percent 
+---  -------------------------------  -------  ------  --------  -------------  -------------  -------------  -------------  -------------  ------------------  -------------  --------
+20   LOCKHEED MARTIN                   61.562   6.265      2013          0.000          3.602          4.650          4.466          5.022  -4.0%               12.4%          68.7%   
+14   HEWLETT PACKARD                   13.041   2.059      2011          0.171          0.161          1.037          1.489          1.750  43.7%               17.5%          14.5%   
+10   BAE SYSTEMS                        5.186   2.045      2008          0.000          0.100          1.389          0.466          0.103  -66.4%              -77.9%         5.8%    
+24   ORACLE                             2.475   0.204      2000          0.045          0.148          0.123          0.145          0.079  17.8%               -45.6%         2.8%    
+23   NORTHROP GRUMMAN                   1.307   0.198      2009          0.000          0.041          0.182          0.133          0.108  -27.0%              -19.1%         1.5%    
+9    AGILENT TECHNOLOGIES               0.899   0.096      2007          0.000          0.073          0.050          0.052          0.031  4.6%                -40.9%         1.0%    
+33   VARIAN ASSOCIATES                  0.581   0.173      1990          0.056          0.002          0.002          0.000          0.000  -84.6%              -100.0%        0.6%    
+1    18579925                           0.483   0.094      2013          0.000          0.013          0.035          0.063          0.062  78.8%               -1.2%          0.5%    
+13   GENERAL DYNAMICS                   0.429   0.048      2007          0.000          0.029          0.040          0.027          0.017  -33.3%              -36.5%         0.5%    
+26   STANFORD UNIVERSITY                0.394   0.043      2005          0.017          0.016          0.010          0.016          0.013  61.5%               -17.3%         0.4%    
+18   KAISER AEROPSACE & ELECTRONICS     0.363   0.091      2004          0.000          0.043          0.009          0.000          0.000  -101.9%             -100.0%        0.4%    
+30   TEXTRON                            0.347   0.038      2013          0.000          0.023          0.017          0.024          0.030  36.2%               26.8%          0.4%    
+31   TRW [NORTHROP GRUMMAN]             0.310   0.089      2013          0.000          0.000          0.000          0.055          0.073  Inf%                33.1%          0.3%    
+19   L3 COMMUNICATIONS                  0.239   0.075      2005          0.000          0.027          0.009          0.001          0.000  -86.0%              -79.0%         0.3%    
+5    9125535                            0.224   0.224      2014          0.000          0.000          0.000          0.000          0.112  NaN%                Inf%           0.2%    
+4    85302958                           0.157   0.157      2000          0.000          0.020          0.000          0.000          0.000  NaN%                NaN%           0.2%    
+16   IN Q TEL                           0.146   0.031      2012          0.000          0.003          0.005          0.021          0.026  309.6%              23.8%          0.2%    
+2    626626782                          0.146   0.024      2010          0.000          0.009          0.018          0.014          0.000  -22.6%              -96.4%         0.2%    
+29   TELEDYNE TECHNOLOGIES              0.141   0.028      2011          0.000          0.006          0.015          0.019          0.004  21.8%               -78.7%         0.2%    
+34   VARIAN MEDICAL SYSTEMS             0.129   0.017      2002          0.000          0.010          0.008          0.005          0.008  -42.3%              82.8%          0.1%    
+11   CISCO SYSTEMS                      0.126   0.097      2014          0.002          0.001          0.000          0.001          0.049  5606.7%             3426.1%        0.1%    
+25   RAYTHEON                           0.117   0.048      2002          0.000          0.012          0.000          0.001          0.009  -786.0%             509.0%         0.1%    
+17   INTEL                              0.115   0.028      1993          0.011          0.000          0.000          0.000          0.000  1076.5%             -57.3%         0.1%    
+22   NETWORK APPLIANCE                  0.091   0.021      2004          0.002          0.009          0.000          0.000          0.000  -71.5%              198.6%         0.1%    
+12   CPI HOLDING COMPANY                0.088   0.013      2002          0.000          0.010          0.001          0.000          0.003  -87.4%              2129.4%        0.1%    
+8    957980436                          0.079   0.009      2010          0.000          0.005          0.008          0.006          0.003  -19.6%              -44.6%         0.1%    
+21   LORAL SPACE &                      0.078   0.055      2000          0.000          0.007          0.000          0.004          0.005  Inf%                18.9%          0.1%    
+32   UNITED DEFENSE                     0.074   0.070      2005          0.000          0.009          0.000          0.000          0.000  NaN%                NaN%           0.1%    
+15   IBM                                0.072   0.013      2009          0.000          0.002          0.007          0.010          0.005  52.4%               -47.5%         0.1%    
+28   SYNNEX                             0.058   0.011      2010          0.000          0.002          0.006          0.008          0.005  28.0%               -42.7%         0.1%    
+27   SUN MICROSYSTEMS                   0.054   0.026      2000          0.000          0.007          0.000          0.000          0.000  -90.9%              -100.0%        0.1%    
+3    66497793                           0.053   0.008      2003          0.000          0.005          0.003          0.002          0.001  -49.8%              -53.5%         0.1%    
+6    9213596                            0.051   0.033      2002          0.000          0.004          0.000          0.000          0.009  NaN%                Inf%           0.1%    
+7    9438300                            0.051   0.014      2013          0.000          0.001          0.005          0.003          0.010  -40.6%              211.3%         0.1%    
+>>>>>>> 38be16e2ed9b8ca235243571ea470f8677545f0f
 
 ```r
 SummaryKable(SiliconTopVendor,"ParentConsolidated","Vendor")
@@ -2217,6 +2257,7 @@ ggplot(data = subset(arrange(SiliconTopVendor,SubCustomer.sum),
 
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
@@ -2228,6 +2269,16 @@ ggplot(data = subset(arrange(SiliconTopVendor,SubCustomer.sum),
 ## Warning in loop_apply(n, do.ply): Removed 1 rows containing missing values
 ## (position_stack).
 =======
+=======
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+>>>>>>> 38be16e2ed9b8ca235243571ea470f8677545f0f
 ## Warning: Removed 1 rows containing missing values (position_stack).
 >>>>>>> ac4f4b93050f92ebe89fdf0ed9c20896074183eb
 ```
@@ -2238,6 +2289,7 @@ ggplot(data = subset(arrange(SiliconTopVendor,SubCustomer.sum),
 
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
@@ -2245,6 +2297,12 @@ ggplot(data = subset(arrange(SiliconTopVendor,SubCustomer.sum),
 ## Warning in loop_apply(n, do.ply): Removed 2 rows containing missing values
 ## (position_stack).
 =======
+=======
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+>>>>>>> 38be16e2ed9b8ca235243571ea470f8677545f0f
 ## Warning: Removed 2 rows containing missing values (position_stack).
 >>>>>>> ac4f4b93050f92ebe89fdf0ed9c20896074183eb
 ```
@@ -2294,6 +2352,7 @@ ggplot(data = subset(arrange(SiliconTopVendor,SubCustomer.sum),
 ```
 
 ```
+<<<<<<< HEAD
 ## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
@@ -2403,6 +2462,117 @@ ggplot(data = subset(arrange(SiliconTopVendor,SubCustomer.sum),
 
 ```
 ## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+=======
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+## Warning: Stacking not well defined when ymin != 0
+>>>>>>> 38be16e2ed9b8ca235243571ea470f8677545f0f
 ```
 
 ```
@@ -2559,6 +2729,7 @@ ggplot(data = arrange(SiliconTopVendor,PlatformPortfolioSC),
 
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
@@ -2566,6 +2737,12 @@ ggplot(data = arrange(SiliconTopVendor,PlatformPortfolioSC),
 ## Warning in loop_apply(n, do.ply): Removed 8 rows containing missing values
 ## (position_stack).
 =======
+=======
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+>>>>>>> 38be16e2ed9b8ca235243571ea470f8677545f0f
 ## Warning: Removed 8 rows containing missing values (position_stack).
 >>>>>>> ac4f4b93050f92ebe89fdf0ed9c20896074183eb
 ```
@@ -2576,6 +2753,7 @@ ggplot(data = arrange(SiliconTopVendor,PlatformPortfolioSC),
 
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
@@ -2583,6 +2761,12 @@ ggplot(data = arrange(SiliconTopVendor,PlatformPortfolioSC),
 ## Warning in loop_apply(n, do.ply): Removed 1 rows containing missing values
 ## (position_stack).
 =======
+=======
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+>>>>>>> 38be16e2ed9b8ca235243571ea470f8677545f0f
 ## Warning: Removed 1 rows containing missing values (position_stack).
 >>>>>>> ac4f4b93050f92ebe89fdf0ed9c20896074183eb
 ```
@@ -2597,6 +2781,7 @@ ggplot(data = arrange(SiliconTopVendor,PlatformPortfolioSC),
 
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
@@ -2604,6 +2789,12 @@ ggplot(data = arrange(SiliconTopVendor,PlatformPortfolioSC),
 ## Warning in loop_apply(n, do.ply): Removed 2 rows containing missing values
 ## (position_stack).
 =======
+=======
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+>>>>>>> 38be16e2ed9b8ca235243571ea470f8677545f0f
 ## Warning: Removed 2 rows containing missing values (position_stack).
 >>>>>>> ac4f4b93050f92ebe89fdf0ed9c20896074183eb
 ```
@@ -2621,6 +2812,7 @@ ggplot(data = arrange(SiliconTopVendor,PlatformPortfolioSC),
 ```
 
 ```
+<<<<<<< HEAD
 ## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
@@ -2638,6 +2830,25 @@ ggplot(data = arrange(SiliconTopVendor,PlatformPortfolioSC),
 
 ```
 ## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+=======
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+## Warning: Stacking not well defined when ymin != 0
+>>>>>>> 38be16e2ed9b8ca235243571ea470f8677545f0f
 ```
 
 ![](silicon_valley_graphs_files/figure-html/PlatformPortfolio-1.png) 
@@ -2700,6 +2911,7 @@ ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$SubCustomer.sum),],
 
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
@@ -2707,6 +2919,12 @@ ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$SubCustomer.sum),],
 ## Warning in loop_apply(n, do.ply): Removed 8 rows containing missing values
 ## (position_stack).
 =======
+=======
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+>>>>>>> 38be16e2ed9b8ca235243571ea470f8677545f0f
 ## Warning: Removed 8 rows containing missing values (position_stack).
 >>>>>>> ac4f4b93050f92ebe89fdf0ed9c20896074183eb
 ```
@@ -2717,6 +2935,7 @@ ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$SubCustomer.sum),],
 
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
@@ -2724,6 +2943,12 @@ ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$SubCustomer.sum),],
 ## Warning in loop_apply(n, do.ply): Removed 1 rows containing missing values
 ## (position_stack).
 =======
+=======
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+>>>>>>> 38be16e2ed9b8ca235243571ea470f8677545f0f
 ## Warning: Removed 1 rows containing missing values (position_stack).
 >>>>>>> ac4f4b93050f92ebe89fdf0ed9c20896074183eb
 ```
@@ -2738,6 +2963,7 @@ ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$SubCustomer.sum),],
 
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
@@ -2745,6 +2971,12 @@ ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$SubCustomer.sum),],
 ## Warning in loop_apply(n, do.ply): Removed 2 rows containing missing values
 ## (position_stack).
 =======
+=======
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+>>>>>>> 38be16e2ed9b8ca235243571ea470f8677545f0f
 ## Warning: Removed 2 rows containing missing values (position_stack).
 >>>>>>> ac4f4b93050f92ebe89fdf0ed9c20896074183eb
 ```
@@ -2762,6 +2994,7 @@ ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$SubCustomer.sum),],
 ```
 
 ```
+<<<<<<< HEAD
 ## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
@@ -2779,6 +3012,25 @@ ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$SubCustomer.sum),],
 
 ```
 ## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+=======
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+## Warning: Stacking not well defined when ymin != 0
+>>>>>>> 38be16e2ed9b8ca235243571ea470f8677545f0f
 ```
 
 ![](silicon_valley_graphs_files/figure-html/SubCustomer-1.png) 

@@ -71,8 +71,11 @@ SiliconTopVendor<-subset(SiliconTopVendor,Customer=="Defense")
 SiliconTopVendor<-ddply(SiliconTopVendor,
                         .(ParentID),
                         transform,
-                        ParentConsolidated=ifelse(sum(Obligation.2014,na.rm=TRUE)>=0.25,
-                                                  as.character(ParentID),"Other Major Silicon Valley Vendors")
+                        ParentConsolidated=ifelse(sum(Obligation.2014,na.rm=TRUE)>=0.25 | IsSiliconValley==1,
+                                                  as.character(ParentID),"Other Major Silicon Valley Vendors"),
+                        Parent05m=ifelse(sum(Obligation.2014,na.rm=TRUE)>=0.05,
+                                                  as.character(ParentID),"Vendors below $50 million"),
+                        SumOfObligation.2014=sum(Obligation.2014,na.rm=TRUE)
 )
 
 SiliconTopVendor$ParentConsolidated<-as.character(SiliconTopVendor$ParentConsolidated)
@@ -102,7 +105,7 @@ SiliconTopVendor$HPandOther<-ordered(SiliconTopVendor$HPandOther,
 
 SummaryKable(SiliconTopVendor,NULL,"Summary")
 
-SummaryKable(SiliconTopVendor,"ParentID","Vendor")
+SummaryKable(SiliconTopVendor,"Parent05m","Vendor")
 SummaryKable(SiliconTopVendor,"ParentConsolidated","Vendor")
 SummaryKable(SiliconTopVendor,"HPandOther","HP and Other")
 
@@ -139,7 +142,8 @@ SiliconTopVendor$ParentPeak<-ordered(SiliconTopVendor$ParentPeak,ParentOrderList
 # SiliconTopVendorAnnual$Obligation.2014<-SiliconTopVendorAnnual$Obligation.2014*1000000000
 
 ggplot(data = subset(arrange(SiliconTopVendor,SubCustomer.sum),
-                     ParentID!="HEWLETT PACKARD"),
+                     ParentID!="HEWLETT PACKARD" &
+                         IsSiliconValley==1),
        aes(x=Fiscal.Year,
            y=Obligation.2014,
            fill=SubCustomer.sum
@@ -200,7 +204,9 @@ SummaryKable(SiliconTopVendor,"PlatformPortfolio","Platform")
 
 
 
-ggplot(data = arrange(SiliconTopVendor,PlatformPortfolioSC),
+ggplot(data = arrange(subset(SiliconTopVendor,
+                             IsSiliconValley==1)
+                      ,PlatformPortfolioSC),
        aes(x=Fiscal.Year,
            y=Obligation.2014,
            fill=PlatformPortfolioSC
@@ -247,7 +253,7 @@ ggplot(data = arrange(SiliconTopVendor,PlatformPortfolioSC),
 SummaryKable(SiliconTopVendor,"SubCustomer.sum","Defense Component")
 
 ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$SubCustomer.sum),],
-                     Customer=="Defense" & year(Fiscal.Year)<=2014),# subset(ContractSurvival,StartFiscalYear>=2007 & StartFiscalYear<=2013),
+                     Customer=="Defense" & year(Fiscal.Year)<=2014) & IsSiliconValley==1,# subset(ContractSurvival,StartFiscalYear>=2007 & StartFiscalYear<=2013),
        aes(x=Fiscal.Year,
            y=Obligation.2014,
            fill=SubCustomer.sum
@@ -285,7 +291,7 @@ ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$SubCustomer.sum),],
 
 
 
-ggplot(data = arrange(SiliconTopVendor,HPandOther),
+ggplot(data = arrange(subset(SiliconTopVendor,IsSiliconValley==1),HPandOther),
        aes(x=Fiscal.Year,
            y=Obligation.2014,
            fill=HPandOther
