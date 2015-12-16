@@ -1,0 +1,131 @@
+---
+title: 'DoD Fixed-Price Study: Contract Duration Classification'
+author: "Greg Sanders"
+date: "Tuesday, January 13, 2015"
+output: 
+  html_document: 
+    keep_md: yes
+---
+
+```{r hiddensetup, echo = FALSE}
+require(ggplot2)
+require(stringr)
+require(plyr)
+require(Hmisc)
+require(lubridate)
+require(knitr)
+require(scales)
+options(error=recover)
+# setwd("K:\\Development\\Defense")
+# setwd("C:\\Users\\Greg Sanders\\Documents\\Development\\Defense")
+# Path<-"K:\\2007-01 PROFESSIONAL SERVICES\\R scripts and data\\"
+Path<-"C:\\Users\\Greg Sanders\\SkyDrive\\Documents\\R Scripts and Data SkyDrive\\"
+source(paste(Path,"lookups.r",sep=""))
+source(paste(Path,"helper.r",sep=""))
+
+
+axis.text.size<-8
+strip.text.size<-10
+legend.text.size<-12
+title.text.size<-10
+
+Coloration<-read.csv(
+    paste(Path,"Lookups\\","lookup_coloration.csv",sep=""),
+    header=TRUE, sep=",", na.strings="", dec=".", strip.white=TRUE, 
+    stringsAsFactors=FALSE
+)
+
+#Clear out lines from the coloration CSV where no variable is listed.
+Coloration<-subset(Coloration, variable!="")
+
+Coloration<-ddply(Coloration
+                  , c(.(R), .(G), .(B))
+                  , transform
+                  , ColorRGB=as.character(
+                      if(min(is.na(c(R,G,B)))) {NA} 
+                      else {rgb(max(R),max(G),max(B),max=255)}
+                  )
+)
+
+
+```
+
+```{r VendorSetup, echo = TRUE}
+PricingMechanism  <- read.csv(
+    paste("data\\Overall_Summary_SP_FundingMechanismFeeHistoryBucketSubCustomerPlatform.csv", sep = ""),
+    header = TRUE, sep = ",", dec = ".", strip.white = TRUE, 
+    na.strings = c("NULL","NA",""),
+    stringsAsFactors = TRUE
+)
+
+#These will probably be moved into apply_lookups at some point
+PricingMechanism<-apply_lookups(Path,PricingMechanism)
+
+# 
+# as.numeric(as.duration(
+#     ymd(ContractSample$SignedMonth)-ContractSample$StartFiscalYear)
+#     /dyears(1)
+#     )
+
+PricingMechanism<-subset(PricingMechanism,Customer=="Defense")
+
+
+
+SummaryKable(PricingMechanism,"Pricing.Mechanism","Detail")
+
+SummaryKable(PricingMechanism,"Base","Base")
+SummaryKable(PricingMechanism,"Fee","Fee")
+
+
+
+```
+
+```{r SubCustomer}
+PricingMechanismBaseFee<-ddply(PricingMechanism,
+                    .(Base,Fee,SubCustomer.detail,SubCustomer.sum,SubCustomer.component),
+                    summarise,
+                    Annual.Obligation.2014=sum(Obligation.2014,na.rm=TRUE)
+    )
+
+ 
+LatticePlotWrapper("DoD Component"
+                             ,NULL
+                             ,"Fiscal Year"
+                             ,"Contract Obligations (2014 Billions)"
+                             ,Coloration
+                             ,PricingMechanism
+                             ,VAR.ncol=NA
+                             ,"Fiscal.Year"
+                             ,"Obligation.2014"
+                             ,"SubCustomer.component"
+                             ,"Base"
+                             ,"Fee"
+#                              ,MovingAverage=1
+#                              ,MovingSides=1
+                             ,DataLabels=FALSE
+                             #                       ,VAR.override.coloration=NA
+)
+
+
+LatticePlotWrapper("DoD Component"
+                             ,NULL
+                             ,"Fiscal Year"
+                             ,"Contract Obligations (2014 Billions)"
+                             ,Coloration
+                             ,PricingMechanism
+                             ,VAR.ncol=NA
+                             ,"Fiscal.Year"
+                             ,"Obligation.2014"
+                             ,"SubCustomer.component"
+                   ,"Fee"
+                             ,"Base"
+                             
+#                              ,MovingAverage=1
+#                              ,MovingSides=1
+                             ,DataLabels=FALSE
+                             #                       ,VAR.override.coloration=NA
+)
+
+
+
+``` 
