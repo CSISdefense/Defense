@@ -151,7 +151,8 @@ LatticePlotWrapper("DoD Component"
 #                              ,MovingSides=1
                              ,DataLabels=FALSE
                              #                       ,VAR.override.coloration=NA
-)
+)+theme(axis.text.x=element_text(angle=90))+
+        theme(legend.position="bottom")
 ```
 
 ```
@@ -221,7 +222,8 @@ LatticePlotWrapper("DoD Component"
 #                              ,MovingSides=1
                              ,DataLabels=FALSE
                              #                       ,VAR.override.coloration=NA
-)
+)+theme(axis.text.x=element_text(angle=90))+
+        theme(legend.position="bottom")
 ```
 
 ```
@@ -265,7 +267,7 @@ LatticePlotWrapper("DoD Component"
 #                              ,MovingSides=1
                              ,DataLabels=FALSE
                              #                       ,VAR.override.coloration=NA
-)
+) +theme(axis.text.x=element_text(angle=90))
 ```
 
 ```
