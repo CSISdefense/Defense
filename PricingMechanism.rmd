@@ -24,7 +24,7 @@ source(paste(Path,"lookups.r",sep=""))
 source(paste(Path,"helper.r",sep=""))
 
 
-axis.text.size<-8
+axis.text.size<-10
 strip.text.size<-10
 legend.text.size<-12
 title.text.size<-10
@@ -80,14 +80,8 @@ SummaryKable(PricingMechanism,"Fee","Fee")
 
 ```
 
-```{r SubCustomer}
-PricingMechanismBaseFee<-ddply(PricingMechanism,
-                    .(Base,Fee,SubCustomer.detail,SubCustomer.sum,SubCustomer.component),
-                    summarise,
-                    Annual.Obligation.2014=sum(Obligation.2014,na.rm=TRUE)
-    )
+```{r SubCustomer.component}
 
- 
 LatticePlotWrapper("DoD Component"
                              ,NULL
                              ,"Fiscal Year"
@@ -98,8 +92,9 @@ LatticePlotWrapper("DoD Component"
                              ,"Fiscal.Year"
                              ,"Obligation.2014"
                              ,"SubCustomer.component"
+                   ,"Fee"
                              ,"Base"
-                             ,"Fee"
+                             
 #                              ,MovingAverage=1
 #                              ,MovingSides=1
                              ,DataLabels=FALSE
@@ -107,6 +102,11 @@ LatticePlotWrapper("DoD Component"
 )
 
 
+
+``` 
+
+```{r SubCustomer.sum}
+
 LatticePlotWrapper("DoD Component"
                              ,NULL
                              ,"Fiscal Year"
@@ -116,7 +116,34 @@ LatticePlotWrapper("DoD Component"
                              ,VAR.ncol=NA
                              ,"Fiscal.Year"
                              ,"Obligation.2014"
-                             ,"SubCustomer.component"
+                             ,"SubCustomer.sum"
+                   ,"Fee"
+                             ,"Base"
+                             
+#                              ,MovingAverage=1
+#                              ,MovingSides=1
+                             ,DataLabels=FALSE
+                             #                       ,VAR.override.coloration=NA
+)
+
+
+
+``` 
+
+
+
+```{r Summary}
+
+LatticePlotWrapper("DoD Component"
+                             ,NULL
+                             ,"Fiscal Year"
+                             ,"Contract Obligations (2014 Billions)"
+                             ,Coloration
+                             ,subset(PricingMechanism, year(Fiscal.Year)>1990)
+                             ,VAR.ncol=NA
+                             ,"Fiscal.Year"
+                             ,"Obligation.2014"
+                             ,"Customer"
                    ,"Fee"
                              ,"Base"
                              

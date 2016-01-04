@@ -109,13 +109,11 @@ SummaryKable(PricingMechanism,"Base","Base")
 
 Table: Base
 
-     Base                    Total       Max   MaxYear   Avg. '90-'99   Avg. '00-'07   Avg. '08-'09   Avg. '10-'12   Avg. '13-'14  Drawdown % Change   BCA % Change   Percent 
----  ------------------  ---------  --------  --------  -------------  -------------  -------------  -------------  -------------  ------------------  -------------  --------
-3    Fixed-Price          4100.661   251.338      2010        113.606        166.737        247.338        247.312        197.049  -0.0%               -20.3%         62.5%   
-2    Cost-Plus            1853.918   115.369      2011         49.930         80.064         98.546        110.375         92.946  12.0%               -15.8%         28.2%   
-4    Other Cost-Based      232.123    18.639      2008          5.853         11.483         18.061         12.452          4.127  -31.1%              -66.9%         3.5%    
-5    Unlabeled             227.201    48.588      1990         14.949          8.398          5.150          0.076         -0.001  -98.5%              -102.0%        3.5%    
-1    Combination/Other     148.766    47.986      2009          0.000          4.069         41.421          8.992          3.198  -78.3%              -64.4%         2.3%    
+     Base              Total       Max   MaxYear   Avg. '90-'99   Avg. '00-'07   Avg. '08-'09   Avg. '10-'12   Avg. '13-'14  Drawdown % Change   BCA % Change   Percent 
+---  ------------  ---------  --------  --------  -------------  -------------  -------------  -------------  -------------  ------------------  -------------  --------
+2    Fixed-Price    4100.661   251.338      2010        113.606        166.737        247.338        247.312        197.049  -0.0%               -20.3%         62.5%   
+1    Cost-Based     2086.041   128.262      2010         55.782         91.547        116.607        122.827         97.073  5.3%                -21.0%         31.8%   
+3    Unclear         375.967    51.554      2009         14.949         12.467         46.571          9.068          3.196  -80.5%              -64.7%         5.7%    
 
 ```r
 SummaryKable(PricingMechanism,"Fee","Fee")
@@ -127,84 +125,33 @@ Table: Fee
 
      Fee             Total       Max   MaxYear   Avg. '90-'99   Avg. '00-'07   Avg. '08-'09   Avg. '10-'12   Avg. '13-'14  Drawdown % Change   BCA % Change   Percent 
 ---  ----------  ---------  --------  --------  -------------  -------------  -------------  -------------  -------------  ------------------  -------------  --------
-4    No Fee       3695.412   242.566      2008         96.661        155.708        240.306        225.955        162.328  -6.0%               -28.2%         56.3%   
-2    Fixed         829.539    61.413      2014         23.147         30.352         40.030         52.784         58.422  31.9%               10.7%          12.6%   
-5    Other         771.835    79.183      2009         26.053         29.038         73.320         31.820         18.453  -56.6%              -42.0%         11.8%   
+4    No Fee       3463.289   223.927      2008         90.809        144.225        222.245        213.503        158.201  -3.9%               -25.9%         52.8%   
+2    Fixed Fee     829.539    61.413      2014         23.147         30.352         40.030         52.784         58.422  31.9%               10.7%          12.6%   
+5    Other         776.758    93.099      2009         16.956         32.123         86.231         44.196         22.582  -48.7%              -48.9%         11.8%   
 3    Incentive     638.698    49.495      2013         22.352         19.046         25.511         41.159         44.155  61.3%               7.3%           9.7%    
 1    Award         627.185    48.011      2006         16.124         36.607         31.351         27.489         13.961  -12.3%              -49.2%         9.6%    
+6    Unlabeled     227.201    48.588      1990         14.949          8.398          5.150          0.076         -0.001  -98.5%              -102.0%        3.5%    
 
 
 ```r
-PricingMechanismBaseFee<-ddply(PricingMechanism,
-                    .(Base,Fee,SubCustomer.detail,SubCustomer.sum,SubCustomer.component),
-                    summarise,
-                    Annual.Obligation.2014=sum(Obligation.2014,na.rm=TRUE)
-    )
-
- 
-# LatticePlotWrapper<-function("DoD Component"
-#                              ,NULL
-#                              ,"Fiscal Year"
-#                              ,"Contract Obligations (2014 Billions)"
-#                              ,Coloration
-#                              ,PricingMechanism
-#                              ,VAR.ncol=NA
-#                              ,Fiscal.Year
-#                              ,Obligation.2014
-#                              ,SubCustomer.component
-#                              ,Base
-#                              ,Fee
-# #                              ,MovingAverage=1
-# #                              ,MovingSides=1
-#                              ,DataLabels=FALSE
-#                              #                       ,VAR.override.coloration=NA
-# )
-
-
-ggplot(data = arrange(PricingMechanism,SubCustomer.detail),
-       aes(x=Fiscal.Year,
-           y=Obligation.2014,
-           fill=SubCustomer.detail
-       )
-)+ 
-    geom_bar(stat="identity") + 
-    facet_grid(  Base ~ Fee,
-                    scales="free_y", #The scales actually do stay fixed
-                     space="free_y")+#But only because the space is free)
-    scale_x_date("Fiscal Year",
-                 labels=date_format("'%y"))
-```
-
-```
-## Warning: Stacking not well defined when ymin != 0
-```
-
-```
-## Warning: Removed 10 rows containing missing values (position_stack).
-```
-
-```
-## Warning: Stacking not well defined when ymin != 0
-```
-
-```
-## Warning: Removed 36 rows containing missing values (position_stack).
-```
-
-```
-## Warning: Stacking not well defined when ymin != 0
-```
-
-```
-## Warning: Removed 2 rows containing missing values (position_stack).
-```
-
-```
-## Warning: Stacking not well defined when ymin != 0
-```
-
-```
-## Warning: Removed 6 rows containing missing values (position_stack).
+LatticePlotWrapper("DoD Component"
+                             ,NULL
+                             ,"Fiscal Year"
+                             ,"Contract Obligations (2014 Billions)"
+                             ,Coloration
+                             ,PricingMechanism
+                             ,VAR.ncol=NA
+                             ,"Fiscal.Year"
+                             ,"Obligation.2014"
+                             ,"SubCustomer.component"
+                   ,"Fee"
+                             ,"Base"
+                             
+#                              ,MovingAverage=1
+#                              ,MovingSides=1
+                             ,DataLabels=FALSE
+                             #                       ,VAR.override.coloration=NA
+)
 ```
 
 ```
@@ -216,7 +163,7 @@ ggplot(data = arrange(PricingMechanism,SubCustomer.detail),
 ```
 
 ```
-## Warning: Removed 9 rows containing missing values (position_stack).
+## Warning: Stacking not well defined when ymin != 0
 ```
 
 ```
@@ -224,7 +171,7 @@ ggplot(data = arrange(PricingMechanism,SubCustomer.detail),
 ```
 
 ```
-## Warning: Removed 75 rows containing missing values (position_stack).
+## Warning: Stacking not well defined when ymin != 0
 ```
 
 ```
@@ -232,7 +179,7 @@ ggplot(data = arrange(PricingMechanism,SubCustomer.detail),
 ```
 
 ```
-## Warning: Removed 8 rows containing missing values (position_stack).
+## Warning: Stacking not well defined when ymin != 0
 ```
 
 ```
@@ -240,54 +187,99 @@ ggplot(data = arrange(PricingMechanism,SubCustomer.detail),
 ```
 
 ```
-## Warning: Removed 22 rows containing missing values (position_stack).
-```
-
-```
 ## Warning: Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning: Removed 41 rows containing missing values (position_stack).
+## Warning in grid.Call(L_textBounds, as.graphicsAnnot(x$label), x$x, x$y, :
+## font family not found in Windows font database
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in grid.Call.graphics(L_text, as.graphicsAnnot(x$label), x$x, x$y,
+## : font family not found in Windows font database
 ```
 
-![](PricingMechanism_files/figure-html/SubCustomer-1.png) 
+![](PricingMechanism_files/figure-html/SubCustomer.component-1.png) 
+
 
 ```r
-#                  # breaks="2 years",
-#                  minor_breaks="1 year",
-#                  breaks=c(as.Date("1990-01-01"),
-#                           as.Date("1992-01-01"),
-#                           as.Date("1994-01-01"),
-#                           as.Date("1996-01-01"),
-#                           as.Date("1998-01-01"),
-#                           as.Date("2000-01-01"),
-#                           as.Date("2002-01-01"),
-#                           as.Date("2004-01-01"),
-#                           as.Date("2006-01-01"),
-#                           as.Date("2008-01-01"),
-#                           as.Date("2010-01-01"),
-#                           as.Date("2012-01-01"),
-#                           as.Date("2014-01-01"))
-#                  # breaks=date_breaks("year")
-#                  # minor_breaks = "1 year"
-#                  # breaks=date_breaks("year"),
-#                  # breaks=c(as.Date("1990-01-01"),as.Date("2014-12-31"))
-#     )+
-#     theme(axis.text.x=element_text(angle = 90))+
-#     scale_y_continuous("Obligations (2014 Billions Dollars)",labels=comma)+
-#     theme(legend.position="bottom")+theme(strip.text.y=element_text(size=axis.text.size,family="times",face="bold",angle=0))+
-#     geom_hline(y=0.03, color="blue")+geom_hline(y=0.05, color="red")
-# #      geom_rect(ymin = 0.02, ymax = 0.05, 
-# #               xmin = -Inf, xmax = Inf, 
-# #               fill = 'blue',
-# #               aes(alpha=0.25)
-# 
-# 
-# 
-# SummaryKable(PricingMechanism,"ParentPeak","Vendor",3)
+LatticePlotWrapper("DoD Component"
+                             ,NULL
+                             ,"Fiscal Year"
+                             ,"Contract Obligations (2014 Billions)"
+                             ,Coloration
+                             ,PricingMechanism
+                             ,VAR.ncol=NA
+                             ,"Fiscal.Year"
+                             ,"Obligation.2014"
+                             ,"SubCustomer.sum"
+                   ,"Fee"
+                             ,"Base"
+                             
+#                              ,MovingAverage=1
+#                              ,MovingSides=1
+                             ,DataLabels=FALSE
+                             #                       ,VAR.override.coloration=NA
+)
 ```
+
+```
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+## Warning in grid.Call(L_textBounds, as.graphicsAnnot(x$label), x$x, x$y, :
+## font family not found in Windows font database
+```
+
+```
+## Warning in grid.Call.graphics(L_text, as.graphicsAnnot(x$label), x$x, x$y,
+## : font family not found in Windows font database
+```
+
+![](PricingMechanism_files/figure-html/SubCustomer.sum-1.png) 
+
+
+
+
+```r
+LatticePlotWrapper("DoD Component"
+                             ,NULL
+                             ,"Fiscal Year"
+                             ,"Contract Obligations (2014 Billions)"
+                             ,Coloration
+                             ,subset(PricingMechanism, year(Fiscal.Year)>1990)
+                             ,VAR.ncol=NA
+                             ,"Fiscal.Year"
+                             ,"Obligation.2014"
+                             ,"Customer"
+                   ,"Fee"
+                             ,"Base"
+                             
+#                              ,MovingAverage=1
+#                              ,MovingSides=1
+                             ,DataLabels=FALSE
+                             #                       ,VAR.override.coloration=NA
+)
+```
+
+```
+## Warning: Stacking not well defined when ymin != 0
+```
+
+```
+## Warning in grid.Call(L_textBounds, as.graphicsAnnot(x$label), x$x, x$y, :
+## font family not found in Windows font database
+```
+
+```
+## Warning in grid.Call.graphics(L_text, as.graphicsAnnot(x$label), x$x, x$y,
+## : font family not found in Windows font database
+```
+
+![](PricingMechanism_files/figure-html/Summary-1.png) 
