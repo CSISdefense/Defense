@@ -17,7 +17,7 @@ require(knitr)
 require(scales)
 options(error=recover)
 # setwd("K:\\Development\\Defense")
-# setwd("C:\\Users\\Greg Sanders\\Documents\\Development\\Defense")
+setwd("C:\\Users\\Greg Sanders\\Documents\\Development\\Defense")
 # Path<-"K:\\2007-01 PROFESSIONAL SERVICES\\R scripts and data\\"
 Path<-"C:\\Users\\Greg Sanders\\SkyDrive\\Documents\\R Scripts and Data SkyDrive\\"
 source(paste(Path,"lookups.r",sep=""))
@@ -99,8 +99,10 @@ LatticePlotWrapper("DoD Component"
 #                              ,MovingSides=1
                              ,DataLabels=FALSE
                              #                       ,VAR.override.coloration=NA
-)+theme(axis.text.x=element_text(angle=90))+
-        theme(legend.position="bottom")
+)+theme(axis.text.x=element_text(angle=90))+scale_x_date(breaks=date_breaks("2 years"),
+                                                          labels=date_format("'%y"))+
+        theme(legend.position="bottom")+coord_cartesian(xlim = c(as.Date("6/1/1989","%m/%d/%Y"),
+                                                                 as.Date("6/1/2014","%m/%d/%Y")))
 
 
 
@@ -125,7 +127,8 @@ LatticePlotWrapper("DoD Component"
 #                              ,MovingSides=1
                              ,DataLabels=FALSE
                              #                       ,VAR.override.coloration=NA
-)+theme(axis.text.x=element_text(angle=90))+
+)+theme(axis.text.x=element_text(angle=90))+scale_x_date(breaks=date_breaks("2 years"),
+                                                          labels=date_format("'%y"))+
         theme(legend.position="bottom")
 
 
@@ -153,7 +156,9 @@ LatticePlotWrapper("DoD Component"
 #                              ,MovingSides=1
                              ,DataLabels=FALSE
                              #                       ,VAR.override.coloration=NA
-) +theme(axis.text.x=element_text(angle=90))
+) +theme(axis.text.x=element_text(angle=90))+scale_x_date(breaks=date_breaks("2 years"),
+                                                          labels=date_format("'%y"))+coord_cartesian(xlim = c(as.Date("6/1/1989","%m/%d/%Y"),
+                                                                 as.Date("6/1/2014","%m/%d/%Y")))
 
 
 

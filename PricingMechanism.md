@@ -151,8 +151,14 @@ LatticePlotWrapper("DoD Component"
 #                              ,MovingSides=1
                              ,DataLabels=FALSE
                              #                       ,VAR.override.coloration=NA
-)+theme(axis.text.x=element_text(angle=90))+
-        theme(legend.position="bottom")
+)+theme(axis.text.x=element_text(angle=90))+scale_x_date(breaks=date_breaks("2 years"),
+                                                          labels=date_format("'%y"))+
+        theme(legend.position="bottom")+coord_cartesian(xlim = c(as.Date("6/1/1989","%m/%d/%Y"),
+                                                                 as.Date("6/1/2014","%m/%d/%Y")))
+```
+
+```
+## Scale for 'x' is already present. Adding another scale for 'x', which will replace the existing scale.
 ```
 
 ```
@@ -222,8 +228,13 @@ LatticePlotWrapper("DoD Component"
 #                              ,MovingSides=1
                              ,DataLabels=FALSE
                              #                       ,VAR.override.coloration=NA
-)+theme(axis.text.x=element_text(angle=90))+
+)+theme(axis.text.x=element_text(angle=90))+scale_x_date(breaks=date_breaks("2 years"),
+                                                          labels=date_format("'%y"))+
         theme(legend.position="bottom")
+```
+
+```
+## Scale for 'x' is already present. Adding another scale for 'x', which will replace the existing scale.
 ```
 
 ```
@@ -267,7 +278,13 @@ LatticePlotWrapper("DoD Component"
 #                              ,MovingSides=1
                              ,DataLabels=FALSE
                              #                       ,VAR.override.coloration=NA
-) +theme(axis.text.x=element_text(angle=90))
+) +theme(axis.text.x=element_text(angle=90))+scale_x_date(breaks=date_breaks("2 years"),
+                                                          labels=date_format("'%y"))+coord_cartesian(xlim = c(as.Date("6/1/1989","%m/%d/%Y"),
+                                                                 as.Date("6/1/2014","%m/%d/%Y")))
+```
+
+```
+## Scale for 'x' is already present. Adding another scale for 'x', which will replace the existing scale.
 ```
 
 ```
