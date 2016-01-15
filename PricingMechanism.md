@@ -11,7 +11,6 @@ Tuesday, January 13, 2015
 ## Loading required package: grid
 ## Loading required package: lattice
 ## Loading required package: survival
-## Loading required package: splines
 ## Loading required package: Formula
 ## 
 ## Attaching package: 'Hmisc'
@@ -123,14 +122,14 @@ SummaryKable(PricingMechanism,"Fee","Fee")
 
 Table: Fee
 
-     Fee             Total       Max   MaxYear   Avg. '90-'99   Avg. '00-'07   Avg. '08-'09   Avg. '10-'12   Avg. '13-'14  Drawdown % Change   BCA % Change   Percent 
----  ----------  ---------  --------  --------  -------------  -------------  -------------  -------------  -------------  ------------------  -------------  --------
-4    No Fee       3463.289   223.927      2008         90.809        144.225        222.245        213.503        158.201  -3.9%               -25.9%         52.8%   
-2    Fixed Fee     829.539    61.413      2014         23.147         30.352         40.030         52.784         58.422  31.9%               10.7%          12.6%   
-5    Other         776.758    93.099      2009         16.956         32.123         86.231         44.196         22.582  -48.7%              -48.9%         11.8%   
-3    Incentive     638.698    49.495      2013         22.352         19.046         25.511         41.159         44.155  61.3%               7.3%           9.7%    
-1    Award         627.185    48.011      2006         16.124         36.607         31.351         27.489         13.961  -12.3%              -49.2%         9.6%    
-6    Unlabeled     227.201    48.588      1990         14.949          8.398          5.150          0.076         -0.001  -98.5%              -102.0%        3.5%    
+     Fee                             Total       Max   MaxYear   Avg. '90-'99   Avg. '00-'07   Avg. '08-'09   Avg. '10-'12   Avg. '13-'14  Drawdown % Change   BCA % Change   Percent 
+---  --------------------------  ---------  --------  --------  -------------  -------------  -------------  -------------  -------------  ------------------  -------------  --------
+2    Firm-Fixed-Price / No Fee    3463.289   223.927      2008         90.809        144.225        222.245        213.503        158.201  -3.9%               -25.9%         52.8%   
+3    Fixed Fee                     829.539    61.413      2014         23.147         30.352         40.030         52.784         58.422  31.9%               10.7%          12.6%   
+5    Other                         776.758    93.099      2009         16.956         32.123         86.231         44.196         22.582  -48.7%              -48.9%         11.8%   
+4    Incentive                     638.698    49.495      2013         22.352         19.046         25.511         41.159         44.155  61.3%               7.3%           9.7%    
+1    Award                         627.185    48.011      2006         16.124         36.607         31.351         27.489         13.961  -12.3%              -49.2%         9.6%    
+6    Unlabeled                     227.201    48.588      1990         14.949          8.398          5.150          0.076         -0.001  -98.5%              -102.0%        3.5%    
 
 
 ```r
@@ -153,7 +152,8 @@ LatticePlotWrapper("DoD Component"
                              #                       ,VAR.override.coloration=NA
 )+theme(axis.text.x=element_text(angle=90))+scale_x_date(breaks=date_breaks("2 years"),
                                                           labels=date_format("'%y"))+
-        theme(legend.position="bottom")+coord_cartesian(xlim = c(as.Date("6/1/1989","%m/%d/%Y"),
+        theme(legend.position="bottom")+
+    coord_cartesian(xlim = c(as.Date("6/1/1989","%m/%d/%Y"),
                                                                  as.Date("6/1/2014","%m/%d/%Y")))
 ```
 
@@ -162,39 +162,39 @@ LatticePlotWrapper("DoD Component"
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
@@ -230,7 +230,9 @@ LatticePlotWrapper("DoD Component"
                              #                       ,VAR.override.coloration=NA
 )+theme(axis.text.x=element_text(angle=90))+scale_x_date(breaks=date_breaks("2 years"),
                                                           labels=date_format("'%y"))+
-        theme(legend.position="bottom")
+        theme(legend.position="bottom")+
+    coord_cartesian(xlim = c(as.Date("6/1/1989","%m/%d/%Y"),
+                                                                 as.Date("6/1/2014","%m/%d/%Y")))
 ```
 
 ```
@@ -238,11 +240,11 @@ LatticePlotWrapper("DoD Component"
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
@@ -278,8 +280,10 @@ LatticePlotWrapper("DoD Component"
 #                              ,MovingSides=1
                              ,DataLabels=FALSE
                              #                       ,VAR.override.coloration=NA
-) +theme(axis.text.x=element_text(angle=90))+scale_x_date(breaks=date_breaks("2 years"),
-                                                          labels=date_format("'%y"))+coord_cartesian(xlim = c(as.Date("6/1/1989","%m/%d/%Y"),
+) +theme(axis.text.x=element_text(angle=90))+
+    scale_x_date(breaks=date_breaks("2 years"),
+                 labels=date_format("'%y"))+
+    coord_cartesian(xlim = c(as.Date("6/1/1989","%m/%d/%Y"),
                                                                  as.Date("6/1/2014","%m/%d/%Y")))
 ```
 
@@ -288,7 +292,7 @@ LatticePlotWrapper("DoD Component"
 ```
 
 ```
-## Warning: Stacking not well defined when ymin != 0
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
 ```
 
 ```
