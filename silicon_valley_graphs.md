@@ -71,6 +71,10 @@ SiliconTopVendor$ConfirmedSiliconValley<-0
 SiliconTopVendor$ConfirmedSiliconValley[SiliconTopVendor$IsSiliconValley==1]<-1
 
 
+levels(SiliconTopVendor$ParentID)[levels(SiliconTopVendor$ParentID)=="HEWLETT PACKARD"]<-"Hewlett Packard"
+levels(SiliconTopVendor$ParentID)[levels(SiliconTopVendor$ParentID)=="ORACLE"]<-"Oracle"
+levels(SiliconTopVendor$ParentID)[levels(SiliconTopVendor$ParentID)=="AGILENT TECHNOLOGIES"]<-"Agilent Technologies"
+levels(SiliconTopVendor$ParentID)[levels(SiliconTopVendor$ParentID)=="STANFORD UNIVERSITY"]<-"Stanford University"
 
 
 SiliconTopVendor<-subset(SiliconTopVendor,Customer=="Defense")
@@ -107,9 +111,9 @@ SiliconTopVendor$ParentConsolidated<-factor(SiliconTopVendor$ParentConsolidated,
 
 
 SiliconTopVendor$HPandOther<-"Other Silicon Valley Major Vendors"
-SiliconTopVendor$HPandOther[SiliconTopVendor$ParentID =="HEWLETT PACKARD"]<-"HEWLETT PACKARD"
+SiliconTopVendor$HPandOther[SiliconTopVendor$ParentID =="Hewlett Packard"]<-"Hewlett Packard"
 SiliconTopVendor$HPandOther<-ordered(SiliconTopVendor$HPandOther,
-                                     c("Other Silicon Valley Major Vendors","HEWLETT PACKARD"))
+                                     c("Other Silicon Valley Major Vendors","Hewlett Packard"))
 
 SummaryKable(SiliconTopVendor,NULL,"Summary")
 ```
@@ -133,16 +137,16 @@ Table: Vendor
      Parent05m                          Total     Max   MaxYear   Avg. '90-'99   Avg. '00-'07   Avg. '08-'09   Avg. '10-'12   Avg. '13-'14  Drawdown % Change   BCA % Change   Percent 
 ---  -------------------------------  -------  ------  --------  -------------  -------------  -------------  -------------  -------------  ------------------  -------------  --------
 21   LOCKHEED MARTIN                   61.562   6.265      2013          0.000          3.602          4.650          4.466          5.022  -4.0%               12.4%          66.3%   
-15   HEWLETT PACKARD                   13.041   2.059      2011          0.171          0.161          1.037          1.489          1.750  43.7%               17.5%          14.0%   
+15   Hewlett Packard                   13.041   2.059      2011          0.171          0.161          1.037          1.489          1.750  43.7%               17.5%          14.0%   
 11   BAE SYSTEMS                        5.186   2.045      2008          0.000          0.100          1.389          0.466          0.103  -66.4%              -77.9%         5.6%    
 1    Vendors below $50 million          3.191   0.277      2000          0.004          0.209          0.231          0.213          0.190  -7.8%               -10.5%         3.4%    
-25   ORACLE                             2.475   0.204      2000          0.045          0.148          0.123          0.145          0.079  17.8%               -45.6%         2.7%    
+25   Oracle                             2.475   0.204      2000          0.045          0.148          0.123          0.145          0.079  17.8%               -45.6%         2.7%    
 24   NORTHROP GRUMMAN                   1.307   0.198      2009          0.000          0.041          0.182          0.133          0.108  -27.0%              -19.1%         1.4%    
-10   AGILENT TECHNOLOGIES               0.899   0.096      2007          0.000          0.073          0.050          0.052          0.031  4.6%                -40.9%         1.0%    
+10   Agilent Technologies               0.899   0.096      2007          0.000          0.073          0.050          0.052          0.031  4.6%                -40.9%         1.0%    
 34   VARIAN ASSOCIATES                  0.581   0.173      1990          0.056          0.002          0.002          0.000          0.000  -84.6%              -100.0%        0.6%    
 2    18579925                           0.483   0.094      2013          0.000          0.013          0.035          0.063          0.062  78.8%               -1.2%          0.5%    
 14   GENERAL DYNAMICS                   0.429   0.048      2007          0.000          0.029          0.040          0.027          0.017  -33.3%              -36.5%         0.5%    
-27   STANFORD UNIVERSITY                0.394   0.043      2005          0.017          0.016          0.010          0.016          0.013  61.5%               -17.3%         0.4%    
+27   Stanford University                0.394   0.043      2005          0.017          0.016          0.010          0.016          0.013  61.5%               -17.3%         0.4%    
 19   KAISER AEROPSACE & ELECTRONICS     0.363   0.091      2004          0.000          0.043          0.009          0.000          0.000  -101.9%             -100.0%        0.4%    
 31   TEXTRON                            0.347   0.038      2013          0.000          0.023          0.017          0.024          0.030  36.2%               26.8%          0.4%    
 32   TRW [NORTHROP GRUMMAN]             0.310   0.089      2013          0.000          0.000          0.000          0.055          0.073  Inf%                33.1%          0.3%    
@@ -179,11 +183,11 @@ Table: Vendor
      ParentConsolidated                     Total     Max   MaxYear   Avg. '90-'99   Avg. '00-'07   Avg. '08-'09   Avg. '10-'12   Avg. '13-'14  Drawdown % Change   BCA % Change   Percent 
 ---  -----------------------------------  -------  ------  --------  -------------  -------------  -------------  -------------  -------------  ------------------  -------------  --------
 6    Other Major Silicon Valley Vendors    75.335   6.976      2013          0.019          4.197          6.632          5.537          5.846  -16.5%              5.6%           81.1%   
-1    HEWLETT PACKARD                       13.041   2.059      2011          0.171          0.161          1.037          1.489          1.750  43.7%               17.5%          14.0%   
-2    ORACLE                                 2.475   0.204      2000          0.045          0.148          0.123          0.145          0.079  17.8%               -45.6%         2.7%    
-3    AGILENT TECHNOLOGIES                   0.899   0.096      2007          0.000          0.073          0.050          0.052          0.031  4.6%                -40.9%         1.0%    
+1    Hewlett Packard                       13.041   2.059      2011          0.171          0.161          1.037          1.489          1.750  43.7%               17.5%          14.0%   
+2    Oracle                                 2.475   0.204      2000          0.045          0.148          0.123          0.145          0.079  17.8%               -45.6%         2.7%    
+3    Agilent Technologies                   0.899   0.096      2007          0.000          0.073          0.050          0.052          0.031  4.6%                -40.9%         1.0%    
 4    Varian Associates & Successors         0.711   0.173      1990          0.056          0.012          0.010          0.005          0.008  -52.3%              68.8%          0.8%    
-5    STANFORD UNIVERSITY                    0.394   0.043      2005          0.017          0.016          0.010          0.016          0.013  61.5%               -17.3%         0.4%    
+5    Stanford University                    0.394   0.043      2005          0.017          0.016          0.010          0.016          0.013  61.5%               -17.3%         0.4%    
 
 ```r
 SummaryKable(SiliconTopVendor,"HPandOther","HP and Other")
@@ -196,7 +200,7 @@ Table: HP and Other
 HPandOther                             Total     Max   MaxYear   Avg. '90-'99   Avg. '00-'07   Avg. '08-'09   Avg. '10-'12   Avg. '13-'14  Drawdown % Change   BCA % Change   Percent 
 -----------------------------------  -------  ------  --------  -------------  -------------  -------------  -------------  -------------  ------------------  -------------  --------
 Other Silicon Valley Major Vendors    79.814   7.136      2013          0.137          4.447          6.825          5.755          5.977  -15.7%              3.9%           86.0%   
-HEWLETT PACKARD                       13.041   2.059      2011          0.171          0.161          1.037          1.489          1.750  43.7%               17.5%          14.0%   
+Hewlett Packard                       13.041   2.059      2011          0.171          0.161          1.037          1.489          1.750  43.7%               17.5%          14.0%   
 
 
 ```r
@@ -260,8 +264,9 @@ ggplot(data = subset(arrange(SiliconTopVendor,SubCustomer.sum),
                  # breaks=c(as.Date("1990-01-01"),as.Date("2014-12-31"))
     )+
     theme(axis.text.x=element_text(angle = 90))+
-    scale_y_continuous("Obligations (2014 Billions Dollars)",labels=comma)+
-    theme(legend.position="bottom")+theme(strip.text.y=element_text(size=axis.text.size,family="times",face="bold",angle=0))
+    scale_y_continuous("Constant 2014 $ Billions",labels=comma)+
+    theme(legend.position="bottom")+
+    theme(strip.text.x=element_text(size=strip.text.size,family="times",face="bold",angle=0))
 ```
 
 ```
@@ -271,116 +276,6 @@ ggplot(data = subset(arrange(SiliconTopVendor,SubCustomer.sum),
 
 ```
 ## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
-```
-
-```
-## Warning in loop_apply(n, do.ply): Removed 1 rows containing missing values
-## (position_stack).
-```
-
-```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
-```
-
-```
-## Warning in loop_apply(n, do.ply): Removed 2 rows containing missing values
-## (position_stack).
-```
-
-```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
-```
-
-```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
-```
-
-```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
-```
-
-```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
-```
-
-```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
-```
-
-```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
-```
-
-```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
-```
-
-```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
-```
-
-```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
-```
-
-```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
-```
-
-```
-## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
-```
-
-![](silicon_valley_graphs_files/figure-html/VendorPeaks-1.png) 
-
-```r
-#      geom_rect(ymin = 0.02, ymax = 0.05, 
-#               xmin = -Inf, xmax = Inf, 
-#               fill = 'blue',
-#               aes(alpha=0.25)
-
-
-
-# SiliconTopVendorAnnual$Obligation.2014<-SiliconTopVendorAnnual$Obligation.2014*1000000000
-
-ggplot(data = subset(arrange(SiliconTopVendor,SubCustomer.sum),
-                     ParentID!="HEWLETT PACKARD" &
-                         IsSiliconValley==1),
-       aes(x=Fiscal.Year,
-           y=Obligation.2014,
-           fill=SubCustomer.sum
-       )
-)+ 
-    geom_bar(stat="identity") + 
-    facet_grid(  ParentPeak ~.,
-                    scales="free_y", #The scales actually do stay fixed
-                     space="free_y")+#But only because the space is free)
-    scale_x_date("Fiscal Year",
-                 labels=date_format("'%y"),
-                 # breaks="2 years",
-                 minor_breaks="1 year",
-                 breaks=c(as.Date("1990-01-01"),
-                          as.Date("1992-01-01"),
-                          as.Date("1994-01-01"),
-                          as.Date("1996-01-01"),
-                          as.Date("1998-01-01"),
-                          as.Date("2000-01-01"),
-                          as.Date("2002-01-01"),
-                          as.Date("2004-01-01"),
-                          as.Date("2006-01-01"),
-                          as.Date("2008-01-01"),
-                          as.Date("2010-01-01"),
-                          as.Date("2012-01-01"),
-                          as.Date("2014-01-01"))
-                 # breaks=date_breaks("year")
-                 # minor_breaks = "1 year"
-                 # breaks=date_breaks("year"),
-                 # breaks=c(as.Date("1990-01-01"),as.Date("2014-12-31"))
-    )+
-    theme(axis.text.x=element_text(angle = 90))+
-    scale_y_continuous("Obligations (2014 Billions Dollars)",labels=comma)+
-    theme(legend.position="bottom")+theme(strip.text.y=element_text(size=axis.text.size,family="times",face="bold",angle=0))+
-    geom_hline(y=0.03, color="blue")+geom_hline(y=0.05, color="red")
 ```
 
 ```
@@ -451,6 +346,117 @@ ggplot(data = subset(arrange(SiliconTopVendor,SubCustomer.sum),
 ## : font family not found in Windows font database
 ```
 
+![](silicon_valley_graphs_files/figure-html/VendorPeaks-1.png) 
+
+```r
+#      geom_rect(ymin = 0.02, ymax = 0.05, 
+#               xmin = -Inf, xmax = Inf, 
+#               fill = 'blue',
+#               aes(alpha=0.25)
+
+
+
+# SiliconTopVendorAnnual$Obligation.2014<-SiliconTopVendorAnnual$Obligation.2014*1000000000
+
+ggplot(data = subset(arrange(SiliconTopVendor,SubCustomer.sum),
+                     ParentID!="Hewlett Packard" &
+                         IsSiliconValley==1),
+       aes(x=Fiscal.Year,
+           y=Obligation.2014,
+           fill=SubCustomer.sum
+       )
+)+ 
+    geom_bar(stat="identity") + 
+    facet_grid(  ParentPeak ~.,
+                    scales="free_y", #The scales actually do stay fixed
+                     space="free_y")+#But only because the space is free)
+    scale_x_date("Fiscal Year",
+                 labels=date_format("'%y"),
+                 # breaks="2 years",
+                 minor_breaks="1 year",
+                 breaks=c(as.Date("1990-01-01"),
+                          as.Date("1992-01-01"),
+                          as.Date("1994-01-01"),
+                          as.Date("1996-01-01"),
+                          as.Date("1998-01-01"),
+                          as.Date("2000-01-01"),
+                          as.Date("2002-01-01"),
+                          as.Date("2004-01-01"),
+                          as.Date("2006-01-01"),
+                          as.Date("2008-01-01"),
+                          as.Date("2010-01-01"),
+                          as.Date("2012-01-01"),
+                          as.Date("2014-01-01"))
+                 # breaks=date_breaks("year")
+                 # minor_breaks = "1 year"
+                 # breaks=date_breaks("year"),
+                 # breaks=c(as.Date("1990-01-01"),as.Date("2014-12-31"))
+    )+
+    theme(axis.text.x=element_text(angle = 90))+
+    scale_y_continuous("Constant 2014 $ Billions",labels=comma)+
+    theme(legend.position="bottom")+
+    theme(strip.text.x=element_text(size=strip.text.size,family="times",face="bold",angle=0))+
+    geom_hline(y=0.03, color="blue")+geom_hline(y=0.05, color="red")
+```
+
+```
+## Warning in loop_apply(n, do.ply): Removed 1 rows containing missing values
+## (position_stack).
+```
+
+```
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+```
+
+```
+## Warning in loop_apply(n, do.ply): Removed 2 rows containing missing values
+## (position_stack).
+```
+
+```
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+```
+
+```
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+```
+
+```
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+```
+
+```
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+```
+
+```
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+```
+
+```
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+```
+
+```
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+```
+
+```
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+```
+
+```
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+```
+
+```
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+```
+
+```
+## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+```
+
 ![](silicon_valley_graphs_files/figure-html/VendorPeaks-2.png) 
 
 ```r
@@ -471,16 +477,16 @@ Table: Vendor
      ParentPeak                             Total     Max   MaxYear   Avg. '90-'99   Avg. '00-'07   Avg. '08-'09   Avg. '10-'12   Avg. '13-'14  Drawdown % Change   BCA % Change   Percent 
 ---  -----------------------------------  -------  ------  --------  -------------  -------------  -------------  -------------  -------------  ------------------  -------------  --------
 1    LOCKHEED MARTIN                       61.562   6.265      2013          0.000          3.602          4.650          4.466          5.022  -4.0%               12.4%          66.3%   
-2    HEWLETT PACKARD                       13.041   2.059      2011          0.171          0.161          1.037          1.489          1.750  43.7%               17.5%          14.0%   
+2    Hewlett Packard                       13.041   2.059      2011          0.171          0.161          1.037          1.489          1.750  43.7%               17.5%          14.0%   
 3    BAE SYSTEMS                            5.186   2.045      2008          0.000          0.100          1.389          0.466          0.103  -66.4%              -77.9%         5.6%    
 52   Other Major Silicon Valley Vendors     2.745   0.225      2010          0.004          0.178          0.206          0.196          0.140  -5.0%               -28.6%         3.0%    
-5    ORACLE                                 2.475   0.204      2000          0.045          0.148          0.123          0.145          0.079  17.8%               -45.6%         2.7%    
+5    Oracle                                 2.475   0.204      2000          0.045          0.148          0.123          0.145          0.079  17.8%               -45.6%         2.7%    
 6    NORTHROP GRUMMAN                       1.307   0.198      2009          0.000          0.041          0.182          0.133          0.108  -27.0%              -19.1%         1.4%    
-10   AGILENT TECHNOLOGIES                   0.899   0.096      2007          0.000          0.073          0.050          0.052          0.031  4.6%                -40.9%         1.0%    
+10   Agilent Technologies                   0.899   0.096      2007          0.000          0.073          0.050          0.052          0.031  4.6%                -40.9%         1.0%    
 7    VARIAN ASSOCIATES                      0.581   0.173      1990          0.056          0.002          0.002          0.000          0.000  -84.6%              -100.0%        0.6%    
 11   18579925                               0.483   0.094      2013          0.000          0.013          0.035          0.063          0.062  78.8%               -1.2%          0.5%    
 17   GENERAL DYNAMICS                       0.429   0.048      2007          0.000          0.029          0.040          0.027          0.017  -33.3%              -36.5%         0.5%    
-19   STANFORD UNIVERSITY                    0.394   0.043      2005          0.017          0.016          0.010          0.016          0.013  61.5%               -17.3%         0.4%    
+19   Stanford University                    0.394   0.043      2005          0.017          0.016          0.010          0.016          0.013  61.5%               -17.3%         0.4%    
 12   KAISER AEROPSACE & ELECTRONICS         0.363   0.091      2004          0.000          0.043          0.009          0.000          0.000  -101.9%             -100.0%        0.4%    
 21   TEXTRON                                0.347   0.038      2013          0.000          0.023          0.017          0.024          0.030  36.2%               26.8%          0.4%    
 13   TRW [NORTHROP GRUMMAN]                 0.310   0.089      2013          0.000          0.000          0.000          0.055          0.073  Inf%                33.1%          0.3%    
@@ -591,8 +597,9 @@ ggplot(data = arrange(subset(SiliconTopVendor,
                  # breaks=c(as.Date("1990-01-01"),as.Date("2014-12-31"))
     )+
     theme(axis.text.x=element_text(angle = 90))+
-    scale_y_continuous("Obligations (2014 Dollars Billions)",labels=comma)+
-    theme(legend.position="bottom")
+    scale_y_continuous("Constant 2014 $ Billions",labels=comma)+
+    theme(legend.position="bottom")+
+    theme(strip.text.x=element_text(size=strip.text.size,family="times",face="bold",angle=0))
 ```
 
 ```
@@ -632,6 +639,16 @@ ggplot(data = arrange(subset(SiliconTopVendor,
 
 ```
 ## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+```
+
+```
+## Warning in grid.Call(L_textBounds, as.graphicsAnnot(x$label), x$x, x$y, :
+## font family not found in Windows font database
+```
+
+```
+## Warning in grid.Call.graphics(L_text, as.graphicsAnnot(x$label), x$x, x$y,
+## : font family not found in Windows font database
 ```
 
 ![](silicon_valley_graphs_files/figure-html/PlatformPortfolio-1.png) 
@@ -688,8 +705,11 @@ ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$SubCustomer.sum),],
                  # breaks=c(as.Date("1990-01-01"),as.Date("2014-12-31"))
     )+
     theme(axis.text.x=element_text(angle = 90))+
-    scale_y_continuous("Obligations (2014 Dollars Billions)",labels=comma)+
-    theme(legend.position="bottom")
+    theme(axis.text.y=element_text(angle = 90))+
+    scale_y_continuous("Constant 2014 $ Billions",labels=comma)+
+    theme(legend.position="bottom")+
+    theme(strip.text.x=element_text(size=strip.text.size,family="times",face="bold",angle=0))+
+    scale_fill_discrete(name="DoD Component") 
 ```
 
 ```
@@ -729,6 +749,16 @@ ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$SubCustomer.sum),],
 
 ```
 ## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+```
+
+```
+## Warning in grid.Call(L_textBounds, as.graphicsAnnot(x$label), x$x, x$y, :
+## font family not found in Windows font database
+```
+
+```
+## Warning in grid.Call.graphics(L_text, as.graphicsAnnot(x$label), x$x, x$y,
+## : font family not found in Windows font database
 ```
 
 ![](silicon_valley_graphs_files/figure-html/SubCustomer-1.png) 
@@ -761,8 +791,10 @@ ggplot(data = arrange(subset(SiliconTopVendor,IsSiliconValley==1),HPandOther),
                           as.Date("2014-01-01"))
     )+
     theme(axis.text.x=element_text(angle = 90))+
-    scale_y_continuous("Obligations (2014 Dollars Billions)",labels=comma)+
-    theme(legend.position="bottom")
+    scale_y_continuous("Constant 2014 $ Billions",labels=comma)+
+    theme(legend.position="bottom")+
+    theme(strip.text.x=element_text(size=strip.text.size,family="times",face="bold",angle=0))+
+      scale_fill_discrete(name="Vendor") 
 ```
 
 ```
@@ -794,6 +826,16 @@ ggplot(data = arrange(subset(SiliconTopVendor,IsSiliconValley==1),HPandOther),
 
 ```
 ## Warning in loop_apply(n, do.ply): Stacking not well defined when ymin != 0
+```
+
+```
+## Warning in grid.Call(L_textBounds, as.graphicsAnnot(x$label), x$x, x$y, :
+## font family not found in Windows font database
+```
+
+```
+## Warning in grid.Call.graphics(L_text, as.graphicsAnnot(x$label), x$x, x$y,
+## : font family not found in Windows font database
 ```
 
 ![](silicon_valley_graphs_files/figure-html/SubCustomer-2.png) 

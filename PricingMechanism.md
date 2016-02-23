@@ -136,7 +136,7 @@ Table: Fee
 LatticePlotWrapper("DoD Component"
                              ,NULL
                              ,"Fiscal Year"
-                             ,"Contract Obligations (2014 Billions)"
+                             ,"Constant 2014 $ Billions"
                              ,Coloration
                              ,PricingMechanism
                              ,VAR.ncol=NA
@@ -214,7 +214,7 @@ LatticePlotWrapper("DoD Component"
 LatticePlotWrapper("DoD Component"
                              ,NULL
                              ,"Fiscal Year"
-                             ,"Contract Obligations (2014 Billions)"
+                             ,"Constant 2014 $ Billions"
                              ,Coloration
                              ,PricingMechanism
                              ,VAR.ncol=NA
@@ -266,7 +266,7 @@ LatticePlotWrapper("DoD Component"
 LatticePlotWrapper("DoD Component"
                              ,NULL
                              ,"Fiscal Year"
-                             ,"Contract Obligations (2014 Billions)"
+                             ,"Constant 2014 $ Billions"
                              ,Coloration
                              ,subset(PricingMechanism, year(Fiscal.Year)>1990)
                              ,VAR.ncol=NA

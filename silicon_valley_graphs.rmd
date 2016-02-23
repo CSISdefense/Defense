@@ -25,9 +25,9 @@ source(paste(Path,"helper.r",sep=""))
 
 
 axis.text.size<-8
-strip.text.size<-10
-legend.text.size<-12
-title.text.size<-10
+strip.text.size<-8
+legend.text.size<-8
+title.text.size<-8
 
 Coloration<-read.csv(
     paste(Path,"Lookups\\","lookup_coloration.csv",sep=""),
@@ -71,6 +71,10 @@ SiliconTopVendor$ConfirmedSiliconValley<-0
 SiliconTopVendor$ConfirmedSiliconValley[SiliconTopVendor$IsSiliconValley==1]<-1
 
 
+levels(SiliconTopVendor$ParentID)[levels(SiliconTopVendor$ParentID)=="HEWLETT PACKARD"]<-"Hewlett Packard"
+levels(SiliconTopVendor$ParentID)[levels(SiliconTopVendor$ParentID)=="ORACLE"]<-"Oracle"
+levels(SiliconTopVendor$ParentID)[levels(SiliconTopVendor$ParentID)=="AGILENT TECHNOLOGIES"]<-"Agilent Technologies"
+levels(SiliconTopVendor$ParentID)[levels(SiliconTopVendor$ParentID)=="STANFORD UNIVERSITY"]<-"Stanford University"
 
 
 SiliconTopVendor<-subset(SiliconTopVendor,Customer=="Defense")
@@ -107,9 +111,9 @@ SiliconTopVendor$ParentConsolidated<-factor(SiliconTopVendor$ParentConsolidated,
 
 
 SiliconTopVendor$HPandOther<-"Other Silicon Valley Major Vendors"
-SiliconTopVendor$HPandOther[SiliconTopVendor$ParentID =="HEWLETT PACKARD"]<-"HEWLETT PACKARD"
+SiliconTopVendor$HPandOther[SiliconTopVendor$ParentID =="Hewlett Packard"]<-"Hewlett Packard"
 SiliconTopVendor$HPandOther<-ordered(SiliconTopVendor$HPandOther,
-                                     c("Other Silicon Valley Major Vendors","HEWLETT PACKARD"))
+                                     c("Other Silicon Valley Major Vendors","Hewlett Packard"))
 
 SummaryKable(SiliconTopVendor,NULL,"Summary")
 
@@ -181,8 +185,9 @@ ggplot(data = subset(arrange(SiliconTopVendor,SubCustomer.sum),
                  # breaks=c(as.Date("1990-01-01"),as.Date("2014-12-31"))
     )+
     theme(axis.text.x=element_text(angle = 90))+
-    scale_y_continuous("Obligations (2014 Billions Dollars)",labels=comma)+
-    theme(legend.position="bottom")+theme(strip.text.y=element_text(size=axis.text.size,family="times",face="bold",angle=0))
+    scale_y_continuous("Constant 2014 $ Billions",labels=comma)+
+    theme(legend.position="bottom")+
+    theme(strip.text.x=element_text(size=strip.text.size,family="times",face="bold",angle=0))
 
 #      geom_rect(ymin = 0.02, ymax = 0.05, 
 #               xmin = -Inf, xmax = Inf, 
@@ -194,7 +199,7 @@ ggplot(data = subset(arrange(SiliconTopVendor,SubCustomer.sum),
 # SiliconTopVendorAnnual$Obligation.2014<-SiliconTopVendorAnnual$Obligation.2014*1000000000
 
 ggplot(data = subset(arrange(SiliconTopVendor,SubCustomer.sum),
-                     ParentID!="HEWLETT PACKARD" &
+                     ParentID!="Hewlett Packard" &
                          IsSiliconValley==1),
        aes(x=Fiscal.Year,
            y=Obligation.2014,
@@ -228,8 +233,9 @@ ggplot(data = subset(arrange(SiliconTopVendor,SubCustomer.sum),
                  # breaks=c(as.Date("1990-01-01"),as.Date("2014-12-31"))
     )+
     theme(axis.text.x=element_text(angle = 90))+
-    scale_y_continuous("Obligations (2014 Billions Dollars)",labels=comma)+
-    theme(legend.position="bottom")+theme(strip.text.y=element_text(size=axis.text.size,family="times",face="bold",angle=0))+
+    scale_y_continuous("Constant 2014 $ Billions",labels=comma)+
+    theme(legend.position="bottom")+
+    theme(strip.text.x=element_text(size=strip.text.size,family="times",face="bold",angle=0))+
     geom_hline(y=0.03, color="blue")+geom_hline(y=0.05, color="red")
 #      geom_rect(ymin = 0.02, ymax = 0.05, 
 #               xmin = -Inf, xmax = Inf, 
@@ -291,8 +297,9 @@ ggplot(data = arrange(subset(SiliconTopVendor,
                  # breaks=c(as.Date("1990-01-01"),as.Date("2014-12-31"))
     )+
     theme(axis.text.x=element_text(angle = 90))+
-    scale_y_continuous("Obligations (2014 Dollars Billions)",labels=comma)+
-    theme(legend.position="bottom")
+    scale_y_continuous("Constant 2014 $ Billions",labels=comma)+
+    theme(legend.position="bottom")+
+    theme(strip.text.x=element_text(size=strip.text.size,family="times",face="bold",angle=0))
 
 
 
@@ -303,6 +310,8 @@ ggplot(data = arrange(subset(SiliconTopVendor,
 ```{r SubCustomer}
 
 SummaryKable(SiliconTopVendor,"SubCustomer.sum","Defense Component")
+
+
 
 ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$SubCustomer.sum),],
                      Customer=="Defense" & year(Fiscal.Year)<=2014& IsSiliconValley==1) ,# subset(ContractSurvival,StartFiscalYear>=2007 & StartFiscalYear<=2013),
@@ -338,8 +347,11 @@ ggplot(data = subset(SiliconTopVendor[order(SiliconTopVendor$SubCustomer.sum),],
                  # breaks=c(as.Date("1990-01-01"),as.Date("2014-12-31"))
     )+
     theme(axis.text.x=element_text(angle = 90))+
-    scale_y_continuous("Obligations (2014 Dollars Billions)",labels=comma)+
-    theme(legend.position="bottom")
+    theme(axis.text.y=element_text(angle = 90))+
+    scale_y_continuous("Constant 2014 $ Billions",labels=comma)+
+    theme(legend.position="bottom")+
+    theme(strip.text.x=element_text(size=strip.text.size,family="times",face="bold",angle=0))+
+    scale_fill_discrete(name="DoD Component") 
 
 
 
@@ -370,8 +382,10 @@ ggplot(data = arrange(subset(SiliconTopVendor,IsSiliconValley==1),HPandOther),
                           as.Date("2014-01-01"))
     )+
     theme(axis.text.x=element_text(angle = 90))+
-    scale_y_continuous("Obligations (2014 Dollars Billions)",labels=comma)+
-    theme(legend.position="bottom")
+    scale_y_continuous("Constant 2014 $ Billions",labels=comma)+
+    theme(legend.position="bottom")+
+    theme(strip.text.x=element_text(size=strip.text.size,family="times",face="bold",angle=0))+
+      scale_fill_discrete(name="Vendor") 
 
 ```
 

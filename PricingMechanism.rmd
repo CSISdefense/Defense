@@ -24,9 +24,9 @@ source(paste(Path,"lookups.r",sep=""))
 source(paste(Path,"helper.r",sep=""))
 
 
-axis.text.size<-10
-strip.text.size<-10
-legend.text.size<-12
+axis.text.size<-8
+strip.text.size<-8
+legend.text.size<-10
 title.text.size<-10
 
 Coloration<-read.csv(
@@ -85,7 +85,7 @@ SummaryKable(PricingMechanism,"Fee","Fee")
 LatticePlotWrapper("DoD Component"
                              ,NULL
                              ,"Fiscal Year"
-                             ,"Contract Obligations (2014 Billions)"
+                             ,"Constant 2014 $ Billions"
                              ,Coloration
                              ,PricingMechanism
                              ,VAR.ncol=NA
@@ -114,7 +114,7 @@ LatticePlotWrapper("DoD Component"
 LatticePlotWrapper("DoD Component"
                              ,NULL
                              ,"Fiscal Year"
-                             ,"Contract Obligations (2014 Billions)"
+                             ,"Constant 2014 $ Billions"
                              ,Coloration
                              ,PricingMechanism
                              ,VAR.ncol=NA
@@ -145,7 +145,7 @@ LatticePlotWrapper("DoD Component"
 LatticePlotWrapper("DoD Component"
                              ,NULL
                              ,"Fiscal Year"
-                             ,"Contract Obligations (2014 Billions)"
+                             ,"Constant 2014 $ Billions"
                              ,Coloration
                              ,subset(PricingMechanism, year(Fiscal.Year)>1990)
                              ,VAR.ncol=NA
