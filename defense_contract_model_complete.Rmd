@@ -196,6 +196,7 @@ CompleteContracts$UnmodifiedDays<-as.numeric(
 # summary(dYears)
 
 #Break the count of days into four categories.
+CompleteContracts$qDuration[CompleteContracts$UnmodifiedDays<0]<-NA
 CompleteContracts$qDuration<-cut2(CompleteContracts$UnmodifiedDays,cuts=c(61,214,366,732))
 lowroundedcutoffs<-c(15000,100000,1000000,30000000)
 highroundedcutoffs<-c(15000,100000,1000000,10000000,75000000)
@@ -688,6 +689,28 @@ if (all(levels(CompleteContracts$qDuration)==c("[    0,   61)",
     }
              
 
+
+if (all(levels(CompleteContracts$qDuration) %in% c("[ -42275,     61)",
+                                               "[     61,    214)",
+                                               "[    214,    366)",
+                                               "[    366,    732)",
+                                               "[    732,2920903]"))){
+    CompleteContracts$qDuration<-factor(CompleteContracts$qDuration, 
+                                   
+                                   levels=c("[ -42275,     61)",
+                                               "[     61,    214)",
+                                               "[    214,    366)",
+                                               "[    366,    732)",
+                                               "[    732,2920903]"),
+                                   labels=c("[0 months,~2 months)",
+                                               "[~2 months,~7 months)",
+                                               "[~7 months-~1 year]",
+                                               "(~1 year,~2 years]",
+                                               "(~2 years+]"),
+                                   ordered=TRUE
+                                   )
+    }
+          
 
 CompleteContracts$UnmodifiedNumberOfOffersReceived[is.na(CompleteContracts$UnmodifiedNumberOfOffersReceived)&
                                                        !is.na(CompleteContracts$UnmodifiedIsSomeCompetition)&
