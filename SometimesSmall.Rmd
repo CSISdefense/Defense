@@ -1,0 +1,270 @@
+---
+title: "Sometimes Small"
+author: "Greg Sanders"
+date: "July 14, 2016"
+output: html_document
+---
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r Requirements}
+library(plyr)
+require(ggplot2)
+require(scales)
+# setwd("K:\\Development\\Defense")
+# Path<-"K:\\Development\\Defense\\"
+```
+
+
+
+
+```{r ReadAndProcessDuns}
+
+DunsPercentIsSmall  <- read.csv(
+    paste("Data\\DunsPercentIsSmall.csv", sep = ""),
+    header = TRUE, sep = ",", dec = ".", strip.white = TRUE, 
+    na.strings = c("NULL","NA",""),
+    stringsAsFactors = TRUE
+)
+
+DunsPercentIsSmall$RoundedPercentSmall<-round(DunsPercentIsSmall$percentSmall,4)
+
+DunsPercentIsSmall$Category[DunsPercentIsSmall$AnyIsSmall==0]<-"Never Small"
+DunsPercentIsSmall$Category[DunsPercentIsSmall$AlwaysIsSmall==1]<-"Always Small"
+DunsPercentIsSmall$Category[DunsPercentIsSmall$AlwaysIsSmall==0 & 
+                             DunsPercentIsSmall$AnyIsSmall==1]<-"Sometimes Small"
+
+
+DunsCountyByPercent<-ddply(DunsPercentIsSmall,.(RoundedPercentSmall,AnyIsSmall,AlwaysIsSmall,Category),
+      summarize,
+      count=length(FiscalYear),
+      ObligatedAmount=sum(ObligatedAmount),
+      ObligatedAmountisSmall=sum(ObligatedAmountisSmall)
+      )
+
+DunsCountyByPercent$SmallValueThreshold[DunsCountyByPercent$RoundedPercentSmall>=0.25]<-">=25%"
+DunsCountyByPercent$SmallValueThreshold[DunsCountyByPercent$RoundedPercentSmall<0.25 &
+                                              DunsCountyByPercent$RoundedPercentSmall>=0.1]<-"[10%-25%)"
+
+DunsCountyByPercent$SmallValueThreshold[DunsCountyByPercent$RoundedPercentSmall<0.1 &
+                                        DunsCountyByPercent$RoundedPercentSmall>=0.01]<-"[1%-10%)"
+DunsCountyByPercent$SmallValueThreshold[DunsCountyByPercent$RoundedPercentSmall<0.01 ]<-"<1%"
+# DunsCountyByPercent$SmallValueThreshold[is.na(DunsCountyByPercent$RoundedPercentSmall)]<-"NA"
+DunsCountyByPercent$SmallValueThreshold<-ordered(DunsCountyByPercent$SmallValueThreshold,levels=c("<1%","[1%-10%)","[10%-25%)",">=25%"))
+
+```
+
+
+You can also embed plots, for example:
+
+```{r DunsCount, echo=FALSE}
+
+ggplot( subset(DunsCountyByPercent,!is.na(Category) & !is.na(ObligatedAmount) &ObligatedAmount!=0), #!is.na(Ac)
+        aes(x = Category,
+            weight = count,
+            fill=SmallValueThreshold
+        )) +
+    geom_histogram(alpha = 1,  colour = "black",binwidth=0.025)+
+    # scale_x_continuous(limits=c(-0.05,1.05))+
+    # facet_grid( Category ~., scales="free_y")+
+    scale_y_continuous("Number of Vendors\nVariable Scale",labels=comma)+theme(axis.text.x=element_text(angle=90))
+
+
+ggplot( subset(DunsCountyByPercent,!is.na(Category)), #!is.na(Ac)
+       aes(x = RoundedPercentSmall,
+           weight = count,
+           fill=SmallValueThreshold
+       )) +
+    geom_histogram(alpha = 1,  colour = "black",binwidth=0.025)+
+    scale_x_continuous(limits=c(-0.05,1.05))+
+    facet_grid( Category ~., scales="free_y")+
+    scale_y_continuous("Number of Vendors\nVariable Scale",labels=comma)
+```
+
+
+```{r DunsTotalObligated, echo=FALSE}
+
+ggplot( subset(DunsCountyByPercent,!is.na(Category)), #!is.na(Ac)
+        aes(x = Category,
+            weight = ObligatedAmount,
+            fill=SmallValueThreshold
+        )) +
+    geom_histogram(alpha = 1,  colour = "black",binwidth=0.025)+
+    # scale_x_continuous(limits=c(-0.05,1.05))+
+    # facet_grid( Category ~., scales="free_y")+
+    scale_y_continuous("Then-Year Total Obligations\nVariable Scale",labels=comma)+theme(axis.text.x=element_text(angle=90))
+
+
+
+
+ggplot( subset(DunsCountyByPercent,!is.na(Category)), #!is.na(Ac)
+        aes(x = RoundedPercentSmall,
+            weight = ObligatedAmount,
+            fill=SmallValueThreshold
+        )) +
+    geom_histogram(alpha = 1,  colour = "black",binwidth=0.025)+
+    scale_x_continuous(limits=c(-0.05,1.05))+
+    facet_grid( Category ~., scales="free_y")+
+    scale_y_continuous("Then-Year Total Obligations\nVariable Scale",labels=comma)
+```
+
+
+```{r DunsSmallObligated, echo=FALSE}
+
+
+ggplot( subset(DunsCountyByPercent,!is.na(Category)), #!is.na(Ac)
+        aes(x = Category,
+            weight = ObligatedAmountisSmall,
+            fill=SmallValueThreshold
+        )) +
+    geom_histogram(alpha = 1,  colour = "black",binwidth=0.025)+
+    # scale_x_continuous(limits=c(-0.05,1.05))+
+    # facet_grid( Category ~., scales="free_y")+
+    scale_y_continuous("Then-Year Small Obligations\nVariable Scale",labels=comma)+theme(axis.text.x=element_text(angle=90))
+
+
+
+ggplot( subset(DunsCountyByPercent,!is.na(Category) & Category!="Never Small"), #!is.na(Ac)
+        aes(x = RoundedPercentSmall,
+            weight = ObligatedAmountisSmall,
+            fill=SmallValueThreshold
+        )) +
+    geom_histogram(alpha = 1,  colour = "black",binwidth=0.025)+
+    scale_x_continuous(limits=c(-0.05,1.05))+
+    facet_grid( Category ~., scales="free_y")+
+    scale_y_continuous("Then-Year Small Obligations\nVariable Scale",labels=comma)
+
+
+
+```
+
+
+
+
+```{r ReadAndProcessParent}
+
+ParentPercentIsSmall  <- read.csv(
+    paste("Data\\ParentIDpercentIsSmall.csv", sep = ""),
+    header = TRUE, sep = "\t", dec = ".", strip.white = TRUE, 
+    na.strings = c("NULL","NA",""),
+    stringsAsFactors = TRUE,comment=""
+)
+
+ParentPercentIsSmall$RoundedPercentSmall<-round(ParentPercentIsSmall$PercentIsSmall,4)
+
+ParentPercentIsSmall$Category[ParentPercentIsSmall$MaxOfAnyIsSmall==0]<-"Never Small"
+ParentPercentIsSmall$Category[ParentPercentIsSmall$MinOfAlwaysIsSmall==1]<-"Always Small"
+ParentPercentIsSmall$Category[ParentPercentIsSmall$MaxOfAnyIsSmall==1 & 
+                                ParentPercentIsSmall$MinOfAlwaysIsSmall==0]<-"Sometimes Small"
+summary(factor(ParentPercentIsSmall$Category))
+
+ParentCountyByPercent<-ddply(ParentPercentIsSmall,.(RoundedPercentSmall,MaxOfIsOnePercentPlusSmall,MinOfAlwaysIsSmall,LargeGreaterThan3B,Category),
+                           summarize,
+                           count=length(FiscalYear),
+                           ObligatedAmount=sum(ObligatedAmount),
+                           ObligatedAmountisSmall=sum(ObligatedAmountIsSmall)
+)
+
+ParentCountyByPercent$SmallValueThreshold[ParentCountyByPercent$RoundedPercentSmall>=0.25]<-">=25%"
+ParentCountyByPercent$SmallValueThreshold[ParentCountyByPercent$RoundedPercentSmall<0.25 &
+                                              ParentCountyByPercent$RoundedPercentSmall>=0.1]<-"[10%-25%)"
+ParentCountyByPercent$SmallValueThreshold[ParentCountyByPercent$RoundedPercentSmall<0.1 &
+                                            ParentCountyByPercent$RoundedPercentSmall>=0.01]<-"[1%-10%)"
+ParentCountyByPercent$SmallValueThreshold[ParentCountyByPercent$RoundedPercentSmall<0.01 ]<-"<1%"
+# ParentCountyByPercent$SmallValueThreshold[is.na(ParentCountyByPercent$RoundedPercentSmall)]<-"NA"
+ParentCountyByPercent$SmallValueThreshold<-ordered(ParentCountyByPercent$SmallValueThreshold,levels=c("<1%","[1%-10%)","[10%-25%)",">=25%"))
+ParentCountyByPercent$LargeGreaterThan3B<-factor(ParentCountyByPercent$LargeGreaterThan3B,levels=c(0,1),labels=c('<3B','Large'))
+
+```
+
+
+You can also embed plots, for example:
+
+```{r ParentCount, echo=FALSE}
+
+ggplot( subset(ParentCountyByPercent,!is.na(Category) & !is.na(ObligatedAmount) &ObligatedAmount!=0), #!is.na(Ac)
+        aes(x = Category,
+            weight = count,
+            fill=SmallValueThreshold
+        )) +
+    geom_histogram(alpha = 1,  colour = "black",binwidth=0.025)+
+    # scale_x_continuous(limits=c(-0.05,1.05))+
+    facet_grid( LargeGreaterThan3B ~.)+#, scales="free_y"
+    scale_y_continuous("Number of Vendors\nVariable Scale",labels=comma)+theme(axis.text.x=element_text(angle=90))
+
+
+ggplot( subset(ParentCountyByPercent,!is.na(Category)), #!is.na(Ac)
+        aes(x = RoundedPercentSmall,
+            weight = count,
+            fill=SmallValueThreshold
+        )) +
+    geom_histogram(alpha = 1,  colour = "black",binwidth=0.025)+
+    scale_x_continuous(limits=c(-0.05,1.05))+
+    facet_grid( Category ~ LargeGreaterThan3B, scales="free_y")+
+    scale_y_continuous("Number of Vendors\nVariable Scale",labels=comma)
+```
+
+
+```{r ParentTotalObligated, echo=FALSE}
+ggplot( subset(ParentCountyByPercent,!is.na(Category)), #!is.na(Ac)
+        aes(x = Category,
+            weight = ObligatedAmount,
+            fill=SmallValueThreshold
+        )) +
+    geom_histogram(alpha = 1,  colour = "black",binwidth=0.025)+
+    # scale_x_continuous(limits=c(-0.05,1.05))+
+    facet_grid( LargeGreaterThan3B ~., scales="free_y")+
+    scale_y_continuous("Then-Year Total Obligations\nVariable Scale",labels=comma)+theme(axis.text.x=element_text(angle=90))
+
+
+
+
+ggplot( subset(ParentCountyByPercent,!is.na(Category)), #!is.na(Ac)
+        aes(x = RoundedPercentSmall,
+            weight = ObligatedAmount,
+            fill=SmallValueThreshold
+        )) +
+    geom_histogram(alpha = 1,  colour = "black",binwidth=0.025)+
+    scale_x_continuous(limits=c(-0.05,1.05))+
+    facet_grid( Category ~ LargeGreaterThan3B, scales="free_y")+
+    scale_y_continuous("Then-Year Total Obligations\nVariable Scale",labels=comma)
+
+
+```
+
+
+```{r ParentSmallObligated, echo=FALSE}
+
+
+
+ggplot( subset(ParentCountyByPercent,!is.na(Category)), #!is.na(Ac)
+        aes(x = Category,
+            weight = ObligatedAmountisSmall,
+            fill=SmallValueThreshold
+        )) +
+    geom_histogram(alpha = 1,  colour = "black",binwidth=0.025)+
+    # scale_x_continuous(limits=c(-0.05,1.05))+
+    facet_grid( LargeGreaterThan3B ~., scales="free_y" )+
+    scale_y_continuous("Then-Year Small Obligations\nVariable Scale",labels=comma)+theme(axis.text.x=element_text(angle=90))
+
+
+
+ggplot( subset(ParentCountyByPercent,!is.na(Category) & Category!="Never Small"), #!is.na(Ac)
+        aes(x = RoundedPercentSmall,
+            weight = ObligatedAmountisSmall,
+            fill=SmallValueThreshold
+        )) +
+    geom_histogram(alpha = 1,  colour = "black",binwidth=0.025)+
+    scale_x_continuous(limits=c(-0.05,1.05))+
+    facet_grid( Category ~ LargeGreaterThan3B, scales="free_y")+
+    scale_y_continuous("Then-Year Small Obligations\nVariable Scale",labels=comma)
+
+
+
+
+
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
