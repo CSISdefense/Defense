@@ -18,7 +18,7 @@ require(stringr)
 require(ggplot2)
 require(Hmisc)
 #*************************************Options*****************************************************
-options(error=recover)
+options(error=NULL)
 options(warn=1)
 
 #*************************************Lookup Files*****************************************************
@@ -46,13 +46,11 @@ CompleteContracts <-read.csv(
 CompleteContracts<-standardize_variable_names(Path,CompleteContracts)
 
 
-
 #Limit to completed contracts that start in 2000 or later.
 CompleteContracts$LastCurrentCompletionDate<-strptime(CompleteContracts$LastCurrentCompletionDate,"%Y-%m-%d") 
 #Drop contracts starting before the study period
 CompleteContracts<-subset(CompleteContracts,
-                          StartFiscal_Year>=2000 & 
-                              (LastCurrentCompletionDate<=strptime("2015-09-30","%Y-%m-%d") | IsClosed==1))
+                          StartFiscal_Year>=2007)
 
 
 
@@ -76,6 +74,7 @@ CompleteContracts<-read_and_join(""
                                  ,CompleteContracts
                                  ,"LargeDataSets\\"
                                  ,by="CSIScontractID"
+                                 ,NewColumnsTrump=FALSE
                                  )
 
 CompleteContracts<-standardize_variable_names(Path,CompleteContracts)
@@ -99,6 +98,7 @@ CompleteContracts<-read_and_join(""
                                  ,CompleteContracts
                                  ,"LargeDataSets\\"
                                  ,by="CSIScontractID"
+                                 ,NewColumnsTrump=FALSE
                                  )
 CompleteContracts<-standardize_variable_names(Path,CompleteContracts)
 
@@ -130,6 +130,7 @@ CompleteContracts<-read_and_join(""
                                  ,CompleteContracts
                                  ,"LargeDataSets\\"
                                  ,by="CSIScontractID"
+                                 ,NewColumnsTrump=FALSE
                                  )
 CompleteContracts<-standardize_variable_names(Path,CompleteContracts)
 
@@ -165,11 +166,11 @@ CompleteContracts<-CompleteContracts[,!colnames(CompleteContracts) %in% c(
 ```{r Outcome}
 #"LargeDataSets\\Defense_contract_SP_ContractUnmodifiedandOutcomeDetailsCustomer.csv"
 
-CompleteContracts<-read_and_join(""
-                                 ,"Defense_contract_SP_ContractUnmodifiedandOutcomeDetailsCustomer.csv"
+CompleteContracts<-read_and_join("",                                 "Defense_contract_SP_ContractUnmodifiedandOutcomeDetailsCustomer.csv"
                                  ,CompleteContracts
                                  ,"LargeDataSets\\"
                                  ,by="CSIScontractID"
+                                 ,NewColumnsTrump=FALSE
                                  )
 CompleteContracts<-standardize_variable_names(Path,CompleteContracts)
 
@@ -196,8 +197,11 @@ CompleteContracts$UnmodifiedDays<-as.numeric(
 # summary(dYears)
 
 #Break the count of days into four categories.
-CompleteContracts$qDuration[CompleteContracts$UnmodifiedDays<0]<-NA
+CompleteContracts$UnmodifiedDays[CompleteContracts$UnmodifiedDays<0]<-NA
 CompleteContracts$qDuration<-cut2(CompleteContracts$UnmodifiedDays,cuts=c(61,214,366,732))
+
+
+#Categorize the size of the original ceiling
 lowroundedcutoffs<-c(15000,100000,1000000,30000000)
 highroundedcutoffs<-c(15000,100000,1000000,10000000,75000000)
 CompleteContracts$qLowCeiling <- cut2(CompleteContracts$UnmodifiedContractBaseAndAllOptionsValue,cuts=lowroundedcutoffs)
@@ -205,17 +209,20 @@ CompleteContracts$qHighCeiling <- cut2(CompleteContracts$UnmodifiedContractBaseA
 rm(lowroundedcutoffs,highroundedcutoffs)
 
 
-CompleteContracts$qNChg <- cut2(CompleteContracts$SumOfisChangeOrder,c(1,2,3))
 
+#Change Orders
+CompleteContracts$qNChg <- cut2(CompleteContracts$SumOfisChangeOrder,c(1,2,3))
 
 CompleteContracts$pChangeOrderObligated<-CompleteContracts$ChangeOrderObligatedAmount/
     CompleteContracts$Action.Obligation
 CompleteContracts$pChangeOrderObligated[is.na(CompleteContracts$pChangeOrderObligated)&
                                             CompleteContracts$SumOfisChangeOrder==0]<-0
-CompleteContracts$pChangeOrderUnmodifiedBaseAndAll<-CompleteContracts$ChangeOrderBaseAndAllOptionsValue/
+CompleteContracts$pChangeOrderUnmodifiedBaseAndAll<-
+    CompleteContracts$ChangeOrderBaseAndAllOptionsValue/
     CompleteContracts$UnmodifiedContractBaseAndAllOptionsValue
-CompleteContracts$pChangeOrderUnmodifiedBaseAndAll[is.na(CompleteContracts$pChangeOrderUnmodifiedBaseAndAll)&
-                                            CompleteContracts$SumOfisChangeOrder==0]<-0
+CompleteContracts$pChangeOrderUnmodifiedBaseAndAll[
+    is.na(CompleteContracts$pChangeOrderUnmodifiedBaseAndAll)&
+        CompleteContracts$SumOfisChangeOrder==0]<-0
 
 
 CompleteContracts$qCRais <- cut2(
@@ -224,6 +231,23 @@ CompleteContracts$qCRais <- cut2(
                                               0.001,
                                               0.15)
     )
+
+
+
+#Percent New Work
+CompleteContracts$pNewWorkObligated<-CompleteContracts$NewWorkObligatedAmount/
+    CompleteContracts$Action.Obligation
+CompleteContracts$pNewWorkObligated[is.na(CompleteContracts$pNewWorkObligated)&
+                                            CompleteContracts$SumOfisNewWork==0]<-0
+CompleteContracts$pNewWorkUnmodifiedBaseAndAll<-
+    CompleteContracts$NewWorkBaseAndAllOptionsValue/
+    CompleteContracts$UnmodifiedContractBaseAndAllOptionsValue
+CompleteContracts$pNewWorkUnmodifiedBaseAndAll[
+    is.na(CompleteContracts$pNewWorkUnmodifiedBaseAndAll)&
+        CompleteContracts$SumOfisNewWork==0]<-0
+
+
+
 #                                               min(subset(
 #                                                   CompleteContracts$pChangeOrderObligated,
 #                                                   CompleteContracts$pChangeOrderObligated>0)),
@@ -236,7 +260,7 @@ summary(subset(CompleteContracts$qCRais,CompleteContracts$SumOfisChangeOrder>0  
 # #     MinOfEffectiveDate,
 #     "MinOfSignedDate",
 #     "LastUltimateCompletionDate"
-#     )]
+    # )]
 
 
 ```
@@ -248,6 +272,7 @@ CompleteContracts<-read_and_join(""
                                  ,CompleteContracts
                                  ,"LargeDataSets\\"
                                  ,by="CSIScontractID"
+                                 ,NewColumnsTrump=FALSE
                                  )
 CompleteContracts<-standardize_variable_names(Path,CompleteContracts)
 
@@ -344,6 +369,7 @@ CompleteContracts<-read_and_join(""
                                  ,CompleteContracts
                                  ,"LargeDataSets\\"
                                  ,by="CSIScontractID"
+                                 ,NewColumnsTrump=FALSE
                                  )
 
 #defense_contract_SP_ContractCompetitionVehicleCustomer.csv
@@ -352,6 +378,7 @@ CompleteContracts<-read_and_join(""
                                  ,CompleteContracts
                                  ,"LargeDataSets\\"
                                  ,by="CSIScontractID"
+                                 ,NewColumnsTrump=FALSE
                                  )
 CompleteContracts<-standardize_variable_names(Path,CompleteContracts)
 
@@ -393,6 +420,7 @@ CompleteContracts<-read_and_join(""
                                  ,CompleteContracts
                                  ,"LargeDataSets\\"
                                  ,by="CSIScontractID"
+                                 ,NewColumnsTrump=FALSE
                                  )
 CompleteContracts<-standardize_variable_names(Path,CompleteContracts)
 
@@ -438,6 +466,7 @@ CompleteContracts<-read_and_join(""
                                  ,CompleteContracts
                                  ,"LargeDataSets\\"
                                  ,by="CSIScontractID"
+                                 ,NewColumnsTrump=FALSE
                                  )
 CompleteContracts<-standardize_variable_names(Path,CompleteContracts)
 
@@ -688,20 +717,18 @@ if (all(levels(CompleteContracts$qDuration)==c("[    0,   61)",
                                    )
     }
              
-
-
-if (all(levels(CompleteContracts$qDuration) %in% c("[ -42275,     61)",
-                                               "[     61,    214)",
-                                               "[    214,    366)",
-                                               "[    366,    732)",
-                                               "[    732,2920903]"))){
+if (all(levels(CompleteContracts$qDuration) %in% c("[    0,   61)",
+                                               "[   61,  214)",
+                                               "[  214,  366)",
+                                               "[  366,  732)",
+                                               "[  732,33787]"))){
     CompleteContracts$qDuration<-factor(CompleteContracts$qDuration, 
                                    
-                                   levels=c("[ -42275,     61)",
-                                               "[     61,    214)",
-                                               "[    214,    366)",
-                                               "[    366,    732)",
-                                               "[    732,2920903]"),
+                                   levels=c("[    0,   61)",
+                                               "[   61,  214)",
+                                               "[  214,  366)",
+                                               "[  366,  732)",
+                                               "[  732,33787]"),
                                    labels=c("[0 months,~2 months)",
                                                "[~2 months,~7 months)",
                                                "[~7 months-~1 year]",
@@ -709,8 +736,8 @@ if (all(levels(CompleteContracts$qDuration) %in% c("[ -42275,     61)",
                                                "(~2 years+]"),
                                    ordered=TRUE
                                    )
-    }
-          
+
+}
 
 CompleteContracts$UnmodifiedNumberOfOffersReceived[is.na(CompleteContracts$UnmodifiedNumberOfOffersReceived)&
                                                        !is.na(CompleteContracts$UnmodifiedIsSomeCompetition)&
@@ -793,7 +820,9 @@ CompleteContracts$UCA<-factor(CompleteContracts$MaxOfIsUndefinitizedAction,
 
 
 ```{r ModelOutput}
-CompleteModel<-subset(CompleteContracts,select=c(IsIDV,
+CompleteModel<-subset(CompleteContracts, 
+                              (LastCurrentCompletionDate<=strptime("2015-09-30","%Y-%m-%d") | IsClosed==1),
+                      select=c(IsIDV,
     FixedOrCost,
     UnmodifiedIsSomeCompetition,
     #                         Comp,
@@ -912,9 +941,13 @@ CompleteModelAndDetail<-subset(CompleteModelAndDetail,select=c(CSIScontractID,
     UnmodifiedContractBaseAndAllOptionsValue,
     SumOfisChangeOrder,
     pChangeOrderUnmodifiedBaseAndAll,
-    pChangeOrderObligated,
-    UnmodifiedDays,
+    pChangeOrderObligated, #Probably don't need this
+    pNewWorkUnmodifiedBaseAndAll,
+    pNewWorkObligated, #Probably don't need this
     MinOfEffectiveDate,
+    UnmodifiedCurrentCompletionDate,
+    LastCurrentCompletionDate,
+    IsClosed,
     Action.Obligation
     )
     )
@@ -923,7 +956,7 @@ CompleteModelAndDetail<-subset(CompleteModelAndDetail,select=c(CSIScontractID,
 
 
 
-write.table(CompleteModelAndDetail
+write.table(CompleteContracts
             ,file=paste("LargeDataSets\\defense_contract_CSIScontractID_detail.csv"
                         ,sep=""
                         )

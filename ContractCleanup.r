@@ -77,21 +77,31 @@ FormatContractModel<-function(dfContract){
     }
     
     dfContract$ContractCount<-1
+
+    dfContract$UnmodifiedCurrentCompletionDate<-
+        as.Date(dfContract$UnmodifiedCurrentCompletionDate)
+    dfContract$MinOfEffectiveDate<-
+        as.Date(dfContract$MinOfEffectiveDate)
+    dfContract$LastCurrentCompletionDate<-
+        as.Date(dfContract$LastCurrentCompletionDate)
     
+        
     if("MinOfEffectiveDate" %in% colnames(dfContract) & 
        !"StartFiscalYear" %in% colnames(dfContract))
         dfContract$MinOfEffectiveDate<-as.Date(as.character(dfContract$MinOfEffectiveDate))
-        dfContract$StartFiscalYear<-DateToFiscalYear(dfContract$MinOfEffectiveDate)
+    dfContract$StartFiscalYear<-DateToFiscalYear(dfContract$MinOfEffectiveDate)
+  
     
     if("MinOfEffectiveDate" %in% colnames(dfContract) &
-       "UnmodifiedDays" %in% colnames(dfContract)){
-        dfContract$UnmodifiedCompletionDate<-dfContract$MinOfEffectiveDate+dfContract$UnmodifiedDays-1
-    }
-
-    if("MinOfEffectiveDate" %in% colnames(dfContract) &
-       "UnmodifiedCompletionDate" %in% colnames(dfContract)){
-        dfContract$EndAfterPeriod<-dfContract$UnmodifiedCompletionDate>max(dfContract$MinOfEffectiveDate,na.rm=TRUE)
-    }
+       "UnmodifiedCurrentCompletionDate" %in% colnames(dfContract)){
+        if(!"UnmodifiedDays" %in% colnames(dfContract))
+            dfContract$UnmodifiedDays<-as.numeric(
+                difftime(strptime(dfContract$UnmodifiedCurrentCompletionDate,"%Y-%m-%d")
+                         , strptime(dfContract$MinOfEffectiveDate,"%Y-%m-%d")
+                         , unit="days"
+                ))+1
+     }
+    
     dfContract
 }
 

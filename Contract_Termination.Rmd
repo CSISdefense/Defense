@@ -11,10 +11,7 @@ Is Terminated exploration
 ============================================================================
 
 ```{r InputFiles, echo = TRUE}
-##install.packages("ggplot2")
 
-##library("ggplot2")
-# 
 setwd("K:\\Development\\Defense")
 
 Path<-"K:\\2007-01 PROFESSIONAL SERVICES\\R scripts and data\\"
@@ -70,6 +67,11 @@ CompleteModelAndDetail  <- read.csv(
     stringsAsFactors = TRUE
     )
 
+
+
+
+
+
 CompleteModelAndDetail<-FormatContractModel(CompleteModelAndDetail)
 
 #ContractWeighted <- apply_lookups(Path,ContractWeighted)
@@ -78,10 +80,10 @@ CompleteModelAndDetail<-FormatContractModel(CompleteModelAndDetail)
 CompleteModelAndDetail$TermNum<-as.integer(as.character(factor(CompleteModelAndDetail$Term,
                                   levels=c("Terminated","Unterminated"),
                                   labels=c(1,0))))
+
 CompleteModelAndDetail$ObligationWT<-CompleteModelAndDetail$Action.Obligation
 CompleteModelAndDetail$ObligationWT[CompleteModelAndDetail$ObligationWT<0]<-NA
 
-CompleteModelAndDetail<-subset(CompleteModelAndDetail,StartFiscalYear>=2007)
 CompleteModelAndDetail<-ddply(CompleteModelAndDetail,
                          .(Ceil),
                          
@@ -90,35 +92,45 @@ CompleteModelAndDetail<-ddply(CompleteModelAndDetail,
 )
 
 
-CompleteModelAndDetail$UnmodifiedYearsFloat<-difftime(CompleteModelAndDetail$UnmodifiedCompletionDate,
-              CompleteModelAndDetail$MinOfEffectiveDate,
-              unit="weeks")/52.25
+CompleteModelAndDetail$UnmodifiedYearsFloat<-CompleteModelAndDetail$UnmodifiedDays/365.25
 CompleteModelAndDetail$UnmodifiedYearsCat<-floor(CompleteModelAndDetail$UnmodifiedYearsFloat)
 CompleteModelAndDetail$Dur[CompleteModelAndDetail$UnmodifiedYearsCat<0]<-NA
 
-
-
-
-if (all(levels(CompleteModelAndDetail$Dur) %in% c("[ -42275,     61)",
-                                               "[     61,    214)",
-                                               "[    214,    366)",
-                                               "[    366,    732)",
-                                               "[    732,2920903]"))){
-    CompleteModelAndDetail$Dur<-factor(CompleteModelAndDetail$Dur, 
-                                   
-                                   levels=c("[ -42275,     61)",
-                                               "[     61,    214)",
-                                               "[    214,    366)",
-                                               "[    366,    732)",
-                                               "[    732,2920903]"),
-                                   labels=c("[0 months,~2 months)",
-                                               "[~2 months,~7 months)",
-                                               "[~7 months-~1 year]",
+CompleteModelAndDetail$Dur.Simple<-as.character(CompleteModelAndDetail$Dur)
+CompleteModelAndDetail$Dur.Simple[CompleteModelAndDetail$Dur.Simple %in% c(
+    "[0 months,~2 months)",
+    "[~2 months,~7 months)",
+    "[~7 months-~1 year]")]<-"<~1 year"
+CompleteModelAndDetail$Dur.Simple<-factor(CompleteModelAndDetail$Dur.Simple,
+                                          levels=c("<~1 year",
                                                "(~1 year,~2 years]",
                                                "(~2 years+]"),
                                    ordered=TRUE
                                    )
-    }
+
+CompleteModelAndDetail$Ceil.Simple<-as.character(CompleteModelAndDetail$Ceil)
+
+CompleteModelAndDetail$Ceil.Simple[CompleteModelAndDetail$Ceil.Simple %in% c(
+    "75m+",
+    "10m - <75m")]<-"10m+"
+CompleteModelAndDetail$Ceil.Simple[CompleteModelAndDetail$Ceil.Simple %in% c(
+    "1m - <10m",
+    "100k - <1m")]<-"100k - <10m"
+CompleteModelAndDetail$Ceil.Simple[CompleteModelAndDetail$Ceil.Simple %in% c(
+    "15k - <100k",
+    "0 - <15k")]<-"0k - <100k"
+CompleteModelAndDetail$Ceil.Simple<-factor(CompleteModelAndDetail$Ceil.Simple,
+       levels=c("0k - <100k",
+                "100k - <10m",
+                "10m+"),
+       ordered=TRUE
+       )
+
+
+
+
+write.csv(subset(CompleteModelAndDetail,Term=="Terminated"),"Terminated.csv")
+
 ```
 
 **A Histogram of the IsTerminated data** showing the distribution of whether or not a contract was terminated each year from 2007.  
@@ -252,556 +264,900 @@ head(CompleteModelAndDetail)
 ```
 
 
-```{r AnnualTerminationRateAggregateYear}
-
-TerminatedUnmodifiedYearsCatStat<-rbind(ddply(subset(CompleteModelAndDetail,
-                                !is.na(Dur) & StartFiscalYear>=2007 & 
-                                    !is.na(UnmodifiedYearsCat) &
-                                    UnmodifiedCompletionDate<as.Date("2015-09-30")&
-                                    !is.na(Term)),
-                         .(UnmodifiedYearsCat,
-                           StartFiscalYear
-                         ),
-                         
-                         plyr::summarise,
-                         Action.Obligation=sum(Action.Obligation),
-                         Count=length(CSIScontractID),
-                         mean = mean(TermNum),
-                         sd   = NA ,# sd(TermNum),
-                         se   = NA, #sd / sqrt(Count),
-                         metric="Unweighted"
-                          # ceil.mean = wtd.mean(TermNum,UnmodifiedContractBaseAndAllOptionsValue),
-                         # ceil.cat.mean = wtd.mean(TermNum,ceil.median.wt)
-))
-
-
-
-TerminatedUnmodifiedYearsCatStat<-rbind(TerminatedUnmodifiedYearsCatStat,
-                         ddply(subset(CompleteModelAndDetail,
-                                !is.na(Dur) & StartFiscalYear>=2007 & 
-                                    !is.na(Ceil) &
-                                    UnmodifiedCompletionDate<as.Date("2015-09-30")&
-                                    !is.na(Term)),
-                         .(UnmodifiedYearsCat,
-                           StartFiscalYear
-                         ),
-                         
-                         plyr::summarise,
-                         Action.Obligation=sum(Action.Obligation),
-                         Count=length(CSIScontractID),
-                         mean = wtd.mean(TermNum,ObligationWT),
-                         sd   = NA ,# sd(TermNum),
-                         se   = NA, #sd / sqrt(Count),
-                         metric="Obligation Weighted"
-                          # ceil.mean = wtd.mean(TermNum,UnmodifiedContractBaseAndAllOptionsValue),
-                         # ceil.cat.mean = wtd.mean(TermNum,ceil.median.wt)
-
-))
-
-TerminatedUnmodifiedYearsCatStat<-rbind(TerminatedUnmodifiedYearsCatStat,
-                         ddply(subset(CompleteModelAndDetail,
-                                !is.na(Dur) & StartFiscalYear>=2007 & 
-                                    !is.na(Ceil) &
-                                    UnmodifiedCompletionDate<as.Date("2015-09-30")&
-                                    !is.na(Term)),
-                         .(UnmodifiedYearsCat,
-                           StartFiscalYear
-                         ),
-                         
-                         plyr::summarise,
-                         Action.Obligation=sum(Action.Obligation),
-                         Count=length(CSIScontractID),
-                         mean = wtd.mean(TermNum,UnmodifiedContractBaseAndAllOptionsValue),
-                         sd   = NA ,# sd(TermNum),
-                         se   = NA, #sd / sqrt(Count),
-                         metric="Ceiling Weighted"
-                         # obl.mean = ,
-                         # ceil.mean = wtd.mean(TermNum,UnmodifiedContractBaseAndAllOptionsValue),
-                         # ceil.cat.mean = wtd.mean(TermNum,ceil.median.wt)
-
-))
-
-
-TerminatedUnmodifiedYearsCatStat<-rbind(TerminatedUnmodifiedYearsCatStat,
-                         ddply(subset(CompleteModelAndDetail,
-                                !is.na(Dur) & StartFiscalYear>=2007 & 
-                                    !is.na(Ceil) &
-                                    UnmodifiedCompletionDate<as.Date("2015-09-30")&
-                                    !is.na(Term)),
-                         .(UnmodifiedYearsCat,
-                           StartFiscalYear
-                         ),
-                         
-                         plyr::summarise,
-                         Action.Obligation=sum(Action.Obligation),
-                         Count=length(CSIScontractID),
-                         mean = wtd.mean(TermNum,ceil.median.wt),
-                         sd   = NA ,# sd(TermNum),
-                         se   = NA, #sd / sqrt(Count),
-                         metric="Ceiling Category Weighted"
-
-))
-
-
+```{r AnnualTerminationRateAggregateYear, fig.width=3,fig.height=9, dpi=600}
 # 
-# pd <- position_dodge(0.1) # move them .05 to the left and right
+# TerminatedUnmodifiedYearsCatStat<-rbind(ddply(subset(CompleteModelAndDetail,
+#                                 !is.na(Dur) & StartFiscalYear>=2007 & 
+#                                     !is.na(UnmodifiedYearsCat) &
+#                                     UnmodifiedCurrentCompletionDate<as.Date("2015-09-30")&
+#                                     !is.na(Term)),
+#                          .(UnmodifiedYearsCat,
+#                            StartFiscalYear
+#                          ),
+#                          
+#                          plyr::summarise,
+#                          Action.Obligation=sum(Action.Obligation),
+#                          Count=length(CSIScontractID),
+#                          mean = mean(TermNum),
+#                          sd   = NA ,# sd(TermNum),
+#                          se   = NA, #sd / sqrt(Count),
+#                          metric="Unweighted"
+#                           # ceil.mean = wtd.mean(TermNum,UnmodifiedContractBaseAndAllOptionsValue),
+#                          # ceil.cat.mean = wtd.mean(TermNum,ceil.median.wt)
+# ))
 # 
-# ggplot(tgc, aes(x=dose, y=len, colour=supp)) + 
-#     geom_errorbar(aes(ymin=len-se, ymax=len+se), width=.1, position=pd) 
-
-ggplot(TerminatedUnmodifiedYearsCatStat,aes(x=StartFiscalYear,y=mean,color=metric))+
-    geom_line()+
-        geom_point(aes(shape=metric))+
-    facet_grid(.~ UnmodifiedYearsCat ) +
-    scale_y_continuous(label=percent)+
-    geom_errorbar(aes(ymin=mean-se, ymax=mean+se), width=.1) #, position=pd
+# 
+# 
+# TerminatedUnmodifiedYearsCatStat<-rbind(TerminatedUnmodifiedYearsCatStat,
+#                          ddply(subset(CompleteModelAndDetail,
+#                                 !is.na(Dur) & StartFiscalYear>=2007 & 
+#                                     !is.na(Ceil) &
+#                                     UnmodifiedCurrentCompletionDate<as.Date("2015-09-30")&
+#                                     !is.na(Term)),
+#                          .(UnmodifiedYearsCat,
+#                            StartFiscalYear
+#                          ),
+#                          
+#                          plyr::summarise,
+#                          Action.Obligation=sum(Action.Obligation),
+#                          Count=length(CSIScontractID),
+#                          mean = wtd.mean(TermNum,ObligationWT),
+#                          sd   = NA ,# sd(TermNum),
+#                          se   = NA, #sd / sqrt(Count),
+#                          metric="Obligation Weighted"
+#                           # ceil.mean = wtd.mean(TermNum,UnmodifiedContractBaseAndAllOptionsValue),
+#                          # ceil.cat.mean = wtd.mean(TermNum,ceil.median.wt)
+# 
+# ))
+# 
+# TerminatedUnmodifiedYearsCatStat<-rbind(TerminatedUnmodifiedYearsCatStat,
+#                          ddply(subset(CompleteModelAndDetail,
+#                                 !is.na(Dur) & StartFiscalYear>=2007 & 
+#                                     !is.na(Ceil) &
+#                                     UnmodifiedCurrentCompletionDate<as.Date("2015-09-30")&
+#                                     !is.na(Term)),
+#                          .(UnmodifiedYearsCat,
+#                            StartFiscalYear
+#                          ),
+#                          
+#                          plyr::summarise,
+#                          Action.Obligation=sum(Action.Obligation),
+#                          Count=length(CSIScontractID),
+#                          mean = wtd.mean(TermNum,UnmodifiedContractBaseAndAllOptionsValue),
+#                          sd   = NA ,# sd(TermNum),
+#                          se   = NA, #sd / sqrt(Count),
+#                          metric="Ceiling Weighted"
+#                          # obl.mean = ,
+#                          # ceil.mean = wtd.mean(TermNum,UnmodifiedContractBaseAndAllOptionsValue),
+#                          # ceil.cat.mean = wtd.mean(TermNum,ceil.median.wt)
+# 
+# ))
+# 
+# 
+# TerminatedUnmodifiedYearsCatStat<-rbind(TerminatedUnmodifiedYearsCatStat,
+#                          ddply(subset(CompleteModelAndDetail,
+#                                 !is.na(Dur) & StartFiscalYear>=2007 & 
+#                                     !is.na(Ceil) &
+#                                     UnmodifiedCurrentCompletionDate<as.Date("2015-09-30")&
+#                                     !is.na(Term)),
+#                          .(UnmodifiedYearsCat,
+#                            StartFiscalYear
+#                          ),
+#                          
+#                          plyr::summarise,
+#                          Action.Obligation=sum(Action.Obligation),
+#                          Count=length(CSIScontractID),
+#                          mean = wtd.mean(TermNum,ceil.median.wt),
+#                          sd   = NA ,# sd(TermNum),
+#                          se   = NA, #sd / sqrt(Count),
+#                          metric="Ceiling Category Weighted"
+# 
+# ))
+# 
+# 
+# # 
+# # pd <- position_dodge(0.1) # move them .05 to the left and right
+# # 
+# # ggplot(tgc, aes(x=dose, y=len, colour=supp)) + 
+# #     geom_errorbar(aes(ymin=len-se, ymax=len+se), width=.1, position=pd) 
+# 
+# ggplot(TerminatedUnmodifiedYearsCatStat,aes(x=StartFiscalYear,y=mean,color=metric))+
+#     geom_line()+
+#         geom_point(aes(shape=metric))+
+#     facet_grid(.~ UnmodifiedYearsCat ) +
+#     scale_x_continuous("Contract Starting Fiscal Year")+
+#     scale_y_continuous(label=percent)+
+#     geom_errorbar(aes(ymin=mean-se, ymax=mean+se), width=.1)+
+#     theme(legend.position="bottom") #, position=pd
 
 ```
 
-```{r AnnualTerminationRateAggregateDur}
-
-TerminatedDurStat<-rbind(                         ddply(subset(CompleteModelAndDetail,
-                                !is.na(Dur) & StartFiscalYear>=2007 & 
-                                    StartFiscalYear<=2014 & 
-                                    !is.na(Ceil) &
-                                    UnmodifiedCompletionDate<as.Date("2015-09-30")&
-                                    !is.na(Term)),
-                         .(Dur,
-                           StartFiscalYear
-                         ),
-                         
-                         plyr::summarise,
-                         Action.Obligation=sum(Action.Obligation),
-                         Count=length(CSIScontractID),
-                         mean = mean(TermNum),
-                         sd   = sd(TermNum),
-                         se   = sd / sqrt(Count),
-                         metric="Unweighted"
-                          # ceil.mean = wtd.mean(TermNum,UnmodifiedContractBaseAndAllOptionsValue),
-                         # ceil.cat.mean = wtd.mean(TermNum,ceil.median.wt)
-))
-
-
-TerminatedDurStat<-rbind(TerminatedDurStat,
-                         ddply(subset(CompleteModelAndDetail,
-                                !is.na(Dur) & StartFiscalYear>=2007 & 
-                                    StartFiscalYear<=2014 & 
-                                    !is.na(Ceil) &
-                                    UnmodifiedCompletionDate<as.Date("2015-09-30")&
-                                    !is.na(Term)),
-                         .(Dur,
-                           StartFiscalYear
-                         ),
-                         
-                         plyr::summarise,
-                         Action.Obligation=sum(Action.Obligation),
-                         Count=length(CSIScontractID),
-                         mean = wtd.mean(TermNum,ObligationWT),
-                         sd   = sqrt(wtd.var(TermNum,ObligationWT)) ,
-                         se   = sd / sqrt(Count),
-                         metric="Obligation Weighted"
-                          # ceil.mean = wtd.mean(TermNum,UnmodifiedContractBaseAndAllOptionsValue),
-                         # ceil.cat.mean = wtd.mean(TermNum,ceil.median.wt)
-))
-
-TerminatedDurStat<-rbind(TerminatedDurStat,
-                         ddply(subset(CompleteModelAndDetail,
-                                !is.na(Dur) & StartFiscalYear>=2007 & 
-                                    StartFiscalYear<=2014 & 
-                                    !is.na(Ceil) &
-                                    UnmodifiedCompletionDate<as.Date("2015-09-30")&
-                                    !is.na(Term)),
-                         .(Dur,
-                           StartFiscalYear
-                         ),
-                         
-                         plyr::summarise,
-                         Action.Obligation=sum(Action.Obligation),
-                         Count=length(CSIScontractID),
-                         mean = wtd.mean(TermNum,UnmodifiedContractBaseAndAllOptionsValue),
-                         sd   = sqrt(wtd.var(TermNum,UnmodifiedContractBaseAndAllOptionsValue)) ,
-                         se   = sd / sqrt(Count),
-                         metric="Ceiling Weighted"
-                         # obl.mean = ,
-                         # ceil.mean = wtd.mean(TermNum,UnmodifiedContractBaseAndAllOptionsValue),
-                         # ceil.cat.mean = wtd.mean(TermNum,ceil.median.wt)
-
-))
-
-
-TerminatedDurStat<-rbind(TerminatedDurStat,
-                         ddply(subset(CompleteModelAndDetail,
-                                !is.na(Dur) & StartFiscalYear>=2007 & 
-                                    StartFiscalYear<=2014 & 
-                                    !is.na(Ceil) &
-                                    UnmodifiedCompletionDate<as.Date("2015-09-30")&
-                                    !is.na(Term)),
-                         .(Dur,
-                           StartFiscalYear
-                         ),
-                         
-                         plyr::summarise,
-                         Action.Obligation=sum(Action.Obligation),
-                         Count=length(CSIScontractID),
-                         mean = wtd.mean(TermNum,ceil.median.wt),
-                         sd   = sqrt(wtd.var(TermNum,ceil.median.wt)) ,
-                         se   = sd / sqrt(Count),
-                         metric="Ceiling Category Weighted"
-
-))
-
-
+```{r AnnualTerminationRateAggregateDur, fig.width=3,fig.height=9, dpi=600}
 # 
-# pd <- position_dodge(0.1) # move them .05 to the left and right
+# TerminatedDurStat<-rbind(                         ddply(subset(CompleteModelAndDetail,
+#                                 !is.na(Dur) & StartFiscalYear>=2007 & 
+#                                     StartFiscalYear<=2014 & 
+#                                     !is.na(Ceil) &
+#                                     UnmodifiedCurrentCompletionDate<as.Date("2015-09-30")&
+#                                     !is.na(Term)),
+#                          .(Dur,
+#                            StartFiscalYear
+#                          ),
+#                          
+#                          plyr::summarise,
+#                          Action.Obligation=sum(Action.Obligation),
+#                          Count=length(CSIScontractID),
+#                          mean = mean(TermNum),
+#                          sd   = sd(TermNum),
+#                          se   = sd / sqrt(Count),
+#                          metric="Unweighted"
+#                           # ceil.mean = wtd.mean(TermNum,UnmodifiedContractBaseAndAllOptionsValue),
+#                          # ceil.cat.mean = wtd.mean(TermNum,ceil.median.wt)
+# ))
 # 
-# ggplot(tgc, aes(x=dose, y=len, colour=supp)) + 
-#     geom_errorbar(aes(ymin=len-se, ymax=len+se), width=.1, position=pd) 
-
-ggplot(subset(TerminatedDurStat,!metric %in% c("Ceiling Weighted","Ceiling Category Weighted")),
-       aes(x=StartFiscalYear,y=mean,color=metric))+
-    geom_line()+
-        geom_point(aes(shape=metric))+
-    facet_grid( Dur  ~.) +
-    scale_y_continuous(label=percent)+
-    geom_errorbar(aes(ymin=mean-se, ymax=mean+se), width=.1) #, position=pd
-
-ggplot(subset(TerminatedDurStat,!metric %in% c("Ceiling Weighted","Ceiling Category Weighted")),
-       aes(x=StartFiscalYear,y=mean,color=metric))+
-    geom_line()+
-        geom_point(aes(shape=metric))+
-    facet_grid( Dur  ~., space = "free_y", scales="free_y") +
-    scale_y_continuous(label=percent)+
-    geom_errorbar(aes(ymin=mean-se, ymax=mean+se), width=.1) #, position=pd
-
-
-
-```
-
-```{r FewerDurCategories}
-ddply(TerminatedDurStat,
-      .(Dur),
-      plyr::summarise,
-      Count=sum(Count),
-      Action.Obligation=sum(Action.Obligation))
-
-CompleteModelAndDetail$Dur.Simple<-as.character(CompleteModelAndDetail$Dur)
-CompleteModelAndDetail$Dur.Simple[CompleteModelAndDetail$Dur.Simple %in% c("[0 months,~2 months)",
-                                  "[~2 months,~7 months)")]<-"[0 months,~7 months)"
-CompleteModelAndDetail$Dur.Simple<-factor(CompleteModelAndDetail$Dur.Simple,
-                                          levels=c("[0 months,~7 months)",
-                                                   "[~7 months-~1 year]",
-                                               "(~1 year,~2 years]",
-                                               "(~2 years+]"),
-                                   ordered=TRUE
-                                   )
-
-
-
-TerminatedDur.SimpleStat<-rbind(                         ddply(subset(CompleteModelAndDetail,
-                                !is.na(Dur) & StartFiscalYear>=2007 & 
-                                    StartFiscalYear<=2014 & 
-                                    !is.na(Ceil) &
-                                    UnmodifiedCompletionDate<as.Date("2015-09-30")&
-                                    !is.na(Term)),
-                         .(Dur.Simple,
-                           StartFiscalYear
-                         ),
-                         
-                         plyr::summarise,
-                         Action.Obligation=sum(Action.Obligation),
-                         Count=length(CSIScontractID),
-                         mean = mean(TermNum),
-                         sd   = sd(TermNum),
-                         se   = sd / sqrt(Count),
-                         metric="Unweighted"
-                          # ceil.mean = wtd.mean(TermNum,UnmodifiedContractBaseAndAllOptionsValue),
-                         # ceil.cat.mean = wtd.mean(TermNum,ceil.median.wt)
-))
-
-
-TerminatedDur.SimpleStat<-rbind(TerminatedDur.SimpleStat,
-                         ddply(subset(CompleteModelAndDetail,
-                                !is.na(Dur) & StartFiscalYear>=2007 & 
-                                    StartFiscalYear<=2014 & 
-                                    !is.na(Ceil) &
-                                    UnmodifiedCompletionDate<as.Date("2015-09-30")&
-                                    !is.na(Term)),
-                         .(Dur.Simple,
-                           StartFiscalYear
-                         ),
-                         
-                         plyr::summarise,
-                         Action.Obligation=sum(Action.Obligation),
-                         Count=length(CSIScontractID),
-                         mean = wtd.mean(TermNum,ObligationWT),
-                         sd   = sqrt(wtd.var(TermNum,ObligationWT)) ,
-                         se   = sd / sqrt(Count),
-                         metric="Obligation Weighted"
-                          # ceil.mean = wtd.mean(TermNum,UnmodifiedContractBaseAndAllOptionsValue),
-                         # ceil.cat.mean = wtd.mean(TermNum,ceil.median.wt)
-))
-
-TerminatedDur.SimpleStat<-rbind(TerminatedDur.SimpleStat,
-                         ddply(subset(CompleteModelAndDetail,
-                                !is.na(Dur) & StartFiscalYear>=2007 & 
-                                    StartFiscalYear<=2014 & 
-                                    !is.na(Ceil) &
-                                    UnmodifiedCompletionDate<as.Date("2015-09-30")&
-                                    !is.na(Term)),
-                         .(Dur.Simple,
-                           StartFiscalYear
-                         ),
-                         
-                         plyr::summarise,
-                         Action.Obligation=sum(Action.Obligation),
-                         Count=length(CSIScontractID),
-                         mean = wtd.mean(TermNum,UnmodifiedContractBaseAndAllOptionsValue),
-                         sd   = sqrt(wtd.var(TermNum,UnmodifiedContractBaseAndAllOptionsValue)) ,
-                         se   = sd / sqrt(Count),
-                         metric="Ceiling Weighted"
-                         # obl.mean = ,
-                         # ceil.mean = wtd.mean(TermNum,UnmodifiedContractBaseAndAllOptionsValue),
-                         # ceil.cat.mean = wtd.mean(TermNum,ceil.median.wt)
-
-))
-
-
-TerminatedDur.SimpleStat<-rbind(TerminatedDur.SimpleStat,
-                         ddply(subset(CompleteModelAndDetail,
-                                !is.na(Dur) & StartFiscalYear>=2007 & 
-                                    StartFiscalYear<=2014 & 
-                                    !is.na(Ceil) &
-                                    UnmodifiedCompletionDate<as.Date("2015-09-30")&
-                                    !is.na(Term)),
-                         .(Dur.Simple,
-                           StartFiscalYear
-                         ),
-                         
-                         plyr::summarise,
-                         Action.Obligation=sum(Action.Obligation),
-                         Count=length(CSIScontractID),
-                         mean = wtd.mean(TermNum,ceil.median.wt),
-                         sd   = sqrt(wtd.var(TermNum,ceil.median.wt)) ,
-                         se   = sd / sqrt(Count),
-                         metric="Ceiling Category Weighted"
-
-))
-
-
 # 
-# pd <- position_dodge(0.1) # move them .05 to the left and right
+# TerminatedDurStat<-rbind(TerminatedDurStat,
+#                          ddply(subset(CompleteModelAndDetail,
+#                                 !is.na(Dur) & StartFiscalYear>=2007 & 
+#                                     StartFiscalYear<=2014 & 
+#                                     !is.na(Ceil) &
+#                                     UnmodifiedCurrentCompletionDate<as.Date("2015-09-30")&
+#                                     !is.na(Term)),
+#                          .(Dur,
+#                            StartFiscalYear
+#                          ),
+#                          
+#                          plyr::summarise,
+#                          Action.Obligation=sum(Action.Obligation),
+#                          Count=length(CSIScontractID),
+#                          mean = wtd.mean(TermNum,ObligationWT),
+#                          sd   = sqrt(wtd.var(TermNum,ObligationWT)) ,
+#                          se   = sd / sqrt(Count),
+#                          metric="Obligation Weighted"
+#                           # ceil.mean = wtd.mean(TermNum,UnmodifiedContractBaseAndAllOptionsValue),
+#                          # ceil.cat.mean = wtd.mean(TermNum,ceil.median.wt)
+# ))
 # 
-# ggplot(tgc, aes(x=dose, y=len, colour=supp)) + 
-#     geom_errorbar(aes(ymin=len-se, ymax=len+se), width=.1, position=pd) 
-
-ggplot(subset(TerminatedDur.SimpleStat,!metric %in% c("Ceiling Weighted","Ceiling Category Weighted")),
-       aes(x=StartFiscalYear,y=mean,color=metric))+
-    geom_line()+
-    geom_point(aes(shape=metric))+
-    facet_grid( Dur.Simple  ~.) +
-    scale_y_continuous(label=percent)+
-    geom_errorbar(aes(ymin=mean-se, ymax=mean+se), width=.1) #, position=pd
-
-ggplot(subset(TerminatedDur.SimpleStat,!metric %in% c("Ceiling Weighted","Ceiling Category Weighted")),
-       aes(x=StartFiscalYear,y=mean,color=metric))+
-    geom_line()+
-        geom_point(aes(shape=metric))+
-    facet_grid( Dur.Simple  ~., space = "free_y", scales="free_y") +
-    scale_y_continuous(label=percent)+
-    geom_errorbar(aes(ymin=mean-se, ymax=mean+se), width=.1) #, position=pd
+# TerminatedDurStat<-rbind(TerminatedDurStat,
+#                          ddply(subset(CompleteModelAndDetail,
+#                                 !is.na(Dur) & StartFiscalYear>=2007 & 
+#                                     StartFiscalYear<=2014 & 
+#                                     !is.na(Ceil) &
+#                                     UnmodifiedCurrentCompletionDate<as.Date("2015-09-30")&
+#                                     !is.na(Term)),
+#                          .(Dur,
+#                            StartFiscalYear
+#                          ),
+#                          
+#                          plyr::summarise,
+#                          Action.Obligation=sum(Action.Obligation),
+#                          Count=length(CSIScontractID),
+#                          mean = wtd.mean(TermNum,UnmodifiedContractBaseAndAllOptionsValue),
+#                          sd   = sqrt(wtd.var(TermNum,UnmodifiedContractBaseAndAllOptionsValue)) ,
+#                          se   = sd / sqrt(Count),
+#                          metric="Ceiling Weighted"
+#                          # obl.mean = ,
+#                          # ceil.mean = wtd.mean(TermNum,UnmodifiedContractBaseAndAllOptionsValue),
+#                          # ceil.cat.mean = wtd.mean(TermNum,ceil.median.wt)
+# 
+# ))
+# 
+# 
+# TerminatedDurStat<-rbind(TerminatedDurStat,
+#                          ddply(subset(CompleteModelAndDetail,
+#                                 !is.na(Dur) & StartFiscalYear>=2007 & 
+#                                     StartFiscalYear<=2014 & 
+#                                     !is.na(Ceil) &
+#                                     UnmodifiedCurrentCompletionDate<as.Date("2015-09-30")&
+#                                     !is.na(Term)),
+#                          .(Dur,
+#                            StartFiscalYear
+#                          ),
+#                          
+#                          plyr::summarise,
+#                          Action.Obligation=sum(Action.Obligation),
+#                          Count=length(CSIScontractID),
+#                          mean = wtd.mean(TermNum,ceil.median.wt),
+#                          sd   = sqrt(wtd.var(TermNum,ceil.median.wt)) ,
+#                          se   = sd / sqrt(Count),
+#                          metric="Ceiling Category Weighted"
+# 
+# ))
+# 
+# 
+# # 
+# # pd <- position_dodge(0.1) # move them .05 to the left and right
+# # 
+# # ggplot(tgc, aes(x=dose, y=len, colour=supp)) + 
+# #     geom_errorbar(aes(ymin=len-se, ymax=len+se), width=.1, position=pd) 
+# 
+# ggplot(subset(TerminatedDurStat,!metric %in% c("Ceiling Weighted")),
+#        aes(x=StartFiscalYear,y=mean,color=metric))+
+#     geom_line()+
+#         geom_point(aes(shape=metric))+
+#     facet_grid( Dur  ~.) +
+#     scale_x_continuous("Contract Starting Fiscal Year")+
+#     scale_y_continuous(label=percent)+
+#     geom_errorbar(aes(ymin=mean-se, ymax=mean+se), width=.1)+
+#     theme(legend.position="bottom") #, position=pd
+# 
+# ggplot(subset(TerminatedDurStat,!metric %in% c("Ceiling Weighted","Ceiling Category Weighted")),
+#        aes(x=StartFiscalYear,y=mean,color=metric))+
+#     geom_line()+
+#         geom_point(aes(shape=metric))+
+#     facet_grid( Dur  ~., space = "free_y", scales="free_y") +
+#     scale_x_continuous("Contract Starting Fiscal Year")+
+#     scale_y_continuous(label=percent)+
+#     geom_errorbar(aes(ymin=mean-se, ymax=mean+se), width=.1)+
+#     theme(legend.position="bottom") #, position=pd
+# 
+# 
 
 ```
 
 
-```{r FewerDurCategoriesIntl}
-
-
-TerminatedDur.SimpleIntlStat<-rbind(                         ddply(subset(CompleteModelAndDetail,
-                                !is.na(Dur) & StartFiscalYear>=2007 & 
-                                    StartFiscalYear<=2014 & 
-                                    !is.na(Ceil) &
-                                    !is.na(Intl) &
-                                    UnmodifiedCompletionDate<as.Date("2015-09-30")&
-                                    !is.na(Term)),
-                         .(Dur.Simple,
-                           StartFiscalYear,
-                           Intl
-                         ),
-                         
-                         plyr::summarise,
-                         Action.Obligation=sum(Action.Obligation),
-                         Count=length(CSIScontractID),
-                         mean = mean(TermNum),
-                         sd   = sd(TermNum),
-                         se   = sd / sqrt(Count),
-                         metric="Unweighted"
-                          # ceil.mean = wtd.mean(TermNum,UnmodifiedContractBaseAndAllOptionsValue),
-                         # ceil.cat.mean = wtd.mean(TermNum,ceil.median.wt)
-))
-
-
-
-TerminatedDur.SimpleIntlStat<-rbind(TerminatedDur.SimpleIntlStat,
-                         ddply(subset(CompleteModelAndDetail,
-                                !is.na(Dur) & StartFiscalYear>=2007 & 
-                                    StartFiscalYear<=2014 & 
-                                    !is.na(Ceil) &
-                                    !is.na(Intl) &
-                                    UnmodifiedCompletionDate<as.Date("2015-09-30")&
-                                    !is.na(Term)),
-                         .(Dur.Simple,
-                           StartFiscalYear,
-                           Intl
-                         ),
-                         
-                         plyr::summarise,
-                         Action.Obligation=sum(Action.Obligation),
-                         Count=length(CSIScontractID),
-                         mean = wtd.mean(TermNum,ObligationWT),
-                         sd   = sqrt(wtd.var(TermNum,ObligationWT)) ,
-                         se   = sd / sqrt(Count),
-                         metric="Obligation Weighted"
-                          # ceil.mean = wtd.mean(TermNum,UnmodifiedContractBaseAndAllOptionsValue),
-                         # ceil.cat.mean = wtd.mean(TermNum,ceil.median.wt)
-))
-
-TerminatedDur.SimpleIntlStat<-rbind(TerminatedDur.SimpleIntlStat,
-                         ddply(subset(CompleteModelAndDetail,
-                                !is.na(Dur) & StartFiscalYear>=2007 & 
-                                    StartFiscalYear<=2014 & 
-                                    !is.na(Ceil) &
-                                    !is.na(Intl) &
-                                    UnmodifiedCompletionDate<as.Date("2015-09-30")&
-                                    !is.na(Term)),
-                         .(Dur.Simple,
-                           StartFiscalYear,
-                           Intl
-                         ),
-                         
-                         plyr::summarise,
-                         Action.Obligation=sum(Action.Obligation),
-                         Count=length(CSIScontractID),
-                         mean = wtd.mean(TermNum,UnmodifiedContractBaseAndAllOptionsValue),
-                         sd   = sqrt(wtd.var(TermNum,UnmodifiedContractBaseAndAllOptionsValue)) ,
-                         se   = sd / sqrt(Count),
-                         metric="Ceiling Weighted"
-                         # obl.mean = ,
-                         # ceil.mean = wtd.mean(TermNum,UnmodifiedContractBaseAndAllOptionsValue),
-                         # ceil.cat.mean = wtd.mean(TermNum,ceil.median.wt)
-
-))
-
-
-TerminatedDur.SimpleIntlStat<-rbind(TerminatedDur.SimpleIntlStat,
-                         ddply(subset(CompleteModelAndDetail,
-                                !is.na(Dur) & StartFiscalYear>=2007 & 
-                                    StartFiscalYear<=2014 & 
-                                    !is.na(Ceil) &
-                                    !is.na(Intl) &
-                                    UnmodifiedCompletionDate<as.Date("2015-09-30")&
-                                    !is.na(Term)),
-                         .(Dur.Simple,
-                           StartFiscalYear,
-                           Intl
-                         ),
-                         
-                         plyr::summarise,
-                         Action.Obligation=sum(Action.Obligation),
-                         Count=length(CSIScontractID),
-                         mean = wtd.mean(TermNum,ceil.median.wt),
-                         sd   = sqrt(wtd.var(TermNum,ceil.median.wt)) ,
-                         se   = sd / sqrt(Count),
-                         metric="Ceiling Category Weighted"
-
-))
-
-
+```{r SDurCount, fig.width=3,fig.height=9, dpi=600}
+# TerminatedDur.SimpleStatCount<-ddply(subset(CompleteModelAndDetail,
+#                                 !is.na(Dur) & StartFiscalYear>=2007 & 
+#                                     StartFiscalYear<=2014 & 
+#                                     !is.na(Ceil) &
+#                                     UnmodifiedCurrentCompletionDate<as.Date("2015-09-30")&
+#                                     !is.na(Term)),
+#                          .(Dur.Simple,
+#                            StartFiscalYear,
+#                            Term
+#                          ),
+#                          
+#                          plyr::summarise,
+#                          Action.Obligation=sum(Action.Obligation),
+#                          Count=length(CSIScontractID)
+# )
 # 
-# pd <- position_dodge(0.1) # move them .05 to the left and right
+# ggplot(TerminatedDur.SimpleStatCount,
+#        aes(x=StartFiscalYear,y=Count,color=Term))+
+#     geom_line()+
+#     geom_point(aes(shape=Term))+
+#     facet_grid( Dur.Simple  ~.) +
+#     scale_x_continuous("Contract Starting Fiscal Year")+
+#     scale_y_log10("Number of Contracts",label=comma)
+#     geom_errorbar(aes(ymin=mean-se, ymax=mean+se), width=.1)+
+#     # theme(legend.position="bottom") #, position=pd
 # 
-# ggplot(tgc, aes(x=dose, y=len, colour=supp)) + 
-#     geom_errorbar(aes(ymin=len-se, ymax=len+se), width=.1, position=pd) 
+# ggplot(TerminatedDur.SimpleStatCount,
+#        aes(x=StartFiscalYear,y=Count,color=Term))+
+#     geom_line()+
+#         geom_point(aes(shape=Term))+
+#     facet_grid( Dur.Simple  ~., ) +#
+#     scale_x_continuous("Contract Starting Fiscal Year")+
+#         
+#     scale_y_log10("Number of Contracts (Variable Scale)",label=comma)
+#     # geom_errorbar(aes(ymin=mean-se, ymax=mean+se), width=.1)+
+#     theme(legend.position="bottom") #, position=pd
+#     
 
-ddply(TerminatedDur.SimpleIntlStat,
-      .(Dur.Simple,
-        Intl),
-      plyr::summarise,
-      Count=sum(Count),
-      Action.Obligation=sum(Action.Obligation))
+```
 
-ggplot(subset(TerminatedDur.SimpleIntlStat,!metric %in% c("Ceiling Weighted","Ceiling Category Weighted")),
-       aes(x=StartFiscalYear,y=mean,color=metric))+
-    geom_line()+
-        geom_point(aes(shape=metric))+
-    facet_grid( Dur.Simple  ~ Intl) +
-    scale_y_continuous(label=percent)+
-    geom_errorbar(aes(ymin=mean-se, ymax=mean+se), width=.1) #, position=pd
-
-ggplot(subset(TerminatedDur.SimpleIntlStat,!metric %in% c("Ceiling Weighted","Ceiling Category Weighted")),
-       aes(x=StartFiscalYear,y=mean,color=metric))+
-    geom_line()+
-        geom_point(aes(shape=metric))+
-    facet_grid( Dur.Simple  ~ Intl, space = "free_y", scales="free_y") +
-    scale_y_continuous(label=percent)+
-    geom_errorbar(aes(ymin=mean-se, ymax=mean+se), width=.1) #, position=pd
+```{r SDurPercent, fig.width=3,fig.height=9, dpi=600}
+# ddply(TerminatedDurStat,
+#       .(Dur),
+#       plyr::summarise,
+#       Count=sum(Count),
+#       Action.Obligation=sum(Action.Obligation))
+# 
+# 
+# 
+# TerminatedDur.SimpleStat<-rbind(                         ddply(subset(CompleteModelAndDetail,
+#                                 !is.na(Dur) & StartFiscalYear>=2007 & 
+#                                     StartFiscalYear<=2014 & 
+#                                     !is.na(Ceil) &
+#                                     UnmodifiedCurrentCompletionDate<as.Date("2015-09-30")&
+#                                     !is.na(Term)),
+#                          .(Dur.Simple,
+#                            StartFiscalYear
+#                          ),
+#                          
+#                          plyr::summarise,
+#                          Action.Obligation=sum(Action.Obligation),
+#                          Count=length(CSIScontractID),
+#                          mean = mean(TermNum),
+#                          sd   = sd(TermNum),
+#                          se   = sd / sqrt(Count),
+#                          metric="Unweighted"
+#                           # ceil.mean = wtd.mean(TermNum,UnmodifiedContractBaseAndAllOptionsValue),
+#                          # ceil.cat.mean = wtd.mean(TermNum,ceil.median.wt)
+# ))
+# 
+# 
+# TerminatedDur.SimpleStat<-rbind(TerminatedDur.SimpleStat,
+#                          ddply(subset(CompleteModelAndDetail,
+#                                 !is.na(Dur) & StartFiscalYear>=2007 & 
+#                                     StartFiscalYear<=2014 & 
+#                                     !is.na(Ceil) &
+#                                     UnmodifiedCurrentCompletionDate<as.Date("2015-09-30")&
+#                                     !is.na(Term)),
+#                          .(Dur.Simple,
+#                            StartFiscalYear
+#                          ),
+#                          
+#                          plyr::summarise,
+#                          Action.Obligation=sum(Action.Obligation),
+#                          Count=length(CSIScontractID),
+#                          mean = wtd.mean(TermNum,ObligationWT),
+#                          sd   = sqrt(wtd.var(TermNum,ObligationWT)) ,
+#                          se   = sd / sqrt(Count),
+#                          metric="Obligation Weighted"
+#                           # ceil.mean = wtd.mean(TermNum,UnmodifiedContractBaseAndAllOptionsValue),
+#                          # ceil.cat.mean = wtd.mean(TermNum,ceil.median.wt)
+# ))
+# 
+# TerminatedDur.SimpleStat<-rbind(TerminatedDur.SimpleStat,
+#                          ddply(subset(CompleteModelAndDetail,
+#                                 !is.na(Dur) & StartFiscalYear>=2007 & 
+#                                     StartFiscalYear<=2014 & 
+#                                     !is.na(Ceil) &
+#                                     UnmodifiedCurrentCompletionDate<as.Date("2015-09-30")&
+#                                     !is.na(Term)),
+#                          .(Dur.Simple,
+#                            StartFiscalYear
+#                          ),
+#                          
+#                          plyr::summarise,
+#                          Action.Obligation=sum(Action.Obligation),
+#                          Count=length(CSIScontractID),
+#                          mean = wtd.mean(TermNum,UnmodifiedContractBaseAndAllOptionsValue),
+#                          sd   = sqrt(wtd.var(TermNum,UnmodifiedContractBaseAndAllOptionsValue)) ,
+#                          se   = sd / sqrt(Count),
+#                          metric="Ceiling Weighted"
+#                          # obl.mean = ,
+#                          # ceil.mean = wtd.mean(TermNum,UnmodifiedContractBaseAndAllOptionsValue),
+#                          # ceil.cat.mean = wtd.mean(TermNum,ceil.median.wt)
+# 
+# ))
+# 
+# 
+# TerminatedDur.SimpleStat<-rbind(TerminatedDur.SimpleStat,
+#                          ddply(subset(CompleteModelAndDetail,
+#                                 !is.na(Dur) & StartFiscalYear>=2007 & 
+#                                     StartFiscalYear<=2014 & 
+#                                     !is.na(Ceil) &
+#                                     UnmodifiedCurrentCompletionDate<as.Date("2015-09-30")&
+#                                     !is.na(Term)),
+#                          .(Dur.Simple,
+#                            StartFiscalYear
+#                          ),
+#                          
+#                          plyr::summarise,
+#                          Action.Obligation=sum(Action.Obligation),
+#                          Count=length(CSIScontractID),
+#                          mean = wtd.mean(TermNum,ceil.median.wt),
+#                          sd   = sqrt(wtd.var(TermNum,ceil.median.wt)) ,
+#                          se   = sd / sqrt(Count),
+#                          metric="Ceiling Category Weighted"
+# 
+# ))
+# 
+# 
+# # 
+# # pd <- position_dodge(0.1) # move them .05 to the left and right
+# # 
+# # ggplot(tgc, aes(x=dose, y=len, colour=supp)) + 
+# #     geom_errorbar(aes(ymin=len-se, ymax=len+se), width=.1, position=pd) 
+# 
+# ggplot(subset(TerminatedDur.SimpleStat,!metric %in% c("Ceiling Weighted","Ceiling Category Weighted")),
+#        aes(x=StartFiscalYear,y=mean,color=metric))+
+#     geom_line()+
+#     geom_point(aes(shape=metric))+
+#     facet_grid( Dur.Simple  ~.) +
+#     scale_x_continuous("Contract Starting Fiscal Year")+
+#     scale_y_continuous(label=percent)+
+#     geom_errorbar(aes(ymin=mean-se, ymax=mean+se), width=.1)+
+#     theme(legend.position="bottom") #, position=pd
+# 
+# ggplot(subset(TerminatedDur.SimpleStat,!metric %in% c("Ceiling Weighted","Ceiling Category Weighted")),
+#        aes(x=StartFiscalYear,y=mean,color=metric))+
+#     geom_line()+
+#         geom_point(aes(shape=metric))+
+#     facet_grid( Dur.Simple  ~., space = "free_y", scales="free_y") +
+#     scale_x_continuous("Contract Starting Fiscal Year")+
+#     scale_y_continuous("Percent Terminated",label=percent)+
+#     geom_errorbar(aes(ymin=mean-se, ymax=mean+se), width=.1)+
+#     theme(legend.position="bottom")+ #, position=pd
+    
 
 ```
 
 
-```{r AnnualTerminationRateByCeiling}
+
+```{r SDurCeilingCount, fig.width=3,fig.height=9, dpi=600}
+# TerminatedSDurSCeilStatCount<-ddply(subset(CompleteModelAndDetail,
+#                                 !is.na(Dur) & StartFiscalYear>=2007 & 
+#                                     StartFiscalYear<=2014 & 
+#                                     !is.na(Ceil) &
+#                                     UnmodifiedCurrentCompletionDate<as.Date("2015-09-30")&
+#                                     !is.na(Term)),
+#                          .(Dur.Simple,
+#                            Ceil,
+#                            StartFiscalYear,
+#                            Term
+#                          ),
+#                          
+#                          plyr::summarise,
+#                          Action.Obligation=sum(Action.Obligation),
+#                          Count=length(CSIScontractID)
+# )
+# 
+# 
+# 
+# ggplot(TerminatedSDurSCeilStatCount,
+#        aes(x=StartFiscalYear,y=Count,color=Term))+
+#     geom_line()+
+#     geom_point(aes(shape=Term))+
+#     facet_grid( Dur.Simple  ~ Ceil) +
+#     scale_x_continuous("Contract Starting Fiscal Year")+
+#     scale_y_log10("Number of Contracts",label=comma)
+#     # theme(legend.position="bottom") #, position=pd
+# 
+# ggplot(TerminatedSDurSCeilStatCount,
+#        aes(x=StartFiscalYear,y=Count,color=Term))+
+#     geom_line()+
+#         geom_point(aes(shape=Term))+
+#     facet_grid( Dur.Simple  ~ Ceil ) +#
+#     scale_x_continuous("Contract Starting Fiscal Year")+
+#         
+#     scale_y_log10("Number of Contracts (Variable Scale)",label=comma)
+#     # geom_errorbar(aes(ymin=mean-se, ymax=mean+se), width=.1)+
+#     theme(legend.position="bottom") #, position=pd
+#     
+
+```
 
 
 
-TerminatedDurCeilStat<-ddply(subset(CompleteModelAndDetail,
-                                !is.na(Dur) & StartFiscalYear>=2007 & 
-                                    !is.na(Ceil) &
-                                    UnmodifiedCompletionDate<as.Date("2015-09-30")&
-                                    !is.na(Term)),
-                         .(Ceil,
-                           Dur,
-                           StartFiscalYear
-                         ),
-                         
-                         plyr::summarise,
-                         Action.Obligation=sum(Action.Obligation),
-                         Count=length(CSIScontractID),
-                         N    = length(TermNum),
-                         mean = mean(TermNum),
-                         sd   = sd(TermNum),
-                         se   = sd / sqrt(N),
-                         obl.mean = wtd.mean(TermNum,ObligationWT,na.rm=TRUE),
-                         ceil.mean = wtd.mean(TermNum,UnmodifiedContractBaseAndAllOptionsValue)
+
+```{r SDurSCeilCount, fig.width=3,fig.height=9, dpi=600}
+TerminatedSDurSCeilStatCount<-ddply(
+    subset(CompleteModelAndDetail,
+           !is.na(Dur.Simple) & 
+               !is.na(Ceil.Simple) &
+               !is.na(Term) &
+               StartFiscalYear>=2007 & 
+               StartFiscalYear<=2014 &                
+               (LastCurrentCompletionDate<=as.Date("2015-09-30") |
+                    IsClosed==1) &
+               UnmodifiedCurrentCompletionDate<as.Date("2015-09-30")),
+    .(Dur.Simple,
+      Ceil.Simple,
+      StartFiscalYear,
+      Term
+    ),
+    plyr::summarise,
+    Action.Obligation=sum(Action.Obligation),
+    Count=length(CSIScontractID),
+    metric="Contracts within Period"
 )
-# 
-# pd <- position_dodge(0.1) # move them .05 to the left and right
-# 
-# ggplot(tgc, aes(x=dose, y=len, colour=supp)) + 
-#     geom_errorbar(aes(ymin=len-se, ymax=len+se), width=.1, position=pd) 
 
-ggplot(TerminatedDurCeilStat,aes(x=StartFiscalYear))+
-    geom_line(aes(y=mean))+
-    # geom_line(aes(y=ceil.mean))+
-    geom_line(aes(y=obl.mean))+
-    geom_point(aes(y=mean))+
-    facet_grid(Ceil ~ Dur ) +
-    scale_y_continuous(label=percent)+
-    geom_errorbar(aes(ymin=mean-se, ymax=mean+se), width=.1) #, position=pd
+TerminatedSDurSCeilStatCount<-rbind(TerminatedSDurSCeilStatCount,
+                                    ddply(subset(CompleteModelAndDetail,
+                                           !is.na(Dur.Simple) & 
+                                               !is.na(Ceil.Simple) &
+                                               !is.na(Term) &
+                                               StartFiscalYear>=2007 & 
+                                               StartFiscalYear<=2014),               
+                                    .(Dur.Simple,
+                                      Ceil.Simple,
+                                      StartFiscalYear,
+                                      Term
+                                    ),
+                                    plyr::summarise,
+                                    Action.Obligation=sum(Action.Obligation),
+                                    Count=length(CSIScontractID),
+                                    metric="Early Results for All Contracts"
+)
+)
+TerminatedSDurSCeilStatCount$metric<-factor(TerminatedSDurSCeilStatCount$metric,
+                                            levels=c("Contracts within Period",
+                                                   "Early Results for All Contracts"),
+                                            ordered=TRUE)
+
+TerminatedSDurSCeilStatCount$Term<-factor(TerminatedSDurSCeilStatCount$Term,
+                                          levels=c("Unterminated",
+                                                   "Terminated"),
+                                          labels=c("Unterminated",
+                                                   "Complete or Partial Termination"),
+                                            ordered=TRUE)
 
 
-ggplot(TerminatedDurCeilStat,
-       aes(x=StartFiscalYear,
-           y=obl.mean))+geom_line()+    geom_point()+facet_grid(Ceil ~ Dur ) +
-    scale_y_continuous(label=percent)
-         # geom_errorbar(aes(ymin=mean-se, ymax=mean+se), width=.1) #, position=pd
+TerminatedSDurSCeilLabels<-ddply(
+    subset(TerminatedSDurSCeilStatCount,metric=="Contracts within Period"),
+    .(Dur.Simple,Ceil.Simple),
+    plyr::summarise,
+    FacetCount=paste("Count:",prettyNum(sum(Count),big.mark=",")),
+    FacetValue=paste(FacetCount,"\nObligated: $",round(sum(Action.Obligation)/1000000000,1),"B",sep="")
+    )
+
+Ypos<-max(TerminatedSDurSCeilStatCount$Count)
 
 
-ggplot(TerminatedDurCeilStat,
-       aes(x=StartFiscalYear,
-           y=ceil.mean))+geom_line()+    geom_point()+facet_grid(Ceil ~ Dur ) +
-    scale_y_continuous(label=percent)
-         # geom_errorbar(aes(ymin=mean-se, ymax=mean+se), width=.1) #, position=pd
+ggplot(TerminatedSDurSCeilStatCount,
+       aes(x=StartFiscalYear,y=Count,color=Term))+
+    geom_line(aes(linetype=metric))+
+    geom_point(aes(shape=Term))+
+    geom_text(data=TerminatedSDurSCeilLabels,
+              aes(x=2007,y=Ypos,label=FacetValue),
+              # parse=TRUE,
+              hjust=0,
+              vjust=1,
+              color="black")+
+    facet_grid( Dur.Simple  ~ Ceil.Simple ) +#
+    scale_x_continuous("Contract Starting Fiscal Year")+
+    scale_color_manual("Status", values=c("blue","red"))+
+    scale_linetype_discrete("Early Results")+
+    scale_shape_discrete("Status")+
+    scale_y_log10("Number of Contracts (Logorithmic Scale)",label=comma)+
+    # geom_errorbar(aes(ymin=mean-se, ymax=mean+se), width=.1)+
+    theme(legend.position="bottom") #, position=pd
 
 
 ```
 
+
+
+```{r FewerDurIntlPercent, fig.width=3,fig.height=9, dpi=600}
+# summary(CompleteModelAndDetail$Dur)
+# 
+# TerminatedDur.SimpleIntlStat<-rbind(                         ddply(subset(CompleteModelAndDetail,
+#                                 !is.na(Dur) & StartFiscalYear>=2007 & 
+#                                     StartFiscalYear<=2014 & (LastCurrentCompletionDate<=strptime("2015-09-30","%Y-%m-%d") | IsClosed==1) &
+#                                     !is.na(Ceil) &
+#                                     !is.na(Intl) &
+#                                     UnmodifiedCurrentCompletionDate<as.Date("2015-09-30")&
+#                                     !is.na(Term)),
+#                          .(Dur.Simple,
+#                            StartFiscalYear,
+#                            Intl
+#                          ),
+#                          
+#                          plyr::summarise,
+#                          Action.Obligation=sum(Action.Obligation),
+#                          Count=length(CSIScontractID),
+#                          mean = mean(TermNum),
+#                          sd   = sd(TermNum),
+#                          se   = sd / sqrt(Count),
+#                          metric="Unweighted"
+#                           # ceil.mean = wtd.mean(TermNum,UnmodifiedContractBaseAndAllOptionsValue),
+#                          # ceil.cat.mean = wtd.mean(TermNum,ceil.median.wt)
+# ))
+# 
+# 
+# 
+# TerminatedDur.SimpleIntlStat<-rbind(TerminatedDur.SimpleIntlStat,
+#                          ddply(subset(CompleteModelAndDetail,
+#                                 !is.na(Dur) & StartFiscalYear>=2007 & 
+#                                     StartFiscalYear<=2014 & (LastCurrentCompletionDate<=strptime("2015-09-30","%Y-%m-%d") | IsClosed==1) &
+#                                     !is.na(Ceil) &
+#                                     !is.na(Intl) &
+#                                     UnmodifiedCurrentCompletionDate<as.Date("2015-09-30")&
+#                                     !is.na(Term)),
+#                          .(Dur.Simple,
+#                            StartFiscalYear,
+#                            Intl
+#                          ),
+#                          
+#                          plyr::summarise,
+#                          Action.Obligation=sum(Action.Obligation),
+#                          Count=length(CSIScontractID),
+#                          mean = wtd.mean(TermNum,ObligationWT),
+#                          sd   = sqrt(wtd.var(TermNum,ObligationWT)) ,
+#                          se   = sd / sqrt(Count),
+#                          metric="Obligation Weighted"
+#                           # ceil.mean = wtd.mean(TermNum,UnmodifiedContractBaseAndAllOptionsValue),
+#                          # ceil.cat.mean = wtd.mean(TermNum,ceil.median.wt)
+# ))
+# 
+# TerminatedDur.SimpleIntlStat<-rbind(TerminatedDur.SimpleIntlStat,
+#                          ddply(subset(CompleteModelAndDetail,
+#                                 !is.na(Dur) & StartFiscalYear>=2007 & 
+#                                     StartFiscalYear<=2014 & (LastCurrentCompletionDate<=strptime("2015-09-30","%Y-%m-%d") | IsClosed==1) &
+#                                     !is.na(Ceil) &
+#                                     !is.na(Intl) &
+#                                     UnmodifiedCurrentCompletionDate<as.Date("2015-09-30")&
+#                                     !is.na(Term)),
+#                          .(Dur.Simple,
+#                            StartFiscalYear,
+#                            Intl
+#                          ),
+#                          
+#                          plyr::summarise,
+#                          Action.Obligation=sum(Action.Obligation),
+#                          Count=length(CSIScontractID),
+#                          mean = wtd.mean(TermNum,UnmodifiedContractBaseAndAllOptionsValue),
+#                          sd   = sqrt(wtd.var(TermNum,UnmodifiedContractBaseAndAllOptionsValue)) ,
+#                          se   = sd / sqrt(Count),
+#                          metric="Ceiling Weighted"
+#                          # obl.mean = ,
+#                          # ceil.mean = wtd.mean(TermNum,UnmodifiedContractBaseAndAllOptionsValue),
+#                          # ceil.cat.mean = wtd.mean(TermNum,ceil.median.wt)
+# 
+# ))
+# 
+# 
+# TerminatedDur.SimpleIntlStat<-rbind(TerminatedDur.SimpleIntlStat,
+#                          ddply(subset(CompleteModelAndDetail,
+#                                 !is.na(Dur) & StartFiscalYear>=2007 & 
+#                                     StartFiscalYear<=2014 & (LastCurrentCompletionDate<=strptime("2015-09-30","%Y-%m-%d") | IsClosed==1) &
+#                                     !is.na(Ceil) &
+#                                     !is.na(Intl) &
+#                                     UnmodifiedCurrentCompletionDate<as.Date("2015-09-30")&
+#                                     !is.na(Term)),
+#                          .(Dur.Simple,
+#                            StartFiscalYear,
+#                            Intl
+#                          ),
+#                          
+#                          plyr::summarise,
+#                          Action.Obligation=sum(Action.Obligation),
+#                          Count=length(CSIScontractID),
+#                          mean = wtd.mean(TermNum,ceil.median.wt),
+#                          sd   = sqrt(wtd.var(TermNum,ceil.median.wt)) ,
+#                          se   = sd / sqrt(Count),
+#                          metric="Ceiling Category Weighted"
+# 
+# ))
+# 
+# 
+# # 
+# # pd <- position_dodge(0.1) # move them .05 to the left and right
+# # 
+# # ggplot(tgc, aes(x=dose, y=len, colour=supp)) + 
+# #     geom_errorbar(aes(ymin=len-se, ymax=len+se), width=.1, position=pd) 
+# 
+# ddply(TerminatedDur.SimpleIntlStat,
+#       .(Dur.Simple,
+#         Intl,
+#         metric),
+#       plyr::summarise,
+#       Count=sum(Count),
+#       Action.Obligation=sum(Action.Obligation))
+# 
+# TermLabels<-ddply(
+#     subset(TerminatedDur.SimpleIntlStat,
+#            !metric %in% c("Ceiling Weighted",
+#                           "Ceiling Category Weighted")),
+#     .(Dur.Simple,Intl,metric),
+#     plyr::summarise,
+#     FacetCount=paste("Count:",prettyNum(sum(Count),big.mark=",")),
+#     FacetValue=paste(FacetCount,"\nObligated: $",round(sum(Action.Obligation)/1000000000,1),"B",sep=""),
+#     FacetY=max(mean+se))
+# 
+# TermLabels<-ddply(TermLabels,
+#       .(Dur.Simple),
+#       plyr::mutate,
+#       FacetY=max(FacetY))
+# 
+# ggplot(subset(TerminatedDur.SimpleIntlStat,!metric %in% c("Ceiling Weighted","Ceiling Category Weighted")),
+#        aes(x=StartFiscalYear,y=mean,color=metric))+
+#     geom_line()+
+#         geom_point(aes(shape=metric))+
+#     geom_text(data=TermLabels,
+#               aes(x=2007,y=FacetY,label=FacetValue),
+#               # parse=TRUE,
+#               hjust=0,
+#               vjust=1,
+#               color="black")+
+#     
+#     facet_grid( Dur.Simple  ~ Intl, space = "free_y", scales="free_y") +
+#     scale_x_continuous("Contract Starting Fiscal Year")+
+#     scale_y_continuous("Percent Terminated",label=percent)+
+#     geom_errorbar(aes(ymin=mean-se, ymax=mean+se), width=.1)+
+#     theme(legend.position="bottom") #, position=pd
+# 
+# 
+# 
+# ggplot(subset(TerminatedDur.SimpleIntlStat,!metric %in% c("Ceiling Weighted","Ceiling Category Weighted")),
+#        aes(x=StartFiscalYear,y=mean,color=metric))+
+#     geom_line()+
+#         geom_point(aes(shape=metric))+
+#     geom_text(data=TermLabels,
+#               aes(x=2007,y=FacetY,label=FacetValue),
+#               # parse=TRUE,
+#               hjust=0,
+#               vjust=1,
+#               color="black")+
+#     facet_grid( Dur.Simple  ~ Intl, space = "free_y", scales="free_y") +
+#     scale_x_continuous("Contract Starting Fiscal Year")+
+#     scale_y_continuous("Percent Terminated",label=percent)+
+#     geom_errorbar(aes(ymin=mean-se, ymax=mean+se), width=.1)+
+#     theme(legend.position="bottom") #, position=pd
+# 
+
+```
+
+
+```{r AnnualTerminationRateByCeiling, fig.width=3,fig.height=9, dpi=600}
+
+
+# 
+# TerminatedDurCeilStat<-ddply(subset(CompleteModelAndDetail,
+#                                 !is.na(Dur) & StartFiscalYear>=2007 & 
+#                                     !is.na(Ceil) &
+#                                     UnmodifiedCurrentCompletionDate<as.Date("2015-09-30")&
+#                                     !is.na(Term)),
+#                          .(Ceil,
+#                            Dur,
+#                            StartFiscalYear
+#                          ),
+#                          
+#                          plyr::summarise,
+#                          Action.Obligation=sum(Action.Obligation),
+#                          Count=length(CSIScontractID),
+#                          N    = length(TermNum),
+#                          mean = mean(TermNum),
+#                          sd   = sd(TermNum),
+#                          se   = sd / sqrt(N),
+#                          obl.mean = wtd.mean(TermNum,ObligationWT,na.rm=TRUE),
+#                          ceil.mean = wtd.mean(TermNum,UnmodifiedContractBaseAndAllOptionsValue)
+# )
+# # 
+# # pd <- position_dodge(0.1) # move them .05 to the left and right
+# # 
+# # ggplot(tgc, aes(x=dose, y=len, colour=supp)) + 
+# #     geom_errorbar(aes(ymin=len-se, ymax=len+se), width=.1, position=pd) 
+# 
+# ggplot(TerminatedDurCeilStat,aes(x=StartFiscalYear))+
+#     geom_line(aes(y=mean))+
+#     # geom_line(aes(y=ceil.mean))+
+#     geom_line(aes(y=obl.mean))+
+#     geom_point(aes(y=mean))+
+#     facet_grid(Ceil ~ Dur ) +
+#     scale_x_continuous("Contract Starting Fiscal Year")+
+#     scale_y_continuous("Percent Terminated",label=percent)+
+#     geom_errorbar(aes(ymin=mean-se, ymax=mean+se), width=.1) #, position=pd
+# 
+# 
+# ggplot(TerminatedDurCeilStat,
+#        aes(x=StartFiscalYear,
+#            y=obl.mean))+geom_line()+    geom_point()+facet_grid(Ceil ~ Dur ) +
+#     scale_x_continuous("Contract Starting Fiscal Year")+
+#     scale_y_continuous("Percent Terminated",label=percent)
+#          # geom_errorbar(aes(ymin=mean-se, ymax=mean+se), width=.1) #, position=pd
+# 
+# 
+# ggplot(TerminatedDurCeilStat,
+#        aes(x=StartFiscalYear,
+#            y=ceil.mean))+geom_line()+    geom_point()+facet_grid(Ceil ~ Dur ) +
+#     scale_x_continuous("Contract Starting Fiscal Year")+
+#     scale_y_continuous("Percent Terminated",label=percent)
+#          # geom_errorbar(aes(ymin=mean-se, ymax=mean+se), width=.1) #, position=pd
+# 
+# 
+# ```
+# 
+# 
+# 
+# 
+# 
+# ```{r FxCBcategories, fig.width=3,fig.height=9, dpi=600}
+# 
+# 
+# 
+# 
+# TerminatedFxCb<-rbind(                         ddply(subset(CompleteModelAndDetail,
+#                                 !is.na(FxCb) & StartFiscalYear>=2007 & 
+#                                     StartFiscalYear<=2014 & (LastCurrentCompletionDate<=strptime("2015-09-30","%Y-%m-%d") | IsClosed==1) &
+#                                     !is.na(Ceil) &
+#                                     UnmodifiedCurrentCompletionDate<as.Date("2015-09-30")&
+#                                     !is.na(Term)),
+#                          .(FxCb,
+#                            StartFiscalYear
+#                          ),
+#                          
+#                          plyr::summarise,
+#                          Action.Obligation=sum(Action.Obligation),
+#                          Count=length(CSIScontractID),
+#                          mean = mean(TermNum),
+#                          sd   = sd(TermNum),
+#                          se   = sd / sqrt(Count),
+#                          metric="Unweighted"
+#                           # ceil.mean = wtd.mean(TermNum,UnmodifiedContractBaseAndAllOptionsValue),
+#                          # ceil.cat.mean = wtd.mean(TermNum,ceil.median.wt)
+# ))
+# 
+# 
+# TerminatedFxCb<-rbind(TerminatedFxCb,
+#                          ddply(subset(CompleteModelAndDetail,
+#                                 !is.na(FxCb) & StartFiscalYear>=2007 & 
+#                                     StartFiscalYear<=2014 & (LastCurrentCompletionDate<=strptime("2015-09-30","%Y-%m-%d") | IsClosed==1) &
+#                                     !is.na(Ceil) &
+#                                     UnmodifiedCurrentCompletionDate<as.Date("2015-09-30")&
+#                                     !is.na(Term)),
+#                          .(FxCb,
+#                            StartFiscalYear
+#                          ),
+#                          
+#                          plyr::summarise,
+#                          Action.Obligation=sum(Action.Obligation),
+#                          Count=length(CSIScontractID),
+#                          mean = wtd.mean(TermNum,ObligationWT),
+#                          sd   = sqrt(wtd.var(TermNum,ObligationWT)) ,
+#                          se   = sd / sqrt(Count),
+#                          metric="Obligation Weighted"
+#                           # ceil.mean = wtd.mean(TermNum,UnmodifiedContractBaseAndAllOptionsValue),
+#                          # ceil.cat.mean = wtd.mean(TermNum,ceil.median.wt)
+# ))
+# 
+# TerminatedFxCb<-rbind(TerminatedFxCb,
+#                          ddply(subset(CompleteModelAndDetail,
+#                                 !is.na(FxCb) & StartFiscalYear>=2007 & 
+#                                     StartFiscalYear<=2014 & (LastCurrentCompletionDate<=strptime("2015-09-30","%Y-%m-%d") | IsClosed==1) &
+#                                     !is.na(Ceil) &
+#                                     UnmodifiedCurrentCompletionDate<as.Date("2015-09-30")&
+#                                     !is.na(Term)),
+#                          .(FxCb,
+#                            StartFiscalYear
+#                          ),
+#                          
+#                          plyr::summarise,
+#                          Action.Obligation=sum(Action.Obligation),
+#                          Count=length(CSIScontractID),
+#                          mean = wtd.mean(TermNum,UnmodifiedContractBaseAndAllOptionsValue),
+#                          sd   = sqrt(wtd.var(TermNum,UnmodifiedContractBaseAndAllOptionsValue)) ,
+#                          se   = sd / sqrt(Count),
+#                          metric="Ceiling Weighted"
+#                          # obl.mean = ,
+#                          # ceil.mean = wtd.mean(TermNum,UnmodifiedContractBaseAndAllOptionsValue),
+#                          # ceil.cat.mean = wtd.mean(TermNum,ceil.median.wt)
+# 
+# ))
+# 
+# 
+# TerminatedFxCb<-rbind(TerminatedFxCb,
+#                          ddply(subset(CompleteModelAndDetail,
+#                                 !is.na(FxCb) & StartFiscalYear>=2007 & 
+#                                     StartFiscalYear<=2014 & (LastCurrentCompletionDate<=strptime("2015-09-30","%Y-%m-%d") | IsClosed==1) &
+#                                     !is.na(Ceil) &
+#                                     UnmodifiedCurrentCompletionDate<as.Date("2015-09-30")&
+#                                     !is.na(Term)),
+#                          .(FxCb,
+#                            StartFiscalYear
+#                          ),
+#                          
+#                          plyr::summarise,
+#                          Action.Obligation=sum(Action.Obligation),
+#                          Count=length(CSIScontractID),
+#                          mean = wtd.mean(TermNum,ceil.median.wt),
+#                          sd   = sqrt(wtd.var(TermNum,ceil.median.wt)) ,
+#                          se   = sd / sqrt(Count),
+#                          metric="Ceiling Category Weighted"
+# 
+# ))
+# 
+# 
+# # 
+# # pd <- position_dodge(0.1) # move them .05 to the left and right
+# # 
+# # ggplot(tgc, aes(x=dose, y=len, colour=supp)) + 
+# #     geom_errorbar(aes(ymin=len-se, ymax=len+se), width=.1, position=pd) 
+# 
+# ggplot(subset(TerminatedFxCb,!metric %in% c("Ceiling Weighted","Ceiling Category Weighted")),
+#        aes(x=StartFiscalYear,y=mean,color=metric))+
+#     geom_line()+
+#     geom_point(aes(shape=metric))+
+#     facet_grid( FxCb  ~.) +
+#     scale_x_continuous("Contract Starting Fiscal Year")+
+#     scale_y_continuous(label=percent)+
+#     geom_errorbar(aes(ymin=mean-se, ymax=mean+se), width=.1)+
+#     theme(legend.position="bottom") #, position=pd
+# 
+# ggplot(TerminatedFxCb,#subset(TerminatedFxCb,!metric %in% c("Ceiling Weighted","Ceiling Category Weighted")),
+#        aes(x=StartFiscalYear,y=mean,color=metric))+
+#     geom_line()+
+#         geom_point(aes(shape=metric))+
+#     facet_grid( FxCb  ~., space = "free_y", scales="free_y") +
+#     scale_x_continuous("Contract Starting Fiscal Year")+
+#     scale_y_continuous("Percent Terminated",label=percent)+
+#     geom_errorbar(aes(ymin=mean-se, ymax=mean+se), width=.1)+
+#     theme(legend.position="bottom") #, position=pd
+    
+
+```
 
