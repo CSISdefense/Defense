@@ -13,9 +13,10 @@ Dod Fixed-Price Study: Costly Change Orders
 
 
 ```{r Setup, echo = TRUE}
-setwd("K:\\Development\\Defense")
-
-Path<-"K:\\2007-01 PROFESSIONAL SERVICES\\R scripts and data\\"
+setwd("D:\\Users\\Greg Sanders\\Documents\\Development\\Defense")
+# setwd("D:\\Users\\Greg Sanders\\Document\\Development\\Defense")
+Path<-"D:\\Users\\Greg Sanders\\Documents\\Development\\R-scripts-and-data\\"
+# Path<-"K:\\2007-01 PROFESSIONAL SERVICES\\R scripts and data\\"
 source(paste(Path,"lookups.r",sep=""))
 source(paste(Path,"helper.r",sep=""))
 source("ContractCleanup.r")
@@ -23,6 +24,7 @@ source("ContractCleanup.r")
 require(ggplot2)
 require(scales)
 require(Hmisc)
+require(plyr)
 Coloration<-read.csv(
     paste(Path,"Lookups\\","lookup_coloration.csv",sep=""),
     header=TRUE, sep=",", na.strings="", dec=".", strip.white=TRUE, 
@@ -65,8 +67,6 @@ CompleteModelAndDetail  <- read.csv(
     na.strings = c("NULL","NA",""),
     stringsAsFactors = TRUE
     )
-
-
 
 
 
@@ -123,8 +123,10 @@ CompleteModelAndDetail$Ceil.Simple<-factor(CompleteModelAndDetail$Ceil.Simple,
        ordered=TRUE
        )
 
-CompleteModelAndDetail$pNewWork4Sig<-round(pNewWorkUnmodifiedBaseAndAll,4)
-CompleteModelAndDetail$pChange4Sig<-pChangeOrderUnmodifiedBaseAndAll
+CompleteModelAndDetail$pNewWork3Sig<-round(
+  CompleteModelAndDetail$pNewWorkUnmodifiedBaseAndAll,3)
+CompleteModelAndDetail$pChange3Sig<-round(
+  CompleteModelAndDetail$pChangeOrderUnmodifiedBaseAndAll,3)
 
 
 ```
@@ -133,29 +135,32 @@ CompleteModelAndDetail$pChange4Sig<-pChangeOrderUnmodifiedBaseAndAll
 **A histogram of the data** showing the distribution of the number of change orders each year from 2007.
 
 
-```{r ChangeOrders, echo = TRUE, fig.width=4.5,fig.height=6}
+```{r DataFrameChangeOrders, echo = TRUE, fig.width=4.5,fig.height=6}
+  
+  NChgCeil<-ddply(CompleteModelAndDetail,
+               .(SumOfisChangeOrder,
+                 StartFiscalYear,
+                 Ceil),
+               plyr::summarise,
+               ContractCount=length(CSIScontractID),
+               Action.Obligation=sum(Action.Obligation))
+
+NChgCeil<-ddply(NChgCeil, 
+                .(Ceil), 
+                transform, 
+                pContractByCeil=ContractCount/sum(ContractCount),
+                pObligationByCeil=Action.Obligation/sum(Action.Obligation))
+
+NChgCeil$pTotalObligation<-NChgCeil$Action.Obligation/sum(NChgCeil$Action.Obligation,na.rm=TRUE)
+NChgCeil$pTotalContract<-NChgCeil$ContractCount/sum(NChgCeil$ContractCount,na.rm=TRUE)
+
+```
+
+```{r ChangeOrderGraphs}
 
 ggplot(
-  data = CompleteModelAndDetail,
-  aes_string(x = "ChangeOrderBaseAndAllOptionsValue")
-  ) + scale_x_log10()+
- geom_histogram(binwidth=0.25) +
-  facet_wrap("StartFiscalYear")
-
-
-
-CompleteModelAndDetail$Graph[CompleteModelAndDetail$SumOfisChangeOrder>0]<-TRUE
-CompleteModelAndDetail$Graph[CompleteModelAndDetail$SumOfisChangeOrder==0]<-FALSE
-
-CompleteModelAndDetail$ContractCount<-1
-CompleteModelAndDetail<-ddply(CompleteModelAndDetail, .(Ceil), transform, pContract=ContractCount/sum(ContractCount))
-CompleteModelAndDetail<-ddply(CompleteModelAndDetail, .(Ceil), transform, pObligation=Action.Obligation/sum(Action.Obligation))
-CompleteModelAndDetail$pTotalObligation<-CompleteModelAndDetail$Action.Obligation/sum(CompleteModelAndDetail$Action.Obligation,na.rm=TRUE)
-
-
-ggplot(
-  data = subset(CompleteModelAndDetail,SumOfisChangeOrder>0),
-  aes_string(x = "SumOfisChangeOrder"),
+  data = subset(NChgCeil,SumOfisChangeOrder>0),
+  aes_string(x = "SumOfisChangeOrder")
   ) + geom_bar(binwidth=1) + 
     facet_grid( Ceil ~ .,
                 scales = "free_y",
@@ -164,40 +169,39 @@ ggplot(
 
 
 ggplot(
-  data = subset(CompleteModelAndDetail,SumOfisChangeOrder>0),
-  aes_string(x = "Ceil")
-  )+ geom_bar()+
+  data = subset(NChgCeil,SumOfisChangeOrder>0),
+  aes_string(x = "Ceil",weights="ContractCount"),
+  main="Number of Contracts with Change Orders\nBy Initial Contract Ceiling")+ 
+  geom_bar()+
     scale_x_discrete("Initial Cost Ceiling (Current $ Value)")+scale_y_continuous("Number of Contracts with Change Orders")+theme(axis.text.x=element_text(angle=90))
 
 
-
 ggplot(
-  data = subset(CompleteModelAndDetail,SumOfisChangeOrder>0),
-  aes_string(x = "Ceil",weight="pContract")
-#   main="Percentage of Contracts going to Partially or Completely Terminated Contracts\nBy Initial Contract Ceiling"
-  )+ geom_bar()+ scale_y_continuous("Percent of Contracts with Change Orders", labels=percent)+
+  data = subset(NChgCeil,SumOfisChangeOrder>0),
+  aes_string(x = "Ceil",weights="pContractByCeil"),
+  main="Percentage of Contracts going to Contracts with Change Orders\nBy Initial Contract Ceiling")+ geom_bar()+ scale_y_continuous("Percent of Contracts with Change Orders", labels=percent)+
     scale_x_discrete("Initial Cost Ceiling (Current $ Value)")+theme(axis.text.x=element_text(angle=90))
 
 
 ggplot(
-  data =subset(CompleteModelAndDetail,SumOfisChangeOrder>0),
-  aes_string(x = "Ceil",weight="pObligation"),
+  data =subset(NChgCeil,SumOfisChangeOrder>0),
+  aes_string(x = "Ceil",weights="pObligationByCeil"),
   main="Percentage of Contract Obligations going to Contracts with Change Orders\nBy Initial Contract Ceiling"
   )+ geom_bar()+ scale_y_continuous("Percent of Obligations in Cost Ceiling Category", labels=percent)+
     scale_x_discrete("Initial Cost Ceiling (Current $ Value)")+theme(axis.text.x=element_text(angle=90))
 
 
 ggplot(
-  data = subset(CompleteModelAndDetail,SumOfisChangeOrder>0),
-  aes_string(x = "Ceil",weight="Action.Obligation")
+  data = subset(NChgCeil,SumOfisChangeOrder>0),
+  aes_string(x = "Ceil",weights="Action.Obligation")
   )+ geom_bar()+
     scale_x_discrete("Initial Cost Ceiling (Current $ Value)")+scale_y_continuous("Total Obligated Value of Contracts with Change Orders")+theme(axis.text.x=element_text(angle=90))
 
 
 
+sum(subset(NChgCeil,SumOfisChangeOrder>0)$pTotalObligation)
+sum(subset(NChgCeil,SumOfisChangeOrder>0)$pTotalContract)
 
-
-summary(subset(CompleteModelAndDetail$qCRais,CompleteModelAndDetail$SumOfisChangeOrder>0    ))
 ```
 
 
@@ -220,74 +224,93 @@ The % Growth in Base and All Options Value Amount form Change Orders is calculat
 **A histogram of the data** showing the distribution of the initial amount of the specific change order 
 
 
-```{r CeilBreachSummary}
-ggplot(
-  data = subset(CompleteModelAndDetail,SumOfisChangeOrder>0),
-  aes_string(x = "Ceil",weight="pContract")
-#   main="Percentage of Contracts going to Partially or Completely Terminated Contracts\nBy Initial Contract Ceiling"
-  )+ geom_bar()+ scale_y_continuous("Percent of Contracts with Change Orders", labels=percent)+
-    scale_x_discrete("Initial Cost Ceiling (Current $ Value)")
+```{r DataFrameCeilingBreachSumamry}
+
+pChgCeil<-ddply(CompleteModelAndDetail,
+             .(pChange3Sig,
+               StartFiscalYear,
+               Ceil),
+             plyr::summarise,
+             ContractCount=length(CSIScontractID),
+             Action.Obligation=sum(Action.Obligation))
+
+pChgCeil<-ddply(pChgCeil, 
+                .(Ceil), 
+                transform, 
+                pContractByCeil=ContractCount/sum(ContractCount),
+                pObligationByCeil=Action.Obligation/sum(Action.Obligation))
+
+pChgCeil<-ddply(pChgCeil, 
+                .(StartFiscalYear), 
+                transform, 
+                pContractByFYear=ContractCount/sum(ContractCount),
+                pObligationByFYear=Action.Obligation/sum(Action.Obligation))
 
 
-ggplot(
-  data =subset(CompleteModelAndDetail,SumOfisChangeOrder>0),
-  aes_string(x = "Ceil",weight="pObligation"),
-  main="Percentage of Contract Obligations going to Contracts with Change Orders\nBy Initial Contract Ceiling"
-  )+ geom_bar()+ scale_y_continuous("Percent of Obligations in Cost Ceiling Category", labels=percent)+
-    scale_x_discrete("Initial Cost Ceiling (Current $ Value)")
+pChgCeil$pTotalObligation<-pChgCeil$Action.Obligation/sum(NChgCeil$Action.Obligation,na.rm=TRUE)
+pChgCeil$pTotalContract<-pChgCeil$ContractCount/sum(NChgCeil$ContractCount,na.rm=TRUE)
 
+pChgCeil$CRai <- cut2(
+    pChgCeil$pChange3Sig,c(
+                                              -0.001,
+                                              0.001,
+                                              0.15)
+    )
 
-ggplot(
-  data = subset(CompleteModelAndDetail,SumOfisChangeOrder>0),
-  aes_string(x = "Ceil",weight="Action.Obligation")
-  )+ geom_bar()+
-    scale_x_discrete("Initial Cost Ceiling (Current $ Value)")+scale_y_continuous("Total Obligated Value of Contracts with Change Orders")
 
 
 ```
 
-```{r CeilingBreachDetailed, echo = TRUE, fig.width=6.5,fig.height=6}
-
+```{r CeilingBreachGraphs}
 
 ggplot(
-  data = subset(CompleteModelAndDetail,SumOfisChangeOrder>0),
-  aes_string(x = "pChangeOrderUnmodifiedBaseAndAll")
-  ) + geom_bar(binwidth=0.01) + 
+  data = pChgCeil,
+  aes_string(x = "pChange3Sig",
+             weights = "ContractCount")
+  ) + geom_histogram(binwidth=0.01) + 
     facet_grid( Ceil ~ .,
                 scales = "free_y",
                 space = "free_y") +   
-    scale_y_continuous("Number of Contracts with Change Orders")+
+    scale_y_log10("Number of Contracts")+
     scale_x_continuous("Percentage of Cost-Ceiling-Raising Change Orders b
                        y\nInitial Cost Ceiling (Current $ Value)",
                        limits=c(-1.25,1.25), labels=percent)+
     theme(axis.text.x=element_text(angle=90,size=1))
 
+
+# Percent of Contracts breakdown by StartYear
 ggplot(
-  data = subset(CompleteModelAndDetail,SumOfisChangeOrder>0),
-  aes_string(x = "pChangeOrderUnmodifiedBaseAndAll")
-  )+ geom_bar()+
-#     scale_x_continuous("Percentage of Cost-Ceiling-Raising Change Orders by\nInitial Cost Ceiling (Current $ Value)")
-    scale_y_continuous("Number of Contracts with Change Orders")+
-        facet_grid( . ~ Ceil ) +
-    scale_x_continuous("Percentage of Cost-Ceiling-Raising Change Orders by\nInitial Cost Ceiling (Current $ Value)", limits=c(-1.25,1.25), labels=percent)+
-    theme(axis.title.x=element_text(angle=90))
+  data = subset(pChgCeil,
+                StartFiscalYear>=2007 & 
+                  StartFiscalYear<=2015 &
+                  pChange3Sig!=0),
+  aes_string(x = "pChange3Sig",
+             weights="pContractByFYear")
+  ) + geom_histogram(binwidth=0.01) +
+  scale_x_continuous("Percentage of Cost-Ceiling-Raising Change Orders b
+                       y\nInitial Cost Ceiling (Current $ Value)",
+                       limits=c(-1.25,1.25), labels=percent)+
+  scale_y_continuous()+
+  facet_wrap("StartFiscalYear")
 
 
-BreachSummary<-ddply(CompleteModelAndDetail,.(Ceil,pChangeOrderUnmodifiedBaseAndAll,SumOfisChangeOrder,CRai,Term),
-                     summarise,
-                     pContract=sum(pContract),
-                     pObligation=sum(pObligation),
-                     pTotalObligation=sum(pTotalObligation))
-
-
-# Percent of Contracts breakdown
+# Percent of Contracts breakdown by Ceiling
 ggplot(
-  data = subset(BreachSummary,SumOfisChangeOrder>0),
-  aes_string(x = "pChangeOrderUnmodifiedBaseAndAll",weight="pContract",fill="CRai")#
-  )+ geom_bar(binwidth=0.05)+
+  data = subset(pChgCeil,pChange3Sig!=0),
+  aes_string(x = "pChange3Sig",weights="pContractByCeil",fill="CRai")#
+  )+ geom_histogram(binwidth=0.05)+
 #     scale_x_continuous("Percentage of Cost-Ceiling-Raising Change Orders by\nInitial Cost Ceiling (Current $ Value)")
     scale_y_continuous("Percent of Contracts", labels=percent)+
         facet_grid( . ~ Ceil )+scale_x_continuous("Extent of Ceiling Breach in 5% Increments",limits=c(-0.5,1), labels=percent)+theme(axis.text.x=element_text(angle=90),legend.position="bottom")+scale_fill_discrete(name="Extent of Ceiling Breach")
+
+
+
+tapply(pChgCeil$pChange3Sig, pChgCeil$Ceil, summary)
+
+
+
+
+
 ```
 
 ```{r CeilingBreachObligations, echo = TRUE, fig.width=6.5,fig.height=6}
@@ -296,8 +319,8 @@ ggplot(
 
 #Percent of obligations breakdown
 ggplot(
-  data = subset(BreachSummary,SumOfisChangeOrder>0),
-  aes_string(x = "pChangeOrderUnmodifiedBaseAndAll",weight="pTotalObligation",fill="CRai")#
+  data = subset(pChgCeil,pChange3Sig!=0),
+  aes_string(x = "pChange3Sig",weights="pTotalObligation",fill="CRai")#
   )+ geom_bar(binwidth=0.01)+
 #     scale_x_continuous("Percentage of Obligations  by\nInitial Cost Ceiling (Current $ Value)")
     scale_y_continuous("Percent of Completed Contracts\n(Weighted by Current $ Obligations)", labels=percent)+
@@ -307,28 +330,32 @@ ggplot(
     scale_fill_discrete(name="Extent of Ceiling Breach")
 
 
-
-tapply(CompleteModelAndDetail$CRai, CompleteModelAndDetail$Ceil, summary)
-
-ddply(subset(CompleteModelAndDetail,SumOfisChangeOrder>0),.(Ceil,CRai),
-                     summarise,
-                     pContract=sum(pContract), 
-      pObligation=sum(pObligation),
-                     pTotalObligation=sum(pTotalObligation))
+tapply(pChgCeil$CRai, pChgCeil$Ceil, summary)
 
 
-ddply(subset(CompleteModelAndDetail,SumOfisChangeOrder>0),.(Term,CRai),
-                     summarise,
-                     pTotalObligation=sum(pTotalObligation))
-
-
-ddply(subset(CompleteModelAndDetail,SumOfisChangeOrder>0),.(CRai),
-                     summarise,
-                     pTotalObligation=sum(pTotalObligation))
-
-sum(subset(CompleteModelAndDetail,SumOfisChangeOrder>0)$pTotalObligation)
-sum(subset(CompleteModelAndDetail,pChangeOrderUnmodifiedBaseAndAll>0)$pTotalObligation)
+sum(subset(pChgCeil,pChange3Sig>0)$pTotalObligation)
 
 ```
 
 
+```{r SpecialResearch}
+
+# BreachSummary<-ddply(CompleteModelAndDetail,
+#                      .(Ceil,
+#                        pChange3Sig,
+#                        SumOfisChangeOrder,
+#                        CRai,
+#                        Term),
+#                      summarise,
+#                      pContractByCeil=sum(pContractByCeil),
+#                      pObligationByCeil=sum(pObligationByCeil),
+#                      pTotalObligation=sum(pTotalObligation))
+# 
+# 
+# 
+# ddply(pChgCeil,.(Term,CRai),
+#                      summarise,
+#                      pTotalObligation=sum(pTotalObligation))
+
+
+```
