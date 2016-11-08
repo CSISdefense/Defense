@@ -1,0 +1,263 @@
+﻿TableName,AccountDSI,BudgetActivity,BudgetActivityTitle,BSA,BSAtitle,LineItem,LineItemTitle,CostType,CostTypeTitle,ProcurementCategory,Classified,FiscalYear,OriginType,PBtotal,PBtotal,PBtype,EnactedTotal,EnactedType,SpecialType,ActualTotal,QuantPBtotal,QuantPBtype,QuantEnactedTotal,QuantEnactedType,QuantSpecialType,QuantActualTotal
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,0147,Joint Strike Fighter CV,A,Weapon System Cost,Aircraft,U,2015,Total,0,0,0,0,0,0,927568,0,0,0,0,0,4
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,0147,Joint Strike Fighter CV,A,Weapon System Cost,Aircraft,U,2016,Base,0,0,0,0,1062542,0,0,0,0,0,6,0,0
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,0147,Joint Strike Fighter CV,A,Weapon System Cost,Aircraft,U,2016,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,0147,Joint Strike Fighter CV,A,Weapon System Cost,Aircraft,U,2016,Total,0,0,0,1062542,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,0147,Joint Strike Fighter CV,A,Weapon System Cost,Aircraft,U,2017,Base,0,0,939280,0,0,0,0,0,4,0,0,0,0
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,0147,Joint Strike Fighter CV,A,Weapon System Cost,Aircraft,U,2017,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,0147,Joint Strike Fighter CV,A,Weapon System Cost,Aircraft,U,2017,Total,939280,939280,0,0,0,0,0,4,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,0152,JSF STOVL,A,Weapon System Cost,Aircraft,U,2015,Total,0,0,0,0,0,0,1287605,0,0,0,0,0,6
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,0152,JSF STOVL,A,Weapon System Cost,Aircraft,U,2016,Base,0,0,0,0,2291599,0,0,0,0,0,15,0,0
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,0152,JSF STOVL,A,Weapon System Cost,Aircraft,U,2016,Total,0,0,0,2291599,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,0152,JSF STOVL,A,Weapon System Cost,Aircraft,U,2016,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,0152,JSF STOVL,A,Weapon System Cost,Aircraft,U,2017,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,0152,JSF STOVL,A,Weapon System Cost,Aircraft,U,2017,Base,0,0,2240828,0,0,0,0,0,16,0,0,0,0
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,0152,JSF STOVL,A,Weapon System Cost,Aircraft,U,2017,Total,2240828,2240828,0,0,0,0,0,16,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,1999,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2000,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2000,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2001,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2001,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2001,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2002,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2002,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2002,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2003,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2003,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2003,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2004,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2004,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2004,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2005,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2005,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2005,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2006,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2006,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2006,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2007,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2007,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2007,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2008,Total,0,0,0,0,0,0,1229367,0,0,0,0,0,6
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2008,Total,0,0,0,1229542,0,0,0,0,0,6,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2008,Total,1112564,1112564,0,0,0,0,0,6,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2009,Total,0,0,0,0,0,0,1553593,0,0,0,0,0,7
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2009,Total,0,0,0,1553811,0,0,0,0,0,7,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2009,Total,1720874,1720874,0,0,0,0,0,8,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2010,Total,0,0,0,0,0,0,4227973,0,0,0,0,0,20
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2010,Total,0,0,0,4242876,0,0,0,0,0,20,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2010,Total,4212096,4212096,0,0,0,0,0,20,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2010,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2010,OCO.Sup,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2011,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2011,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2011,CR.OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2011,Total,2146611,2146611,0,0,0,0,0,7,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2011,Total,0,0,0,0,0,0,2123111,0,0,0,0,0,7
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2011,CR,0,0,0,0,0,2154472,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2011,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2012,Total,0,0,0,0,0,0,1656382,0,0,0,0,0,7
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2012,Total,0,0,0,1657381,0,0,0,0,0,7,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2012,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2012,Total,1722991,1722991,0,0,0,0,0,7,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2012,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2013,Total,0,0,0,0,0,0,917052,0,0,0,0,0,4
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2013,Total,0,0,0,1116698,0,0,0,0,0,4,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2013,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2013,Total,1116698,1116698,0,0,0,0,0,4,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2013,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2014,Total,1200624,1200624,0,0,0,0,0,4,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2014,Total,0,0,0,0,0,0,1059114,0,0,0,0,0,4
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2014,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2014,Total,0,0,0,1059114,0,0,0,0,0,4,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2014,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2015,Total,0,0,0,927568,0,0,0,0,0,4,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2015,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2015,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2015,Total,689668,689668,0,0,0,0,0,2,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2016,Total,926942,926942,0,0,0,0,0,4,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat aircraft,1,COMBAT AIRCRAFT,147,Joint Strike Fighter CV,A,WEAPON SYSTEM COST,Aircraft,,2016,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,152,JSF STOVL,A,Weapon System Cost,Aircraft,,2009,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,152,JSF STOVL,A,Weapon System Cost,Aircraft,,2010,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,152,JSF STOVL,A,Weapon System Cost,Aircraft,,2010,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,152,JSF STOVL,A,Weapon System Cost,Aircraft,,2010,OCO.Sup,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,152,JSF STOVL,A,Weapon System Cost,Aircraft,,2011,CR.OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,152,JSF STOVL,A,Weapon System Cost,Aircraft,,2011,Total,0,0,0,0,0,0,553521,0,0,0,0,0,3
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,152,JSF STOVL,A,Weapon System Cost,Aircraft,,2011,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,152,JSF STOVL,A,Weapon System Cost,Aircraft,,2011,CR,0,0,0,0,0,2300548,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,152,JSF STOVL,A,Weapon System Cost,Aircraft,,2011,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,152,JSF STOVL,A,Weapon System Cost,Aircraft,,2011,Total,2289816,2289816,0,0,0,0,0,13,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,152,JSF STOVL,A,Weapon System Cost,Aircraft,,2011,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,152,JSF STOVL,A,Weapon System Cost,Aircraft,,2012,Total,0,0,0,0,0,0,1426589,0,0,0,0,0,6
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,152,JSF STOVL,A,Weapon System Cost,Aircraft,,2012,Total,0,0,0,1426616,0,0,0,0,0,6,0,0,0
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,152,JSF STOVL,A,Weapon System Cost,Aircraft,,2012,Total,1428259,1428259,0,0,0,0,0,6,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,152,JSF STOVL,A,Weapon System Cost,Aircraft,,2012,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,152,JSF STOVL,A,Weapon System Cost,Aircraft,,2012,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,152,JSF STOVL,A,Weapon System Cost,Aircraft,,2013,Total,0,0,0,0,0,0,1211635,0,0,0,0,0,6
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,152,JSF STOVL,A,Weapon System Cost,Aircraft,,2013,Total,0,0,0,1521966,0,0,0,0,0,6,0,0,0
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,152,JSF STOVL,A,Weapon System Cost,Aircraft,,2013,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,152,JSF STOVL,A,Weapon System Cost,Aircraft,,2013,Total,1521966,1521966,0,0,0,0,0,6,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,152,JSF STOVL,A,Weapon System Cost,Aircraft,,2013,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,152,JSF STOVL,A,Weapon System Cost,Aircraft,,2014,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,152,JSF STOVL,A,Weapon System Cost,Aircraft,,2014,Total,0,0,0,1274559,0,0,0,0,0,6,0,0,0
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,152,JSF STOVL,A,Weapon System Cost,Aircraft,,2014,Total,0,0,0,0,0,0,1270309,0,0,0,0,0,6
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,152,JSF STOVL,A,Weapon System Cost,Aircraft,,2014,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,152,JSF STOVL,A,Weapon System Cost,Aircraft,,2014,Total,1373459,1373459,0,0,0,0,0,6,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,152,JSF STOVL,A,Weapon System Cost,Aircraft,,2015,Total,1303605,1303605,0,0,0,0,0,6,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,152,JSF STOVL,A,Weapon System Cost,Aircraft,,2015,Total,0,0,0,1287605,0,0,0,0,0,6,0,0,0
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,152,JSF STOVL,A,Weapon System Cost,Aircraft,,2015,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,152,JSF STOVL,A,Weapon System Cost,Aircraft,,2015,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,152,JSF STOVL,A,Weapon System Cost,Aircraft,,2016,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,1,Combat Aircraft,1,Combat Aircraft,152,JSF STOVL,A,Weapon System Cost,Aircraft,,2016,Total,1627299,1627299,0,0,0,0,0,9,0,0,0,0,0
+Linked to ProjectID,1506N,5,Modification of Aircraft,1,Modification of Aircraft,0592,F-35 STOVL Series,A,Weapon System Cost,Aircraft,U,2015,Total,0,0,0,0,0,0,215819,0,0,0,0,0,0
+Linked to ProjectID,1506N,5,Modification of Aircraft,1,Modification of Aircraft,0592,F-35 STOVL Series,A,Weapon System Cost,Aircraft,U,2016,Total,0,0,0,204464,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,5,Modification of Aircraft,1,Modification of Aircraft,0592,F-35 STOVL Series,A,Weapon System Cost,Aircraft,U,2016,Base,0,0,0,0,204464,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,5,Modification of Aircraft,1,Modification of Aircraft,0592,F-35 STOVL Series,A,Weapon System Cost,Aircraft,U,2016,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,5,Modification of Aircraft,1,Modification of Aircraft,0592,F-35 STOVL Series,A,Weapon System Cost,Aircraft,U,2017,Total,34928,34928,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,5,Modification of Aircraft,1,Modification of Aircraft,0592,F-35 STOVL Series,A,Weapon System Cost,Aircraft,U,2017,Base,0,0,34928,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,5,Modification of Aircraft,1,Modification of Aircraft,0592,F-35 STOVL Series,A,Weapon System Cost,Aircraft,U,2017,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,5,Modification of Aircraft,1,Modification of Aircraft,0593,F-35 CV Series,A,Weapon System Cost,Aircraft,U,2015,Total,0,0,0,0,0,0,20502,0,0,0,0,0,0
+Linked to ProjectID,1506N,5,Modification of Aircraft,1,Modification of Aircraft,0593,F-35 CV Series,A,Weapon System Cost,Aircraft,U,2016,Total,0,0,0,48527,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,5,Modification of Aircraft,1,Modification of Aircraft,0593,F-35 CV Series,A,Weapon System Cost,Aircraft,U,2016,Base,0,0,0,0,48527,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,5,Modification of Aircraft,1,Modification of Aircraft,0593,F-35 CV Series,A,Weapon System Cost,Aircraft,U,2016,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,5,Modification of Aircraft,1,Modification of Aircraft,0593,F-35 CV Series,A,Weapon System Cost,Aircraft,U,2017,Total,26004,26004,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,5,Modification of Aircraft,1,Modification of Aircraft,0593,F-35 CV Series,A,Weapon System Cost,Aircraft,U,2017,Base,0,0,26004,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,5,Modification of Aircraft,1,Modification of Aircraft,0593,F-35 CV Series,A,Weapon System Cost,Aircraft,U,2017,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,5,Modification of Aircraft,1,Modification of Aircraft,592,F-35 STOVL Series,A,Weapon System Cost,Aircraft,,2012,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,5,Modification of Aircraft,1,Modification of Aircraft,592,F-35 STOVL Series,A,Weapon System Cost,Aircraft,,2013,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,5,Modification of Aircraft,1,Modification of Aircraft,592,F-35 STOVL Series,A,Weapon System Cost,Aircraft,,2013,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,5,Modification of Aircraft,1,Modification of Aircraft,592,F-35 STOVL Series,A,Weapon System Cost,Aircraft,,2013,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,5,Modification of Aircraft,1,Modification of Aircraft,592,F-35 STOVL Series,A,Weapon System Cost,Aircraft,,2014,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,5,Modification of Aircraft,1,Modification of Aircraft,592,F-35 STOVL Series,A,Weapon System Cost,Aircraft,,2014,Total,0,0,0,111158,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,5,Modification of Aircraft,1,Modification of Aircraft,592,F-35 STOVL Series,A,Weapon System Cost,Aircraft,,2014,Total,0,0,0,0,0,0,111158,0,0,0,0,0,0
+Linked to ProjectID,1506N,5,Modification of Aircraft,1,Modification of Aircraft,592,F-35 STOVL Series,A,Weapon System Cost,Aircraft,,2014,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,5,Modification of Aircraft,1,Modification of Aircraft,592,F-35 STOVL Series,A,Weapon System Cost,Aircraft,,2014,Total,147130,147130,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,5,Modification of Aircraft,1,Modification of Aircraft,592,F-35 STOVL Series,A,Weapon System Cost,Aircraft,,2015,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,5,Modification of Aircraft,1,Modification of Aircraft,592,F-35 STOVL Series,A,Weapon System Cost,Aircraft,,2015,Total,0,0,0,215819,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,5,Modification of Aircraft,1,Modification of Aircraft,592,F-35 STOVL Series,A,Weapon System Cost,Aircraft,,2015,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,5,Modification of Aircraft,1,Modification of Aircraft,592,F-35 STOVL Series,A,Weapon System Cost,Aircraft,,2015,Total,285968,285968,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,5,Modification of Aircraft,1,Modification of Aircraft,592,F-35 STOVL Series,A,Weapon System Cost,Aircraft,,2016,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,5,Modification of Aircraft,1,Modification of Aircraft,592,F-35 STOVL Series,A,Weapon System Cost,Aircraft,,2016,Total,256106,256106,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,5,Modification of Aircraft,1,Modification of Aircraft,593,F-35 CV Series,A,Weapon System Cost,Aircraft,,2012,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,5,Modification of Aircraft,1,Modification of Aircraft,593,F-35 CV Series,A,Weapon System Cost,Aircraft,,2013,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,5,Modification of Aircraft,1,Modification of Aircraft,593,F-35 CV Series,A,Weapon System Cost,Aircraft,,2013,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,5,Modification of Aircraft,1,Modification of Aircraft,593,F-35 CV Series,A,Weapon System Cost,Aircraft,,2013,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,5,Modification of Aircraft,1,Modification of Aircraft,593,F-35 CV Series,A,Weapon System Cost,Aircraft,,2014,Total,0,0,0,29950,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,5,Modification of Aircraft,1,Modification of Aircraft,593,F-35 CV Series,A,Weapon System Cost,Aircraft,,2014,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,5,Modification of Aircraft,1,Modification of Aircraft,593,F-35 CV Series,A,Weapon System Cost,Aircraft,,2014,Total,0,0,0,0,0,0,29950,0,0,0,0,0,0
+Linked to ProjectID,1506N,5,Modification of Aircraft,1,Modification of Aircraft,593,F-35 CV Series,A,Weapon System Cost,Aircraft,,2014,Total,31100,31100,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,5,Modification of Aircraft,1,Modification of Aircraft,593,F-35 CV Series,A,Weapon System Cost,Aircraft,,2014,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,5,Modification of Aircraft,1,Modification of Aircraft,593,F-35 CV Series,A,Weapon System Cost,Aircraft,,2015,Total,0,0,0,20502,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,5,Modification of Aircraft,1,Modification of Aircraft,593,F-35 CV Series,A,Weapon System Cost,Aircraft,,2015,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,5,Modification of Aircraft,1,Modification of Aircraft,593,F-35 CV Series,A,Weapon System Cost,Aircraft,,2015,Total,20502,20502,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,5,Modification of Aircraft,1,Modification of Aircraft,593,F-35 CV Series,A,Weapon System Cost,Aircraft,,2015,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,5,Modification of Aircraft,1,Modification of Aircraft,593,F-35 CV Series,A,Weapon System Cost,Aircraft,,2016,Total,68527,68527,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,1506N,5,Modification of Aircraft,1,Modification of Aircraft,593,F-35 CV Series,A,Weapon System Cost,Aircraft,,2016,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,1999,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2000,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2000,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2001,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2001,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2001,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2002,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2002,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2002,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2003,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2003,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2003,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2004,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2004,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2004,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2005,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2005,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2005,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2006,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2006,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2006,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2007,Total,988109,988109,0,0,0,0,0,5,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2007,Total,0,0,0,595270,0,0,0,0,0,2,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2007,Total,0,0,0,0,0,0,595519,0,0,0,0,0,2
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2008,Total,0,0,0,1383015,0,0,0,0,0,6,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2008,Total,0,0,0,0,0,0,1383015,0,0,0,0,0,6
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2008,Total,1391824,1391824,0,0,0,0,0,6,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2009,Total,1796491,1796491,0,0,0,0,0,8,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2009,Total,0,0,0,0,0,0,1611895,0,0,0,0,0,7
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2009,Total,0,0,0,1611895,0,0,0,0,0,7,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2010,Total,0,0,0,0,0,0,2251645,0,0,0,0,0,10
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2010,Total,0,0,0,2248182,0,0,0,0,0,10,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2010,Total,2220267,2220267,0,0,0,0,0,10,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2010,OCO.Sup,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2010,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2011,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2011,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2011,Total,0,0,0,0,0,0,4320585,0,0,0,0,0,25
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2011,CR.OCO,0,0,0,0,0,134787,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2011,CR,0,0,0,0,0,3431565,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2011,OCO,0,0,204900,0,0,0,0,0,1,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2011,Total,4212742,4212742,0,0,0,0,0,23,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2012,Total,0,0,0,3545196,0,0,0,0,0,18,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2012,Total,0,0,0,0,0,0,3545196,0,0,0,0,0,18
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2012,Total,3597615,3597615,0,0,0,0,0,19,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2012,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2012,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2013,Total,0,0,0,0,0,0,2761161,0,0,0,0,0,19
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2013,Total,0,0,0,3353279,0,0,0,0,0,19,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2013,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2013,Total,3353279,3353279,0,0,0,0,0,19,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2013,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2014,Total,0,0,0,0,0,0,3183002,0,0,0,0,0,19
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2014,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2014,Total,0,0,0,3183002,0,0,0,0,0,19,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2014,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2014,Total,3354170,3354170,0,0,0,0,0,19,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2015,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2015,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2015,Total,3892579,3892579,0,0,0,0,0,26,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2015,Total,0,0,0,4030579,0,0,0,0,0,28,0,0,0
+Linked to ProjectID,3010F,1,Combat Aircraft,3,Tactical Forces,ATA000,F-35,A,Weapon System Cost,Aircraft,U,2015,Total,0,0,0,0,0,0,3965374,0,0,0,0,0,28
+Linked to ProjectID,3010F,1,Combat Aircraft,3,Tactical Forces,ATA000,F-35,A,Weapon System Cost,Aircraft,U,2016,Base,0,0,0,0,5678692,0,0,0,0,0,47,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2016,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat Aircraft,3,Tactical Forces,ATA000,F-35,A,Weapon System Cost,Aircraft,U,2016,Total,0,0,0,5678692,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat Aircraft,3,Tactical Forces,ATA000,F-35,A,Weapon System Cost,Aircraft,U,2016,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat aircraft,3,TACTICAL FORCES,ATA000,F-35,A,WEAPON SYSTEM COST,Aircraft,,2016,Total,5552092,5552092,0,0,0,0,0,44,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat Aircraft,3,Tactical Forces,ATA000,F-35,A,Weapon System Cost,Aircraft,U,2017,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,1,Combat Aircraft,3,Tactical Forces,ATA000,F-35,A,Weapon System Cost,Aircraft,U,2017,Base,0,0,4862154,0,0,0,0,0,43,0,0,0,0
+Linked to ProjectID,3010F,1,Combat Aircraft,3,Tactical Forces,ATA000,F-35,A,Weapon System Cost,Aircraft,U,2017,Total,4862154,4862154,0,0,0,0,0,43,0,0,0,0,0
+Linked to ProjectID,3010F,5,Modification of Inservice Aircraft,2,Tactical Aircraft,F03500,F-35 Modifications,A,Weapon System Cost,Aircraft,,2009,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,5,Modification of Inservice Aircraft,2,Tactical Aircraft,F03500,F-35 Modifications,A,Weapon System Cost,Aircraft,,2010,OCO.Sup,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,5,Modification of Inservice Aircraft,2,Tactical Aircraft,F03500,F-35 Modifications,A,Weapon System Cost,Aircraft,,2010,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,5,Modification of Inservice Aircraft,2,Tactical Aircraft,F03500,F-35 Modifications,A,Weapon System Cost,Aircraft,,2010,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,5,Modification of Inservice Aircraft,2,Tactical Aircraft,F03500,F-35 Modifications,A,Weapon System Cost,Aircraft,,2011,CR,0,0,0,0,0,101828,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,5,Modification of Inservice Aircraft,2,Tactical Aircraft,F03500,F-35 Modifications,A,Weapon System Cost,Aircraft,,2011,CR.OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,5,Modification of Inservice Aircraft,2,Tactical Aircraft,F03500,F-35 Modifications,A,Weapon System Cost,Aircraft,,2011,Total,0,0,0,0,0,0,4610,0,0,0,0,0,0
+Linked to ProjectID,3010F,5,Modification of Inservice Aircraft,2,Tactical Aircraft,F03500,F-35 Modifications,A,Weapon System Cost,Aircraft,,2011,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,5,Modification of Inservice Aircraft,2,Tactical Aircraft,F03500,F-35 Modifications,A,Weapon System Cost,Aircraft,,2011,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,5,Modification of Inservice Aircraft,2,Tactical Aircraft,F03500,F-35 Modifications,A,Weapon System Cost,Aircraft,,2011,Total,123936,123936,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,5,Modification of Inservice Aircraft,2,Tactical Aircraft,F03500,F-35 Modifications,A,Weapon System Cost,Aircraft,,2011,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,5,Modification of Inservice Aircraft,2,Tactical Aircraft,F03500,F-35 Modifications,A,Weapon System Cost,Aircraft,,2012,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,5,Modification of Inservice Aircraft,2,Tactical Aircraft,F03500,F-35 Modifications,A,Weapon System Cost,Aircraft,,2012,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,5,Modification of Inservice Aircraft,2,Tactical Aircraft,F03500,F-35 Modifications,A,Weapon System Cost,Aircraft,,2012,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,5,Modification of Inservice Aircraft,2,Tactical Aircraft,F03500,F-35 Modifications,A,Weapon System Cost,Aircraft,,2012,Total,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,5,Modification of Inservice Aircraft,2,Tactical Aircraft,F03500,F-35 Modifications,A,Weapon System Cost,Aircraft,,2012,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,5,Modification of Inservice Aircraft,2,Tactical Aircraft,F03500,F-35 Modifications,A,Weapon System Cost,Aircraft,,2013,Total,0,0,0,0,0,0,80715,0,0,0,0,0,0
+Linked to ProjectID,3010F,5,Modification of Inservice Aircraft,2,Tactical Aircraft,F03500,F-35 Modifications,A,Weapon System Cost,Aircraft,,2013,Total,147995,147995,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,5,Modification of Inservice Aircraft,2,Tactical Aircraft,F03500,F-35 Modifications,A,Weapon System Cost,Aircraft,,2013,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,5,Modification of Inservice Aircraft,2,Tactical Aircraft,F03500,F-35 Modifications,A,Weapon System Cost,Aircraft,,2013,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,5,Modification of Inservice Aircraft,2,Tactical Aircraft,F03500,F-35 Modifications,A,Weapon System Cost,Aircraft,,2013,Total,0,0,0,147995,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,5,Modification of Inservice Aircraft,2,Tactical Aircraft,F03500,F-35 Modifications,A,Weapon System Cost,Aircraft,,2014,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,5,Modification of Inservice Aircraft,2,Tactical Aircraft,F03500,F-35 Modifications,A,Weapon System Cost,Aircraft,,2014,Total,157777,157777,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,5,Modification of Inservice Aircraft,2,Tactical Aircraft,F03500,F-35 Modifications,A,Weapon System Cost,Aircraft,,2014,Total,0,0,0,0,0,0,123916,0,0,0,0,0,0
+Linked to ProjectID,3010F,5,Modification of Inservice Aircraft,2,Tactical Aircraft,F03500,F-35 Modifications,A,Weapon System Cost,Aircraft,,2014,Total,0,0,0,126777,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,5,Modification of Inservice Aircraft,2,Tactical Aircraft,F03500,F-35 Modifications,A,Weapon System Cost,Aircraft,,2014,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,5,Modification of Inservice Aircraft,2,Tactical Aircraft,F03500,F-35 Modifications,A,Weapon System Cost,Aircraft,U,2015,Total,0,0,0,0,0,0,187646,0,0,0,0,0,0
+Linked to ProjectID,3010F,5,Modification of Inservice Aircraft,2,Tactical Aircraft,F03500,F-35 Modifications,A,Weapon System Cost,Aircraft,,2015,Total,0,0,0,187646,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,5,Modification of Inservice Aircraft,2,Tactical Aircraft,F03500,F-35 Modifications,A,Weapon System Cost,Aircraft,,2015,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,5,Modification of Inservice Aircraft,2,Tactical Aircraft,F03500,F-35 Modifications,A,Weapon System Cost,Aircraft,,2015,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,5,Modification of Inservice Aircraft,2,Tactical Aircraft,F03500,F-35 Modifications,A,Weapon System Cost,Aircraft,,2015,Total,187646,187646,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,5,Modification of Inservice Aircraft,2,Tactical Aircraft,F03500,F-35 Modifications,A,Weapon System Cost,Aircraft,U,2016,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,5,Modification of Inservice Aircraft,2,Tactical Aircraft,F03500,F-35 Modifications,A,Weapon System Cost,Aircraft,U,2016,Total,0,0,0,70167,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,5,Modification of Inservice Aircraft,2,Tactical Aircraft,F03500,F-35 Modifications,A,Weapon System Cost,Aircraft,U,2016,Base,0,0,0,0,70167,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,5,Modification of Inservice Aircraft,2,Tactical Aircraft,F03500,F-35 Modifications,A,Weapon System Cost,Aircraft,,2016,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,5,Modification of Inservice Aircraft,2,Tactical Aircraft,F03500,F-35 Modifications,A,Weapon System Cost,Aircraft,,2016,Total,70167,70167,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,5,Modification of Inservice Aircraft,2,Tactical Aircraft,F03500,F-35 Modifications,A,Weapon System Cost,Aircraft,U,2017,Base,0,0,175811,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,5,Modification of Inservice Aircraft,2,Tactical Aircraft,F03500,F-35 Modifications,A,Weapon System Cost,Aircraft,U,2017,OCO,0,0,0,0,0,0,0,0,0,0,0,0,0
+Linked to ProjectID,3010F,5,Modification of Inservice Aircraft,2,Tactical Aircraft,F03500,F-35 Modifications,A,Weapon System Cost,Aircraft,U,2017,Total,175811,175811,0,0,0,0,0,0,0,0,0,0,0
