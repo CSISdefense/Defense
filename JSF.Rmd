@@ -1,0 +1,97 @@
+---
+title: "Sometimes Small"
+author: "Greg Sanders"
+date: "July 14, 2016"
+output: html_document
+---
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r Requirements}
+library(plyr)
+require(ggplot2)
+require(scales)
+# setwd("K:\\Development\\Defense")
+Path<-"K:\\2007-01 PROFESSIONAL SERVICES\\R scripts and data\\"
+
+source(paste(Path,"lookups.r",sep=""))
+source(paste(Path,"helper.r",sep=""))
+
+
+```
+
+
+
+
+```{r ReadAndProcessDuns}
+
+JSFfpds  <- read.csv(
+    paste("JSF\\Project_sp_InvestigateProject_FPDS.csv", sep = ""),
+    header = TRUE, sep = ",", dec = ".", strip.white = TRUE, 
+    na.strings = c("NULL","NA",""),
+    stringsAsFactors = TRUE
+)
+
+JSFfpds<-apply_lookups(Path,JSFfpds)
+
+
+JSFp1  <- read.csv(
+    paste("JSF\\Project_sp_InvestigateProject_JSF_P1.csv", sep = ""),
+    header = TRUE, sep = ",", dec = ".", strip.white = TRUE, 
+    na.strings = c("NULL","NA",""),
+    stringsAsFactors = TRUE
+)
+JSFp1<-apply_lookups(Path,JSFp1)
+
+JSFr1  <- read.csv(
+    paste("JSF\\Project_sp_InvestigateProject_JSF_R1.csv", sep = ""),
+    header = TRUE, sep = ",", dec = ".", strip.white = TRUE, 
+    na.strings = c("NULL","NA",""),
+    stringsAsFactors = TRUE
+)
+JSFr1<-apply_lookups(Path,JSFr1)
+
+
+JSFjoint<-ddply(JSFfpds,.(Fiscal.Year,SubCustomer,TACsubfunder,MainAccountTitle),
+                plyr::summarise,
+               Obligation.2015=sum(Obligation.2015)
+)
+
+
+JSFjointp1<-ddply(JSFfpds,.(Fiscal.Year,SubCustomer,TACsubfunder,MainAccountTitle),
+                plyr::summarise,
+               Obligation.2015=sum(Obligation.2015)
+)
+
+                
+
+```
+
+
+You can also embed plots, for example:
+
+```{r DunsCount, echo=FALSE}
+# 
+# ggplot( subset(DunsCountyByPercent,!is.na(Category) & !is.na(ObligatedAmount) &ObligatedAmount!=0), #!is.na(Ac)
+#         aes(x = Category,
+#             weight = count,
+#             fill=SmallValueThreshold
+#         )) +
+#     geom_histogram(alpha = 1,  colour = "black",binwidth=0.025)+
+#     # scale_x_continuous(limits=c(-0.05,1.05))+
+#     # facet_grid( Category ~., scales="free_y")+
+#     scale_y_continuous("Number of Vendors\nVariable Scale",labels=comma)+theme(axis.text.x=element_text(angle=90))
+# 
+# 
+# ggplot( subset(DunsCountyByPercent,!is.na(Category)), #!is.na(Ac)
+#        aes(x = RoundedPercentSmall,
+#            weight = count,
+#            fill=SmallValueThreshold
+#        )) +
+#     geom_histogram(alpha = 1,  colour = "black",binwidth=0.025)+
+#     scale_x_continuous(limits=c(-0.05,1.05))+
+#     facet_grid( Category ~., scales="free_y")+
+#     scale_y_continuous("Number of Vendors\nVariable Scale",labels=comma)
+```
